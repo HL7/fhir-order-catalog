@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="OO-BillingCode" />
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabCompendiumBillingCode" />
+  <name value="LabCompendiumBillingCode" />
+  <title value="Lab Compendium Billing Code" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <description value="This extension to PlanDefinition conveys a billing code associated with the laboratory procedure represented by the PlanDefinition instance. " />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="PlanDefinition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.org/ig/fhir-lab-compendium/StructureDefinition/BillingCode" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,51 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-12-20T10:30:00Z" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+    <valueMarkdown value="Availability Time Rule" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+    <valueString value="Informative" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+  <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/bibliography-artifact-type" />
+  <version value="4.0.0" />
+  <name value="BibliographyArtifactType" />
+  <title value="Types of bibliographic artifacts"/>
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2019-12-20" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="documentation | justification | citation"/>
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/related-artifact-type" />
+      <concept>
+        <code value="documentation" />
+        <display value="Documentation" />
+      </concept>
+      <concept>
+        <code value="justification" />
+        <display value="Justification" />
+      </concept>
+      <concept>
+        <code value="citation" />
+        <display value="Citation" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

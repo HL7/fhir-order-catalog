@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <lastUpdated value="2019-12-20T10:30:00Z" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+        <valueMarkdown value="Availability Time Rule" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+        <valueString value="Informative" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+        <valueInteger value="1" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="fhir" />
+    </extension>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/laboratory-service-type" />
+    <version value="4.0.0" />
+    <name value="LaboratoryServiceType" />
+    <title value="Types of diagnostic services performed by a laboratory"/>
+    <status value="active" />
+    <experimental value="false" />
+    <date value="2019-12-20" />
+    <publisher value="HL7 Orders &amp; Observations WG" />
+    <contact>
+        <telecom>
+            <system value="url" />
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="test | panel"/>
+    <immutable value="false" />
+    <compose>
+        <include>
+            <system value="http://fhir.org/ig/fhir-order-catalog/CodeSystem/laboratory-service-definition-type" />
+            <concept>
+                <code value="test" />
+                <display value="unitary measurement performed on an in vitro biologic specimen" />
+            </concept>
+            <concept>
+                <code value="panel" />
+                <display value="collection of tests and panels performed on one or more in vitro biologic specimens" />
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

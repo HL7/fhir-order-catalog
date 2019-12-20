@@ -1,0 +1,63 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-12-20T09:55:00Z" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Laboratory services compendium</h2>
+      <div>
+        <p>This CodeSystem provides additional coded concepts for <i>PlanDefinition.type</i> to cover the representation of laboratory diagnostic services</p>
+      </div>
+      <ul>
+        <li>
+          <p>Contains:</p>
+          <table class="none">
+            <tr>
+              <td>
+                <b> Code</b>
+              </td>
+              <td>
+                <b> Display</b>
+              </td>
+             </tr>
+            <tr>
+              <td>test</td>
+              <td>unitary measurement performed on an in vitro biologic specimen</td>
+            </tr>
+            <tr>
+              <td>panel</td>
+              <td>collection of tests and panels performed on one or more in vitro biologic specimens</td>
+            </tr>
+           </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
+  <version value="0.1.0" />
+  <name value="LaboratoryServiceDefinitionType"/>
+  <title value="Code system for types of laboratory service definitions" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-12-20" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This CodeSystem resource provides the concepts that enable to characterize laboratory diagnostic services described as instances of PlanDefinition, in the PlanDefinition.type element" />
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="test" />
+    <display value="unitary measurement performed on an in vitro biologic specimen" />
+  </concept>
+  <concept>
+    <code value="panel" />
+    <display value="collection of tests and panels performed on one or more in vitro biologic specimens" />
+  </concept>
+</CodeSystem>

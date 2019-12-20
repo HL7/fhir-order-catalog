@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-10-25T15:36:36.569+00:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
+  <version value="0.1" />
+  <name value="LabProcedureDefinition" />
+  <title value="Laboratory Procedure Definition" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This profile constrains ActivityDefinition to represent the definition of a laboratory diagnostic procedure (test or panel) to be performed on one or more in vitro biologic specimens.&#xD;&#xA;The ActivityDefinition resource declares the observations that are expected as input to the procedure, the kinds of specimens to be collected, and the observations produced as output.&#xD;&#xA;Such a definition can be used in a laboratory compendium as well as in other contexts." />
+  <purpose value="ActivityDefinition defines the various pieces of the definition of a laboratory procedure, such as input observations and biological specimens and output observations. For this purpose ActivityDefinition references instances of ObservationDefinition and SpecimenDefinition." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="objimpl" />
+    <uri value="http://hl7.org/fhir/object-implementation" />
+    <name value="Object Implementation Information" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ActivityDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ActivityDefinition.title">
+      <path value="ActivityDefinition.title" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.date">
+      <path value="ActivityDefinition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.publisher">
+      <path value="ActivityDefinition.publisher" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.contact.telecom">
+      <path value="ActivityDefinition.contact.telecom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.description">
+      <path value="ActivityDefinition.description" />
+      <definition value="A free text natural language description of the laboratory procedure from a consumer's perspective." />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.approvalDate">
+      <path value="ActivityDefinition.approvalDate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.lastReviewDate">
+      <path value="ActivityDefinition.lastReviewDate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.effectivePeriod">
+      <path value="ActivityDefinition.effectivePeriod" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.effectivePeriod.start">
+      <path value="ActivityDefinition.effectivePeriod.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.effectivePeriod.end">
+      <path value="ActivityDefinition.effectivePeriod.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.topic">
+      <path value="ActivityDefinition.topic" />
+      <short value="Categorization of the laboratory procedure" />
+      <comment value="Examples could be lab specialties: chemistry, hormonology, hematology, bacteriology, virology ..&#xD;&#xA;Other examples might list medical specialty of orderer: cardiology, dermatology, gastroenterology ..." />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.kind">
+      <path value="ActivityDefinition.kind" />
+      <fixedCode value="ServiceRequest" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.code">
+      <path value="ActivityDefinition.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.code.coding">
+      <path value="ActivityDefinition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <short value="Code for the laboratory procedure" />
+    </element>
+    <element id="ActivityDefinition.code.coding:LOINCProcedureCode">
+      <path value="ActivityDefinition.code.coding" />
+      <sliceName value="LOINCProcedureCode" />
+      <short value="LOINC code for the laboratory procedure" />
+      <max value="1" />
+      <fixedCoding>
+        <system value="http://loinc.org" />
+      </fixedCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.code.coding:LOINCProcedureCode.system">
+      <path value="ActivityDefinition.code.coding.system" />
+      <label value="LOINC" />
+      <short value="LOINC test code for this activity" />
+      <fixedUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.doNotPerform">
+      <path value="ActivityDefinition.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="ActivityDefinition.specimenRequirement">
+      <path value="ActivityDefinition.specimenRequirement" />
+      <short value="What specimens are required to perform this laboratory procedure" />
+      <definition value="Defines specimen requirements for the laboratory procedure (test or panel) to be performed." />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.observationRequirement">
+      <path value="ActivityDefinition.observationRequirement" />
+      <short value="What observations are required to perform this laboratory procedure" />
+      <definition value="Defines observation requirements for the laboratory procedure (test or panel) to be performed, such as body weight or surface area." />
+      <mustSupport value="true" />
+    </element>
+    <element id="ActivityDefinition.observationResultRequirement">
+      <path value="ActivityDefinition.observationResultRequirement" />
+      <short value="What observations are produced by this laboratory procedure" />
+      <definition value="Defines the observations that are expected to be produced by the laboratory procedure." />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
