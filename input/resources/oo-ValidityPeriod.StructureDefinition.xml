@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="LabCompendiumBillingCode/StructureDefinition/ValidityPeriod" />
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod" />
   <version value="4.0.0" />
   <name value="ValidityPeriod" />
   <title value="Period of validity of the catalog" />
@@ -41,12 +41,11 @@
       <path value="Extension" />
       <short value="Validity Period" />
       <definition value="The period in which the catalog is valid, with optional start and end dates." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/ValidityPeriod" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

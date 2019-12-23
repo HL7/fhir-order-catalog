@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">The LabServiceDefinition profile constrains the <i>PlanDefinition</i> resource to represent a laboratory diagnostic service for the clinicians who are the potential consumers of such services. Clinicians typically order laboratory services and use the results thereof in the course of their delivery of clinical care. 
+Constrained by this profile, the <i>PlanDefiniton</i> resource represents a laboratory diagnostic service as it is seen by clinicians. It is a kind of clinical artifact that falls within the scope of <i>PlanDefinition</i>. The service includes preparation of the patient, collection of IVD specimens and delivery to the lab, tests and panels performed on these specimens, interpretation of the results by the pathologist, and delivery of the results and diagnostic report back to the clinician and possibly to other recipients, including the patient. 
+
+<i>PlanDefinition</i> conveys the general properties of the lab service. It describes the usage of the service, may expose the contexts and situations in which this service is useful, and may also detail the goals that the laboratory service contributes to, such as screening or diagnostic of a particular pathology, monitoring of a long course treatment ...
+
+<i>PlanDefintion</i> references one or more instances of <i>ActivityDefinition</i>, each of which defines a concrete laboratory procedure that is carried to contribute its results to the service. Some of these laboratory procedures may be combined in logical groups associated with conditions. 
+
+Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts.</div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
+  <name value="LabServiceDefinition" />
+  <title value="Laboratory Service Definition" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="The LabServiceDefinition profile constrains the PlanDefinition resource to represent a laboratory diagnostic service for the clinicians who are the potential consumers of such services. Clinicians typically order laboratory services and use the results thereof in the course of their delivery of clinical care. &#xD;&#xA;A laboratory diagnostic service is a kind of clinical artifact that falls within the scope of PlanDefinition. It involves preparation of the patient, collection and delivery to the lab of biological specimens , tests and panels performed on these specimens, interpretation of the results by the pathologist, and delivery of the results and diagnostic report back to the ordering clinician and possibly other recipients, including the patient. &#xD;&#xA;PlanDefinition conveys the general properties of the lab service. It describes the usage of the service, may expose the contexts and situations in which this service is useful, and may also detail the goals that the laboratory service contributes to, such as screening or diagnostic of a particular pathology, monitoring of a long course treatment ...&#xD;&#xA;PlanDefintion references one or more instances of ActivityDefinition, each of which defines a concrete laboratory procedure that is carried to contribute to the provision the service and deliver the expected diagnostic results. Some of these activities may be combined in logical groups associated with conditions.&#xD;&#xA;Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts." />
+  <purpose value="A laboratory service is fulfilled through the execution of one or more laboratory procedures. The logical combinations of these procedures may be conjunctions (execute each of them) or disjunctions (execute at most one of them), or a mixture of both logical structures. The closest resource that may represent a service as a set of activities logically combined with this flexibility is PlanDefinition.&#xD;&#xA;PlanDefinition is therefore selected to represent a laboratory service, and the laboratory procedures needed to achieve this service are represented by instances of ActivityDefinition referenced by PlanDefinition, from logical groups defined in PlanDefinition." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="objimpl" />
+    <uri value="http://hl7.org/fhir/object-implementation" />
+    <name value="Object Implementation Information" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PlanDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PlanDefinition">
+      <path value="PlanDefinition" />
+      <short value="The definition of a plan for a series of actions" />
+      <comment value="The LabServiceDefinition profile constrains the resource PlanDefinition to represent a laboratory diagnostic service made visible to clinicians, the potential consumers of this service." />
+    </element>
+    <element id="PlanDefinition.extension">
+      <path value="PlanDefinition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PlanDefinition.extension:CatalogReference">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="CatalogReference" />
+      <short value="Reference to a catalog exposing this service" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:ServiceBillingCode">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="ServiceBillingCode" />
+      <short value="A billing code associated with the service" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:BillingSummary">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="BillingSummary" />
+      <short value="Textual summary of billing applied to the service" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:ScheduleSummary">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="ScheduleSummary" />
+      <short value="Textual summary of the schedule of the service" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:LimitationSummary">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="LimitationSummary" />
+      <short value="Textual summary  of limitations associated with the service" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary" />
+      </type>
+    </element>
+    <element id="PlanDefinition.type">
+      <path value="PlanDefinition.type" />
+      <short value="panel | test" />
+      <comment value="In this LabServiceDefiniton profile, PlanDefinition represents a laboratory service, which can be either a test or a panel. &#xD;&#xA;A test is a single measurement performed on a material/digital specimen, producing generally one result (sometimes zero, sometime more).&#xD;&#xA;A panel is a collection of tests and panels, performed on one or more material/digital specimens, and producing a collection of results.&#xD;&#xA;Therefore, the type is bound to a value set {&quot;test&quot;, &quot;panel&quot;}. The original value bound to this element with binding strength &quot;extensible&quot; does not contain appropriate values for laboratory diagnostic services." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.org/ig/fhir-order-catalog/ValueSet/laboratory-service-type" />
+      </binding>
+    </element>
+    <element id="PlanDefinition.description">
+      <path value="PlanDefinition.description" />
+      <comment value="This description provides details such as when this laboratory diagnostic service can be ordered, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the plan definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the plan definition is presumed to be the predominant language in the place the plan definition was created)." />
+    </element>
+    <element id="PlanDefinition.useContext">
+      <path value="PlanDefinition.useContext" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <description value="The LabServiceDefinition profile predefines three useful contexts as slices of this element. Each of the three slices may appear zero or once in an instance of a laboratory service. The slicing is open, so any additional context may be added, such as restricting the laboratory service to a class of age of patients, for instance.&#xD;&#xA;- Slice &quot;Orderable&quot;  when present means that this laboratory service is orderable, and when absent means that the service is not orderable.&#xD;&#xA;- Slice &quot;UponPathologistInitiative&quot; when present means that this laboratory service may be added to an existing order, at the pathologist's initiative.&#xD;&#xA;- Slice &quot;OnlyForGender&quot; when present means that this laboratory service is restricted to patients of a specific gender." />
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <comment value="When multiple useContexts are specified, in this LabServiceDefinition profile, all contexts apply to the defined laboratory service." />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.useContext:Orderable">
+      <path value="PlanDefinition.useContext" />
+      <sliceName value="Orderable" />
+      <sliceIsConstraining value="false" />
+      <label value="orderable" />
+      <short value="Orderable laboratory service" />
+      <definition value="Slice &quot;Orderable&quot;  when present means that this laboratory service is orderable, and when absent means that the service is not orderable." />
+      <comment value="Slice Orderable is either present or absent. It acts as a boolean expressing whether the service is orderable or not." />
+      <max value="1" />
+      <patternUsageContext>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+          <code value="task" />
+        </code>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+            <code value="LABOE" />
+          </coding>
+        </valueCodeableConcept>
+      </patternUsageContext>
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.useContext:Orderable.value[x]">
+      <path value="PlanDefinition.useContext.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="PlanDefinition.useContext:UponPathologistInitiative">
+      <path value="PlanDefinition.useContext" />
+      <sliceName value="UponPathologistInitiative" />
+      <short value="Service can be added upon pathologist's initiative" />
+      <definition value="Slice UponPathologistInitiative means, when present, that this service may be added by the pathologist to an existing order, considering the results obtained so far for this order." />
+      <comment value="When multiple useContexts are specified on a laboratory service,  all of the contexts apply." />
+      <max value="1" />
+      <patternUsageContext>
+        <code>
+          <system value="ttp://terminology.hl7.org/CodeSystem/usage-context-type" />
+          <code value="task" />
+        </code>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/ValueSet/v3-ActTaskCode" />
+            <code value="LABRREV" />
+          </coding>
+        </valueCodeableConcept>
+      </patternUsageContext>
+    </element>
+    <element id="PlanDefinition.useContext:UponPathologistInitiative.value[x]">
+      <path value="PlanDefinition.useContext.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="PlanDefinition.useContext:OnlyForGender">
+      <path value="PlanDefinition.useContext" />
+      <sliceName value="OnlyForGender" />
+      <short value="Service restricted to one particular gender" />
+      <definition value="Slice OnlyForGender indicates, when present, that the service is limited to a particular gender." />
+      <comment value="When multiple useContexts are specified on a laboratory service,  all of the contexts apply." />
+      <max value="1" />
+      <patternUsageContext>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+          <code value="gender" />
+        </code>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" />
+          </coding>
+        </valueCodeableConcept>
+      </patternUsageContext>
+    </element>
+    <element id="PlanDefinition.useContext:OnlyForGender.value[x]">
+      <path value="PlanDefinition.useContext.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="PlanDefinition.usage">
+      <path value="PlanDefinition.usage" />
+      <short value="Describes the clinical usage of the laboratory diagnostic service" />
+      <definition value="A detailed description of how the laboratory diagnostic service is used from a clinical perspective." />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.topic">
+      <path value="PlanDefinition.topic" />
+      <definition value="Descriptive topics related to the content of the laboratory service definition. Topics provide a high-level categorization of the definition that can be useful for filtering and searching. Some possible axes of categorization include laboratory specialty, kind of pathology, kind of biologic specimen tested, ..." />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact">
+      <path value="PlanDefinition.relatedArtifact" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <description value="A laboratory service definition may have related artifacts of three kinds:&#xD;&#xA;1- documents expected from the ordering party when ordering this laboratory service. This kind is represented by the slice InputExpected, which is the only slice defined for this element. Example: Patient consent for genetic testing.&#xD;&#xA;2- any kind of bibliography, justification, documentation.&#xD;&#xA;3- replacement of the no longer usable current service, by another one." />
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected">
+      <path value="PlanDefinition.relatedArtifact" />
+      <sliceName value="InputDocumentExpected" />
+      <short value="Input document expected by the laboratory service" />
+      <definition value="Document that needs to be provided alongside the order for the laboratory service" />
+      <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient consent for payment of this non-reimbursable service ..." />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.type">
+      <path value="PlanDefinition.relatedArtifact.type" />
+      <fixedCode value="depends-on" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.display">
+      <path value="PlanDefinition.relatedArtifact.display" />
+      <definition value="A brief description of the document that need to be provided alongside the order of this laboratory service" />
+      <min value="1" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:IsReplacedBy">
+      <path value="PlanDefinition.relatedArtifact" />
+      <sliceName value="IsReplacedBy" />
+      <short value="Reference to a service replacing the current non-usable one" />
+      <definition value="The related artifact is another instance of PlanDefinition, which is a replacement for the current no longer usable laboratory service" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:IsReplacedBy.type">
+      <path value="PlanDefinition.relatedArtifact.type" />
+      <fixedCode value="predecessor" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:IsReplacedBy.resource">
+      <path value="PlanDefinition.relatedArtifact.resource" />
+      <definition value="The related resource, in this case a PlanDefinition constrained by the LabServiceDefinition profile" />
+      <min value="1" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabServiceDefinition" />
+      </type>
+    </element>
+    <element id="PlanDefinition.relatedArtifact:Bibliography">
+      <path value="PlanDefinition.relatedArtifact" />
+      <sliceName value="Bibliography" />
+      <short value="Additional documentation, citation or justification" />
+      <definition value="Related bibliographic references such as documentation, justification, or citation." />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:Bibliography.type">
+      <path value="PlanDefinition.relatedArtifact.type" />
+      <short value="documentation | justification | citation" />
+      <definition value="kind of associated bibliographic artifact" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.org/ig/fhir-order-catalog/ValueSet/bibliography-artifact-type" />
+      </binding>
+    </element>
+    <element id="PlanDefinition.action">
+      <path value="PlanDefinition.action" />
+      <definition value="The concrete action or group of actions conveyed by this laboratory diagnostic service" />
+      <comment value="The LabServiceDefinition profile constrains the content of PlanDefinition to be a single action at the top level. This action may be implemented by a single laboratory procedure referenced as an instance of ActivityDefinition, or may be decomposed into any level of logical groups of more granular actions, each leaf action referencing an ActivityDefinition." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="PlanDefinition.action.groupingBehavior">
+      <path value="PlanDefinition.action.groupingBehavior" />
+      <fixedCode value="logical-group" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.action.selectionBehavior">
+      <path value="PlanDefinition.action.selectionBehavior" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.action.definition[x]">
+      <path value="PlanDefinition.action.definition[x]" />
+      <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed" />
+      <type>
+        <code value="canonical" />
+        <profile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+    </element>
+    <element id="PlanDefinition.action.action.condition">
+      <path value="PlanDefinition.action.action.condition" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="kind" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.action.action.condition:Reflex">
+      <path value="PlanDefinition.action.action.condition" />
+      <sliceName value="Reflex" />
+      <short value="reflex laboratory procedure (test or panel)" />
+      <definition value="This condition introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition" />
+      <comment value="A single reflex laboratory procedure is triggered. Therefore, the slice named Reflex has cardinalities 0..1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.action.action.condition:Reflex.kind">
+      <path value="PlanDefinition.action.action.condition.kind" />
+      <short value="reflex laboratory procedure" />
+      <definition value="In the context of the LabServiceDefinition profile &quot;applicability&quot; is the only possible value and it introduces a reflex test or panel triggered by a condition expressed in condition.expression. The reflex test is an ActivityDefinition referenced by action.definition" />
+      <fixedCode value="applicability" />
+    </element>
+    <element id="PlanDefinition.action.action.condition:Reflex.expression">
+      <path value="PlanDefinition.action.action.condition.expression" />
+      <definition value="The expression describes the trigger for the reflex laboratory procedure." />
+    </element>
+    <element id="PlanDefinition.action.action.definition[x]">
+      <path value="PlanDefinition.action.action.definition[x]" />
+      <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed and the biologic specimens required for this procedure, as well as the input and output observations of this procedure." />
+      <type>
+        <code value="canonical" />
+        <profile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

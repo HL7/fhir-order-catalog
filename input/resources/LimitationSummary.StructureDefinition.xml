@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="OO-LimitationSummary" />
-  <url value="LabCompendiumBillingCode/StructureDefinition/LimitationSummary" />
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary" />
   <name value="LimitationSummary" />
   <title value="Limitation summary for the plan definition" />
   <status value="draft" />
@@ -29,9 +29,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LimitationSummary" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
