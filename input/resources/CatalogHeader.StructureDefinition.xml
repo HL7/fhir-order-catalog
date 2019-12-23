@@ -8,7 +8,7 @@ The resource provides the global metadata of the catalog, such as the custodian,
 An instance of Composition profiled by CatalogHeader  does not mention the catalog items. Instead, it is referenced by the definitional resources representing the items belonging to this catalog.</div>
   </text>
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader" />
-  <version value="0.1" />
+  <version value="0.0.1" />
   <name value="CatalogHeader" />
   <title value="Catalog Header" />
   <status value="draft" />
@@ -66,8 +66,6 @@ An instance of Composition profiled by CatalogHeader  does not mention the catal
     <element id="Composition.extension:ValidityPeriod">
       <path value="Composition.extension" />
       <sliceName value="ValidityPeriod" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod" />

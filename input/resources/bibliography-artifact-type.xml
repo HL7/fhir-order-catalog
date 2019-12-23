@@ -3,6 +3,7 @@
     <lastUpdated value="2019-12-20T10:30:00Z" />
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
   </meta>
+  <!--
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Availability Time Rule" />
   </extension>
@@ -15,6 +16,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
   </extension>
+  -->
   <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/bibliography-artifact-type" />
   <version value="4.0.0" />
   <name value="BibliographyArtifactType" />

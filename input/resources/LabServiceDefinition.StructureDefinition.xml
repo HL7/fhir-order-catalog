@@ -12,6 +12,7 @@ Constrained by this profile, the <i>PlanDefiniton</i> resource represents a labo
 Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts.</div>
   </text>
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
+  <version value="0.0.1" />
   <name value="LabServiceDefinition" />
   <title value="Laboratory Service Definition" />
   <status value="draft" />
@@ -177,12 +178,12 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <max value="1" />
       <patternUsageContext>
         <code>
-          <system value="ttp://terminology.hl7.org/CodeSystem/usage-context-type" />
+          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
           <code value="task" />
         </code>
         <valueCodeableConcept>
           <coding>
-            <system value="http://terminology.hl7.org/ValueSet/v3-ActTaskCode" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
             <code value="LABRREV" />
           </coding>
         </valueCodeableConcept>
@@ -290,7 +291,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <definition value="kind of associated bibliographic artifact" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://fhir.org/ig/fhir-order-catalog/ValueSet/bibliography-artifact-type" />
+        <valueSet value="http://hl7.org/fhir/uv/order-catalog/ValueSet/bibliography-artifact-type" />
       </binding>
     </element>
     <element id="PlanDefinition.action">

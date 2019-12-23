@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="hl7.fhir.uv.order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <name value="Order Catalog Implementation Guide"/>
+  <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -34,13 +34,90 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <!--    <resource>
+    <resource>
       <reference>
-        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+        <reference value="CodeSystem/laboratory-service-definition-type"/>
       </reference>
-      <name value="Name you want in artifact list"/>
-      <description value="Description you want in artifact list"/>
-    </resource>-->
+      <name value="Laboratory service type"/>
+      <description value="Code system for types of laboratory service"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/laboratory-service-type"/>
+      </reference>
+      <name value="Laboratory service type"/>
+      <description value="Value set of types of laboratory service"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bibliography-artifact-type"/>
+      </reference>
+      <name value="Bibliographic artifact"/>
+      <description value="Type of bibliographic artifact"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ValidityPeriod"/>
+      </reference>
+      <name value="Validity Period"/>
+      <description value="Validity period of the catalog"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CatalogReference"/>
+      </reference>
+      <name value="Reference to catalog"/>
+      <description value="Reference to catalog"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BillingSummary"/>
+      </reference>
+      <name value="Billing summary"/>
+      <description value="Billing summary for the service"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ScheduleSummary"/>
+      </reference>
+      <name value="Schedule summary"/>
+      <description value="Schedule summary for the service"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LimitationSummary"/>
+      </reference>
+      <name value="Limitation summary"/>
+      <description value="Limitation summary for the service"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ServiceBillingCode"/>
+      </reference>
+      <name value="Service billing code"/>
+      <description value="Billing code for the service"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CatalogHeader"/>
+      </reference>
+      <name value="Catalog Header"/>
+      <description value="Catalog header"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabServiceDefinition"/>
+      </reference>
+      <name value="Laboratory service"/>
+      <description value="Laboratory diagnostic service definition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabProcedureDefinition"/>
+      </reference>
+      <name value="Laboratory procedure"/>
+      <description value="Laboratory procedure definition"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

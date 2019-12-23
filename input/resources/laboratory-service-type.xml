@@ -4,6 +4,7 @@
         <lastUpdated value="2019-12-20T10:30:00Z" />
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
+    <!--
     <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
         <valueMarkdown value="Availability Time Rule" />
     </extension>
@@ -16,6 +17,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
         <valueCode value="fhir" />
     </extension>
+    -->
     <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/laboratory-service-type" />
     <version value="4.0.0" />
     <name value="LaboratoryServiceType" />
@@ -34,7 +36,7 @@
     <immutable value="false" />
     <compose>
         <include>
-            <system value="http://fhir.org/ig/fhir-order-catalog/CodeSystem/laboratory-service-definition-type" />
+            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type" />
             <concept>
                 <code value="test" />
                 <display value="unitary measurement performed on an in vitro biologic specimen" />

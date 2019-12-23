@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="OO-ScheduleSummary" />
+  <id value="ScheduleSummary" />
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary" />
+  <version value="0.0.1" />
   <name value="ScheduleSummary" />
   <title value="Schedule summary for the plan definition" />
   <status value="draft" />
