@@ -22,7 +22,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="The LabServiceDefinition profile constrains the PlanDefinition resource to represent a laboratory diagnostic service for the clinicians who are the potential consumers of such services. Clinicians typically order laboratory services and use the results thereof in the course of their delivery of clinical care. &#xD;&#xA;A laboratory diagnostic service is a kind of clinical artifact that falls within the scope of PlanDefinition. It involves preparation of the patient, collection and delivery to the lab of biological specimens , tests and panels performed on these specimens, interpretation of the results by the pathologist, and delivery of the results and diagnostic report back to the ordering clinician and possibly other recipients, including the patient. &#xD;&#xA;PlanDefinition conveys the general properties of the lab service. It describes the usage of the service, may expose the contexts and situations in which this service is useful, and may also detail the goals that the laboratory service contributes to, such as screening or diagnostic of a particular pathology, monitoring of a long course treatment ...&#xD;&#xA;PlanDefintion references one or more instances of ActivityDefinition, each of which defines a concrete laboratory procedure that is carried to contribute to the provision the service and deliver the expected diagnostic results. Some of these activities may be combined in logical groups associated with conditions.&#xD;&#xA;Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts." />
+  <description value="The LabServiceDefinition profile constrains the PlanDefinition resource to represent a laboratory diagnostic service for the clinicians who are the potential consumers of such services. Clinicians typically order laboratory services and use the results thereof in the course of their delivery of clinical care. &#xD;&#xA;A laboratory diagnostic service is a kind of clinical artifact that falls within the scope of PlanDefinition. It involves preparation of the patient, collection and delivery to the lab of biological/digital specimens , tests and panels performed on these specimens, interpretation of the results by the pathologist, and delivery of the results and diagnostic report back to the ordering clinician and possibly other recipients, including the patient. &#xD;&#xA;PlanDefinition conveys the general properties of the lab service. It describes the usage of the service, may expose the contexts and situations in which this service is useful, and may also detail the goals that the laboratory service contributes to, such as screening or diagnostic of a particular pathology, monitoring of a long course treatment ...&#xD;&#xA;PlanDefintion references one or more instances of ActivityDefinition, each of which defines a concrete laboratory procedure that is carried to contribute to the provision the service and deliver the expected diagnostic results. Some of these activities may be combined in logical groups associated with conditions.&#xD;&#xA;Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts." />
   <purpose value="A laboratory service is fulfilled through the execution of one or more laboratory procedures. The logical combinations of these procedures may be conjunctions (execute each of them) or disjunctions (execute at most one of them), or a mixture of both logical structures. The closest resource that may represent a service as a set of activities logically combined with this flexibility is PlanDefinition.&#xD;&#xA;PlanDefinition is therefore selected to represent a laboratory service, and the laboratory procedures needed to achieve this service are represented by instances of ActivityDefinition referenced by PlanDefinition, from logical groups defined in PlanDefinition." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -54,7 +54,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition">
       <path value="PlanDefinition" />
       <short value="The definition of a plan for a series of actions" />
-      <comment value="The LabServiceDefinition profile constrains the resource PlanDefinition to represent a laboratory diagnostic service made visible to clinicians, the potential consumers of this service." />
+      <comment value="The LabServiceDefinition profile constrains the resource PlanDefinition to represent a laboratory diagnostic service made visible to clinicians: the potential consumers of this service." />
     </element>
     <element id="PlanDefinition.extension">
       <path value="PlanDefinition.extension" />
@@ -70,8 +70,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.extension" />
       <sliceName value="CatalogReference" />
       <short value="Reference to a catalog exposing this service" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference" />
@@ -81,8 +79,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.extension" />
       <sliceName value="ServiceBillingCode" />
       <short value="A billing code associated with the service" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
@@ -92,8 +88,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.extension" />
       <sliceName value="BillingSummary" />
       <short value="Textual summary of billing applied to the service" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary" />
@@ -103,8 +97,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.extension" />
       <sliceName value="ScheduleSummary" />
       <short value="Textual summary of the schedule of the service" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary" />
@@ -114,8 +106,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.extension" />
       <sliceName value="LimitationSummary" />
       <short value="Textual summary  of limitations associated with the service" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary" />
@@ -310,6 +300,33 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="PlanDefinition.action.condition">
+      <path value="PlanDefinition.action.condition" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="kind" />
+        </discriminator>
+        <description value="Open slicing on condition with a single slice defined to represent a reflex activity.&#xD;&#xA;This slicing may actually only be used on sub actions, not on the top element action of the resource. A constraint will have to be stated for that." />
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.action.condition:Reflex">
+      <path value="PlanDefinition.action.condition" />
+      <sliceName value="Reflex" />
+      <short value="Reflex laboratory procedure" />
+      <definition value="This condition introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition" />
+    </element>
+    <element id="PlanDefinition.action.condition:Reflex.kind">
+      <path value="PlanDefinition.action.condition.kind" />
+      <fixedCode value="applicability" />
+    </element>
+    <element id="PlanDefinition.action.condition:Reflex.expression">
+      <path value="PlanDefinition.action.condition.expression" />
+      <definition value="The expression of the trigger for the reflex laboratory procedure" />
+      <mustSupport value="true" />
+    </element>
     <element id="PlanDefinition.action.groupingBehavior">
       <path value="PlanDefinition.action.groupingBehavior" />
       <fixedCode value="logical-group" />
@@ -324,50 +341,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed" />
       <type>
         <code value="canonical" />
-        <profile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-    </element>
-    <element id="PlanDefinition.action.action.condition">
-      <path value="PlanDefinition.action.action.condition" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="kind" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="PlanDefinition.action.action.condition:Reflex">
-      <path value="PlanDefinition.action.action.condition" />
-      <sliceName value="Reflex" />
-      <short value="reflex laboratory procedure (test or panel)" />
-      <definition value="This condition introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition" />
-      <comment value="A single reflex laboratory procedure is triggered. Therefore, the slice named Reflex has cardinalities 0..1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="PlanDefinition.action.action.condition:Reflex.kind">
-      <path value="PlanDefinition.action.action.condition.kind" />
-      <short value="reflex laboratory procedure" />
-      <definition value="In the context of the LabServiceDefinition profile &quot;applicability&quot; is the only possible value and it introduces a reflex test or panel triggered by a condition expressed in condition.expression. The reflex test is an ActivityDefinition referenced by action.definition" />
-      <fixedCode value="applicability" />
-    </element>
-    <element id="PlanDefinition.action.action.condition:Reflex.expression">
-      <path value="PlanDefinition.action.action.condition.expression" />
-      <definition value="The expression describes the trigger for the reflex laboratory procedure." />
-    </element>
-    <element id="PlanDefinition.action.action.definition[x]">
-      <path value="PlanDefinition.action.action.definition[x]" />
-      <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed and the biologic specimens required for this procedure, as well as the input and output observations of this procedure." />
-      <type>
-        <code value="canonical" />
-        <profile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <targetProfile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
       </type>
       <type>
         <code value="uri" />

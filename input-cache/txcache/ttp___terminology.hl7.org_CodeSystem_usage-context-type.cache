@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "ttp://terminology.hl7.org/CodeSystem/usage-context-type",
+  "code" : "task"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"ttp://terminology.hl7.org/CodeSystem/usage-context-type\" is not known (encountered paired with code = \"task\"); The code provided (ttp://terminology.hl7.org/CodeSystem/usage-context-type#task) is not  valid in the value set UsageContextType"
+}
+-------------------------------------------------------------------------------------
