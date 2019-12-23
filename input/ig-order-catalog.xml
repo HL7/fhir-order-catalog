@@ -15,7 +15,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
     </telecom>
   </contact>
-  <description value="A brief description of what the Order Catalog IG is about (probably the same text as in your readme)"/>
+  <description value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or knowledge artifacts such as order sets, which support the ordering process, or more generally the healthcare process."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
