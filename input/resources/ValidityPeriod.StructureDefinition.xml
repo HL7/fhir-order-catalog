@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ValidityPeriod" />
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="sd" />
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1" />
-  </extension>
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod" />
   <version value="0.0.1" />
   <name value="ValidityPeriod" />
