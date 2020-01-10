@@ -5,7 +5,7 @@
   <h3>Introduction</h3>
   <p> An order catalog exposes a homogeneous collection of healthcare items that can be ordered or
     selected by practitioners during the course of care delivery. These homogeneous healthcare items
-    may represent services, products, devices or knowledge artefacts. Each item specifies its
+    may represent services, products, devices or knowledge artifacts. Each item specifies its
     purpose, describes how it should be ordered and/or used, and characterizes the outcomes that one
     can expect from this usage. </p>
   <p> Examples include order sets catalog, evidence based CDS content, laboratory test compendium,
@@ -17,6 +17,20 @@
     formulary listing the medicinal products that are available for prescription in a particular
     hospital. A broader catalog of medicinal product might include all the medications authorized to
     the national market of a country. </p>
+  <p> A catalog provides reference data, which aggregates requirements of usage for the items of the
+    catalog, from multiple sources: regulatory, clinical knowledge, organizational (based on the
+    organization of the provider of the items). </p>
+  <p>Catalogs are meant to be used by IT systems and applications (e.g. EHR, EMR, CPOE, apps, LIS,
+    Pharmacy system ...) as well as by humans. Humans interact with catalogs through the mediation
+    of their applications.</p>
+  <p>Client applications may interact with a catalog to: </p>
+  <ul>
+    <li>browse through entries of the catalog and retrieve items of interest together with the
+      detailed instructions and guidance related to the usage of these items,</li>
+    <li>import/export the full catalog or a part of it (e.g. import the recent updates), </li>
+    <li>administer the content of the catalog: add/update/retire items and/or supporting resources.
+    </li>
+  </ul>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
   <p> Additional detail/context setting for those who have significant background in the domain.

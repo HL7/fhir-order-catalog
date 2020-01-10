@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="hl7.fhir.uv.order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
   <name value="OrderCatalogIG"/>
@@ -15,7 +17,8 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
     </telecom>
   </contact>
-  <description value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or knowledge artifacts such as order sets, which support the ordering process, or more generally the healthcare process."/>
+  <description
+    value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or knowledge artifacts such as order sets, which support the ordering process, or more generally the healthcare process."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
@@ -40,7 +43,7 @@
       </reference>
       <name value="Laboratory service type"/>
       <description value="Code system for types of laboratory service"/>
-    </resource>    
+    </resource>
     <resource>
       <reference>
         <reference value="ValueSet/laboratory-service-type"/>
