@@ -22,8 +22,7 @@
     organization of the provider of the items). </p>
   <p>Catalogs are meant to be used by IT systems and applications (e.g. EHR, EMR, CPOE, apps, LIS,
     Pharmacy system ...) as well as by humans. Humans interact with catalogs through the mediation
-    of their applications.</p>
-  <p>Client applications may interact with a catalog to: </p>
+    of their applications. Client applications may interact with a catalog to: </p>
   <ul>
     <li>browse through entries of the catalog and retrieve items of interest together with the
       detailed instructions and guidance related to the usage of these items,</li>
@@ -33,9 +32,27 @@
   </ul>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
-  <p> Additional detail/context setting for those who have significant background in the domain.
-    (Try to make as understandable as you can, but set important context). </p>
+  <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
+    Composition resource, which conveys the general properties of the catalog (e.g. owner, title,
+    period of validity, type of content), and each item of the catalog is represented by a
+    definitional resource, possibly associated with a set of supporting resources providing further
+    details on this item. Two alternative methods are usable to bind the catalog as a whole to its
+    items. </p>
+  <ol>
+    <li>The catalog references its items from its Composition.section.entry elements. This method
+      constrains the Composition resource with the Catalog profile.</li>
+    <li>Each definitional resource representing an item references the Composition resource. The
+      Composition resource in this case acts as the header of the catalog. This method constrains
+      the Composition resource with the CatalogHeader profile. </li>
+  </ol>
+  <img src="CatalogBindings.png" />
+  <p> The catalog owner must choose one of the two methods, and cannot mix the two methods for one
+    catalog. Usable for catalogs of any size, the second method is in particular more appropriate
+    for large catalogs because it makes the administration of the content easier. In particular,
+    adding a new item or retiring an item does not impose any update to the Composition resource
+    representing the catalog as a whole.</p>
   <a name="walkthrough"> </a>
+  <h3>Walkthrough</h3>
   <p> The main sections of this IG are: </p>
   <ul>
     <li>
