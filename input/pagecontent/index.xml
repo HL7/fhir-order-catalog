@@ -45,7 +45,7 @@
       Composition resource in this case acts as the header of the catalog. This method constrains
       the Composition resource with the CatalogHeader profile. </li>
   </ol>
-  <img src="CatalogBindings.png" alt="Methods for binding catalogs and their items" width="800px"/>
+  <img src="CatalogBindings.png" alt="Methods for binding catalogs and their items" width="700px"/>
   <p> The catalog owner must choose one of the two methods, and cannot mix the two methods for one
     catalog. Usable for catalogs of any size, the second method is in particular more appropriate
     for large catalogs because it makes the administration of the content easier. In particular,
