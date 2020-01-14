@@ -1,5 +1,82 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+	<p>This section lists the use cases for order catalogs, sorted by category of catalog.</p>
+	<a name="labservice"> </a>
+	<h3>Laboratory services compendium</h3>
+	<ul>
+		<li>A clinical or pathology laboratory wishes to share its full compendium of diagnostic
+			services with the healthcare professionals and organizations wishing to use these
+			diagnostic services. It publishes it as a catalog of resources accessible online for
+			discovery and retrieval. Consumers query the catalog online from their order entry
+			application and retrieve the diagnostic services they want to insert into their order to
+			the laboratory for their patient. </li>
+		<li> Variant 1: A consumer imports periodically the subset of the catalog it is interested
+			in, so as to have it available locally for its computerizedd physician order entry
+			application.</li>
+		<li> Variant 2: The laboratory maintains its compendium of services in a proprietary format,
+			and delegates the standard publication of this compendium to an external organization
+			operating an HL7 FHIR server of such catalogs. The application maintaining the
+			laboratory compendium interacts with the FHIR server to keep the publication up to date,
+			inserting, updating or retiring services into/from the FHIR catalog. </li>
+	</ul>
+	<br/>
+	<a name="orderset"> </a>
+	<h3>Order sets library</h3>
+	<ul>
+		<li>A client of a content vendor’s system wishes to import the latest set of published order
+			sets into its own catalog for deployment into its EHR.</li>
+		<li>A content vendor wishes to import a collection of order sets from one of its client
+			including all dependencies (e.g., orderable items mentioned in the order sets, order
+			details, relevant order item constraints, etc…) into its own catalog.</li>
+		<li/>
+		<li>A health care provider wishes to sync its orderable item catalog and order set library
+			with a content vendor. Any term added, updated, or inactivated should reflect
+			immediately on the content vendor side. Also, the health care provider wishes to
+			identify any catalog item that references an inactivated orderable item on the content
+			vendor system in order to update the order set. </li>
+		<li>A medication has been recalled. A content provider and a health care provider would like
+			to identify all order sets that reference this recalled medication. The health care
+			provider then wishes to sync its order set library with that of the content vendor’s and
+			update all affected order sets based on vendor guidance prior to reimporting the updated
+			order sets back into their own catalog. The updated order sets, are then deployed into
+			the EHR.</li>
+		<li>A health care organization with multiple facilities and hospitals maintains a master
+			catalog of order sets. Each facility maintains its library of order sets and vocabulary
+			derived from the master catalog but localized based on the facility’s needs and
+			capabilities. Updates to the master catalog should be reflected at the individual
+			facility/hospital level based on the governance practices of the facility and the parent
+			organization.</li>
+		<li>The client of a content vendor would like to import order sets ready for publication
+			into their system. They search the catalog for all active order sets that are ready for
+			publication and import that set into their local catalog. Once imported, an integrator
+			reviews the order sets, makes the necessary changes, and deploys them to the EHR.</li>
+	</ul>
+	<br/>
+	<a name="drug"> </a>
+	<h3>Catalog of medications</h3>
+	<ul>
+		<li>A health care organization maintains its medication formulary and shares it to the
+			applications used by its physicians, nurses and pharmacists to support medication
+			prescription, dispense and administration.</li>
+		<li>A content vendor publishes the general catalog of medications authorized to a national
+			market. Health care organizations of the country import subsets of this general catalog
+			so as to synchronize their local medication formularies. </li>
+		<li>Variant 1: In addition to the general catalog of medications, the content vendor hosts
+			the medication formularies of each of its client organizations who interact with the
+			server to use their own medication formulary in their medication workflows, as well as
+			to maintain this mefication formularty over time (inserting/updating/retiring items.
+		</li>
+	</ul>
+	<br/>
+	<h3>Catalog of medical devices</h3>
+	<ul>
+		<li>LIVD. Link to LIVD IG.</li>
+		<li>A content vendor publishes the general catalog of medical devices authorized to a
+			national market. Health care organizations of the country access this catalog in real
+			time during their health care processes using medical devices, so as to retrieve all the
+			details of the devices, and to trace their association to patients. </li>
+	</ul>
 	<p>
-    <img src="anImage.png" alt="A sample image"/>
-  </p>
+		<img src="anImage.png" alt="A sample image" width="200px"/>
+	</p>
 </div>

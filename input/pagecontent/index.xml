@@ -19,7 +19,7 @@
     device, order set, diagnostic service ...) exposed by the catalog. </p>
   <p>Considering these commonalities and specificities, building a common guidance for implementing
     any kind of catalog of healthcare items in FHIR has been deemed the most valuable proposition to
-    implementers. Hence this unique Order Catalog implementation guide, which aims to cover all
+    implementers. Hence this unique Order Catalog Implementation Guide, which aims to cover all
     categories of catalogs of healthcare items. The use cases and artifacts (profiles, extensions, semantic
     resources) that are specific to a particular category of catalog will be placed under the
     responsibility of the HL7 Working Group defining the base resources for this category. </p>
@@ -40,6 +40,7 @@
     <li>administer the content of the catalog: add/update/retire items and/or supporting resources.
     </li>
   </ul>
+  <br/>
   <a name="scope"> </a>
   <h3>Scope of order catalogs</h3>
   <p> Order catalogs have varied scopes, sizes, ownerships and targetted consumers and
@@ -51,7 +52,7 @@
     catalog of medicinal product might include all the medications authorized to the national market
     of a country. These examples illustrate that:</p>
   <ul>
-    <li>the role of custodian/steward of the catalog is distinct from the role of owner of the items
+    <li>the role of custodian of the catalog is distinct from the role of owner of the items
       exposed in the catalog, even if in one of the examples above the two roles may be played by
       the same organization;</li>
     <li>some catalogs may expose a huge number of items, and yet the FHIR resources that implement
@@ -59,6 +60,7 @@
     <li>some catalogs are scoped for use within a single organization, while others address multiple
       organizations (or even jurisdictions) of potential consumers.</li>
   </ul>
+  <br/>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
   <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
@@ -85,9 +87,7 @@
   <p> The main sections of this IG are: </p>
   <ul>
     <li>
-      <a href="background.html">Background</a> - provides business context for the implementation
-      guide and information that implementers should be familiar with before reading the remainder
-      of the IG. There could be multiple pages for this. </li>
+      <a href="background.html">Use cases</a> - presents the use cases sorted by category of catalog. </li>
     <li>
       <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to
       do. (Could be multiple pages for this.) </li>
