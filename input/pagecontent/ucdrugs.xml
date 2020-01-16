@@ -1,0 +1,17 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+	<p>This section lists the use cases for using catalogs of medications.</p>
+	<ul>
+		<li>A health care organization maintains its medication formulary and shares it to the
+			applications used by its physicians, nurses and pharmacists to support medication
+			prescription, dispense and administration.</li>
+		<li>A content vendor publishes the general catalog of medications authorized to a national
+			market. Health care organizations of the country import subsets of this general catalog
+			so as to synchronize their local medication formularies. </li>
+		<li>Variant 1: In addition to the general catalog of medications, the content vendor hosts
+			the medication formularies of each of its client organizations who interact with the
+			server to use their own medication formulary in their medication workflows, as well as
+			to maintain this mefication formularty over time (inserting/updating/retiring items.
+		</li>
+	</ul>
+</div>

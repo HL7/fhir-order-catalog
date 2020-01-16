@@ -2,37 +2,37 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use cases<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use cases<b class="caret"> </b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="background.html">Use cases</a>
-      </li>
+      <li><a href="uclabservices.html">Laboratory services</a></li>
+      <li><a href="ucordersets.html">Order sets</a></li>
+      <li><a href="ucdrugs.html">Medications</a></li>
+      <li><a href="ucdevices.html">Devices</a></li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret"> </b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="spec.html">Detailed Specification</a>
-      </li>
+      <li><a href="labservices.html">Laboratory services</a></li>
+      <li><a href="ordersets.html">Order sets</a></li>
+      <li><a href="drugs.html">Medications</a></li>
+      <li><a href="devices.html">Devices</a></li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret"> </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img
+            src="external.png" style="text-align: baseline"/></a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>
-</ul>      
+</ul>

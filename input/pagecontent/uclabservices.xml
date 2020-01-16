@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+	<p>This section lists the use cases for using catalogs of laboratory diagnostic services.</p>
+	<ul>
+		<li>A clinical or pathology laboratory wishes to share its full compendium of diagnostic
+			services with the healthcare professionals and organizations wishing to use these
+			diagnostic services. It publishes it as a catalog of resources accessible online for
+			discovery and retrieval. Consumers query the catalog online from their order entry
+			application and retrieve the diagnostic services they want to insert into their orders to
+			the laboratory for their patients. </li>
+		<li> Variant 1: A consumer imports periodically the subset of the catalog it is interested
+			in, so as to have it available locally in its computerized physician order entry
+			application.</li>
+		<li> Variant 2: The laboratory maintains its compendium of services in a proprietary format,
+			and delegates the standard publication of this compendium to an external organization
+			operating an HL7 FHIR server of such catalogs. The application maintaining the
+			laboratory compendium interacts with the FHIR server to keep the publication up to date,
+			inserting, updating or retiring services into/from the FHIR catalog. </li>
+	</ul>
+</div>

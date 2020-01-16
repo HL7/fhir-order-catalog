@@ -77,7 +77,7 @@
       the Composition resource with the CatalogHeader profile. </li>
   </ol>
   <img src="CatalogBindings.png" alt="Methods for binding catalogs and their items" width="600px"/>
-  <p> The catalog owner must choose one of the two methods, and cannot mix the two methods for one
+  <p> The catalog server must choose one of the two methods, and cannot mix the two methods for one
     catalog. Usable for catalogs of any size, the second method is in particular more appropriate
     for large catalogs because it makes the administration of the content easier. In particular,
     adding a new item or retiring an item does not impose any update to the Composition resource
@@ -86,13 +86,14 @@
   <h3>Walkthrough</h3>
   <p> The main sections of this IG are: </p>
   <ul>
-    <li>
-      <a href="background.html">Use cases</a> - presents the use cases sorted by category of catalog. </li>
-    <li>
-      <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to
-      do. (Could be multiple pages for this.) </li>
-    <li>
-      <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation
-      guide and other useful information </li>
+    <li><a href="uclabservices.html">Use cases - Laboratory services</a> - lists the use cases for compendium of laboratory diagnostic services. </li>
+    <li><a href="ucordersets.html">Use cases - Order sets</a> - lists the use cases for library of order sets. </li>
+    <li><a href="ucdrugs.html">Use cases - Medications</a> - lists the use cases for catalog of drugs. </li>
+    <li><a href="ucdevices.html">Use cases - Devices</a> - lists the use cases for catalog of devices. </li>
+    <li><a href="labservices.html">Specification - Laboratory services</a> - specifies the FHIR resources implemented by a compendium of laboratory diagnostic services. </li>
+    <li><a href="ordersets.html">Specification - Order sets</a> - specifies the FHIR resources implemented by a library of order sets. </li>
+    <li><a href="drugs.html">Specification - Medications</a> - specifies the FHIR resources implemented by a catalog of drugs, including medication formularies. </li>
+    <li><a href="devices.html">Specification - Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
+    <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information </li>
   </ul>
 </div>

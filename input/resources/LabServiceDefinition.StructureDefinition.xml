@@ -276,7 +276,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <min value="1" />
       <type>
         <code value="canonical" />
-        <targetProfile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabServiceDefinition" />
+        <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
       </type>
     </element>
     <element id="PlanDefinition.relatedArtifact:Bibliography">
@@ -342,10 +342,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed" />
       <type>
         <code value="canonical" />
-        <targetProfile value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/LabProcedureDefinition" />
-      </type>
-      <type>
-        <code value="uri" />
+        <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
       </type>
     </element>
   </differential>

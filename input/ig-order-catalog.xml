@@ -132,14 +132,44 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Use cases"/>
+        <nameUrl value="uclabservices.html"/>
+        <title value="Use cases - Laboratory services"/>
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="spec.html"/>
-        <title value="Detailed Specification"/>
-        <generation value="markdown"/>
+        <nameUrl value="ucordersets.html"/>
+        <title value="Use cases - Order sets"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="ucdrugs.html"/>
+        <title value="Use cases - Medications"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="ucdevices.html"/>
+        <title value="Use cases - Devices"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="labservices.html"/>
+        <title value="Spec - Laboratory services"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="ordersets.html"/>
+        <title value="Spec - Order sets"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="drugs.html"/>
+        <title value="Spec - Medications"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="devices.html"/>
+        <title value="Spec - Devices"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

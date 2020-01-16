@@ -104,10 +104,6 @@ An instance of Composition profiled by CatalogHeader  does not mention the catal
     <element id="Composition.author">
       <path value="Composition.author" />
       <short value="The organization which authored the catalog" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
     </element>
     <element id="Composition.attester">
       <path value="Composition.attester" />
@@ -116,14 +112,6 @@ An instance of Composition profiled by CatalogHeader  does not mention the catal
     <element id="Composition.attester.time">
       <path value="Composition.attester.time" />
       <min value="1" />
-    </element>
-    <element id="Composition.attester.party">
-      <path value="Composition.attester.party" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
     </element>
     <element id="Composition.custodian">
       <path value="Composition.custodian" />
