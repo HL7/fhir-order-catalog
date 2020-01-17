@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/composition.xsd"> 
+    <id value="example-lab-compendium-header"/>
+    <!--  
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+    </meta>
+    -->
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>A clinical laboratory service compendium</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod">
+        <valuePeriod>
+            <start value="2020-09-01"/>
+            <end value="2020-12-31"/>
+        </valuePeriod>
+    </extension>
+    <identifier>
+        <use value="official"/> 
+        <value value="labZZZ"/> 
+    </identifier>
+    <status value="preliminary"/>
+    <type>
+        <text value="catalog"/>
+    </type>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/catalogType"/>
+            <code value="diagnostic-service"/>
+            <display value="diagnostic service catalog"/>
+        </coding>
+    </category>
+    <date value="2020-01-17T17:00:00+02:00"/>
+    <author>
+        <identifier>
+            <value value="lab-zzz"/>
+        </identifier>     
+    </author>
+    <title value="Laboratory ZZZ - Directory of Diagnostic Services"/>
+    <custodian>
+        <identifier>
+            <value value="lab-zzz"/>
+        </identifier>   
+    </custodian>
+</Composition>

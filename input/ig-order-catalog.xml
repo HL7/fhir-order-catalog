@@ -109,6 +109,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Composition/example-lab-compendium-header"/>
+      </reference>
+      <name value="Example of clinical laboratory catalog"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/LabServiceDefinition"/>
       </reference>
       <name value="Laboratory service"/>
