@@ -77,3 +77,14 @@ v: {
   "error" : "Read off end of file: 4752176 / 2147483596:7"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18719-5",
+  "display" : "Chemistry studies (set)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Chemistry studies (set)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

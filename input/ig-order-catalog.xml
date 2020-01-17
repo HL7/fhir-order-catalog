@@ -116,6 +116,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
+      </reference>
+      <name value="Example of laboratory service of type test"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/LabProcedureDefinition"/>
       </reference>
       <name value="Laboratory procedure"/>

@@ -1,24 +1,26 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-  <p>Detailed specifications for catalogs of laboratory diagnostic services</p>
+  <p>This page provides the detailed specifications for catalogs of laboratory diagnostic
+    services.</p>
+  <h3>Resources and Profiles</h3>
   <p>The figure below shows the resources and profiles used to represent catalogs of laboratory
     diagnostic services</p>
   <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="800px"/>
-  
-  <p>Catalogs of laboratory services use exclusively the CatalogHeader profile for the resource
+  <p>Catalogs of laboratory services use exclusively the <a
+      href="StructureDefinition-CatalogHeader.html"> CatalogHeader profile</a> for the resource
     Composition. In other words, for binding a laboratory catalog to its items, only method 2 is
     usable, as depicted in <a href="index.html#technical"> Home Page - Technical overview</a> .
-  Thus, the Composition resource holds only the general properties of the catalog and is
-    referenced by the resources PlanDefinition profiled by LabServiceDefinition, which represent the
+    Thus, the Composition resource holds only the general properties of the catalog and is
+    referenced by the resources PlanDefinition constrained by the <a href="StructureDefinition-LabServiceDefinition.html"> LabServiceDefinition</a> profile, which represent the
     items of the catalog. </p>
   <p>An item of the catalog is a laboratory service instantiated as a PlanDefinition, which
-    represents either a test (type =test) or a panel (type =panel). A panel is a set of tests and/or
+    represents either a test (type=test) or a panel (type=panel). A panel is a set of tests and/or
     panels. This PlanDefinition conveys the general properties of the item (identification, names
     and codings, orderability, applicability, jurisdictions, billing, status, possible replacement
     by another more recent item, gender or species restrictions ...). The PlanDefinition contains a
     single occurrence of the element PlanDefinition.action. </p>
-  <p>The PlanDefinition.action references one or more instances of ActivityDefinition constrained by the
-    LabProcedureDefinition profile, each of which represents a laboratory procedure with its
+  <p>The PlanDefinition.action references one or more instances of ActivityDefinition constrained by
+    the <a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition profile, </a> each of which represents a laboratory procedure with its
     operational details, specifying in particular the specimens required to perform the test or
     panel, the input observations expected by the laboratory from the orderer, and the output
     observations that the procedure will produce.</p>
@@ -26,5 +28,7 @@
     operational view of the service.</p>
   <p>In some cases the PlanDefinition of a lab service references multiple instances of
     ActivityDefinition representing multiple procedures assembled in logical groups with
-    combinations of AND and OR.</p>
+    combinations of AND and OR. These logical combinations are used for example to indicate that the
+    laboratory accepts multiple alternative specimens (e.g. venous blood versus capillary blood) to
+    perform a test.</p>
 </div>

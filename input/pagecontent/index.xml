@@ -47,7 +47,7 @@
     jurisdictions. For instance an order catalog might expose the medical devices of a particular
     manufacturer to the potential users of these devices in a country. Another catalog might
     consolidate all the medical devices that are approved for use in healthcare throughout the
-    Europe Union market. Another example of order catalog would be a drug formulary listing the
+    European Union market. Another example of order catalog would be a drug formulary listing the
     medicinal products that are available for prescription in a particular hospital. A broader
     catalog of medicinal product might include all the medications authorized to the national market
     of a country. These examples illustrate that:</p>
@@ -96,4 +96,46 @@
     <li><a href="devices.html">Specification - Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
     <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information </li>
   </ul>
+  <h3>Authors and Contributors</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>Name</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Publishing Facilitator</strong></td>
+        <td>Rob Hausam</td>
+        <td>Hausam Consulting LLC</td>
+      </tr>
+      <tr>
+        <td><strong>Primary Editor</strong></td>
+        <td>François Macary</td>
+        <td>Phast</td>
+      </tr>
+      <tr>
+        <td><strong>Contributor</strong></td>
+        <td>Freida Hall</td>
+        <td>Quest Diagnostics</td>
+      </tr>
+      <tr>
+        <td><strong>Contributor</strong></td>
+        <td>Gary Randman</td>
+        <td>Quest Diagnostics</td>
+      </tr>
+      <tr>
+        <td><strong>Contributor</strong></td>
+        <td>Kathy Walsh</td>
+        <td>LabCorp</td>
+      </tr>
+      <tr>
+        <td><strong>Contributor</strong></td>
+        <td>Andrea Pitkus</td>
+        <td>U of Wisconsin</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
