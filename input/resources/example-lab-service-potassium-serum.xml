@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
     <id value="example-lab-service-potassium-serum"/>
-    <!--  
-    <meta>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-    </meta>
-    -->
     <language value="en-US"/>
     <text>
         <status value="generated"/>
@@ -22,7 +17,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://www.ama-assn.org/go/cpt"/>
-                <code value="12345"/>
+                <code value="84132"/>
+                <display value="Potassium, serum"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -30,7 +26,7 @@
         <valueString value="The CPT code above is fake"/>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
-        <valueString value="Performed 7/7, results in 30 mn"/>
+        <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>
     </extension>
     <identifier>
         <use value="official"/> 

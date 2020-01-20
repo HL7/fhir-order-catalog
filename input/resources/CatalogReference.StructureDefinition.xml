@@ -32,7 +32,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/CatalogReference" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

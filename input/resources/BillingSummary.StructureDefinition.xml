@@ -36,7 +36,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.org/ig/fhir-order-catalog/StructureDefinition/BillingSummary" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

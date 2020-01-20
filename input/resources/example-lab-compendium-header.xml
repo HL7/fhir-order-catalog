@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/composition.xsd"> 
     <id value="example-lab-compendium-header"/>
-    <!--  
-    <meta>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-    </meta>
-    -->
     <language value="en-US"/>
     <text>
         <status value="generated"/>
@@ -25,13 +20,18 @@
     </identifier>
     <status value="preliminary"/>
     <type>
-        <text value="catalog"/>
+        <text value="Catalog"/>
     </type>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/catalogType"/>
+            <!--  New concepts to be added to catalogType
             <code value="diagnostic-service"/>
             <display value="diagnostic service catalog"/>
+            Temporary replacement below:
+            -->
+            <code value="protocol"/>
+            <display value="Protocol List"/>
         </coding>
     </category>
     <date value="2020-01-17T17:00:00+02:00"/>
