@@ -135,6 +135,12 @@
       <name value="Laboratory procedure"/>
       <description value="Laboratory procedure definition"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/example-lab-organization"/>
+      </reference>
+      <name value="Example of laboratory as an organization"/>
+     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

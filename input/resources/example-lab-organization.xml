@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/organization.xsd"> 
+    <id value="example-lab-organization"/>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>This is the fake laboratory called <i>The Good Testing Laboratory</i></p>
+        </div>
+    </text>
+    <active value="true"/>
+    <name value="The Good Testing Laboratory"></name>
+    <telecom>
+        <system value="url"/>
+        <value value="http://fhir.org"/>
+        <use value="temp"/>
+    </telecom>
+    <address>
+        <use value="temp"/>
+        <type value="both"/>
+        <line value="1 Lab Dr"/>
+        <city value="Paris"/>
+        <state value="TX"/>
+        <postalCode value="12340"/>
+        <country value="USA"/>
+    </address>
+</Organization>

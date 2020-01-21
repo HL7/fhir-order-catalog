@@ -4,7 +4,7 @@
     <language value="en-US"/>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
             <p>A clinical laboratory service compendium</p>
         </div>
     </text>
@@ -16,7 +16,8 @@
     </extension>
     <identifier>
         <use value="official"/> 
-        <value value="labZZZ"/> 
+        <system value="http://fhir.org"/>
+        <value value="GoodLabCompendium"/> 
     </identifier>
     <status value="preliminary"/>
     <type>
@@ -36,14 +37,10 @@
     </category>
     <date value="2020-01-17T17:00:00+02:00"/>
     <author>
-        <identifier>
-            <value value="lab-zzz"/>
-        </identifier>     
+        <reference value="Organization/example-lab-organization"/>     
     </author>
     <title value="Laboratory ZZZ - Directory of Diagnostic Services"/>
     <custodian>
-        <identifier>
-            <value value="lab-zzz"/>
-        </identifier>   
+        <reference value="Organization/example-lab-organization"/>   
     </custodian>
 </Composition>
