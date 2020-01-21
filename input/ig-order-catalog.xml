@@ -112,7 +112,7 @@
         <reference value="Composition/example-lab-compendium-header"/>
       </reference>
       <name value="Example of clinical laboratory catalog"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+      <exampleCanonical value="StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
       <reference>
@@ -126,7 +126,7 @@
         <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
       </reference>
       <name value="Example of laboratory service of type test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <exampleCanonical value="StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
