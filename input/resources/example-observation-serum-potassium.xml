@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
+    <id value="example-observation-serum-potassium"/>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>K level observation in blood</p>
+        </div>
+    </text>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="2823-3"/>
+            <display value="Potassium [Moles/volume] in Serum or Plasma"/>
+        </coding>
+    </code>
+    <permittedDataType value="Quantity"/>
+    <permittedDataType value="string"/>
+    <multipleResultsAllowed value="false"/>
+    <method>
+        <text value="Ion Selective Electrode (ISE)"></text>
+    </method>
+    <preferredReportName value="Potassium"/>
+    <quantitativeDetails>
+        <customaryUnit>
+            <coding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="g/L"/>
+            </coding>
+        </customaryUnit>
+        <unit>
+            <coding>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </coding>
+        </unit>
+        <decimalPrecision value="1"/>
+    </quantitativeDetails>
+    <qualifiedInterval>
+        <category value="reference"/>
+        <range>
+            <low>
+                <value value="3.8"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </low>
+            <high>
+                <value value="5.1"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </high>
+        </range>
+        <context>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="normal"/>
+                <display value="Normal Range"/>
+            </coding>
+        </context>
+        <age>
+            <low>
+                <value value="2"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="y"/>
+            </low>
+            <high>
+                <value value="19"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="y"/>
+            </high>
+        </age>
+    </qualifiedInterval>
+    <qualifiedInterval>
+        <category value="reference"/>
+        <range>
+            <low>
+                <value value="3.5"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </low>
+            <high>
+                <value value="5.3"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </high>
+        </range>
+        <context>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="normal"/>
+                <display value="Normal Range"/>
+            </coding>
+        </context>
+        <age>
+            <low>
+                <value value="20"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="y"/>
+            </low>
+        </age>
+    </qualifiedInterval>
+</ObservationDefinition>

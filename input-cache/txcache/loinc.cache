@@ -19,3 +19,25 @@ v: {
   "error" : "Read off end of file: 4752176 / 2147483596:7"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2823-3",
+  "display" : "Potassium [Moles/Vol]"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Potassium [Moles/Vol]\" is not a valid display for the code {http://loinc.org}2823-3 - should be one of [\"Potassium [Moles/volume] in Serum or Plasma\",\"Potassium SerPl-sCnc\",\"Potassium SerPl-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2823-3",
+  "display" : "Potassium [Moles/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

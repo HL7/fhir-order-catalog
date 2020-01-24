@@ -80,12 +80,25 @@
         <url value="https://en.wikipedia.org/wiki/Potassium"/>    
     </relatedArtifact>
     <action>
+        <priority value="routine"/>
+        <code>
+            <coding>
+                <system value="https://testdirectory.questdiagnostics.com/"/>
+                <code value="733"/>
+                <display value="Potassium, Serum"/>
+            </coding>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="2823-3"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma"/>
+            </coding>
+        </code>
         <timingDuration>
             <value value="30"/>
-            <unit value="mn"/>
+            <unit value="minutes"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mn"/>
         </timingDuration>
-        <definitionCanonical value="todo"/>
+        <definitionCanonical value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
     </action>
 </PlanDefinition>

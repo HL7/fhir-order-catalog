@@ -301,6 +301,25 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="PlanDefinition.action.code">
+      <path value="PlanDefinition.action.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PlanDefinition.action.code:orderCodeLoinc">
+      <path value="PlanDefinition.action.code" />
+      <sliceName value="orderCodeLoinc" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition" />
       <slicing>

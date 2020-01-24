@@ -137,10 +137,29 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
+      </reference>
+      <name value="Example of laboratory procedure"/>
+      <exampleCanonical value="StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
       <name value="Example of laboratory as an organization"/>
      </resource>
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
+      </reference>
+      <name value="Example of specimen requirement"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-serum-potassium"/>
+      </reference>
+      <name value="Example of definition of output observation"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
