@@ -64,12 +64,12 @@
             <low>
                 <value value="2"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="y"/>
+                <code value="a"/>
             </low>
             <high>
                 <value value="19"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="y"/>
+                <code value="a"/>
             </high>
         </age>
     </qualifiedInterval>
@@ -98,7 +98,7 @@
             <low>
                 <value value="20"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="y"/>
+                <code value="a"/>
             </low>
         </age>
     </qualifiedInterval>
