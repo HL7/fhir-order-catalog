@@ -144,6 +144,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/LabSpecimenDefinition"/>
+      </reference>
+      <name value="Laboratory specimen"/>
+      <description value="Laboratory IVD specimen definition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabObservationDefinition"/>
+      </reference>
+      <name value="Laboratory observation"/>
+      <description value="Laboratory observation definition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
       <name value="Example of laboratory as an organization"/>
@@ -153,12 +167,14 @@
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
       </reference>
       <name value="Example of specimen requirement"/>
+      <exampleCanonical value="StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
       <name value="Example of definition of output observation"/>
+      <exampleCanonical value="StructureDefinition/LabObservationDefinition"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

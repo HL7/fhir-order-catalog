@@ -12,7 +12,7 @@ Constrained by this profile, the <i>PlanDefiniton</i> resource represents a labo
 Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts.</div>
   </text>
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
-  <version value="0.0.1" />
+  <version value="0.1" />
   <name value="LabServiceDefinition" />
   <title value="Laboratory Service Definition" />
   <status value="draft" />

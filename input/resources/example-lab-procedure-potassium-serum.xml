@@ -8,6 +8,7 @@
             <p>Potassium measurement on blood serum</p>
         </div>
     </text>
+    <url value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
     <identifier>
         <use value="official"/> 
         <value value="K_serum_test"/> 

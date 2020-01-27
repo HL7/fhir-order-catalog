@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition" />
+  <version value="0.1" />
+  <name value="LabSpecimenDefinition" />
+  <title value="Laboratory IVD Specimen Definition" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="The LabSpecimenDefinition profile constrains the SpecimenDefinition resource to represent definitions of IVD specimens attached to laboratory procedures described in catalogs of laboratory services using these procedures and specimens." />
+  <purpose value="This profile only sets MustSupport on the minimal data of a SpecimenDefinition used in a laboratory compendium." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="SpecimenDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SpecimenDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="SpecimenDefinition.typeTested">
+      <path value="SpecimenDefinition.typeTested" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SpecimenDefinition.typeTested.type">
+      <path value="SpecimenDefinition.typeTested.type" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
