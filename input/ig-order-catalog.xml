@@ -5,6 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
+  <version value="20200129T1614"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -112,7 +113,7 @@
         <reference value="Composition/example-lab-compendium-header"/>
       </reference>
       <name value="Example of clinical laboratory catalog"/>
-      <exampleCanonical value="StructureDefinition/CatalogHeader"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
       <reference>
@@ -126,7 +127,7 @@
         <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
       </reference>
       <name value="Example of laboratory service of type test"/>
-      <exampleCanonical value="StructureDefinition/LabServiceDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -140,7 +141,7 @@
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
       <name value="Example of laboratory procedure"/>
-      <exampleCanonical value="StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -167,14 +168,14 @@
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
       </reference>
       <name value="Example of specimen requirement"/>
-      <exampleCanonical value="StructureDefinition/LabSpecimenDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
       <name value="Example of definition of output observation"/>
-      <exampleCanonical value="StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

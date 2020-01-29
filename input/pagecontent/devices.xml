@@ -1,6 +1,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   <p>Detailed specifications for catalogs of medical devices</p>
-  <p>
-    <img src="anImage.png" alt="A sample image"/>
-  </p>
+  <h3>Resources and Profiles</h3>
+  <p>The figure below shows the resources and profiles used to represent catalogs or medical devices</p>
+  <img src="DeviceCatalog.png" alt="Resources used by a catalog medical devices" width="800px"/>
 </div>

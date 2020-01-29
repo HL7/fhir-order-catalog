@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
     <id value="example-lab-service-potassium-serum"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </meta>
     <language value="en-US"/>
     <text>
         <status value="generated"/>
