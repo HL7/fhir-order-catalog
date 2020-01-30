@@ -305,7 +305,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.action.code" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="coding.system" />
         </discriminator>
         <rules value="open" />
