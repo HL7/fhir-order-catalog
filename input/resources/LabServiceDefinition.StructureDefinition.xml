@@ -306,19 +306,21 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="coding.system" />
+          <path value="$this" />
         </discriminator>
+        <description value="open slicing by code system. One slice defined for LOINC order coding of the service" />
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
-    <element id="PlanDefinition.action.code:orderCodeLoinc">
+    <element id="PlanDefinition.action.code:OrderLoinc">
       <path value="PlanDefinition.action.code" />
-      <sliceName value="orderCodeLoinc" />
-      <fixedCodeableConcept>
+      <sliceName value="OrderLoinc" />
+      <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition" />

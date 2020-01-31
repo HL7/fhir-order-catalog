@@ -152,6 +152,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/InputObservationDefinition"/>
+      </reference>
+      <name value="Input observation"/>
+      <description value="input observation definition for laboratory services"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/LabObservationDefinition"/>
       </reference>
       <name value="Laboratory observation"/>

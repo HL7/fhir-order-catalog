@@ -11,10 +11,14 @@
 		<li>Variant 1: In addition to the general catalog of medications, the content vendor hosts
 			the medication formularies of each of its client organizations who interact with the
 			server to use their own medication formulary in their medication workflows, as well as
-			to maintain this medication formulary over time (inserting/updating/retiring items).
-		</li>
-		<li>
-			A health care organization provides medication formularies to its patients for educational purposes.
-		</li>
+			to maintain this medication formulary over time (inserting/updating/retiring items). </li>
+		<li> A health care organization provides medication formularies to its patients for
+			educational purposes. </li>
+		<li>An organization exposes the set of standardized vocabularies needed to support full
+			semantic interoperability for prescription, dispense and administration of medications
+			within a jurisdiction (e.g. a country). This reference set is represented as a generic
+			catalog of all the medications that are usable within the jurisdiction. This generic
+			catalog is imported in whole or in parts by the applications of the prescribers, carers
+			and dispensers of the jurisdiction. </li>
 	</ul>
 </div>

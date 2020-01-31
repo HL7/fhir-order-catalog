@@ -6,8 +6,8 @@
 			services with the healthcare professionals and organizations wishing to use these
 			diagnostic services. It publishes it as a catalog of resources accessible online for
 			discovery and retrieval. Consumers query the catalog online from their order entry
-			application and retrieve the diagnostic services they want to insert into their orders to
-			the laboratory for their patients. </li>
+			application and retrieve the diagnostic services they want to insert into their orders
+			to the laboratory for their patients. </li>
 		<li> Variant 1: A consumer imports periodically the subset of the catalog it is interested
 			in, so as to have it available locally in its computerized physician order entry
 			application.</li>
@@ -16,5 +16,11 @@
 			operating an HL7 FHIR server of such catalogs. The application maintaining the
 			laboratory compendium interacts with the FHIR server to keep the publication up to date,
 			inserting, updating or retiring services into/from the FHIR catalog. </li>
+		<li>An organization exposes the set of standardized vocabularies needed to support full
+			semantic interoperability for ordering and reporting laboratory services within a
+			jurisdiction (e.g. a country). This reference set is represented as a generic catalog of
+			all the laboratory services that are usable within the jurisdiction. This generic
+			catalog is imported in whole or in parts by the applications of the ordering providers
+			and of the laboratories of the jurisdiction. </li>
 	</ul>
 </div>

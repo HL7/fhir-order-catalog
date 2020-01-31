@@ -1,6 +1,10 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   <p>Detailed specifications for catalogs of medical devices</p>
-  <h3>Resources and Profiles</h3>
-  <p>The figure below shows the resources and profiles used to represent catalogs or medical devices</p>
+  <h3>Resources and Profiles for all devices</h3>
+  <p>The figure below shows the resources and profiles used to represent catalogs of medical devices</p>
   <img src="DeviceCatalog.png" alt="Resources used by a catalog medical devices" width="800px"/>
+  <h3>Resources and Profiles for IVD testing devices</h3>
+  <p>The figure below shows the resources and profiles used to represent catalogs of in vitro diagnostic testing devices when they provide the mapping of their test result codes to LOINC</p>
+  <img src="LIVDCatalog.png" alt="Resources used by a catalog analyzers providing a LOINC mapping" width="800px"/>
+  <p>See the <a href="https://build.fhir.org/ig/HL7/livd/"> LIVD Implementation Guide </a> </p>
 </div>

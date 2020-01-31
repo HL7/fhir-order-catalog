@@ -3,11 +3,13 @@
   <p>This page provides the detailed specifications for catalogs of laboratory diagnostic
     services.</p>
   <h3>Resources and Profiles</h3>
-  <p>The figure below shows the resources and profiles used to represent catalogs of laboratory
-    diagnostic services</p>
+  <p> </p>
+  <p> The figure below shows the resources and profiles used to represent catalogs of laboratory
+    diagnostic services </p>
+  
   <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="800px"/>
-  <p>Catalogs of laboratory services use exclusively the <a
-      href="StructureDefinition-CatalogHeader.html"> CatalogHeader profile</a> for the resource
+  
+  <p>Catalogs of laboratory services use exclusively the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader profile </a> for the resource
     Composition. In other words, for binding a laboratory catalog to its items, only method 2 is
     usable, as depicted in <a href="index.html#technical"> Home Page - Technical overview</a> .
     Thus, the Composition resource holds only the general properties of the catalog and is

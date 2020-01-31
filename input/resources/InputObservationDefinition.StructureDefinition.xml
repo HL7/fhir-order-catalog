@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition" />
-  <version value="0.1" />
-  <name value="LabObservationDefinition" />
-  <title value="Laboratory Observation Definition" />
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition" />
+  <name value="InputObservationDefinition" />
+  <title value="Input Observation" />
   <status value="draft" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
@@ -12,7 +11,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="This profile constrains the base resource ObservationDefinition when referenced by ActivityDefinition.observationResultRequirement in the context of a catalog of laboratory services. Such a resource specifies the form of an output observation produced by a laboratory service." />
+  <description value="This profile constrains the base resource ObservationDefinition when referenced by ActivityDefinition.observationRequirement in the context of a catalog of laboratory services. Such a resource specifies the form of an input observation expected alongside the order of a laboratory service." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />
