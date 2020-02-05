@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200129T1614"/>
+  <version value="20200205T2015"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -113,6 +113,7 @@
         <reference value="Composition/example-lab-compendium-header"/>
       </reference>
       <name value="Example of clinical laboratory catalog"/>
+      <description value="example of catalog header representing a lab test/panels compendium"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
@@ -127,6 +128,7 @@
         <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
       </reference>
       <name value="Example of laboratory service of type test"/>
+      <description value="example of a simple test laboratory service"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
@@ -141,6 +143,7 @@
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
       <name value="Example of laboratory procedure"/>
+      <description value="example of a simple test laboratory procedure"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
@@ -168,20 +171,31 @@
       <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
-      <name value="Example of laboratory as an organization"/>
+      <name value="laboratory"/>
+      <description value="Example of laboratory as an organization"/>
      </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
       </reference>
-      <name value="Example of specimen requirement"/>
+      <name value="specimen"/>
+      <description value="Example of specimen requirement"></description>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
+      </reference>
+      <name value="InputObservation"/>
+      <description value="Example of definition of input observation"></description>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
-      <name value="Example of definition of output observation"/>
+      <name value="OutputObservation"/>
+      <description value="Example of definition of output observation"></description>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <page>

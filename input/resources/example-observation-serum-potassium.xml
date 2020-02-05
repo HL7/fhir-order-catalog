@@ -3,6 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
     <id value="example-observation-serum-potassium"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </meta>
     <language value="en-US"/>
     <text>
         <status value="generated"/>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
     <id value="example-lab-procedure-potassium-serum"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </meta>
     <language value="en-US"/>
     <text>
         <status value="generated"/>
@@ -8,22 +11,28 @@
             <p>Potassium measurement on blood serum</p>
         </div>
     </text>
-    <url value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
+    <!-- <url value="ActivityDefinition/example-lab-procedure-potassium-serum"/> -->
     <identifier>
         <use value="official"/> 
         <value value="K_serum_test"/> 
     </identifier>
-    <version value="0.1"/>
     <name value="PotassiumSerumMeasurementProcedure"/>
     <title value="Procedure - potassium measurement on in vitro blood serum"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-01-24T14:00:00+02:00"/>
     <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"></name>
+        <telecom>
+            <system value="other"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
     <description value="Potassium measurement procedure on in-vitro serum specimen"/>
     <purpose value="This _ActivityDefinition_ specifies the input specimens and observations needed to perform potassium level test on serum, and the output observation.
         
-        It is referenced by any _PlanDefinition_ representing a lab service which includes this test."/>
+        It is referenced by any _PlanDefinition_ representing a lab service focusing on this test."/>
     <effectivePeriod>
         <start value="2020-04-01"/>
         <end value="2020-12-25"/>
@@ -53,6 +62,9 @@
     <specimenRequirement>
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
     </specimenRequirement>
+    <observationRequirement>
+        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    </observationRequirement>
     <observationResultRequirement>
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
     </observationResultRequirement>

@@ -48,6 +48,7 @@
     <element id="ObservationDefinition.code.coding:LOINC">
       <path value="ObservationDefinition.code.coding" />
       <sliceName value="LOINC" />
+      <max value="1" />
     </element>
     <element id="ObservationDefinition.code.coding:LOINC.system">
       <path value="ObservationDefinition.code.coding.system" />

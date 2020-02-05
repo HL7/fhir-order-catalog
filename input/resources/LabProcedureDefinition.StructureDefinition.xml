@@ -106,9 +106,6 @@
       <sliceName value="orderCodeLOINC" />
       <short value="LOINC code for the laboratory procedure" />
       <max value="1" />
-      <fixedCoding>
-        <system value="http://loinc.org" />
-      </fixedCoding>
       <mustSupport value="true" />
     </element>
     <element id="ActivityDefinition.code.coding:orderCodeLOINC.system">

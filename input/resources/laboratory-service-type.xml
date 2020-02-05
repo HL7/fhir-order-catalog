@@ -32,7 +32,7 @@
             <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
-    <description value="test | panel"/>
+    <description value="This value set is restricted to these two codes: test | panel"/>
     <immutable value="false" />
     <compose>
         <include>

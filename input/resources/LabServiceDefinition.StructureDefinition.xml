@@ -316,6 +316,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.action.code:OrderLoinc">
       <path value="PlanDefinition.action.code" />
       <sliceName value="OrderLoinc" />
+      <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
@@ -364,6 +365,9 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <type>
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
+      </type>
+      <type>
+        <code value="uri" />
       </type>
       <mustSupport value="true" />
     </element>

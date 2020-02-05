@@ -41,3 +41,14 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "67098-4",
+  "display" : "Reason for test or procedure"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Reason for test or procedure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

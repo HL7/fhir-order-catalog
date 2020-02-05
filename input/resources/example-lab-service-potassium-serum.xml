@@ -25,17 +25,28 @@
             </coding>
         </valueCodeableConcept>
     </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                <code value="1608"/>
+                <display value="SANG : POTASSIUM (K)"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
-        <valueString value="The CPT code above is fake"/>
+        <valueString value="The billing codes above illustrate coding in two countries/jurisdictions"/>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary">
+        <valueString value="No specific limitation for this test"/>
     </extension>
     <identifier>
         <use value="official"/> 
         <value value="K_serum_test"/> 
     </identifier>
-    <version value="0.1"/>
     <name value="PotassiumSerumMeasurement"/>
     <title value="Potassium measurement on in vitro blood serum"/>
     <type>
@@ -47,7 +58,7 @@
     </type>
     <status value="draft"/>
     <experimental value="true"/>
-    <date value="2020-01-17T16:00:00+02:00"/>
+    <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
     <description value="Potassium measurement on serum specimen"/>
     <useContext>
@@ -75,6 +86,20 @@
             <system value="http://snomed.info/sct"/>
             <code value="166312007"/>
             <display value="Blood chemistry"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
+            <code value="BIOCHBM"/>
+            <display value="Biochimie générale et spécialisée"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+            <code value="13-01"/>
+            <display value="BIOCHIMIE - SANG"/>
         </coding>
     </topic>
     <relatedArtifact>
