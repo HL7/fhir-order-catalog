@@ -19,7 +19,7 @@
     </extension>
     -->
     <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/laboratory-service-type" />
-    <version value="4.0.0" />
+    <version value="4.0.1" />
     <name value="LaboratoryServiceType" />
     <title value="Types of diagnostic services performed by a laboratory"/>
     <status value="active" />

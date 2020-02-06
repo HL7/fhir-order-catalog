@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="This extension to PlanDefinition conveys the textual summary of the limitations associated with the laboratory procedure represented by the PlanDefinition instance. These limitations may for instance exclude some patient conditions of medications, incompatible with the diagnostic procedure." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

@@ -18,7 +18,7 @@
   </extension>
   -->
   <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/bibliography-artifact-type" />
-  <version value="4.0.0" />
+  <version value="4.0.1" />
   <name value="BibliographyArtifactType" />
   <title value="Types of bibliographic artifacts"/>
   <status value="active" />

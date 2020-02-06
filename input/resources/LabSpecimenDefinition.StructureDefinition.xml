@@ -14,7 +14,7 @@
   </contact>
   <description value="The LabSpecimenDefinition profile constrains the SpecimenDefinition resource to represent definitions of IVD specimens attached to laboratory procedures described in catalogs of laboratory services using these procedures and specimens." />
   <purpose value="This profile only sets MustSupport on the minimal data of a SpecimenDefinition used in a laboratory compendium." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />

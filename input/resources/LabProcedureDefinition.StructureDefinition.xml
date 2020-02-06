@@ -18,7 +18,7 @@
   </contact>
   <description value="This profile constrains ActivityDefinition to represent the definition of a laboratory diagnostic procedure (test or panel) to be performed on one or more biological/digital specimens.&#xD;&#xA;The ActivityDefinition resource declares the observations that are expected as input to the procedure, the kinds of specimens to be collected, and the observations produced as output.&#xD;&#xA;Such a definition can be used in a laboratory compendium as well as in other contexts." />
   <purpose value="ActivityDefinition defines the various pieces of the definition of a laboratory procedure, such as input observations and biological/material specimens and output observations. For this purpose ActivityDefinition references instances of ObservationDefinition and SpecimenDefinition." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
