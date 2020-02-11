@@ -15,7 +15,7 @@
   </contact>
   <description value="The period [start date, end date]  in which the catalog is valid." />
   <purpose value="This extension uses the datatype Period, unlike the cqm-ValidityPeriod extension, created for Composition in 2014, which uses the datatype dateTime.&#xD;&#xA;Thus this extension enables to state a start date and/or an end date" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

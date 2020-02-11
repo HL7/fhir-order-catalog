@@ -35,8 +35,18 @@
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -47,7 +57,7 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="ChargeItemDefinition" />
+        <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition" />
         <aggregation value="referenced" />
       </type>
     </element>

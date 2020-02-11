@@ -13,7 +13,7 @@
     </telecom>
   </contact>
   <description value="This profile constrains the base resource ObservationDefinition when referenced by ActivityDefinition.observationResultRequirement in the context of a catalog of laboratory services. Such a resource specifies the form of an output observation produced by a laboratory service." />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />

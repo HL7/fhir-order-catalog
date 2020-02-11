@@ -21,6 +21,7 @@ An instance of Composition profiled by CatalogHeader  does not mention the catal
   </contact>
   <description value="This profile of Compositions retains the elements and extensions needed to characterize a catalog of healthace products / services / knowledge artefacts, with a set of general properties (name, category, owner, ...)" />
   <purpose value="An instance of Composition conforming to this profile represents the general properties of a specific catalog of healthcare items (services/products/knowledge artefacts).&#xD;&#xA;Such a resource is referenced by the resources representing the individual items of the catalog." />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
