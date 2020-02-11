@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
+    <id value="example-lab-blood-electrolyte"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>Blood electrolyte procedure on serum or plasma</p>
+        </div>
+    </text>
+    <!-- <url value="ActivityDefinition/example-lab-blood-electrolyte"/> -->
+     <name value="BloodElectrolyteProcedure"/>
+    <title value="Procedure - blood electrolyte (serum or plasma)"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-11T14:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"></name>
+        <telecom>
+            <system value="other"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="Na, K, Cl level measurements on serum or plasma"/>
+    <purpose value="This _ActivityDefinition_ specifies the input specimens and input and output observations for blood electrolyte.     
+        It is referenced by any _PlanDefinition_ representing a lab service incorporating this procedure."/>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="166312007"/>
+            <display value="Blood chemistry"/>
+        </coding>
+    </topic>
+    <kind value="ServiceRequest"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="24326-1"/>
+            <display value="Electrolytes 1998 panel - Serum or Plasma"/>
+        </coding>
+    </code>
+    <specimenRequirement>
+        <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
+    </specimenRequirement>
+    <observationRequirement>
+        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    </observationRequirement>
+    <observationResultRequirement>
+        <reference value="ObservationDefinition/example-observation-serum-sodium"/>
+    </observationResultRequirement>
+    <observationResultRequirement>
+        <reference value="ObservationDefinition/example-observation-serum-potassium"/>
+    </observationResultRequirement>
+    <observationResultRequirement>
+        <reference value="ObservationDefinition/example-observation-serum-chloride"/>
+    </observationResultRequirement>
+</ActivityDefinition>

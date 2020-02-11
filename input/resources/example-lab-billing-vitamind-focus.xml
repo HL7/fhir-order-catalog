@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChargeItemDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/chargeitemdefinition.xsd">
+    <id value="example-lab-billing-vitamind-focus"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"
+        />
+    </meta>
+    <language value="fr-FR"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR">
+            <p>codage affiné et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale</p>
+        </div>
+    </text>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ChargeItemDefinition/nabm1139"/>
+    <title value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
+    <status value="active"/>
+    <date value="2019-10-18"/>
+    <publisher value="CNAMTS"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ameli.fr"/>
+        </telecom>
+    </contact>
+    <description
+        value="Propriétés détaillées du code NABM *1139* - *Dosage de la 25-(OH)-vitamine D (D2 + D3)*"/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="41345002"/>
+                <display value="rachitisme"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="4598005"/>
+                <display value="ostéomalacie"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="737295003"/>
+                <display value="transplanté rénal"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>   
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="707206008"/>
+                <display value="évaluation en rapport avec chirurgie bariatrique"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="443731004"/>
+                <display value="évaluation du score de risque de chute d'une personne âgée"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="objet d'attention clinique"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="182817000"/>
+                <display value="sous prescription de traitement médicamenteux"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <coding>
+            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+            <code value="1139"/>
+            <display value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
+        </coding>
+    </code>
+    <propertyGroup>
+        <priceComponent>
+            <type value="base"/>
+            <code>
+                <coding>
+                    <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                    <code value="B"/>
+                </coding>
+            </code>
+            <factor value="35"/>
+        </priceComponent>
+    </propertyGroup>
+</ChargeItemDefinition>

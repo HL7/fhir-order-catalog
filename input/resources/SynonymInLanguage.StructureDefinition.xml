@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
+  <name value="SynonymInLanguage" />
+  <title value="Synonym in a chosen language" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This extension PlanDefinition provides the capability to provide synonyms in various languages to the title of the contextual resource" />
+  <purpose value="This extension created for order catalogs is usable by Composition, PlanDefinition and  ActivityDefinition in R4.&#xD;&#xA;In R5, it will also be usable by SpecimenDefinition and ObservationDefinition. &#xD;&#xA;It could be made a core extension so as to be usable for any resource needing to provide synonyms in various languages for its name or title" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="PlanDefinition.title" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="ActivityDefinition.title" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Composition.title" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:Synonym">
+      <path value="Extension.extension" />
+      <sliceName value="Synonym" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Synonym.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Synonym" />
+    </element>
+    <element id="Extension.extension:Synonym.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:Language">
+      <path value="Extension.extension" />
+      <sliceName value="Language" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Language.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Language" />
+    </element>
+    <element id="Extension.extension:Language.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="Common languages" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

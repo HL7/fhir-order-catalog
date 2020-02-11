@@ -94,7 +94,12 @@
     <li><a href="ordersets.html">Specification - Order sets</a> - specifies the FHIR resources implemented by a library of order sets. </li>
     <li><a href="drugs.html">Specification - Medications</a> - specifies the FHIR resources implemented by a catalog of drugs, including medication formularies. </li>
     <li><a href="devices.html">Specification - Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
-    <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information </li>
+    <li><a href="exlabservices.html">Examples - Laboratory services</a> - presents examples for compendia of laboratory diagnostic services. </li>
+    <li><a href="exordersets.html">Examples - Order sets</a> - presents examples for libraries of order sets. </li>
+    <li><a href="exdrugs.html">Examples - Medications</a> - presents examples for catalogs of drugs. </li>
+    <li><a href="exdevices.html">Use casesExamples - Devices</a> - presents examples for catalogs of devices. </li>
+    <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built for this implementation guide: semantic resources, profiles, extensions, examples. </li>
+    <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information. </li>
   </ul>
   <h3>Authors and Contributors</h3>
   <table>

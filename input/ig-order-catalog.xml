@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200205T2015"/>
+  <version value="20200211T2055"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -103,6 +103,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/SynonymInLanguage"/>
+      </reference>
+      <name value="Synonym in a chosen language"/>
+      <description value="Synonym provided in a chosen language for the title element of a resource"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabChargeItemDefinition"/>
+      </reference>
+      <name value="Service billing code and rules"/>
+      <description value="A billing code and its detailed properties and rules of applicability"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/CatalogHeader"/>
       </reference>
       <name value="Catalog Header"/>
@@ -113,7 +127,7 @@
         <reference value="Composition/example-lab-compendium-header"/>
       </reference>
       <name value="Example of clinical laboratory catalog"/>
-      <description value="example of catalog header representing a lab test/panels compendium"/>
+      <description value="Catalog header representing a lab compendium, used by all lab examples"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
@@ -127,8 +141,16 @@
       <reference>
         <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
       </reference>
-      <name value="Example of laboratory service of type test"/>
-      <description value="example of a simple test laboratory service"/>
+      <name value="Lab E1: laboratory service serum K"/>
+      <description value="Lab E1 - simple test laboratory service - serum K"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-panel-blood-electrolyte"/>
+      </reference>
+      <name value="Lab E2: laboratory service blood electrolyte"/>
+      <description value="Lab E2 - panel laboratory service - electrolyte on blood or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
@@ -142,8 +164,16 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
-      <name value="Example of laboratory procedure"/>
-      <description value="example of a simple test laboratory procedure"/>
+      <name value="Lab E1: laboratory procedure serum K"/>
+      <description value="Lab E1 - simple test laboratory procedure - serum K"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-blood-electrolyte"/>
+      </reference>
+      <name value="Lab E2: laboratory procedure blood electrolyte"/>
+      <description value="Lab E2 - panellaboratory procedure - electrolyte - serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
@@ -171,32 +201,64 @@
       <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
-      <name value="laboratory"/>
+      <name value="Example of laboratory organization"/>
       <description value="Example of laboratory as an organization"/>
      </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
       </reference>
-      <name value="specimen"/>
-      <description value="Example of specimen requirement"></description>
+      <name value="Lab E1: serum specimen definition - test K"/>
+      <description value="Lab E1 - specimen requirement for serum K test"></description>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
+      </reference>
+      <name value="Lab E2: serum or plasma specimen"/>
+      <description value="Lab E2 - specimen requirement for tests and panels on serum or plasma"></description>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
       </reference>
-      <name value="InputObservation"/>
-      <description value="Example of definition of input observation"></description>
+      <name value="Lab E1, E2:  input observation - reason"/>
+      <description value="Lab E1, E2 - definition of input observation reason for test order"></description>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-serum-sodium"/>
+      </reference>
+      <name value="Lab E2: lab observation serum Na"/>
+      <description value="Lab E2 - definition of output observation Na on serum"></description>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
-      <name value="OutputObservation"/>
-      <description value="Example of definition of output observation"></description>
+      <name value="Lab E1, E2: lab observation serum K"/>
+      <description value="Lab E1, E2 - definition of output observation K on serum"></description>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-serum-chloride"/>
+      </reference>
+      <name value="Lab E2: lab observation serum Cl"/>
+      <description value="Lab E2 - definition of output observation Cl on serum"></description>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
+      </reference>
+      <name value="Lab E6: billing code and rule for vitamin D"/>
+      <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"></description>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
@@ -246,6 +308,26 @@
       <page>
         <nameUrl value="devices.html"/>
         <title value="Spec - Devices"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="exlabservices.html"/>
+        <title value="Examples - Laboratory services"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="exordersets.html"/>
+        <title value="Examples - Order sets"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="exdrugs.html"/>
+        <title value="Examples - Medications"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="exdevices.html"/>
+        <title value="Examples - Devices"/>
         <generation value="html"/>
       </page>
       <page>

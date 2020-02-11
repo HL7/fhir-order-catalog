@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
+    <id value="example-lab-panel-blood-electrolyte"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>Blood electrolyte panel measured on serum or plasma</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
+        <valueReference>
+            <reference value="Composition/example-lab-compendium-header"/>
+        </valueReference>
+    </extension>
+     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                <code value="1609"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
+        <valueString value="reimbursable"/>
+     </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
+        <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary">
+        <valueString value="No specific limitation for this panel"/>
+    </extension>
+    <name value="BloodElectrolytePanel"/>
+    <title value="Blood electrolyte panel (serum or plasma)"/>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
+            <code value="panel"/>
+            <display value="collection of tests and panels performed on one or more in vitro biologic specimens"/>
+        </coding>
+    </type>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-11T20:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <description value="Potassium measurement on serum specimen"/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="task"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="LABOE"/>
+                <display value="laboratory test order entry task"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <topic>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="18719-5"/>
+            <display value="Chemistry studies (set)"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="166312007"/>
+            <display value="Blood chemistry"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
+            <code value="BIOCHBM"/>
+            <display value="Biochimie générale et spécialisée"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+            <code value="13-01"/>
+            <display value="BIOCHIMIE - SANG"/>
+        </coding>
+    </topic>
+    <action>
+        <priority value="routine"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="24326-1"/>
+                <display value="Electrolytes 1998 panel - Serum or Plasma"/>
+            </coding>
+        </code>
+        <timingDuration>
+            <value value="30"/>
+            <unit value="minutes"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mn"/>
+        </timingDuration>
+        <definitionCanonical value="ActivityDefinition/example-lab-blood-electrolyte"/>
+    </action>
+</PlanDefinition>

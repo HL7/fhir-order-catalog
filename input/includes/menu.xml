@@ -21,6 +21,16 @@
       <li><a href="devices.html">Devices</a></li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="exlabservices.html">Laboratory services</a></li>
+      <li><a href="exordersets.html">Order sets</a></li>
+      <li><a href="exdrugs.html">Medications</a></li>
+      <li><a href="exdevices.html">Devices</a></li>
+    </ul>
+  </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret"> </b>

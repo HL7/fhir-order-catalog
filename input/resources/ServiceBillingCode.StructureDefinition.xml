@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ServiceBillingCode" />
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
-  <version value="0.0.1" />
+  <version value="0.1.0" />
   <name value="ServiceBillingCode" />
   <title value="Healthcare Service Billing Code" />
   <status value="draft" />
@@ -13,9 +13,9 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="This extension to PlanDefinition conveys a billing code associated with the service represented by the PlanDefinition instance." />
+  <description value="This extension to PlanDefinition conveys a billing code associated with the service represented by the PlanDefinition instance. It may also reference the billing rules associated with this code as a ChargeItemDefinition" />
   <purpose value="This extension to PlanDefinition is usable for potentially any kind of service or protocole represented by an instance of PlanDefinition" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -35,10 +35,20 @@
       <path value="Extension.url" />
       <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="ChargeItemDefinition" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>

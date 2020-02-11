@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
+    <id value="example-observation-serum-chloride"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"
+        />
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>K level observation in blood</p>
+        </div>
+    </text>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="2075-0"/>
+            <display value="chloride [Moles/volume] in Serum or Plasma"/>
+        </coding>
+    </code>
+    <permittedDataType value="Quantity"/>
+    <permittedDataType value="string"/>
+    <multipleResultsAllowed value="false"/>
+    <method>
+        <text value="Ion Selective Electrode (ISE)"/>
+    </method>
+    <preferredReportName value="chloride"/>
+    <quantitativeDetails>
+        <customaryUnit>
+            <coding>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g/L"/>
+            </coding>
+        </customaryUnit>
+        <unit>
+            <coding>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </coding>
+        </unit>
+        <decimalPrecision value="0"/>
+    </quantitativeDetails>
+    <qualifiedInterval>
+        <category value="reference"/>
+        <range>
+            <low>
+                <value value="98"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </low>
+            <high>
+                <value value="106"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </high>
+        </range>
+        <context>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="normal"/>
+                <display value="Normal Range"/>
+            </coding>
+        </context>
+    </qualifiedInterval>
+</ObservationDefinition>
