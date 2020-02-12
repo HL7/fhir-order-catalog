@@ -51,7 +51,7 @@
     <title value="Potassium measurement on in vitro blood serum">
         <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage">
             <extension url="Synonym">
-                <valueString value="Dosage du sérum sérique"/>
+                <valueString value="Dosage du potassium sérique"/>
             </extension>
             <extension url="Language">
                 <valueCode value="fr-FR"/>
