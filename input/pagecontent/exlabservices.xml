@@ -138,4 +138,70 @@
 			</tr>
 		</tbody>
 	</table>
+	<a name="LabE3"> </a>
+	<h3>E3: creatinine on 24H urine - orderable panel</h3>
+	<p> This example illustrates the representation of a panel of tests in the laboratory
+		compendium, using some observations both as input and output. The figure below displays the business content. </p>
+	<img src="LabExampleE3Business.png" alt="Example E3 - business content" width="400px"/>
+	<p>The figure below displays the FHIR technical implementation of the business content. </p>
+	<img src="LabExampleE3Technical.png" alt="Example E3 - FHIR implementation" width="600px"/>
+	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
+		collection of test of panels, which usually produces multiple results. </p> 
+	<p>Artifacts implementing this example: </p> 
+	<table>
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Laboratory compendium</td>
+				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+			</tr>
+			<tr>
+				<td>24-hour urine creatinine panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-blood-electrolyte.html">example-lab-panel-urine24h-creatinine</a></td>
+			</tr>
+			<tr>
+				<td>24-hour urine creatinine panel - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-blood-electrolyte.html">example-lab-urine24h-creatinine</a></td>
+			</tr>
+			<tr>
+				<td>24-hour urine specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-serum-plasma.html">example-specimen-urine-24h</a></td>
+			</tr>
+			<tr>
+				<td>urine collection duration - input/output observation</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> 
+					<a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-observation-collection-duration</a></td>
+			</tr>
+			<tr>
+				<td>24-hour urine volume - input/output observation</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> 
+					<a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-sodium.html">example-observation-collection-volume</a></td>
+			</tr>
+			<tr>
+				<td>24-hour urine creatinine - lab result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-urine24h-creatinine</a></td>
+			</tr>
+		</tbody>
+	</table>
 </div>

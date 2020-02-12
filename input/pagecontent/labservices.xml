@@ -39,10 +39,10 @@
     (<a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> for
     observations expected from the ordering clinician, and <a href="StructureDefinition-LabObservationDefinition.html">
       LabObservationDefinition</a> for observations produced by the lab service and reported back to the clinician), 
-    with their quantitative (units, deciman precision, conversion factor, normal and therapeutic ranges) and/or 
+    with their quantitative (units, decimal precision, conversion factor, normal and therapeutic ranges) and/or 
     qualitative (authorized values, normal values, critical values, preferred report name) characteristics.</p>
   <p>Specimens required by the service are defined as instances of SpecimenDefinition conformant to the 
-    (<a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition profile</a>, which enables to
+    <a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition profile</a>, which enables to
     describe patient preparation requirements, collection procedures, types of containers to be used, 
     minimum volume needed, rejection criteria, retention time, handling requirements before testing. 
     An instance of SpecimenDefinition may specify one preferred testable specimen and multiple alternates, 

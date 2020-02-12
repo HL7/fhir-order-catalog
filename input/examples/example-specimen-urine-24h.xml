@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpecimenDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/specimendefinition.xsd">
+    <id value="example-specimen-urine-24h"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>24-hour urine specimen for various laboratory tests and panels</p>
+        </div>
+    </text>
+    <collection>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="2475000"/>
+            <display value="Urine specimen collection, 24 hours (procedure)"/>
+        </coding>
+    </collection>
+    <typeTested>
+        <type>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="122575003"/>
+                <display value="Urine specimen (specimen)"/>
+            </coding>
+        </type>
+        <preference value="preferred"/>
+        <container>
+             <type>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="706055000"></code>
+                    <display value="24-hour urine specimen container (physical object)"/>
+                </coding>
+            </type>
+        </container>
+        <handling>
+            <temperatureQualifier>
+                <text value="room temperature"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="2"/>
+                <unit value="hour"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="h"/>
+            </maxDuration>
+        </handling>
+        <handling>
+            <temperatureQualifier>
+                <text value="refrigerated"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="24"/>
+                <unit value="hour"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="h"/>
+            </maxDuration>
+        </handling>
+    </typeTested>
+</SpecimenDefinition>

@@ -13,7 +13,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="This profile constrains the usage of ChargeItemDefinition to represent the rules and other properties associated with the billing code bound to a laboratory in vitro diagnostic service" />
+  <description value="This profile constrains the usage of ChargeItemDefinition to represent the rules and other properties attached to a billing code used by a laboratory service" />
   
   <mapping>
     <identity value="rim" />

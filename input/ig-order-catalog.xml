@@ -263,6 +263,54 @@
     </resource>
     <resource>
       <reference>
+        <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
+      </reference>
+      <name value="Lab E3: laboratory service 24-hour urine creatinine"/>
+      <description value="Lab E3 - panel laboratory service - creatinine on 24-hour urine specimen"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+      </reference>
+      <name value="Lab E3: laboratory procedure 24H urine creatinine"/>
+      <description value="Lab E3 - panel laboratory procedure - 24-hour urine creatinine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
+      </reference>
+      <name value="Lab E3: 24-hour urine specimen"/>
+      <description value="Lab E3 - specimen requirement for tests and panels on 24-hour urine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-collection-duration"/>
+      </reference>
+      <name value="Lab E3: input observation collection duration"/>
+      <description value="Lab E3 - definition of input/output observation urine collection duration"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-collection-volume"/>
+      </reference>
+      <name value="Lab E3: input observation urine collection volume"/>
+      <description value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-urine24h-creatinine"/>
+      </reference>
+      <name value="Lab E3: output observation urine creatinine"/>
+      <description value="Lab E3 - definition of lab observation 24-hour urine creatinine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
       </reference>
       <name value="Lab E6: billing code and rule for vitamin D"/>
