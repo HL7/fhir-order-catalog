@@ -13,7 +13,6 @@
     </telecom>
   </contact>
   <description value="This profile constrains the base resource ObservationDefinition when referenced by ActivityDefinition.observationResultRequirement in the context of a catalog of laboratory services. Such a resource specifies the form of an output observation produced by a laboratory service." />
-  
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -56,6 +55,30 @@
     </element>
     <element id="ObservationDefinition.permittedDataType">
       <path value="ObservationDefinition.permittedDataType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ObservationDefinition.multipleResultsAllowed">
+      <path value="ObservationDefinition.multipleResultsAllowed" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ObservationDefinition.quantitativeDetails">
+      <path value="ObservationDefinition.quantitativeDetails" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ObservationDefinition.quantitativeDetails.unit">
+      <path value="ObservationDefinition.quantitativeDetails.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ObservationDefinition.quantitativeDetails.unit.coding">
+      <path value="ObservationDefinition.quantitativeDetails.unit.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ObservationDefinition.quantitativeDetails.unit.coding.system">
+      <path value="ObservationDefinition.quantitativeDetails.unit.coding.system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="ObservationDefinition.validCodedValueSet">
+      <path value="ObservationDefinition.validCodedValueSet" />
       <mustSupport value="true" />
     </element>
   </differential>

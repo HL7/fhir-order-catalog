@@ -15,8 +15,8 @@
             <p>codage affiné et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale</p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ChargeItemDefinition/nabm1139"/>
-    <title value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
+    <title value="Dosage de la vitamine D"/>
     <status value="active"/>
     <date value="2019-10-18"/>
     <publisher value="CNAMTS"/>

@@ -86,21 +86,39 @@
   <h3>Walkthrough</h3>
   <p> The main sections of this IG are: </p>
   <ul>
-    <li><a href="uclabservices.html">Use cases - Laboratory services</a> - lists the use cases for compendium of laboratory diagnostic services. </li>
-    <li><a href="ucordersets.html">Use cases - Order sets</a> - lists the use cases for library of order sets. </li>
-    <li><a href="ucdrugs.html">Use cases - Medications</a> - lists the use cases for catalog of drugs. </li>
-    <li><a href="ucdevices.html">Use cases - Devices</a> - lists the use cases for catalog of devices. </li>
-    <li><a href="labservices.html">Specification - Laboratory services</a> - specifies the FHIR resources implemented by a compendium of laboratory diagnostic services. </li>
-    <li><a href="ordersets.html">Specification - Order sets</a> - specifies the FHIR resources implemented by a library of order sets. </li>
-    <li><a href="drugs.html">Specification - Medications</a> - specifies the FHIR resources implemented by a catalog of drugs, including medication formularies. </li>
-    <li><a href="devices.html">Specification - Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
-    <li><a href="exlabservices.html">Examples - Laboratory services</a> - presents examples for compendia of laboratory diagnostic services. </li>
-    <li><a href="exordersets.html">Examples - Order sets</a> - presents examples for libraries of order sets. </li>
-    <li><a href="exdrugs.html">Examples - Medications</a> - presents examples for catalogs of drugs. </li>
-    <li><a href="exdevices.html">Use casesExamples - Devices</a> - presents examples for catalogs of devices. </li>
-    <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built for this implementation guide: semantic resources, profiles, extensions, examples. </li>
-    <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information. </li>
+    <li title="Use cases"><strong>Use cases</strong>
+      <ul>
+        <li><a href="uclabservices.html">Laboratory services</a> - lists the use cases for compendium of laboratory diagnostic services. </li>
+        <li><a href="ucordersets.html">Order sets</a> - lists the use cases for library of order sets. </li>
+        <li><a href="ucdrugs.html">Medications</a> - lists the use cases for catalog of drugs. </li>
+        <li><a href="ucdevices.html">Devices</a> - lists the use cases for catalog of devices. </li>
+      </ul>
+    </li>
+    <li title="Specifications"><strong>Specifications</strong>
+      <ul>
+        <li><a href="labservices.html">Laboratory services</a> - specifies the FHIR resources implemented by a compendium of laboratory diagnostic services. </li>
+        <li><a href="ordersets.html">Order sets</a> - specifies the FHIR resources implemented by a library of order sets. </li>
+        <li><a href="drugs.html">Medications</a> - specifies the FHIR resources implemented by a catalog of drugs, including medication formularies. </li>
+        <li><a href="devices.html">Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
+      </ul>
+    </li>
+    <li title="Examples"><strong>Examples</strong>
+      <ul>
+        <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia of laboratory diagnostic services. </li>
+        <li><a href="exordersets.html">Order sets</a> - presents examples for libraries of order sets. </li>
+        <li><a href="exdrugs.html">Medications</a> - presents examples for catalogs of drugs. </li>
+        <li><a href="exdevices.html">Devices</a> - presents examples for catalogs of devices. </li>
+      </ul>
+    </li>
+    <li title="Examples"><strong>Building blocks &amp; assets</strong>
+      <ul>
+        <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built for this implementation guide: semantic resources, profiles, extensions, examples. </li>
+        <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information. </li>
+      </ul>
+    </li>
   </ul>
+  <br/>
+  <a name="authors"> </a>
   <h3>Authors and Contributors</h3>
   <table>
     <thead>
@@ -112,32 +130,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>Publishing Facilitator</strong></td>
+        <td>Publishing Facilitator</td>
         <td>Rob Hausam</td>
         <td>Hausam Consulting LLC</td>
       </tr>
       <tr>
-        <td><strong>Primary Editor</strong></td>
+        <td>Primary Editor</td>
         <td>François Macary</td>
         <td>Phast</td>
       </tr>
       <tr>
-        <td><strong>Contributor</strong></td>
+        <td>Contributor</td>
         <td>Freida Hall</td>
         <td>Quest Diagnostics</td>
       </tr>
       <tr>
-        <td><strong>Contributor</strong></td>
+        <td>Contributor</td>
         <td>Gary Randman</td>
         <td>Quest Diagnostics</td>
       </tr>
       <tr>
-        <td><strong>Contributor</strong></td>
+        <td>Contributor</td>
         <td>Kathy Walsh</td>
         <td>LabCorp</td>
       </tr>
       <tr>
-        <td><strong>Contributor</strong></td>
+        <td>Contributor</td>
         <td>Andrea Pitkus</td>
         <td>U of Wisconsin</td>
       </tr>

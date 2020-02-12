@@ -3,23 +3,23 @@
 	<p>This section presents the examples of catalogs of laboratory diagnostic services. Rather than
 		showing full details of the resources built, each example focuses on the key elements
 		illustrating the FHIR design of laboratory catalogs. The full details for each resource
-		built can be viewed in the <a href="artifacts.html#example-example-instances">Artifact Index
-			example section</a></p>
-	<p>The examples are indexed E1, E2, E3, ...</p>	
-	
+		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the example section.</p>
+	<p>The examples are indexed E1, E2, E3, ...</p>
+	<a name="LabE1"> </a>
 	<h3>E1: Blood potassium level - orderable single test</h3>
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
 		compendium. The figure below displays the business content. </p>
-	<img src="LabExampleE1Business.png" alt="Example E1 - business content" width="600px"/>
+	<img src="LabExampleE1Business.png" alt="Example E1 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE1Technical.png" alt="Example E1 - FHIR implementation" width="600px"/>
-	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a single measurement.
-		As shown in this example, the notion of <i>orderability</i> is represented by a predefined
-		context of usage:  &quot;<i>service associated with task 'laboratory order entry'</i>&quot;. A
-		service is orderable if and only if the PlanDefinition representing it includes a useContext
-		element with code = &quot;task&quot; and valueCodeableConcept = &quot;LABOE&quot; from the
-		V3 ActCode vocabulary. </p>
-	Artifacts implementing this example
+	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
+		single measurement. As shown in this example, the notion of <i>orderability</i> is
+		represented by a predefined context of usage: &quot;<i>service associated with laboratory
+			order entry task</i>&quot;. A service is orderable if and only if the PlanDefinition
+		representing it includes a useContext element with code = &quot;task&quot; and
+		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry) from the V3 ActCode
+		vocabulary. </p> 
+	<p>Artifacts implementing this example: </p>
 	<table>
 		<thead>
 			<tr>
@@ -68,15 +68,16 @@
 			</tr>
 		</tbody>
 	</table>
+	<a name="LabE2"> </a>
 	<h3>E2: Blood electrolyte - orderable panel</h3>
 	<p> This example illustrates the representation of a panel of tests in the laboratory
 		compendium. The figure below displays the business content. </p>
-	<img src="LabExampleE2Business.png" alt="Example E2 - business content" width="600px"/>
+	<img src="LabExampleE2Business.png" alt="Example E2 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE2Technical.png" alt="Example E2 - FHIR implementation" width="600px"/>
-	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A
-		panel is a collection of test of panels, which usually produces multiple results. </p>
-	Artifacts implementing this example
+	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
+		collection of test of panels, which usually produces multiple results. </p> 
+	<p>Artifacts implementing this example: </p> 
 	<table>
 		<thead>
 			<tr>
@@ -89,7 +90,7 @@
 		<tbody>
 			<tr>
 				<td>Laboratory compendium</td>
-				<td><a href="http://hl7.org/fhir/composition.html"></a>Composition</td>
+				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
 				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
 			</tr>
@@ -109,7 +110,7 @@
 				<td>Serum or plasma specimen</td>
 				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
 				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-serum.html">example-specimen-serum-plasma</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-serum-plasma.html">example-specimen-serum-plasma</a></td>
 			</tr>
 			<tr>
 				<td>Reason for test - input observation</td>

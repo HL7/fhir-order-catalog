@@ -210,8 +210,8 @@
       <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
-      <name value="Example of laboratory organization"/>
-      <description value="Example of laboratory as an organization, used by all laboratory examples of this implementation guide"/>
+      <name value="Lab E*: A laboratory Organization"/>
+      <description value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"/>
     </resource>
     <resource>
       <reference>

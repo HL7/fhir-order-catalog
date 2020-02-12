@@ -48,7 +48,16 @@
         <value value="K_serum_test"/> 
     </identifier>
     <name value="PotassiumSerumMeasurement"/>
-    <title value="Potassium measurement on in vitro blood serum"/>
+    <title value="Potassium measurement on in vitro blood serum">
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage">
+            <extension url="Synonym">
+                <valueString value="Dosage du sérum sérique"/>
+            </extension>
+            <extension url="Language">
+                <valueCode value="fr-FR"/>
+            </extension>
+        </extension>
+    </title>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>

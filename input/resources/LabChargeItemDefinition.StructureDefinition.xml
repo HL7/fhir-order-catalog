@@ -41,6 +41,24 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="ChargeItemDefinition.title.extension">
+      <path value="ChargeItemDefinition.title.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ChargeItemDefinition.title.extension:LanguageSynonym">
+      <path value="ChargeItemDefinition.title.extension" />
+      <sliceName value="LanguageSynonym" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
+      </type>
+    </element>
     <element id="ChargeItemDefinition.useContext">
       <path value="ChargeItemDefinition.useContext" />
       <slicing>
@@ -55,7 +73,7 @@
     <element id="ChargeItemDefinition.useContext:ClinicalFocus">
       <path value="ChargeItemDefinition.useContext" />
       <sliceName value="ClinicalFocus" />
-      <definition value="The billing code is associated with a clinical focus which must be stated in the order requesting the laboratory service bound to this billing code. " />
+      <definition value="The billing code is associated with a clinical focus which must be stated in the order requesting the laboratory service bound to this billing code." />
       <comment value="Usually, the order conveys the clinical focus of the order as an input observation accompanying the order.&#xD;&#xA;If multiple clinical focus are stated in the ChargeItemDefinition the expectation is that the order convey at least one of these clinical focus so that the billing code become applicable." />
       <patternUsageContext>
         <code>

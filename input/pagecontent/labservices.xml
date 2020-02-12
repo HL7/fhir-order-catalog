@@ -2,10 +2,11 @@
   xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   <p>This page provides the detailed specifications for catalogs of laboratory diagnostic
     services.</p>
+  <a name="LabServicesResourcesProfiles"> </a>
   <h3>Resources and Profiles</h3>
   <p> The figure below shows the resources and profiles used to represent catalogs of laboratory
     diagnostic services </p>
-  <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="800px"/>
+  <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="700px"/>
   
   <p>Catalogs of laboratory services use exclusively the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader profile </a> for the resource
     Composition. In other words, for binding a laboratory catalog to its items, only method 2 is

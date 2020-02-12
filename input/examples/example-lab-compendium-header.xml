@@ -29,13 +29,11 @@
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/catalogType"/>
-            <!--  New concepts to be added to catalogType
-            <code value="laboratory"/>
-            <display value="laboratory service catalog"/>
-            Temporary replacement below:
+            <!--  
+                New concept to be added to catalogType CodeSystem: <code value="laboratory"/> <display value="laboratory service catalog"/>
+                Temporary replacement below:
             -->
-            <code value="laboratory"/>
-            <display value="laboratory service"/>
+            <code value="protocol"/>
         </coding>
     </category>
     <date value="2020-01-17T17:00:00+02:00"/>
