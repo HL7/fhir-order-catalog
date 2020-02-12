@@ -15,7 +15,7 @@
   </contact>
   <description value="This extension to PlanDefinition conveys a billing code associated with the service represented by the PlanDefinition instance. It may also reference the billing rules associated with this code as a ChargeItemDefinition" />
   <purpose value="This extension to PlanDefinition is usable for potentially any kind of service or protocole represented by an instance of PlanDefinition" />
-  <fhirVersion value="4.0.0" />
+  
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

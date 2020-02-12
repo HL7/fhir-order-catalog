@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="This profile constrains the usage of ChargeItemDefinition to represent the rules and other properties associated with the billing code bound to a laboratory in vitro diagnostic service" />
-  <fhirVersion value="4.0.0" />
+  
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

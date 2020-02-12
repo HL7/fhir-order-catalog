@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200211T2055"/>
+  <version value="20200212T1200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -19,17 +19,13 @@
     </telecom>
   </contact>
   <description
-    value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or knowledge artifacts such as order sets, which support the ordering process, or more generally the healthcare process."/>
+    value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or knowledge artifacts such as order sets, which support the ordering process, or more generally healthcare processes."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
       <!-- This is the code for universal -->
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
-      <!-- Change to this if the IG is country-specific
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-      -->
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.order-catalog"/>
@@ -38,104 +34,145 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <!-- 
+      Below, the semantic resources 
+    -->
     <resource>
       <reference>
         <reference value="CodeSystem/laboratory-service-definition-type"/>
       </reference>
-      <name value="Laboratory service type"/>
+      <name value="Laboratory service type CodeSystem"/>
       <description value="Code system for types of laboratory service"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/laboratory-service-type"/>
       </reference>
-      <name value="Laboratory service type"/>
-      <description value="Value set of types of laboratory service"/>
+      <name value="Laboratory service type ValueSet"/>
+      <description value="Value set for types of laboratory service in the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/bibliography-artifact-type"/>
       </reference>
-      <name value="Bibliographic artifact"/>
-      <description value="Type of bibliographic artifact"/>
+      <name value="Bibliographic artifact ValueSet"/>
+      <description value="Restrained value set for types of bibliographic artifact in the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
+    <!-- 
+      Below, the extensions 
+    -->
     <resource>
       <reference>
         <reference value="StructureDefinition/ValidityPeriod"/>
       </reference>
-      <name value="Validity Period"/>
-      <description value="Validity period of the catalog"/>
+      <name value="Validity Period Extension"/>
+      <description value="Extension adding catalog validity period to the CatalogHeader profile of Composition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogReference"/>
       </reference>
-      <name value="Reference to catalog"/>
-      <description value="Reference to catalog"/>
+      <name value="Reference to catalog Extension"/>
+      <description value="Extension adding catalog reference to the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/BillingSummary"/>
       </reference>
-      <name value="Billing summary"/>
-      <description value="Billing summary for the service"/>
+      <name value="Billing summary Extension"/>
+      <description value="Extension adding a billing summary to the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ScheduleSummary"/>
       </reference>
-      <name value="Schedule summary"/>
-      <description value="Schedule summary for the service"/>
+      <name value="Schedule summary Extension"/>
+      <description value="Extension adding a service schedule summary to the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LimitationSummary"/>
       </reference>
-      <name value="Limitation summary"/>
-      <description value="Limitation summary for the service"/>
+      <name value="Limitation summary Extension"/>
+      <description value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ServiceBillingCode"/>
       </reference>
-      <name value="Service billing code"/>
-      <description value="Billing code for the service"/>
+      <name value="Service billing code Extension"/>
+      <description value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/SynonymInLanguage"/>
       </reference>
-      <name value="Synonym in a chosen language"/>
-      <description value="Synonym provided in a chosen language for the title element of a resource"/>
+      <name value="Synonym in a chosen language Extension"/>
+      <description value="Extension adding a synonym  in a chosen language for the title element of CatalogHeader, LabServiceDefinition, LabProcedureDefinition profiles"
+      />
     </resource>
+    <!-- 
+      Below, the profiles 
+    -->
     <resource>
       <reference>
         <reference value="StructureDefinition/LabChargeItemDefinition"/>
       </reference>
-      <name value="Service billing code and rules"/>
-      <description value="A billing code and its detailed properties and rules of applicability"/>
+      <name value="Service billing code and rules Profile"/>
+      <description value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogHeader"/>
       </reference>
-      <name value="Catalog Header"/>
-      <description value="Catalog header"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Composition/example-lab-compendium-header"/>
-      </reference>
-      <name value="Example of clinical laboratory catalog"/>
-      <description value="Catalog header representing a lab compendium, used by all lab examples"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+      <name value="Catalog Header Profile"/>
+      <description value="Profile of Composition representing the global properties of a catalog of healthcare items (products, services, knowledge artifacts)"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LabServiceDefinition"/>
       </reference>
-      <name value="Laboratory service"/>
-      <description value="Laboratory diagnostic service definition"/>
+      <name value="Laboratory service Profile"/>
+      <description value="Profile of PlanDefinition representing the definition of a laboratory diagnostic service viewable and usable by potential consumers (clinicians, nurses, patients ...)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabProcedureDefinition"/>
+      </reference>
+      <name value="Laboratory procedure Profile"/>
+      <description value="Profile of ActivityDefinition representing the definition of a laboratory operational procedure"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabSpecimenDefinition"/>
+      </reference>
+      <name value="Laboratory specimen Profile"/>
+      <description value="Profile of SpecimenDefinition representing the definition of an IVD specimen used by a laboratory operational procedure"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/InputObservationDefinition"/>
+      </reference>
+      <name value="Input observation Profile"/>
+      <description value="Profile of ObservationDefinition representing the definition of an observation expected from the orderer by the performing laboratory for use in one of its procedures"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabObservationDefinition"/>
+      </reference>
+      <name value="Laboratory observation Profile"/>
+      <description value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"/>
+    </resource>
+    <!-- 
+      Below, the example resources 
+    -->
+    <resource>
+      <reference>
+        <reference value="Composition/example-lab-compendium-header"/>
+      </reference>
+      <name value="Example of clinical laboratory catalog"/>
+      <description value="Catalog header representing a laboratory compendium, used by all lab examples in this implementation guide"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
       <reference>
@@ -155,13 +192,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/LabProcedureDefinition"/>
-      </reference>
-      <name value="Laboratory procedure"/>
-      <description value="Laboratory procedure definition"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
       <name value="Lab E1: laboratory procedure serum K"/>
@@ -173,43 +203,22 @@
         <reference value="ActivityDefinition/example-lab-blood-electrolyte"/>
       </reference>
       <name value="Lab E2: laboratory procedure blood electrolyte"/>
-      <description value="Lab E2 - panellaboratory procedure - electrolyte - serum or plasma"/>
+      <description value="Lab E2 - panel laboratory procedure - electrolyte on serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/LabSpecimenDefinition"/>
-      </reference>
-      <name value="Laboratory specimen"/>
-      <description value="Laboratory IVD specimen definition"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/InputObservationDefinition"/>
-      </reference>
-      <name value="Input observation"/>
-      <description value="input observation definition for laboratory services"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/LabObservationDefinition"/>
-      </reference>
-      <name value="Laboratory observation"/>
-      <description value="Laboratory observation definition"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
       <name value="Example of laboratory organization"/>
-      <description value="Example of laboratory as an organization"/>
-     </resource>
+      <description value="Example of laboratory as an organization, used by all laboratory examples of this implementation guide"/>
+    </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
       </reference>
       <name value="Lab E1: serum specimen definition - test K"/>
-      <description value="Lab E1 - specimen requirement for serum K test"></description>
+      <description value="Lab E1 - specimen requirement for serum K test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -217,7 +226,7 @@
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
       </reference>
       <name value="Lab E2: serum or plasma specimen"/>
-      <description value="Lab E2 - specimen requirement for tests and panels on serum or plasma"></description>
+      <description value="Lab E2 - specimen requirement for tests and panels on serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -225,7 +234,7 @@
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
       </reference>
       <name value="Lab E1, E2:  input observation - reason"/>
-      <description value="Lab E1, E2 - definition of input observation reason for test order"></description>
+      <description value="Lab E1, E2 - definition of input observation reason for test order"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
     </resource>
     <resource>
@@ -233,7 +242,7 @@
         <reference value="ObservationDefinition/example-observation-serum-sodium"/>
       </reference>
       <name value="Lab E2: lab observation serum Na"/>
-      <description value="Lab E2 - definition of output observation Na on serum"></description>
+      <description value="Lab E2 - definition of output observation Na on serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
@@ -241,7 +250,7 @@
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
       <name value="Lab E1, E2: lab observation serum K"/>
-      <description value="Lab E1, E2 - definition of output observation K on serum"></description>
+      <description value="Lab E1, E2 - definition of output observation K on serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
@@ -249,7 +258,7 @@
         <reference value="ObservationDefinition/example-observation-serum-chloride"/>
       </reference>
       <name value="Lab E2: lab observation serum Cl"/>
-      <description value="Lab E2 - definition of output observation Cl on serum"></description>
+      <description value="Lab E2 - definition of output observation Cl on serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
@@ -257,9 +266,12 @@
         <reference value="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
       </reference>
       <name value="Lab E6: billing code and rule for vitamin D"/>
-      <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"></description>
+      <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
     </resource>
+    <!-- 
+      html pages
+    -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -353,7 +365,7 @@
       <code value="find-other-resources"/>
       <value value="true"/>
     </parameter>
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>
       <value value="true"/>
