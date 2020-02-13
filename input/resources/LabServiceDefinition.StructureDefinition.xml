@@ -25,7 +25,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
   </contact>
   <description value="The LabServiceDefinition profile constrains the PlanDefinition resource to represent a laboratory diagnostic service for the clinicians, potential consumers of such services. Clinicians typically order laboratory services and use the results thereof in the course of their delivery of clinical care. &#xD;&#xA;A laboratory diagnostic service is a kind of clinical artifact that falls within the scope of PlanDefinition. It involves preparation of the patient, collection and delivery to the lab of biological/digital specimens , tests and panels performed on these specimens, interpretation of the results by the pathologist, and delivery of the results and diagnostic report back to the ordering clinician and possibly other recipients, including the patient. &#xD;&#xA;PlanDefinition conveys the general properties of the lab service. It describes the usage of the service, the contexts and situations in which this service is useful, and may also detail the goals that the laboratory service contributes to, such as screening or diagnostic of a particular pathology, monitoring of a long course treatment ...&#xD;&#xA;PlanDefintion references one or more instances of ActivityDefinition, describing the service in terms of laboratory procedures.  &#xD;&#xA;Such a definition of a laboratory diagnostic service can be used in a laboratory compendium/catalog as well as in other contexts." />
   <purpose value="A laboratory service is fulfilled through the execution of one or more laboratory procedures. The logical combinations of these procedures may be conjunctions (execute each of them) or disjunctions (execute at most one of them), or a mixture of both logical structures. The closest resource that may represent a service as a set of activities logically combined with this flexibility is PlanDefinition.&#xD;&#xA;PlanDefinition is therefore selected to represent a laboratory service, and the laboratory procedures needed to achieve this service are represented by instances of ActivityDefinition referenced by PlanDefinition, from logical groups defined in PlanDefinition." />
-  
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -156,11 +155,17 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.useContext" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="code.code" />
         </discriminator>
-        <description value="The LabServiceDefinition profile predefines three useful contexts as slices of this element. Each of the three slices may appear zero or once in an instance of a laboratory service. The slicing is open, so any additional context may be added, such as restricting the laboratory service to a class of age of patients, for instance.&#xD;&#xA;- Slice &quot;Orderable&quot;  when present means that this laboratory service is orderable, and when absent means that the service is not orderable.&#xD;&#xA;- Slice &quot;UponPathologistInitiative&quot; when present means that this laboratory service may be added to an existing order, at the pathologist's initiative.&#xD;&#xA;- Slice &quot;OnlyForGender&quot; when present means that this laboratory service is restricted to patients of a specific gender." />
-        <ordered value="false" />
+        <discriminator>
+          <type value="value" />
+          <path value="value[x].coding.system" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="value[x].coding.code" />
+        </discriminator>
         <rules value="open" />
       </slicing>
       <comment value="When multiple useContexts are specified, in this LabServiceDefinition profile, all contexts apply to the defined laboratory service." />
@@ -169,82 +174,72 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.useContext:Orderable">
       <path value="PlanDefinition.useContext" />
       <sliceName value="Orderable" />
-      <sliceIsConstraining value="false" />
-      <label value="orderable" />
-      <short value="Orderable laboratory service" />
-      <definition value="Slice &quot;Orderable&quot;  when present means that this laboratory service is orderable, and when absent means that the service is not orderable." />
-      <comment value="Slice Orderable is either present or absent. It acts as a boolean expressing whether the service is orderable or not." />
       <max value="1" />
-      <patternUsageContext>
-        <code>
-          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-          <code value="task" />
-        </code>
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-            <code value="LABOE" />
-          </coding>
-        </valueCodeableConcept>
-      </patternUsageContext>
-      <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.useContext:Orderable.code">
+      <path value="PlanDefinition.useContext.code" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
+      </fixedCoding>
     </element>
     <element id="PlanDefinition.useContext:Orderable.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActTaskCode" />
+          <code value="LABOE" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="PlanDefinition.useContext:UponPathologistInitiative">
+    <element id="PlanDefinition.useContext:PathologistInitiative">
       <path value="PlanDefinition.useContext" />
-      <sliceName value="UponPathologistInitiative" />
-      <short value="Service can be added upon pathologist's initiative" />
-      <definition value="Slice UponPathologistInitiative means, when present, that this service may be added by the pathologist to an existing order, considering the results obtained so far for this order." />
-      <comment value="When multiple useContexts are specified on a laboratory service,  all of the contexts apply." />
+      <sliceName value="PathologistInitiative" />
       <max value="1" />
-      <patternUsageContext>
-        <code>
-          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-          <code value="task" />
-        </code>
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-            <code value="LABRREV" />
-          </coding>
-        </valueCodeableConcept>
-      </patternUsageContext>
     </element>
-    <element id="PlanDefinition.useContext:UponPathologistInitiative.value[x]">
+    <element id="PlanDefinition.useContext:PathologistInitiative.code">
+      <path value="PlanDefinition.useContext.code" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
+      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:PathologistInitiative.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActTaskCode" />
+          <code value="LABRREV" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="PlanDefinition.useContext:OnlyForGender">
+    <element id="PlanDefinition.useContext:OneGender">
       <path value="PlanDefinition.useContext" />
-      <sliceName value="OnlyForGender" />
-      <short value="Service restricted to one particular gender" />
-      <definition value="Slice OnlyForGender indicates, when present, that the service is limited to a particular gender." />
-      <comment value="When multiple useContexts are specified on a laboratory service,  all of the contexts apply." />
+      <sliceName value="OneGender" />
       <max value="1" />
-      <patternUsageContext>
-        <code>
-          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-          <code value="gender" />
-        </code>
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" />
-          </coding>
-        </valueCodeableConcept>
-      </patternUsageContext>
     </element>
-    <element id="PlanDefinition.useContext:OnlyForGender.value[x]">
+    <element id="PlanDefinition.useContext:OneGender.code">
+      <path value="PlanDefinition.useContext.code" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="gender" />
+      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:OneGender.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+      </binding>
     </element>
     <element id="PlanDefinition.usage">
       <path value="PlanDefinition.usage" />

@@ -2,16 +2,17 @@
 <ObservationDefinition xmlns="http://hl7.org/fhir"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
-    <id value="example-observation-collection-duration"/>
+    <id value="example-observation-serum-creatinine"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+        <profile
+            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"
+        />
     </meta>
     <language value="en-US"/>
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-            <p>Urine specimen collection duration</p>
+            <p>Laboratory observation: Creatinine [Mass/volume] in Serum or Plasma</p>
         </div>
     </text>
     <category>
@@ -24,19 +25,19 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="13362-9"/>
-            <display value="Collection duration of Urine"/>
+            <code value="2160-0"/>
+            <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
         </coding>
     </code>
     <permittedDataType value="Quantity"/>
     <multipleResultsAllowed value="false"/>
-    <preferredReportName value="urine collection duration"/>
+    <preferredReportName value="serum creatinine (mass/volume)"/>
     <quantitativeDetails>
         <unit>
             <coding>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="h"/>
-                <display value="h"/>
+                <code value="mg/L"/>
+                <display value="mg/l"/>
             </coding>
         </unit>
     </quantitativeDetails>

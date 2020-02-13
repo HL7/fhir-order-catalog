@@ -2,7 +2,7 @@
 <SpecimenDefinition xmlns="http://hl7.org/fhir"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/specimendefinition.xsd">
-    <id value="example-specimen-serum-potassium"/>
+    <id value="example-specimen-capillary-serum-single-test"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </meta>
@@ -10,21 +10,21 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-            <p>blood serum for K level</p>
+            <p>blood serum collected from capillary blood for single test in chemistry</p>
         </div>
     </text>
     <typeCollected>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
-            <code value="BLDV"/>
-            <display value="Blood venous"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="122554006"/>
+            <display value="Capillary blood specimen (specimen)"/>
         </coding>
     </typeCollected>
     <collection>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="28520004"/>
-            <display value="Venipuncture for blood test"/>
+            <code value="1048003"/>
+            <display value="Capillary specimen collection (procedure)"/>
         </coding>
     </collection>
     <typeTested>
@@ -59,9 +59,9 @@
                 </coding>
                 <text value="red cap"/>
             </cap>
-            <description value="red cap plastic tube 5 mL"/>
+            <description value="red cap plastic tube 2 mL"/>
             <capacity>
-                <value value="5"/>
+                <value value="2"/>
                 <unit value="milliliter"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="mL"/>
@@ -140,9 +140,9 @@
                 </coding>
                 <text value="green cap"/>
             </cap>
-            <description value="green cap plastic tube 5 mL"/>
+            <description value="green cap plastic tube 2 mL"/>
             <capacity>
-                <value value="5"/>
+                <value value="2"/>
                 <unit value="milliliter"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="mL"/>

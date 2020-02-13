@@ -20,7 +20,7 @@
 		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry) from the V3 ActCode
 		vocabulary. </p> 
 	<p>Artifacts implementing this example: </p>
-	<table>
+	<table border="1">
 		<thead>
 			<tr>
 				<th>Business content</th>
@@ -52,7 +52,7 @@
 				<td>Serum specimen</td>
 				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
 				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-serum-potassium.html">example-specimen-serum-potassium</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>Reason for test - input observation</td>
@@ -78,7 +78,7 @@
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
 		collection of test of panels, which usually produces multiple results. </p> 
 	<p>Artifacts implementing this example: </p> 
-	<table>
+	<table border="1">
 		<thead>
 			<tr>
 				<th>Business content</th>
@@ -148,7 +148,7 @@
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
 		collection of test of panels, which usually produces multiple results. </p> 
 	<p>Artifacts implementing this example: </p> 
-	<table>
+	<table border="1">
 		<thead>
 			<tr>
 				<th>Business content</th>
@@ -168,39 +168,107 @@
 				<td>24-hour urine creatinine panel - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-panel-blood-electrolyte.html">example-lab-panel-urine24h-creatinine</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine.html">example-lab-panel-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine panel - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-blood-electrolyte.html">example-lab-urine24h-creatinine</a></td>
+				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html">example-lab-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine specimen</td>
 				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
 				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-serum-plasma.html">example-specimen-urine-24h</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-urine-24h.html">example-specimen-urine-24h</a></td>
 			</tr>
 			<tr>
-				<td>urine collection duration - input/output observation</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> 
-					<a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-observation-collection-duration</a></td>
+				<td rowspan="2">urine collection duration - input/output observation</td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
+				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-duration.html">example-observation-collection-duration</a></td>
 			</tr>
 			<tr>
-				<td>24-hour urine volume - input/output observation</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> 
-					<a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-sodium.html">example-observation-collection-volume</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
+			</tr>
+			<tr>
+				<td rowspan="2">24-hour urine volume - input/output observation</td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
+				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-volume.html">example-observation-collection-volume</a></td>
+			</tr>
+			<tr>
+				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine - lab result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-urine24h-creatinine</a></td>
+				<td><a href="ObservationDefinition-example-observation-urine24h-creatinine.html">example-observation-urine24h-creatinine</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<a name="LabE4"> </a>
+	<h3>E4: creatinine on serum or plasma - orderable test</h3>
+	<p> This example illustrates the representation of a laboratory service using two alternative laboratory procedures
+		depending on the kind of specimen collected from the patient. The figure below displays the business content. </p>
+	<img src="LabExampleE4Business.png" alt="Example E4 - business content" width="400px"/>
+	<p>The figure below displays the FHIR technical implementation of the business content. </p>
+	<img src="LabExampleE4Technical.png" alt="Example E4 - FHIR implementation" width="600px"/>
+	<p>In this example, the laboratory service is of type &quot;<i>test</i>&quot; 
+		and is expected to produce an single result; the serum/plasma creatinine level.</p> 
+	<p>Artifacts implementing this example: </p> 
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Laboratory compendium</td>
+				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+			</tr>
+			<tr>
+				<td>serum/plasma creatinine - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-test-serum-creatinine.html">example-lab-test-serum-creatinine</a></td>
+			</tr>
+			<tr>
+				<td>serum/plasma creatinine from venous blood - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-venous-serum-creatinine.html">example-lab-venous-serum-creatinine</a></td>
+			</tr>
+			<tr>
+				<td>serum/plasma creatinine from capillary blood - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-capillary-serum-creatinine.html">example-lab-capillary-serum-creatinine</a></td>
+			</tr>
+			<tr>
+				<td>capillary blood serum/plasma specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-capillary-serum-single-test.html">example-specimen-capillary-serum-single-test</a></td>
+			</tr>
+			<tr>
+				<td>venous blood serum/plasma specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+			</tr>
+			<tr>
+				<td>serum/plasma creatinine - lab result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html">example-observation-serum-creatinine</a></td>
 			</tr>
 		</tbody>
 	</table>

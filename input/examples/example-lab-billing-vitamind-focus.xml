@@ -10,8 +10,8 @@
     </meta>
     <language value="fr-FR"/>
     <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR">
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR">
             <p>codage affiné et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale</p>
         </div>
     </text>
@@ -32,84 +32,84 @@
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="41345002"/>
-                <display value="rachitisme"/>
+                <display value="Rickets (disorder)"/>
             </coding>
+            <text value="rachitisme"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="4598005"/>
-                <display value="ostéomalacie"/>
+                <display value="Osteomalacia (disorder)"/>
             </coding>
+            <text value="ostéomalacie"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="737295003"/>
-                <display value="transplanté rénal"/>
+                <display value="Transplanted kidney present (finding)"/>
             </coding>
+            <text value="transplanté rénal"/>
         </valueCodeableConcept>
     </useContext>   
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="707206008"/>
-                <display value="évaluation en rapport avec chirurgie bariatrique"/>
+                <display value="Assessment for bariatric surgery (procedure)"/>
             </coding>
+            <text value="évaluation en rapport avec chirurgie bariatrique"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="443731004"/>
-                <display value="évaluation du score de risque de chute d'une personne âgée"/>
+                <display value="Assessment using falls risk assessment score for the elderly (procedure)"/>
             </coding>
+            <text value="évaluation du score de risque de chute d'une personne âgée"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="focus"/>
-            <display value="objet d'attention clinique"/>
         </code>
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="182817000"/>
-                <display value="sous prescription de traitement médicamenteux"/>
+                <display value="Drug prescription (situation)"/>
             </coding>
+            <text value="sous prescription de traitement médicamenteux"/>
         </valueCodeableConcept>
     </useContext>
     <jurisdiction>

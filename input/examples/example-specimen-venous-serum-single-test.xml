@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpecimenDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/specimendefinition.xsd">
+    <id value="example-specimen-venous-serum-single-test"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <p>blood serum collected from venous blood for single test in chemistry</p>
+        </div>
+    </text>
+    <typeCollected>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+            <code value="BLDV"/>
+            <display value="Blood venous"/>
+        </coding>
+    </typeCollected>
+    <collection>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="28520004"/>
+            <display value="Venipuncture for blood test"/>
+        </coding>
+    </collection>
+    <typeTested>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+                <code value="SER"/>
+                <display value="Serum"/>
+            </coding>
+        </type>
+        <preference value="preferred"/>
+        <container>
+            <material>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="61088005"></code>
+                    <display value="Plastic"/>
+                </coding>
+                <text value="plastic"/>
+            </material>
+            <type>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="767384004"></code>
+                    <display value="Evacuated blood collection tube with clot activator"/>
+                </coding>
+            </type>
+            <cap>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/container-cap"/>
+                    <code value="red"/>
+                </coding>
+                <text value="red cap"/>
+            </cap>
+            <description value="red cap plastic tube 5 mL"/>
+            <capacity>
+                <value value="5"/>
+                <unit value="milliliter"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </capacity>
+            <minimumVolumeQuantity>
+                <value value="0.5"/>
+                <unit value="milliliter"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </minimumVolumeQuantity>
+        </container>
+        <retentionTime>
+            <value value="24"/>
+            <unit value="hour"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h"/>
+        </retentionTime>
+        <rejectionCriterion>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/rejection-criteria"/>
+                <code value="hemolized"/>
+            </coding>
+            <text value="blood specimen hemolized"/>
+        </rejectionCriterion>
+        <rejectionCriterion>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/rejection-criteria"/>
+                <code value="insufficient"/>
+            </coding>
+            <text value="insufficient quantity of specimen"/>
+        </rejectionCriterion>
+        <handling>
+            <temperatureQualifier>
+                <text value="room temperature or refrigerated"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="7"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+            </maxDuration>
+        </handling>
+        <handling>
+            <temperatureQualifier>
+                <text value="frozen"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="28"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+            </maxDuration>
+        </handling>
+    </typeTested>
+    <typeTested>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+                <code value="PLAS"/>
+                <display value="Plasma"/>
+            </coding>
+        </type>
+        <preference value="alternate"/>
+        <container>
+            <type>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="767390000"></code>
+                    <display value="Evacuated blood collection tube with heparin lithium and gel separator"/>
+                </coding>
+            </type>
+            <cap>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/container-cap"/>
+                    <code value="green"/>
+                </coding>
+                <text value="green cap"/>
+            </cap>
+            <description value="green cap plastic tube 5 mL"/>
+            <capacity>
+                <value value="5"/>
+                <unit value="milliliter"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </capacity>
+            <minimumVolumeQuantity>
+                <value value="0.5"/>
+                <unit value="milliliter"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </minimumVolumeQuantity>
+        </container>
+        <retentionTime>
+            <value value="24"/>
+            <unit value="hour"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h"/>
+        </retentionTime>
+        <rejectionCriterion>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/rejection-criteria"/>
+                <code value="hemolized"/>
+            </coding>
+            <text value="blood specimen hemolized"/>
+        </rejectionCriterion>
+        <rejectionCriterion>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/rejection-criteria"/>
+                <code value="insufficient"/>
+            </coding>
+            <text value="insufficient quantity of specimen"/>
+        </rejectionCriterion>
+        <handling>
+            <temperatureQualifier>
+                <text value="room temperature or refrigerated"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="7"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+            </maxDuration>
+        </handling>
+        <handling>
+            <temperatureQualifier>
+                <text value="frozen"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="28"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+            </maxDuration>
+        </handling>
+    </typeTested>
+</SpecimenDefinition>

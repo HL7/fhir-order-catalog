@@ -14,7 +14,6 @@
     </telecom>
   </contact>
   <description value="This profile constrains the usage of ChargeItemDefinition to represent the rules and other properties attached to a billing code used by a laboratory service" />
-  
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -63,8 +62,8 @@
       <path value="ChargeItemDefinition.useContext" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="code.code" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -73,19 +72,23 @@
     <element id="ChargeItemDefinition.useContext:ClinicalFocus">
       <path value="ChargeItemDefinition.useContext" />
       <sliceName value="ClinicalFocus" />
-      <definition value="The billing code is associated with a clinical focus which must be stated in the order requesting the laboratory service bound to this billing code." />
-      <comment value="Usually, the order conveys the clinical focus of the order as an input observation accompanying the order.&#xD;&#xA;If multiple clinical focus are stated in the ChargeItemDefinition the expectation is that the order convey at least one of these clinical focus so that the billing code become applicable." />
-      <patternUsageContext>
-        <code>
-          <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-          <code value="focus" />
-        </code>
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://snomed.info/sct" />
-          </coding>
-        </valueCodeableConcept>
-      </patternUsageContext>
+      <short value="Clinical focus justifying this billing code" />
+      <comment value="When multiple clinical focus contexts are specified the billing code is applicable if at least one of these contexts is present in the instance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ChargeItemDefinition.useContext:ClinicalFocus.code.system">
+      <path value="ChargeItemDefinition.useContext.code.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+    </element>
+    <element id="ChargeItemDefinition.useContext:ClinicalFocus.code.code">
+      <path value="ChargeItemDefinition.useContext.code.code" />
+      <fixedCode value="focus" />
+    </element>
+    <element id="ChargeItemDefinition.useContext:ClinicalFocus.value[x]">
+      <path value="ChargeItemDefinition.useContext.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="ChargeItemDefinition.code">
       <path value="ChargeItemDefinition.code" />

@@ -4,9 +4,8 @@
     xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
     <id value="example-observation-collection-volume"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"
-        />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
     <language value="en-US"/>
     <text>

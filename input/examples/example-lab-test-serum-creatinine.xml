@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
-    <id value="example-lab-panel-urine24h-creatinine"/>
+    <id value="example-lab-test-serum-creatinine"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
@@ -8,9 +8,9 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-            <p>24H urine creatinine panel</p>
-            <p>This example illustrates the use of observations both as input and output: 
-                The urine specimen volume collected and the duration of specimen collection.</p>
+            <p>serum creatinine test</p>
+            <p>This example illustrates the use of two alternative laboratory procedures, 
+                depending on whether the phlebotomist collects venous blood or capillary blood.</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -22,7 +22,7 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-                <code value="0627"/>
+                <code value="0592"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -32,19 +32,19 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Daily ; report on D0"/>
     </extension>
-    <name value="UrineCreatininePanel"/>
-    <title value="24-hour urine creatinine panel"/>
+    <name value="SerumCreatinineTest"/>
+    <title value="Serum creatinine test"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
-            <code value="panel"/>
+            <code value="test"/>
         </coding>
     </type>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-02-12T19:00:00+01:00"/>
     <publisher value="HL7 International"/>
-    <description value="Potassium measurement on serum specimen"/>
+    <description value="Creatinine measurement on serum specimen"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -59,20 +59,6 @@
             <text value="this panel is orderable"/>
         </valueCodeableConcept>
     </useContext>
-    <useContext>
-        <code>
-            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-            <code value="task"/>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                <code value="LABRREV"/>
-                <display value="laboratory result review task"/>
-            </coding>
-            <text value="This panel may be added upon the pathologist initiative after result review of the order"/>
-        </valueCodeableConcept>
-    </useContext>
     <topic>
         <coding>
             <system value="http://loinc.org"/>
@@ -83,8 +69,8 @@
     <topic>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="409091002"/>
-            <display value="24 hour urine measurement (procedure)"/>
+            <code value="166312007"/>
+            <display value="Blood chemistry"/>
         </coding>
     </topic>
     <topic>
@@ -97,8 +83,8 @@
     <topic>
         <coding>
             <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="13-03"/>
-            <display value="BIOCHIMIE - URINE"/>
+            <code value="13-01"/>
+            <display value="BIOCHIMIE - SANG"/>
         </coding>
     </topic>
     <action>
@@ -106,16 +92,23 @@
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="65634-8"/>
-                <display value="Creatinine 24 hour urine panel - 24 hour Urine"/>
+                <code value="2160-0"/>
+                <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
             </coding>
         </code>
         <timingDuration>
-            <value value="2"/>
-            <unit value="hours"/>
+            <value value="1"/>
+            <unit value="hour"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="h"/>
         </timingDuration>
-        <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="at-most-one"/>
+        <action>
+            <definitionCanonical value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+        </action>
+        <action>
+            <definitionCanonical value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
+        </action>
     </action>
 </PlanDefinition>

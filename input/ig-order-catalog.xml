@@ -164,8 +164,15 @@
       <description value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"/>
     </resource>
     <!-- 
-      Below, the example resources 
+      Below, the example resources dedicated to catalogs of laboratory in vitro diagnostic services
     -->
+    <resource>
+      <reference>
+        <reference value="Organization/example-lab-organization"/>
+      </reference>
+      <name value="Lab E*: A laboratory Organization"/>
+      <description value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Composition/example-lab-compendium-header"/>
@@ -192,6 +199,46 @@
     </resource>
     <resource>
       <reference>
+        <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
+      </reference>
+      <name value="Lab E3, E5: laboratory service 24-hour urine creatinine"/>
+      <description value="Lab E3, E5 - panel laboratory service - creatinine on 24-hour urine specimen"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-test-serum-creatinine"/>
+      </reference>
+      <name value="Lab E4, E5: laboratory service 24-hour urine creatinine"/>
+      <description value="Lab E4, E5 - panel laboratory service - creatinine on serum or plasma specimen"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+      </reference>
+      <name value="Lab E3, E5: laboratory procedure 24H urine creatinine"/>
+      <description value="Lab E3, E5 - panel laboratory procedure - 24-hour urine creatinine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+      </reference>
+      <name value="Lab E4, E5: laboratory creatinine procedure on venous serum or plasma "/>
+      <description value="Lab E4, E5 - laboratory procedure - creatinine - venous serum or plasma"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
+      </reference>
+      <name value="Lab E4, E5: laboratory creatinine procedure on capillary serum or plasma "/>
+      <description value="Lab E4, E5 - laboratory procedure - creatinine - capillary serum or plasma"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
       <name value="Lab E1: laboratory procedure serum K"/>
@@ -208,17 +255,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/example-lab-organization"/>
+        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
       </reference>
-      <name value="Lab E*: A laboratory Organization"/>
-      <description value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"/>
+      <name value="Lab E1, E4, E5: venous serum specimen definition - single chemistry test"/>
+      <description value="Lab E1, E4, E5 - venous serum specimen requirement for a single chemistry test"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
-        <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
+        <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
       </reference>
-      <name value="Lab E1: serum specimen definition - test K"/>
-      <description value="Lab E1 - specimen requirement for serum K test"/>
+      <name value="Lab E4, E5: capillary serum specimen definition - single chemistry test"/>
+      <description value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -227,6 +275,14 @@
       </reference>
       <name value="Lab E2: serum or plasma specimen"/>
       <description value="Lab E2 - specimen requirement for tests and panels on serum or plasma"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
+      </reference>
+      <name value="Lab E3: 24-hour urine specimen"/>
+      <description value="Lab E3 - specimen requirement for tests and panels on 24-hour urine"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -263,33 +319,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
-      </reference>
-      <name value="Lab E3: laboratory service 24-hour urine creatinine"/>
-      <description value="Lab E3 - panel laboratory service - creatinine on 24-hour urine specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ActivityDefinition/example-lab-urine24h-creatinine"/>
-      </reference>
-      <name value="Lab E3: laboratory procedure 24H urine creatinine"/>
-      <description value="Lab E3 - panel laboratory procedure - 24-hour urine creatinine"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
-      </reference>
-      <name value="Lab E3: 24-hour urine specimen"/>
-      <description value="Lab E3 - specimen requirement for tests and panels on 24-hour urine"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ObservationDefinition/example-observation-collection-duration"/>
       </reference>
-      <name value="Lab E3: input observation collection duration"/>
+      <name value="Lab E3: observation collection duration"/>
       <description value="Lab E3 - definition of input/output observation urine collection duration"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -297,7 +329,7 @@
       <reference>
         <reference value="ObservationDefinition/example-observation-collection-volume"/>
       </reference>
-      <name value="Lab E3: input observation urine collection volume"/>
+      <name value="Lab E3: observation urine collection volume"/>
       <description value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -307,6 +339,14 @@
       </reference>
       <name value="Lab E3: output observation urine creatinine"/>
       <description value="Lab E3 - definition of lab observation 24-hour urine creatinine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-serum-creatinine"/>
+      </reference>
+      <name value="Lab E4: output observation serum or plasma creatinine"/>
+      <description value="Lab E4 - definition of lab observation serum/plasma creatinine"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>

@@ -60,7 +60,7 @@
         <code value="mn"/>
     </timingDuration>
     <specimenRequirement>
-        <reference value="SpecimenDefinition/example-specimen-serum-potassium"/>
+        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
     <observationRequirement>
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>

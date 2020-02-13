@@ -98,3 +98,157 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "41345002",
+  "display" : "rachitisme"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Rickets",
+  "severity" : "warning",
+  "error" : "The display \"rachitisme\" is not a valid display for the code {http://snomed.info/sct}41345002 - should be one of [Rickets,\"Rickets (disorder)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "4598005",
+  "display" : "ostÃ©omalacie"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Osteomalacia",
+  "severity" : "warning",
+  "error" : "The display \"ostéomalacie\" is not a valid display for the code {http://snomed.info/sct}4598005 - should be one of [Osteomalacia,\"Osteomalacia (disorder)\",\"OM - Osteomalacia\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "737295003",
+  "display" : "transplantÃ© rÃ©nal"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Transplanted kidney present",
+  "severity" : "warning",
+  "error" : "The display \"transplanté rénal\" is not a valid display for the code {http://snomed.info/sct}737295003 - should be one of [\"Transplanted kidney present\",\"Transplanted kidney present (finding)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "707206008",
+  "display" : "Ã©valuation en rapport avec chirurgie bariatrique"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Assessment for bariatric surgery",
+  "severity" : "warning",
+  "error" : "The display \"évaluation en rapport avec chirurgie bariatrique\" is not a valid display for the code {http://snomed.info/sct}707206008 - should be one of [\"Assessment for bariatric surgery\",\"Assessment for bariatric surgery (procedure)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "443731004",
+  "display" : "Ã©valuation du score de risque de chute d'une personne Ã¢gÃ©e"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Assessment using falls risk assessment score for the elderly (procedure)",
+  "severity" : "warning",
+  "error" : "The display \"évaluation du score de risque de chute d'une personne âgée\" is not a valid display for the code {http://snomed.info/sct}443731004 - should be one of [\"Assessment using falls risk assessment score for the elderly (procedure)\",\"Assessment using FRASE (falls risk assessment score for the elderly)\",\"Assessment using falls risk assessment score for the elderly\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "182817000",
+  "display" : "sous prescription de traitement mÃ©dicamenteux"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Drug prescription",
+  "severity" : "warning",
+  "error" : "The display \"sous prescription de traitement médicamenteux\" is not a valid display for the code {http://snomed.info/sct}182817000 - should be one of [\"Drug prescription\",\"Drug prescription (situation)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "122554006",
+  "display" : "Capillary blood specimen (specimen)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Capillary blood specimen",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1048003",
+  "display" : "Capillary specimen collection (procedure)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Capillary specimen collection",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "41345002",
+  "display" : "Rickets (disorder)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Rickets",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "4598005",
+  "display" : "Osteomalacia (disorder)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Osteomalacia",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "737295003",
+  "display" : "Transplanted kidney present (finding)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Transplanted kidney present",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "707206008",
+  "display" : "Assessment for bariatric surgery (procedure)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Assessment for bariatric surgery",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "443731004",
+  "display" : "Assessment using falls risk assessment score for the elderly (procedure)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Assessment using falls risk assessment score for the elderly (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "182817000",
+  "display" : "Drug prescription (situation)"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Drug prescription",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
