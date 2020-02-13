@@ -10,8 +10,8 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
             <p>Laboratory observation: chloride level in blood</p>
         </div>
     </text>

@@ -9,7 +9,7 @@
     <language value="en-US"/>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
             <p>Reason for ordering a laboratory service, asked at order entry</p>
         </div>
     </text>

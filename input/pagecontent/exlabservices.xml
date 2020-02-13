@@ -276,7 +276,7 @@
 	<h3>E5: creatinine renal clearance in 24 hour urine and serum or plasma - orderable panel</h3>
 	<p> This example illustrates how a panel can logically include a combination of tests and panels, using logical AND and XOR to assemble them.  
 		The figure below displays the business content. </p>
-	<img src="LabExampleE5Business.png" alt="Example E5 - business content" width="400px"/>
+	<img src="LabExampleE5Business.png" alt="Example E5 - business content" width="600px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE5Technical.png" alt="Example E5 - FHIR implementation" width="600px"/>
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot; 

@@ -4,9 +4,11 @@
   <h3>Resources and Profiles for all devices</h3>
   <p>The figure below shows the resources and profiles used to represent catalogs of medical devices</p>
   <img src="DeviceCatalog.png" alt="Resources used by a catalog medical devices" width="700px"/>
+  <p><strong>To be continued</strong></p>
   <a name="LIVDResourcesProfiles"> </a>
   <h3>Resources and Profiles for IVD testing devices</h3>
   <p>The figure below shows the resources and profiles used to represent catalogs of in vitro diagnostic testing devices when they provide the mapping of their test result codes to LOINC</p>
   <img src="LIVDCatalog.png" alt="Resources used by a catalog analyzers providing a LOINC mapping" width="700px"/>
   <p>See the <a href="https://build.fhir.org/ig/HL7/livd/"> LIVD Implementation Guide </a> </p>
+  <p><strong>To be continued</strong></p>
 </div>
