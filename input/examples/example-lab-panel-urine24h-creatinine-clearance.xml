@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd">
+    <id value="example-lab-panel-urine24h-creatinine-clearance"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p>24H urine creatinine clearance panel</p>
+            <p>This example is a panel assembling a logical AND group of sub-actions, some of which
+                are in a logical XOR sub-group.</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
+        <valueReference>
+            <reference value="Composition/example-lab-compendium-header"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                <code value="0407"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
+        <valueString value="reimbursable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
+        <valueString value="Daily ; report on D0"/>
+    </extension>
+    <name value="UrineCreatinineClearancePanel"/>
+    <title value="24-hour urine creatinine clearance panel"/>
+    <type>
+        <coding>
+            <system
+                value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
+            <code value="panel"/>
+        </coding>
+    </type>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-12T19:00:00+01:00"/>
+    <publisher value="HL7 International"/>
+    <description
+        value="This 24-hour urine creatinine clearance panel is reusing the procedures from the 
+        serum creatinine test as well as the procedure from the 24h urine creatinine panel."/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="task"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="LABOE"/>
+                <display value="laboratory test order entry task"/>
+            </coding>
+            <text value="this panel is orderable"/>
+        </valueCodeableConcept>
+    </useContext>
+    <topic>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="18719-5"/>
+            <display value="Chemistry studies (set)"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="409091002"/>
+            <display value="24 hour urine measurement (procedure)"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
+            <code value="BIOCHBM"/>
+            <display value="Biochimie générale et spécialisée"/>
+        </coding>
+    </topic>
+    <topic>
+        <coding>
+            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+            <code value="13-03"/>
+            <display value="BIOCHIMIE - URINE"/>
+        </coding>
+    </topic>
+    <action>
+        <priority value="routine"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="34555-3"/>
+                <display value="Creatinine 24H renal clearance panel"/>
+            </coding>
+        </code>
+        <timingDuration>
+            <value value="2"/>
+            <unit value="hours"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h"/>
+        </timingDuration>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="all"/>
+        <!--  
+        <action>
+            <code>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="2160-0"/>
+                    <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
+                </coding>
+            </code>
+
+            <groupingBehavior value="logical-group"/>
+            <selectionBehavior value="exactly-one"/>        
+            <action>
+                <definitionCanonical value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+            </action>
+            <action>
+                <definitionCanonical value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
+            </action>
+            
+        </action>
+        -->
+        <action>
+            <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+        </action>
+        <action>
+            <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
+        </action>
+    </action>
+</PlanDefinition>

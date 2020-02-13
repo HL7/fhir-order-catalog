@@ -215,6 +215,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance"/>
+      </reference>
+      <name value="Lab E5: laboratory service Creatinine 24H renal clearance panel"/>
+      <description value="Lab E5 - panel laboratory service - creatinine renal clearance using 24-hour urine specimen and serum or plasma specimen"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ActivityDefinition/example-lab-urine24h-creatinine"/>
       </reference>
       <name value="Lab E3, E5: laboratory procedure 24H urine creatinine"/>
@@ -251,6 +259,14 @@
       </reference>
       <name value="Lab E2: laboratory procedure blood electrolyte"/>
       <description value="Lab E2 - panel laboratory procedure - electrolyte on serum or plasma"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
+      </reference>
+      <name value="Lab E5: laboratory procedure creatinine renal clearance"/>
+      <description value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
@@ -347,6 +363,14 @@
       </reference>
       <name value="Lab E4: output observation serum or plasma creatinine"/>
       <description value="Lab E4 - definition of lab observation serum/plasma creatinine"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
+      </reference>
+      <name value="Lab E5: output observation creatinine renal clearance"/>
+      <description value="Lab E5 - definition of lab observation - creatinine renal clearance in 24 hour urine and serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>

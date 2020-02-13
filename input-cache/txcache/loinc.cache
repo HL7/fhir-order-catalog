@@ -140,3 +140,25 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2164-2",
+  "display" : "Creatinine renal clearance in 24 hour Urine and Serum or Plasma"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Creatinine renal clearance in 24 hour Urine and Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "34555-3",
+  "display" : "Creatinine 24H renal clearance panel"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Creatinine 24H renal clearance panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
