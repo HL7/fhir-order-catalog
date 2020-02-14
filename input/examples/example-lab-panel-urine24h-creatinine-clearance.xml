@@ -109,7 +109,7 @@
         </timingDuration>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>
-        <!--  
+ <!-- this is where the problem is. The <action> element below provokes an error and abort of the IG Pub -->
         <action>
             <code>
                 <coding>
@@ -126,10 +126,9 @@
             </action>
             <action>
                 <definitionCanonical value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
-            </action>
-            
+            </action>           
         </action>
-        -->
+<!-- end of the problematic part -->
         <action>
             <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine"/>
         </action>
