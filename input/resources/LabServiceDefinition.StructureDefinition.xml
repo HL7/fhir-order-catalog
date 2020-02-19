@@ -160,6 +160,14 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         </discriminator>
         <discriminator>
           <type value="value" />
+          <path value="code.system" />
+        </discriminator>
+        <discriminator>
+          <type value="type" />
+          <path value="value[x]" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
           <path value="value[x].coding.system" />
         </discriminator>
         <discriminator>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
+    <id value="example-lab-procedure-vitamind-serum"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </meta>
+    <language value="fr-FR"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
+            <p>Vitamin D measurement on blood serum</p>
+        </div>
+    </text>
+    <!-- <url value="ActivityDefinition/example-lab-procedure-vitamind-serum"/> -->
+    <name value="VitaminDProcedure"/>
+    <title value="Procédure - dosage vitamine D - sang"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-19T14:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"></name>
+        <telecom>
+            <system value="other"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="Procédure de dosage de la vitamine D dans le sang"/>
+    <effectivePeriod>
+        <start value="2020-04-01"/>
+        <end value="2022-12-25"/>
+    </effectivePeriod>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="166312007"/>
+            <display value="Blood chemistry"/>
+        </coding>
+    </topic>
+    <kind value="ServiceRequest"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="14635-7"/>
+            <display value="Calcidiol [Moles/volume] in Serum or Plasma"/>
+        </coding>
+    </code>
+    <priority value="routine"/>
+    <timingDuration>
+        <value value="120"/>
+        <unit value="minutes"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mn"/>
+    </timingDuration>
+    <specimenRequirement>
+        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
+    </specimenRequirement>
+    <observationRequirement>
+        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    </observationRequirement>
+    <observationResultRequirement>
+        <reference value="ObservationDefinition/example-observation-vitamin-d"/>
+    </observationResultRequirement>
+</ActivityDefinition>

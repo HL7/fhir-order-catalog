@@ -384,4 +384,70 @@
 			</tr>
 		</tbody>
 	</table>
+	<a name="LabE6"> </a>
+	<h3>E6: Vitamin D level - orderable single test</h3>
+	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
+		compendium, associated with a billing code and billing rules. The example is in French as is the billing coding system.</p>
+	<p>	The figure below displays the business content. </p>
+	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="400px"/>
+	<p>The figure below displays the FHIR technical implementation of the business content. </p>
+	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="600px"/>
+	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
+		single measurement. As shown in this example, the notion of <i>orderability</i> is
+		represented by a predefined context of usage: &quot;<i>service associated with laboratory
+			order entry task</i>&quot;. A service is orderable if and only if the PlanDefinition
+		representing it includes a useContext element with code = &quot;task&quot; and
+		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry) from the V3 ActCode
+		vocabulary. </p>
+	<p>This service can be billed only if it is ordered with a reason for test that matches one of the clinical focuses 
+		declared in the ChargeItemDefinition referenced by the service.</p> 
+	<p>Artifacts implementing this example: </p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Laboratory compendium</td>
+				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+			</tr>
+			<tr>
+				<td>Vaitamin D - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-potassium-serum.html">example-lab-service-vitamind-serum</a></td>
+			</tr>
+			<tr>
+				<td>Vitamin D - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-potassium-serum.html">example-lab-procedure-vitamind-serum</a></td>
+			</tr>
+			<tr>
+				<td>Serum specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+			</tr>
+			<tr>
+				<td>Reason for test - input observation</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-input-observation-reason-for-ordering</a></td>
+			</tr>
+			<tr>
+				<td>Vitamin D level - test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-vitamin-d</a></td>
+			</tr>
+		</tbody>
+	</table>
 </div>

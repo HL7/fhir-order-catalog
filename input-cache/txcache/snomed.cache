@@ -252,3 +252,14 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "166312007",
+  "display" : "Blood chemistry"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Blood chemistry",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

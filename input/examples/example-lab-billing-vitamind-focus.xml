@@ -12,7 +12,17 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR">
-            <p>codage affiné et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale</p>
+            <p>Codage affiné (1139) et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale (NABM version 56)</p>
+            <p>La prise en charge de cet acte est limitée aux situations suivantes : </p>
+            <ul>
+                <li>suspicion de rachitisme</li>
+                <li>suspicion d’ostéomalacie</li>
+                <li>suivi ambulatoire de l’adulte transplanté rénal au-delà de trois mois après transplantation</li>
+                <li>avant et après chirurgie bariatrique</li>
+                <li>évaluation et prise en charge des personnes âgées sujettes aux chutes répétées</li>
+                <li>respect des résumés des caractéristiques du produit (RCP) des médicaments préconisant la
+                    réalisation de l’acte 1139</li>
+            </ul>
         </div>
     </text>
     <url value="http://hl7.org/fhir/uv/order-catalog/ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
@@ -39,7 +49,7 @@
                 <code value="41345002"/>
                 <display value="Rickets (disorder)"/>
             </coding>
-            <text value="rachitisme"/>
+            <text value="suspicion de rachitisme"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -53,7 +63,7 @@
                 <code value="4598005"/>
                 <display value="Osteomalacia (disorder)"/>
             </coding>
-            <text value="ostéomalacie"/>
+            <text value="suspicion d’ostéomalacie"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -67,7 +77,7 @@
                 <code value="737295003"/>
                 <display value="Transplanted kidney present (finding)"/>
             </coding>
-            <text value="transplanté rénal"/>
+            <text value="suivi ambulatoire de l’adulte transplanté rénal au-delà de trois mois après transplantation"/>
         </valueCodeableConcept>
     </useContext>   
     <useContext>
@@ -81,7 +91,7 @@
                 <code value="707206008"/>
                 <display value="Assessment for bariatric surgery (procedure)"/>
             </coding>
-            <text value="évaluation en rapport avec chirurgie bariatrique"/>
+            <text value="avant et après chirurgie bariatrique"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -95,7 +105,7 @@
                 <code value="443731004"/>
                 <display value="Assessment using falls risk assessment score for the elderly (procedure)"/>
             </coding>
-            <text value="évaluation du score de risque de chute d'une personne âgée"/>
+            <text value="évaluation et prise en charge des personnes âgées sujettes aux chutes répétées"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -109,7 +119,7 @@
                 <code value="182817000"/>
                 <display value="Drug prescription (situation)"/>
             </coding>
-            <text value="sous prescription de traitement médicamenteux"/>
+            <text value="respect des résumés des caractéristiques du produit (RCP) des médicaments préconisant la réalisation de l’acte 1139"/>
         </valueCodeableConcept>
     </useContext>
     <jurisdiction>

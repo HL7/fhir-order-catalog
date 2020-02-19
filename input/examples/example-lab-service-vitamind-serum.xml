@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
-    <id value="example-lab-panel-urine24h-creatinine"/>
+    <id value="example-lab-service-vitamind-serum"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
-    <language value="en-US"/>
+    <language value="fr-FR"/>
     <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>24H urine creatinine panel</p>
-            <p>This example illustrates the use of observations both as input and output: 
-                The urine specimen volume collected and the duration of specimen collection.</p>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
+            <p>Examen de biologie médicale monoparamétrique :</p>
+            <p>Dosage de la 25-(OH)-vitamine D (D2 + D3)</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -18,33 +17,43 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-                <code value="0627"/>
-            </coding>
-        </valueCodeableConcept>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+        <valueReference>
+            <reference value="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
+        </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
-        <valueString value="reimbursable"/>
+        <valueString value="remboursable-sous-condition"/>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
-        <valueString value="Daily ; report on D0"/>
+        <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>
     </extension>
-    <name value="UrineCreatininePanel"/>
-    <title value="24-hour urine creatinine panel"/>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary">
+        <valueString value="No specific limitation for this test"/>
+    </extension>
+    <name value="VitaminDMeasurement"/>
+    <title value="Dosage de la vitamine D dans le sang">
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage">
+            <extension url="Synonym">
+                <valueString value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
+            </extension>
+            <extension url="Language">
+                <valueCode value="fr-FR"/>
+            </extension>
+        </extension>
+    </title>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
-            <code value="panel"/>
+            <code value="test"/>
+            <display value="unitary measurement performed on an in vitro biologic specimen"/>
         </coding>
     </type>
     <status value="draft"/>
     <experimental value="true"/>
-    <date value="2020-02-12T19:00:00+01:00"/>
+    <date value="2020-02-19T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="Potassium measurement on serum specimen"/>
+    <description value="Vitamine D dosée sur échantillon de sérum"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -56,21 +65,6 @@
                 <code value="LABOE"/>
                 <display value="laboratory test order entry task"/>
             </coding>
-            <text value="this panel is orderable"/>
-        </valueCodeableConcept>
-    </useContext>
-    <useContext>
-        <code>
-            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-            <code value="task"/>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                <code value="LABRREV"/>
-                <display value="laboratory results review task"/>
-            </coding>
-            <text value="This panel may be added upon the pathologist initiative after result review of the order"/>
         </valueCodeableConcept>
     </useContext>
     <topic>
@@ -83,8 +77,8 @@
     <topic>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="409091002"/>
-            <display value="24 hour urine measurement (procedure)"/>
+            <code value="166312007"/>
+            <display value="Blood chemistry"/>
         </coding>
     </topic>
     <topic>
@@ -97,8 +91,8 @@
     <topic>
         <coding>
             <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="13-03"/>
-            <display value="BIOCHIMIE - URINE"/>
+            <code value="12"/>
+            <display value="PROTEINES - MARQUEURS TUMORAUX - VITAMINES"/>
         </coding>
     </topic>
     <action>
@@ -106,16 +100,16 @@
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="65634-8"/>
-                <display value="Creatinine 24 hour urine panel - 24 hour Urine"/>
+                <code value="14635-7"/>
+                <display value="Calcidiol [Moles/volume] in Serum or Plasma"/>
             </coding>
         </code>
         <timingDuration>
-            <value value="2"/>
-            <unit value="hours"/>
+            <value value="120"/>
+            <unit value="minutes"/>
             <system value="http://unitsofmeasure.org"/>
-            <code value="h"/>
+            <code value="mn"/>
         </timingDuration>
-        <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+        <definitionCanonical value="ActivityDefinition/example-lab-procedure-vitamind-serum"/>
     </action>
 </PlanDefinition>

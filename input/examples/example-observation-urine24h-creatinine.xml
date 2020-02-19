@@ -37,7 +37,6 @@
             <coding>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="g/(24.h)"/>
-                <display value="g/24H"/>
             </coding>
         </unit>
     </quantitativeDetails>

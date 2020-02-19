@@ -170,7 +170,7 @@
       <reference>
         <reference value="Organization/example-lab-organization"/>
       </reference>
-      <name value="Lab E*: A laboratory Organization"/>
+      <name value="Lab E*: laboratory Organization"/>
       <description value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"/>
     </resource>
     <resource>
@@ -185,7 +185,7 @@
       <reference>
         <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
       </reference>
-      <name value="Lab E1: laboratory service serum K"/>
+      <name value="Lab E1: lab service serum K"/>
       <description value="Lab E1 - simple test laboratory service - serum K"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
@@ -193,7 +193,7 @@
       <reference>
         <reference value="PlanDefinition/example-lab-panel-blood-electrolyte"/>
       </reference>
-      <name value="Lab E2: laboratory service blood electrolyte"/>
+      <name value="Lab E2: lab service blood electrolyte"/>
       <description value="Lab E2 - panel laboratory service - electrolyte on blood or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
@@ -201,7 +201,7 @@
       <reference>
         <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
       </reference>
-      <name value="Lab E3, E5: laboratory service 24-hour urine creatinine"/>
+      <name value="Lab E3, E5: lab service 24H urine creat"/>
       <description value="Lab E3, E5 - panel laboratory service - creatinine on 24-hour urine specimen"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
@@ -209,7 +209,7 @@
       <reference>
         <reference value="PlanDefinition/example-lab-test-serum-creatinine"/>
       </reference>
-      <name value="Lab E4, E5: laboratory service 24-hour urine creatinine"/>
+      <name value="Lab E4, E5: lab service serum creat"/>
       <description value="Lab E4, E5 - panel laboratory service - creatinine on serum or plasma specimen"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
@@ -217,15 +217,23 @@
       <reference>
         <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance"/>
       </reference>
-      <name value="Lab E5: laboratory service Creatinine 24H renal clearance panel"/>
+      <name value="Lab E5: lab service creat renal clearance"/>
       <description value="Lab E5 - panel laboratory service - creatinine renal clearance using 24-hour urine specimen and serum or plasma specimen"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-vitamind-serum"/>
+      </reference>
+      <name value="Lab E6: lab service vitamin D"/>
+      <description value="Lab E6 - simple test laboratory service - vitamin D (in French)"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ActivityDefinition/example-lab-urine24h-creatinine"/>
       </reference>
-      <name value="Lab E3, E5: laboratory procedure 24H urine creatinine"/>
+      <name value="Lab E3, E5: lab procedure 24H urine creat"/>
       <description value="Lab E3, E5 - panel laboratory procedure - 24-hour urine creatinine"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
@@ -233,7 +241,7 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
       </reference>
-      <name value="Lab E4, E5: laboratory creatinine procedure on venous serum or plasma "/>
+      <name value="Lab E4, E5: lab procedure venous creat"/>
       <description value="Lab E4, E5 - laboratory procedure - creatinine - venous serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
@@ -241,7 +249,7 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
       </reference>
-      <name value="Lab E4, E5: laboratory creatinine procedure on capillary serum or plasma "/>
+      <name value="Lab E4, E5: lab procedure capillary creat"/>
       <description value="Lab E4, E5 - laboratory procedure - creatinine - capillary serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
@@ -249,7 +257,7 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-procedure-potassium-serum"/>
       </reference>
-      <name value="Lab E1: laboratory procedure serum K"/>
+      <name value="Lab E1: lab procedure serum K"/>
       <description value="Lab E1 - simple test laboratory procedure - serum K"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
@@ -257,7 +265,7 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-blood-electrolyte"/>
       </reference>
-      <name value="Lab E2: laboratory procedure blood electrolyte"/>
+      <name value="Lab E2: lab procedure blood electrolyte"/>
       <description value="Lab E2 - panel laboratory procedure - electrolyte on serum or plasma"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
@@ -265,15 +273,23 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
       </reference>
-      <name value="Lab E5: laboratory procedure creatinine renal clearance"/>
+      <name value="Lab E5: lab procedure creat renal clearance"/>
       <description value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-vitamind-serum"/>
+      </reference>
+      <name value="Lab E6: lab procedure vitamin D"/>
+      <description value="Lab E6 - simple test laboratory procedure - vitamin D (in French)"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
       </reference>
-      <name value="Lab E1, E4, E5: venous serum specimen definition - single chemistry test"/>
+      <name value="Lab E1, E4, E5, E6: venous serum specimen one test"/>
       <description value="Lab E1, E4, E5 - venous serum specimen requirement for a single chemistry test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
@@ -281,7 +297,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
       </reference>
-      <name value="Lab E4, E5: capillary serum specimen definition - single chemistry test"/>
+      <name value="Lab E4, E5: capillary serum specimen one test"/>
       <description value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
@@ -289,8 +305,8 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
       </reference>
-      <name value="Lab E2: serum or plasma specimen"/>
-      <description value="Lab E2 - specimen requirement for tests and panels on serum or plasma"/>
+      <name value="Lab E2: serum-plasma specimen"/>
+      <description value="Lab E2: serum/plasma specimen"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -298,7 +314,7 @@
         <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
       </reference>
       <name value="Lab E3: 24-hour urine specimen"/>
-      <description value="Lab E3 - specimen requirement for tests and panels on 24-hour urine"/>
+      <description value="Lab E3: 24H urine specimen"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
@@ -306,7 +322,7 @@
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
       </reference>
       <name value="Lab E1, E2:  input observation - reason"/>
-      <description value="Lab E1, E2 - definition of input observation reason for test order"/>
+      <description value="Lab E1, E2, E6: observation reason for test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
     </resource>
     <resource>
@@ -314,7 +330,7 @@
         <reference value="ObservationDefinition/example-observation-serum-sodium"/>
       </reference>
       <name value="Lab E2: lab observation serum Na"/>
-      <description value="Lab E2 - definition of output observation Na on serum"/>
+      <description value="Lab E2: observation Na/serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
@@ -322,14 +338,14 @@
         <reference value="ObservationDefinition/example-observation-serum-potassium"/>
       </reference>
       <name value="Lab E1, E2: lab observation serum K"/>
-      <description value="Lab E1, E2 - definition of output observation K on serum"/>
+      <description value="Lab E1, E2: observation K/serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-chloride"/>
       </reference>
-      <name value="Lab E2: lab observation serum Cl"/>
+      <name value="Lab E2: observation Cl/serum"/>
       <description value="Lab E2 - definition of output observation Cl on serum"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -345,7 +361,7 @@
       <reference>
         <reference value="ObservationDefinition/example-observation-collection-volume"/>
       </reference>
-      <name value="Lab E3: observation urine collection volume"/>
+      <name value="Lab E3: observation urine volume"/>
       <description value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -353,7 +369,7 @@
       <reference>
         <reference value="ObservationDefinition/example-observation-urine24h-creatinine"/>
       </reference>
-      <name value="Lab E3: output observation urine creatinine"/>
+      <name value="Lab E3: observation urine creat"/>
       <description value="Lab E3 - definition of lab observation 24-hour urine creatinine"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -361,7 +377,7 @@
       <reference>
         <reference value="ObservationDefinition/example-observation-serum-creatinine"/>
       </reference>
-      <name value="Lab E4: output observation serum or plasma creatinine"/>
+      <name value="Lab E4: observation serum/plasma creat"/>
       <description value="Lab E4 - definition of lab observation serum/plasma creatinine"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
@@ -369,8 +385,16 @@
       <reference>
         <reference value="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
       </reference>
-      <name value="Lab E5: output observation creatinine renal clearance"/>
+      <name value="Lab E5: observation creat renal clearance"/>
       <description value="Lab E5 - definition of lab observation - creatinine renal clearance in 24 hour urine and serum or plasma"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-vitamin-d"/>
+      </reference>
+      <name value="Lab E6: lab observation vitamin D"/>
+      <description value="Lab E6: observation vitamin D on blood serum (in French)"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
