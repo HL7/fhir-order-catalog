@@ -71,7 +71,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="18719-5"/>
-            <display value="Chemistry studies (set)"/>
+            <display value="Biochimie [Autre] - ; Patient ; Statut"/>
         </coding>
     </topic>
     <topic>
@@ -101,7 +101,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="14635-7"/>
-                <display value="Calcidiol [Moles/volume] in Serum or Plasma"/>
+                <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
             </coding>
         </code>
         <timingDuration>

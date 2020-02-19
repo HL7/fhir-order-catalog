@@ -302,7 +302,7 @@
 				<td>creatinine renal clearance - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-test-serum-creatinine.html">example-lab-panel-urine24h-creatinine-clearance</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance.html">example-lab-panel-urine24h-creatinine-clearance</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine from venous blood - operational procedure</td>

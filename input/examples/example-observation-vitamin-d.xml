@@ -24,7 +24,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="14635-7"/>
-            <display value="Calcidiol [Moles/volume] in Serum or Plasma"/>
+            <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
         </coding>
     </code>
     <permittedDataType value="Quantity"/>

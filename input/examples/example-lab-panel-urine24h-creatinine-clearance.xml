@@ -109,7 +109,7 @@
         </timingDuration>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>
- <!-- this is where the problem is. The <action> element below provokes an error and abort of the IG Pub  -->
+ <!-- this is where the problem is. The <action> element below provokes an error and abort of the IG Pub ; Pb solved on Feb 19!  -->
         <action>
             <code>
                 <coding>
