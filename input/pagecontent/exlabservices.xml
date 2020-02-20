@@ -393,12 +393,7 @@
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="600px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
-		single measurement. As shown in this example, the notion of <i>orderability</i> is
-		represented by a predefined context of usage: &quot;<i>service associated with laboratory
-			order entry task</i>&quot;. A service is orderable if and only if the PlanDefinition
-		representing it includes a useContext element with code = &quot;task&quot; and
-		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry) from the V3 ActCode
-		vocabulary. </p>
+		single measurement. </p>
 	<p>This service can be billed only if it is ordered with a reason for test that matches one of the clinical focuses 
 		declared in the ChargeItemDefinition referenced by the service.</p> 
 	<p>Artifacts implementing this example: </p>
@@ -422,13 +417,13 @@
 				<td>Vaitamin D - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-service-potassium-serum.html">example-lab-service-vitamind-serum</a></td>
+				<td><a href="PlanDefinition-example-lab-service-vitamind-serum.html">example-lab-service-vitamind-serum</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-procedure-potassium-serum.html">example-lab-procedure-vitamind-serum</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-vitamind-serum.html">example-lab-procedure-vitamind-serum</a></td>
 			</tr>
 			<tr>
 				<td>Serum specimen</td>
@@ -446,7 +441,7 @@
 				<td>Vitamin D level - test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-vitamin-d</a></td>
+				<td><a href="ObservationDefinition-example-observation-vitamin-d.html">example-observation-vitamin-d</a></td>
 			</tr>
 		</tbody>
 	</table>
