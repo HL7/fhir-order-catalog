@@ -168,6 +168,19 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
           <path value="code.code" />
         </discriminator>
         <discriminator>
+          <type value="type" />
+          <path value="value" />
+        </discriminator>
+        <discriminator>
+          <type value="pattern" />
+          <path value="value" />
+        </discriminator>
+        <!--
+        <discriminator>
+          <type value="value" />
+          <path value="code.code" />
+        </discriminator>
+        <discriminator>
           <type value="value" />
           <path value="code.system" />
         </discriminator>
@@ -183,10 +196,18 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
           <type value="value" />
           <path value="value[x].coding.code" />
         </discriminator>
+      -->
         <rules value="open" />
       </slicing>
       <comment value="When multiple useContexts are specified, in this LabServiceDefinition profile, all contexts apply to the defined laboratory service." />
       <mustSupport value="true" />
+    </element>
+    <element id="PlanDefinition.useContext.code">
+      <path value="PlanDefinition.useContext.code"/>
+    </element>
+    <element id="PlanDefinition.useContext.code.system">
+      <path value="PlanDefinition.useContext.code.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
     </element>
     <element id="PlanDefinition.useContext:Orderable">
       <path value="PlanDefinition.useContext" />
@@ -198,23 +219,24 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:Orderable.code">
       <path value="PlanDefinition.useContext.code" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-        <code value="task" />
-      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:Orderable.code.code">
+      <path value="PlanDefinition.useContext.code.code" />
+      <fixedCode value="task" />
     </element>
     <element id="PlanDefinition.useContext:Orderable.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-ActTaskCode" />
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
           <code value="LABOE" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
+    <!--
     <element id="PlanDefinition.useContext:Orderable.value[x].coding">
       <path value="PlanDefinition.useContext.value[x].coding" />
       <min value="1" />
@@ -224,6 +246,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <code value="LABOE" />
       </fixedCoding>
     </element>
+  -->
     <element id="PlanDefinition.useContext:PathologistInitiative">
       <path value="PlanDefinition.useContext" />
       <sliceName value="PathologistInitiative" />
@@ -234,23 +257,24 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
       <path value="PlanDefinition.useContext.code" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-        <code value="task" />
-      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:PathologistInitiative.code.code">
+      <path value="PlanDefinition.useContext.code.code" />
+      <fixedCode value="task" />
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-ActTaskCode" />
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
           <code value="LABRREV" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
+    <!--
     <element id="PlanDefinition.useContext:PathologistInitiative.value[x].coding">
       <path value="PlanDefinition.useContext.value[x].coding" />
       <min value="1" />
@@ -260,6 +284,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <code value="LABRREV" />
       </fixedCoding>
     </element>
+  -->
     <element id="PlanDefinition.useContext:OneGender">
       <path value="PlanDefinition.useContext" />
       <sliceName value="OneGender" />
@@ -269,17 +294,22 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
       <path value="PlanDefinition.useContext.code" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-        <code value="gender" />
-      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:OneGender.code.code">
+      <path value="PlanDefinition.useContext.code.code" />
+      <fixedCode value="gender" />
     </element>
     <element id="PlanDefinition.useContext:OneGender.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+      </binding>
     </element>
+    <!--
     <element id="PlanDefinition.useContext:OneGender.value[x].coding">
       <path value="PlanDefinition.useContext.value[x].coding" />
       <min value="1" />
@@ -289,6 +319,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
       </binding>
     </element>
+  -->
     <element id="PlanDefinition.useContext:StoreSpecimen">
       <path value="PlanDefinition.useContext" />
       <sliceName value="StoreSpecimen" />
@@ -298,17 +329,24 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code">
       <path value="PlanDefinition.useContext.code" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-        <code value="task" />
-      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:StoreSpecimen.code.code">
+      <path value="PlanDefinition.useContext.code.code" />
+      <fixedCode value="task" />
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+          <code value="STORE" />
+      </coding>
+      </patternCodeableConcept>
     </element>
+    <!--
     <element id="PlanDefinition.useContext:StoreSpecimen.value[x].coding">
       <path value="PlanDefinition.useContext.value[x].coding" />
       <min value="1" />
@@ -318,6 +356,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <code value="STORE" />
       </fixedCoding>
     </element>
+  -->
     <element id="PlanDefinition.usage">
       <path value="PlanDefinition.usage" />
       <short value="Describes the clinical usage of the laboratory diagnostic service" />
