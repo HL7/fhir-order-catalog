@@ -92,6 +92,15 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode" />
       </type>
     </element>
+    <element id="PlanDefinition.extension:ServiceBillingCode.value[x]">
+      <path value="PlanDefinition.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
     <element id="PlanDefinition.extension:BillingSummary">
       <path value="PlanDefinition.extension" />
       <sliceName value="BillingSummary" />
@@ -182,6 +191,9 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.useContext:Orderable">
       <path value="PlanDefinition.useContext" />
       <sliceName value="Orderable" />
+      <label value="orderable" />
+      <short value="Service is orderable" />
+      <definition value="The presence of this slice indicates that the service is open to laboratory order entry" />
       <max value="1" />
     </element>
     <element id="PlanDefinition.useContext:Orderable.code">
@@ -203,9 +215,21 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         </coding>
       </fixedCodeableConcept>
     </element>
+    <element id="PlanDefinition.useContext:Orderable.value[x].coding">
+      <path value="PlanDefinition.useContext.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="LABOE" />
+      </fixedCoding>
+    </element>
     <element id="PlanDefinition.useContext:PathologistInitiative">
       <path value="PlanDefinition.useContext" />
       <sliceName value="PathologistInitiative" />
+      <label value="pathologist" />
+      <short value="Service may be added by pathologist" />
+      <definition value="The presence of this slice indicates that the service may be added to an existing order by the pathologist after review of the preliminary results of this order" />
       <max value="1" />
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
@@ -227,9 +251,20 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         </coding>
       </fixedCodeableConcept>
     </element>
+    <element id="PlanDefinition.useContext:PathologistInitiative.value[x].coding">
+      <path value="PlanDefinition.useContext.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="LABRREV" />
+      </fixedCoding>
+    </element>
     <element id="PlanDefinition.useContext:OneGender">
       <path value="PlanDefinition.useContext" />
       <sliceName value="OneGender" />
+      <short value="service restricted to one gender" />
+      <definition value="The presence of this slice indicates that the service is restricted to one gender of subject (female or male)" />
       <max value="1" />
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
@@ -244,10 +279,44 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="PlanDefinition.useContext:OneGender.value[x].coding">
+      <path value="PlanDefinition.useContext.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
       </binding>
+    </element>
+    <element id="PlanDefinition.useContext:StoreSpecimen">
+      <path value="PlanDefinition.useContext" />
+      <sliceName value="StoreSpecimen" />
+      <short value="Specimens to be kept" />
+      <definition value="The presence of this slice indicates that the specimens used to perform this service will be kept in long-time storage and available for re-testing in the future" />
+      <max value="1" />
+    </element>
+    <element id="PlanDefinition.useContext:StoreSpecimen.code">
+      <path value="PlanDefinition.useContext.code" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
+      </fixedCoding>
+    </element>
+    <element id="PlanDefinition.useContext:StoreSpecimen.value[x]">
+      <path value="PlanDefinition.useContext.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="PlanDefinition.useContext:StoreSpecimen.value[x].coding">
+      <path value="PlanDefinition.useContext.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="STORE" />
+      </fixedCoding>
     </element>
     <element id="PlanDefinition.usage">
       <path value="PlanDefinition.usage" />

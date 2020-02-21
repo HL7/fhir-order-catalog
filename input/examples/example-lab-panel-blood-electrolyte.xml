@@ -51,6 +51,7 @@
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
             <code value="task"/>
+            <display value="Workflow Task"/>
         </code>
         <valueCodeableConcept>
             <coding>

@@ -15,7 +15,6 @@
   </contact>
   <description value="This extension to PlanDefinition conveys a billing code associated with the service represented by the PlanDefinition instance. It may also reference the billing rules associated with this code as a ChargeItemDefinition" />
   <purpose value="This extension to PlanDefinition is usable for potentially any kind of service or protocole represented by an instance of PlanDefinition" />
-  
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -44,6 +43,12 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.value[x]" />
@@ -53,7 +58,7 @@
       </type>
     </element>
     <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
