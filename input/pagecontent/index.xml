@@ -3,7 +3,7 @@
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   <a name="intro"> </a>
   <h3>Introduction to this implementation guide</h3>
-  <p>This implementation guide for sharing order catalogs is targetting FHIR R4 and the universal realm.</p>
+  <p>This implementation guide for sharing order catalogs is targetting FHIR R4. Its scope is international.</p>
   <p> An order catalog exposes a homogeneous collection of healthcare items that can be ordered or
     selected by practitioners to support the course of healthcare delivery. These homogeneous
     healthcare items may represent services, products, devices or knowledge artifacts such as order
@@ -51,19 +51,21 @@
     European Union market. Another example of order catalog would be a drug formulary listing the
     medicinal products that are available for prescription in a particular hospital. A broader
     catalog of medicinal product might include all the medications authorized to the national market
-    of a country. These examples illustrate that:</p>
+    of a country. These examples bring flexibility requirements, which must be fulfilled by the 
+    choices of design and implementation of FHIR catalogs:</p>
   <ul>
     <li>the role of custodian of the catalog is distinct from the role of owner of the items
       exposed in the catalog, even if in one of the examples above the two roles may be played by
       the same organization;</li>
     <li>some catalogs may expose a huge number of items, and yet the FHIR resources that implement
-      them must stay of manageable size;</li>
+      them must have a reasonable size, which does not hamper the management (creation, update, query, retrieval) of these resources ;</li>
     <li>some catalogs are scoped for use within a single organization, while others address multiple
       organizations (or even jurisdictions) of potential consumers.</li>
   </ul>
   <br/>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
+  <p> The design choices presented here respect the flexibility requirements listed above. </p>
   <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
     Composition resource, which conveys the general properties of the catalog (e.g. owner, title,
     period of validity, type of content), and each item of the catalog is represented by a
