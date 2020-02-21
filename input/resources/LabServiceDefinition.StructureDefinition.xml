@@ -202,6 +202,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <comment value="When multiple useContexts are specified, in this LabServiceDefinition profile, all contexts apply to the defined laboratory service." />
       <mustSupport value="true" />
     </element>
+    <!--
     <element id="PlanDefinition.useContext.code">
       <path value="PlanDefinition.useContext.code"/>
     </element>
@@ -209,6 +210,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.useContext.code.system" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
     </element>
+  -->
     <element id="PlanDefinition.useContext:Orderable">
       <path value="PlanDefinition.useContext" />
       <sliceName value="Orderable" />
@@ -219,6 +221,10 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:Orderable.code">
       <path value="PlanDefinition.useContext.code" />
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+      </binding>
     </element>
     <element id="PlanDefinition.useContext:Orderable.code.code">
       <path value="PlanDefinition.useContext.code.code" />
@@ -257,6 +263,10 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
       <path value="PlanDefinition.useContext.code" />
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+      </binding>
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code.code">
       <path value="PlanDefinition.useContext.code.code" />
@@ -294,6 +304,10 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
       <path value="PlanDefinition.useContext.code" />
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+      </binding>
     </element>
     <element id="PlanDefinition.useContext:OneGender.code.code">
       <path value="PlanDefinition.useContext.code.code" />
@@ -329,6 +343,10 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code">
       <path value="PlanDefinition.useContext.code" />
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+      </binding>
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code.code">
       <path value="PlanDefinition.useContext.code.code" />
