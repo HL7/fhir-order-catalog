@@ -389,9 +389,9 @@
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
 		compendium, associated with a billing code and billing rules. The example is in French as is the billing coding system.</p>
 	<p>	The figure below displays the business content. </p>
-	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="400px"/>
+	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="600px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
-	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="600px"/>
+	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="800px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
 		single measurement. </p>
 	<p>This service can be billed only if it is ordered with a reason for test that matches one of the clinical focuses 
@@ -414,10 +414,16 @@
 				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
-				<td>Vaitamin D - orderable service</td>
+				<td>Vitamin D - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-vitamind-serum.html">example-lab-service-vitamind-serum</a></td>
+			</tr>
+			<tr>
+				<td>Vitamin D - billing code and conditions</td>
+				<td><a href="http://hl7.org/fhir/chargeitemdefinition.html">ChargeItemDefinition</a></td>
+				<td><a href="StructureDefinition-LabChargeItemDefinition.html">LabChargeItemDefinition</a></td>
+				<td><a href="ChargeItemDefinition-example-lab-billing-vitamind-focus.html">example-lab-billing-vitamind-focus</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D - operational procedure</td>
