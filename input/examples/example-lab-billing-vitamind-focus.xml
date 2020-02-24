@@ -136,6 +136,11 @@
             <display value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
         </coding>
     </code>
+    <applicability>
+        <description value="Cet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré 
+            par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
+        <language value="text/fhirpath"/>
+    </applicability>
     <propertyGroup>
         <priceComponent>
             <type value="base"/>

@@ -6,7 +6,7 @@
 		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the example section.</p>
 	<p>The examples are indexed E1, E2, E3, ...</p>
 	<a name="LabE1"> </a>
-	<h3>E1: Blood potassium level - orderable single test</h3>
+	<h3>E1: Blood potassium test</h3>
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
 		compendium. The figure below displays the business content. </p>
 	<img src="LabExampleE1Business.png" alt="Example E1 - business content" width="400px"/>
@@ -14,10 +14,10 @@
 	<img src="LabExampleE1Technical.png" alt="Example E1 - FHIR implementation" width="600px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
 		single measurement. As shown in this example, the notion of <i>orderability</i> is
-		represented by a predefined context of usage: &quot;<i>service associated with laboratory
+		represented by a predefined context of use: &quot;<i>service associated with laboratory
 			order entry task</i>&quot;. A service is orderable if and only if the PlanDefinition
 		representing it includes a useContext element with code = &quot;task&quot; and
-		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry) from the V3 ActCode
+		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry task) from the V3 ActCode
 		vocabulary. </p> 
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
@@ -69,7 +69,7 @@
 		</tbody>
 	</table>
 	<a name="LabE2"> </a>
-	<h3>E2: Blood electrolyte - orderable panel</h3>
+	<h3>E2: Blood electrolyte</h3>
 	<p> This example illustrates the representation of a panel of tests in the laboratory
 		compendium. The figure below displays the business content. </p>
 	<img src="LabExampleE2Business.png" alt="Example E2 - business content" width="400px"/>
@@ -139,14 +139,15 @@
 		</tbody>
 	</table>
 	<a name="LabE3"> </a>
-	<h3>E3: creatinine on 24H urine - orderable panel</h3>
+	<h3>E3: creatinine on 24H urine</h3>
 	<p> This example illustrates the representation of a panel of tests in the laboratory
 		compendium, using some observations both as input and output. The figure below displays the business content. </p>
 	<img src="LabExampleE3Business.png" alt="Example E3 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE3Technical.png" alt="Example E3 - FHIR implementation" width="600px"/>
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
-		collection of test of panels, which usually produces multiple results. </p> 
+		collection of test of panels, which usually produces multiple results. The observations "24h urine volume" 
+		and "urine collection duration" are used both as input (proved by the specimen collector) and as results of the panel.</p> 
 	<p>Artifacts implementing this example: </p> 
 	<table border="1">
 		<thead>
@@ -209,14 +210,16 @@
 		</tbody>
 	</table>
 	<a name="LabE4"> </a>
-	<h3>E4: creatinine on serum or plasma - orderable test</h3>
+	<h3>E4: creatinine on serum or plasma</h3>
 	<p> This example illustrates the representation of a laboratory service using two alternative laboratory procedures
 		depending on the kind of specimen collected from the patient. The figure below displays the business content. </p>
 	<img src="LabExampleE4Business.png" alt="Example E4 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE4Technical.png" alt="Example E4 - FHIR implementation" width="600px"/>
 	<p>In this example, the laboratory service is of type &quot;<i>test</i>&quot; 
-		and is expected to produce an single result; the serum/plasma creatinine level.</p> 
+		and is expected to produce an single result; the serum/plasma creatinine level. The service is operationalized by
+		two alternative procedures (<i>ActivityDefinition</i>) depending of the kind of specimen collected. 
+		Both procedures produce the same observation "serum creatinine" </p> 
 	<p>Artifacts implementing this example: </p> 
 	<table border="1">
 		<thead>
@@ -273,7 +276,7 @@
 		</tbody>
 	</table>
 	<a name="LabE5"> </a>
-	<h3>E5: creatinine renal clearance in 24 hour urine and serum or plasma - orderable panel</h3>
+	<h3>E5: creatinine renal clearance</h3>
 	<p> This example illustrates how a panel can logically include a combination of tests and panels, using logical AND and XOR to assemble them.  
 		The figure below displays the business content. </p>
 	<img src="LabExampleE5Business.png" alt="Example E5 - business content" width="600px"/>
@@ -385,7 +388,7 @@
 		</tbody>
 	</table>
 	<a name="LabE6"> </a>
-	<h3>E6: Vitamin D level - orderable single test</h3>
+	<h3>E6: Vitamin D</h3>
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
 		compendium, associated with a billing code and billing rules. The example is in French as is the billing coding system.</p>
 	<p>	The figure below displays the business content. </p>
@@ -393,9 +396,8 @@
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="800px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
-		single measurement. </p>
-	<p>This service can be billed only if it is ordered with a reason for test that matches one of the clinical focuses 
-		declared in the ChargeItemDefinition referenced by the service.</p> 
+		single measurement. This service can be claimed for reimbursement only if it is ordered with a reason for test that matches 
+		one of the clinical focuses declared in the ChargeItemDefinition referenced by the service.</p> 
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
