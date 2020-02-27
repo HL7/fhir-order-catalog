@@ -139,7 +139,11 @@
     <applicability>
         <description value="Cet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré 
             par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
+        <!--  To be further discussed. 
+              The expression should apply to the laboratory request conveying the order for Vitamin D
         <language value="text/fhirpath"/>
+        <expression value="exists()"/>
+        -->
     </applicability>
     <propertyGroup>
         <priceComponent>
