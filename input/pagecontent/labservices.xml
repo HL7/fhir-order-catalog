@@ -90,15 +90,15 @@
         <td>billingCode</td>
         <td>token</td>
         <td> A billing code associated with the service</td>
-        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value as Reference).reference(ChargeItemDefinition).code</td>
-        <td>The FHIRPath expression is probably wrong and uncomplete.</td>
+        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value as Reference).reference(ChargeItemDefinition).resolve().code</td>
+        <td>The FHIRPath expression may be wrong</td>
       </tr>
       <tr>
         <td>orderable</td>
         <td>token</td>
-        <td>Service with a useContext 'laboratory order entry task' (code = task, valueCodeableConcept = LABOE)</td>
-        <td>(PlanDefinition.useContext.where(code='task').value as CodeableConcept)=http://hl7.org/fhir/R4/v3/ActCode/cs.html|LABOE</td>
-        <td>FHIRPath expression is most likely wrong</td>
+        <td>(true: service with a useContext fulfillibg slice Orderable of LabServiceDefinition profile ; false: the opposite</td>
+        <td>PlanDefinition.useContext.slice(http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition, Orderable).exists()</td>
+        <td>FHIRPath expression may be incorrect</td>
       </tr>
       <tr>
         <td>task</td>
@@ -169,6 +169,27 @@
         <td>lab service type </td>
         <td>PlanDefinition.type</td>
         <td>narrow to type panel or type test</td>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td>token</td>
+        <td>lab service status </td>
+        <td>PlanDefinition.status</td>
+        <td>narrow to active or retired services</td>
+      </tr>
+      <tr>
+        <td>publisher</td>
+        <td>string</td>
+        <td>lab service publisher </td>
+        <td>PlanDefinition.publisher</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>jurisdiction</td>
+        <td>string</td>
+        <td>lab service jurisdiction </td>
+        <td>PlanDefinition.publisher</td>
+        <td>e.g. country where service is usable</td>
       </tr>
     </tbody>
   </table>
