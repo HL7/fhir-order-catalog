@@ -3,7 +3,7 @@
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   <a name="intro"> </a>
   <h3>Introduction to this guide</h3>
-  <p>This implementation guide for sharing order catalogs is targetting FHIR R4. Its scope is international.</p>
+  <p>This implementation guide for sharing order catalogs is targetting FHIR R4. Its scope is international (aka universal realm).</p>
   <p> An order catalog exposes a homogeneous collection of healthcare items that can be ordered or
     selected by practitioners to support the course of healthcare delivery. These homogeneous
     healthcare items may represent services, products, devices or knowledge artifacts such as order
@@ -133,14 +133,14 @@
     </thead>
     <tbody>
       <tr>
-        <td>Publishing Facilitator</td>
-        <td>Rob Hausam</td>
-        <td>Hausam Consulting LLC</td>
-      </tr>
-      <tr>
         <td>Primary Editor</td>
         <td>François Macary</td>
         <td>Phast</td>
+      </tr>
+      <tr>
+        <td>Primary Editor</td>
+        <td>Rob Hausam</td>
+        <td>Hausam Consulting LLC</td>
       </tr>
       <tr>
         <td>Contributor</td>

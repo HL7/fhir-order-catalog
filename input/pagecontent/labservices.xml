@@ -84,35 +84,35 @@
         <td>reference</td>
         <td>The reference to a Composition resource (profiled by CatalogHeader) owning this item</td>
         <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference').valueReference.reference(Composition)</td>
-        <td>Narrows the search to services of one catalog</td>
+        <td>services of one catalog</td>
       </tr>
       <tr>
         <td>billingCode</td>
         <td>token</td>
         <td> A billing code associated with the service</td>
         <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value as Reference).reference(ChargeItemDefinition).resolve().code</td>
-        <td>The FHIRPath expression may be wrong</td>
+        <td>The FHIRPath expression to be checked</td>
       </tr>
       <tr>
         <td>orderable</td>
         <td>token</td>
-        <td>(true: service with a useContext fulfillibg slice Orderable of LabServiceDefinition profile ; false: the opposite</td>
+        <td>(true: service with a useContext belonging to slice Orderable of LabServiceDefinition profile ; false: the opposite</td>
         <td>PlanDefinition.useContext.slice(http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition, Orderable).exists()</td>
-        <td>FHIRPath expression may be incorrect</td>
+        <td>FHIRPath expression to be checked</td>
       </tr>
       <tr>
         <td>task</td>
         <td>token</td>
-        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable service)</td>
+        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable service, LABRREV for service that can be added by the pathologist)</td>
         <td>(PlanDefinition.useContext.where(code='task').value as CodeableConcept)</td>
-        <td>Search for services associated with the particular task</td>
+        <td>services associated with the particular task</td>
       </tr>
       <tr>
         <td>gender</td>
         <td>token</td>
         <td>Services with a useContext representing a particular gender</td>
         <td>(PlanDefinition.useContext.where(code='gender').value as CodeableConcept)</td>
-        <td>Search for services restricted to a particular gender</td>
+        <td>services restricted to a particular gender</td>
       </tr>
       <tr>
         <td>_lastUpdated</td>
