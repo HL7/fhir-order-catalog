@@ -1,0 +1,88 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/valueset.xsd">
+  <id value="example-normal-reasons-vitamin-d"/>
+  <meta>
+    <lastUpdated value="2020-03-10T07:30:00Z" />
+    <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
+  </meta>
+  <language value="fr-FR"/>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
+      <p>Liste des raisons fournies par le prescripteur, ouvrant droit à la facturation et au remboursement de l'examen
+        Dosage de la 25-(OH)-vitamine D (D2 + D3) - (NABM 1139)</p>
+    </div>
+  </text>
+  <!--
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+    <valueMarkdown value="Availability Time Rule" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+    <valueString value="Informative" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+
+  <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-normal-reasons-vitamin-d" />
+  <version value="4.0.1" />
+    -->
+  <name value="NormalReasonsVitaminD" />
+  <title value="Raisons normales de la facturation du dosage de la vitamine D"/>
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2019-12-20" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Ce jeu de valeurs liste les réponses normales associées à la question &quot;Raison pour la prescription de l'examen dosage de la vitamine D&quot;, autorisant la facturation et le remboursement de cet examen (NABM 1139)."/>
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <!--  
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt;41345002 OR &lt;&lt;4598005 OR &lt;&lt;737295003 OR &lt;&lt;707206008 OR &lt;&lt;443731004 OR &lt;&lt;182817000"/>
+      </filter>
+      -->
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="41345002"/>
+      </filter>
+       <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="4598005"/>
+      </filter>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="737295003"/>
+      </filter>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="707206008"/>
+      </filter>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="443731004"/>
+      </filter>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="182817000"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

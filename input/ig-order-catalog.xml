@@ -163,6 +163,13 @@
       <name value="Laboratory observation Profile"/>
       <description value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ObservationValueSet"/>
+      </reference>
+      <name value="ValueSet Profile used by ObservationDefinition"/>
+      <description value="Profile of ValueSet for coded observations"/>
+    </resource>
     <!-- 
       Below, the example resources dedicated to catalogs of laboratory in vitro diagnostic services
     -->
@@ -322,7 +329,15 @@
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
       </reference>
       <name value="Lab input observation - reason"/>
-      <description value="Lab E1, E2, E6: observation reason for test"/>
+      <description value="Lab E1, E2: observation reason for test"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-input-observation-reason-for-vitamin-d"/>
+      </reference>
+      <name value="Lab input observation - vitamin d"/>
+      <description value="Lab E6: observation reason for vitamin D test"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
     </resource>
     <resource>
@@ -404,6 +419,22 @@
       <name value="Lab billing code and rule for vitamin D"/>
       <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/example-normal-reasons-vitamin-d"/>
+      </reference>
+      <name value="Lab normal reasons for billing vitamin D"/>
+      <description value="Lab E6 - value set of normal reasons enabling billing of Vitamin D test"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/example-reasons-for-order"/>
+      </reference>
+      <name value="Valid coded reasons for ordering a lab service"/>
+      <description value="Lab E* - broadest value set of reasons for ordering a laboratory service"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
     </resource>
     <!-- 
       html pages

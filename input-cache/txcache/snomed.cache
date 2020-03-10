@@ -263,3 +263,5262 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "41345002"
+      },
+      {
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "4598005"
+      },
+      {
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "737295003"
+      },
+      {
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "707206008"
+      },
+      {
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "443731004"
+      },
+      {
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "182817000"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+  },
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:a9caf212-87f8-4987-bc37-aca668c332ad",
+    "timestamp" : "2020-03-10T07:34:42.424Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "138875005"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:5126746f-4467-472c-a1d0-1736ac26d49c",
+    "timestamp" : "2020-03-10T12:44:42.895Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200131"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "101009",
+      "display" : "Quilonia ethiopica"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102002",
+      "display" : "Hemoglobin Okaloosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "103007",
+      "display" : "Squirrel fibroma virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "104001",
+      "display" : "Excision of lesion of patella"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "106004",
+      "display" : "Posterior carpal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "107008",
+      "display" : "Fetal part of placenta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "108003",
+      "display" : "Entire condylar emissary vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "109006",
+      "display" : "Anxiety disorder of childhood OR adolescence"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "110001",
+      "display" : "Visceral layer of Bowman's capsule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "111002",
+      "display" : "Parathyroid gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "112009",
+      "display" : "Bembrops anatirostris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "113004",
+      "display" : "Type-casting-machine operator"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "114005",
+      "display" : "Feline calicivirus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "115006",
+      "display" : "Removable appliance therapy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "116007",
+      "display" : "Subcutaneous tissue of medial surface of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "117003",
+      "display" : "Rhipicephalus sanguineus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "118008",
+      "display" : "Black buffalo weaver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "119000",
+      "display" : "Thoracoscopic partial lobectomy of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "120006",
+      "display" : "Ornithine racemase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "121005",
+      "display" : "Retrobulbar injection of therapeutic agent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "122003",
+      "display" : "Choroidal hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "124002",
+      "display" : "Coronoid process of mandible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "125001",
+      "display" : "Ferrous (59-Fe) sulfate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "126000",
+      "display" : "Galactosyl-N-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "127009",
+      "display" : "Spontaneous abortion with laceration of cervix"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128004",
+      "display" : "Hand microscope examination of skin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "129007",
+      "display" : "Homoiothermia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "130002",
+      "display" : "Hemoglobin Hopkins-II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "131003",
+      "display" : "Dolichyl-phosphate mannosyltransferase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "132005",
+      "display" : "Serraniculus pumilio"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "133000",
+      "display" : "Percutaneous implantation of neurostimulator electrodes into neuromuscular component"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "134006",
+      "display" : "Decreased hair growth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "135007",
+      "display" : "Arthrotomy of wrist joint with exploration and biopsy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "136008",
+      "display" : "Acacia erioloba"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "138009",
+      "display" : "No past history of"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "139001",
+      "display" : "Felid herpesvirus 1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "140004",
+      "display" : "Chronic pharyngitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "142007",
+      "display" : "Excision of tumor from shoulder area, deep, intramuscular"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "144008",
+      "display" : "Normal peripheral vision"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "145009",
+      "display" : "Colloid milium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "146005",
+      "display" : "Repair of nonunion of metatarsal with bone graft"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "147001",
+      "display" : "Superficial foreign body of scrotum without major open wound but with infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "148006",
+      "display" : "Preliminary diagnosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "149003",
+      "display" : "Central pair of microtubules, cilium or flagellum, not bacterial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "150003",
+      "display" : "Abnormal bladder continence"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "151004",
+      "display" : "Gonococcal meningitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "153001",
+      "display" : "Cystourethroscopy with resection of ureterocele"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "154007",
+      "display" : "Rubber molding-press operator"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "155008",
+      "display" : "Deep circumflex artery of ilium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "156009",
+      "display" : "Spine board"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "158005",
+      "display" : "Salmonella Irumu"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "159002",
+      "display" : "Ferrocyanide salt"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "160007",
+      "display" : "Removal of foreign body of tendon and/or tendon sheath"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "161006",
+      "display" : "Thermal injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162004",
+      "display" : "Severe manic bipolar I disorder without psychotic features"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "163009",
+      "display" : "Bacteroides stercoris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "164003",
+      "display" : "Phosphoenolpyruvate-protein phosphotransferase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "165002",
+      "display" : "Accident-prone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "166001",
+      "display" : "Behavioral therapy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "167005",
+      "display" : "Supraclavicular part of brachial plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "168000",
+      "display" : "Typhlolithiasis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169008",
+      "display" : "Hypothalamic releasing factor-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "170009",
+      "display" : "Special potency disk identification, vancomycin test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "171008",
+      "display" : "Injury of ascending right colon without open wound into abdominal cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "172001",
+      "display" : "Endometritis following molar AND/OR ectopic pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "173006",
+      "display" : "Micrognathus crinitus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "174000",
+      "display" : "Harrison-Richardson operation on vagina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "175004",
+      "display" : "Supraorbital neuralgia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "176003",
+      "display" : "Anastomosis of rectum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "177007",
+      "display" : "Poisoning by sawfly larvae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "178002",
+      "display" : "Uridine diphosphate galactose"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "179005",
+      "display" : "Apraxia of dressing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "180008",
+      "display" : "Fijivirus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "181007",
+      "display" : "Hemorrhagic bronchopneumonia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "182000",
+      "display" : "Canalization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "183005",
+      "display" : "Autoimmune pancytopenia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "184004",
+      "display" : "Withdrawal arrhythmia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "186002",
+      "display" : "HLA-Cw9 antigen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "187006",
+      "display" : "Cyanocobalamin (57-Co)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "188001",
+      "display" : "Injury of intercostal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "189009",
+      "display" : "Excision of lesion of artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "191001",
+      "display" : "Lednice virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "192008",
+      "display" : "Congenital syphilitic hepatomegaly"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "193003",
+      "display" : "Benign hypertensive renal disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "194009",
+      "display" : "Notropis whipplei"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "195005",
+      "display" : "Illegal abortion with endometritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "196006",
+      "display" : "Concave shape"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "197002",
+      "display" : "Mold to yeast conversion test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "198007",
+      "display" : "Disease due to Filoviridae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "199004",
+      "display" : "Decreased lactation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "200001",
+      "display" : "Berberine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "201002",
+      "display" : "Oligopus claudei"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "202009",
+      "display" : "Anterior division of renal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "205006",
+      "display" : "Entire left commissure of aortic valve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "206007",
+      "display" : "Gluteus maximus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "207003",
+      "display" : "European edible frog"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "208008",
+      "display" : "Neurocutaneous melanosis sequence"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "209000",
+      "display" : "Plover"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "210005",
+      "display" : "Arrow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "211009",
+      "display" : "Norethandrolone-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "213007",
+      "display" : "Simian enterovirus 7"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "214001",
+      "display" : "Streptococcus mutans"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "216004",
+      "display" : "Delusion of persecution"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "217008",
+      "display" : "Blood group antigen IH"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "218003",
+      "display" : "Ophidion holbrooki"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "219006",
+      "display" : "Alcohol user"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "221001",
+      "display" : "Articular surface, phalanges, of fourth metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "222008",
+      "display" : "Acute epiglottitis with obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "223003",
+      "display" : "Tumor of body of uterus affecting pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "226006",
+      "display" : "Aedes luteocephalus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "227002",
+      "display" : "Canal of Hering"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "228007",
+      "display" : "Lucio phenomenon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "229004",
+      "display" : "Accipiter gentilis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "230009",
+      "display" : "Miller operation, urethrovesical suspension"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "231008",
+      "display" : "3-hydroxyisobutyrate dehydrogenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "232001",
+      "display" : "Congenital fold"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233006",
+      "display" : "Hepatocolic ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "234000",
+      "display" : "Cyrnea colini"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235004",
+      "display" : "Superior labial artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237007",
+      "display" : "Annona"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "238002",
+      "display" : "Heptachlor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "239005",
+      "display" : "Ophthalmologic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "241006",
+      "display" : "Epilepsia partialis continua"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "242004",
+      "display" : "Noninfectious jejunitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "243009",
+      "display" : "Replacement of cerebral ventricular tube"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "245002",
+      "display" : "Division of nerve ganglion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "246001",
+      "display" : "Lateral vestibular nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247005",
+      "display" : "Mesotympanum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "248000",
+      "display" : "Infectious bursal disease virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "249008",
+      "display" : "Ryania"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "251007",
+      "display" : "Pectoral region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "252000",
+      "display" : "Acinetobacter johnsonii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "253005",
+      "display" : "Sycosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "254004",
+      "display" : "Insect iridescent virus 11"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255003",
+      "display" : "Calcified nodule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "256002",
+      "display" : "Kupffer cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "257006",
+      "display" : "Acne rosacea, erythematous telangiectatic type"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "259009",
+      "display" : "Fibrous body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260004",
+      "display" : "Indigo bunting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "261000",
+      "display" : "Codeine phosphate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "262007",
+      "display" : "Percutaneous aspiration of renal pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "263002",
+      "display" : "Thoracic nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "264008",
+      "display" : "Blind hypertensive eye"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "266005",
+      "display" : "Right lower lobe of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "267001",
+      "display" : "Anal fistulectomy, multiple"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "268006",
+      "display" : "Lycosa tarentula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "269003",
+      "display" : "Theileria sergenti"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "270002",
+      "display" : "Female first cousin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "271003",
+      "display" : "Bone plate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "272005",
+      "display" : "Superior articular process of lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "273000",
+      "display" : "Lateral myocardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275007",
+      "display" : "Noturus placidus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276008",
+      "display" : "Poisoning by oxytocin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "277004",
+      "display" : "Antbird"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "279001",
+      "display" : "Senile myocarditis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "280003",
+      "display" : "Salmonella Limete"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "281004",
+      "display" : "Dementia associated with alcoholism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "282006",
+      "display" : "Acute myocardial infarction of basal-lateral wall"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "283001",
+      "display" : "Central axillary lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "284007",
+      "display" : "Entire flexor tendon and tendon sheath of fourth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "285008",
+      "display" : "Incision and drainage of vulva"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "286009",
+      "display" : "Czech"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "287000",
+      "display" : "Air receiver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289002",
+      "display" : "Metacarpophalangeal joint of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "290006",
+      "display" : "Melnick-Fraser syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "291005",
+      "display" : "Atomizer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "292003",
+      "display" : "EEG finding"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "293008",
+      "display" : "Satellite"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "294002",
+      "display" : "Excisional biopsy of joint structure of spine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "295001",
+      "display" : "Nonexcisional destruction of cyst of ciliary body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "296000",
+      "display" : "Coumachlor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "297009",
+      "display" : "Acute myringitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "299007",
+      "display" : "Paraffinoma of skin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "300004",
+      "display" : "Miniature schnauzer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301000",
+      "display" : "Fifth metatarsal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "302007",
+      "display" : "Spiramycin-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "303002",
+      "display" : "Apoplectic pancreatitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "305009",
+      "display" : "Malaclemys"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "306005",
+      "display" : "Echography of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "308006",
+      "display" : "Pearly penile papules"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "310008",
+      "display" : "Boil of penis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311007",
+      "display" : "Plantar surface of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "312000",
+      "display" : "Salmonella Amba"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "313005",
+      "display" : "Déjà vu"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "314004",
+      "display" : "Eimeria lagopodi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "315003",
+      "display" : "Skin of umbilicus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "316002",
+      "display" : "Partial dacryocystectomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "317006",
+      "display" : "Reactive hypoglycemia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "318001",
+      "display" : "Cardiac impression of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "320003",
+      "display" : "Cervical dilatation, 1cm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "322006",
+      "display" : "Octylphenoxy P.H. ethanol"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "324007",
+      "display" : "Plaster ulcer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "325008",
+      "display" : "Eimeria bovis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "326009",
+      "display" : "Aerodrome construction engineer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "327000",
+      "display" : "Arsenic-76"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "328005",
+      "display" : "Follicular papule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "329002",
+      "display" : "Antimony-127"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "330007",
+      "display" : "Occipital headache"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "331006",
+      "display" : "Hospital-based outpatient rheumatology clinic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "332004",
+      "display" : "Sphyrna lewini"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "334003",
+      "display" : "Panorex examination of mandible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "335002",
+      "display" : "Pylorospasm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "336001",
+      "display" : "Fibrinogen Tokyo II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "338000",
+      "display" : "Black-headed oriole"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "339008",
+      "display" : "Blister"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "340005",
+      "display" : "Enzyme variant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "341009",
+      "display" : "ABO incompatibility reaction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "342002",
+      "display" : "Amobarbital interview"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "344001",
+      "display" : "Ankle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "345000",
+      "display" : "Atrioventricular bundle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "346004",
+      "display" : "Periodontal scaling and root planing, per quadrant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "347008",
+      "display" : "Rufous tinamou"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "348003",
+      "display" : "Radionuclide dynamic function study"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "349006",
+      "display" : "Absent tendon reflex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "350006",
+      "display" : "Percina crassa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "351005",
+      "display" : "Urinary undiversion of ureteral anastomosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "352003",
+      "display" : "Reagent RBC, preparation antibody sensitized pool"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "354002",
+      "display" : "Triton tumor, malignant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "355001",
+      "display" : "Hemorrhagic shock"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "356000",
+      "display" : "Reticular corium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "357009",
+      "display" : "Closed fracture of trapezoidal bone of wrist"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "359007",
+      "display" : "Kernicterus due to isoimmunization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "360002",
+      "display" : "Acute radiation disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "362005",
+      "display" : "Arthroderma quadrifidum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "363000",
+      "display" : "Fibrinogen San Juan"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "364006",
+      "display" : "Acute left-sided heart failure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "365007",
+      "display" : "Circaseptan biorhythm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "366008",
+      "display" : "Hidromeiosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "367004",
+      "display" : "Clubbing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "368009",
+      "display" : "Heart valve disorder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "369001",
+      "display" : "Normal jugular venous pressure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "370000",
+      "display" : "Beta>2S< glycoprotein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "371001",
+      "display" : "Acylcarnitine hydrolase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "372008",
+      "display" : "Trichophyton rubrum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "374009",
+      "display" : "Costosternoplasty for pectus excavatum repair"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "375005",
+      "display" : "Sibling"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "376006",
+      "display" : "Micrurus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "377002",
+      "display" : "Sparteine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "378007",
+      "display" : "Morquio syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "379004",
+      "display" : "Human rhinovirus 13"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "380001",
+      "display" : "Normal variation in shape"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "381002",
+      "display" : "Mansonia pertubans"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "382009",
+      "display" : "Legal history finding relating to child"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "383004",
+      "display" : "Passive range of hip extension - finding"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "385006",
+      "display" : "Secondary peripheral neuropathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "386007",
+      "display" : "Poecilia formosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "387003",
+      "display" : "Melanuria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "388008",
+      "display" : "Blepharorrhaphy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "389000",
+      "display" : "Tobramycin measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "390009",
+      "display" : "Ophidion beani"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "391008",
+      "display" : "Field crop farm worker (general)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "392001",
+      "display" : "151-Gd"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "393006",
+      "display" : "Wall of urinary bladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "394000",
+      "display" : "Abnormal trabeculation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "395004",
+      "display" : "Immunoglobulin pentamer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "397007",
+      "display" : "Hippeastrum equestre"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "398002",
+      "display" : "Left axis deviation greater than -90 degrees by EKG"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399005",
+      "display" : "Blaberus craniifer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "400003",
+      "display" : "Pinzgauer cattle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "401004",
+      "display" : "Distal subtotal pancreatectomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402006",
+      "display" : "Dental branches of inferior alveolar artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "404007",
+      "display" : "Brama japonica"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "405008",
+      "display" : "Entire posterior temporal diploic vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "406009",
+      "display" : "Fulguration of stomach lesion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "407000",
+      "display" : "Congenital hepatomegaly"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "408005",
+      "display" : "Tooth chattering"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "409002",
+      "display" : "Food allergy diet"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "410007",
+      "display" : "Atheta occidentalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "411006",
+      "display" : "Anopheles cruzii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "412004",
+      "display" : "Ribose-5-phosphate isomerase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "413009",
+      "display" : "Photophosphorylation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "414003",
+      "display" : "Gastric fundus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "415002",
+      "display" : "Taggert virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "416001",
+      "display" : "Nymphalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "417005",
+      "display" : "Hospital re-admission"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "419008",
+      "display" : "Functional dilatation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "420002",
+      "display" : "Anastomosis, heterocladic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "421003",
+      "display" : "Baltimore oriole"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "422005",
+      "display" : "Inferior surface of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "423000",
+      "display" : "Oochoristica ratti"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "424006",
+      "display" : "Citramalyl-CoA lyase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "425007",
+      "display" : "Hemoglobin Nagoya"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426008",
+      "display" : "Superficial injury of ankle without infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "427004",
+      "display" : "Human echovirus 4"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "428009",
+      "display" : "Northern flat-head snake"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "431005",
+      "display" : "Hypertrophy of scrotum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "432003",
+      "display" : "Carminic acid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "433008",
+      "display" : "Euphorbia mauritanica"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "435001",
+      "display" : "Pulmonary inhalation study"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "436000",
+      "display" : "Determined by"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "437009",
+      "display" : "Abnormal composition of urine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "438004",
+      "display" : "2-hydroxyglutarate dehydrogenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "439007",
+      "display" : "Therapeutic radioisotope"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "440009",
+      "display" : "Persistent hyperphenylalaninemia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "442001",
+      "display" : "Secondary hypopituitarism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "443006",
+      "display" : "Cystocele affecting pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "444000",
+      "display" : "Legal sibling"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "445004",
+      "display" : "Repair of malunion of tibia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "446003",
+      "display" : "Trochanteric bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "447007",
+      "display" : "Coach in sports activity accident"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "448002",
+      "display" : "Yaba monkey tumor pox virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "450005",
+      "display" : "Ulcerative stomatitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "451009",
+      "display" : "Lichanura trivirgata"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "452002",
+      "display" : "Blister of groin without infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "453007",
+      "display" : "Aedes dorsalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "455000",
+      "display" : "Babesia trautmanni"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "456004",
+      "display" : "Total abdominal colectomy with ileostomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "457008",
+      "display" : "Collateral ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "459006",
+      "display" : "Closed condylotomy of mandible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "460001",
+      "display" : "Squamous metaplasia of prostate gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "461002",
+      "display" : "Lateral corticospinal tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "462009",
+      "display" : "Urease (ATP-hydrolysing)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "463004",
+      "display" : "Closed reduction of coxofemoral joint dislocation with splint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "464005",
+      "display" : "Basophilic normoblast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "465006",
+      "display" : "Ascending frontal gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "466007",
+      "display" : "Francolin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "467003",
+      "display" : "Old laceration of muscles of pelvic floor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "468008",
+      "display" : "Glutathione measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "470004",
+      "display" : "Vitreous touch syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "471000",
+      "display" : "Flexor hallucis longus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "472007",
+      "display" : "Vegetable textile fiber"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "474008",
+      "display" : "Esophagoenteric anastomosis, intrathoracic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "476005",
+      "display" : "Lymphocyte antigen CD1b"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "477001",
+      "display" : "Suggestibility"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "478006",
+      "display" : "Non-occupational"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "479003",
+      "display" : "Graves' disease with pretibial myxedema AND with thyrotoxic crisis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "480000",
+      "display" : "Cardiopulmonary circulatory system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "481001",
+      "display" : "African horse sickness virus 3"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "482008",
+      "display" : "Gallbladder contraction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "484009",
+      "display" : "Eubacterium oxidoreducens"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "485005",
+      "display" : "Transverse colon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "486006",
+      "display" : "Acute vascular insufficiency"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "487002",
+      "display" : "Coil/whorled fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "488007",
+      "display" : "Fibroid myocarditis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "489004",
+      "display" : "Ferritin measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "490008",
+      "display" : "Upper respiratory tract hypersensitivity reaction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "493005",
+      "display" : "Urobilinogen measurement, 48-hour, feces"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "494004",
+      "display" : "Excision of lesion of tonsil"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "496002",
+      "display" : "Closed traumatic dislocation of third cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "497006",
+      "display" : "Replacement of cochlear prosthesis, multiple channels"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "498001",
+      "display" : "Nitrilase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "499009",
+      "display" : "Psilocybe mixaeensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "501001",
+      "display" : "Blood group antibody Sf^a^"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "502008",
+      "display" : "Aspidogaster conchicola"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "504009",
+      "display" : "Androgen-dependent hirsutism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "505005",
+      "display" : "Blood group antibody M'"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "506006",
+      "display" : "3-oxosteroid delta^1^-dehydrogenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "507002",
+      "display" : "Standard poodle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "508007",
+      "display" : "Eranthis hyemalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "509004",
+      "display" : "Salmonella II 30:k:e,n,x,z15"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "510009",
+      "display" : "Natural"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "511008",
+      "display" : "Fibrous meningioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "515004",
+      "display" : "Blood group antigen Giaigue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "516003",
+      "display" : "Beetle larva"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "517007",
+      "display" : "Foreign body in hypopharynx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "518002",
+      "display" : "Multiple aggregation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "519005",
+      "display" : "Free protein S"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "520004",
+      "display" : "Congenital bent nose"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "521000",
+      "display" : "Mercury-197"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "522007",
+      "display" : "Thermoactinomyces peptonophilus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "524008",
+      "display" : "Multifocal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "525009",
+      "display" : "Eimeria coturnicus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "526005",
+      "display" : "Porcine epizootic diarrhea virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "527001",
+      "display" : "Spontaneous fetal evolution, Roederer's method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "528006",
+      "display" : "Costal surface of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "529003",
+      "display" : "Guanosine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "531007",
+      "display" : "Open pulmonary valve commissurotomy with inflow occlusion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "533005",
+      "display" : "Repair of vesicocolic fistula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "534004",
+      "display" : "Wooden boatbuilder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "535003",
+      "display" : "Closure of ureterovesicovaginal fistula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "536002",
+      "display" : "Glissonian cirrhosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "537006",
+      "display" : "Haemonchus similis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "538001",
+      "display" : "2,3-dihydroxybenzoate 3,4-dioxygenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "539009",
+      "display" : "Conjunctival argyrosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "540006",
+      "display" : "Antibody to single and double stranded DNA measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "541005",
+      "display" : "Salmonella Ahuza"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "543008",
+      "display" : "Choledochostomy with transduodenal sphincteroplasty"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "544002",
+      "display" : "Melphalan-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "545001",
+      "display" : "Operative procedure on lower leg"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "546000",
+      "display" : "Heterandria formosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "547009",
+      "display" : "Hypersecretion of calcitonin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "548004",
+      "display" : "13p partial trisomy syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "549007",
+      "display" : "Incision of intracranial vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "550007",
+      "display" : "Excision of lesion of adenoids"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "551006",
+      "display" : "Phialophora repens"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "552004",
+      "display" : "Entire vagus nerve parasympathetic fibers to cardiac plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "554003",
+      "display" : "2p partial trisomy syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "555002",
+      "display" : "Dicentra species poisoning"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "556001",
+      "display" : "Bad"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "559008",
+      "display" : "Excision of varicose vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "562006",
+      "display" : "Noddy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "563001",
+      "display" : "Nystagmus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "564007",
+      "display" : "Bathyagonus alascanus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "565008",
+      "display" : "Intervertebral disc space of fifth lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "566009",
+      "display" : "Acrosin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "567000",
+      "display" : "Plant producing pyrrolizidine alkaloids"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "568005",
+      "display" : "Tic disorder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "570001",
+      "display" : "Vaccination for arthropod-borne viral encephalitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "572009",
+      "display" : "Athesmia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "573004",
+      "display" : "Amphistichus koelzi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "574005",
+      "display" : "Benzodiazepine measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "575006",
+      "display" : "Cholesteatoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "576007",
+      "display" : "Blood group antibody Duck"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "578008",
+      "display" : "Hemoglobin Jianghua"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "579000",
+      "display" : "Argas africolumbae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "581003",
+      "display" : "Salmonella Canada"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "582005",
+      "display" : "Head of phalanx of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "583000",
+      "display" : "Wirehaired vizsla"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "584006",
+      "display" : "Blood group antibody Wr^b^"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "585007",
+      "display" : "Substance P"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "586008",
+      "display" : "Contact dermatitis due to primrose"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "587004",
+      "display" : "Capsule of proximal interphalangeal joint of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "588009",
+      "display" : "Sporangium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "589001",
+      "display" : "Interventricular septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "590005",
+      "display" : "Congenital aneurysm of anterior communicating artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "591009",
+      "display" : "2-oxoisovalerate dehydrogenase (acylating)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "592002",
+      "display" : "Ixodes pacificus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "593007",
+      "display" : "Blood group antibody Holmes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "594001",
+      "display" : "2-oxoglutarate synthase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "595000",
+      "display" : "Palpebral fissure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "596004",
+      "display" : "Premenstrual dysphoric disorder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "597008",
+      "display" : "247-Cf"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "598003",
+      "display" : "Vespa crabro"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "599006",
+      "display" : "Chronic pneumothorax"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "600009",
+      "display" : "Pyromania"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "601008",
+      "display" : "Humicola"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "603006",
+      "display" : "Synchondrotomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "604000",
+      "display" : "Plant sapogenin glycoside"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "605004",
+      "display" : "Severe inflammatory atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "606003",
+      "display" : "Terrier"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "607007",
+      "display" : "Decreased vital capacity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "608002",
+      "display" : "Subcutaneous tissue of philtrum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "609005",
+      "display" : "Adoptive father"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "610000",
+      "display" : "Spastic aphonia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "611001",
+      "display" : "Hippurate hydrolase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "612008",
+      "display" : "Hepatozoon canis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "613003",
+      "display" : "Fragile X syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "614009",
+      "display" : "Corylus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "615005",
+      "display" : "Obstruction due to foreign body accidentally left in operative wound AND/OR body cavity during a procedure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "616006",
+      "display" : "Sensorimotor disorder of eyelid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "617002",
+      "display" : "Bone graft to mandible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "618007",
+      "display" : "Frontal sinusectomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "620005",
+      "display" : "Trichlorophenol"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "621009",
+      "display" : "Multivesicular body, internal vesicles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "623007",
+      "display" : "Loom threader (machine)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "625000",
+      "display" : "Removal of supernumerary digit"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "626004",
+      "display" : "Hypercortisolism due to nonpituitary tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "627008",
+      "display" : "Spinner, thread and yarn"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "628003",
+      "display" : "Steinman test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "629006",
+      "display" : "Lysis of adhesions of urethra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "631002",
+      "display" : "Transfusion reaction due to minor incompatibility"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "633004",
+      "display" : "Chart review by physician"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "635006",
+      "display" : "Tuberosity of distal phalanx of little toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "636007",
+      "display" : "Adenia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "637003",
+      "display" : "Lysis of adhesions of nose"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "638008",
+      "display" : "Legionella oakridgensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "640003",
+      "display" : "Injury of pneumogastric nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "641004",
+      "display" : "Artillery missile"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "642006",
+      "display" : "Cerebral thermography"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "643001",
+      "display" : "Hypertrophy of lip"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "644007",
+      "display" : "Toucan barbet"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "645008",
+      "display" : "Diagnostic procedure on vitreous"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "646009",
+      "display" : "Idiopathic cyst of anterior chamber of eye"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "647000",
+      "display" : "Excision of cervix by electroconization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "648005",
+      "display" : "Oil of calamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "649002",
+      "display" : "Open fracture of distal end of ulna"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "650002",
+      "display" : "Superior articular process of seventh thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "651003",
+      "display" : "Root work"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "652005",
+      "display" : "Gangrenous tonsillitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "653000",
+      "display" : "Latrodectus dahli"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "654006",
+      "display" : "Acremonium recifei"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "655007",
+      "display" : "Abnormal fetal heart beat noted before labor in liveborn infant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "656008",
+      "display" : "Salmonella Os"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "657004",
+      "display" : "Operation on bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "658009",
+      "display" : "Injury of colon without open wound into abdominal cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "660006",
+      "display" : "Tracheal mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "661005",
+      "display" : "Jaw"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "662003",
+      "display" : "Aeromonas proteolytica aminopeptidase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "663008",
+      "display" : "Pulmonary embolism following molar AND/OR ectopic pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "664002",
+      "display" : "Delayed ovulation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "665001",
+      "display" : "Partial meniscectomy of temporomandibular joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "666000",
+      "display" : "Poisoning by antivaricose drug AND/OR sclerosing agent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "667009",
+      "display" : "Embryonic structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "668004",
+      "display" : "185-Os"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "669007",
+      "display" : "Vaccinia virus vaccine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "670008",
+      "display" : "Electrosurgical epilation of eyebrow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "671007",
+      "display" : "Transplantation of testis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "673005",
+      "display" : "Indirect laryngoscopy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "674004",
+      "display" : "Abduction test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "675003",
+      "display" : "Torsion of intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "676002",
+      "display" : "Peritoneal dialysis including cannulation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "677006",
+      "display" : "Panicum antidotale"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "678001",
+      "display" : "Epilator"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "679009",
+      "display" : "Pituophis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "680007",
+      "display" : "Radiation physics consultation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "681006",
+      "display" : "Antiaris toxicaria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "682004",
+      "display" : "Thrombosis complicating pregnancy AND/OR puerperium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "683009",
+      "display" : "Mercuric acetate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "684003",
+      "display" : "Pygmy goat"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "685002",
+      "display" : "Acquired telangiectasia of small AND/OR large intestines"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "686001",
+      "display" : "Plastoquinol-plastocyanin reductase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "687005",
+      "display" : "Albumin/Globulin ratio"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "688000",
+      "display" : "Fetal hyaloid artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "689008",
+      "display" : "Anopheles sundaicus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "691000",
+      "display" : "Small intestine submucosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "692007",
+      "display" : "Body of ischium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "693002",
+      "display" : "Trichothecenes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "694008",
+      "display" : "Other transport conductor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "695009",
+      "display" : "Destructive procedure of lesion on skin of trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "697001",
+      "display" : "Hepatitis A virus antibody measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "698006",
+      "display" : "Erythromycin lactobionate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "699003",
+      "display" : "Coal tar extract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "701003",
+      "display" : "Adult osteochondritis of spine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703000",
+      "display" : "Congenital adhesions of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "704006",
+      "display" : "Blood group antigen Rx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "705007",
+      "display" : "Piper darienensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "706008",
+      "display" : "Archigetes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707004",
+      "display" : "Menispermum canadense"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708009",
+      "display" : "Bunostomum phlebotomum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "709001",
+      "display" : "Ruminococcus callidus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "710006",
+      "display" : "Thromboendarterectomy with graft of mesenteric artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "711005",
+      "display" : "Salmonella Tunis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "712003",
+      "display" : "Closed chest suction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "714002",
+      "display" : "Abrasion AND/OR friction burn of toe with infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "715001",
+      "display" : "Nontraumatic rupture of urethra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "718004",
+      "display" : "Acute bronchiolitis with obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "719007",
+      "display" : "Emblemaria bahamensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "722009",
+      "display" : "Fine needle biopsy of thymus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "723004",
+      "display" : "Dense intermediate filament bundles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "724005",
+      "display" : "Slit-like"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "725006",
+      "display" : "Mobula hypostoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "726007",
+      "display" : "Pathology consultation, comprehensive, records and specimen with report"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "727003",
+      "display" : "Gloriosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "728008",
+      "display" : "Director of photography (motion picture)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "730005",
+      "display" : "Incision of subcutaneous tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "732002",
+      "display" : "N-valeraldehyde"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "733007",
+      "display" : "Superficial foreign body of groin without major open wound but with infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "734001",
+      "display" : "Opocephalus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "735000",
+      "display" : "Blood group antigen Jobbins"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "736004",
+      "display" : "Abscess of hip"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "737008",
+      "display" : "Carpet weaver (hand)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "738003",
+      "display" : "Ball valve obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "739006",
+      "display" : "Bicycle ergometer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "740008",
+      "display" : "Ophichthus ophis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "741007",
+      "display" : "Operation on prostate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "744004",
+      "display" : "Avitellina ratia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "746002",
+      "display" : "Chiropractic adjustment of coccyx subluxation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "747006",
+      "display" : "Oxamniquine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "748001",
+      "display" : "Salmonella Chandans"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "749009",
+      "display" : "Salmonella Truro"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "750009",
+      "display" : "Schistosoma mansoni infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "751008",
+      "display" : "Wood turner"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "752001",
+      "display" : "Veratrum viride"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "753006",
+      "display" : "Manipulation of ankle AND foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "754000",
+      "display" : "Total urethrectomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "755004",
+      "display" : "Postgastrectomy phytobezoar"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "756003",
+      "display" : "Chronic rheumatic myopericarditis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "758002",
+      "display" : "Cyst of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "759005",
+      "display" : "Intracerebral electroencephalogram"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "760000",
+      "display" : "Salmonella Djelfa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "761001",
+      "display" : "Salmonella Runby"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "762008",
+      "display" : "Computerized axial tomography of cervical spine with contrast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "763003",
+      "display" : "Monodon monoceros"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "764009",
+      "display" : "Arthrodesis of interphalangeal joint of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "767002",
+      "display" : "White blood cell count"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "769004",
+      "display" : "Helmetbird"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "770003",
+      "display" : "Shuttle-car operator (mine)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "771004",
+      "display" : "Dry-cleaner (hand)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "773001",
+      "display" : "Hemoglobin M-Iwate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "774007",
+      "display" : "Head and neck structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "775008",
+      "display" : "Open wound of head with complication"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "776009",
+      "display" : "Partial arterial retinal occlusion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "778005",
+      "display" : "Gobionellus stigmalophius"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "781000",
+      "display" : "Cestrum diurnum poisoning"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "782007",
+      "display" : "Maxx rat"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "784008",
+      "display" : "Lasiodiplodia theobromae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "785009",
+      "display" : "Dextranase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "786005",
+      "display" : "Clinical stage I B"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "787001",
+      "display" : "Rheumatic mitral stenosis with regurgitation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "788006",
+      "display" : "Disease-related diet"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "789003",
+      "display" : "Cranial decompression, subtemporal, supratentorial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "790007",
+      "display" : "Visceral aspect of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "791006",
+      "display" : "Dressing and fixation procedure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "792004",
+      "display" : "Jakob-Creutzfeldt disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "793009",
+      "display" : "Mechanical power press"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "795002",
+      "display" : "Deep"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "796001",
+      "display" : "Digoxin-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "797005",
+      "display" : "New Zealand white rabbit"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "798000",
+      "display" : "Entire deep temporal vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "799008",
+      "display" : "Sigmoid colon ulcer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "800007",
+      "display" : "Salmonella Offa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "801006",
+      "display" : "Nonvenomous insect bite of foot with infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "802004",
+      "display" : "Serratia ficaria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "803009",
+      "display" : "Paraganglioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "804003",
+      "display" : "Creosotic acid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "805002",
+      "display" : "Pneumoconiosis due to silica"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "807005",
+      "display" : "Excision of brain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "808000",
+      "display" : "Posterior intercostal arteries"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "809008",
+      "display" : "Fetal chondrocranium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "810003",
+      "display" : "Spindle cell nevus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "811004",
+      "display" : "Flail motion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "812006",
+      "display" : "Thesium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "813001",
+      "display" : "Ankle instability"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "814007",
+      "display" : "Electrophoresis measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "815008",
+      "display" : "Episcleritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "816009",
+      "display" : "Genetic recombination"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "817000",
+      "display" : "Excision of cyst of spleen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "818005",
+      "display" : "Third degree burn of multiple sites of lower limb"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "819002",
+      "display" : "Lytic antibody"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "820008",
+      "display" : "Intestinal mucosal permeability"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "821007",
+      "display" : "Trichodina pediculus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "823005",
+      "display" : "Posterior cervical spinal cord nerve root"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "824004",
+      "display" : "Sociologist"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "825003",
+      "display" : "Superficial injury of axilla with infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "826002",
+      "display" : "Edge sawyer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "827006",
+      "display" : "Late congenital syphilis, latent (+ sero., - C.S.F., 2 years OR more)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "830004",
+      "display" : "Spinous process of fifth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "831000",
+      "display" : "Drawer test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "832007",
+      "display" : "Moderate major depression"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "833002",
+      "display" : "Domesticated Japanese quail"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "834008",
+      "display" : "Chair-seated facing coital position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "835009",
+      "display" : "Peripheral T-cell lymphoma, AILD (Angioimmunoblastic Lymphadenopathy with Dysproteinemia)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "836005",
+      "display" : "Oral region of face"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "841002",
+      "display" : "Congenital absence of skull bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "842009",
+      "display" : "Consanguinity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "843004",
+      "display" : "Poliomyelomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "844005",
+      "display" : "Behavior finding"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "845006",
+      "display" : "Injury of inferior mesenteric artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "846007",
+      "display" : "Thaumetopoea processionea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "847003",
+      "display" : "Dextrothyroxine-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "848008",
+      "display" : "Burrowing toad"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "849000",
+      "display" : "Total cataract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "850000",
+      "display" : "Stizolobate synthase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "851001",
+      "display" : "Root canal therapy, molar, excluding final restoration"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "852008",
+      "display" : "Entamoeba lagopodis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "853003",
+      "display" : "Fecal fat measurement, 72-hour collection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "854009",
+      "display" : "Hybognathus argyritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "855005",
+      "display" : "Dioon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "856006",
+      "display" : "Actinic keratosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "857002",
+      "display" : "Erythema simplex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "858007",
+      "display" : "Other glazier"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "859004",
+      "display" : "Peptide-N^4^-(N-acetyl-b-glucosaminyl) asparagine amidase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "860009",
+      "display" : "Immunoglobulin, aggregated"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "861008",
+      "display" : "Couesius plumbeus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "862001",
+      "display" : "Anemia due to chlorate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "864000",
+      "display" : "Anopheles multicolor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "865004",
+      "display" : "Hyperalimentation formula for ileus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "867007",
+      "display" : "Facial-hypoglossal nerve anastomosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "868002",
+      "display" : "Fundulus heteroclitus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "869005",
+      "display" : "Camelostrongylus mentulatus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "870006",
+      "display" : "Carbamazepine measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "871005",
+      "display" : "Contracted pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "872003",
+      "display" : "Notocotylus attenuatus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "873008",
+      "display" : "Urethan"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "874002",
+      "display" : "Therapeutic diuresis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "875001",
+      "display" : "Chalcosis of eye"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "876000",
+      "display" : "Blood group antigen D"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "877009",
+      "display" : "Carboxypeptidase A"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "878004",
+      "display" : "Ship's steward"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "879007",
+      "display" : "Special blood coagulation test, explain by report"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "881009",
+      "display" : "Cyclodialysis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "882002",
+      "display" : "Diagnostic implant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "884001",
+      "display" : "Initial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "885000",
+      "display" : "Lamina muscularis of colonic mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "887008",
+      "display" : "Chirolophis ascanii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "888003",
+      "display" : "Foetal or neonatal effect of maternal blood loss"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "889006",
+      "display" : "[acetyl-CoA carboxylase] kinase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "890002",
+      "display" : "Deep third degree burn of elbow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "891003",
+      "display" : "Suicide by self-administered drug"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "892005",
+      "display" : "Senecio harveianus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "893000",
+      "display" : "Tumor antigen measurement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "895007",
+      "display" : "Anterior cruciate ligament of knee joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "896008",
+      "display" : "Ice"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "897004",
+      "display" : "Radical maxillary antrotomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "898009",
+      "display" : "Ptychocheilus umpquae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "899001",
+      "display" : "Axis I diagnosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "900006",
+      "display" : "Mucin-producing adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "901005",
+      "display" : "Helicopter-based care"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "903008",
+      "display" : "Chorioretinal infarction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "904002",
+      "display" : "Pinard's sign"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "905001",
+      "display" : "o-Dihydroxycoumarin O^7^-glucosyltransferase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "907009",
+      "display" : "Datisca glomerata"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "908004",
+      "display" : "Superficial injury of interscapular region without infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "909007",
+      "display" : "Mycobacterium parafortuitum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "910002",
+      "display" : "MHPG measurement, urine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "911003",
+      "display" : "Removal of subarachnoid-ureteral shunt"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "913000",
+      "display" : "Chiropractic patient education and instruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "915007",
+      "display" : "Malignant melanoma in junctional nevus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "916008",
+      "display" : "Epidermopoiesis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "917004",
+      "display" : "Superior laryngeal aperture"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "918009",
+      "display" : "Trichodina truttae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "919001",
+      "display" : "Pseudohomosexual state"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "921006",
+      "display" : "Thyrohyoid branch of ansa cervicalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "922004",
+      "display" : "Pralidoxime-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "923009",
+      "display" : "Complement component C2"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "925002",
+      "display" : "Sodium iodipamide"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "926001",
+      "display" : "Embolectomy with catheter of radial artery by arm incision"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "927005",
+      "display" : "Rainbow snake"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "928000",
+      "display" : "Disorder of musculoskeletal system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "929008",
+      "display" : "Scarus taeniopterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "931004",
+      "display" : "Gestation period, 9 weeks"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "932006",
+      "display" : "Flat affect"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "933001",
+      "display" : "Human rhinovirus 15"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "934007",
+      "display" : "Thalassemia intermedia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "935008",
+      "display" : "Excision of bulbourethral gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "938005",
+      "display" : "Veterinarian (general)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "940000",
+      "display" : "Secondary immune response"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "941001",
+      "display" : "Endoscopy of pituitary gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "943003",
+      "display" : "Congenital retinal aneurysm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "944009",
+      "display" : "Brown Welsh cattle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "946006",
+      "display" : "Nandayus nenday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "947002",
+      "display" : "Crus of diaphragm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "948007",
+      "display" : "Phlebectomy of intracranial varicose vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "951000",
+      "display" : "Ultrasonic guidance for endomyocardial biopsy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "952007",
+      "display" : "Filicollis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "955009",
+      "display" : "Bronchus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "956005",
+      "display" : "Anesthesia for procedure on thoracic esophagus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "958006",
+      "display" : "Trachinotus falcatus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "961007",
+      "display" : "Erythema nodosum, acute form"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "962000",
+      "display" : "Disability evaluation, disability 6%"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "963005",
+      "display" : "Pyridoxine 4-dehydrogenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "964004",
+      "display" : "Open wound of pharynx without complication"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "965003",
+      "display" : "Toxic amblyopia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "967006",
+      "display" : "Medication education"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "968001",
+      "display" : "Rauvolfia serpentina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "969009",
+      "display" : "Incision and exploration of larynx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "971009",
+      "display" : "Prosthetic construction and fitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "972002",
+      "display" : "Air filter"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "974001",
+      "display" : "Adenosylmethionine decarboxylase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "975000",
+      "display" : "Anorectal agenesis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "976004",
+      "display" : "Ovarian vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "977008",
+      "display" : "Simian foamy virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "978003",
+      "display" : "Chronic infantile eczema"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "979006",
+      "display" : "Carbamate kinase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "981008",
+      "display" : "Hemorrhagic proctitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "984000",
+      "display" : "Perirectal cellulitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "985004",
+      "display" : "Neurilemmoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "987007",
+      "display" : "Cellulitis of temple region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "988002",
+      "display" : "Wet gangrene"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "989005",
+      "display" : "Linen cloth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "991002",
+      "display" : "Wide QRS complex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "993004",
+      "display" : "Palladium compound"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "994005",
+      "display" : "Brush"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "995006",
+      "display" : "Farm tool"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "996007",
+      "display" : "Meningeal branches of occipital artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "997003",
+      "display" : "Haematosiphon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "998008",
+      "display" : "Chagas' disease with heart involvement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "999000",
+      "display" : "Mixed islet cell and exocrine adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1001000",
+      "display" : "Cauterization of Bartholin's gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1002007",
+      "display" : "Mannotetraose 2-alpha-N-acetylglucosaminyltransferase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1003002",
+      "display" : "Religious discrimination"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1004008",
+      "display" : "Annealer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1005009",
+      "display" : "Entire diaphragmatic lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1006005",
+      "display" : "Percheron horse"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1007001",
+      "display" : "Brassica oleracea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1008006",
+      "display" : "Operation on nerve ganglion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1009003",
+      "display" : "Salmonella Oakland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1010008",
+      "display" : "N-Acetylneuraminate monooxygenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1012000",
+      "display" : "Fibrous portion of pericardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1013005",
+      "display" : "Micropolyspora faeni"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1014004",
+      "display" : "Bembrops gobioides"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1015003",
+      "display" : "Peritonsillar tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1017006",
+      "display" : "Lactobacillus casei"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1018001",
+      "display" : "Nornicotine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1019009",
+      "display" : "Removal of corneal epithelium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1020003",
+      "display" : "Disease due to Nairovirus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1021004",
+      "display" : "Repair of scrotum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1023001",
+      "display" : "Apnea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1025008",
+      "display" : "Molybdenum-93"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1027000",
+      "display" : "Alkaline reflux disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1028005",
+      "display" : "Sebaceous gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1029002",
+      "display" : "Fetoscopy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1030007",
+      "display" : "Vesicular bursa of sternohyoid muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1031006",
+      "display" : "Open wound of trachea without complication"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1032004",
+      "display" : "Enucleation of parotid gland cyst"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1033009",
+      "display" : "Thoracic arthritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1034003",
+      "display" : "Mesenteric-portal fistula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1035002",
+      "display" : "Minimum bactericidal concentration test, microdilution method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1036001",
+      "display" : "Insertion of intravascular device in common iliac vein, complete"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1037005",
+      "display" : "Salmonella Aragua"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1038000",
+      "display" : "Disacchariduria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1039008",
+      "display" : "Mercaptopurine-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1040005",
+      "display" : "Anterior open dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1041009",
+      "display" : "Debridement of open fracture of phalanges of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1043007",
+      "display" : "Doppler color flow velocity mapping"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1044001",
+      "display" : "Diagnostic ultrasound of abdomen and retroperitoneum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1045000",
+      "display" : "Colonospasm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1046004",
+      "display" : "Ureteritis glandularis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1047008",
+      "display" : "Guanine deaminase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1048003",
+      "display" : "Capillary specimen collection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1050006",
+      "display" : "Melilotate 3-monooxygenase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1051005",
+      "display" : "Hyperplasia of islet alpha cells with gastrin excess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1053008",
+      "display" : "Pontinus rathbuni"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1054002",
+      "display" : "Incision of sphincter of Oddi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1055001",
+      "display" : "Stenosis of precerebral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1056000",
+      "display" : "Salmonella II, 4,12:l,z28:-"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1058004",
+      "display" : "Helicopter"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1059007",
+      "display" : "Opisthorchiasis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1060002",
+      "display" : "Jacquard card cutter"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1063000",
+      "display" : "Frontozygomatic suture of skull"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1064006",
+      "display" : "Hemiurus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1065007",
+      "display" : "E. coli periplasmic proteinase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1066008",
+      "display" : "Instrument of strangulation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1067004",
+      "display" : "Nesotriatoma flavida"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1069001",
+      "display" : "Hydrastis canadensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1070000",
+      "display" : "Facial myokymia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1071001",
+      "display" : "Proximal splenorenal anastomosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1073003",
+      "display" : "Xeroderma pigmentosum, group B"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1074009",
+      "display" : "Glucocorticoid-responsive primary aldosteronism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1075005",
+      "display" : "Promonocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1076006",
+      "display" : "Entire subcutaneous prepatellar bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1077002",
+      "display" : "Septal infarction by EKG"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1078007",
+      "display" : "Macaroni maker"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1079004",
+      "display" : "Macular retinal cyst"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1080001",
+      "display" : "202-Tl"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1081002",
+      "display" : "Salmonella II 9,12,(46),27:g,t:e,n,x"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1082009",
+      "display" : "Apogon townsendi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1083004",
+      "display" : "Salmonella Wyldegreen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1084005",
+      "display" : "Excision of perinephric cyst"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1085006",
+      "display" : "Candidiasis of vulva"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1086007",
+      "display" : "Female"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1087003",
+      "display" : "Sternothyroid muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1089000",
+      "display" : "Intrauterine sepsis of fetus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1090009",
+      "display" : "Immature"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1091008",
+      "display" : "Coagulation factor inhibitor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1092001",
+      "display" : "Superior occipital gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1093006",
+      "display" : "Excision of abdominal varicose vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1095004",
+      "display" : "Notropis atrocaudalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1097007",
+      "display" : "Blood group antigen M^A^"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1098002",
+      "display" : "Human adenovirus 3"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1099005",
+      "display" : "Thymic cortex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1101003",
+      "display" : "Cranial cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1102005",
+      "display" : "Intraerythrocytic parasitosis by Nuttallia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1103000",
+      "display" : "Transcrural mobilization of stapes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1104006",
+      "display" : "Triad knee repair"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1105007",
+      "display" : "Isochorismate synthase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1106008",
+      "display" : "Entire major calyx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1107004",
+      "display" : "Early latent syphilis, positive serology, negative cerebrospinal fluid, with relapse after treatment"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1108009",
+      "display" : "Female pattern alopecia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1109001",
+      "display" : "Varanus salvator"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1110006",
+      "display" : "Tarsal gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1111005",
+      "display" : "Normal sebaceous gland activity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1112003",
+      "display" : "Degenerative disorder of eyelid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1113008",
+      "display" : "Pancreatic ribonuclease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1115001",
+      "display" : "Decortication"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1116000",
+      "display" : "Chronic aggressive type B viral hepatitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1118004",
+      "display" : "Viking horse"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1119007",
+      "display" : "Closed reduction of dislocation of foot and toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1120001",
+      "display" : "Printing machinery fitter-assembler"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1121002",
+      "display" : "Kinetic activities for range of motion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1122009",
+      "display" : "Inferior longitudinal muscle of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1124005",
+      "display" : "Postpartum period, 6 days"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1125006",
+      "display" : "Septicemia during labor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1126007",
+      "display" : "Knee locking"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1127003",
+      "display" : "Interstitial radium application"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1129000",
+      "display" : "Acidophilic body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1131009",
+      "display" : "Congenital valvular insufficiency"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1133007",
+      "display" : "Removal of intact mammary implant, bilateral"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1134001",
+      "display" : "Muehrcke's lines"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1135000",
+      "display" : "Solar retinopathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1136004",
+      "display" : "Aortopulmonary septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1137008",
+      "display" : "240-U"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1138003",
+      "display" : "Moderate squamous cell atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1139006",
+      "display" : "Confrontation (visual) test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1140008",
+      "display" : "Thermal hypesthesia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1141007",
+      "display" : "Circumoral paresthesia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1142000",
+      "display" : "Ceratophyllus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1143005",
+      "display" : "Bovid herpesvirus 4"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1145003",
+      "display" : "Developmental speech disorder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1146002",
+      "display" : "Arcuate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1147006",
+      "display" : "Anarrhichthys ocellatus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1148001",
+      "display" : "Ticarcillin-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1149009",
+      "display" : "Hemoglobin Barcelona"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1150009",
+      "display" : "Congenital microcheilia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1151008",
+      "display" : "Generalized constriction of visual field"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1152001",
+      "display" : "Skin reaction negative"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1153006",
+      "display" : "Tragelaphus angasi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1154000",
+      "display" : "Nealotus tripes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1155004",
+      "display" : "EKG hypertrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1157007",
+      "display" : "Metal engraving etcher"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1158002",
+      "display" : "Triaenophorus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1159005",
+      "display" : "Frenulum linguae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1160000",
+      "display" : "Blood group antibody Lutheran"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1161001",
+      "display" : "Chrysolophus pictus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1162008",
+      "display" : "Micrurus nigrocinctus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1163003",
+      "display" : "Ureteroenterostomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1166006",
+      "display" : "Titanium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1168007",
+      "display" : "Allotype"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1169004",
+      "display" : "Hemoglobin Gower-2"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1171004",
+      "display" : "Fibrinogen Kawaguchi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1172006",
+      "display" : "Odontoid process of axis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1173001",
+      "display" : "Mandibular nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1174007",
+      "display" : "Chromosomes, group E"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1176009",
+      "display" : "Incision of inguinal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1177000",
+      "display" : "Pongo pygmaeus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1181000",
+      "display" : "Excision of tendon for graft"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1182007",
+      "display" : "Hypotensive agent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1184008",
+      "display" : "Glasgow coma scale, 10"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1185009",
+      "display" : "Hemoglobin Roseau-Pointe à Pitre"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1186005",
+      "display" : "Anesthesia for procedure on bony pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1188006",
+      "display" : "Superior open dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1189003",
+      "display" : "Hemoglobin F-M-Osaka"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1190007",
+      "display" : "Mephenoxalone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1191006",
+      "display" : "Bungarus flaviceps"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1193009",
+      "display" : "Teres major muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1194003",
+      "display" : "Disease condition determination, well controlled"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1195002",
+      "display" : "Senecio integrifolius"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1196001",
+      "display" : "Chronic bipolar II disorder, most recent episode major depressive"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1197005",
+      "display" : "Carbuncle of heel"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1198000",
+      "display" : "Excisional biopsy of bone of scapula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1199008",
+      "display" : "Neurologic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1200006",
+      "display" : "Liopropoma mowbrayi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1201005",
+      "display" : "Benign essential hypertension"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1202003",
+      "display" : "Mastication"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1206000",
+      "display" : "Alpha-2 adrenergic receptor antagonist-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1207009",
+      "display" : "Glaucomatous atrophy of optic disc"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1208004",
+      "display" : "Gastroptosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1209007",
+      "display" : "Arthroscopy of knee with lateral meniscus repair"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1210002",
+      "display" : "Struck by falling lumber"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1211003",
+      "display" : "Treadmill"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1212005",
+      "display" : "Childhood type dermatomyositis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1213000",
+      "display" : "Gaigeria pachyscelis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1214006",
+      "display" : "Infection by Strongyloides"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1215007",
+      "display" : "Tetractinomyxon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1216008",
+      "display" : "Synostosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1217004",
+      "display" : "Biphasic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1219001",
+      "display" : "Diethyl xanthogen disulfide"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1220007",
+      "display" : "Trimeresurus tokarensis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1222004",
+      "display" : "Metronidazole-containing product"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1223009",
+      "display" : "Blood group antigen Marks"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1225002",
+      "display" : "Radiography of humerus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1226001",
+      "display" : "United Church of Canada"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1227005",
+      "display" : "Incision of subvalvular tissue for discrete subvalvular aortic stenosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1231004",
+      "display" : "Meninges"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1232006",
+      "display" : "Congenital articular rigidity with myopathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1234007",
+      "display" : "Physiatric"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1235008",
+      "display" : "Muscle transfer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1236009",
+      "display" : "Duodenal serosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1237000",
+      "display" : "Application of cast, sugar tong"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1238005",
+      "display" : "Epiphyseal arrest by stapling of distal radius"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1239002",
+      "display" : "Congenital anteversion of femur"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1240000",
+      "display" : "Prone body position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1241001",
+      "display" : "Relieved by"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1242008",
+      "display" : "Heterakis meleagridis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1243003",
+      "display" : "Inferior articular process of sixth cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1244009",
+      "display" : "Fibrinogen Madrid I"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1245005",
+      "display" : "Salmonella Kiel"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1246006",
+      "display" : "Dorsal digital nerves of radial nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1247002",
+      "display" : "Clydesdale horse"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1248007",
+      "display" : "Leucostoma neutral proteinase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1250004",
+      "display" : "Decreased"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1251000",
+      "display" : "Incisional biopsy of testis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1253002",
+      "display" : "Refusion of spine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1254008",
+      "display" : "Black-footed penguin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1255009",
+      "display" : "Electron transfer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1258006",
+      "display" : "Excision of meniscus of wrist"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1259003",
+      "display" : "Schistosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1261007",
+      "display" : "Fracture of multiple ribs"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1262000",
+      "display" : "Sagiyama virus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1263005",
+      "display" : "Distinctive arrangement of microtubules"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1264004",
+      "display" : "Injury of descending left colon without open wound into abdominal cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1265003",
+      "display" : "Anopheles earlei"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1266002",
+      "display" : "Closure of fistula of ear drum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1267006",
+      "display" : "Electrocoagulation of lesion of vagina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1268001",
+      "display" : "Cyclura cornuta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1269009",
+      "display" : "Amikacin sulfate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1270005",
+      "display" : "Percina squamata"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1271009",
+      "display" : "Knuckle pads, deafness AND leukonychia syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1272002",
+      "display" : "Pteridine oxidase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1273007",
+      "display" : "Blood group antibody Evelyn"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1274001",
+      "display" : "Securities salesman"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1275000",
+      "display" : "Orcheobius"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1277008",
+      "display" : "Vertebral nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1278003",
+      "display" : "Open reduction of closed shoulder dislocation with fracture of greater tuberosity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1279006",
+      "display" : "Repair of cardiac pacemaker pocket in skin AND/OR subcutaneous tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1280009",
+      "display" : "Isologous chimera"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1281008",
+      "display" : "Notropis scabriceps"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1282001",
+      "display" : "Perichondritis of larynx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1284000",
+      "display" : "Abnormal jaw closure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1285004",
+      "display" : "Third heart sound, S>3<"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1286003",
+      "display" : "Vitamin K deficiency coagulation disorder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1287007",
+      "display" : "Congenital absence of bile duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1288002",
+      "display" : "Anopheles punctipennis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1290001",
+      "display" : "Mycoplasma hominis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1291002",
+      "display" : "Salmonella Frankfurt"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1292009",
+      "display" : "Magnetic resonance imaging of urinary bladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1293004",
+      "display" : "Human coxsackievirus A8"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1295006",
+      "display" : "Sophora"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1297003",
+      "display" : "Infection by Cladosporium carrionii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1299000",
+      "display" : "Excision of appendiceal stump"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1300008",
+      "display" : "Chocolate lenzites"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1303005",
+      "display" : "Parafasciolopsis fasciolaemorpha"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1305003",
+      "display" : "Double"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1306002",
+      "display" : "Hotel concierge"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1307006",
+      "display" : "Glottis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1308001",
+      "display" : "Complication of reimplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1309009",
+      "display" : "Electrical transmission of fiber"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1310004",
+      "display" : "Impaired glucose tolerance associated with genetic syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1311000",
+      "display" : "Telogen hair"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1312007",
+      "display" : "Guttate"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "41345002"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:1fa0fd70-a3e9-48e4-8b8c-e24922c4e610",
+    "timestamp" : "2020-03-10T14:19:33.162Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200131"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "23569000",
+      "display" : "Glucoaminophosphaturia syndrome with rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "56233004",
+      "display" : "Calcipenic type rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "66266003",
+      "display" : "Phosphopenic type rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "67049004",
+      "display" : "Vitamin D-dependent rickets, type 1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "68295002",
+      "display" : "Vitamin D-dependent rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "70079009",
+      "display" : "Late effects of rickets (one year OR more)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "72831007",
+      "display" : "Vitamin D-dependent rickets, type 2"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82236004",
+      "display" : "Familial x-linked hypophosphatemic vitamin D refractory rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "90505000",
+      "display" : "Autosomal recessive hypophosphatemic vitamin D refractory rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190640006",
+      "display" : "Active rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190860000",
+      "display" : "Hypophosphatasia rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237888005",
+      "display" : "Hypophosphatemic rickets with nephrotic-glycosuric dwarfism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237889002",
+      "display" : "Autosomal dominant hypophosphatemic rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237894002",
+      "display" : "Vitamin D-dependent rickets type II with alopecia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237895001",
+      "display" : "VDDR IIb - Vitamin D-dependent rickets IIb"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275404008",
+      "display" : "Celiac rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276702002",
+      "display" : "Neonatal rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "278932006",
+      "display" : "Biochemical rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "722947004",
+      "display" : "Hypocalcemic rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "726080006",
+      "display" : "Autosomal recessive hypophosphatemic rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "726081005",
+      "display" : "Hereditary hypophosphatemic rickets with hypercalciuria"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "constraint",
+        "op" : "=",
+        "value" : "<<41345002 OR <<4598005 OR <<737295003 OR <<707206008 OR <<443731004 OR <<182817000"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to resolve namespace abbreviation \"xml\""
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
+  <version value="0.1" />
+  <name value="ObservationValueSet" />
+  <title value="Value Set for Observation Coded Values" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="The ObservationValueSet profile constrains the ValueSet resource to make it usable as a value set referenced by either of the four elements validCodedValueSet, normalCodedValueSet, abnormalCodedValueSet and criticalCodedValueSet of the ObservationDefinition resource." />
+  
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="objimpl" />
+    <uri value="http://hl7.org/fhir/object-implementation" />
+    <name value="Object Implementation Information" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ValueSet" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ValueSet.compose">
+      <path value="ValueSet.compose" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ValueSet.expansion">
+      <path value="ValueSet.expansion" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

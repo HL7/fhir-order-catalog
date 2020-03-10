@@ -443,7 +443,19 @@
 				<td>Reason for test - input observation</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-input-observation-reason-for-ordering</a></td>
+				<td><a href="ObservationDefinition-example-input-observation-reason-for-vitamin-d.html">example-input-observation-reason-for-vitamin-d</a></td>
+			</tr>
+			<tr>
+				<td>Normal Reasons for Vitamin D Test</td>
+				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
+				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
+				<td><a href="ValueSet-example-normal-reasons-vitamin-d.html">example-normal-reasons-vitamin-d</a></td>
+			</tr>
+			<tr>
+				<td>Valid Reasons for Any Lab Service </td>
+				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
+				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
+				<td><a href="ValueSet-example-reasons-for-order.html">example-reasons-for-order</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D level - test result</td>
