@@ -132,6 +132,8 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.title.extension:OtherTitle">
       <path value="PlanDefinition.title.extension" />
       <sliceName value="OtherTitle" />
+      <short value="Synonym in a specified language" />
+      <definition value="Expresses a synonym of the laboratory service in a specified language" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
@@ -317,7 +319,9 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.topic">
       <path value="PlanDefinition.topic" />
+      <short value="categorization of the laboratory service" />
       <definition value="Descriptive topics related to the content of the laboratory service definition. Topics provide a high-level categorization of the definition that can be useful for filtering and searching. Some possible axes of categorization include laboratory specialty, kind of pathology, kind of biologic specimen tested, ..." />
+      <comment value="Topics are usually chosen by the laboratory or the organization owning the catalog" />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact">
@@ -414,6 +418,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="PlanDefinition.action.description">
+      <path value="PlanDefinition.action.description" />
+      <short value="Brief description of the laboratory service and its method" />
+      <definition value="A brief description of the laboratory service, which may mention the analytical method(s) used by the laboratory" />
+    </element>
     <element id="PlanDefinition.action.priority">
       <path value="PlanDefinition.action.priority" />
       <definition value="Indicates how quickly this diagnostic panel or test should be performed." />
@@ -429,17 +438,39 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
         <description value="open slicing by code system. One slice defined for LOINC order coding of the service" />
         <rules value="open" />
       </slicing>
+      <short value="Code of the laboratory service" />
+      <definition value="A code that provides meaning to the laboratory service" />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.action.code:OrderLoinc">
       <path value="PlanDefinition.action.code" />
       <sliceName value="OrderLoinc" />
+      <short value="LOINC codification of the laboratory service" />
+      <definition value="A LOINC coding representing the service" />
       <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
         </coding>
       </patternCodeableConcept>
+    </element>
+    <element id="PlanDefinition.action.code:OrderLoinc.coding">
+      <path value="PlanDefinition.action.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="PlanDefinition.action.code:OrderLoinc.coding.system">
+      <path value="PlanDefinition.action.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="PlanDefinition.action.code:OrderLoinc.coding.code">
+      <path value="PlanDefinition.action.code.coding.code" />
+      <short value="LOINC code for service" />
+      <min value="1" />
+    </element>
+    <element id="PlanDefinition.action.code:OrderLoinc.coding.display">
+      <path value="PlanDefinition.action.code.coding.display" />
+      <short value="display of the LOINC code" />
+      <min value="1" />
     </element>
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition" />
@@ -480,6 +511,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.action.definition[x]">
       <path value="PlanDefinition.action.definition[x]" />
       <definition value="A reference to an ActivityDefinition that describes the laboratory procedure to be performed" />
+      <comment value="The definition is present only when there is no grouping of sub-actions" />
       <type>
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
