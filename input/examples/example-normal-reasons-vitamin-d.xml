@@ -46,12 +46,13 @@
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>
-      <!--  
+      <!--  The economic ECL intensional definition does not work. Pb with the local terminology service and the xml, which interprets <<.
       <filter>
         <property value="constraint"/>
         <op value="="/>
         <value value="&lt;&lt;41345002 OR &lt;&lt;4598005 OR &lt;&lt;737295003 OR &lt;&lt;707206008 OR &lt;&lt;443731004 OR &lt;&lt;182817000"/>
       </filter>
+      Same thing expressed as a collection of subsumptions.
       -->
       <filter>
         <property value="concept"/>
