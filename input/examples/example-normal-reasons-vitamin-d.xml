@@ -58,26 +58,41 @@
         <op value="is-a"/>
         <value value="41345002"/>
       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
        <filter>
         <property value="concept"/>
         <op value="is-a"/>
         <value value="4598005"/>
       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
       <filter>
         <property value="concept"/>
         <op value="is-a"/>
         <value value="737295003"/>
       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
       <filter>
         <property value="concept"/>
         <op value="is-a"/>
         <value value="707206008"/>
       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
       <filter>
         <property value="concept"/>
         <op value="is-a"/>
         <value value="443731004"/>
       </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
       <filter>
         <property value="concept"/>
         <op value="is-a"/>

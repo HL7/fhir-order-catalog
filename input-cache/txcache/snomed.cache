@@ -5522,3 +5522,381 @@ e: {
   "error" : "Error from server: Unable to resolve namespace abbreviation \"xml\""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "4598005"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:37bb50f0-c0f8-41b0-97d0-b9bdb764f40d",
+    "timestamp" : "2020-03-10T15:27:54.237Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200131"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "46885003",
+      "display" : "Osteomalacic pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47774001",
+      "display" : "Anticonvulsant drug-induced osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190643008",
+      "display" : "Puerperal osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190644002",
+      "display" : "Senile osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190645001",
+      "display" : "Adult osteomalacia due to malabsorption"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190646000",
+      "display" : "Adult osteomalacia due to malnutrition"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236548002",
+      "display" : "Osteomalacia secondary to aluminum toxicity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "240165007",
+      "display" : "Drug-induced osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "240167004",
+      "display" : "Osteomalacia secondary to pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "392559009",
+      "display" : "Tumor-induced osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "717934004",
+      "display" : "Osteomalacia due to vitamin D deficiency"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "737295003"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:c945ba71-426e-4735-bc30-865d0fa2b63e",
+    "timestamp" : "2020-03-10T15:27:55.065Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200131"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "58797008",
+      "display" : "Complication of transplanted kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "213150003",
+      "display" : "Kidney transplant failure and rejection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236569000",
+      "display" : "Primary non-function of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236570004",
+      "display" : "Renal transplant rejection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236571000",
+      "display" : "Hyperacute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236572007",
+      "display" : "Accelerated rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236573002",
+      "display" : "Very mild acute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236574008",
+      "display" : "Acute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236575009",
+      "display" : "Acute rejection of renal transplant - grade I"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236576005",
+      "display" : "Acute rejection of renal transplant - grade II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236577001",
+      "display" : "Acute rejection of renal transplant - grade III"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236578006",
+      "display" : "Chronic rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236579003",
+      "display" : "Mild chronic transplant nephropathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236580000",
+      "display" : "Chronic rejection of renal transplant - grade II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236581001",
+      "display" : "Severe chronic transplant nephropathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236582008",
+      "display" : "Acute-on-chronic rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236583003",
+      "display" : "Failed renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236584009",
+      "display" : "Perfusion injury of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236587002",
+      "display" : "Transplant glomerulopathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236588007",
+      "display" : "Transplant glomerulopathy - early form"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236589004",
+      "display" : "Transplant glomerulopathy - late form"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236614007",
+      "display" : "Perirenal and periureteric post-transplant lymphocele"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "277010001",
+      "display" : "Unexplained episode of renal transplant dysfunction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "277011002",
+      "display" : "Pre-existing disease in renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426136000",
+      "display" : "Delayed renal graft function"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707148007",
+      "display" : "Recurrent post-transplant renal disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "713825007",
+      "display" : "Renal artery stenosis of transplanted kidney"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "707206008"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:85bf452e-dbe8-4425-adcc-ee1388983626",
+    "timestamp" : "2020-03-10T15:27:56.549Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "443731004"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:e0fe87b6-6d39-4845-96b0-bcf5b142be1b",
+    "timestamp" : "2020-03-10T15:27:56.877Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "182817000"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:f2d3c77f-b261-4edc-a7fd-a0b32e564aa6",
+    "timestamp" : "2020-03-10T15:27:57.190Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
