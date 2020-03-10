@@ -344,10 +344,34 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <path value="PlanDefinition.relatedArtifact.type" />
       <fixedCode value="depends-on" />
     </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.label">
+      <path value="PlanDefinition.relatedArtifact.label" />
+      <label value="Kind of document" />
+      <short value="Name of the kind of document expected" />
+      <definition value="Various kinds (or models) of documents may be expected as input to a laboratory service. This element provides an unambiguous short name for such a kind of document." />
+      <comment value="Examples of kinds of documents expected include:&#xD;&#xA;- the paper lab order scanned&#xD;&#xA;- the statement of acceptation of the service by the insurance provider (e.g. for a prenatal karyotyping)&#xD;&#xA;- the patient consent (e.g. for a genetic test)&#xD;&#xA;- the patient insurance affiliation scanned" />
+      <min value="1" />
+    </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.display">
       <path value="PlanDefinition.relatedArtifact.display" />
       <definition value="A brief description of the document that need to be provided alongside the order of this laboratory service" />
       <min value="1" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.document">
+      <path value="PlanDefinition.relatedArtifact.document" />
+      <short value="Document model" />
+      <definition value="provides in the attachment a model for the kind of document expected" />
+      <comment value="The model can be encoded in base64 in the data sub-element, with its mime type encoded in the contentType sub-element, or it can be external, accessible through the url sub-element." />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.document.url">
+      <path value="PlanDefinition.relatedArtifact.document.url" />
+      <short value="url of the model of document expected" />
+      <definition value="used if the model of document is accessible externally" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.document.title">
+      <path value="PlanDefinition.relatedArtifact.document.title" />
+      <short value="Title of the kind or model of document" />
+      <definition value="May be sufficient to specify the document expected, in cases where no pre-defined needs to be communicated to the orderer of the service." />
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy">
       <path value="PlanDefinition.relatedArtifact" />
