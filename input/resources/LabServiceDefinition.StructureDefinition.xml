@@ -156,9 +156,13 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.useContext">
       <path value="PlanDefinition.useContext" />
       <slicing>
-        <discriminator>
+        <!-- <discriminator>
           <type value="value" />
           <path value="code.code" />
+        </discriminator> -->
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
         </discriminator>
         <discriminator>
           <type value="type" />
@@ -183,14 +187,18 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:Orderable.code">
       <path value="PlanDefinition.useContext.code" />
-      <binding>
+      <!-- <binding>
         <strength value="required" />
-      </binding>
+      </binding> -->
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+        <code value="task"/>
+      </patternCoding>
     </element>
-    <element id="PlanDefinition.useContext:Orderable.code.code">
+    <!-- <element id="PlanDefinition.useContext:Orderable.code.code">
       <path value="PlanDefinition.useContext.code.code" />
       <fixedCode value="task" />
-    </element>
+    </element> -->
     <element id="PlanDefinition.useContext:Orderable.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -213,14 +221,18 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
       <path value="PlanDefinition.useContext.code" />
-      <binding>
+      <!-- <binding>
         <strength value="required" />
-      </binding>
+      </binding> -->
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+        <code value="task"/>
+      </patternCoding>
     </element>
-    <element id="PlanDefinition.useContext:PathologistInitiative.code.code">
+    <!-- <element id="PlanDefinition.useContext:PathologistInitiative.code.code">
       <path value="PlanDefinition.useContext.code.code" />
       <fixedCode value="task" />
-    </element>
+    </element> -->
     <element id="PlanDefinition.useContext:PathologistInitiative.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -242,14 +254,19 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
       <path value="PlanDefinition.useContext.code" />
-      <binding>
-        <strength value="required" />
-      </binding>
+      <!-- <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+      </binding> -->
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+        <code value="gender"/>
+      </patternCoding>
     </element>
-    <element id="PlanDefinition.useContext:OneGender.code.code">
+    <!-- <element id="PlanDefinition.useContext:OneGender.code.code">
       <path value="PlanDefinition.useContext.code.code" />
       <fixedCode value="gender" />
-    </element>
+    </element> -->
     <element id="PlanDefinition.useContext:OneGender.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -269,14 +286,18 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code">
       <path value="PlanDefinition.useContext.code" />
-      <binding>
+      <!-- <binding>
         <strength value="required" />
-      </binding>
+      </binding> -->
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+        <code value="task"/>
+      </patternCoding>
     </element>
-    <element id="PlanDefinition.useContext:StoreSpecimen.code.code">
+    <!-- <element id="PlanDefinition.useContext:StoreSpecimen.code.code">
       <path value="PlanDefinition.useContext.code.code" />
       <fixedCode value="task" />
-    </element>
+    </element> -->
     <element id="PlanDefinition.useContext:StoreSpecimen.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -296,14 +317,18 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:AgeRange.code">
       <path value="PlanDefinition.useContext.code" />
-      <binding>
+      <!-- <binding>
         <strength value="required" />
-      </binding>
+      </binding> -->
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+        <code value="age"/>
+      </patternCoding>
     </element>
-    <element id="PlanDefinition.useContext:AgeRange.code.code">
+    <!-- <element id="PlanDefinition.useContext:AgeRange.code.code">
       <path value="PlanDefinition.useContext.code.code" />
       <fixedCode value="age" />
-    </element>
+    </element> -->
     <element id="PlanDefinition.useContext:AgeRange.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <short value="patient age range applicable for this service" />
