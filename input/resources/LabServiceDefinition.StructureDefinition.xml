@@ -341,7 +341,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <sliceName value="InputDocumentExpected" />
       <short value="Input document expected by the laboratory service" />
       <definition value="Document that needs to be provided alongside the order for the laboratory service" />
-      <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient consent for payment of this non-reimbursable service ..." />
+      <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient agreement for payment of this non-reimbursable service, insurance formal acceptation of a specific test (e.g. prenatal karyotyping) ..." />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.type">
