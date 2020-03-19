@@ -130,7 +130,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       </slicing>
     </element>
     <element id="PlanDefinition.title.extension:OtherTitle">
-      <path value="PlanDefinition.title.extension" />
+       <path value="PlanDefinition.title.extension" />
       <sliceName value="OtherTitle" />
       <short value="Synonym in a specified language" />
       <definition value="Expresses a synonym of the laboratory service in a specified language" />
@@ -140,7 +140,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       </type>
     </element>
     <element id="PlanDefinition.type">
-      <path value="PlanDefinition.type" />
+       <path value="PlanDefinition.type" />
       <short value="panel | test" />
       <comment value="In this LabServiceDefiniton profile, PlanDefinition represents a laboratory service, which can be either a test or a panel. &#xD;&#xA;A test is a single measurement performed on a material/digital specimen, producing generally one result (sometimes zero, sometime more).&#xD;&#xA;A panel is a collection of tests and panels, performed on one or more material/digital specimens, and producing a collection of results.&#xD;&#xA;Therefore, the type is bound to a value set {&quot;test&quot;, &quot;panel&quot;}. The original value bound to this element with binding strength &quot;extensible&quot; does not contain appropriate values for laboratory diagnostic services." />
       <mustSupport value="true" />
@@ -156,10 +156,6 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     <element id="PlanDefinition.useContext">
       <path value="PlanDefinition.useContext" />
       <slicing>
-        <!-- <discriminator>
-          <type value="value" />
-          <path value="code.code" />
-        </discriminator> -->
         <discriminator>
           <type value="pattern" />
           <path value="code" />
@@ -187,18 +183,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:Orderable.code">
       <path value="PlanDefinition.useContext.code" />
-      <!-- <binding>
-        <strength value="required" />
-      </binding> -->
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-        <code value="task"/>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
       </patternCoding>
     </element>
-    <!-- <element id="PlanDefinition.useContext:Orderable.code.code">
-      <path value="PlanDefinition.useContext.code.code" />
-      <fixedCode value="task" />
-    </element> -->
     <element id="PlanDefinition.useContext:Orderable.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -221,18 +210,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
       <path value="PlanDefinition.useContext.code" />
-      <!-- <binding>
-        <strength value="required" />
-      </binding> -->
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-        <code value="task"/>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
       </patternCoding>
     </element>
-    <!-- <element id="PlanDefinition.useContext:PathologistInitiative.code.code">
-      <path value="PlanDefinition.useContext.code.code" />
-      <fixedCode value="task" />
-    </element> -->
     <element id="PlanDefinition.useContext:PathologistInitiative.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -254,19 +236,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
       <path value="PlanDefinition.useContext.code" />
-      <!-- <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
-      </binding> -->
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-        <code value="gender"/>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="gender" />
       </patternCoding>
     </element>
-    <!-- <element id="PlanDefinition.useContext:OneGender.code.code">
-      <path value="PlanDefinition.useContext.code.code" />
-      <fixedCode value="gender" />
-    </element> -->
     <element id="PlanDefinition.useContext:OneGender.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -286,18 +260,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code">
       <path value="PlanDefinition.useContext.code" />
-      <!-- <binding>
-        <strength value="required" />
-      </binding> -->
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-        <code value="task"/>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="task" />
       </patternCoding>
     </element>
-    <!-- <element id="PlanDefinition.useContext:StoreSpecimen.code.code">
-      <path value="PlanDefinition.useContext.code.code" />
-      <fixedCode value="task" />
-    </element> -->
     <element id="PlanDefinition.useContext:StoreSpecimen.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <type>
@@ -317,18 +284,11 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.useContext:AgeRange.code">
       <path value="PlanDefinition.useContext.code" />
-      <!-- <binding>
-        <strength value="required" />
-      </binding> -->
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-        <code value="age"/>
+        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+        <code value="age" />
       </patternCoding>
     </element>
-    <!-- <element id="PlanDefinition.useContext:AgeRange.code.code">
-      <path value="PlanDefinition.useContext.code.code" />
-      <fixedCode value="age" />
-    </element> -->
     <element id="PlanDefinition.useContext:AgeRange.value[x]">
       <path value="PlanDefinition.useContext.value[x]" />
       <short value="patient age range applicable for this service" />
@@ -366,7 +326,7 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <sliceName value="InputDocumentExpected" />
       <short value="Input document expected by the laboratory service" />
       <definition value="Document that needs to be provided alongside the order for the laboratory service" />
-      <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient agreement for payment of this non-reimbursable service, insurance formal acceptation of a specific test (e.g. prenatal karyotyping) ..." />
+      <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient agreement for payment of a non-reimbursable service, insurance formal acceptation of a specific test (e.g. prenatal karyotyping) ..." />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.type">
@@ -398,6 +358,9 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <definition value="used if the model of document is accessible externally" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.document.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="PlanDefinition.relatedArtifact.document.title" />
       <short value="Title of the kind or model of document" />
       <definition value="May be sufficient to specify the document expected, in cases where no pre-defined needs to be communicated to the orderer of the service." />
@@ -410,7 +373,8 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.type">
       <path value="PlanDefinition.relatedArtifact.type" />
-      <fixedCode value="predecessor" />
+      <definition value="The type of relationship to the related artifact is successor, meaning that the related artifact is in this case another instance of PlanDefinition representing the laboratory service, which is substituted to the current instance." />
+      <fixedCode value="successor" />
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.resource">
       <path value="PlanDefinition.relatedArtifact.resource" />
@@ -493,6 +457,9 @@ Such a definition of a laboratory diagnostic service can be used in a laboratory
       <min value="1" />
     </element>
     <element id="PlanDefinition.action.code:OrderLoinc.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="PlanDefinition.action.code.coding.display" />
       <short value="display of the LOINC code" />
       <min value="1" />

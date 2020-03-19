@@ -11,9 +11,8 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="This extension PlanDefinition provides the capability to provide synonyms in various languages to the title of the contextual resource" />
+  <description value="This extension provides the capability to provide synonyms in various languages to the title of the contextual resource" />
   <purpose value="This extension created for order catalogs is usable by Composition, PlanDefinition and  ActivityDefinition in R4.&#xD;&#xA;In R5, it will also be usable by SpecimenDefinition and ObservationDefinition. &#xD;&#xA;It could be made a core extension so as to be usable for any resource needing to provide synonyms in various languages for its name or title" />
-  
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

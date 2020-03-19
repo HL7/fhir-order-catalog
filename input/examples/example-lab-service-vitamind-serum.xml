@@ -23,7 +23,12 @@
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
-        <valueString value="remboursable-sous-condition"/>
+        <extension url="textualSummary">
+            <valueMarkdown value="Reimbursement is subject to the patient condition in conjunction with the reason for ordering"/>
+        </extension>
+        <extension url="reimbursabilitySummary">
+            <valueCode value="conditional"/>
+        </extension>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>

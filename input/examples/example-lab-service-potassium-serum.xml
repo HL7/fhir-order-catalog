@@ -20,7 +20,7 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://www.ama-assn.org/go/cpt"/>
-                <code value="84132"/>
+                <code value="CPTfakecode"/>
                 <display value="Potassium, serum"/>
             </coding>
         </valueCodeableConcept>
@@ -35,7 +35,12 @@
         </valueCodeableConcept>
     </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
-        <valueString value="The billing codes above illustrate coding in two countries/jurisdictions"/>
+        <extension url="textualSummary">
+            <valueMarkdown value="no notable particularity for billing"/>
+        </extension>
+        <extension url="reimbursabilitySummary">
+            <valueCode value="normal"/>
+        </extension>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>

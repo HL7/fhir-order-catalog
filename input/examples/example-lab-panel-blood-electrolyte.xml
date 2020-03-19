@@ -25,7 +25,12 @@
         </valueCodeableConcept>
     </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
-        <valueString value="reimbursable"/>
+        <extension url="textualSummary">
+            <valueMarkdown value="no notable particularity for billing"/>
+        </extension>
+        <extension url="reimbursabilitySummary">
+            <valueCode value="normal"/>
+        </extension>
      </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>

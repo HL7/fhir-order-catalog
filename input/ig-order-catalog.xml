@@ -46,17 +46,34 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/laboratory-service-reimbursability"/>
+      </reference>
+      <name value="Laboratory service reimbursability categories CodeSystem"/>
+      <description value="Code system providing coarse categories of reimbursement dispositions for laboratory services"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/laboratory-service-type"/>
       </reference>
       <name value="Laboratory service type ValueSet"/>
-      <description value="Value set for types of laboratory service in the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Value set for types of laboratory service in the LabServiceDefinition profile of PlanDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/laboratory-service-reimbursability-vs"/>
+      </reference>
+      <name value="Laboratory service reimbursability categories ValueSet"/>
+      <description value="ValueSet providing coarse categories of reimbursement dispositions for laboratory services"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/bibliography-artifact-type"/>
       </reference>
       <name value="Bibliographic artifact ValueSet"/>
-      <description value="Restrained value set for types of bibliographic artifact in the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Restrained value set for types of bibliographic artifact in the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <!-- 
       Below, the extensions 
@@ -66,49 +83,62 @@
         <reference value="StructureDefinition/ValidityPeriod"/>
       </reference>
       <name value="Validity Period Extension"/>
-      <description value="Extension adding catalog validity period to the CatalogHeader profile of Composition"/>
+      <description
+        value="Extension adding catalog validity period to the CatalogHeader profile of Composition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogReference"/>
       </reference>
       <name value="Reference to catalog Extension"/>
-      <description value="Extension adding catalog reference to the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Extension adding catalog reference to the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/BillingSummary"/>
       </reference>
       <name value="Billing summary Extension"/>
-      <description value="Extension adding a billing summary to the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Extension adding a billing summary to the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ScheduleSummary"/>
       </reference>
       <name value="Schedule summary Extension"/>
-      <description value="Extension adding a service schedule summary to the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Extension adding a service schedule summary to the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LimitationSummary"/>
       </reference>
       <name value="Limitation summary Extension"/>
-      <description value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ServiceBillingCode"/>
       </reference>
       <name value="Service billing code Extension"/>
-      <description value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"/>
+      <description
+        value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/SynonymInLanguage"/>
       </reference>
       <name value="Synonym in a chosen language Extension"/>
-      <description value="Extension adding a synonym  in a chosen language for the title element of CatalogHeader, LabServiceDefinition, LabProcedureDefinition profiles"
+      <description
+        value="Extension adding a synonym  in a chosen language for the title element of CatalogHeader, LabServiceDefinition, LabProcedureDefinition profiles"
       />
     </resource>
     <!-- 
@@ -119,49 +149,63 @@
         <reference value="StructureDefinition/LabChargeItemDefinition"/>
       </reference>
       <name value="Service billing code and rules Profile"/>
-      <description value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"/>
+      <description
+        value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogHeader"/>
       </reference>
       <name value="Catalog Header Profile"/>
-      <description value="Profile of Composition representing the global properties of a catalog of healthcare items (products, services, knowledge artifacts)"/>
+      <description
+        value="Profile of Composition representing the global properties of a catalog of healthcare items (products, services, knowledge artifacts)"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LabServiceDefinition"/>
       </reference>
       <name value="Laboratory service Profile"/>
-      <description value="Profile of PlanDefinition representing the definition of a laboratory diagnostic service viewable and usable by potential consumers (clinicians, nurses, patients ...)"/>
+      <description
+        value="Profile of PlanDefinition representing the definition of a laboratory diagnostic service viewable and usable by potential consumers (clinicians, nurses, patients ...)"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LabProcedureDefinition"/>
       </reference>
       <name value="Laboratory procedure Profile"/>
-      <description value="Profile of ActivityDefinition representing the definition of a laboratory operational procedure"/>
+      <description
+        value="Profile of ActivityDefinition representing the definition of a laboratory operational procedure"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LabSpecimenDefinition"/>
       </reference>
       <name value="Laboratory specimen Profile"/>
-      <description value="Profile of SpecimenDefinition representing the definition of an IVD specimen used by a laboratory operational procedure"/>
+      <description
+        value="Profile of SpecimenDefinition representing the definition of an IVD specimen used by a laboratory operational procedure"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/InputObservationDefinition"/>
       </reference>
       <name value="Input observation Profile"/>
-      <description value="Profile of ObservationDefinition representing the definition of an observation expected from the orderer by the performing laboratory for use in one of its procedures"/>
+      <description
+        value="Profile of ObservationDefinition representing the definition of an observation expected from the orderer by the performing laboratory for use in one of its procedures"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/LabObservationDefinition"/>
       </reference>
       <name value="Laboratory observation Profile"/>
-      <description value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"/>
+      <description
+        value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
+      />
     </resource>
     <resource>
       <reference>
@@ -178,15 +222,19 @@
         <reference value="Organization/example-lab-organization"/>
       </reference>
       <name value="Laboratory Organization"/>
-      <description value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"/>
+      <description
+        value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"
+      />
     </resource>
     <resource>
       <reference>
         <reference value="Composition/example-lab-compendium-header"/>
       </reference>
       <name value="a clinical laboratory catalog"/>
-      <description value="Catalog header representing a laboratory compendium, used by all lab examples in this implementation guide"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+      <description
+        value="Catalog header representing a laboratory compendium, used by all lab examples in this implementation guide"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
     </resource>
     <resource>
       <reference>
@@ -194,7 +242,8 @@
       </reference>
       <name value="Lab service serum K"/>
       <description value="Lab E1 - simple test laboratory service - serum K"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -202,31 +251,38 @@
       </reference>
       <name value="Lab service blood electrolyte"/>
       <description value="Lab E2 - panel laboratory service - electrolyte on blood or plasma"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
       </reference>
       <name value="Lab service 24H urine creat"/>
-      <description value="Lab E3, E5 - panel laboratory service - creatinine on 24-hour urine specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <description
+        value="Lab E3, E5 - panel laboratory service - creatinine on 24-hour urine specimen"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="PlanDefinition/example-lab-test-serum-creatinine"/>
       </reference>
       <name value="Lab service serum creat"/>
-      <description value="Lab E4, E5 - panel laboratory service - creatinine on serum or plasma specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <description
+        value="Lab E4, E5 - panel laboratory service - creatinine on serum or plasma specimen"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance"/>
       </reference>
       <name value="Lab service creat renal clearance"/>
-      <description value="Lab E5 - panel laboratory service - creatinine renal clearance using 24-hour urine specimen and serum or plasma specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <description
+        value="Lab E5 - panel laboratory service - creatinine renal clearance using 24-hour urine specimen and serum or plasma specimen"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -234,7 +290,8 @@
       </reference>
       <name value="Lab service vitamin D"/>
       <description value="Lab E6 - simple test laboratory service - vitamin D (in French)"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -242,7 +299,8 @@
       </reference>
       <name value="Lab procedure 24H urine creat"/>
       <description value="Lab E3, E5 - panel laboratory procedure - 24-hour urine creatinine"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -250,15 +308,18 @@
       </reference>
       <name value="Lab procedure venous creat"/>
       <description value="Lab E4, E5 - laboratory procedure - creatinine - venous serum or plasma"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
       </reference>
       <name value="Lab procedure capillary creat"/>
-      <description value="Lab E4, E5 - laboratory procedure - creatinine - capillary serum or plasma"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <description
+        value="Lab E4, E5 - laboratory procedure - creatinine - capillary serum or plasma"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -266,7 +327,8 @@
       </reference>
       <name value="Lab procedure serum K"/>
       <description value="Lab E1 - simple test laboratory procedure - serum K"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -274,15 +336,18 @@
       </reference>
       <name value="Lab procedure blood electrolyte"/>
       <description value="Lab E2 - panel laboratory procedure - electrolyte on serum or plasma"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
       </reference>
       <name value="Lab procedure creat renal clearance"/>
-      <description value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <description
+        value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -290,23 +355,28 @@
       </reference>
       <name value="Lab procedure vitamin D"/>
       <description value="Lab E6 - simple test laboratory procedure - vitamin D (in French)"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
       </reference>
       <name value="Lab specimen - venous serum 1 test"/>
-      <description value="Lab E1, E4, E5, E6 - venous serum specimen requirement for a single chemistry test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+      <description
+        value="Lab E1, E4, E5, E6 - venous serum specimen requirement for a single chemistry test"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
       </reference>
       <name value="Lab specimen - capillary serum 1 test"/>
-      <description value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+      <description
+        value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -314,7 +384,8 @@
       </reference>
       <name value="Lab specimen - serum/plasma"/>
       <description value="Lab E2: serum/plasma specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -322,7 +393,8 @@
       </reference>
       <name value="Lab specimen - 24H urine"/>
       <description value="Lab E3: 24H urine specimen"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -330,7 +402,9 @@
       </reference>
       <name value="Lab input observation - reason"/>
       <description value="Lab E1, E2: observation reason for test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"
+      />
     </resource>
     <resource>
       <reference>
@@ -338,7 +412,9 @@
       </reference>
       <name value="Lab input observation - vitamin d"/>
       <description value="Lab E6: observation reason for vitamin D test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"
+      />
     </resource>
     <resource>
       <reference>
@@ -346,7 +422,8 @@
       </reference>
       <name value="Lab observation serum Na"/>
       <description value="Lab E2: observation Na/serum"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -354,7 +431,8 @@
       </reference>
       <name value="Lab observation serum K"/>
       <description value="Lab E1, E2: observation K/serum"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -362,7 +440,8 @@
       </reference>
       <name value="Lab observation serum Cl"/>
       <description value="Lab E2 - definition of output observation Cl on serum"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -370,15 +449,18 @@
       </reference>
       <name value="Lab observation collection duration"/>
       <description value="Lab E3 - definition of input/output observation urine collection duration"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-collection-volume"/>
       </reference>
       <name value="Lab observation urine volume"/>
-      <description value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <description
+        value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -386,7 +468,8 @@
       </reference>
       <name value="Lab observation urine creat"/>
       <description value="Lab E3 - definition of lab observation 24-hour urine creatinine"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -394,15 +477,18 @@
       </reference>
       <name value="Lab observation serum/plasma creat"/>
       <description value="Lab E4 - definition of lab observation serum/plasma creatinine"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
         <reference value="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
       </reference>
       <name value="Lab observation creat renal clearance"/>
-      <description value="Lab E5 - definition of lab observation - creatinine renal clearance in 24 hour urine and serum or plasma"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <description
+        value="Lab E5 - definition of lab observation - creatinine renal clearance in 24 hour urine and serum or plasma"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -410,7 +496,8 @@
       </reference>
       <name value="Lab observation vitamin D"/>
       <description value="Lab E6: observation vitamin D on blood serum (in French)"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -418,7 +505,8 @@
       </reference>
       <name value="Lab billing code and rule for vitamin D"/>
       <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
     </resource>
     <resource>
       <reference>
@@ -426,7 +514,8 @@
       </reference>
       <name value="Lab normal reasons for billing vitamin D"/>
       <description value="Lab E6 - value set of normal reasons enabling billing of Vitamin D test"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
     </resource>
     <resource>
       <reference>
@@ -434,7 +523,8 @@
       </reference>
       <name value="Valid coded reasons for ordering a lab service"/>
       <description value="Lab E* - broadest value set of reasons for ordering a laboratory service"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
     </resource>
     <!-- 
       html pages
