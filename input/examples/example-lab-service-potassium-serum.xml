@@ -54,12 +54,12 @@
     </identifier>
     <name value="PotassiumSerumMeasurement"/>
     <title value="Potassium measurement on in vitro blood serum">
-        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage">
-            <extension url="Synonym">
-                <valueString value="Dosage du potassium sérique"/>
-            </extension>
-            <extension url="Language">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
                 <valueCode value="fr-FR"/>
+            </extension>
+            <extension url="content">
+                <valueString value="Dosage du potassium sérique"/>
             </extension>
         </extension>
     </title>

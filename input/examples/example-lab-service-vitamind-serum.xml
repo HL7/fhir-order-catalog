@@ -29,7 +29,7 @@
         <extension url="reimbursabilitySummary">
             <valueCode value="conditional"/>
         </extension>
-     </extension>
+    </extension>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day"/>
     </extension>
@@ -38,12 +38,12 @@
     </extension>
     <name value="VitaminDMeasurement"/>
     <title value="Dosage de la vitamine D dans le sang">
-        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage">
-            <extension url="Synonym">
-                <valueString value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
-            </extension>
-            <extension url="Language">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
                 <valueCode value="fr-FR"/>
+            </extension>
+            <extension url="content">
+                <valueString value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
             </extension>
         </extension>
     </title>

@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200319T2000"/>
+  <version value="20200320T1000"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -130,15 +130,6 @@
       <name value="Service billing code Extension"/>
       <description
         value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"
-      />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/SynonymInLanguage"/>
-      </reference>
-      <name value="Synonym in a chosen language Extension"/>
-      <description
-        value="Extension adding a synonym  in a chosen language for the title element of CatalogHeader, LabServiceDefinition, LabProcedureDefinition profiles"
       />
     </resource>
     <!-- 

@@ -126,7 +126,7 @@ An instance of Composition profiled by CatalogHeader  does not mention the catal
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
       </type>
     </element>
     <element id="Composition.attester">

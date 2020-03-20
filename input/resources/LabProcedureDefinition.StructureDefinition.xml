@@ -63,7 +63,7 @@
       <sliceName value="OtherTitle" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SynonymInLanguage" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
       </type>
     </element>
     <element id="ActivityDefinition.date">

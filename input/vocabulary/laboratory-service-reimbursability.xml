@@ -32,7 +32,7 @@
             </tr>
             <tr>
               <td>conditional</td>
-              <td>reimbursement of service subject to predefined conditions</td>
+              <td>reimbursement of service subject to conditions</td>
             </tr>
             <tr>
               <td>partial</td>
@@ -40,7 +40,7 @@
             </tr>
             <tr>
               <td>partial-conditional</td>
-              <td>reimbursement limited to a part of the service and subject to predefined conditions</td>
+              <td>reimbursement limited to a part of the service and subject to conditions</td>
             </tr>
            </table>
         </li>
@@ -53,7 +53,7 @@
   <title value="Kinds of reibursability coarse categories for a laboratory service" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2020-03-19" />
+  <date value="2020-03-20" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>
@@ -74,7 +74,7 @@
   </concept>
   <concept>
     <code value="conditional" />
-    <display value="reimbursement of service subject to predefined conditions"/>
+    <display value="reimbursement of service subject to conditions"/>
   </concept>
   <concept>
     <code value="partial" />
@@ -82,6 +82,6 @@
   </concept>
   <concept>
     <code value="conditional-partial" />
-    <display value="reimbursement limited to a part of the service and subject to predefined conditions"/>
+    <display value="reimbursement limited to a part of the service and subject to conditions"/>
   </concept>
 </CodeSystem>
