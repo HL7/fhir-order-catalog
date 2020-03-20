@@ -34,6 +34,14 @@
               <td>conditional</td>
               <td>reimbursement of service subject to predefined conditions</td>
             </tr>
+            <tr>
+              <td>partial</td>
+              <td>normal reimbursement limited to a part of the service</td>
+            </tr>
+            <tr>
+              <td>partial-conditional</td>
+              <td>reimbursement limited to a part of the service and subject to predefined conditions</td>
+            </tr>
            </table>
         </li>
       </ul>
@@ -67,5 +75,13 @@
   <concept>
     <code value="conditional" />
     <display value="reimbursement of service subject to predefined conditions"/>
+  </concept>
+  <concept>
+    <code value="partial" />
+    <display value="normal reimbursement limited to a part of the service"/>
+  </concept>
+  <concept>
+    <code value="conditional-partial" />
+    <display value="reimbursement limited to a part of the service and subject to predefined conditions"/>
   </concept>
 </CodeSystem>
