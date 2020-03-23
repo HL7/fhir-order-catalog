@@ -12,59 +12,75 @@
     Composition. In other words, for binding a laboratory catalog to its items, only method 2 is
     usable, as depicted in <a href="index.html#technical"> Home Page - Technical overview</a> .
     Thus, the Composition resource holds only the general properties of the catalog and is
-    referenced by the resources PlanDefinition constrained by the <a href="StructureDefinition-LabServiceDefinition.html"> 
-    LabServiceDefinition</a> profile, which represent the items of the catalog. </p>
+    referenced by the resources PlanDefinition constrained by the <a
+      href="StructureDefinition-LabServiceDefinition.html"> LabServiceDefinition</a> profile, which
+    represent the items of the catalog. </p>
   <p>An item of the catalog is a laboratory service instantiated as a PlanDefinition, which
     represents either a test (type=test) or a panel (type=panel). A panel is a set of tests and/or
     panels. This PlanDefinition conveys the general properties of the item: identification, names
     and codings, orderability, applicability, jurisdictions, billing, status, possible replacement
-    by another item, gender or species restrictions, goals, bibliographic references,
-    citations and justifications, expected input documents (such as patient consent for genetic
-    testing). The PlanDefinition contains a single occurrence of the element PlanDefinition.action. </p>
-  <p>The PlanDefinition.action references one or more instances of ActivityDefinition constrained by
-    the <a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition profile,
-    </a> each of which represents a laboratory procedure with its operational details, specifying in
-    particular the specimens required to perform the test or panel, the input observations expected
-    by the laboratory from the orderer, and the output observations that the procedure will
-    produce.</p>
+    by another item, gender or species restrictions, goals, bibliographic references, citations and
+    justifications, expected input documents (such as patient consent for genetic testing). The
+    PlanDefinition contains a single occurrence of the element PlanDefinition.action. </p>
+  <p>PlanDefinition.action element references one or more instances of ActivityDefinition
+    constrained by the <a href="StructureDefinition-LabProcedureDefinition.html"
+      >LabProcedureDefinition profile, </a> each of which represents a laboratory procedure with its
+    operational details, specifying in particular the specimens required to perform the test or
+    panel, the input observations expected by the laboratory from the orderer, and the output
+    observations that the procedure will produce.</p>
   <p>In most cases the PlanDefinition references a single ActivityDefinition, which represents the
     operational view of the service.</p>
   <p>In some cases the PlanDefinition of a lab service references multiple instances of
     ActivityDefinition representing multiple procedures assembled in logical groups with
     combinations of AND and OR. These logical combinations are used for example to indicate that the
     laboratory accepts multiple alternative specimens (e.g. venous blood versus capillary blood) to
-    perform a test. They also allow to reuse existing panels within encompassing panels 
-    (e.g. LOINC 49660-4 - HIV susceptibility panel by Genotype method, nesting 3 levels of panels and tests)</p>
-  <p>Input and output observations of the service are defined as instances of ObservationDefinition 
-    (<a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a> for
-    observations expected from the ordering clinician, and <a href="StructureDefinition-LabObservationDefinition.html">
-      LabObservationDefinition</a> for observations produced by the lab service and reported back to the clinician), 
-    with their quantitative (units, decimal precision, conversion factor, normal and therapeutic ranges) and/or 
-    qualitative (authorized values, normal values, critical values, preferred report name) characteristics.</p>
-  <p>Specimens required by the service are defined as instances of SpecimenDefinition conformant to the 
-    <a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition profile</a>, which enables to
-    describe patient preparation requirements, collection procedures, types of containers to be used, 
-    minimum volume needed, rejection criteria, retention time, handling requirements before testing. 
-    An instance of SpecimenDefinition may specify one preferred testable specimen and multiple alternates, 
-    each with its proper physical characteristics, handlings, requirements and rejection criteria. </p>
+    perform a test. They also allow to reuse existing panels within encompassing panels (e.g. LOINC
+    49660-4 - HIV susceptibility panel by Genotype method, nesting 3 levels of panels and tests)</p>
+  <p>Input and output observations of the service are defined as instances of ObservationDefinition
+    (using the <a href="StructureDefinition-InputObservationDefinition.html"
+      >InputObservationDefinition profile</a> for observations expected from the ordering clinician,
+    and using the <a href="StructureDefinition-LabObservationDefinition.html">
+      LabObservationDefinition profile</a> for observations produced by the lab service and reported
+    back to the clinician), with their quantitative (units, decimal precision, conversion factor,
+    normal and therapeutic ranges) and/or qualitative (authorized values, normal values, critical
+    values, preferred report name) characteristics.</p>
+  <p>Specimens required by the service are defined as instances of SpecimenDefinition conformant to
+    the <a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition profile</a>,
+    which enables to describe patient preparation requirements, collection procedures, types of
+    containers to be used, minimum volume needed, rejection criteria, retention time, handling
+    requirements before testing. An instance of SpecimenDefinition may specify one preferred
+    testable specimen and multiple alternates, each with its proper physical characteristics,
+    handlings, requirements and rejection criteria. </p>
+  <p>A laboratory service may provide more or less details about its billing. It may provide a
+    textual billing summary as part of the PlanDefinition instance. It may also list the billing
+    codes of a billing nomenclature, attached to it, still within the PlanDefinition instance. In
+    addition, the service may specify for each billing code attached to it, what are the specific
+    clinical focus that apply to this code, and what are its price components.</p>
   <a name="LabServicesSearch"> </a>
   <h3>Searching for Laboratory Services</h3>
   <a name="LabServicesSearchApproach"> </a>
   <h4>Searching Approaches</h4>
-  <p> The key searcheable assets in a laboratory compendium are the laboratory services exposed to the consumers of the compendium. 
-    Each laboratory service is represented by an instance of the <a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a> resource, 
-    constrained by the <a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a> profile. </p>
-    <ul>
-      <li>Two-step search: A client application browsing the content of the compendium may wish to first get the overview of a collection of services at first glance, 
-        and then retrieve the full details associated with the services it is interested in (including specimens, input observations, lab results).
-       In this case, the first query will perform a simple search on <i>PlanDefinition</i> with the desirable criteria listed in the table below ; 
-        and then the second search will add the <b>_include:iterate=*</b> parameter, to retrieve the PlanDefiniton resource(s) associated 
-        with all supporting resources (ActivityDefinition, ChargeItemDefinition, Composition, SpecimenDEfinition, ObservationDefinition ...) 
-        in the <i>searchset Bundle</i>.</li>
-      <li>One-step search: Conversely a client application may wish to retrieve the full details of a service at first glance. In this case, it uses the
-        appropriate search criteria for PlanDefinition, in combination with the <b>_include:iterate=*</b> parameter, so as to obtain all the resources supporting
-        each laboratory service which satisfies the criteria, assembled in the <i>searchset Bundle</i>.</li>
-    </ul> 
+  <p> The key searcheable assets in a laboratory compendium are the laboratory services exposed to
+    the consumers of the compendium. Each laboratory service is represented by an instance of the <a
+      href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a> resource, constrained by the
+      <a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a> profile. </p>
+  <ul>
+    <li><b>Two-step search</b>: A client application browsing the content of the compendium may wish
+      to first get the overview of a collection of services at first glance, and then retrieve the
+      full details associated with the services it is interested in (including specimens, input
+      observations, lab results). In this case, the first query will perform a simple search on
+        <i>PlanDefinition</i> with the desirable criteria listed in the table below ; and then the
+      second search will add the <b>_include:iterate=*</b> parameter, to retrieve the PlanDefiniton
+      resource(s) associated with all supporting resources (ActivityDefinition,
+      ChargeItemDefinition, Composition, SpecimenDEfinition, ObservationDefinition ...) in the
+        <i>searchset Bundle</i>.</li>
+    <li><b>One-step search</b>: Conversely a client application may wish to retrieve the full
+      details of a service (or a set of services) at first glance. In this case, it uses the
+      appropriate search criteria for PlanDefinition, in combination with the
+        <b>_include:iterate=*</b> parameter, so as to obtain all the resources supporting each
+      laboratory service which satisfies the criteria, assembled in the <i>searchset
+      Bundle</i>.</li>
+  </ul>
   <p>Catalog servers may limit the iteration depth to an appropriate level for performance sake.</p>
   <a name="LabServicesSearchParameters"> </a>
   <h4>Search Parameters for Laboratory Services (PlanDefinition)</h4>
@@ -82,7 +98,8 @@
       <tr>
         <td>catalog</td>
         <td>reference</td>
-        <td>The reference to a Composition resource (profiled by CatalogHeader) owning this item</td>
+        <td>The reference to a Composition resource (profiled by CatalogHeader) owning this
+          item</td>
         <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference').valueReference.reference(Composition)</td>
         <td>services of one catalog</td>
       </tr>
@@ -90,20 +107,24 @@
         <td>billingCode</td>
         <td>token</td>
         <td> A billing code associated with the service</td>
-        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value as Reference).reference(ChargeItemDefinition).resolve().code</td>
+        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
+          as Reference).reference(ChargeItemDefinition).resolve().code</td>
         <td>The FHIRPath expression to be checked</td>
       </tr>
       <tr>
         <td>orderable</td>
         <td>token</td>
-        <td>(true: service with a useContext belonging to slice Orderable of LabServiceDefinition profile ; false: the opposite</td>
-        <td>PlanDefinition.useContext.slice(http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition, Orderable).exists()</td>
+        <td>(true: service with a useContext belonging to slice Orderable of LabServiceDefinition
+          profile ; false: the opposite</td>
+        <td>PlanDefinition.useContext.slice(http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition,
+          Orderable).exists()</td>
         <td>FHIRPath expression to be checked</td>
       </tr>
       <tr>
         <td>task</td>
         <td>token</td>
-        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable service, LABRREV for service that can be added by the pathologist)</td>
+        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable
+          service, LABRREV for service that can be added by the pathologist)</td>
         <td>(PlanDefinition.useContext.where(code='task').value as CodeableConcept)</td>
         <td>services associated with the particular task</td>
       </tr>
@@ -117,14 +138,14 @@
       <tr>
         <td>_lastUpdated</td>
         <td>date</td>
-        <td>Last time PlanDefinition was updated</td>
-        <td></td>
+        <td>Last system point in time of PlanDefinition resource</td>
+        <td/>
         <td>can be used with =gt...</td>
       </tr>
       <tr>
         <td>date</td>
         <td>date</td>
-        <td>Publication date of service last business version</td>
+        <td>Publication date of service's business version</td>
         <td>PlanDefinition.date</td>
         <td>can be used with =gt...</td>
       </tr>
@@ -147,14 +168,14 @@
         <td>string</td>
         <td>The service title</td>
         <td>PlanDefinition.title</td>
-        <td></td>
+        <td/>
       </tr>
       <tr>
         <td>name</td>
         <td>string</td>
         <td>The service computational name</td>
         <td>PlanDefinition.name</td>
-        <td></td>
+        <td/>
       </tr>
       <tr>
         <td>action-code</td>
@@ -182,7 +203,7 @@
         <td>string</td>
         <td>lab service publisher </td>
         <td>PlanDefinition.publisher</td>
-        <td></td>
+        <td/>
       </tr>
       <tr>
         <td>jurisdiction</td>
@@ -193,4 +214,28 @@
       </tr>
     </tbody>
   </table>
+  <a name="LabServicesSearchExamples"> </a>
+  <h4>Examples of searching</h4>
+  <p>In all examples below, [base] represents the endpoint of the catalog server. </p>
+  <p>The answer of the     server comes as a Bundle of type 'searchset' encapsulating the resources selected by the search.</p>
+  <p>There is one particular laboratory service catalog, which has Composition.id "a1" on the server.</p>
+  <a name="LabServicesAllCatalogs"> </a>
+  <h5>List all catalogs of the server</h5>
+  <p>GET [base]/Composition?type:text=Catalog&amp;_summary=true</p>
+  <p> Obtains the summary of every catalog available on the server.The anwser Bundle contains one
+    entry with a Composition resource for each catalog found.</p>
+  <a name="LabServicesAvailableCatalogs"> </a>
+  <h5>List available laboratory service catalogs</h5>
+  <p>GET [base]/Composition?type:text=Catalog&amp;_category=laboratory&amp;_summary=true</p>
+  <p> Obtains the summary of every laboratory service catalog available on the server. The anwser
+    Bundle contains one entry with a Composition resource for each laboratory service catalog
+    found.</p>
+  <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
+  <h5>List recently updated blood chemistry tests and panels of one catalog</h5>
+  <p>GET
+    [base]/PlanDefinition?&amp;catalog=Composition/a1&amp;topic=http://snomed.info/sct|166312007&amp;date=gt20200323T10:00:00Z+0100&amp;_summary=true</p>
+  <p> Obtains the summary of the laboratory services from catalog of id a1, which are indexed by
+    blood chemistry topic (coded in this example with SNOMED CT 166312007 |Blood chemistry| concept).
+    The anwser Bundle contains one entry with a PlanDefinition resource for each laboratory service
+    of catalog a1 associated with blood chemistry topic, and created or updated since March 23rd 10am.</p>
 </div>
