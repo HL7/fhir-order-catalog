@@ -70,14 +70,14 @@
       full details associated with the services it is interested in (including specimens, input
       observations, lab results). In this case, the first query will perform a simple search on
         <i>PlanDefinition</i> with the desirable criteria listed in the table below ; and then the
-      second search will add the <b>_include:iterate=*</b> parameter, to retrieve the PlanDefiniton
+      second search will add the <b><code>_include:iterate=*</code></b> parameter, to retrieve the PlanDefiniton
       resource(s) associated with all supporting resources (ActivityDefinition,
       ChargeItemDefinition, Composition, SpecimenDEfinition, ObservationDefinition ...) in the
         <i>searchset Bundle</i>.</li>
     <li><b>One-step search</b>: Conversely a client application may wish to retrieve the full
       details of a service (or a set of services) at first glance. In this case, it uses the
       appropriate search criteria for PlanDefinition, in combination with the
-        <b>_include:iterate=*</b> parameter, so as to obtain all the resources supporting each
+      <b><code>_include:iterate=*</code></b> parameter, so as to obtain all the resources supporting each
       laboratory service which satisfies the criteria, assembled in the <i>searchset
       Bundle</i>.</li>
   </ul>
@@ -223,19 +223,18 @@
     server.</p>
   <a name="LabServicesAllCatalogs"> </a>
   <h5>List all catalogs of the server</h5>
-  <p>GET [base]/Composition?type:text=Catalog&amp;_summary=true</p>
+  <pre>GET [base]/Composition?type:text=Catalog&amp;_summary=true</pre> 
   <p> Obtains the summary of every catalog available on the server.The anwser Bundle contains one
     entry with a Composition resource for each catalog found.</p>
   <a name="LabServicesAvailableCatalogs"> </a>
   <h5>List available laboratory service catalogs</h5>
-  <p>GET [base]/Composition?type:text=Catalog&amp;_category=laboratory&amp;_summary=true</p>
+  <pre>GET [base]/Composition?type:text=Catalog&amp;_category=laboratory&amp;_summary=true</pre>
   <p> Obtains the summary of every laboratory service catalog available on the server. The anwser
     Bundle contains one entry with a Composition resource for each laboratory service catalog
     found.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>List recently updated blood chemistry tests and panels of one catalog</h5>
-  <p>GET
-    [base]/PlanDefinition?&amp;catalog=Composition/a1&amp;topic=http://snomed.info/sct|166312007&amp;date=gt20200323T10:00:00Z+0100&amp;_summary=true</p>
+  <pre>GET [base]/PlanDefinition?&amp;catalog=Composition/a1&amp;topic=http://snomed.info/sct|166312007&amp;date=gt20200323T10:00:00Z+0100&amp;_summary=true</pre>
   <p> Obtains the summary of the laboratory services from catalog of id a1, which are indexed by
     blood chemistry topic (coded in this example with SNOMED CT 166312007 |Blood chemistry|
     concept). The anwser Bundle contains one entry with a PlanDefinition resource for each
@@ -243,7 +242,7 @@
     since March 23rd 10am.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>Retrieve all details for a laboratory service</h5>
-  <p>GET [base]/PlanDefinition/s123?_include:iterate=*</p>
+  <pre>GET [base]/PlanDefinition/s123?_include:iterate=*</pre>
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
     SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
