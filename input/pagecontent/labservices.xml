@@ -217,8 +217,10 @@
   <a name="LabServicesSearchExamples"> </a>
   <h4>Examples of searching</h4>
   <p>In all examples below, [base] represents the endpoint of the catalog server. </p>
-  <p>The answer of the     server comes as a Bundle of type 'searchset' encapsulating the resources selected by the search.</p>
-  <p>There is one particular laboratory service catalog, which has Composition.id "a1" on the server.</p>
+  <p>The answer of the server comes as a Bundle of type 'searchset' encapsulating the resources
+    selected by the search.</p>
+  <p>There is one particular laboratory service catalog, which has Composition.id "a1" on the
+    server.</p>
   <a name="LabServicesAllCatalogs"> </a>
   <h5>List all catalogs of the server</h5>
   <p>GET [base]/Composition?type:text=Catalog&amp;_summary=true</p>
@@ -235,7 +237,16 @@
   <p>GET
     [base]/PlanDefinition?&amp;catalog=Composition/a1&amp;topic=http://snomed.info/sct|166312007&amp;date=gt20200323T10:00:00Z+0100&amp;_summary=true</p>
   <p> Obtains the summary of the laboratory services from catalog of id a1, which are indexed by
-    blood chemistry topic (coded in this example with SNOMED CT 166312007 |Blood chemistry| concept).
-    The anwser Bundle contains one entry with a PlanDefinition resource for each laboratory service
-    of catalog a1 associated with blood chemistry topic, and created or updated since March 23rd 10am.</p>
+    blood chemistry topic (coded in this example with SNOMED CT 166312007 |Blood chemistry|
+    concept). The anwser Bundle contains one entry with a PlanDefinition resource for each
+    laboratory service of catalog a1 associated with blood chemistry topic, and created or updated
+    since March 23rd 10am.</p>
+  <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
+  <h5>Retrieve all details for a laboratory service</h5>
+  <p>GET [base]/PlanDefinition/s123?_include:iterate=*</p>
+  <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
+    referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
+    SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
+    below it, as many entries as resources referenced by this one. Thus the Bundle providess the fullly detailed
+    description of this laboratory service. </p>
 </div>
