@@ -246,6 +246,6 @@
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
     SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
-    below it, as many entries as resources referenced by this one. Thus the Bundle providess the fullly detailed
+    below it, as many entries as resources referenced by this one. Thus the Bundle provides the fullly detailed
     description of this laboratory service. </p>
 </div>
