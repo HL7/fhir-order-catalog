@@ -70,16 +70,16 @@
       full details associated with the services it is interested in (including specimens, input
       observations, lab results). In this case, the first query will perform a simple search on
         <i>PlanDefinition</i> with the desirable criteria listed in the table below ; and then the
-      second search will add the <b><code>_include:iterate=*</code></b> parameter, to retrieve the PlanDefiniton
-      resource(s) associated with all supporting resources (ActivityDefinition,
+      second search will add the <b><code>_include:iterate=*</code></b> parameter, to retrieve the
+      PlanDefiniton resource(s) associated with all supporting resources (ActivityDefinition,
       ChargeItemDefinition, Composition, SpecimenDEfinition, ObservationDefinition ...) in the
         <i>searchset Bundle</i>.</li>
     <li><b>One-step search</b>: Conversely a client application may wish to retrieve the full
       details of a service (or a set of services) at first glance. In this case, it uses the
       appropriate search criteria for PlanDefinition, in combination with the
-      <b><code>_include:iterate=*</code></b> parameter, so as to obtain all the resources supporting each
-      laboratory service which satisfies the criteria, assembled in the <i>searchset
-      Bundle</i>.</li>
+          <b><code>_include:iterate=*</code></b> parameter, so as to obtain all the resources
+      supporting each laboratory service which satisfies the criteria, assembled in the <i>searchset
+        Bundle</i>.</li>
   </ul>
   <p>Catalog servers may limit the iteration depth to an appropriate level for performance sake.</p>
   <a name="LabServicesSearchParameters"> </a>
@@ -223,7 +223,7 @@
     server.</p>
   <a name="LabServicesAllCatalogs"> </a>
   <h5>List all catalogs of the server</h5>
-  <pre>GET [base]/Composition?type:text=Catalog&amp;_summary=true</pre> 
+  <pre>GET [base]/Composition?type:text=Catalog&amp;_summary=true</pre>
   <p> Obtains the summary of every catalog available on the server.The anwser Bundle contains one
     entry with a Composition resource for each catalog found.</p>
   <a name="LabServicesAvailableCatalogs"> </a>
@@ -246,6 +246,40 @@
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
     SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
-    below it, as many entries as resources referenced by this one. Thus the Bundle provides the fullly detailed
-    description of this laboratory service. </p>
+    below it, as many entries as resources referenced by this one (recursively). Thus the Bundle
+    provides the fullly detailed description of this laboratory service. </p>
+  <a name="LabServicesPushInteractions"> </a>
+  <h3>Push mode interactions</h3>
+  <p>As explained in <a href="http://build.fhir.org/exchange-module.html#rest">its Exchange Module,
+    </a> the FHIR standard RESTful API is a general-purpose interface that can be used to push and
+    pull data between systems. Which is appropriate depends on architecture and deployment
+    considerations.</p>
+  <p>Implementations of FHIR Catalog commonly assign the role of FHIR server to the system owning
+    the catalog, and the role of FHIR client to the systems used by catalog consumers. In this
+    architectural choice, the content of the catalog is pulled by the consumers, using GET commands
+    as illustrated in <a href="labservices.html#LabServicesSearchExamples">Examples of searching
+    </a> section above.</p>
+  <p>In addition, the catalog owner may have agreed to work in push mode with some of its consumers,
+    for instance to support use case <b>Customized catalog shared in push mode</b> depicted in the
+      <a href="uclabservices.html">Laboratory services use case</a> section of this guide. To
+    implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
+    catalog consumer side. To implement this use case, the catalog owner and consumer SHALL use
+      the<a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>. Thus, the
+    consumer SHALL be able to receive &quot;request messages&quot; from the catalog owner and to
+    send back response messages to it. In the initialization phase, the catalog owner sends a
+    message conveying the full catalog customized for the consumer. In following phases, the message
+    conveys only the updates to the customized catalog.</p>
+  <p> In all cases, the request message consists of a Bundle of type "message", with the first
+    resource in the bundle being a MessageHeader resource. The event representing the kind of
+    request is populated in MessageHeader.eventCoding. The other resources in the Bundle represent
+    the content of the catalog (or of its update). These include:</p>
+  <ul>
+    <li>an instance of Composition representing the updated catalog header;</li>
+    <li>an instance of PlanDefinition for each laboratory service of the catalog (or part of this
+      update of the catalog);</li>
+    <li>all the ActivityDefinition resources referenced by at least one of the PlanDefinition
+      present in the Bundle;</li>
+    <li>all the SpecimenDefinition and ObservationDefinition resources referenced by at least one of
+      the ActivityDefinition present in the Bundle.</li>
+  </ul>
 </div>

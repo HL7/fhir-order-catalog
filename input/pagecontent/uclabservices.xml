@@ -10,8 +10,8 @@
 			to insert into their orders to the laboratory for their patients. </li>
 		<li>
 			<b>Subset of catalog imported by consumer</b>: A consumer imports periodically the
-			subset of the online laboratory catalog it is interested in, so as to have it available locally in its
-			computerized physician order entry application.</li>
+			subset of the online laboratory catalog it is interested in, so as to have it available
+			locally in its computerized physician order entry application.</li>
 		<li>
 			<b>Catalog administration using the FHIR API</b>: The laboratory maintains its
 			compendium of services in a proprietary format, and delegates the standard publication
@@ -29,6 +29,8 @@
 			customizes its catalog for a particular group of consumers, and pushes this customized
 			version to the information systems of each of these consumers. From that point, updates
 			of this customized catalog are pushed to the same group of customers on a regular basis
-			(for instance, weekly).</li>
+			(for instance, weekly). See implementation guidance for this use case in the <a
+				href="labservices.html#LabServicesPushInteractions">push interactions section of
+				the specification</a>.</li>
 	</ol>
 </div>
