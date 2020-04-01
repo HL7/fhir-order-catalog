@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Mar 26, 2020 16:39+0000 for FHIR v4.2.0 
+  Generated on Wed, Apr 1, 2020 04:42+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -33418,7 +33418,7 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">Indicates what a category of item that was consumed: eg., food, fluid, enteral, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="nutritionProduct" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="nutritionProduct" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the food or fluid product that was consumed. This is potentially a link to a resource representing the details of the food product (TBD) or a simple attribute carrying a code that identifies the food from a known list of foods.</xs:documentation>
            </xs:annotation>
@@ -33459,7 +33459,7 @@ The primary difference between a medicationusage and a medicationadministration 
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="nutrient" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="nutrient" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Total nutrient consumed. This could be a macronutrient (protein, fat, carbohydrate), or a vitamin and mineral.</xs:documentation>
            </xs:annotation>
@@ -33835,12 +33835,12 @@ The primary difference between a medicationusage and a medicationadministration 
   </xs:complexType>
   <xs:element name="NutritionProduct" type="NutritionProduct">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="NutritionProduct">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -33892,7 +33892,7 @@ The primary difference between a medicationusage and a medicationadministration 
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Nutrient">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -33913,7 +33913,7 @@ The primary difference between a medicationusage and a medicationadministration 
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Ingredient">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -33934,7 +33934,7 @@ The primary difference between a medicationusage and a medicationadministration 
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Instance">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -33975,7 +33975,7 @@ The primary difference between a medicationusage and a medicationadministration 
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Intake">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A product used for exclusively nutritional purposes, (how do we want to make this cut clear? Including pharmacodynamic properties or something.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">

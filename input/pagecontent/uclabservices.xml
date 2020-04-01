@@ -7,30 +7,41 @@
 			and organizations wishing to use these diagnostic services. It publishes it as a catalog
 			of resources accessible online for discovery and retrieval. Consumers query the catalog
 			online from their order entry application and retrieve the diagnostic services they want
-			to insert into their orders to the laboratory for their patients. </li>
+			to insert into their orders to the laboratory for their patients. Implementation
+			guidance for this use case is provided in the <a
+				href="labservices.html#LabServicesSearchRetrieve"><i>Searching and retrieving
+					laboratory services</i></a> section of the specification.</li>
 		<li>
 			<b>Subset of catalog imported by consumer</b>: A consumer imports periodically the
 			subset of the online laboratory catalog it is interested in, so as to have it available
-			locally in its computerized physician order entry application.</li>
+			locally in its computerized physician order entry application. Implementation guidance
+			for this use case is provided in the <a
+				href="labservices.html#LabServicesSearchRetrieve"><i>Searching and retrieving
+					laboratory services</i></a> section of the specification.</li>
 		<li>
 			<b>Catalog administration using the FHIR API</b>: The laboratory maintains its
 			compendium of services in a proprietary format, and delegates the standard publication
 			of this compendium to an external organization operating an HL7 FHIR server of such
 			catalogs. The application maintaining the laboratory compendium interacts with the FHIR
 			server to keep the publication up to date, inserting, updating or retiring services
-			into/from the FHIR catalog. </li>
+			into/from the FHIR catalog. Implementation guidance for this use case is provided in the
+				<a href="labservices.html#LabServicesAdmin"><i>Administration of laboratory
+					services</i></a> section of the specification.</li>
 		<li><b>Sharing a common semantic master catalog</b>: An organization exposes the set of
 			standardized vocabularies needed to support full semantic interoperability for ordering
 			and reporting laboratory services within a jurisdiction (e.g. a country). This reference
 			set is represented as a generic catalog of all the laboratory services that are usable
 			within the jurisdiction. This generic catalog is imported in whole or in parts by the
-			applications of the ordering providers and of the laboratories of the jurisdiction. </li>
+			applications of the ordering providers and of the laboratories of the jurisdiction.
+			Implementation guidance for this use case is provided in the <a
+				href="labservices.html#LabServicesSearchRetrieve"><i>Searching and retrieving
+					laboratory services</i></a> section of the specification.</li>
 		<li><b>Customized catalog shared in push mode</b>: The owner of a laboratory catalog
 			customizes its catalog for a particular group of consumers, and pushes this customized
 			version to the information systems of each of these consumers. From that point, updates
 			of this customized catalog are pushed to the same group of customers on a regular basis
-			(for instance, weekly). See implementation guidance for this use case in the <a
-				href="labservices.html#LabServicesPushInteractions">push interactions section of
-				the specification</a>.</li>
+			(for instance, weekly). Implementation guidance for this use case is provided in the <a
+				href="labservices.html#LabServicesPushInteractions"><i>Push interactions</i></a> section
+				of the specification.</li>
 	</ol>
 </div>

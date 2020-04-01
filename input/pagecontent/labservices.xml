@@ -56,8 +56,8 @@
     codes of a billing nomenclature, attached to it, still within the PlanDefinition instance. In
     addition, the service may specify for each billing code attached to it, what are the specific
     clinical focus that apply to this code, and what are its price components.</p>
-  <a name="LabServicesSearch"> </a>
-  <h3>Searching for Laboratory Services</h3>
+  <a name="LabServicesSearchRetrieve"> </a>
+  <h3>Searching and retrieving Laboratory Services</h3>
   <a name="LabServicesSearchApproach"> </a>
   <h4>Searching Approaches</h4>
   <p> The key searcheable assets in a laboratory compendium are the laboratory services exposed to
@@ -215,7 +215,7 @@
     </tbody>
   </table>
   <a name="LabServicesSearchExamples"> </a>
-  <h4>Examples of searching</h4>
+  <h4>Examples of searching and retrieving laboratory services</h4>
   <p>In all examples below, [base] represents the endpoint of the catalog server. </p>
   <p>The answer of the server comes as a Bundle of type 'searchset' encapsulating the resources
     selected by the search.</p>
@@ -263,23 +263,43 @@
     for instance to support use case <b>Customized catalog shared in push mode</b> depicted in the
       <a href="uclabservices.html">Laboratory services use case</a> section of this guide. To
     implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
-    catalog consumer side. To implement this use case, the catalog owner and consumer SHALL use
-      the<a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>. Thus, the
-    consumer SHALL be able to receive &quot;request messages&quot; from the catalog owner and to
-    send back response messages to it. In the initialization phase, the catalog owner sends a
-    message conveying the full catalog customized for the consumer. In following phases, the message
-    conveys only the updates to the customized catalog.</p>
-  <p> In all cases, the request message consists of a Bundle of type "message", with the first
-    resource in the bundle being a MessageHeader resource. The event representing the kind of
-    request is populated in MessageHeader.eventCoding. The other resources in the Bundle represent
-    the content of the catalog (or of its update). These include:</p>
+    catalog consumer side. To implement this use case, the catalog owner and consumer SHALL conform
+    to the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>. Thus,
+    the consumer SHALL be able to receive <code>request messages</code> from the catalog owner and
+    to send back <code>response messages</code> to it. In the initialization phase, the catalog
+    owner sends a message conveying the full catalog customized for the consumer. In following
+    phases, the message conveys only the updates to the customized catalog.</p>
+  <p> In all cases, the request message consists of a <code>Bundle</code> of <code>type
+      "message"</code>, with the first resource in the bundle being a <code>MessageHeader</code>.
+    The event representing the kind of request is populated in
+      <code>MessageHeader.eventCoding</code>. Two events are definned:</p>
   <ul>
-    <li>an instance of Composition representing the updated catalog header;</li>
-    <li>an instance of PlanDefinition for each laboratory service of the catalog (or part of this
-      update of the catalog);</li>
-    <li>all the ActivityDefinition resources referenced by at least one of the PlanDefinition
-      present in the Bundle;</li>
-    <li>all the SpecimenDefinition and ObservationDefinition resources referenced by at least one of
-      the ActivityDefinition present in the Bundle.</li>
+    <li><code>initialize-catalog</code> requests the receiver to initialize (or reinitialize) its
+      local catalog from the content of the received message, which represents the comprehensive
+      content of the local catalog.</li>
+    <li><code>update-catalog</code> requests the receiver to update its local catalog from the
+      content of the received message, which represents the resources that need to be inserted into
+      the local catalog, replacing previous versions in case they existed.</li>
   </ul>
+  <p>The other resources in the <code>Bundle</code> represent the content of the catalog (or of its
+    update). These include:</p>
+  <ul>
+    <li>an instance of <code>Composition</code> representing the updated header of the customized
+      catalog;</li>
+    <li>an instance of <code>PlanDefinition</code> for each laboratory service of the catalog (or
+      part of this update of the catalog);</li>
+    <li>all the <code>ActivityDefinition</code> resources referenced by at least one of the
+        <code>PlanDefinition</code> present in the <code>Bundle</code>;</li>
+    <li>all the <code>SpecimenDefinition</code> and <code>ObservationDefinition</code> resources
+      referenced by at least one of the <code>ActivityDefinition</code> present in the
+        <code>Bundle</code>.</li>
+  </ul>
+  <p>The exact mechanism of transfer of the messages from source to destination is irrelevant to the
+    FHIR standard as well as to this implementation guide. It may include file transfer, HTTP based
+    transfer, MLLP (HL7 minimal lower layer protocol), MQ series messaging or anything else. The
+    only requirement for the transfer layer is that requests are sent to a known location and
+    responses are returned to the source of the request.</p>
+  <a name="LabServicesAdmin"> </a>
+  <h3>Administration of laboratory services</h3>
+  <p>to do</p>
 </div>
