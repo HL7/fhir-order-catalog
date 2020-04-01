@@ -25,7 +25,7 @@
 			catalogs. The application maintaining the laboratory compendium interacts with the FHIR
 			server to keep the publication up to date, inserting, updating or retiring services
 			into/from the FHIR catalog. Implementation guidance for this use case is provided in the
-				<a href="labservices.html#LabServicesAdmin"><i>Administration of laboratory
+				<a href="labservices.html#LabServicesAdmin"><i>Administering laboratory
 					services</i></a> section of the specification.</li>
 		<li><b>Sharing a common semantic master catalog</b>: An organization exposes the set of
 			standardized vocabularies needed to support full semantic interoperability for ordering
