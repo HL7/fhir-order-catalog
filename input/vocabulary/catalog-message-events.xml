@@ -32,9 +32,11 @@
   <concept>
     <code value="initialize-catalog"/>
     <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+    <definition value="The content of the message represents a new catalog for the message recepient"/>
   </concept>
   <concept>
     <code value="update-catalog"/>
     <display value="update the local catalog with the content of the received message"/>
+    <definition value="The content of the message represents an update to an existing catalog of the message recepient"/>
   </concept>
 </CodeSystem>

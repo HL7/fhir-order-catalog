@@ -67,21 +67,26 @@
   <concept>
     <code value="none" />
     <display value="no reimbursement provided for the service in general"/>
+    <definition value="The service is usually not covered by insurance plans, and charged to the paying party"/>
   </concept>
   <concept>
     <code value="normal" />
     <display value="normal reimbursement dispositions applicable to the service"/>
+    <definition value="The service is usually  reimbursed (partially or totally) under general dispositions defined in insurance plans, independently of the service"/>
   </concept>
   <concept>
     <code value="conditional" />
     <display value="reimbursement of service subject to conditions"/>
+    <definition value="The service reimbursement is conditioned by the clinical context of the order"/>
   </concept>
   <concept>
     <code value="partial" />
     <display value="normal reimbursement limited to a part of the service"/>
+    <definition value="The service is composed of a part that is usually reimbursed under general dispositions defined in insurance plans, and of a part that is non-reimbursable"/>
   </concept>
   <concept>
     <code value="conditional-partial" />
     <display value="reimbursement limited to a part of the service and subject to conditions"/>
+    <definition value="The service is composed of a part that is  reimbursable depending on the clinical context, and of a part that is non-reimbursable"/>
   </concept>
 </CodeSystem>

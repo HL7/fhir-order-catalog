@@ -55,9 +55,11 @@
   <concept>
     <code value="test" />
     <display value="unitary measurement performed on an in vitro biologic specimen" />
+    <definition value="laboratory service performing a single measurement"/>
   </concept>
   <concept>
     <code value="panel" />
     <display value="collection of tests and panels performed on one or more in vitro biologic specimens" />
+    <definition value="laboratory service comprising two or more tests and/or panels"/>
   </concept>
 </CodeSystem>
