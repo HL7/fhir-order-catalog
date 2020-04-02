@@ -11,7 +11,7 @@
             <p>Blood electrolyte procedure on serum or plasma</p>
         </div>
     </text>
-    <!-- <url value="ActivityDefinition/example-lab-blood-electrolyte"/> -->
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
      <name value="BloodElectrolyteProcedure"/>
     <title value="Procedure - blood electrolyte (serum or plasma)"/>
     <status value="draft"/>

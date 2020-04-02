@@ -109,6 +109,6 @@
             <system value="http://unitsofmeasure.org"/>
             <code value="mn"/>
         </timingDuration>
-        <definitionCanonical value="ActivityDefinition/example-lab-blood-electrolyte"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
     </action>
 </PlanDefinition>

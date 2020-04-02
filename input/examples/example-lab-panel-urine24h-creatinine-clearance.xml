@@ -114,7 +114,6 @@
         </timingDuration>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>
- <!-- this is where the problem is. The <action> element below provokes an error and abort of the IG Pub ; Pb solved on Feb 19!  -->
         <action>
             <code>
                 <coding>
@@ -127,18 +126,17 @@
             <groupingBehavior value="logical-group"/>
             <selectionBehavior value="exactly-one"/>        
             <action>
-                <definitionCanonical value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/>
             </action>
             <action>
-                <definitionCanonical value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
+                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-capillary-serum-creatinine"/>
             </action>           
         </action>
-<!-- end of the problematic part -->
         <action>
-            <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine"/>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine"/>
         </action>
         <action>
-            <definitionCanonical value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
         </action>
     </action>
 </PlanDefinition>

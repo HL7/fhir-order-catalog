@@ -12,7 +12,7 @@
             <p>This procedure uses its input observations also as output observations.</p>
         </div>
     </text>
-    <!-- <url value="ActivityDefinition/example-lab-blood-electrolyte"/> -->
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine"/> 
      <name value="UrineCreatinineProcedure"/>
     <title value="Procedure - urine creatinine - 24H urine"/>
     <status value="draft"/>

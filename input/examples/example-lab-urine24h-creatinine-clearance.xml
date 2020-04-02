@@ -11,6 +11,7 @@
             <p>Urine creatinine clearance procedure, conveys just a single observation</p>
         </div>
     </text>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
     <name value="UrineCreatinineClearanceProcedure"/>
     <title value="Procedure - 24-hour urine creatinine clearance"/>
     <status value="draft"/>

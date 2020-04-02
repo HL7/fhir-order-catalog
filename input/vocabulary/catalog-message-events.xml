@@ -1,0 +1,40 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2020-03-18T09:55:00Z" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Catalog message event codes</h2>
+      <div>
+        <p>This CodeSystem provides  coded concepts for event codes in MessageHeader of FHIR messages conveying the content of a catalog.</p>
+      </div>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
+  <version value="0.1" />
+  <name value="CatalogMessageEvents"/>
+  <title value="Catalog Message Event Codes" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-04-02" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This CodeSystem resource provides the concepts representing message event codes to be used when exchanging the content of catalogs in push mode, leveraging the FHIR messaging framework."/>
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="initialize-catalog"/>
+    <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+  </concept>
+  <concept>
+    <code value="update-catalog"/>
+    <display value="update the local catalog with the content of the received message"/>
+  </concept>
+</CodeSystem>

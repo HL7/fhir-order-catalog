@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition" />
+  <version value="0.1" />
+  <name value="CatalogMessageDefinition" />
+  <title value="Message definition for messaging order-catalog content" />
+  <status value="draft" />
+  <date value="2020-04-02" />
+  <publisher value="HL7 Orders &amp;amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+    </telecom>
+  </contact>
+  <description value="This profile constrains MessageDefinition in the context of messaging the content of catalogs, in conformance with the FHIR messaging framework" />
+  <purpose value="This profile specifies the event codes that are available for messaging the content of catalogs between a system owning a catalog and a system interested in the catalog content, in whole or in part." />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="objimpl" />
+    <uri value="http://hl7.org/fhir/object-implementation" />
+    <name value="Object Implementation Information" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MessageDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MessageDefinition.event[x]">
+      <path value="MessageDefinition.event[x]" />
+      <short value="Event code" />
+      <definition value="Event code for messages conveying order-catalog content" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MessageEvent" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="extensible" />
+        <description value="message events for messages conveying order-catalog content" />
+        <valueSet value="http://hl7.org/fhir/uv/order-catalog/ValueSet/catalog-message-events-vs" />
+      </binding>
+    </element>
+    <element id="MessageDefinition.category">
+      <path value="MessageDefinition.category" />
+      <fixedCode value="consequence" />
+    </element>
+    <element id="MessageDefinition.responseRequired">
+      <path value="MessageDefinition.responseRequired" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

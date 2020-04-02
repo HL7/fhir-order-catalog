@@ -63,7 +63,7 @@
   </contact>
   <description value="This CodeSystem resource provides the concepts representing coarse categories of reimbursement dispositions for laboratory services"/>
   <content value="complete" />
-  <count value="3" />
+  <count value="5" />
   <concept>
     <code value="none" />
     <display value="no reimbursement provided for the service in general"/>

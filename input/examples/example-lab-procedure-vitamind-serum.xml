@@ -11,7 +11,7 @@
             <p>Vitamin D measurement on blood serum</p>
         </div>
     </text>
-    <!-- <url value="ActivityDefinition/example-lab-procedure-vitamind-serum"/> -->
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-vitamind-serum"/>
     <name value="VitaminDProcedure"/>
     <title value="Procédure - dosage vitamine D - sang"/>
     <status value="draft"/>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/messagedefinition.xsd">
+    <id value="example-message-definition-initialize"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p>Message definition for messages conveying a full catalog to be integrated in whole by the receiver</p>
+        </div>
+    </text>
+    <name value="MessageDefinitionInitialize"/>
+    <title value="Message definition (re)initializing the catalog of message receiver"/>
+    <status value="active"/>
+    <date value="2020-04-02"/>
+    <publisher value="HL7 International"/>
+    <eventCoding>
+        <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
+        <code value="initialize-catalog"/>
+        <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+    </eventCoding>
+    <category value="consequence"/>
+    <responseRequired value="always"/>
+</MessageDefinition>

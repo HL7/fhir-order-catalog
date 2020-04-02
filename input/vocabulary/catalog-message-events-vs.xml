@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <lastUpdated value="2020-03-20T09:55:00Z"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <!--
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+        <valueMarkdown value="Availability Time Rule" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+        <valueString value="Informative" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+        <valueInteger value="1" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="fhir" />
+    </extension>
+    -->
+    <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/catalog-message-events-vs"/>
+    <version value="1.0"/>
+    <name value="CatalogMessageEventVS"/>
+    <title value="Message event codes for exchanging order catalog content"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-04-02"/>
+    <publisher value="HL7 Orders &amp; Observations WG"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description
+        value="This value set provides event codes for MessageHeader.eventCoding in FHIR messages conveying the content (in whole or in part) of order catalogs"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system
+                value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
+            <concept>
+                <code value="initialize-catalog"/>
+                <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+            </concept>
+            <concept>
+                <code value="update-catalog"/>
+                <display value="update the local catalog with the content of the received message"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

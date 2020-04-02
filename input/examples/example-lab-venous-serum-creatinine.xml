@@ -11,7 +11,7 @@
             <p>serum creatinine procedure on serum specimen obtained from venous blood</p>
         </div>
     </text>
-    <url value="ActivityDefinition/example-lab-venous-serum-creatinine"/> 
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/> 
      <name value="UrineCreatinineProcedure"/>
     <title value="Procedure - serum creatinine - venous blood"/>
     <status value="draft"/>

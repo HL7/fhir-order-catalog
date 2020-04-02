@@ -110,10 +110,10 @@
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="at-most-one"/>
         <action>
-            <definitionCanonical value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/>
         </action>
         <action>
-            <definitionCanonical value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-capillary-serum-creatinine"/>
         </action>
     </action>
 </PlanDefinition>

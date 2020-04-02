@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200401T1600"/>
+  <version value="20200402T1600"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -53,6 +53,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/catalog-message-events"/>
+      </reference>
+      <name value="Catalog Message Event CodeSystem"/>
+      <description value="Code system providing event codes for messaging the content of order catalogs"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/laboratory-service-type"/>
       </reference>
       <name value="Laboratory service type ValueSet"/>
@@ -72,9 +79,17 @@
       </reference>
       <name value="Bibliographic artifact ValueSet"/>
       <description
-        value="Restrained value set for types of bibliographic artifact in the LabServiceDefinition profile of PlanDefinition"
-      />
+        value="Restrained value set for types of bibliographic artifact in the LabServiceDefinition profile of PlanDefinition"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/catalog-message-events-vs"/>
+      </reference>
+      <name value="Order catalog message event ValueSet"/>
+      <description
+        value="ValueSet providing event codes for MessageHeader.eventCoding in FHIR messages conveying catalog content"/>
+    </resource>
+    
     <!-- 
       Below, the extensions 
     -->
@@ -204,6 +219,13 @@
       </reference>
       <name value="ValueSet Profile used by ObservationDefinition"/>
       <description value="Profile of ValueSet for coded observations"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CatalogMessageDefinition"/>
+      </reference>
+      <name value="MessageDefinition for catalog messages"/>
+      <description value="Profile of MessageDefinition for"/>
     </resource>
     <!-- 
       Below, the example resources dedicated to catalogs of laboratory in vitro diagnostic services
@@ -516,6 +538,24 @@
       <description value="Lab E* - broadest value set of reasons for ordering a laboratory service"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/example-message-definition-initialize"/>
+      </reference>
+      <name value="Message definition for messaging a new catalog"/>
+      <description value="MessageDefinition for messages conveying a new catalog to the receiver"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/example-message-definition-update"/>
+      </reference>
+      <name value="Message definition for messaging a catalog update"/>
+      <description value="MessageDefinition for messages conveying an update to the receiver's catalog"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
     </resource>
     <!-- 
       html pages

@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Apr 1, 2020 04:42+0000 for FHIR v4.2.0 
+  Generated on Wed, Apr 1, 2020 23:28+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -28007,6 +28007,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: Antioxidant, Alkalizing Agent.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A general description of the ingredient, or any supporting text. May be used for an unstructured list of excipients.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="allergenicIndicator" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">If the ingredient is a known or suspected allergen.</xs:documentation>
@@ -33873,7 +33878,17 @@ The primary difference between a medicationusage and a medicationadministration 
           </xs:element>
           <xs:element name="ingredient" type="NutritionProduct.Ingredient" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The ingredient contained in the product.</xs:documentation>
+              <xs:documentation xml:lang="en">Ingredients contained in this product.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="knownAllergen" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Allergens that are known to be a part of this nutrition product.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="productCharacteristic" type="NutritionProduct.ProductCharacteristic" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Specifies descriptive properties of the nutrition product.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="instance" type="NutritionProduct.Instance" minOccurs="0" maxOccurs="1">
@@ -33920,14 +33935,41 @@ The primary difference between a medicationusage and a medicationadministration 
         <xs:sequence>
           <xs:element name="item" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this {{title}}.</xs:documentation>
+              <xs:documentation xml:lang="en">The ingredient contained in the product.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="amount" minOccurs="0" maxOccurs="unbounded" type="Ratio">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this {{title}}.</xs:documentation>
+              <xs:documentation xml:lang="en">The amount of ingredient that is in the product.</xs:documentation>
            </xs:annotation>
           </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="NutritionProduct.ProductCharacteristic">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code specifying which characteristic of the product is being described (for example, colour, shape).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The actual characteristic value corresponding to the type.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="valueString" type="string"/>
+            <xs:element name="valueQuantity" type="Quantity"/>
+            <xs:element name="valueBase64Binary" type="base64Binary"/>
+            <xs:element name="valueAttachment" type="Attachment"/>
+            <xs:element name="valueBoolean" type="boolean"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -33962,32 +34004,6 @@ The primary difference between a medicationusage and a medicationadministration 
           <xs:element name="useBy" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="intake" type="NutritionProduct.Intake" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where and how the product was consumed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="NutritionProduct.Intake">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="dateTime" minOccurs="0" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The time when nutrition product has been taken.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="location" minOccurs="0" maxOccurs="1" type="CodeableReference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The place where nutrition product has been taken.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -35477,14 +35493,29 @@ For resource issues, this will be a simple XPath limited to element names, repet
               <xs:documentation xml:lang="en">Unique identifier.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A name for this product pack. Typically what it would be listed as in a drug formulary.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The product that this is a pack for.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The status within the lifecycle of this product. A high level status, this is not intended to duplicate details carried elswhere such as legal status, or authorization or marketing status.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="statusDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date at which the given status became applicable.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Textual description.</xs:documentation>
+              <xs:documentation xml:lang="en">Textual description. Note that this is not the name of the product.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="legalStatusOfSupply" minOccurs="0" maxOccurs="1" type="CodeableConcept">
