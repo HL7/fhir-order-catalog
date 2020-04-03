@@ -261,7 +261,7 @@
     </a> section above.</p>
   <p>In addition, the catalog owner may have agreed to work in push mode with some of its consumers,
     for instance to support use case <b>Customized catalog shared in push mode</b> depicted in the
-      <a href="uclabservices.html">Laboratory services use case</a> section of this guide. To
+      <a href="uclabservices.html">Laboratory services use cases</a> section of this guide. To
     implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
     catalog consumer side. To implement this use case, the catalog owner and consumer SHALL conform
     to the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>. Thus,
@@ -272,7 +272,7 @@
   <p> In all cases, the request message consists of a <code>Bundle</code> of <code>type
       "message"</code>, with the first resource in the bundle being a <code>MessageHeader</code>.
     The event representing the kind of request is populated in
-      <code>MessageHeader.eventCoding</code>. Two events are definned:</p>
+      <code>MessageHeader.eventCoding</code>. Two events are defined:</p>
   <ul>
     <li><code>initialize-catalog</code> requests the receiver to initialize (or reinitialize) its
       local catalog from the content of the received message, which represents the comprehensive
