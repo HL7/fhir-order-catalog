@@ -3,7 +3,8 @@
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   <a name="intro"> </a>
   <h3>Introduction to this guide</h3>
-  <p>This implementation guide for sharing order catalogs is targetting FHIR R4. Its scope is international (aka universal realm).</p>
+  <p>This implementation guide for sharing order catalogs is targetting FHIR R4. Its scope is
+    international (aka universal realm).</p>
   <p> An order catalog exposes a homogeneous collection of healthcare items that can be ordered or
     selected by practitioners to support the course of healthcare delivery. These homogeneous
     healthcare items may represent services, products, devices or knowledge artifacts such as order
@@ -21,9 +22,17 @@
   <p>Considering these commonalities and specificities, building a common guidance for implementing
     any kind of catalog of healthcare items in FHIR has been deemed the most valuable proposition to
     implementers. Hence this unique Order Catalog Implementation Guide, which aims to cover all
-    categories of catalogs of healthcare items. The use cases and artifacts (profiles, extensions, semantic
-    resources) that are specific to a particular category of catalog will be placed under the
-    responsibility of the HL7 Working Group defining the base resources for this category. </p>
+    categories of catalogs of healthcare items. The use cases and artifacts (profiles, extensions,
+    semantic resources) that are specific to a particular category of catalog will be placed under
+    the responsibility of the HL7 Working Group defining the base resources for this category. </p>
+  <a name="sponsoringwg"> </a>
+  <h3>Project and sponsoring background</h3>
+  <p>This IG is one of the product deliverables of project 
+    <a href="http://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&amp;ProjectNumber=1010"><b>1010</b></a>, 
+    which is sponsored by Orders &amp; Observations WG, and co-sponsored by
+    Clinical Decision Support WG, Pharmacy WG, Imaging Integration WG and Service Oriented
+    Architecture WG. The intention is that each work group contributes on its domain of expertise,
+    to this cross-domain FHIR IG.</p>
   <a name="purpose"> </a>
   <h3>Purpose of order catalogs</h3>
   <p> A catalog provides reference data, which aggregates requirements and guidance of usage for the
@@ -51,14 +60,15 @@
     European Union market. Another example of order catalog would be a drug formulary listing the
     medicinal products that are available for prescription in a particular hospital. A broader
     catalog of medicinal product might include all the medications authorized to the national market
-    of a country. These examples bring flexibility requirements, which must be fulfilled by the 
+    of a country. These examples bring flexibility requirements, which must be fulfilled by the
     choices of design and implementation of FHIR catalogs:</p>
   <ul>
-    <li>the role of custodian of the catalog is distinct from the role of owner of the items
-      exposed in the catalog, even if in one of the examples above the two roles may be played by
-      the same organization;</li>
+    <li>the role of custodian of the catalog is distinct from the role of owner of the items exposed
+      in the catalog, even if in one of the examples above the two roles may be played by the same
+      organization;</li>
     <li>some catalogs may expose a huge number of items, and yet the FHIR resources that implement
-      them must have a reasonable size, which does not hamper the management (creation, update, query, retrieval) of these resources ;</li>
+      them must have a reasonable size, which does not hamper the management (creation, update,
+      query, retrieval) of these resources ;</li>
     <li>some catalogs are scoped for use within a single organization, while others address multiple
       organizations (or even jurisdictions) of potential consumers.</li>
   </ul>
@@ -91,32 +101,42 @@
   <ul>
     <li title="Use cases"><strong>Use cases</strong>
       <ul>
-        <li><a href="uclabservices.html">Laboratory services</a> - lists the use cases for compendium of laboratory diagnostic services. </li>
-        <li><a href="ucordersets.html">Order sets</a> - lists the use cases for library of order sets. </li>
+        <li><a href="uclabservices.html">Laboratory services</a> - lists the use cases for
+          compendium of laboratory diagnostic services. </li>
+        <li><a href="ucordersets.html">Order sets</a> - lists the use cases for library of order
+          sets. </li>
         <li><a href="ucdrugs.html">Medications</a> - lists the use cases for catalog of drugs. </li>
         <li><a href="ucdevices.html">Devices</a> - lists the use cases for catalog of devices. </li>
       </ul>
     </li>
     <li title="Specifications"><strong>Specifications</strong>
       <ul>
-        <li><a href="labservices.html">Laboratory services</a> - specifies the FHIR resources implemented by a compendium of laboratory diagnostic services. </li>
-        <li><a href="ordersets.html">Order sets</a> - specifies the FHIR resources implemented by a library of order sets. </li>
-        <li><a href="drugs.html">Medications</a> - specifies the FHIR resources implemented by a catalog of drugs, including medication formularies. </li>
-        <li><a href="devices.html">Devices</a> - specifies the FHIR resources implemented by a catalog of devices. </li>
+        <li><a href="labservices.html">Laboratory services</a> - specifies the FHIR resources
+          implemented by a compendium of laboratory diagnostic services. </li>
+        <li><a href="ordersets.html">Order sets</a> - specifies the FHIR resources implemented by a
+          library of order sets. </li>
+        <li><a href="drugs.html">Medications</a> - specifies the FHIR resources implemented by a
+          catalog of drugs, including medication formularies. </li>
+        <li><a href="devices.html">Devices</a> - specifies the FHIR resources implemented by a
+          catalog of devices. </li>
       </ul>
     </li>
     <li title="Examples"><strong>Examples</strong>
       <ul>
-        <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia of laboratory diagnostic services. </li>
-        <li><a href="exordersets.html">Order sets</a> - presents examples for libraries of order sets. </li>
+        <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia
+          of laboratory diagnostic services. </li>
+        <li><a href="exordersets.html">Order sets</a> - presents examples for libraries of order
+          sets. </li>
         <li><a href="exdrugs.html">Medications</a> - presents examples for catalogs of drugs. </li>
         <li><a href="exdevices.html">Devices</a> - presents examples for catalogs of devices. </li>
       </ul>
     </li>
     <li title="Examples"><strong>Building blocks &amp; assets</strong>
       <ul>
-        <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built for this implementation guide: semantic resources, profiles, extensions, examples. </li>
-        <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information. </li>
+        <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built
+          for this implementation guide: semantic resources, profiles, extensions, examples. </li>
+        <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of this
+          implementation guide and other useful information. </li>
       </ul>
     </li>
   </ul>
