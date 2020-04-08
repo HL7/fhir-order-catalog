@@ -1,0 +1,10 @@
+== Suppressed Messages ==
+
+# The following code systems are external and not supported by terminology server
+Code System URI "http://www.codage.ext.cnamts.fr/codif/nabm" is unknown so the code cannot be validated
+Code System URI "http://tools.cofrac.fr/documentation/SH-REF-08" is unknown so the code cannot be validated
+Code System URI "http://www.ama-assn.org/go/cpt" is unknown so the code cannot be validated
+Code System URI "https://testdirectory.questdiagnostics.com/" is unknown so the code cannot be validated
+
+# Messages due to an improper invariant in the base resource
+cid-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
