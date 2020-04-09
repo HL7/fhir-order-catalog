@@ -21,7 +21,7 @@
     <eventCoding>
         <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
         <code value="update-catalog"/>
-        <display value="update the local catalog with the content of the received message"/>
+        <display value="update for a catalog of the recipient"/>
     </eventCoding>
     <category value="consequence"/>
     <responseRequired value="always"/>

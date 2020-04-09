@@ -20,8 +20,8 @@
     <publisher value="HL7 International"/>
     <eventCoding>
         <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
-        <code value="initialize-catalog"/>
-        <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+        <code value="full-catalog"/>
+        <display value="full catalog for the recipient"/>
     </eventCoding>
     <category value="consequence"/>
     <responseRequired value="always"/>

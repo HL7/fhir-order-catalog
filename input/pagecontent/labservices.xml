@@ -248,57 +248,6 @@
     SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
     below it, as many entries as resources referenced by this one (recursively). Thus the Bundle
     provides the fullly detailed description of this laboratory service. </p>
-  <a name="LabServicesPushInteractions"> </a>
-  <h3>Push mode interactions</h3>
-  <p>As explained in <a href="http://build.fhir.org/exchange-module.html#rest">its Exchange Module,
-    </a> the FHIR standard RESTful API is a general-purpose interface that can be used to push and
-    pull data between systems. Which is appropriate depends on architecture and deployment
-    considerations.</p>
-  <p>Implementations of FHIR Catalog commonly assign the role of FHIR server to the system owning
-    the catalog, and the role of FHIR client to the systems used by catalog consumers. In this
-    architectural choice, the content of the catalog is pulled by the consumers, using GET commands
-    as illustrated in <a href="labservices.html#LabServicesSearchExamples">Examples of searching
-    </a> section above.</p>
-  <p>In addition, the catalog owner may have agreed to work in push mode with some of its consumers,
-    for instance to support use case <b>Customized catalog shared in push mode</b> depicted in the
-      <a href="uclabservices.html">Laboratory services use cases</a> section of this guide. To
-    implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
-    catalog consumer side. To implement this use case, the catalog owner and consumer SHALL conform
-    to the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>. Thus,
-    the consumer SHALL be able to receive <code>request messages</code> from the catalog owner and
-    to send back <code>response messages</code> to it. In the initialization phase, the catalog
-    owner sends a message conveying the full catalog customized for the consumer. In following
-    phases, the message conveys only the updates to the customized catalog.</p>
-  <p> In all cases, the request message consists of a <code>Bundle</code> of <code>type
-      "message"</code>, with the first resource in the bundle being a <code>MessageHeader</code>.
-    The event representing the kind of request is populated in
-      <code>MessageHeader.eventCoding</code>. Two events are defined:</p>
-  <ul>
-    <li><code>initialize-catalog</code> requests the receiver to initialize (or reinitialize) its
-      local catalog from the content of the received message, which represents the comprehensive
-      content of the local catalog.</li>
-    <li><code>update-catalog</code> requests the receiver to update its local catalog from the
-      content of the received message, which represents the resources that need to be inserted into
-      the local catalog, replacing previous versions in case they existed.</li>
-  </ul>
-  <p>The other resources in the <code>Bundle</code> represent the content of the catalog (or of its
-    update). These include:</p>
-  <ul>
-    <li>an instance of <code>Composition</code> representing the updated header of the customized
-      catalog;</li>
-    <li>an instance of <code>PlanDefinition</code> for each laboratory service of the catalog (or
-      part of this update of the catalog);</li>
-    <li>all the <code>ActivityDefinition</code> resources referenced by at least one of the
-        <code>PlanDefinition</code> present in the <code>Bundle</code>;</li>
-    <li>all the <code>SpecimenDefinition</code> and <code>ObservationDefinition</code> resources
-      referenced by at least one of the <code>ActivityDefinition</code> present in the
-        <code>Bundle</code>.</li>
-  </ul>
-  <p>The exact mechanism of transfer of the messages from source to destination is irrelevant to the
-    FHIR standard as well as to this implementation guide. It may include file transfer, HTTP based
-    transfer, MLLP (HL7 minimal lower layer protocol), MQ series messaging or anything else. The
-    only requirement for the transfer layer is that requests are sent to a known location and
-    responses are returned to the source of the request.</p>
   <a name="LabServicesAdmin"> </a>
   <h3>Administering laboratory services</h3>
   <p>to do</p>

@@ -40,12 +40,12 @@
             <system
                 value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/catalog-message-events"/>
             <concept>
-                <code value="initialize-catalog"/>
-                <display value="initialize or reinitialize the local catalog from the content of the received message"/>
+                <code value="full-catalog"/>
+                <display value="full catalog for the recipient"/>
             </concept>
             <concept>
                 <code value="update-catalog"/>
-                <display value="update the local catalog with the content of the received message"/>
+                <display value="update for a catalog of the recipient"/>
             </concept>
         </include>
     </compose>

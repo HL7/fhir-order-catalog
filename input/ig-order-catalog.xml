@@ -611,6 +611,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="interactions.html"/>
+        <title value="Interaction framework"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="exlabservices.html"/>
         <title value="Examples - Laboratory services"/>
         <generation value="html"/>

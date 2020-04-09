@@ -21,6 +21,7 @@
       <li><a href="devices.html">Devices</a></li>
     </ul>
   </li>
+  <li><a href="interactions.html">Interaction Framework</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b>
     </a>

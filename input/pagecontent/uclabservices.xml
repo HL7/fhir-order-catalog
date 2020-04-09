@@ -41,7 +41,7 @@
 			version to the information systems of each of these consumers. From that point, updates
 			of this customized catalog are pushed to the same group of customers on a regular basis
 			(for instance, weekly). Implementation guidance for this use case is provided in the <a
-				href="labservices.html#LabServicesPushInteractions"><i>Push interactions</i></a> section
+				href="interactions.html#PushInteractions"><i>Push interactions</i></a> section
 				of the specification.</li>
 	</ol>
 </div>

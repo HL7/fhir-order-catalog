@@ -30,13 +30,13 @@
   <content value="complete" />
   <count value="2" />
   <concept>
-    <code value="initialize-catalog"/>
-    <display value="initialize or reinitialize the local catalog from the content of the received message"/>
-    <definition value="The content of the message represents a new catalog for the message recepient"/>
+    <code value="full-catalog"/>
+    <display value="full catalog for the recipient"/>
+    <definition value="The content of the message represents a full catalog that the message recepient is expected to take as is, replacing any preexisting content for this catalog."/>
   </concept>
   <concept>
     <code value="update-catalog"/>
-    <display value="update the local catalog with the content of the received message"/>
-    <definition value="The content of the message represents an update to an existing catalog of the message recepient"/>
+    <display value="update for a catalog of the recipient"/>
+    <definition value="The content of the message represents an update to an existing catalog of the message recepient who is expected to integrate this update."/>
   </concept>
 </CodeSystem>
