@@ -121,6 +121,7 @@
           catalog of devices. </li>
       </ul>
     </li>
+    <li title="Interactions"><a href="interactions.html"><strong>Interaction Framework</strong></a> for all kinds of catalogs</li>
     <li title="Examples"><strong>Examples</strong>
       <ul>
         <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia
@@ -131,7 +132,7 @@
         <li><a href="exdevices.html">Devices</a> - presents examples for catalogs of devices. </li>
       </ul>
     </li>
-    <li title="Examples"><strong>Building blocks &amp; assets</strong>
+    <li title="Assets"><strong>Building blocks &amp; assets</strong>
       <ul>
         <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built
           for this implementation guide: semantic resources, profiles, extensions, examples. </li>

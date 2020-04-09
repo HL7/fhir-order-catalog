@@ -36,8 +36,8 @@
   <p>Except in case of error, the response from the server is a Bundle resource, with:</p>
   <ul>
     <li><code>Bundle.type = searchset</code></li>
-    <li><code>Bundle.total = the total number of resources contained in the imported catalog (or
-        catalog subset)</code></li>
+    <li><code>Bundle.total = [total number of resources contained in the imported catalog (or
+        catalog subset)]</code></li>
   </ul>
   <p>As said above, the Bundle may be split in pages, in which case each page contains these
     elements:</p>
