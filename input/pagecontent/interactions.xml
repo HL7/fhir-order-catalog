@@ -14,13 +14,14 @@
     architectural choice is the one that minimizes the implementation cost on the consumer side,
     which is by far, the side with the biggest number of stakeholders. In this architecture,
     consumers search through the catalog and pull the content they are interested in using http GET
-    commands, conforming to the FHIR <a href="http://build.fhir.org/http.html#3.1.0">RESTful API</a>
-    and to the requirements of this Implementation Guide detailed for each kind of catalog in the
-    Specification option of the top menu bar.</p>
+    commands, conforming to the FHIR <a href="http://build.fhir.org/http.html#3.1.0">RESTful
+    API</a>. </p>
+  <p>This most common mode of interaction is further guided for each kind of catalog, in the pages
+    of this guide, accessible through the Specification option of the top menu bar.</p>
   <a name="ImportCatalog"> </a>
   <h3>Import a catalog or a subset of it (pull mode)</h3>
-  <p> A catalog consumer may want to import the content of a full catalog or of a subset of it on
-    its own local system. To do so, the catalog consumer uses an http GET interaction, positioning
+  <p> A catalog consumer may want to import the content of a full catalog or of a subset of it onto
+    its own system. To do so, the catalog consumer uses an http GET interaction, positioning
     appropriate search parameters to delineate the content it wants to import.</p>
   <p>Among these parameters, the catalog consumer SHALL use the <code>_include:iterate=*</code>
     parameter, in order to instruct the catalog owner to return not only the respources representing
@@ -71,13 +72,13 @@
     to support use case <b>Customized catalog shared in push mode</b> depicted in the <a
       href="uclabservices.html">Laboratory services use cases</a> section of this guide. To
     implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
-    catalog consumer side. Thus to support push interactions, catalog owners and consumers SHALL
-    conform to the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging framework</a>.
-    In particular, the consumer SHALL be able to receive <code>request messages</code> from the
-    catalog owner and to send back <code>response messages</code> to it. The request message
-    consists of a <code>Bundle</code> of <code>type "message"</code>, with the first resource in the
-    bundle being a <code>MessageHeader</code>. The event representing the kind of request is
-    populated in <code>MessageHeader.eventCoding</code>. Two events are defined:</p>
+    catalog consumer side. Thus, in case they want to support push interactions, catalog owners and
+    consumers rely on the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging
+      framework</a>. In particular, the consumer must be able to receive <code>request
+      messages</code> from the catalog owner and to send back <code>response messages</code> to it.
+    The request message consists of a <code>Bundle</code> of <code>type "message"</code>, with the
+    first resource in the bundle being a <code>MessageHeader</code>. The event representing the kind
+    of request is populated in <code>MessageHeader.eventCoding</code>. Two events are defined:</p>
   <ul>
     <li><code>full-catalog</code> requests the receiver to initialize (or reinitialize) its local
       catalog from the content of the received message, which represents the comprehensive content
