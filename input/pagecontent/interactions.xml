@@ -99,6 +99,16 @@
     only requirement for the transfer layer is that requests are sent to a known location and
     responses are returned to the source of the request.</p>
   <a name="Subscriptions"> </a>
-  <h3>Using subscriptions</h3>
-  <p>to do</p>
+  <h3>Combining pull mode with subscriptions to notifications in push mode</h3>
+  <p>The subscription mechanism is used to establish proactive event notifications from a FHIR
+    server to another system. Implementing this mechanism in the context of this guide allows
+    catalog consumers to request event notifications from a catalog owner. These event notifications
+    are subscribed by the catalog consumers, within a predefined topic supported by the catalog
+    owner. The consumers can further refine the notifications they expect, by selecting filters,
+    amng those predefined for the topic by the catalog owner.</p>
+  <p>This subscription mechanism is more properly defined in R5 and will be specified here when the
+    IG migrates to R5. The mechanism uses the two resources Subscription (posted by the catalog
+    consumer) and Topic (published by the catalog owner. An instance of Subscription represents a
+    request for notifications of events, which are described in the Topic resource referenced by
+    this instance.</p>
 </div>
