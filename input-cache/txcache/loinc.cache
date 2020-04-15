@@ -1,22 +1,11 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "14635-7",
-  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"
-}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "2823-3",
-  "display" : "Potassium [Moles/volume] in Serum or Plasma"
+  "code" : "24326-1",
+  "display" : "Electrolytes 1998 panel - Serum or Plasma"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Potassium [Moles/volume] in Serum or Plasma",
+  "display" : "Electrolytes 1998 panel - Serum or Plasma",
   "severity" : null,
   "error" : ""
 }
@@ -34,11 +23,22 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "24326-1",
-  "display" : "Electrolytes 1998 panel - Serum or Plasma"
+  "code" : "2823-3",
+  "display" : "Potassium [Moles/volume] in Serum or Plasma"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Electrolytes 1998 panel - Serum or Plasma",
+  "display" : "Potassium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "14635-7",
+  "display" : "25-hydroxycholÃ©calcifÃ©rol [Moles/Volume] SÃ©rum/Plasma ; NumÃ©rique"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique",
   "severity" : null,
   "error" : ""
 }
@@ -100,33 +100,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "13362-9",
-  "display" : "Collection duration of Urine"
+  "code" : "67098-4",
+  "display" : "Reason for test or procedure"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Collection duration of Urine",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "2162-6",
-  "display" : "Creatinine [Mass/time] in 24 hour Urine"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Creatinine [Mass/time] in 24 hour Urine",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "2951-2",
-  "display" : "sodium [Moles/volume] in Serum or Plasma"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Sodium [Moles/volume] in Serum or Plasma",
+  "display" : "Reason for test or procedure",
   "severity" : null,
   "error" : ""
 }
@@ -144,22 +122,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "67098-4",
-  "display" : "Reason for test or procedure"
+  "code" : "13362-9",
+  "display" : "Collection duration of Urine"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Reason for test or procedure",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "2075-0",
-  "display" : "chloride [Moles/volume] in Serum or Plasma"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Chloride [Moles/volume] in Serum or Plasma",
+  "display" : "Collection duration of Urine",
   "severity" : null,
   "error" : ""
 }
@@ -177,11 +144,33 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "14635-7",
-  "display" : "25-hydroxycholÃ©calcifÃ©rol [Moles/Volume] SÃ©rum/Plasma ; NumÃ©rique"
-}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+  "code" : "2075-0",
+  "display" : "chloride [Moles/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique",
+  "display" : "Chloride [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2951-2",
+  "display" : "sodium [Moles/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Sodium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2162-6",
+  "display" : "Creatinine [Mass/time] in 24 hour Urine"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Creatinine [Mass/time] in 24 hour Urine",
   "severity" : null,
   "error" : ""
 }

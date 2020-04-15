@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Apr 9, 2020 12:39+0000 for FHIR v4.2.0 
+  Generated on Wed, Apr 15, 2020 00:15+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -6024,7 +6024,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">Accompanying device.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="AdministrableProductDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="AdministrableProductDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Characteristics e.g. a products onset of action.</xs:documentation>
            </xs:annotation>
@@ -6038,14 +6038,14 @@ A coverage may only be responsible for specific types of charges, and the sequen
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AdministrableProductDefinition.Characteristic">
+  <xs:complexType name="AdministrableProductDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">A pharmaceutical product described in terms of its composition and dose form.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -6182,7 +6182,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="AdverseEventStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The current state of the data entry of the adverse event or potential adverse event.</xs:documentation>
+              <xs:documentation xml:lang="en">The current state of the adverse event or potential adverse event.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="actuality" minOccurs="1" maxOccurs="1" type="AdverseEventActuality">
@@ -9779,7 +9779,7 @@ into another (possibly the same) biological entity.</xs:documentation>
             <xs:element name="scheduledPeriod" type="Period"/>
             <xs:element name="scheduledString" type="string"/>
           </xs:choice>
-          <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="location" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.</xs:documentation>
            </xs:annotation>
@@ -13356,12 +13356,12 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:element name="Communication" type="Communication">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Communication">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -13483,7 +13483,7 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Communication.Payload">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -29351,7 +29351,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">The ingredients that make up this manufactured item.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="ManufacturedItemDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="ManufacturedItemDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">General characteristics of this item.</xs:documentation>
            </xs:annotation>
@@ -29360,14 +29360,14 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="ManufacturedItemDefinition.Characteristic">
+  <xs:complexType name="ManufacturedItemDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">The definition and characteristics of a medicinal manufactured item, such as a tablet or capsule, as contained in a packaged medicinal product.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -33300,6 +33300,16 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">Identifiers associated with this Nutrition Intake that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="instantiatesCanonical" minOccurs="0" maxOccurs="unbounded" type="canonical">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Instantiates FHIR protocol or definition.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="instantiatesUri" minOccurs="0" maxOccurs="unbounded" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Instantiates external protocol or definition.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="basedOn" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A plan, proposal or order that is fulfilled in whole or in part by this event.</xs:documentation>
@@ -33310,7 +33320,7 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">A larger event of which this particular event is a component or step.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="NutritionIntakeStatusCodes">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="EventStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code representing the patient or other source's judgment about the state of the intake that this assertion is about.  Generally, this will be active or completed.</xs:documentation>
            </xs:annotation>
@@ -33320,19 +33330,9 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">Captures the reason for the current state of the NutritionIntake.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates where the food or fluid was  consumed or prescribed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="consumedItem" type="NutritionIntake.ConsumedItem" minOccurs="1" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">What food or fluid product or item was consumed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="ingredientLabel" type="NutritionIntake.IngredientLabel" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Total nutrient amounts for the whole meal, product, serving, etc.</xs:documentation>
+              <xs:documentation xml:lang="en">Type of nutrition intake setting/reporting.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subject" minOccurs="1" maxOccurs="1" type="Reference">
@@ -33349,17 +33349,39 @@ The primary difference between a medicationusage and a medicationadministration 
             <xs:annotation>
               <xs:documentation xml:lang="en">The interval of time during which it is being asserted that the patient is/was consuming the food or fluid.</xs:documentation>
             </xs:annotation>
-            <xs:element name="effectiveDateTime" type="dateTime"/>
-            <xs:element name="effectivePeriod" type="Period"/>
+            <xs:element name="occurrenceDateTime" type="dateTime"/>
+            <xs:element name="occurrencePeriod" type="Period"/>
           </xs:choice>
-          <xs:element name="dateAsserted" minOccurs="0" maxOccurs="1" type="dateTime">
+          <xs:element name="recorded" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The date when the Nutrition Intake was asserted by the information source.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="informationSource" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">The person or organization that provided the information about the consumption of this food or fluid. Note: Use derivedFrom when a NutritionIntake is derived from other resources.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="reportedBoolean" type="boolean"/>
+            <xs:element name="reportedReference" type="Reference"/>
+          </xs:choice>
+          <xs:element name="consumedItem" type="NutritionIntake.ConsumedItem" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">What food or fluid product or item was consumed.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="ingredientLabel" type="NutritionIntake.IngredientLabel" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Total nutrient amounts for the whole meal, product, serving, etc.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="performer" type="NutritionIntake.Performer" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Who performed the intake and how they were involved.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Where the intake occurred.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="derivedFrom" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -33367,7 +33389,7 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">Allows linking the NutritionIntake to the underlying NutritionOrder, or to other information, such as AllergyIntolerance, that supports or is used to derive the NutritionIntake.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="reasonCode" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
+          <xs:element name="reason" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A reason, Condition or observation for why the food or fluid is /was consumed.</xs:documentation>
            </xs:annotation>
@@ -33448,58 +33470,24 @@ The primary difference between a medicationusage and a medicationadministration 
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="NutritionIntakeStatusCodes-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="active">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Active</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="completed">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Completed</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="entered-in-error">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="intended">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Intended</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="stopped">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Stopped</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="on-hold">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">On Hold</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="unknown">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Unknown</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="not-taken">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Not Taken</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="NutritionIntakeStatusCodes">
+  <xs:complexType name="NutritionIntake.Performer">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A coded concept indicating the current status of a NutritionIntake.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+      <xs:documentation xml:lang="en">A record of food or fluid that is being consumed by a patient.   A NutritionIntake may indicate that the patient may be consuming the food or fluid now or has consumed the food or fluid in the past.  The source of this information can be the patient, significant other (such as a family member or spouse), or a clinician.  A common scenario where this information is captured is during the history taking process during a patient visit or stay or through an app that tracks food or fluids consumed.   The consumption information may come from sources such as the patient's memory, from a nutrition label,  or from a clinician documenting observed intake.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="NutritionIntakeStatusCodes-list" use="optional"/>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="function" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Type of performer.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="actor" minOccurs="1" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Who performed the intake.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -35498,6 +35486,11 @@ For resource issues, this will be a simple XPath limited to element names, repet
               <xs:documentation xml:lang="en">Marketing information.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="characteristic" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Allows the key product features to be recorded, such as &quot;hospital pack&quot;, &quot;nurse prescribable&quot;, &quot;calendar pack&quot;.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="copackagedIndicator" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">States whether a drug product is supplied with another item such as a diluent or adjuvant.</xs:documentation>
@@ -35590,7 +35583,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
               <xs:documentation xml:lang="en">Manufacturer of this Package Item.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="PackagedProductDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="PackagedProductDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">General characteristics of this item.</xs:documentation>
            </xs:annotation>
@@ -35609,14 +35602,14 @@ For resource issues, this will be a simple XPath limited to element names, repet
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="PackagedProductDefinition.Characteristic">
+  <xs:complexType name="PackagedProductDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">A medicinal product in a container or package.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -37578,7 +37571,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:choice>
           <xs:element name="recorded" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The date the occurrence of the procedure was first captured in the record - potentially significantly after the occurrence of the event.</xs:documentation>
+              <xs:documentation xml:lang="en">The date the occurrence of the procedure was first captured in the record regardless of Procedure.status (potentially after the occurrence of the event).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="recorder" minOccurs="0" maxOccurs="1" type="Reference">

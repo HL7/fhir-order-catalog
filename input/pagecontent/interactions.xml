@@ -1,16 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-  <p>This page guides the varous possibilities of interactions between a catalog owner and a catalog
-    consumer. This guidance is applicable to any kind of catalog (drugs, devices, knowledge
-    artifacts, laboratory services ...)</p>
+  <p>This page guides the various possibilities of interactions between a catalog custodian and a
+    catalog consumer, as well as between a catalog owner and a catalog custodian when these two
+    roles happen to be played by two distinct systems. This guidance is applicable to any kind of catalog
+    (drugs, devices, knowledge artifacts, laboratory services ...)</p>
   <p>As explained in <a href="http://build.fhir.org/exchange-module.html#rest">its Exchange Module,
     </a> the FHIR standard RESTful API is a general-purpose interface that can be used to push and
     pull data between systems. Which is appropriate depends on architecture and deployment
     considerations.</p>
   <a name="SearchAndRetrieveContent"> </a>
   <h3>Search and retrieve content from a catalog (pull mode)</h3>
-  <p>Implementations of FHIR Catalog commonly assign the role of FHIR server to the system owning
-    the catalog, and the role of FHIR client to the systems used by catalog consumers. This
+  <p>Implementations of FHIR Catalog commonly assign a FHIR server to the system playing the role of
+    catalog custodian, and FHIR clients to the systems playing the role of catalog consumer. This
     architectural choice is the one that minimizes the implementation cost on the consumer side,
     which is by far, the side with the biggest number of stakeholders. In this architecture,
     consumers search through the catalog and pull the content they are interested in using http GET
@@ -24,9 +25,10 @@
     its own system. To do so, the catalog consumer uses an http GET interaction, positioning
     appropriate search parameters to delineate the content it wants to import.</p>
   <p>Among these parameters, the catalog consumer SHALL use the <code>_include:iterate=*</code>
-    parameter, in order to instruct the catalog owner to return not only the respources representing
-    the overview of the catalog items, but also all the supporting resources referenced by these, so
-    as to obtain the full definition of each item in the imported catalog.</p>
+    parameter, in order to instruct the catalog custodian to return not only the respources
+    representing the overview of the catalog items, but also all the supporting resources referenced
+    by these, so as to obtain the fully detailed definition of each item in the imported
+    catalog.</p>
   <p>Given the fact that catalogs are often cumbersome objects, the server is expected to use the
     paging mechanism to split its response into as many pages as needed, as specified in <a
       href="http://build.fhir.org/http.html#paging">the FHIR RESTful API</a>.</p>
@@ -58,39 +60,32 @@
     understands them. The catalog consumer requests the next page using an http <code>GET [url
       associated with the current Bundle.link.relation = next]</code> until the last page is
     reached.</p>
-  <a name="AdminCatalog"> </a>
-  <h3>Administer a catalog using the FHIR API (pull mode)</h3>
-  <p>The catalog owner may manage its catalog in a proprietary format, delegating to a third party
-    FHIR server the role of catalog publisher, i.e. sharing the catalog with the FHIR API to the
-    community of catalog consumers. In this configuration, the catalog owner is a FHIR client with
-    additional permissions (create, update delete) on catalog resources of the catalog publisher.
-    The other clients representing catalog consumers only have the read permission. </p>
-  <p>to be continued</p>
   <a name="PushInteractions"> </a>
   <h3>Push mode interactions: export and update</h3>
-  <p>A catalog owner may have agreed to work in push mode with some of its consumers, for instance
-    to support use case <b>Customized catalog shared in push mode</b> depicted in the <a
+  <p>A catalog custodian may have agreed to work in push mode with some of its consumers, for
+    instance to support use case <b>Customized catalog shared in push mode</b> depicted in the <a
       href="uclabservices.html">Laboratory services use cases</a> section of this guide. To
     implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
-    catalog consumer side. Thus, in case they want to support push interactions, catalog owners and
-    consumers rely on the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging
+    catalog consumer side. Thus, in case they want to support push interactions, catalog custodians
+    and consumers rely on the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging
       framework</a>. In particular, the consumer must be able to receive <code>request
-      messages</code> from the catalog owner and to send back <code>response messages</code> to it.
-    The request message consists of a <code>Bundle</code> of <code>type "message"</code>, with the
-    first resource in the bundle being a <code>MessageHeader</code>. The event representing the kind
-    of request is populated in <code>MessageHeader.eventCoding</code>. Two events are defined:</p>
+      messages</code> from the catalog custodian and to send back <code>response messages</code> to
+    it. The request message consists of a <code>Bundle</code> of <code>type "message"</code>, with
+    the first resource in the bundle being a <code>MessageHeader</code>. The event representing the
+    kind of request is populated in <code>MessageHeader.eventCoding</code>. Two events are
+    defined:</p>
   <ul>
     <li><code>full-catalog</code> requests the receiver to initialize (or reinitialize) its local
       catalog from the content of the received message, which represents the comprehensive content
       of the local catalog.</li>
     <li><code>update-catalog</code> requests the receiver to update its local catalog from the
-      content of the received message, which represents the resources that need to be inserted into
-      the local catalog, replacing previous versions in case they existed.</li>
+      content of the received message, which represents the differential, i.e. the resources that
+      need to be inserted or updated into the local catalog.</li>
   </ul>
   <p>The other resources in the <code>Bundle</code> represent the content of the catalog (or of its
     update). The first of these resources is the Composition resource representing the catalog
     header.</p>
-  <p> One way to proceed is to initialize the consumer's local catalog with the catalog owner
+  <p> One way to proceed is to initialize the consumer's local catalog with the catalog custodian
     sending a message with the <code>full-catalog</code> event, and from that point, sending only
     updates (with the <code>update-catalog</code> event) on a regular basis.</p>
   <p>The exact mechanism of transfer of the messages from source to destination is irrelevant to the
@@ -98,17 +93,26 @@
     transfer, MLLP (HL7 minimal lower layer protocol), MQ series messaging or anything else. The
     only requirement for the transfer layer is that requests are sent to a known location and
     responses are returned to the source of the request.</p>
+  <a name="AdminCatalog"> </a>
+  <h3>Administer a catalog using the FHIR API, when catalog owner and catalog custodian are distinct</h3>
+  <p>The catalog owner may manage its catalog in a proprietary format, delegating to a third party
+    FHIR server the role of catalog custodian (i.e. sharing the catalog with the FHIR API to the
+    community of catalog consumers). In this configuration, the catalog owner is a FHIR client with
+    additional permissions (create, update delete) on catalog resources of the catalog custodian.
+    The other clients representing catalog consumers only have the read permission. </p>
+  <p>to be continued</p>
   <a name="Subscriptions"> </a>
   <h3>Combining pull mode with subscriptions to notifications in push mode</h3>
   <p>The subscription mechanism is used to establish proactive event notifications from a FHIR
     server to another system. Implementing this mechanism in the context of this guide allows
-    catalog consumers to request event notifications from a catalog owner. These event notifications
-    are subscribed by the catalog consumers, within a predefined topic supported by the catalog
-    owner. The consumers can further refine the notifications they expect, by selecting filters,
-    amng those predefined for the topic by the catalog owner.</p>
-  <p>This subscription mechanism is more properly defined in R5 and will be specified here when the
-    IG migrates to R5. The mechanism uses the two resources Subscription (posted by the catalog
-    consumer) and Topic (published by the catalog owner). An instance of Subscription represents a
-    request for notifications of events, which are described in the Topic resource referenced by
-    this instance.</p>
+    catalog consumers to request event notifications from a catalog custodian. These event
+    notifications are subscribed by the catalog consumers, within a predefined topic supported by
+    the catalog custodian. The consumers can further refine the notifications they expect, by
+    selecting filters, among those predefined for the topic by the catalog custodian.</p>
+  <p>This subscription mechanism is more properly defined in R5 and will be specified in detail here
+    when the IG migrates to R5. The mechanism uses the two resources Subscription (posted by the
+    catalog consumer) and Topic (published by the catalog custodian). An instance of Subscription
+    represents a request for notifications of events, which are described in the Topic resource
+    referenced by this instance.</p>
+  <p>To be continued when migrating the IG to R5</p>
 </div>
