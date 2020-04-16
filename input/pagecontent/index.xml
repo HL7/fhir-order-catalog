@@ -52,7 +52,7 @@
   </ul>
   <br/>
   <a name="scope"> </a>
-  <h3>Scope of order catalogs and roles involved</h3>
+  <h3>Scopes of order catalogs and roles involved</h3>
   <p> Order catalogs have varied scopes, sizes, ownerships, stewardships and targetted consumers and
     jurisdictions. For instance an order catalog might expose the medical devices of a particular
     manufacturer to the potential users of these devices in a country. Another catalog might
@@ -80,14 +80,16 @@
   <p>The roles of custodian and owner may belong to a single organization and in that case, be
     combined in a single system. Conversely, for some of the examples above these roles may be
     played by two distinct organizations, each with its own system, in which case, FHIR interactions
-    are needed between these two roles. </p>
+    are needed between these two roles to administer the content of the shared catalog. </p>
+  <p>The interactions between those three roles are described in the <a href="interactions.html"
+      >Interaction Framework</a> of this guide.</p>
   <br/>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
   <p> The design choices presented here respect the flexibility requirements listed above. </p>
   <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
-    Composition resource, which conveys the general properties of the catalog (e.g. custodian, title,
-    period of validity, type of content), and each item of the catalog is represented by a
+    Composition resource, which conveys the general properties of the catalog (e.g. custodian,
+    title, period of validity, type of content), and each item of the catalog is represented by a
     definitional resource, possibly associated with a set of supporting resources providing further
     details on this item. Two alternative methods are usable to bind the catalog as a whole to its
     items. </p>

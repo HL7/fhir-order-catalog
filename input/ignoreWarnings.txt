@@ -6,5 +6,5 @@ Code System URI "http://tools.cofrac.fr/documentation/SH-REF-08" is unknown so t
 Code System URI "http://www.ama-assn.org/go/cpt" is unknown so the code cannot be validated
 Code System URI "https://testdirectory.questdiagnostics.com/" is unknown so the code cannot be validated
 
-# Messages due to an improper invariant in the base resource
+# Messages due to an improper invariant in the base resource ChargeItemDefinition
 cid-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

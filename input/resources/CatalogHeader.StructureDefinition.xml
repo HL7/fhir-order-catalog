@@ -110,7 +110,7 @@
       <short value="The organization authoring the catalog content"/>
       <definition value="An organization authoring and owning the content of the catalog"/>
       <comment
-        value="In general there is a single author for a catalog. However there may be use cases where multiple authors contribute to various parts of a catalog, each author being responsible and owner for its part."/>
+        value="In general there is a single author for a catalog. However there may be use cases where multiple authors contribute to various parts of a catalog, each author owning one part and being responsible for its content."/>
       <alias value="catalog owner"/>
       <type>
         <code value="Reference"/>
