@@ -40,16 +40,18 @@
     (based on the organization of the provider of the items). These reference data are assembled
     under the stewardship of the catalog custodian: an organization liable for building and sharing
     the catalog, and maintaining it over time.</p>
-  <p>Catalogs are hosted on servers which make them accessible to the practitioners through their IT
-    systems or applications (e.g. EHR, EMR, CPOE, apps, LIS, Pharmacy system ...) Client
-    applications may interact with a catalog server to: </p>
+  <p>Catalogs are most often shared on servers which make them accessible to the practitioners
+    through their IT systems or applications (e.g. EHR, EMR, CPOE, apps, LIS, Pharmacy system ...)
+    Client applications may interact with a catalog server to: </p>
   <ul>
     <li>browse through entries of the catalog and retrieve items of interest together with the
       detailed instructions and guidance related to the usage of these items,</li>
-    <li>import/export the full catalog or a part of it (e.g. import the recent updates), </li>
+    <li>import the full catalog or a part of it (e.g. import the recent updates), </li>
     <li>administer the content of the catalog: add/update/retire items and/or supporting resources.
     </li>
   </ul>
+  <p>Catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
+    messaging framework</p>
   <br/>
   <a name="scope"> </a>
   <h3>Scopes of order catalogs and roles involved</h3>
