@@ -242,7 +242,7 @@
     since March 23rd 10am.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>Retrieve all details for a laboratory service</h5>
-  <pre>GET [base]/PlanDefinition/s123?_include:iterate=*</pre>
+  <pre>GET [base]/PlanDefinition?_id=s123&amp;_include:iterate=*</pre>
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
     SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
