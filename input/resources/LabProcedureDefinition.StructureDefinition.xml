@@ -44,6 +44,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="ActivityDefinition.url">
+      <path value="ActivityDefinition.url" />
+      <min value="1" />
+    </element>
     <element id="ActivityDefinition.title">
       <path value="ActivityDefinition.title" />
       <mustSupport value="true" />
