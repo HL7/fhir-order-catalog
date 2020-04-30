@@ -56,7 +56,7 @@
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
     <observationRequirement>
-        <reference value="ObservationDefinition/example-input-observation-reason-for-vitamin-d"/>
+        <reference value="ObservationDefinition/example-input-observation-context-for-vitamin-d"/>
     </observationRequirement>
     <observationResultRequirement>
         <reference value="ObservationDefinition/example-observation-vitamin-d"/>
