@@ -228,7 +228,7 @@
     entry with a Composition resource for each catalog found.</p>
   <a name="LabServicesAvailableCatalogs"> </a>
   <h5>List available laboratory service catalogs</h5>
-  <pre>GET [base]/Composition?type:text=Catalog&amp;_category=laboratory&amp;_summary=true</pre>
+  <pre>GET [base]/Composition?type:text=Catalog&amp;category=laboratory&amp;_summary=true</pre>
   <p> Obtains the summary of every laboratory service catalog available on the server. The anwser
     Bundle contains one entry with a Composition resource for each laboratory service catalog
     found.</p>

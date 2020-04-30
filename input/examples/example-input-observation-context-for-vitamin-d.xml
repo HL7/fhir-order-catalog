@@ -10,7 +10,7 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
-            <p>Elément clinique pertinent &quot;raison pour la prescription du dosage de la vitamine D&quot;</p>
+            <p>Elément clinique pertinent &quot;contexte clinique de la prescription du dosage de la vitamine D&quot;</p>
         </div>
     </text>
     <category>
@@ -23,8 +23,8 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="67098-4"/>
-            <display value="Reason for test or procedure"/>
+            <code value="56820-4"/>
+            <display value="Problem context"/>
         </coding>
     </code>
     <permittedDataType value="CodeableConcept"/>
@@ -34,6 +34,6 @@
         <reference value="ValueSet/example-reasons-for-order"/>
     </validCodedValueSet>
     <normalCodedValueSet>
-        <reference value="ValueSet/example-normal-reasons-vitamin-d"/>
+        <reference value="ValueSet/example-normal-contexts-vitamin-d"/>
     </normalCodedValueSet>
 </ObservationDefinition>

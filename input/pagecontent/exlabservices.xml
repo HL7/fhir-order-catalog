@@ -396,7 +396,7 @@
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="800px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
-		single measurement. This service can be claimed for reimbursement only if it is ordered with a reason for test that matches 
+		single measurement. This service can be claimed for reimbursement only if it is ordered with a clinical context that matches 
 		one of the clinical focuses declared in the ChargeItemDefinition referenced by the service.</p> 
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
@@ -440,19 +440,19 @@
 				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
-				<td>Reason for test - input observation</td>
+				<td>Clinical contexts for test - input observation</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-reason-for-vitamin-d.html">example-input-observation-reason-for-vitamin-d</a></td>
+				<td><a href="ObservationDefinition-example-input-observation-context-for-vitamin-d.html">example-input-observation-context-for-vitamin-d</a></td>
 			</tr>
 			<tr>
-				<td>Normal Reasons for Vitamin D Test</td>
+				<td>Normal Contexts for Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
 				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
-				<td><a href="ValueSet-example-normal-reasons-vitamin-d.html">example-normal-reasons-vitamin-d</a></td>
+				<td><a href="ValueSet-example-normal-contexts-vitamin-d.html">example-normal-contexts-vitamin-d</a></td>
 			</tr>
 			<tr>
-				<td>Valid Reasons for Any Lab Service </td>
+				<td>Valid contexts for Any Lab Service </td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
 				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
 				<td><a href="ValueSet-example-reasons-for-order.html">example-reasons-for-order</a></td>
