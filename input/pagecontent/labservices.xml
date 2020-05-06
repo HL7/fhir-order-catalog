@@ -108,7 +108,8 @@
         <td>token</td>
         <td> A billing code associated with the service</td>
         <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
-          as Reference).reference(ChargeItemDefinition).resolve().code</td>
+          as Reference).reference(ChargeItemDefinition).resolve().code or PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
+          as CodeableConcept) </td>
         <td>The FHIRPath expression to be checked</td>
       </tr>
       <tr>
@@ -185,7 +186,7 @@
         <td>LOINC code or local code of the service</td>
       </tr>
       <tr>
-        <td>service-type</td>
+        <td>type</td>
         <td>token</td>
         <td>lab service type </td>
         <td>PlanDefinition.type</td>
