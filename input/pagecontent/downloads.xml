@@ -1,5 +1,30 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-	<p>
-    To do
-  </p>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+  <a name="ValidatorPackAndDefinitions"> </a>
+  <h3>Validator Pack and Definitions</h3>
+  <p> The following file contains all the value sets, profiles, extensions, list of pages and urls
+    defined as part of the this Implementation Guides: </p>
+  <a href="validator.pack"> Validator Pack</a>
+  <p> In addition, format specific definitions are available: </p>
+  <ul>
+    <li><a href="definitions.xml.zip"> XML</a></li>
+    <li><a href="definitions.json.zip"> JSON</a></li>
+    <li><a href="definitions.ttl.zip"> TTL</a></li>
+  </ul>
+  <p> These files should be the first choice whenever generating any implementation artifacts since
+    they contain all of the rules about what makes these profiles valid. Implementers will still
+    need to be familiar with the content of the specification and profiles that apply in order to
+    make a conformant implementation. </p>
+  <a name="DownloadableExamples"> </a>
+  <h3>Example files</h3>
+  <p> All the examples of this Implementation Guide are available for download below: </p>
+  <ul>
+    <li><a href="examples.xml.zip"> XML</a></li>
+    <li><a href="examples.json.zip"> JSON</a></li>
+    <li><a href="examples.ttl.zip"> TTL</a></li>
+  </ul>
+  <a name="FullIG"> </a>
+  <h3>Full Implementation Guide</h3>
+  <p> The full Implementation Guide is available for download below: </p>
+  <a href="full-ig.zip"> Full IG</a>
 </div>
