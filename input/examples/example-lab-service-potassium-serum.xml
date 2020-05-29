@@ -48,6 +48,9 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary">
         <valueString value="No specific limitation for this test"/>
     </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/RegulatorySummary">
+        <valueString value="CLIA Law &amp; Regulations apply"/>
+    </extension>
     <identifier>
         <use value="official"/> 
         <value value="K_serum_test"/> 

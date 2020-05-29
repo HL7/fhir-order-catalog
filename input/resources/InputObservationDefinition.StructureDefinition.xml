@@ -61,6 +61,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
       </type>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

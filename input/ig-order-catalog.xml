@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200508T1700"/>
+  <version value="20200529T1700+0200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -136,6 +136,15 @@
       <name value="Limitation summary Extension"/>
       <description
         value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/RegulatorySummary"/>
+      </reference>
+      <name value="Regulatory summary Extension"/>
+      <description
+        value="Extension adding a textual summary of regulations applicable to the LabServiceDefinition profile of PlanDefinition"
       />
     </resource>
     <resource>

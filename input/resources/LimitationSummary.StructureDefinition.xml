@@ -13,7 +13,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="This extension to PlanDefinition conveys the textual summary of the limitations associated with the laboratory procedure represented by the PlanDefinition instance. These limitations may for instance exclude some patient conditions of medications, incompatible with the diagnostic procedure." />
+  <description value="This extension to PlanDefinition conveys the textual summary of the limitations associated with the laboratory service represented by the PlanDefinition instance. These limitations may for instance exclude some patient conditions of medications, incompatible with the diagnostic procedure." />
   
   <mapping>
     <identity value="rim" />
