@@ -7,6 +7,7 @@
   <p> The figure below shows the resources and profiles used to represent catalogs of laboratory
     diagnostic services </p>
   <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="700px"/>
+  <br/>
   <p>Catalogs of laboratory services use exclusively the <a
       href="StructureDefinition-CatalogHeader.html"> CatalogHeader profile </a> for the resource
     Composition. In other words, for binding a laboratory catalog to its items, only method 2 is

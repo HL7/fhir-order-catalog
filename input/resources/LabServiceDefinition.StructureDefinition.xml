@@ -501,51 +501,36 @@
     </element>
     <element id="PlanDefinition.action.code">
       <path value="PlanDefinition.action.code"/>
-      <slicing>
-        <discriminator>
-          <type value="pattern"/>
-          <path value="$this"/>
-        </discriminator>
-        <description
-          value="open slicing by code system. One slice defined for LOINC order coding of the service"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Code of the laboratory service"/>
       <definition value="A code that provides meaning to the laboratory service"/>
+      <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="PlanDefinition.action.code:OrderLoinc">
-      <path value="PlanDefinition.action.code"/>
-      <sliceName value="OrderLoinc"/>
-      <short value="LOINC codification of the laboratory service"/>
-      <definition value="A LOINC coding representing the service"/>
-      <max value="1"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org"/>
-        </coding>
-      </patternCodeableConcept>
+    <element id="PlanDefinition.action.code.coding">
+      <path value="PlanDefinition.action.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <short value="Code for the laboratory service" />
     </element>
-    <element id="PlanDefinition.action.code:OrderLoinc.coding">
-      <path value="PlanDefinition.action.code.coding"/>
-      <min value="1"/>
+    <element id="PlanDefinition.action.code.coding:orderCodeLOINC">
+      <path value="PlanDefinition.action.code.coding" />
+      <sliceName value="orderCodeLOINC" />
+      <short value="LOINC code for the laboratory service" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="PlanDefinition.action.code:OrderLoinc.coding.system">
-      <path value="PlanDefinition.action.code.coding.system"/>
-      <min value="1"/>
-    </element>
-    <element id="PlanDefinition.action.code:OrderLoinc.coding.code">
-      <path value="PlanDefinition.action.code.coding.code"/>
-      <short value="LOINC code for service"/>
-      <min value="1"/>
-    </element>
-    <element id="PlanDefinition.action.code:OrderLoinc.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true"/>
-      </extension>
-      <path value="PlanDefinition.action.code.coding.display"/>
-      <short value="display of the LOINC code"/>
-      <min value="1"/>
+    <element id="PlanDefinition.action.code.coding:orderCodeLOINC.system">
+      <path value="PlanDefinition.action.code.coding.system" />
+      <label value="LOINC" />
+      <short value="LOINC code system" />
+      <fixedUri value="http://loinc.org" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition"/>
