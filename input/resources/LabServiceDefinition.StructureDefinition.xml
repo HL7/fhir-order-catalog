@@ -462,6 +462,31 @@
           value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
       </type>
     </element>
+    <element id="PlanDefinition.relatedArtifact:Includes">
+      <path value="PlanDefinition.relatedArtifact"/>
+      <sliceName value="Includes"/>
+      <short value="Reference to a panel or test included by the current one"/>
+      <definition
+        value="The related artifact is another instance of PlanDefinition,representing a laboratory service orderable on its own, and which is also part of the current one."
+      />
+    </element>
+    <element id="PlanDefinition.relatedArtifact:Includes.type">
+      <path value="PlanDefinition.relatedArtifact.type"/>
+      <definition
+        value="The type of relationship to the related artifact is composed-of, meaning that the related artifact is another standalone laboratory service, which is also included as a sub-service of the current one."/>
+      <fixedCode value="composed-of"/>
+    </element>
+    <element id="PlanDefinition.relatedArtifact:Includes.resource">
+      <path value="PlanDefinition.relatedArtifact.resource"/>
+      <definition
+        value="The related resource, in this case a PlanDefinition constrained by the LabServiceDefinition profile"/>
+      <min value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile
+          value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+      </type>
+    </element>
     <element id="PlanDefinition.relatedArtifact:Bibliography">
       <path value="PlanDefinition.relatedArtifact"/>
       <sliceName value="Bibliography"/>
