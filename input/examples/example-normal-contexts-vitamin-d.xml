@@ -8,7 +8,7 @@
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
-      <p>Liste des raisons fournies par le prescripteur, ouvrant droit à la facturation et au remboursement de l'examen
+      <p>Liste des contextes ouvrant droit à la facturation et au remboursement de l'examen
         Dosage de la 25-(OH)-vitamine D (D2 + D3) - (NABM 1139)</p>
     </div>
   </text>
@@ -30,7 +30,7 @@
   <version value="4.0.1" />
     -->
   <name value="NormalReasonsVitaminD" />
-  <title value="Raisons normales de la facturation du dosage de la vitamine D"/>
+  <title value="Contextes de remboursement du dosage de la vitamine D"/>
   <status value="active" />
   <experimental value="false" />
   <date value="2019-12-20" />
@@ -41,7 +41,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
     </telecom>
   </contact>
-  <description value="Ce jeu de valeurs liste les réponses normales associées à la question &quot;Raison pour la prescription de l'examen dosage de la vitamine D&quot;, autorisant la facturation et le remboursement de cet examen (NABM 1139)."/>
+  <description value="Ce jeu de valeurs liste les réponses normales associées à la question &quot;contexte de prescription de l'examen dosage de la vitamine D&quot;, autorisant le remboursement de cet examen (NABM 1139)."/>
   <immutable value="false" />
   <compose>
     <include>
