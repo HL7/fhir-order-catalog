@@ -91,6 +91,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"/>
       </type>
     </element>
+    <!--  FM June 8, 2020: This part was redundant with the CatalogReference extension itself, which already defines it.
     <element id="PlanDefinition.extension:CatalogReference.value[x]">
       <path value="PlanDefinition.extension.value[x]"/>
       <type>
@@ -100,6 +101,7 @@
         <aggregation value="referenced"/>
       </type>
     </element>
+    -->
     <element id="PlanDefinition.extension:ServiceBillingCode">
       <path value="PlanDefinition.extension"/>
       <sliceName value="ServiceBillingCode"/>
@@ -513,6 +515,37 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+      
+    <element id="PlanDefinition.action.extension">
+      <path value="PlanDefinition.action.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="PlanDefinition.action.extension:SpecimenRequirement">
+      <path value="PlanDefinition.action.extension"/>
+      <sliceName value="SpecimenRequirement"/>
+      <short value="Specimen required for this action"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirement"/>
+      </type>
+    </element>
+    <!--
+    <element id="PlanDefinition.extension:SpecimenRequirement.value[x]">
+      <path value="PlanDefinition.extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+        <aggregation value="referenced"/>
+      </type>
+    </element>
+    -->
     <element id="PlanDefinition.action.description">
       <path value="PlanDefinition.action.description"/>
       <short value="Brief description of the laboratory service and its method"/>

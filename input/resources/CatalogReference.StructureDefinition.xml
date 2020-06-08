@@ -39,6 +39,9 @@
       <short value="Reference to a catalog containing this item" />
       <type>
         <code value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+        <aggregation value="referenced"/>
       </type>
     </element>
   </differential>
