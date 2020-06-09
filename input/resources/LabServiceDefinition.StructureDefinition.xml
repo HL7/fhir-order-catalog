@@ -469,7 +469,7 @@
       <sliceName value="Includes"/>
       <short value="Reference to a panel or test included by the current one"/>
       <definition
-        value="The related artifact is another instance of PlanDefinition,representing a laboratory service orderable on its own, and which is also part of the current one."
+        value="The related artifact is another instance of PlanDefinition, representing a laboratory service orderable on its own, and which is also part of the current one, either systematically or reflexed by a trigger."
       />
     </element>
     <element id="PlanDefinition.relatedArtifact:Includes.type">
@@ -526,26 +526,15 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="PlanDefinition.action.extension:SpecimenRequirement">
+    <element id="PlanDefinition.action.extension:SpecimenRequirements">
       <path value="PlanDefinition.action.extension"/>
-      <sliceName value="SpecimenRequirement"/>
-      <short value="Specimen required for this action"/>
+      <sliceName value="SpecimenRequirements"/>
+      <short value="Specimens required for this action"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirement"/>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements"/>
       </type>
     </element>
-    <!--
-    <element id="PlanDefinition.extension:SpecimenRequirement.value[x]">
-      <path value="PlanDefinition.extension.value[x]"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-        <aggregation value="referenced"/>
-      </type>
-    </element>
-    -->
     <element id="PlanDefinition.action.description">
       <path value="PlanDefinition.action.description"/>
       <short value="Brief description of the laboratory service and its method"/>
@@ -590,6 +579,37 @@
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
+    <element id="PlanDefinition.action.trigger">
+      <path value="PlanDefinition.action.trigger"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="type"/>
+        </discriminator>
+        <description
+          value="Open slicing on trigger with a single slice defined to represent a reflex activity.&#xD;&#xA;This slicing may actually only be used on sub actions, not on the top element action of the resource. (An invariant will have to be stated for that.)"/>
+        <rules value="open"/>
+      </slicing>
+      <mustSupport value="true"/>
+    </element>
+    <element id="PlanDefinition.action.trigger:Reflex">
+      <path value="PlanDefinition.action.trigger"/>
+      <sliceName value="Reflex"/>
+      <short value="Reflex laboratory procedure"/>
+      <definition
+        value="This trigger introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition. The trigger is expressed as a named event, and may also be refined with a data requirement and a condition."
+      />
+    </element>
+    <element id="PlanDefinition.action.trigger:Reflex.type">
+      <path value="PlanDefinition.action.trigger.type"/>
+      <fixedCode value="named-event"/>
+    </element>
+    <element id="PlanDefinition.action.trigger:Reflex.name">
+      <path value="PlanDefinition.action.trigger.name"/>
+      <definition value="The natural language expression of the trigger for the reflex laboratory procedure"/>
+      <min value="1"/>    
+    </element>
+    
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition"/>
       <slicing>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenRequirements" />
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements" />
+  <version value="0.0.1" />
+  <name value="SpecimenRequirements" />
+  <title value="Specimen requirements of a laboratory service" />
+  <status value="draft" />
+  <date value="2020-06-08" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="Conveys the specimen requirements for a PlanDefinition.action. These requirements for biological specimens are assembled as an XOR list of AND lists of references to SpecimenDefinition" />
+  <purpose value="This extension to PlanDefinition.action allows to combine XOR and AND conditions on specimen requirements attached to PlanDefinition.action independendty of the logical groupings of sub-actions (PlanDefinition.action.action) that may be defined below this top level action." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="PlanDefinition.action" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="ExclusiveGroup" />
+      <short value="An exclusive group of specimen requirements" />
+      <definition value="A group of specimen requirements that must all be fulfilled in case this group is chosen at specimen collection time." />
+      <comment value="Multiple exclusive groups of specimen requirements may be defined. These groups are mutually exclusive. This means that one and only one of the groups must be chosen at specimen collection time. In other words, multiple exclusive groups are assembled with a logical XOR." />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:SampleRequirement">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="SampleRequirement" />
+      <short value="A specimen requirement in an exclusive group" />
+      <definition value="A reference to a SpecimenDefinition resource representing the specimen requirement" />
+      <comment value="When multiple specimen requirements are present under an exclusive group, all the requirements of the group apply. In other words multiple requirements are assembled with a logical AND within a group." />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:SampleRequirement.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="SampleRequirement" />
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:SampleRequirement.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <short value="SpecimenDefinition reference" />
+      <definition value="A reference to SpecimenDefinition as constrained by the LabSpecimenDefinition profile" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition" />
+      </type>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ExclusiveGroup" />
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

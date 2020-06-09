@@ -214,6 +214,13 @@
         <td>PlanDefinition.publisher</td>
         <td>e.g. country where service is usable</td>
       </tr>
+      <tr>
+        <td>composed-of</td>
+        <td>reference</td>
+        <td>lab service containing another lab service</td>
+        <td>PlanDefinition.relatedArtifact.where(type='composed-of').resource(PlanDefinition)</td>
+        <td>super-panels encompassing this test or panel</td>
+      </tr>
     </tbody>
   </table>
   <a name="LabServicesSearchExamples"> </a>
@@ -232,8 +239,7 @@
   <h5>List available laboratory service catalogs</h5>
   <pre>GET [base]/Composition?type:text=Catalog&amp;category=laboratory&amp;_summary=true</pre>
   <p> Obtains the summary of every laboratory service catalog available on the server. The anwser
-    Bundle contains one entry with a Composition resource for each laboratory service catalog
-    found.</p>
+    Bundle contains one entry with a Composition resource for each catalog found.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>List recently updated blood chemistry tests and panels of one catalog</h5>
   <pre>GET [base]/PlanDefinition?catalog=Composition/a1&amp;topic=http://snomed.info/sct|166312007&amp;date=gt20200323T10:00:00Z+0100&amp;_summary=true</pre>
@@ -242,12 +248,19 @@
     concept). The anwser Bundle contains one entry with a PlanDefinition resource for each
     laboratory service of catalog a1 associated with blood chemistry topic, and created or updated
     since March 23rd 10am.</p>
+  <a name="LabServicesContainingAService"> </a>
+  <h5>Services of a catalog embedding a test or panel</h5>
+  <pre>GET [base]/PlanDefinition?catalog=Composition/a1&amp;composed-of=PlanDefinition/s123&amp;_summary=true</pre>
+  <p> Lists the laboratory services from catalog of id a1, which embed laboratory service of id s123.
+    The anwser Bundle contains one entry with a PlanDefinition resource for each service found with
+    a relatedArtifact.where(type='composed-of').PlanDefinition/s123.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>Retrieve all details for a laboratory service</h5>
   <pre>GET [base]/PlanDefinition?_id=s123&amp;_include:iterate=*</pre>
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
-    SpecimenDefinition}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
+    SpecimenDefinition, PlanDefinition (as related artifacts in case this service embeds other panels or tests)}. 
+    The anwser Bundle contains one entry with PlanDefinition resource s123, and
     below it, as many entries as resources referenced by this one (recursively). Thus the Bundle
     provides the fullly detailed description of this laboratory service. </p>
   <a name="LabServicesAdmin"> </a>
