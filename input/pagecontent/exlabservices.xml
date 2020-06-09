@@ -244,16 +244,10 @@
 				<td><a href="PlanDefinition-example-lab-test-serum-creatinine.html">example-lab-test-serum-creatinine</a></td>
 			</tr>
 			<tr>
-				<td>serum/plasma creatinine from venous blood - operational procedure</td>
+				<td>serum/plasma creatinine operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-venous-serum-creatinine.html">example-lab-venous-serum-creatinine</a></td>
-			</tr>
-			<tr>
-				<td>serum/plasma creatinine from capillary blood - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-capillary-serum-creatinine.html">example-lab-capillary-serum-creatinine</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html">example-lab-procedure-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>capillary blood serum/plasma specimen</td>
@@ -308,16 +302,10 @@
 				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance.html">example-lab-panel-urine24h-creatinine-clearance</a></td>
 			</tr>
 			<tr>
-				<td>serum/plasma creatinine from venous blood - operational procedure</td>
+				<td>serum/plasma creatinine operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-venous-serum-creatinine.html">example-lab-venous-serum-creatinine</a></td>
-			</tr>
-			<tr>
-				<td>serum/plasma creatinine from capillary blood - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-capillary-serum-creatinine.html">example-lab-capillary-serum-creatinine</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html">example-lab-procedure-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>capillary blood serum/plasma specimen</td>

@@ -37,9 +37,11 @@
             <display value="Creatinine 24 hour urine panel - 24 hour Urine"/>
         </coding>
     </code>
+    <!--  June 9, 2020, new method, more flexible, declaring specimen requirements at the level of PlanDefinition
     <specimenRequirement>
         <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
     </specimenRequirement>
+    -->
     <observationRequirement>
         <reference value="ObservationDefinition/example-observation-collection-duration"/>
     </observationRequirement>

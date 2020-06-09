@@ -98,7 +98,34 @@
         </coding>
     </topic>
     <action>
-        <priority value="routine"/>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
+                        <display value="example-specimen-venous-serum-single-test"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
+                        <display value="example-specimen-capillary-serum-single-test"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
+                        <display value="example-specimen-urine-24h"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
@@ -114,29 +141,12 @@
         </timingDuration>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
         <action>
-            <code>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="2160-0"/>
-                    <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
-                </coding>
-            </code>
-
-            <groupingBehavior value="logical-group"/>
-            <selectionBehavior value="exactly-one"/>        
-            <action>
-                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/>
-            </action>
-            <action>
-                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-capillary-serum-creatinine"/>
-            </action>           
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-serum-creatinine"/>
         </action>
         <action>
             <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine"/>
-        </action>
-        <action>
-            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
         </action>
     </action>
 </PlanDefinition>

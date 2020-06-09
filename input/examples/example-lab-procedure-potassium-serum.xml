@@ -59,9 +59,11 @@
         <system value="http://unitsofmeasure.org"/>
         <code value="mn"/>
     </timingDuration>
+    <!--  June 9, 2020, new method, more flexible, declaring specimen requirements at the level of PlanDefinition
     <specimenRequirement>
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
+    -->
     <observationRequirement>
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
     </observationRequirement>

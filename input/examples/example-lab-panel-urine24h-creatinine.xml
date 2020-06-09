@@ -107,7 +107,16 @@
         </coding>
     </topic>
     <action>
-        <priority value="routine"/>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
+                        <display value="example-specimen-urine-24h"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
@@ -121,6 +130,6 @@
             <system value="http://unitsofmeasure.org"/>
             <code value="h"/>
         </timingDuration>
-        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-urine24h-creatinine"/>
     </action>
 </PlanDefinition>

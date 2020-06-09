@@ -333,20 +333,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ActivityDefinition/example-lab-venous-serum-creatinine"/>
+        <reference value="ActivityDefinition/example-lab-procedure-serum-creatinine"/>
       </reference>
-      <name value="Lab procedure venous creat"/>
-      <description value="Lab E4, E5 - laboratory procedure - creatinine - venous serum or plasma"/>
-      <exampleCanonical
-        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ActivityDefinition/example-lab-capillary-serum-creatinine"/>
-      </reference>
-      <name value="Lab procedure capillary creat"/>
-      <description
-        value="Lab E4, E5 - laboratory procedure - creatinine - capillary serum or plasma"/>
+      <name value="Lab procedure serum creatinine"/>
+      <description value="Lab E4, E5 - laboratory procedure - creatinine - on serum or plasma"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>

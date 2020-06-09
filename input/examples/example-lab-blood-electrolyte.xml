@@ -43,9 +43,11 @@
             <display value="Electrolytes 1998 panel - Serum or Plasma"/>
         </coding>
     </code>
+    <!--  June 9, 2020, new method, more flexible, declaring specimen requirements at the level of PlanDefinition
     <specimenRequirement>
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
     </specimenRequirement>
+    -->
     <observationRequirement>
         <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
     </observationRequirement>

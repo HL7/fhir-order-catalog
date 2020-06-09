@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
-    <id value="example-lab-venous-serum-creatinine"/>
+    <id value="example-lab-procedure-serum-creatinine"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </meta>
@@ -8,10 +8,10 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>serum creatinine procedure on serum specimen obtained from venous blood</p>
+            <p>serum creatinine procedure on serum specimen obtained from venous or capillary blood</p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/> 
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-serum-creatinine"/> 
      <name value="UrineCreatinineProcedure"/>
     <title value="Procedure - serum creatinine - venous blood"/>
     <status value="draft"/>
@@ -25,8 +25,8 @@
             <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
-    <description value="creatinine measurements on serum specimen obtained from venous blood"/>
-    <purpose value="This _ActivityDefinition_ specifies the input serum specimen taken from venous blood and the output observation for serum creatinine.     
+    <description value="creatinine measurements on serum specimen obtained from venous or capillary blood"/>
+    <purpose value="This _ActivityDefinition_ specifies the input serum specimen and the output observation for serum creatinine.     
         It is referenced by any _PlanDefinition_ representing a lab service incorporating this procedure."/>
     <kind value="ServiceRequest"/>
     <code>
@@ -36,9 +36,11 @@
             <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
         </coding>
     </code>
+    <!--  June 9, 2020, new method, more flexible, declaring specimen requirements at the level of PlanDefinition
     <specimenRequirement>
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
+    -->
     <observationResultRequirement>
         <reference value="ObservationDefinition/example-observation-serum-creatinine"/>
     </observationResultRequirement>

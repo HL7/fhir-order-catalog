@@ -93,7 +93,24 @@
         </coding>
     </topic>
     <action>
-        <priority value="routine"/>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
+                        <display value="example-specimen-venous-serum-single-test"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
+                        <display value="example-specimen-capillary-serum-single-test"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
@@ -107,13 +124,6 @@
             <system value="http://unitsofmeasure.org"/>
             <code value="h"/>
         </timingDuration>
-        <groupingBehavior value="logical-group"/>
-        <selectionBehavior value="at-most-one"/>
-        <action>
-            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-venous-serum-creatinine"/>
-        </action>
-        <action>
-            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-capillary-serum-creatinine"/>
-        </action>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-serum-creatinine"/>
     </action>
 </PlanDefinition>

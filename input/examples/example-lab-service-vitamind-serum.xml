@@ -101,7 +101,16 @@
         </coding>
     </topic>
     <action>
-        <priority value="routine"/>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+            <extension url="ExclusiveGroup">
+                <extension url="SampleRequirement">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
+                        <display value="example-specimen-venous-serum-single-test"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
