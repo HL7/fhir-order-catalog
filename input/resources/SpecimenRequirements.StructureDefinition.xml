@@ -46,12 +46,6 @@
       </slicing>
     </element>
     <element id="Extension.extension:ExclusiveGroup">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="ExclusiveGroup" />
       <short value="An exclusive group of specimen requirements" />
@@ -70,12 +64,6 @@
       </slicing>
     </element>
     <element id="Extension.extension:ExclusiveGroup.extension:SampleRequirement">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="SampleRequirement" />
       <short value="A specimen requirement in an exclusive group" />
