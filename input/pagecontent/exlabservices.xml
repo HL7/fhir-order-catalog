@@ -380,9 +380,9 @@
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
 		compendium, associated with a billing code and billing rules. The example is in French as is the billing coding system.</p>
 	<p>	The figure below displays the business content. </p>
-	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="600px"/>
+	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="500px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
-	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="800px"/>
+	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="700px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
 		single measurement. This service can be claimed for reimbursement only if it is ordered with a clinical context that matches 
 		one of the clinical focuses declared in the ChargeItemDefinition referenced by the service.</p> 
@@ -440,10 +440,10 @@
 				<td><a href="ValueSet-example-normal-contexts-vitamin-d.html">example-normal-contexts-vitamin-d</a></td>
 			</tr>
 			<tr>
-				<td>Valid contexts for Any Lab Service </td>
+				<td>All contexts possibly associated with Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
 				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
-				<td><a href="ValueSet-example-reasons-for-order.html">example-reasons-for-order</a></td>
+				<td><a href="ValueSet-example-clinical-focus-vitamin-d.html">example-clinical-focus-vitamin-d</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D level - test result</td>

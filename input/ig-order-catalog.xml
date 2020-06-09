@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200609T1700+0200"/>
+  <version value="20200609T1929+0200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -531,8 +531,17 @@
       <reference>
         <reference value="ValueSet/example-normal-contexts-vitamin-d"/>
       </reference>
-      <name value="Lab normal reasons for billing vitamin D"/>
+      <name value="Lab normal clinical focus for billing vitamin D"/>
       <description value="Lab E6 - value set of normal contexts enabling billing of Vitamin D test"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/example-clinical-focus-vitamin-d"/>
+      </reference>
+      <name value="Lab contexts possibly associated with vitamin D testing"/>
+      <description value="Lab E6 - value set of  contexts possibly associated with Vitamin D test"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
     </resource>

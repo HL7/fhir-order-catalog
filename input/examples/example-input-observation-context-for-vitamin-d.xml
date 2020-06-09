@@ -31,7 +31,7 @@
     <permittedDataType value="string"/>
     <multipleResultsAllowed value="true"/>
     <validCodedValueSet>
-        <reference value="ValueSet/example-reasons-for-order"/>
+        <reference value="ValueSet/example-clinical-focus-vitamin-d"/>
     </validCodedValueSet>
     <normalCodedValueSet>
         <reference value="ValueSet/example-normal-contexts-vitamin-d"/>
