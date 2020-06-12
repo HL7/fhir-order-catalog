@@ -587,7 +587,7 @@
           <path value="type"/>
         </discriminator>
         <description
-          value="Open slicing on trigger with a single slice defined to represent a reflex activity.&#xD;&#xA;This slicing may actually only be used on sub actions, not on the top element action of the resource. (An invariant will have to be stated for that.)"/>
+          value="Open slicing on trigger with a single slice defined to represent a reflex activity."/>
         <rules value="open"/>
       </slicing>
       <mustSupport value="true"/>
@@ -609,7 +609,7 @@
       <definition value="The natural language expression of the trigger for the reflex laboratory procedure"/>
       <min value="1"/>    
     </element>
-    
+    <!--  
     <element id="PlanDefinition.action.condition">
       <path value="PlanDefinition.action.condition"/>
       <slicing>
@@ -639,6 +639,7 @@
       <path value="PlanDefinition.action.condition.expression"/>
       <definition value="The expression of the trigger for the reflex laboratory procedure"/>
     </element>
+    -->
     <element id="PlanDefinition.action.groupingBehavior">
       <path value="PlanDefinition.action.groupingBehavior"/>
       <fixedCode value="logical-group"/>
