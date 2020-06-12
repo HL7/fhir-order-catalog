@@ -44,7 +44,7 @@
     references a single ActivityDefinition. </p>
   <p>In some cases the laboratory service (panel or super panel) embeds other services (panels
     and/or tests), which are already described in the catalog as standalone services (orderable or
-    not). These embedded service have their own PlanDefinition referenced by
+    not). These nested services have their own PlanDefinition referenced by
     PlanDefinition.relatedArtifact (composed-of). And in addition, each of the embedded tests or
     panels is described as a sub-action (PlanDefinition.action.action), which references an
     ActivityDefinition representing the embedded laboratory procedure, with its own observations,
@@ -54,7 +54,7 @@
     possibly sub-sub-actions) are assembled in logical groups, with a selection behavior expressing
     which logic applies.</p>
   <p> This nesting of actions allows to build trees of laboratory services, reflecting the reality
-    of some complex diagnostic panels. (e.g. <a href="https://loinc.org/49660-4/ LOINC 49660-4"> HIV
+    of some complex diagnostic panels. (e.g. <a href="https://loinc.org/49660-4/ LOINC 49660-4"> LOINC's HIV
       susceptibility panel by Genotype method</a> nesting 3 levels of panels and tests)</p>
   <p>Input and output observations of the service are defined as instances of <a
       href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a> (constrained
