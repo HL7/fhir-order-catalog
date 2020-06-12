@@ -21,22 +21,33 @@
     panels. This PlanDefinition conveys the general properties of the item: identification, names
     and codings, orderability, applicability, jurisdictions, billing, status, possible replacement
     by another item, gender or species restrictions, goals, bibliographic references, citations and
-    justifications, expected input documents (such as patient consent for genetic testing). The
-    PlanDefinition contains a single occurrence of the element PlanDefinition.action. </p>
-  <p>PlanDefinition.action element references one or more instances of ActivityDefinition
-    constrained by the <a href="StructureDefinition-LabProcedureDefinition.html"
-      >LabProcedureDefinition profile, </a> each of which represents a laboratory procedure with its
-    operational details, specifying in particular the specimens required to perform the test or
-    panel, the input observations expected by the laboratory from the orderer, and the output
-    observations that the procedure will produce.</p>
-  <p>In most cases the PlanDefinition references a single ActivityDefinition, which represents the
-    operational view of the service.</p>
-  <p>In some cases the PlanDefinition of a lab service references multiple instances of
-    ActivityDefinition representing multiple procedures assembled in logical groups with
-    combinations of AND and OR. These logical combinations are used for example to indicate that the
-    laboratory accepts multiple alternative specimens (e.g. venous blood versus capillary blood) to
-    perform a test. They also allow to reuse existing panels within encompassing panels (e.g. LOINC
-    49660-4 - HIV susceptibility panel by Genotype method, nesting 3 levels of panels and tests)</p>
+    justifications, expected input documents (such as patient consent for genetic testing).</p>
+  <p>The PlanDefinition contains a single occurrence of the element PlanDefinition.action (the top
+    level action). </p>
+  <p>PlanDefinition.action:SpecimenRequirements (0..*) conveys the requirements for biological
+    specimens that are needed as input by the laboratory to perform the laboratory service.</p>
+  <p>PlanDefinition.action.definitionCanonical references one instance of ActivityDefinition
+    representing the operational procedure performed to carry this laboratory service.
+    ActivityDefiniton is constrained by the <a
+      href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition profile </a>. It
+    references the observations expected by the laboratory as input alongside the order, and the
+    observations that will be produced as output of the procedure. </p>
+  <p>In most cases the PlanDefinition.action has no sub-action, and therefore PlanDefinition
+    references a single ActivityDefinition. </p>
+  <p>In some cases the laboratory service (panel or super panel) embeds other services (panels
+    and/or tests), which are already described in the catalog as standalone services (orderable or
+    not). These embedded service have their own PlanDefinition referenced by
+    PlanDefinition.relatedArtifact (composed-of). And in addition, each of the embedded tests or
+    panels is described as a sub-action (PlanDefinition.action.action), which references an
+    ActivityDefinition representing the embedded laboratory procedure, with its own observations,
+    which will be added to the output observations of the embedding service.</p>
+  <p>When a PlanDefinition of a labboratory service has multiple sub-actions, some of these actions
+    may all apply (logical AND), while others may be alternative (logical XOR). The sub-actions (and
+    possibly sub-sub-actions) are assembled in logical groups, with a selection behavior expressing
+    which logic applies.</p>
+  <p> This nesting of actions allows to build trees of laboratory services, reflecting the reality
+    of some complex diagnostic panels. (e.g. <a href="https://loinc.org/49660-4/ LOINC 49660-4"> HIV
+      susceptibility panel by Genotype method</a> nesting 3 levels of panels and tests)</p>
   <p>Input and output observations of the service are defined as instances of ObservationDefinition
     (using the <a href="StructureDefinition-InputObservationDefinition.html"
       >InputObservationDefinition profile</a> for observations expected from the ordering clinician,
@@ -109,7 +120,8 @@
         <td>token</td>
         <td> A billing code associated with the service</td>
         <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
-          as Reference).reference(ChargeItemDefinition).resolve().code or PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
+          as Reference).reference(ChargeItemDefinition).resolve().code or
+          PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
           as CodeableConcept) </td>
         <td>The FHIRPath expression to be checked</td>
       </tr>
@@ -251,16 +263,16 @@
   <a name="LabServicesContainingAService"> </a>
   <h5>Services of a catalog embedding a test or panel</h5>
   <pre>GET [base]/PlanDefinition?catalog=Composition/a1&amp;composed-of=PlanDefinition/s123&amp;_summary=true</pre>
-  <p> Lists the laboratory services from catalog of id a1, which embed laboratory service of id s123.
-    The anwser Bundle contains one entry with a PlanDefinition resource for each service found with
-    a relatedArtifact.where(type='composed-of').PlanDefinition/s123.</p>
+  <p> Lists the laboratory services from catalog of id a1, which embed laboratory service of id
+    s123. The anwser Bundle contains one entry with a PlanDefinition resource for each service found
+    with a relatedArtifact.where(type='composed-of').PlanDefinition/s123.</p>
   <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
   <h5>Retrieve all details for a laboratory service</h5>
   <pre>GET [base]/PlanDefinition?_id=s123&amp;_include:iterate=*</pre>
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
     referenced by this PlanDefinition: {Composition, ActivityDefinition, ObservationDefinition,
-    SpecimenDefinition, PlanDefinition (as related artifacts in case this service embeds other panels or tests)}. 
-    The anwser Bundle contains one entry with PlanDefinition resource s123, and
+    SpecimenDefinition, PlanDefinition (as related artifacts in case this service embeds other
+    panels or tests)}. The anwser Bundle contains one entry with PlanDefinition resource s123, and
     below it, as many entries as resources referenced by this one (recursively). Thus the Bundle
     provides the fullly detailed description of this laboratory service. </p>
   <a name="LabServicesAdmin"> </a>
