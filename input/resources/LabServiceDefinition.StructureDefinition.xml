@@ -530,6 +530,11 @@
       <path value="PlanDefinition.action.extension"/>
       <sliceName value="SpecimenRequested"/>
       <short value="Specimens required for this action"/>
+      <definition
+        value="A set of specimens requested as input by this laboratory service. The set is organized as a collection of one or more alternative groups (exactly one group should be chosen at specimen collection time). Each group describes one or more specimens that must all be provided, in case this group is the one chosen."
+      />
+      <comment value="In case this element has multiple occurrence, all occurrences apply: 
+                      Each set of specimen requirements represented by an occurrence of action.extension:SpecimenRequested must be fulfilled for the service described by the PlanDefinition instance."/>
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested"/>
