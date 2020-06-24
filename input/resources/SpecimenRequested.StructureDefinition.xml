@@ -49,9 +49,9 @@
       <path value="Extension.extension"/>
       <sliceName value="ExclusiveGroup"/>
       <short value="An exclusive group of specimen requested"/>
-      <definition value="A group of specimen requested that must all be provided in case this group is chosen at specimen collection time."/>
+      <definition value="A group of specimens requested that must all be provided in case this group is chosen at specimen collection time."/>
       <comment
-        value="Multiple groups may be defined. These groups are mutually exclusive: one and only one of the groups must be chosen at specimen collection time."/>
+        value="In case multiple groups are defined, these groups are mutually exclusive: one and only one group must be chosen at specimen collection time."/>
       <min value="1"/>
     </element>
     <element id="Extension.extension:ExclusiveGroup.extension">
