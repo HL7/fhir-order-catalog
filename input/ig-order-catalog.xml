@@ -158,10 +158,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/SpecimenRequirements"/>
+        <reference value="StructureDefinition/SpecimenRequested"/>
       </reference>
-      <name value="Specimen requirements for a PlanDefiniton top-level action"/>
-      <description value="Extension attaching specimen requirements to a PlanDefinition.action, as an [XOR] list of [AND] lists of references to SpecimenDefiniton"/>
+      <name value="Specimen requested for a PlanDefiniton top-level action"/>
+      <description value="Extension attaching specimen requested to a PlanDefinition.action, as a set of (possibly choosable) references to SpecimenDefiniton"/>
     </resource>
     <!-- 
       Below, the profiles 

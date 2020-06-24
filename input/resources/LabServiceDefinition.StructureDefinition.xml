@@ -526,13 +526,13 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="PlanDefinition.action.extension:SpecimenRequirements">
+    <element id="PlanDefinition.action.extension:SpecimenRequested">
       <path value="PlanDefinition.action.extension"/>
-      <sliceName value="SpecimenRequirements"/>
+      <sliceName value="SpecimenRequested"/>
       <short value="Specimens required for this action"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements"/>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested"/>
       </type>
     </element>
     <element id="PlanDefinition.action.description">
@@ -609,37 +609,6 @@
       <definition value="The natural language expression of the trigger for the reflex laboratory procedure"/>
       <min value="1"/>    
     </element>
-    <!--  
-    <element id="PlanDefinition.action.condition">
-      <path value="PlanDefinition.action.condition"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="kind"/>
-        </discriminator>
-        <description
-          value="Open slicing on condition with a single slice defined to represent a reflex activity.&#xD;&#xA;This slicing may actually only be used on sub actions, not on the top element action of the resource. A constraint will have to be stated for that."/>
-        <rules value="open"/>
-      </slicing>
-      <mustSupport value="true"/>
-    </element>
-    <element id="PlanDefinition.action.condition:Reflex">
-      <path value="PlanDefinition.action.condition"/>
-      <sliceName value="Reflex"/>
-      <short value="Reflex laboratory procedure"/>
-      <definition
-        value="This condition introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition"
-      />
-    </element>
-    <element id="PlanDefinition.action.condition:Reflex.kind">
-      <path value="PlanDefinition.action.condition.kind"/>
-      <fixedCode value="applicability"/>
-    </element>
-    <element id="PlanDefinition.action.condition:Reflex.expression">
-      <path value="PlanDefinition.action.condition.expression"/>
-      <definition value="The expression of the trigger for the reflex laboratory procedure"/>
-    </element>
-    -->
     <element id="PlanDefinition.action.groupingBehavior">
       <path value="PlanDefinition.action.groupingBehavior"/>
       <fixedCode value="logical-group"/>

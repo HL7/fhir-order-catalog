@@ -101,9 +101,9 @@
         </coding>
     </topic>
     <action>
-        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequirements">
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
             <extension url="ExclusiveGroup">
-                <extension url="SampleRequirement">
+                <extension url="Material">
                     <valueReference>
                         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
                         <display value="example-specimen-venous-serum-single-test"/>

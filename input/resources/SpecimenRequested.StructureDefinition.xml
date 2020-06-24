@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenRequested"/>
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested"/>
+  <version value="0.0.1"/>
+  <name value="SpecimenRequested"/>
+  <title value="Specimens requested by a laboratory service"/>
+  <status value="draft"/>
+  <date value="2020-06-08"/>
+  <publisher value="HL7 Orders &amp; Observations WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+    </telecom>
+  </contact>
+  <description
+    value="References the specimens requested for a PlanDefinition.action representing a laboratory service, assembling them with a combination of  choices (pick one among several) and conjunctions (pick all listed). Each specimen appears as a reference to an instance of SpecimenDefinition"/> 
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.action"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup">
+      <path value="Extension.extension"/>
+      <sliceName value="ExclusiveGroup"/>
+      <short value="An exclusive group of specimen requested"/>
+      <definition value="A group of specimen requested that must all be provided in case this group is chosen at specimen collection time."/>
+      <comment
+        value="Multiple groups may be defined. These groups are mutually exclusive: one and only one of the groups must be chosen at specimen collection time."/>
+      <min value="1"/>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension">
+      <path value="Extension.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:Material">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="Material"/>
+      <short value="An individual specimen in an exclusive group"/>
+      <definition
+        value="A reference to a SpecimenDefinition resource representing the material"/>
+      <comment
+        value="When multiple materials are present under an exclusive group, all are requested."/>
+      <min value="1"/>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:Material.url">
+      <path value="Extension.extension.extension.url"/>
+      <fixedUri value="Material"/>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.extension:Material.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <short value="SpecimenDefinition reference"/>
+      <definition value="A reference to SpecimenDefinition as constrained by the LabSpecimenDefinition profile"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+      </type>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="ExclusiveGroup"/>
+    </element>
+    <element id="Extension.extension:ExclusiveGroup.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
