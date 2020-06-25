@@ -763,6 +763,42 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-cmv-serum"/>
+      </reference>
+      <name value="Lab service CMV IgM"/>
+      <description value="Lab E7 - test laboratory service - serum CMV IgM test"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-rubella-serum"/>
+      </reference>
+      <name value="Lab service Rubella IgM"/>
+      <description value="Lab E7 - test laboratory service - serum Rubella IgM test"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-toxoplasma-serum"/>
+      </reference>
+      <name value="Lab service Toxoplasma gondii Antibody"/>
+      <description value="Lab E7 - panel laboratory service - serum Toxoplasma gondii Antibody panel"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-torch"/>
+      </reference>
+      <name value="Lab service Torch panel"/>
+      <description value="Lab E7 - panel laboratory service - serum Torch panel"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
     <!-- 
       html pages
     -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
-    <id value="example-lab-service-hsvt2-serum"/>
+    <id value="example-lab-service-toxoplasma-serum"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
@@ -8,7 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Simple test laboratory service - serum HSV 2 IgM titer</p>
+            <p>Panel laboratory service - serum Toxoplasma gondii panel</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -16,30 +16,21 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsvt2-serum"/>
-    <name value="HVS2IgMtiter"/>
-    <title value="laboratory service - serum HSV 2 IgM titer on serum">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="Titrage des IgM HSV 2 sur sérum"/>
-            </extension>
-        </extension>
-    </title>
+    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-toxoplasma-serum"/>
+    <name value="Toxoplasmagondii"/>
+    <title value="laboratory service - Toxoplasma gondii Ab panel on serum"/> 
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
-            <code value="test"/>
-            <display value="unitary measurement performed on an in vitro biologic specimen"/>
+            <code value="panel"/>
+            <display value="collection of tests and panels performed on one or more in vitro biologic specimens"/>
         </coding>
     </type>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="serum HSV 2 IgM titer on serum specimen, can be ordered standalone, or triggered as reflex by the IgM screen test"/>
+    <description value="Toxoplasma gondii Ab panel on serum specimen"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -73,10 +64,10 @@
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="26927-4"/>
-                <display value="Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence"/>
+                <code value="57770-0"/>
+                <display value="Toxoplasma gondii IgG and IgM panel - Serum"/>
             </coding>
         </code>
-        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt2"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-toxoplasma"/>
     </action>
 </PlanDefinition>

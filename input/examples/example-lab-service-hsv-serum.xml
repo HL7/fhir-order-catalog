@@ -16,8 +16,9 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
+    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
     <name value="HVS1IgMtiter"/>
-    <title value="laboratory service - serum HSV 1 &amp; 2 IgM on serum">
+    <title value="laboratory service - HSV 1 &amp; 2 IgM on serum">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
                 <valueCode value="fr-FR"/>
@@ -59,6 +60,14 @@
             <display value="Sample serology"/>
         </coding>
     </topic>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsvt1-serum"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsvt2-serum"/>
+    </relatedArtifact>
     <action>
         <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
             <extension url="ExclusiveGroup">

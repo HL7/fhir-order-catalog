@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
-    <id value="example-lab-service-hsvt2-serum"/>
+    <id value="example-lab-service-rubella-serum"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
@@ -8,7 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Simple test laboratory service - serum HSV 2 IgM titer</p>
+            <p>Simple test laboratory service - Rubella - quantification of IgM in serum sample</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -16,18 +16,9 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsvt2-serum"/>
-    <name value="HVS2IgMtiter"/>
-    <title value="laboratory service - serum HSV 2 IgM titer on serum">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="Titrage des IgM HSV 2 sur sérum"/>
-            </extension>
-        </extension>
-    </title>
+    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-rubella-serum"/>
+    <name value="RubellaIgM"/>
+    <title value="laboratory service - Rubella IgM quantification on serum"/> 
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
@@ -39,7 +30,7 @@
     <experimental value="true"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="serum HSV 2 IgM titer on serum specimen, can be ordered standalone, or triggered as reflex by the IgM screen test"/>
+    <description value="serum Rubella IgM quantitative"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -73,10 +64,10 @@
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="26927-4"/>
-                <display value="Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence"/>
+                <code value="5335-5"/>
+                <display value="Rubella virus IgM Ab [Units/volume] in Serum by Immunoassay"/>
             </coding>
         </code>
-        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt2"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-rubella"/>
     </action>
 </PlanDefinition>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
+    <id value="example-lab-service-torch"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+            <p>Panel laboratory service - Torch serology panel, Acute, on serum</p>
+            <p>Includes Toxoplasma gondii quantitative IgG and IgM, Rubella quantitative IgM, CMV quantitative IgM, HSV 1 &amp; 2 IgM screen plus reflex titer</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
+        <valueReference>
+            <reference value="Composition/example-lab-compendium-header"/>
+        </valueReference>
+    </extension>
+    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-torch"/>
+    <name value="Torch"/>
+    <title value="laboratory service - Torch panel on serum"/>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
+            <code value="panel"/>
+            <display value="collection of tests and panels performed on one or more in vitro biologic specimens"/>
+        </coding>
+    </type>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-05T20:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <description value="Torch serology panel on seum - includes Toxoplasma, Rubella, CMV, HSV"/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="task"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="LABOE"/>
+                <display value="laboratory test order entry task"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165994006"/>
+            <display value="Sample serology"/>
+        </coding>
+    </topic>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-toxoplasma-serum"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-rubella-serum"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-cmv-serum"/>
+    </relatedArtifact>
+    <action>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
+            <extension url="ExclusiveGroup">
+                <extension url="Material">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-3ml-serum"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
+        <code>
+            <text value="Torch panel, Acute"/>
+        </code>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="all"/>
+        <action>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-toxoplasma"/>
+        </action>
+        <action>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-rubella"/>
+        </action>
+        <action>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-cmv"/>
+        </action>
+        <action>
+            <groupingBehavior value="logical-group"/>
+            <selectionBehavior value="any"/>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsv"/>
+            <action>
+                <trigger>
+                    <type value="named-event"/>
+                    <name value="HSV 1 IgM screen positive"/>
+                </trigger>
+                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt1"/>
+            </action>
+            <action>
+                <trigger>
+                    <type value="named-event"/>
+                    <name value="HSV 2 IgM screen positive"/>
+                </trigger>
+                <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt2"/>
+            </action>
+        </action>
+    </action>
+</PlanDefinition>

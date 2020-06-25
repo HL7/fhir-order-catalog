@@ -648,8 +648,8 @@
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-service-torch-serum.html"
-						>example-lab-service-torch-serum</a></td>
+				<td><a href="PlanDefinition-example-lab-service-torch.html"
+						>example-lab-service-torch</a></td>
 			</tr>
 			<tr>
 				<td>Toxoplasma Ab panel - orderable service</td>
