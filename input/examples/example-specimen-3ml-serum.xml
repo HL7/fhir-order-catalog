@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpecimenDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/specimendefinition.xsd">
+    <id value="example-specimen-3ml-serum"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p>3 mL blood serum</p>
+        </div>
+    </text>
+    <typeTested>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+                <code value="SER"/>
+                <display value="Serum"/>
+            </coding>
+        </type>
+        <preference value="preferred"/>
+        <container>
+            <capacity>
+                <value value="5"/>
+                <unit value="milliliter"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </capacity>
+            <minimumVolumeQuantity>
+                <value value="3"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+            </minimumVolumeQuantity>
+        </container>
+        <retentionTime>
+            <value value="24"/>
+            <unit value="hour"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h"/>
+        </retentionTime>
+        <rejectionCriterion>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/rejection-criteria"/>
+                <code value="hemolized"/>
+            </coding>
+            <text value="blood specimen hemolized"/>
+        </rejectionCriterion>
+        <handling>
+            <temperatureQualifier>
+                <text value="room temperature or refrigerated"/>
+            </temperatureQualifier>
+            <maxDuration>
+                <value value="4"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+            </maxDuration>
+        </handling>
+    </typeTested>
+</SpecimenDefinition>

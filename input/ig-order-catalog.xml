@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200624T1800+0200"/>
+  <version value="20200625T1000+0200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -571,6 +571,197 @@
       <description value="MessageDefinition for messages conveying an update to the receiver's catalog"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
+    </resource>
+    <!-- 
+      Example E7 - Observations
+    -->
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-hsv2igmt"/>
+      </reference>
+      <name value="Lab observation HSV 2 IgM titer"/>
+      <description value="Lab E7: observation HSV 2 IgM titer on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-hsv1igmt"/>
+      </reference>
+      <name value="Lab observation HSV 1 IgM titer"/>
+      <description value="Lab E7: observation HSV 1 IgM titer on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-hsv2igmp"/>
+      </reference>
+      <name value="Lab observation HSV 2 IgM presence"/>
+      <description value="Lab E7: observation HSV 2 IgM presence detection on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-hsv1igmp"/>
+      </reference>
+      <name value="Lab observation HSV 1 IgM presence"/>
+      <description value="Lab E7: observation HSV 1 IgM presence detection on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-rubigm"/>
+      </reference>
+      <name value="Lab observation Rubella IgM"/>
+      <description value="Lab E7: observation Rubella IgM on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-cmvigm"/>
+      </reference>
+      <name value="Lab observation CMV IgM"/>
+      <description value="Lab E7: observation CMV IgM on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-toxoigm"/>
+      </reference>
+      <name value="Lab observation Toxoplasma IgM"/>
+      <description value="Lab E7: observation Toxoplasma IgM on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-toxoigg"/>
+      </reference>
+      <name value="Lab observation Toxoplasma IgG"/>
+      <description value="Lab E7: observation Toxoplasma IgG on serum"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ObservationDefinition/example-observation-toxoint"/>
+      </reference>
+      <name value="Lab observation Toxoplasma Ab interpretation"/>
+      <description value="Lab E7: observation Toxoplasma Ab interpretation"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </resource>
+    <!-- 
+      Example E7 - Specimens
+    -->
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-3ml-serum"/>
+      </reference>
+      <name value="Lab specimen - venous serum 3 mL"/>
+      <description
+        value="Lab E7 - 3 mL serum specimen"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="SpecimenDefinition/example-specimen-2ml-serum"/>
+      </reference>
+      <name value="Lab specimen - venous serum 2 mL"/>
+      <description
+        value="Lab E7 - 2 mL serum specimen"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+    </resource> 
+    <!-- 
+      Example E7 - Procedures
+    -->
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-toxoplasma"/>
+      </reference>
+      <name value="Lab procedure Toxoplasma gondii"/>
+      <description value="Lab E7 - laboratory procedure - Toxoplasma gondii serology"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>   
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-rubella"/>
+      </reference>
+      <name value="Lab procedure Rubella IgM"/>
+      <description value="Lab E7 - laboratory procedure - Rubella serology"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource> 
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-cmv"/>
+      </reference>
+      <name value="Lab procedure CMV IgM"/>
+      <description value="Lab E7 - laboratory procedure - CMV IgM"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource>  
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-hsv"/>
+      </reference>
+      <name value="Lab procedure HSV serology"/>
+      <description value="Lab E7 - laboratory procedure - HSV 1 &amp; 2 IgM"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource> 
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-hsvt1"/>
+      </reference>
+      <name value="Lab procedure HSV 1 IgM titer"/>
+      <description value="Lab E7 - laboratory procedure - HSV 1 IgM titer"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource> 
+    <resource>
+      <reference>
+        <reference value="ActivityDefinition/example-lab-procedure-hsvt2"/>
+      </reference>
+      <name value="Lab procedure HSV 2 IgM titer"/>
+      <description value="Lab E7 - laboratory procedure - HSV 2 IgM titer"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </resource> 
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-hsvt2-serum"/>
+      </reference>
+      <name value="Lab service HSV 2 IgM titer"/>
+      <description value="Lab E7 - simple test laboratory service - serum HSV 2 IgM titer"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-hsvt1-serum"/>
+      </reference>
+      <name value="Lab service HSV 1 IgM titer"/>
+      <description value="Lab E7 - simple test laboratory service - serum HSV 1 IgM titer"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/example-lab-service-hsv-serum"/>
+      </reference>
+      <name value="Lab service HSV IgM"/>
+      <description value="Lab E7 - panel laboratory service - serum HSV 1 &amp; 2 IgM screen panel + reflex titer"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
     <!-- 
       html pages

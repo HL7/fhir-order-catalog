@@ -3,7 +3,8 @@
 	<p>This section presents the examples of catalogs of laboratory diagnostic services. Rather than
 		showing full details of the resources built, each example focuses on the key elements
 		illustrating the FHIR design of laboratory catalogs. The full details for each resource
-		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the example section.</p>
+		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the example
+		section.</p>
 	<p>The examples are indexed E1, E2, E3, ...</p>
 	<a name="LabE1"> </a>
 	<h3>E1: Blood potassium test</h3>
@@ -18,7 +19,7 @@
 			order entry task</i>&quot;. A service is orderable if and only if the PlanDefinition
 		representing it includes a useContext element with code = &quot;task&quot; and
 		valueCodeableConcept = &quot;LABOE&quot; (laboratory order entry task) from the V3 ActCode
-		vocabulary. </p> 
+		vocabulary. </p>
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
@@ -34,37 +35,53 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>Serum potassium - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-service-potassium-serum.html">example-lab-service-potassium-serum</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-potassium-serum.html"
+						>example-lab-service-potassium-serum</a></td>
 			</tr>
 			<tr>
 				<td>Serum potassium - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-procedure-potassium-serum.html">example-lab-procedure-potassium-serum</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-potassium-serum.html"
+						>example-lab-procedure-potassium-serum</a></td>
 			</tr>
 			<tr>
 				<td>Serum specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html"
+						>example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>Reason for test - input observation</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-input-observation-reason-for-ordering</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td><a
+						href="ObservationDefinition-example-input-observation-reason-for-ordering.html"
+						>example-input-observation-reason-for-ordering</a></td>
 			</tr>
 			<tr>
 				<td>K serum level - test result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-serum-potassium</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-potassium.html"
+						>example-observation-serum-potassium</a></td>
 			</tr>
 		</tbody>
 	</table>
@@ -76,8 +93,8 @@
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE2Technical.png" alt="Example E2 - FHIR implementation" width="600px"/>
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
-		collection of test of panels, which usually produces multiple results. </p> 
-	<p>Artifacts implementing this example: </p> 
+		collection of test of panels, which usually produces multiple results. </p>
+	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
 			<tr>
@@ -92,63 +109,87 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>Blood electrolyte panel - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-panel-blood-electrolyte.html">example-lab-panel-blood-electrolyte</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-blood-electrolyte.html"
+						>example-lab-panel-blood-electrolyte</a></td>
 			</tr>
 			<tr>
 				<td>Blood electrolyte panel - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-blood-electrolyte.html">example-lab-blood-electrolyte</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-blood-electrolyte.html"
+						>example-lab-blood-electrolyte</a></td>
 			</tr>
 			<tr>
 				<td>Serum or plasma specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-serum-plasma.html">example-specimen-serum-plasma</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-serum-plasma.html"
+						>example-specimen-serum-plasma</a></td>
 			</tr>
 			<tr>
 				<td>Reason for test - input observation</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-reason-for-ordering.html">example-input-observation-reason-for-ordering</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td><a
+						href="ObservationDefinition-example-input-observation-reason-for-ordering.html"
+						>example-input-observation-reason-for-ordering</a></td>
 			</tr>
 			<tr>
 				<td>Na serum level - test result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-sodium.html">example-observation-serum-sodium</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-sodium.html"
+						>example-observation-serum-sodium</a></td>
 			</tr>
 			<tr>
 				<td>K serum level - test result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-potassium.html">example-observation-serum-potassium</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-potassium.html"
+						>example-observation-serum-potassium</a></td>
 			</tr>
 			<tr>
 				<td>Cl serum level - test result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-chloride.html">example-observation-serum-chloride</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-chloride.html"
+						>example-observation-serum-chloride</a></td>
 			</tr>
 		</tbody>
 	</table>
 	<a name="LabE3"> </a>
 	<h3>E3: creatinine on 24H urine</h3>
 	<p> This example illustrates the representation of a panel of tests in the laboratory
-		compendium, using some observations both as input and output. The figure below displays the business content. </p>
+		compendium, using some observations both as input and output. The figure below displays the
+		business content. </p>
 	<img src="LabExampleE3Business.png" alt="Example E3 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE3Technical.png" alt="Example E3 - FHIR implementation" width="600px"/>
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
-		collection of test of panels, which usually produces multiple results. The observations "24h urine volume" 
-		and "urine collection duration" are used both as input (proved by the specimen collector) and as results of the panel.</p> 
-	<p>Artifacts implementing this example: </p> 
+		collection of test of panels, which usually produces multiple results. The observations "24h
+		urine volume" and "urine collection duration" are used both as input (proved by the specimen
+		collector) and as results of the panel.</p>
+	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
 			<tr>
@@ -163,64 +204,87 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine panel - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine.html">example-lab-panel-urine24h-creatinine</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine.html"
+						>example-lab-panel-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine panel - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html">example-lab-urine24h-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html"
+						>example-lab-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-urine-24h.html">example-specimen-urine-24h</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-urine-24h.html"
+						>example-specimen-urine-24h</a></td>
 			</tr>
 			<tr>
 				<td rowspan="2">urine collection duration - input/output observation</td>
-				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-duration.html">example-observation-collection-duration</a></td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td rowspan="2"><a
+						href="ObservationDefinition-example-observation-collection-duration.html"
+						>example-observation-collection-duration</a></td>
 			</tr>
 			<tr>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
 			</tr>
 			<tr>
 				<td rowspan="2">24-hour urine volume - input/output observation</td>
-				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-volume.html">example-observation-collection-volume</a></td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td rowspan="2"><a
+						href="ObservationDefinition-example-observation-collection-volume.html"
+						>example-observation-collection-volume</a></td>
 			</tr>
 			<tr>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine - lab result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-urine24h-creatinine.html">example-observation-urine24h-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-urine24h-creatinine.html"
+						>example-observation-urine24h-creatinine</a></td>
 			</tr>
 		</tbody>
 	</table>
 	<a name="LabE4"> </a>
 	<h3>E4: creatinine on serum or plasma</h3>
-	<p> This example illustrates the representation of a laboratory service using two alternative laboratory procedures
-		depending on the kind of specimen collected from the patient. The figure below displays the business content. </p>
+	<p> This example illustrates the representation of a laboratory service using two alternative
+		laboratory procedures depending on the kind of specimen collected from the patient. The
+		figure below displays the business content. </p>
 	<img src="LabExampleE4Business.png" alt="Example E4 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE4Technical.png" alt="Example E4 - FHIR implementation" width="600px"/>
-	<p>In this example, the laboratory service is of type &quot;<i>test</i>&quot; 
-		and is expected to produce an single result; the serum/plasma creatinine level. The service is operationalized by
-		two alternative procedures (<i>ActivityDefinition</i>) depending of the kind of specimen collected. 
-		Both procedures produce the same observation "serum creatinine" </p> 
-	<p>Artifacts implementing this example: </p> 
+	<p>In this example, the laboratory service is of type &quot;<i>test</i>&quot; and is expected to
+		produce an single result; the serum/plasma creatinine level. The service is operationalized
+		by two alternative procedures (<i>ActivityDefinition</i>) depending of the kind of specimen
+		collected. Both procedures produce the same observation "serum creatinine" </p>
+	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
 			<tr>
@@ -235,50 +299,66 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-test-serum-creatinine.html">example-lab-test-serum-creatinine</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-test-serum-creatinine.html"
+						>example-lab-test-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html">example-lab-procedure-serum-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html"
+						>example-lab-procedure-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>capillary blood serum/plasma specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-capillary-serum-single-test.html">example-specimen-capillary-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-capillary-serum-single-test.html"
+						>example-specimen-capillary-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>venous blood serum/plasma specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html"
+						>example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine - lab result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html">example-observation-serum-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html"
+						>example-observation-serum-creatinine</a></td>
 			</tr>
 		</tbody>
 	</table>
 	<a name="LabE5"> </a>
 	<h3>E5: creatinine renal clearance</h3>
-	<p> This example illustrates how a panel can logically include a combination of tests and panels, using logical AND and XOR to assemble them.  
-		The figure below displays the business content. </p>
+	<p> This example illustrates how a panel can logically include a combination of tests and
+		panels, using logical AND and XOR to assemble them. The figure below displays the business
+		content. </p>
 	<img src="LabExampleE5Business.png" alt="Example E5 - business content" width="600px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE5Technical.png" alt="Example E5 - FHIR implementation" width="600px"/>
-	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot; 
-		it assembles two other panels and one single test.</p> 
-	<p>Artifacts implementing this example: </p> 
+	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot; it assembles two
+		other panels and one single test.</p>
+	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
 			<tr>
@@ -293,99 +373,141 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>creatinine renal clearance - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance.html">example-lab-panel-urine24h-creatinine-clearance</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance.html"
+						>example-lab-panel-urine24h-creatinine-clearance</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html">example-lab-procedure-serum-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-serum-creatinine.html"
+						>example-lab-procedure-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>capillary blood serum/plasma specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-capillary-serum-single-test.html">example-specimen-capillary-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-capillary-serum-single-test.html"
+						>example-specimen-capillary-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>venous blood serum/plasma specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html"
+						>example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>serum/plasma creatinine - lab result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html">example-observation-serum-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html"
+						>example-observation-serum-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine panel - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html">example-lab-urine24h-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html"
+						>example-lab-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-urine-24h.html">example-specimen-urine-24h</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-urine-24h.html"
+						>example-specimen-urine-24h</a></td>
 			</tr>
 			<tr>
 				<td rowspan="2">urine collection duration - input/output observation</td>
-				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-duration.html">example-observation-collection-duration</a></td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td rowspan="2"><a
+						href="ObservationDefinition-example-observation-collection-duration.html"
+						>example-observation-collection-duration</a></td>
 			</tr>
 			<tr>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
 			</tr>
 			<tr>
 				<td rowspan="2">24-hour urine volume - input/output observation</td>
-				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td rowspan="2"><a href="ObservationDefinition-example-observation-collection-volume.html">example-observation-collection-volume</a></td>
+				<td rowspan="2"><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td rowspan="2"><a
+						href="ObservationDefinition-example-observation-collection-volume.html"
+						>example-observation-collection-volume</a></td>
 			</tr>
 			<tr>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>				
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine - lab result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-urine24h-creatinine.html">example-observation-urine24h-creatinine</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-urine24h-creatinine.html"
+						>example-observation-urine24h-creatinine</a></td>
 			</tr>
 			<tr>
 				<td>24-hour urine creatinine clearance - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html">example-lab-urine24h-creatinine-clearance</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-urine24h-creatinine.html"
+						>example-lab-urine24h-creatinine-clearance</a></td>
 			</tr>
 			<tr>
 				<td>creatinine renal clearance - lab result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html">example-observation-creatinine-renal-clearance</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-serum-creatinine.html"
+						>example-observation-creatinine-renal-clearance</a></td>
 			</tr>
 		</tbody>
 	</table>
 	<a name="LabE6"> </a>
 	<h3>E6: Vitamin D</h3>
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
-		compendium, associated with a billing code and billing rules. The example is in French as is the billing coding system.</p>
-	<p>	The figure below displays the business content. </p>
+		compendium, associated with a billing code and billing rules. The example is in French as is
+		the billing coding system.</p>
+	<p> The figure below displays the business content. </p>
 	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="500px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE6Technical.png" alt="Example E6 - FHIR implementation" width="700px"/>
 	<p>The laboratory service is of type &quot;<i>test</i>&quot;. A single test produces usually a
-		single measurement. This service can be claimed for reimbursement only if it is ordered with a clinical context that matches 
-		one of the clinical focuses declared in the ChargeItemDefinition referenced by the service.</p> 
+		single measurement. This service can be claimed for reimbursement only if it is ordered with
+		a clinical context that matches one of the clinical focuses declared in the
+		ChargeItemDefinition referenced by the service.</p>
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
 		<thead>
@@ -401,55 +523,334 @@
 				<td>Laboratory compendium</td>
 				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
-				<td><a href="Composition-example-lab-compendium-header.html">example-lab-compendium-header</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
-				<td><a href="StructureDefinition-LabServiceDefinition.html">LabServiceDefinition</a></td>
-				<td><a href="PlanDefinition-example-lab-service-vitamind-serum.html">example-lab-service-vitamind-serum</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-vitamind-serum.html"
+						>example-lab-service-vitamind-serum</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D - billing code and conditions</td>
-				<td><a href="http://hl7.org/fhir/chargeitemdefinition.html">ChargeItemDefinition</a></td>
-				<td><a href="StructureDefinition-LabChargeItemDefinition.html">LabChargeItemDefinition</a></td>
-				<td><a href="ChargeItemDefinition-example-lab-billing-vitamind-focus.html">example-lab-billing-vitamind-focus</a></td>
+				<td><a href="http://hl7.org/fhir/chargeitemdefinition.html"
+					>ChargeItemDefinition</a></td>
+				<td><a href="StructureDefinition-LabChargeItemDefinition.html"
+						>LabChargeItemDefinition</a></td>
+				<td><a href="ChargeItemDefinition-example-lab-billing-vitamind-focus.html"
+						>example-lab-billing-vitamind-focus</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D - operational procedure</td>
-				<td><a href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a></td>
-				<td><a href="StructureDefinition-LabProcedureDefinition.html">LabProcedureDefinition</a></td>
-				<td><a href="ActivityDefinition-example-lab-procedure-vitamind-serum.html">example-lab-procedure-vitamind-serum</a></td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-vitamind-serum.html"
+						>example-lab-procedure-vitamind-serum</a></td>
 			</tr>
 			<tr>
 				<td>Serum specimen</td>
-				<td><a href="http://hl7.org/fhir/specimendefinition.html">SpecimenDefinition</a></td>
-				<td><a href="StructureDefinition-LabSpecimenDefinition.html">LabSpecimenDefinition</a></td>
-				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html">example-specimen-venous-serum-single-test</a></td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+						>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-venous-serum-single-test.html"
+						>example-specimen-venous-serum-single-test</a></td>
 			</tr>
 			<tr>
 				<td>Clinical contexts for test - input observation</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-InputObservationDefinition.html">InputObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-input-observation-context-for-vitamin-d.html">example-input-observation-context-for-vitamin-d</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-InputObservationDefinition.html"
+						>InputObservationDefinition</a></td>
+				<td><a
+						href="ObservationDefinition-example-input-observation-context-for-vitamin-d.html"
+						>example-input-observation-context-for-vitamin-d</a></td>
 			</tr>
 			<tr>
 				<td>Normal Contexts for Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
-				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
-				<td><a href="ValueSet-example-normal-contexts-vitamin-d.html">example-normal-contexts-vitamin-d</a></td>
+				<td><a href="StructureDefinition-ObservationValueSet.html"
+					>ObservationValueSet</a></td>
+				<td><a href="ValueSet-example-normal-contexts-vitamin-d.html"
+						>example-normal-contexts-vitamin-d</a></td>
 			</tr>
 			<tr>
 				<td>All contexts possibly associated with Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
-				<td><a href="StructureDefinition-ObservationValueSet.html">ObservationValueSet</a></td>
-				<td><a href="ValueSet-example-clinical-focus-vitamin-d.html">example-clinical-focus-vitamin-d</a></td>
+				<td><a href="StructureDefinition-ObservationValueSet.html"
+					>ObservationValueSet</a></td>
+				<td><a href="ValueSet-example-clinical-focus-vitamin-d.html"
+						>example-clinical-focus-vitamin-d</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D level - test result</td>
-				<td><a href="http://hl7.org/fhir/observationdefinition.html">ObservationDefinition</a></td>
-				<td><a href="StructureDefinition-LabObservationDefinition.html">LabObservationDefinition</a></td>
-				<td><a href="ObservationDefinition-example-observation-vitamin-d.html">example-observation-vitamin-d</a></td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-vitamin-d.html"
+						>example-observation-vitamin-d</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<a name="LabE7"> </a>
+	<h3>E7: Torch super-panel</h3>
+	<p> This example illustrates the representation of a super panel embedding two single tests
+		orderable individually and two sub-panels also orderable individually, one of which embeds
+		two reflex tests (also orderable themselves).</p>
+	<p> The 2 figures below show the business content of the HSV sub-panel having the two reflex tests, and then its FHIR resource representation. </p>
+	<img src="LabExampleE7BusinessPart1.png" alt="Example E7 - business content (part 1)"
+		width="600px"/>
+	<img src="LabExampleE7TechnicalPart1.png" alt="Example E7 - FHIR implementation (part 1)"
+		width="600px"/>
+	<br/>
+	<p> The 2 figures below show the Torch super-panel, which embeds the HSV
+		sub-panel above. Business content, and then FHIR resource representation:</p>
+	<img src="LabExampleE7BusinessPart2.png" alt="Example E7 - business content (part 2)"
+		width="600px"/>
+	<img src="LabExampleE7TechnicalPart2A.png" alt="Example E7 - FHIR implementation (part 2a)"
+		width="700px"/>
+	<img src="LabExampleE7TechnicalPart2B.png" alt="Example E7 - FHIR implementation (part 2b)"
+		width="700px"/>
+	<br/>
+	<p>The Torch laboratory service is of type &quot;<i>panel</i>&quot;. </p>
+	<p>All directly embedded panels and tests are referenced as related artifacts:
+		PlanDefinition.relatedArtifact:Includes (composed-of).</p>
+	<p>Reflex tests are represented as sub-actions grouped in a logical group with behavior
+			&quot;<i>any</i>&quot; meaning that any number of members of the group may be performed.
+		Each sub-action is associated with a trigger conveying the named event, which reflexes
+		it.</p>
+	<p>Artifacts implementing this example: </p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Laboratory compendium</td>
+				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-lab-compendium-header.html"
+						>example-lab-compendium-header</a></td>
+			</tr>
+			<tr>
+				<td>Torch super-panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-torch-serum.html"
+						>example-lab-service-torch-serum</a></td>
+			</tr>
+			<tr>
+				<td>Toxoplasma Ab panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"
+					>example-lab-service-toxoplasma-serum</a></td>
+			</tr>
+			<tr>
+				<td>Rubella IgM panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-rubella-serum.html"
+					>example-lab-service-rubella-serum</a></td>
+			</tr>
+			<tr>
+				<td>Cytomegalovirus IgM panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-cmv-serum.html"
+					>example-lab-service-cmv-serum</a></td>
+			</tr>
+			<tr>
+				<td>Herpes simplex virus 1 &amp; 2 IgM panel - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-hsv-serum.html"
+					>example-lab-service-hsv-serum</a></td>
+			</tr>
+			<tr>
+				<td>Herpes simplex virus 1 IgM Titer - as orderable test</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-hsvt1-serum.html"
+					>example-lab-service-hsvt1-serum</a></td>
+			</tr>
+			<tr>
+				<td>Herpes simplex virus 2 IgM Titer - as orderable test</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-hsvt2-serum.html"
+					>example-lab-service-hsvt2-serum</a></td>
+			</tr>
+			<tr>
+				<td>3 mL serum specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+					>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"
+					>example-specimen-3ml-serum</a></td>
+			</tr>
+			<tr>
+				<td>2 mL serum specimen</td>
+				<td><a href="http://hl7.org/fhir/specimendefinition.html"
+					>SpecimenDefinition</a></td>
+				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
+					>LabSpecimenDefinition</a></td>
+				<td><a href="SpecimenDefinition-example-specimen-2ml-serum.html"
+					>example-specimen-2ml-serum</a></td>
+			</tr>
+			<tr>
+				<td>Toxoplasma Ab - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+						>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-toxoplasma.html"
+					>example-lab-procedure-toxoplasma</a></td>
+			</tr>
+			<tr>
+				<td>Rubella IgM - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+					>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-rubella.html"
+					>example-lab-procedure-rubella</a></td>
+			</tr>
+			<tr>
+				<td>CMV IgM - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+					>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-cmv.html"
+					>example-lab-procedure-cmv</a></td>
+			</tr>
+			<tr>
+				<td>HSV 1 &amp; 2 IgM - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+					>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-hsv.html"
+					>example-lab-procedure-hsv</a></td>
+			</tr>
+			<tr>
+				<td>HSV 1 IgM Titer - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+					>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-hsvt1.html"
+					>example-lab-procedure-hsvt1</a></td>
+			</tr>
+			<tr>
+				<td>HSV 2 IgM Titer - operational procedure</td>
+				<td><a href="http://hl7.org/fhir/activitydefinition.html"
+					>ActivityDefinition</a></td>
+				<td><a href="StructureDefinition-LabProcedureDefinition.html"
+					>LabProcedureDefinition</a></td>
+				<td><a href="ActivityDefinition-example-lab-procedure-hsvt2.html"
+					>example-lab-procedure-hsvt2</a></td>
+			</tr>
+			<tr>
+				<td>Toxoplasma IgG test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+						>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+						>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-toxoigg.html"
+					>example-observation-toxoigg</a></td>
+			</tr>
+			<tr>
+				<td>Toxoplasma IgM test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-toxoigm.html"
+					>example-observation-toxoigm</a></td>
+			</tr>
+			<tr>
+				<td>Toxoplasma Antibody interpretation</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-toxoint.html"
+					>example-observation-toxoint</a></td>
+			</tr>
+			<tr>
+				<td>Rubella IgM test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-rubigm.html"
+					>example-observation-rubigm</a></td>
+			</tr>
+			<tr>
+				<td>CMV IgM test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-cmvigm.html"
+					>example-observation-cmvigm</a></td>
+			</tr>
+			<tr>
+				<td>HSV 1 IgM presence test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-hsv1igmp.html"
+					>example-observation-hsv1igmp</a></td>
+			</tr>
+			<tr>
+				<td>HSV 2 IgM presence test result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-hsv2igmp.html"
+					>example-observation-hsv2igmp</a></td>
+			</tr>
+			<tr>
+				<td>HSV 1 IgM titer result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-hsv1igmt.html"
+					>example-observation-hsv1igmt</a></td>
+			</tr>
+			<tr>
+				<td>HSV 2 IgM titer result</td>
+				<td><a href="http://hl7.org/fhir/observationdefinition.html"
+					>ObservationDefinition</a></td>
+				<td><a href="StructureDefinition-LabObservationDefinition.html"
+					>LabObservationDefinition</a></td>
+				<td><a href="ObservationDefinition-example-observation-hsv2igmt.html"
+					>example-observation-hsv2igmt</a></td>
 			</tr>
 		</tbody>
 	</table>

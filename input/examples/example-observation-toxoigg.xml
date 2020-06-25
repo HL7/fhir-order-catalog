@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/observationdefinition.xsd">
+    <id value="example-observation-toxoigg"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p>Toxoplasma IgM Ab result</p>
+        </div>
+    </text>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8039-0"/>
+            <display value="Toxoplasma gondii IgG Ab [Units/volume] in Serum"/>
+        </coding>
+    </code>
+    <permittedDataType value="Quantity"/>
+    <multipleResultsAllowed value="false"/>
+     <quantitativeDetails>
+        <unit>
+            <coding>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="[arb'U]/mL"/>
+            </coding>
+        </unit>
+     </quantitativeDetails>
+</ObservationDefinition>

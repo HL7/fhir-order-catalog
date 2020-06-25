@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/plandefinition.xsd"> 
+    <id value="example-lab-service-hsv-serum"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+            <p>Panel laboratory service - serum HSV 1 &amp; 2 IgM screen panel + reflex titer</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
+        <valueReference>
+            <reference value="Composition/example-lab-compendium-header"/>
+        </valueReference>
+    </extension>
+    <name value="HVS1IgMtiter"/>
+    <title value="laboratory service - serum HSV 1 &amp; 2 IgM on serum">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+                <valueCode value="fr-FR"/>
+            </extension>
+            <extension url="content">
+                <valueString value="IgM HSV 1 &amp; 2 sur sérum"/>
+            </extension>
+        </extension>
+    </title>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
+            <code value="panel"/>
+            <display value="collection of tests and panels performed on one or more in vitro biologic specimens"/>
+        </coding>
+    </type>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-05T20:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <description value="serum HSV 1 IgM titer on serum specimen, can be ordered standalone, or triggered as reflex by the IgM screen test"/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="task"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="LABOE"/>
+                <display value="laboratory test order entry task"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165994006"/>
+            <display value="Sample serology"/>
+        </coding>
+    </topic>
+    <action>
+        <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
+            <extension url="ExclusiveGroup">
+                <extension url="Material">
+                    <valueReference>
+                        <reference value="SpecimenDefinition/example-specimen-2ml-serum"/>
+                    </valueReference> 
+                </extension>
+            </extension>
+        </extension>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="90229-6"/>
+                <display value="Herpes simplex virus 1 and 2 Ab.IgG and IgM panel - Serum or Plasma"/>
+            </coding>
+        </code>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="any"/>
+        <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsv"/>
+        <action>
+            <trigger>
+                <type value="named-event"/>
+                <name value="HSV 1 IgM screen positive"/>
+            </trigger>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt1"/>
+        </action>
+        <action>
+            <trigger>
+                <type value="named-event"/>
+                <name value="HSV 2 IgM screen positive"/>
+            </trigger>
+            <definitionCanonical value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt2"/>
+        </action>
+    </action>
+</PlanDefinition>

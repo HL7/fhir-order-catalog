@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
+    <id value="example-lab-procedure-hsvt2"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+            <p>HSV 1 &amp; 2 IgM - laboratory procedure</p>
+        </div>
+    </text>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt2"/>
+    <name value="HSVT2Procedure"/>
+    <title value="HSV 2 IgM titer procedure"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-02-19T14:00:00+02:00"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"></name>
+        <telecom>
+            <system value="other"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="IgM titer for HSV 2"/>
+    <effectivePeriod>
+        <start value="2020-04-01"/>
+        <end value="2022-12-25"/>
+    </effectivePeriod>
+    <topic>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165994006"/>
+            <display value="Sample serology"/>
+        </coding>
+    </topic>
+    <kind value="ServiceRequest"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="26927-4"/>
+            <display value="Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence"/>
+        </coding>
+    </code>
+    <observationResultRequirement>
+        <reference value="ObservationDefinition/example-observation-hsv2igmt"/>
+    </observationResultRequirement>
+</ActivityDefinition>
