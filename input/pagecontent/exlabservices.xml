@@ -620,7 +620,7 @@
 	<br/>
 	<p>The Torch laboratory service is of type &quot;<i>panel</i>&quot;. </p>
 	<p>All directly embedded panels and tests are referenced as related artifacts:
-		PlanDefinition.relatedArtifact:Includes (composed-of).</p>
+		PlanDefinition.relatedArtifact:Includes (type = composed-of).</p>
 	<p>Reflex tests are represented as sub-actions grouped in a logical group with behavior
 			&quot;<i>any</i>&quot; meaning that any number of members of the group may be performed.
 		Each sub-action is associated with a trigger conveying the named event, which reflexes

@@ -44,11 +44,12 @@
     references a single ActivityDefinition. </p>
   <p>In some cases the laboratory service (panel or super panel) embeds other services (panels
     and/or tests), which are already described in the catalog as standalone services (orderable or
-    not). These nested services have their own instance of PlanDefinition referenced by the instance
-    of the embedding service from PlanDefinition.relatedArtifact (composed-of). And in addition,
-    each of the embedded tests or panels is described as a sub-action
+    not). These nested services have their own instance of PlanDefinition referenced from
+    PlanDefinition.relatedArtifact (type = composed-of) of the instance of the embedding service.
+    And in addition, each of the embedded tests or panels is described as a sub-action
     (PlanDefinition.action.action), which references an ActivityDefinition representing the nexted
-    laboratory procedure with its own observations, which will be added to those of the embedding service.</p>
+    laboratory procedure with its own observations, which will be added to those of the embedding
+    service.</p>
   <p>When a PlanDefinition of a labboratory service has multiple sub-actions, some of these actions
     may all apply (logical AND), while others may be alternative (choose exactly one from a choice
     group). The sub-actions (and possibly sub-sub-actions) are assembled in logical groups, with a
