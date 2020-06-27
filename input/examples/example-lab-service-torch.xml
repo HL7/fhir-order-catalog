@@ -8,9 +8,29 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Panel laboratory service - Torch serology panel, Acute, on serum</p>
-            <p>Includes Toxoplasma gondii quantitative IgG and IgM, Rubella quantitative IgM, CMV quantitative IgM, HSV 1 &amp; 2 IgM screen plus reflex titer</p>
-        </div>
+            <p><b>Laboratory service: TORCH serology super-panel, acute, on serum</b></p>
+             <p><b>id: example-lab-service-torch</b></p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
+            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"></a> Composition/example-lab-compendium-header</p>
+            <p><b>name:</b> TORCH</p>
+             <p><b>type:</b> panel</p>
+            <p><b>status:</b> draft</p>
+            <p><b>use contexts:</b></p>
+            <ul>
+                <li><b>task:</b> LABOE (laboratory test order entry task)</li>
+            </ul>
+            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>related artifacts:</b></p> 
+            <ul>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"></a> Toxoplasma gondii quantitative IgG and IgM</li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-rubella-serum.html"></a> Rubella quantitative IgM</li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"></a> CMV quantitative IgM</li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"></a> Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</li>
+                <li>,</li>
+                <li>,</li>
+                <li> </li>
+            </ul>  
+        </div>            
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
         <valueReference>
@@ -18,8 +38,8 @@
         </valueReference>
     </extension>
     <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-torch"/>
-    <name value="Torch"/>
-    <title value="laboratory service - Torch panel on serum"/>
+    <name value="TORCH"/>
+    <title value="laboratory service - TORCH super-panel on serum"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
@@ -28,7 +48,7 @@
         </coding>
     </type>
     <status value="draft"/>
-    <experimental value="true"/>
+    <experimental value="false"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
     <description value="Torch serology panel on seum - includes Toxoplasma, Rubella, CMV, HSV"/>
@@ -62,11 +82,11 @@
     </relatedArtifact>
     <relatedArtifact>
         <type value="composed-of"/>
-        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-cmv-serum"/>
     </relatedArtifact>
     <relatedArtifact>
         <type value="composed-of"/>
-        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-cmv-serum"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
     </relatedArtifact>
     <action>
         <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
