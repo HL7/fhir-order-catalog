@@ -24,7 +24,7 @@
                 <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"> PlanDefinition CMV quantitative IgM</a> </li>
                 <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"> PlanDefinition Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</a></li>
             </ul>
-            <table>
+            <table class="grid">
                 <tbody>
                     <tr><td><b>action:</b></td><td>TORCH panel, Acute</td><td/><td/><td/><td/></tr>
                     <tr><td/><td><b>:extension:SpecimenRequested:</b></td><td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"></a> serum 3 mL</td><td/><td/><td/></tr>

@@ -20,13 +20,10 @@
       href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a>, which represents either a
     test (type=test) or a panel (type=panel). A panel is a set of tests and/or panels. </p>
   <p>At order entry time the computerized physician order entry applies the PlanDefinition to the
-    current patient context, producing, in case FHIR is used for placing orders, a <a
-      href="http://hl7.org/fhir/servicerequest.html">ServiceRequest</a> resource to convey the order
-    for the laboratory service, or in case HL7 v2 is used, feeding a v2 laboratory order message
-    (OML) for the same purpose. </p>
-  <p>The transformation from PlanDefinition to ServiceReques may be carried by the <a
-      href="http://hl7.org/fhir/plandefinition-operation-apply.html">$apply operation of
-      PlanDefinition</a>. </p>
+    current patient context, producing one or more <a href="http://hl7.org/fhir/servicerequest.html"
+      >ServiceRequest</a> resources to convey the order for the laboratory service in case FHIR is
+    used for placing orders, or feeding a v2 laboratory order message (OML) in case HL7 v2 is used
+    for the same purpose. </p>
   <p>The PlanDefinition conveys the general properties of the item: identification, names and
     codings, orderability, applicability, jurisdictions, billing, status, possible replacement by
     another item, gender or species restrictions, goals, bibliographic references and
@@ -61,9 +58,9 @@
     selection-behavior expressing which logic applies:</p>
   <ul>
     <li><b>all:</b> all sub-actions of the group are taken</li>
-    <li><b>exactly-one:</b> one and only one sub-action of the group is taken</li>
-    <li><b>anu:</b> any number of reflex sub-actions of the group is taken, depending on which
-      associated trigger comes true.</li>
+    <li><b>exactly-one:</b> one and only one sub-action of the group is taken (choice)</li>
+    <li><b>any:</b> any number of reflex sub-actions of the group is taken, depending on which
+      trigger associated with each comes true.</li>
   </ul>
   <p> This nesting of actions allows to build trees of laboratory services, reflecting the reality
     of some complex diagnostic panels. (e.g. <a href="https://loinc.org/49660-4/ LOINC 49660-4">
