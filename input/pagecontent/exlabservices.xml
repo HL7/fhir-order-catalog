@@ -599,8 +599,8 @@
 		</tbody>
 	</table>
 	<a name="LabE7"> </a>
-	<h3>E7: Torch super-panel</h3>
-	<p> This example illustrates the representation of a super panel embedding two single tests
+	<h3>E7: TORCH super-panel</h3>
+	<p> This example illustrates the representation of a super-panel embedding two single tests
 		orderable individually and two sub-panels also orderable individually, one of which embeds
 		two reflex tests (also orderable themselves).</p>
 	<p> The 2 figures below show the business content of the HSV sub-panel having the two reflex tests, and then its FHIR resource representation. </p>
@@ -609,7 +609,7 @@
 	<img src="LabExampleE7TechnicalPart1.png" alt="Example E7 - FHIR implementation (part 1)"
 		width="600px"/>
 	<br/>
-	<p> The 2 figures below show the Torch super-panel, which embeds the HSV
+	<p> The 2 figures below show the TORCH super-panel, which embeds the HSV
 		sub-panel above. Business content, and then FHIR resource representation:</p>
 	<img src="LabExampleE7BusinessPart2.png" alt="Example E7 - business content (part 2)"
 		width="600px"/>
@@ -618,7 +618,7 @@
 	<img src="LabExampleE7TechnicalPart2B.png" alt="Example E7 - FHIR implementation (part 2b)"
 		width="700px"/>
 	<br/>
-	<p>The Torch laboratory service is of type &quot;<i>panel</i>&quot;. </p>
+	<p>The TORCH laboratory service is of type &quot;<i>panel</i>&quot;. </p>
 	<p>All directly embedded panels and tests are referenced as related artifacts:
 		PlanDefinition.relatedArtifact:Includes (type = composed-of).</p>
 	<p>Reflex tests are represented as sub-actions grouped in a logical group with behavior
@@ -644,7 +644,7 @@
 						>example-lab-compendium-header</a></td>
 			</tr>
 			<tr>
-				<td>Torch super-panel - orderable service</td>
+				<td>TORCH super-panel - orderable service</td>
 				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>

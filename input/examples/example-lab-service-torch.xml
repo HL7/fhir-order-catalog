@@ -9,27 +9,29 @@
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
             <p><b>Laboratory service: TORCH serology super-panel, acute, on serum</b></p>
-             <p><b>id: example-lab-service-torch</b></p>
+            <p><b>id:</b> example-lab-service-torch</p>
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
-            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"></a> Composition/example-lab-compendium-header</p>
+            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
             <p><b>name:</b> TORCH</p>
              <p><b>type:</b> panel</p>
             <p><b>status:</b> draft</p>
-            <p><b>use contexts:</b></p>
-            <ul>
-                <li><b>task:</b> LABOE (laboratory test order entry task)</li>
-            </ul>
+            <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
             <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
             <p><b>related artifacts:</b></p> 
             <ul>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"></a> Toxoplasma gondii quantitative IgG and IgM</li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-rubella-serum.html"></a> Rubella quantitative IgM</li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"></a> CMV quantitative IgM</li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"></a> Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</li>
-                <li>,</li>
-                <li>,</li>
-                <li> </li>
-            </ul>  
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"> Toxoplasma gondii quantitative IgG and IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-rubella-serum.html"> Rubella quantitative IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"> CMV quantitative IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"> Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</a></li>
+            </ul>
+            <table>
+                <tbody>
+                    <tr><td><b>action:</b></td><td>TORCH panel, Acute</td><td/></tr>
+                    <tr><td/><td><b>:extension:SpecimenRequested:</b></td><td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"></a> serum 3 mL</td></tr>
+                </tbody>
+            </table>
+            <p><b>action:</b></p>
+            <p> <b></b></p>
         </div>            
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -99,7 +101,7 @@
             </extension>
         </extension>
         <code>
-            <text value="Torch panel, Acute"/>
+            <text value="TORCH panel, Acute"/>
         </code>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>
