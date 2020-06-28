@@ -19,20 +19,22 @@
   <p>An item of the catalog is a laboratory service instantiated as a <a
       href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a>, which represents either a
     test (type=test) or a panel (type=panel). A panel is a set of tests and/or panels. </p>
-  <p>At order entry time the computerized physician order entry, will apply the PlanDefinition to
-    the current patient context, producing a <a href="http://hl7.org/fhir/servicerequest.html"
-      >ServiceRequest</a> resource to convey the order for the laboratory service. This
-    transformation may be carried by the <a
+  <p>At order entry time the computerized physician order entry applies the PlanDefinition to the
+    current patient context, producing, in case FHIR is used for placing orders, a <a
+      href="http://hl7.org/fhir/servicerequest.html">ServiceRequest</a> resource to convey the order
+    for the laboratory service, or in case HL7 v2 is used, feeding a v2 laboratory order message
+    (OML) for the same purpose. </p>
+  <p>The transformation from PlanDefinition to ServiceReques may be carried by the <a
       href="http://hl7.org/fhir/plandefinition-operation-apply.html">$apply operation of
       PlanDefinition</a>. </p>
-  <p>This PlanDefinition conveys the general properties of the item: identification, names and
+  <p>The PlanDefinition conveys the general properties of the item: identification, names and
     codings, orderability, applicability, jurisdictions, billing, status, possible replacement by
-    another item, gender or species restrictions, goals, bibliographic references, citations and
+    another item, gender or species restrictions, goals, bibliographic references and
     justifications, expected input documents (such as patient consent for genetic testing).</p>
   <p>The PlanDefinition contains a single occurrence of the element PlanDefinition.action (the top
     level action). </p>
   <p>PlanDefinition.action:SpecimenRequested (0..*) conveys the requirements for biological
-    specimens that are needed as input by the laboratory to perform the laboratory service.</p>
+    specimens needed as input by the laboratory service.</p>
   <p>PlanDefinition.action.definitionCanonical references one instance of <a
       href="http://hl7.org/fhir/activitydefinition.html">ActivityDefinition</a> representing the
     main operational procedure performed to carry this laboratory service. ActivityDefiniton is
@@ -42,18 +44,27 @@
     the procedure. </p>
   <p>In most cases the PlanDefinition.action has no sub-action, and therefore PlanDefinition
     references a single ActivityDefinition. </p>
-  <p>In some cases the laboratory service (panel or super panel) embeds other services (panels
+  <p>In some cases the laboratory service (panel or super-panel) embeds other services (panels
     and/or tests), which are already described in the catalog as standalone services (orderable or
-    not). These nested services have their own instance of PlanDefinition referenced from
-    PlanDefinition.relatedArtifact (type = composed-of) of the instance of the embedding service.
-    And in addition, each of the embedded tests or panels is described as a sub-action
-    (PlanDefinition.action.action), which references an ActivityDefinition representing the nexted
+    not). These nested services have, each, their own instance of PlanDefinition referenced from
+    PlanDefinition.relatedArtifact (type = composed-of) of the embedding service. And in addition,
+    each of the embedded tests or panels is described as a sub-action
+    (PlanDefinition.action.action), which references an ActivityDefinition representing the nested
     laboratory procedure with its own observations, which will be added to those of the embedding
     service.</p>
   <p>When a PlanDefinition of a labboratory service has multiple sub-actions, some of these actions
     may all apply (logical AND), while others may be alternative (choose exactly one from a choice
-    group). The sub-actions (and possibly sub-sub-actions) are assembled in logical groups, with a
-    selection behavior expressing which logic applies.</p>
+    group). </p>
+  <p>Some of the sub-actions may also correspond to reflex procedures, triggered by a particular
+    event or result in the parent procedure.</p>
+  <p>The sub-actions (and possibly sub-sub-actions) are assembled in logical groups, with a
+    selection-behavior expressing which logic applies:</p>
+  <ul>
+    <li><b>all:</b> all sub-actions of the group are taken</li>
+    <li><b>exactly-one:</b> one and only one sub-action of the group is taken</li>
+    <li><b>anu:</b> any number of reflex sub-actions of the group is taken, depending on which
+      associated trigger comes true.</li>
+  </ul>
   <p> This nesting of actions allows to build trees of laboratory services, reflecting the reality
     of some complex diagnostic panels. (e.g. <a href="https://loinc.org/49660-4/ LOINC 49660-4">
       LOINC's HIV susceptibility panel by Genotype method</a> nesting 3 levels of panels and

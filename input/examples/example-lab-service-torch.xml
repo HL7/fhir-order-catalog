@@ -8,7 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p><b>Laboratory service: TORCH serology super-panel, acute, on serum</b></p>
+            <p><b>Laboratory service title</b>: TORCH serology super-panel, acute, on serum</p>
             <p><b>id:</b> example-lab-service-torch</p>
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
             <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
@@ -19,18 +19,34 @@
             <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
             <p><b>related artifacts:</b></p> 
             <ul>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"> Toxoplasma gondii quantitative IgG and IgM</a> </li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-rubella-serum.html"> Rubella quantitative IgM</a> </li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"> CMV quantitative IgM</a> </li>
-                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"> Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</a></li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"> PlanDefinition Toxoplasma gondii quantitative IgG and IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-rubella-serum.html"> PlanDefinition Rubella quantitative IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-cmv-serum.html"> PlanDefinition CMV quantitative IgM</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsv-serum.html"> PlanDefinition Human herpes simplex type 1 &amp; 2 IgM screening + reflex titer for each positive screening</a></li>
             </ul>
             <table>
                 <tbody>
-                    <tr><td><b>action:</b></td><td>TORCH panel, Acute</td><td/></tr>
-                    <tr><td/><td><b>:extension:SpecimenRequested:</b></td><td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"></a> serum 3 mL</td></tr>
+                    <tr><td><b>action:</b></td><td>TORCH panel, Acute</td><td/><td/><td/><td/></tr>
+                    <tr><td/><td><b>:extension:SpecimenRequested:</b></td><td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"></a> serum 3 mL</td><td/><td/><td/></tr>
+                    <tr><td/><td><b>code:</b></td><td> TORCH panel, Acute</td><td/><td/><td/></tr>
+                    <tr><td/><td><b>groupingBehavior</b></td><td> logical-group</td><td/><td/><td/></tr>
+                    <tr><td/><td><b>selectionBehavior</b></td><td> all</td><td/><td/><td/></tr>
+                    <tr><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-toxoplasma.html"> ActivityDefinition-example-lab-procedure-toxoplasma</a></td><td/><td/><td/></tr>
+                    <tr><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-rubella.html"> ActivityDefinition-example-lab-procedure-rubella</a></td><td/><td/><td/></tr>
+                    <tr><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-cmv.html"> ActivityDefinition-example-lab-procedure-cmv</a></td><td/><td/><td/></tr>
+                    <tr><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-hsv.html"> ActivityDefinition-example-lab-procedure-hsv</a></td><td/><td/><td/></tr>
+                    <tr><td/><td/><td><b>groupingBehavior</b></td><td> logical-group</td></tr>
+                    <tr><td/><td/><td><b>selectionBehavior</b></td><td> any</td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-hsvt1.html"> ActivityDefinition-example-lab-procedure-hsvt1</a></td><td/></tr>
+                    <tr><td/><td/><td/><td><b>trigger:</b></td><td/><td/></tr>
+                    <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td></tr>
+                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 1 IgM screen positive</td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td> <a href="ActivityDefinition-example-lab-procedure-hsvt2.html"> ActivityDefinition-example-lab-procedure-hsvt2</a></td><td/></tr>
+                    <tr><td/><td/><td/><td><b>trigger:</b></td><td/><td/></tr>
+                    <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td><td/></tr>
+                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 1 IgM screen positive</td><td/></tr>
                 </tbody>
             </table>
-            <p><b>action:</b></p>
             <p> <b></b></p>
         </div>            
     </text>
