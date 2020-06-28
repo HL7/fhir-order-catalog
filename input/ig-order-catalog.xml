@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200627T1915+0200"/>
+  <version value="20200628T1930+0200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -794,8 +794,8 @@
       <reference>
         <reference value="PlanDefinition/example-lab-service-torch"/>
       </reference>
-      <name value="Lab service Torch panel"/>
-      <description value="Lab E7 - panel laboratory service - serum Torch panel"/>
+      <name value="Lab service TORCH panel"/>
+      <description value="Lab E7 - panel laboratory service - serum TORCH panel"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>

@@ -8,13 +8,22 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>A clinical laboratory service compendium</p>
+            <p><b>Laboratory compendium title</b>: The good testing laboratory - Directory of Diagnostic Services</p>
+            <p><b>id:</b> example-lab-compendium-header</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader</p>
+            <p><b>status:</b> preliminary</p>
+            <p><b>type:</b> catalog</p>
+            <p><b>category:</b> protocol</p>
+            <p><b>date published:</b> June 8, 2020</p>
+            <p><b>valid from:</b> 2020-08-01 <b>to:</b> 2021-12-31</p>
+            <p><b>author:</b> <a href="Organization-example-lab-organization.html"> The good testing laboratory</a></p>
+            <p><b>custodian:</b> <a href="Organization-example-lab-organization.html"> The good testing laboratory</a></p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod">
         <valuePeriod>
-            <start value="2020-09-01"/>
-            <end value="2020-12-31"/>
+            <start value="2020-08-01"/>
+            <end value="2021-12-31"/>
         </valuePeriod>
     </extension>
     <identifier>
@@ -36,11 +45,11 @@
             <code value="protocol"/>
         </coding>
     </category>
-    <date value="2020-01-17T17:00:00+02:00"/>
+    <date value="2020-06-01T17:00:00+02:00"/>
     <author>
         <reference value="Organization/example-lab-organization"/>     
     </author>
-    <title value="Laboratory ZZZ - Directory of Diagnostic Services"/>
+    <title value="The good testing laboratory - Directory of Diagnostic Services"/>
     <custodian>
         <reference value="Organization/example-lab-organization"/>   
     </custodian>
