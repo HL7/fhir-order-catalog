@@ -8,7 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p><b>Laboratory service title</b>: TORCH serology super-panel, acute, on serum</p>
+            <p><b>Laboratory service title</b>: TORCH (Toxoplasma, Rubella, Cytomegalovirus, Herpes simplex) serology super-panel, acute, on serum</p>
             <p><b>id:</b> example-lab-service-torch</p>
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
             <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
@@ -57,7 +57,7 @@
     </extension>
     <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-torch"/>
     <name value="TORCH"/>
-    <title value="laboratory service - TORCH super-panel on serum"/>
+    <title value="TORCH (Toxoplasma, Rubella, Cytomegalovirus, Herpes simplex) serology super-panel, acute, on serum"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
