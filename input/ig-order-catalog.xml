@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="20200630T0720+0200"/>
+  <version value="20200702T1000+0200"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="draft"/>
@@ -15,7 +15,7 @@
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="other"/>
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+      <value value="http://hl7.org/Special/committees/orders/index.cfm"/>
     </telecom>
   </contact>
   <description

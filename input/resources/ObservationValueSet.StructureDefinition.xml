@@ -9,7 +9,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="The ObservationValueSet profile constrains the ValueSet resource to make it usable as a value set referenced by either of the four elements validCodedValueSet, normalCodedValueSet, abnormalCodedValueSet and criticalCodedValueSet of the ObservationDefinition resource." />

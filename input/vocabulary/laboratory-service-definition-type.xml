@@ -46,7 +46,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This CodeSystem resource provides the concepts that enable to characterize laboratory diagnostic services described as instances of PlanDefinition, in the PlanDefinition.type element" />

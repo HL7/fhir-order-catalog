@@ -10,7 +10,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This extension to PlanDefinition conveys a billing code associated with the service represented by the PlanDefinition instance. It may also reference the billing rules associated with this code as a ChargeItemDefinition" />

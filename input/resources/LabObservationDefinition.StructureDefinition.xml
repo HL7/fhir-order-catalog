@@ -9,7 +9,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This profile constrains the base resource ObservationDefinition when referenced by ActivityDefinition.observationResultRequirement in the context of a catalog of laboratory services. Such a resource specifies the form of an output observation produced by a laboratory service." />

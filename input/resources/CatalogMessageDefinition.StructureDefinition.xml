@@ -10,6 +10,7 @@
   <contact>
     <telecom>
       <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This profile constrains MessageDefinition in the context of messaging the content of catalogs, in conformance with the FHIR messaging framework" />

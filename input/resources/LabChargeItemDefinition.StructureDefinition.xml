@@ -10,7 +10,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This profile constrains the usage of ChargeItemDefinition to represent the rules and other properties attached to a billing code used by a laboratory service" />

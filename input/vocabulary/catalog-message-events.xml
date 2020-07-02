@@ -23,7 +23,7 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
   <description value="This CodeSystem resource provides the concepts representing message event codes to be used when exchanging the content of catalogs in push mode, leveraging the FHIR messaging framework."/>
