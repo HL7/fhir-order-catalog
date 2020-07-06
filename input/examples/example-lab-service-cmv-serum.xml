@@ -17,7 +17,7 @@
             <p><b>type:</b> test</p>
             <p><b>status:</b> draft, experimental</p>
             <p><b>publisher:</b> HL7 International </p>
-            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm">http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
             <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
             <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
             <table class="grid">

@@ -16,7 +16,7 @@
             <p><b>description:</b> Serology IgM for HSV</p>
             <p><b>status:</b> draft, experimental</p>
             <p><b>publisher:</b> HL7 International </p>
-            <p><b>contact:</b> HL7 Orders and Observations Work Group (url: http://www.hl7.org/Special/committees/orders/index.cfm)</p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm">http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
             <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
             <p><b>kind:</b> ServiceRequest</p>
             <p><b>code:</b> LOINC: 90229-6 |Rubella virus IgM Ab [Units/volume] in Serum by Immunoassay|</p>
