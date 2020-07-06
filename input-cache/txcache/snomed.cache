@@ -264,8 +264,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:95dceddc-3402-49cf-98e3-593221527ad4",
-    "timestamp" : "2020-06-25T12:27:16.691Z",
+    "identifier" : "urn:uuid:4a5e2e2f-66ae-4cf5-9dab-c0d2f07c95fa",
+    "timestamp" : "2020-07-06T13:07:15.922Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -5305,8 +5305,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:5119b1e2-d2c2-49ce-b56c-f1ba3610459c",
-    "timestamp" : "2020-06-25T12:28:25.394Z",
+    "identifier" : "urn:uuid:34aa2b76-2852-46a1-adf5-721276f29e44",
+    "timestamp" : "2020-07-06T13:07:59.809Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -10350,8 +10350,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:5f9bfcda-ece6-453c-9a21-ad46014dff94",
-    "timestamp" : "2020-06-25T12:29:26.456Z",
+    "identifier" : "urn:uuid:303a8687-4bfd-42db-9bed-61e66d389698",
+    "timestamp" : "2020-07-06T13:08:43.337Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15451,8 +15451,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:c654f6ca-d063-4007-8197-921a36064f5e",
-    "timestamp" : "2020-06-25T12:30:32.222Z",
+    "identifier" : "urn:uuid:d888da45-0105-4faf-ad71-90200e140aa6",
+    "timestamp" : "2020-07-06T13:09:30.989Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15598,8 +15598,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:e8e14ad4-3a1a-4dd2-a823-ac4827391841",
-    "timestamp" : "2020-06-25T12:30:33.503Z",
+    "identifier" : "urn:uuid:9b4f6cf5-731c-42a4-9699-3cc9b3dbf6f7",
+    "timestamp" : "2020-07-06T13:09:32.208Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15699,8 +15699,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b2fc8193-cb8b-402b-8c8f-216cdd8d49cb",
-    "timestamp" : "2020-06-25T12:30:34.378Z",
+    "identifier" : "urn:uuid:b652b61d-4ff9-4e34-9634-22879c2b49ae",
+    "timestamp" : "2020-07-06T13:09:33.052Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15880,8 +15880,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:dc0f4b3f-1bbb-49cb-afdf-c5cc7cf93f20",
-    "timestamp" : "2020-06-25T12:30:36.988Z",
+    "identifier" : "urn:uuid:9f117287-8142-49e4-8414-e1c8f0a08657",
+    "timestamp" : "2020-07-06T13:09:34.552Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15926,8 +15926,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:67bd305a-7d62-45eb-866c-c56179fdd3ca",
-    "timestamp" : "2020-06-25T12:30:37.534Z",
+    "identifier" : "urn:uuid:a766a18b-f378-48b0-881e-8bd5175e92aa",
+    "timestamp" : "2020-07-06T13:09:34.927Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -15972,8 +15972,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:a7e1e14a-8b14-4470-87f1-5a65c1765188",
-    "timestamp" : "2020-06-25T12:30:38.019Z",
+    "identifier" : "urn:uuid:2182bea3-b888-4169-b47c-1f85e543534c",
+    "timestamp" : "2020-07-06T13:09:35.317Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -16032,8 +16032,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:a97876bd-a31f-4834-9ef0-0a1f34906bc1",
-    "timestamp" : "2020-06-25T12:30:39.831Z",
+    "identifier" : "urn:uuid:ef10e461-477a-4bfd-96b8-7664fc1c639a",
+    "timestamp" : "2020-07-06T13:09:36.848Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -21044,6 +21044,17 @@ e: {
     }]
   }
 },
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "122555007",
+  "display" : "Venous blood specimen (specimen)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Venous blood specimen",
+  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------

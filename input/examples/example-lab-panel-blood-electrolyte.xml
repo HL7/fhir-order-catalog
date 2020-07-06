@@ -51,6 +51,13 @@
     <experimental value="true"/>
     <date value="2020-02-11T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
     <description value="Potassium measurement on serum specimen"/>
     <useContext>
         <code>

@@ -6,9 +6,24 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="additional"/>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>HSV 1 &amp; 2 IgM - laboratory procedure</p>
+            <p><b>Laboratory procedure title</b>: HSV 1 &amp; 2 IgM procedure</p>
+            <p><b>id:</b> example-lab-procedure-hsv</p>
+            <p><b>canonical url:</b> http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsv</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition</p>
+            <p><b>name:</b> HSVProcedure</p>
+            <p><b>description:</b> Serology IgM for HSV</p>
+            <p><b>status:</b> draft, experimental</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (url: http://www.hl7.org/Special/committees/orders/index.cfm)</p>
+            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>kind:</b> ServiceRequest</p>
+            <p><b>code:</b> LOINC: 90229-6 |Rubella virus IgM Ab [Units/volume] in Serum by Immunoassay|</p>
+            <ul>
+                <li><a href="ObservationDefinition-example-observation-hsv1igmp.html"> ObservationDefinition/example-observation-hsv1igmp</a></li>
+                <li><a href="ObservationDefinition-example-observation-hsv2igmp.html"> ObservationDefinition/example-observation-hsv2igmp</a></li>
+            </ul>
         </div>
     </text>
     <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsv"/>

@@ -8,9 +8,14 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="additional"/>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Toxoplasma Ab interpretation</p>
+            <p><b>Laboratory observation </b>: Toxoplasma gondii Antibody interpretation</p>
+            <p><b>id:</b> example-observation-toxoint</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition</p>
+            <p><b>code:</b> LOINC: 20464-4 |Toxoplasma gondii Ab [Interpretation] in Serum|</p>
+            <p><b>permitted data type:</b> string, CodeableConcept</p>
+            <p><b>multiple results allowed</b></p>
         </div>
     </text>
     <category>
@@ -27,14 +32,7 @@
             <display value="Toxoplasma gondii Ab [Interpretation] in Serum"/>
         </coding>
     </code>
-    <permittedDataType value="Quantity"/>
-    <multipleResultsAllowed value="false"/>
-     <quantitativeDetails>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="[arb'U]/mL"/>
-            </coding>
-        </unit>
-     </quantitativeDetails>
+    <permittedDataType value="string"/>
+    <permittedDataType value="CodeableConcept"/>
+    <multipleResultsAllowed value="true"/>
 </ObservationDefinition>

@@ -8,7 +8,41 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Panel laboratory service - serum HSV 1 &amp; 2 IgM screen panel + reflex titer</p>
+            <p><b>Laboratory service title</b>: laboratory service - HSV 1 &amp; 2 IgM on serum</p>
+            <p><b>id:</b> example-lab-service-hsv-serum</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
+            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
+            <p><b>name:</b> HSVIgMserum</p>
+            <p><b>description:</b> serum HSV 1 &amp; 2 IgM screen test - may trigger titer on each virus when screen is positive</p>
+            <p><b>type:</b> panel</p>
+            <p><b>status:</b> draft</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
+            <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
+            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>related artifacts:</b></p> 
+            <ul>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsvt1-serum.html"> PlanDefinition HSV 1 IgM titer on serum</a> </li>
+                <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsvt2-serum.html"> PlanDefinition HSV 2 IgM titer on serum</a> </li>
+             </ul>
+            <table class="grid">
+                <tbody>
+                    <tr><td><b>action:</b></td><td colspan="5">Herpes simplex virus 1 &amp; 2 IgM</td></tr>
+                    <tr><td/><td><b>extension:SpecimenRequested:</b></td><td colspan="4"><a href="SpecimenDefinition-example-specimen-2ml-serum.html"> SpecimenDefinition/example-specimen-2ml-serum</a></td></tr>
+                    <tr><td/><td><b>code:</b></td><td colspan="4"> LOINC: 90229-6 |Herpes simplex virus 1 and 2 Ab.IgG and IgM panel - Serum or Plasma|</td></tr>
+                    <tr><td/><td><b>definition:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-hsv.html"> ActivityDefinition/example-lab-procedure-rubella</a></td></tr>
+                    <tr><td/><td/><td><b>groupingBehavior</b></td><td colspan="3"> logical-group</td></tr>
+                    <tr><td/><td/><td><b>selectionBehavior</b></td><td colspan="3"> any</td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt1.html"> ActivityDefinition/example-lab-procedure-hsvt1</a></td></tr>
+                    <tr><td/><td/><td/><td colspan="3"><b>trigger (reflex):</b></td></tr>
+                    <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td></tr>
+                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 1 IgM screen positive</td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt2.html"> ActivityDefinition/example-lab-procedure-hsvt2</a></td></tr>
+                    <tr><td/><td/><td/><td colspan="3"><b>trigger (reflex):</b></td></tr>
+                    <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td></tr>
+                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 2 IgM screen positive</td></tr>
+                </tbody>
+            </table>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -17,7 +51,7 @@
         </valueReference>
     </extension>
     <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
-    <name value="HVS1IgMtiter"/>
+    <name value="HSVIgMserum"/>
     <title value="laboratory service - HSV 1 &amp; 2 IgM on serum">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
@@ -39,7 +73,14 @@
     <experimental value="true"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="serum HSV 1 IgM titer on serum specimen, can be ordered standalone, or triggered as reflex by the IgM screen test"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="serum HSV 1 &amp; 2 IgM screen test - may trigger titer on each virus when screen is positive"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>

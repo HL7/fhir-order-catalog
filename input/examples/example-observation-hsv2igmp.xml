@@ -8,9 +8,14 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="additional"/>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Herpes simplex virus 2 IgM Ab presence detection</p>
+            <p><b>Laboratory observation </b>: Herpes simplex virus 2 IgM Ab presence detection</p>
+            <p><b>id:</b> example-observation-hsv2igmp</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition</p>
+            <p><b>code:</b> LOINC: 45210-2 |Herpes simplex virus 2 IgM Ab [Presence] in Serum by Immunofluorescence|</p>
+            <p><b>permitted data type:</b> CodeableConcept</p>
+            <p><b>single result allowed</b></p>
         </div>
     </text>
     <category>

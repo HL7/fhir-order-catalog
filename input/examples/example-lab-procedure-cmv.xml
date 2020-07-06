@@ -6,26 +6,38 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="additional"/>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Cytomegalovirus IgM - laboratory procedure</p>
+            <p><b>Laboratory procedure title</b>: CMV IgM testing procedure</p>
+            <p><b>id:</b> example-lab-procedure-cmv</p>
+            <p><b>canonical url:</b> http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-cmv</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition</p>
+            <p><b>name:</b> CMVProcedure</p>
+            <p><b>description:</b> Serology IgM for cytomegalovirus</p>
+            <p><b>status:</b> draft, experimental</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (url: http://www.hl7.org/Special/committees/orders/index.cfm)</p>
+            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>kind:</b> ServiceRequest</p>
+            <p><b>code:</b> LOINC: 5126-8 |Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay|</p>
+            <p><b>output observation:</b> <a href="ObservationDefinition-example-observation-cmvigm.html"> ObservationDefinition/example-observation-cmvigm</a></p>
         </div>
     </text>
     <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-cmv"/>
     <name value="CMVProcedure"/>
-    <title value="CMV IgM procedure"/>
+    <title value="CMV IgM testing procedure"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-02-19T14:00:00+02:00"/>
     <publisher value="HL7 International"/>
     <contact>
-        <name value="HL7 Orders and Observations Work Group"></name>
+        <name value="HL7 Orders and Observations Work Group"/>
         <telecom>
-            <system value="other"/>
+            <system value="url"/>
             <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
-    <description value="Serology IgM for CMV"/>
+    <description value="Serology IgM for cytomegalovirus"/>
     <effectivePeriod>
         <start value="2020-04-01"/>
         <end value="2022-12-25"/>

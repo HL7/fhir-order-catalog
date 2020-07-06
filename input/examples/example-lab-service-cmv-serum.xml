@@ -6,9 +6,28 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="additional"/>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Simple test laboratory service - CMV - quantification of IgM in serum sample</p>
+            <p><b>Laboratory service title</b>: laboratory service - CMV IgM quantification on serum</p>
+            <p><b>id:</b> example-lab-service-rubella-serum</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
+            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
+            <p><b>name:</b> CMVIgM</p>
+            <p><b>description:</b> cytomegalovirus IgM quantitative on serum</p>
+            <p><b>type:</b> test</p>
+            <p><b>status:</b> draft, experimental</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
+            <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
+            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <table class="grid">
+                <tbody>
+                    <tr><td><b>action:</b></td><td colspan="5"></td></tr>
+                    <tr><td/><td><b>extension:SpecimenRequested:</b></td><td colspan="4"><a href="SpecimenDefinition-example-specimen-2ml-serum.html"> SpecimenDefinition/example-specimen-2ml-serum</a></td></tr>
+                    <tr><td/><td><b>code:</b></td><td colspan="4"> LOINC: 5126-8 |Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay|</td></tr>
+                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-cmv.html"> ActivityDefinition/example-lab-procedure-cmv</a></td></tr>
+                </tbody>
+            </table>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -30,7 +49,14 @@
     <experimental value="true"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="serum CMV IgM quantitative"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="cytomegalovirus IgM quantitative on serum"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>

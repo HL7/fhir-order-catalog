@@ -13,8 +13,11 @@
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
             <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a> </p>
             <p><b>name:</b> TORCH</p>
-             <p><b>type:</b> panel</p>
-            <p><b>status:</b> draft</p>
+            <p><b>description:</b> TORCH serology panel on serum - includes Toxoplasma, Rubella, CMV, HSV</p>
+            <p><b>type:</b> panel</p>
+            <p><b>status:</b> draft, experimental</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
             <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
             <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
             <p><b>related artifacts:</b></p> 
@@ -27,27 +30,26 @@
             <table class="grid">
                 <tbody>
                     <tr><td><b>action:</b></td><td colspan="5">TORCH panel, Acute</td></tr>
-                    <tr><td/><td><b>:extension:SpecimenRequested:</b></td><td colspan="4"><a href="SpecimenDefinition-example-specimen-3ml-serum.html"></a> serum 3 mL</td></tr>
+                    <tr><td/><td><b>extension:SpecimenRequested:</b></td><td colspan="4"><a href="SpecimenDefinition-example-specimen-3ml-serum.html"> SpecimenDefinition/example-specimen-3ml-serum</a></td></tr>
                     <tr><td/><td><b>code:</b></td><td colspan="4"> TORCH panel, Acute</td></tr>
                     <tr><td/><td><b>groupingBehavior</b></td><td colspan="4"> logical-group</td></tr>
                     <tr><td/><td><b>selectionBehavior</b></td><td colspan="4"> all</td></tr>
-                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-toxoplasma.html"> ActivityDefinition-example-lab-procedure-toxoplasma</a></td></tr>
-                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-rubella.html"> ActivityDefinition-example-lab-procedure-rubella</a></td></tr>
-                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-cmv.html"> ActivityDefinition-example-lab-procedure-cmv</a></td></tr>
-                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-hsv.html"> ActivityDefinition-example-lab-procedure-hsv</a></td></tr>
+                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-toxoplasma.html"> ActivityDefinition/example-lab-procedure-toxoplasma</a></td></tr>
+                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-rubella.html"> ActivityDefinition/example-lab-procedure-rubella</a></td></tr>
+                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-cmv.html"> ActivityDefinition/example-lab-procedure-cmv</a></td></tr>
+                    <tr><td/><td><b>action:</b></td><td colspan="4"> <a href="ActivityDefinition-example-lab-procedure-hsv.html"> ActivityDefinition/example-lab-procedure-hsv</a></td></tr>
                     <tr><td/><td/><td><b>groupingBehavior</b></td><td colspan="3"> logical-group</td></tr>
                     <tr><td/><td/><td><b>selectionBehavior</b></td><td colspan="3"> any</td></tr>
-                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt1.html"> ActivityDefinition-example-lab-procedure-hsvt1</a></td></tr>
-                    <tr><td/><td/><td/><td colspan="3"><b>trigger:</b></td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt1.html"> ActivityDefinition/example-lab-procedure-hsvt1</a></td></tr>
+                    <tr><td/><td/><td/><td colspan="3"><b>trigger (reflex):</b></td></tr>
                     <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td></tr>
                     <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 1 IgM screen positive</td></tr>
-                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt2.html"> ActivityDefinition-example-lab-procedure-hsvt2</a></td></tr>
-                    <tr><td/><td/><td/><td colspan="3"><b>trigger:</b></td></tr>
+                    <tr><td/><td/><td><b>action:</b></td><td colspan="3"> <a href="ActivityDefinition-example-lab-procedure-hsvt2.html"> ActivityDefinition/example-lab-procedure-hsvt2</a></td></tr>
+                    <tr><td/><td/><td/><td colspan="3"><b>trigger (reflex):</b></td></tr>
                     <tr><td/><td/><td/><td/><td><b>type:</b></td><td> named-event</td></tr>
-                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 1 IgM screen positive</td></tr>
+                    <tr><td/><td/><td/><td/><td><b>name:</b></td><td> HSV 2 IgM screen positive</td></tr>
                 </tbody>
             </table>
-            <p> <b></b></p>
         </div>            
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -66,10 +68,17 @@
         </coding>
     </type>
     <status value="draft"/>
-    <experimental value="false"/>
+    <experimental value="true"/>
     <date value="2020-02-05T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="TORCH serology panel on seum - includes Toxoplasma, Rubella, CMV, HSV"/>
+    <contact>
+        <name value="HL7 Orders and Observations Work Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <description value="TORCH serology panel on serum - includes Toxoplasma, Rubella, CMV, HSV"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
