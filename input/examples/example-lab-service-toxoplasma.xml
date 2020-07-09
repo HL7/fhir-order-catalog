@@ -6,8 +6,9 @@
     </meta>
     <language value="en-US"/>
     <text>
-        <status value="generated"/>
+        <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+            <p><b>Additional Narrative: </b></p>
             <p><b>Laboratory service title</b>: laboratory service - Toxoplasma gondii Ab panel on serum</p>
             <p><b>id:</b> example-lab-service-toxoplasma-serum</p>
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>

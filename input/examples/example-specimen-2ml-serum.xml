@@ -8,26 +8,7 @@
             value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p><b>id:</b> example-specimen-2ml-serum</p>
-            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition</p>
-            <p><b>type collected:</b> SNOMED CT: 122555007 |Venous blood specimen (specimen)|</p>
-            <p><b>type tested:</b> HL7 table v2-0487: SER |Serum|</p>
-            <p><b>preference:</b> preferred</p>
-            <p><b>minimum volume:</b> 2 mL</p>
-            <p><b>retention time:</b> 24 hour</p>
-            <p><b>rejection criterion:</b> hemolized</p>
-            <table class="grid">
-                <tbody>
-                    <tr><td colspan="2"><b>handling:</b></td></tr>
-                    <tr><td/><td><b>temperature qualifier:</b> room temperature or refrigerated</td></tr>
-                    <tr><td/><td><b>max duration:</b> 4 day</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
+
     <typeCollected>
         <coding>
             <system value="http://snomed.info/sct"/>

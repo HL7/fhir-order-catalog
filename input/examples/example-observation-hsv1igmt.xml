@@ -7,18 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p><b>Laboratory observation </b>: Herpes simplex virus 1 IgM Ab titer</p>
-            <p><b>id:</b> example-observation-hsv1igmt</p>
-            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition</p>
-            <p><b>code:</b> LOINC: 50758-2 |Herpes simplex virus 1 IgM Ab [Titer] in Serum by Immunofluorescence|</p>
-            <p><b>permitted data type:</b> Quantity</p>
-            <p><b>single result allowed</b></p>
-            <p><b>unit</b> UCUM: {titer}</p>
-        </div>
-    </text>
+
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>

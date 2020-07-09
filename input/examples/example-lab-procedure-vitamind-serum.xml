@@ -8,6 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
+            <p><b>Additional Narrative in French language | Vue narrative en français : </b></p>
             <p>Procédure de dosage de la vitamine D dans le sang</p>
             <p>Elément clinique pertinent requis en entrée : ObservationDefinition/example-input-observation-context-for-vitamin-d</p>
             <p>Résultat en sortie : ObservationDefinition/example-observation-vitamin-d</p>

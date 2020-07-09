@@ -8,6 +8,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+            <p><b>Additional Narrative: </b></p>
             <p><b>Laboratory service title</b>: laboratory service - HSV 1 &amp; 2 IgM on serum</p>
             <p><b>id:</b> example-lab-service-hsv-serum</p>
             <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
