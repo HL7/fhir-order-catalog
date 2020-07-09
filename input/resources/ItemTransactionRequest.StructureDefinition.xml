@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionRequest" />
+  <version value="0.0.1" />
+  <name value="ItemTransactionRequest" />
+  <title value="Catalog Item Transaction Request" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This profile constrains the Bundle resource to convey a transaction request creating/updating/deleting/patching items and/or supporting resources in a catalog." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <definition value="This transaction Bundle is to convey the request to create/update/delete/patch content of  a catalog, from the Catalog Owner to the Catalog Custodian" />
+      <comment value="This transaction Bundle is usable with any kind of catalog (laboratory compendium, drug formulary, order sets, devices ...)" />
+      <fixedCode value="transaction" />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <short value="Entry in the bundle - will have a resource and a request" />
+      <definition value="Each entry will contain a resource representing a catalog item or one of the supporting resources of a catalog item.&#xD;&#xA;The resource will be followed by a request instructing the Catalog Custodian what action (create/update/delete/patch) to perform on this resource" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.fullUrl">
+      <path value="Bundle.entry.fullUrl" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.search">
+      <path value="Bundle.entry.search" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry.request">
+      <path value="Bundle.entry.request" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.response">
+      <path value="Bundle.entry.response" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

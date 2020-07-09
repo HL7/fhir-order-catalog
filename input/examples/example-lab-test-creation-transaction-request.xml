@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="example-lab-test-creation-transaction-request"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionRequest"/>
+    </meta>
+    <type value="transaction"/>
+    <entry>
+        <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e001" />
+        <resource>
+            <SpecimenDefinition>
+                <id value="QDX_FMSpec3" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Venous blood specimen collected in evacuated blood collection tube, thrombin/clot activator/gel separator tube (dark yellow cap), to be tested as serum - min. vol. 2 mL</p>
+                    </div>
+                </text>
+                <typeCollected>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="122555007" />
+                        <display value="Venous blood specimen" />
+                    </coding>
+                </typeCollected>
+                <patientPreparation>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="263678003" />
+                        <display value="At rest" />
+                    </coding>
+                </patientPreparation>
+                <timeAspect value="preferrably morning time" />
+                <typeTested>
+                    <type>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="119364003" />
+                            <display value="Serum specimen" />
+                        </coding>
+                    </type>
+                    <preference value="preferred" />
+                    <container>
+                        <type>
+                            <coding>
+                                <system value="http://snomed.info/sct" />
+                                <code value="702281005" />
+                                <display value="Evacuated blood collection tube, thrombin/clot activator/gel separator" />
+                            </coding>
+                        </type>
+                        <cap>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/container-cap" />
+                                <code value="dark-yellow" />
+                                <display value="dark yellow cap" />
+                            </coding>
+                        </cap>
+                        <minimumVolumeQuantity>
+                            <value value="2" />
+                            <unit value="ml" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mL" />
+                        </minimumVolumeQuantity>
+                    </container>
+                    <handling>
+                        <temperatureQualifier>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/handling-condition" />
+                                <code value="room" />
+                                <display value="room temperature" />
+                            </coding>
+                            <text value="Ambient temperature" />
+                        </temperatureQualifier>
+                        <temperatureRange>
+                            <low>
+                                <value value="15" />
+                                <unit value="°C" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="Cel" />
+                            </low>
+                            <high>
+                                <value value="25" />
+                                <unit value="°C" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="Cel" />
+                            </high>
+                        </temperatureRange>
+                        <maxDuration>
+                            <value value="60" />
+                            <unit value="minute" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="min" />
+                        </maxDuration>
+                    </handling>
+                    <handling>
+                        <temperatureQualifier>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/handling-condition" />
+                                <code value="refrigerated" />
+                                <display value="refrigerated" />
+                            </coding>
+                        </temperatureQualifier>
+                        <temperatureRange>
+                            <low>
+                                <value value="2" />
+                                <unit value="°C" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="Cel" />
+                            </low>
+                            <high>
+                                <value value="8" />
+                                <unit value="°C" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="Cel" />
+                            </high>
+                        </temperatureRange>
+                        <maxDuration>
+                            <value value="8" />
+                            <unit value="hour" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="h" />
+                        </maxDuration>
+                    </handling>
+                </typeTested>
+            </SpecimenDefinition>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="SpecimenDefinition/QDX_FMSpec3"/>
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e002"/>
+        <resource>
+            <ObservationDefinition>
+                <id value="QDX_FM90000000"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition" />
+                </meta>
+                <language value="en-US" />
+                <text>
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+                        <p>Laboratory observation: potassium level in blood</p>
+                    </div>
+                </text>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                        <display value="Laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="2823-3" />
+                        <display value="Potassium [Moles/volume] in Serum or Plasma" />
+                    </coding>
+                </code>
+                <permittedDataType value="Quantity" />
+                <permittedDataType value="string" />
+                <multipleResultsAllowed value="false" />
+                <method>
+                    <text value="Ion Selective Electrode (ISE)" />
+                </method>
+                <preferredReportName value="Potassium" />
+                <quantitativeDetails>
+                    <customaryUnit>
+                        <coding>
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="g/L" />
+                        </coding>
+                    </customaryUnit>
+                    <unit>
+                        <coding>
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </coding>
+                    </unit>
+                    <decimalPrecision value="1" />
+                </quantitativeDetails>
+                <qualifiedInterval>
+                    <category value="reference" />
+                    <range>
+                        <low>
+                            <value value="3.8" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </low>
+                        <high>
+                            <value value="5.1" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </high>
+                    </range>
+                    <context>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
+                            <code value="normal" />
+                            <display value="Normal Range" />
+                        </coding>
+                    </context>
+                    <age>
+                        <low>
+                            <value value="2" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="a" />
+                        </low>
+                        <high>
+                            <value value="19" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="a" />
+                        </high>
+                    </age>
+                </qualifiedInterval>
+                <qualifiedInterval>
+                    <category value="reference" />
+                    <range>
+                        <low>
+                            <value value="3.5" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </low>
+                        <high>
+                            <value value="5.3" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </high>
+                    </range>
+                    <context>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
+                            <code value="normal" />
+                            <display value="Normal Range" />
+                        </coding>
+                    </context>
+                    <age>
+                        <low>
+                            <value value="20" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="a" />
+                        </low>
+                    </age>
+                </qualifiedInterval>
+            </ObservationDefinition>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="ObservationDefinition/QDX_FM90000000"/>
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e005"/>
+        <resource>
+            <ActivityDefinition>
+                <id value="QDX_456"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
+                </meta>
+                <language value="en-US" />
+                <text>
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+                        <p>Potassium measurement on blood serum</p>
+                    </div>
+                </text>
+                <url value="http://questdiagnostics.com/ActivityDefinition/QDX_456"/>
+                <identifier>
+                    <use value="official" />
+                    <value value="K_serum_test" />
+                </identifier>
+                <name value="PotassiumSerumMeasurementProcedure" />
+                <title value="Procedure - potassium measurement on in vitro blood serum" />
+                <status value="draft" />
+                <experimental value="true" />
+                <date value="2020-01-24T14:00:00+02:00" />
+                <publisher value="HL7 International" />
+                <contact>
+                    <name value="HL7 Orders and Observations Work Group" />
+                    <telecom>
+                        <system value="other" />
+                        <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+                    </telecom>
+                </contact>
+                <description value="Potassium measurement procedure on in-vitro serum specimen" />
+                <purpose value="This _ActivityDefinition_ specifies the input specimens and observations needed to perform potassium level test on serum, and the output observation.                  It is referenced by any _PlanDefinition_ representing a lab service focusing on this test." />
+                <effectivePeriod>
+                    <start value="2020-04-01" />
+                    <end value="2020-12-25" />
+                </effectivePeriod>
+                <topic>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="166312007" />
+                        <display value="Blood chemistry" />
+                    </coding>
+                </topic>
+                <kind value="ServiceRequest" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="2823-3" />
+                        <display value="Potassium [Moles/volume] in Serum or Plasma" />
+                    </coding>
+                </code>
+                <priority value="routine" />
+                <timingDuration>
+                    <value value="30" />
+                    <unit value="minutes" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="mn" />
+                </timingDuration>
+                <observationResultRequirement>
+                    <reference value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e002" />
+                </observationResultRequirement>
+            </ActivityDefinition>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="ActivityDefinition/QDX_FM456"/>
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e011" />
+        <resource>
+            <PlanDefinition>
+                <id value="QDX_FM456" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
+                </meta>
+                <language value="en-US" />
+                <text>
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+                        <p>Potassium measurement on blood serum</p>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
+                    <valueReference>
+                        <reference value="Composition/example-lab-compendium-header"/>
+                    </valueReference>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://www.ama-assn.org/go/cpt" />
+                            <code value="CPTfakecode" />
+                            <display value="Potassium, serum" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://www.codage.ext.cnamts.fr/codif/nabm" />
+                            <code value="1608" />
+                            <display value="SANG : POTASSIUM (K)" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/BillingSummary">
+                    <extension url="textualSummary">
+                        <valueMarkdown value="no notable particularity for billing" />
+                    </extension>
+                    <extension url="reimbursabilitySummary">
+                        <valueCode value="normal" />
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
+                    <valueString value="Set up: Mon-Sat (Day shift or Night shift), Sun (Day shift); Report available: 1 day" />
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LimitationSummary">
+                    <valueString value="No specific limitation for this test" />
+                </extension>
+                 <name value="PotassiumSerumMeasurement" />
+                <title value="Potassium measurement on in vitro blood serum">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR" />
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Dosage du potassium sérique" />
+                        </extension>
+                    </extension>
+                </title>
+                <type>
+                    <coding>
+                        <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type" />
+                        <code value="test" />
+                        <display value="unitary measurement performed on an in vitro biologic specimen" />
+                    </coding>
+                </type>
+                <status value="draft" />
+                <experimental value="true" />
+                <date value="2020-02-05T20:00:00+02:00" />
+                <publisher value="HL7 International" />
+                <description value="Potassium measurement on serum specimen" />
+                <useContext>
+                    <code>
+                        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+                        <code value="task" /></code>
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+                            <code value="LABOE" />
+                            <display value="laboratory test order entry task" />
+                        </coding>
+                    </valueCodeableConcept>
+                </useContext>
+                <topic>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="18719-5" />
+                        <display value="Chemistry studies (set)" />
+                    </coding>
+                </topic>
+                <topic>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="166312007" />
+                        <display value="Blood chemistry" />
+                    </coding>
+                </topic>
+                <relatedArtifact>
+                    <type value="documentation" />
+                    <citation value="Potassium (symbol K from Latin:kalium) is a key chemical element involved in neuron function and influencing osmotic balance between cells and interstitial fluid. Depletion in potassium levels results in deficient fluid and electrolyte balance in the body as well as various nervous and cardiac dysfunctions. Studies suggest diets high in potassium can reduce the risk of hypertension and possibly stroke. Foods rich in potassium include parsley, dried apricots, potatoes, bananas, avocados, soybeans, and bran, as well as most fruits, vegetables, meat and fish. Overall, clear cases of potassium deficiency are rare in healthy individuals." />
+                    <url value="https://en.wikipedia.org/wiki/Potassium" />
+                </relatedArtifact>
+                <action>
+                    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
+                        <extension url="ExclusiveGroup">
+                            <extension url="Material">
+                                <valueReference>
+                                    <reference value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e001"/>
+                                </valueReference> 
+                            </extension>
+                        </extension>
+                    </extension>
+                    <code>
+                        <coding>
+                            <system value="https://testdirectory.questdiagnostics.com/" />
+                            <code value="733" />
+                            <display value="Potassium, Serum" />
+                        </coding>
+                        <coding>
+                            <system value="http://loinc.org" />
+                            <code value="2823-3" />
+                            <display value="Potassium [Moles/volume] in Serum or Plasma" />
+                        </coding>
+                    </code>
+                    <timingDuration>
+                        <value value="30" />
+                        <unit value="minutes"/>
+                        <system value="http://unitsofmeasure.org" />
+                        <code value="mn" />
+                    </timingDuration>
+                    <definitionCanonical value="http://questdiagnostics.com/ActivityDefinition/QDX_FM456"/>
+                </action>
+            </PlanDefinition>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="PlanDefinition/QDX_FM456"/>
+        </request>
+    </entry>
+</Bundle>

@@ -5,12 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Blood electrolyte procedure on serum or plasma</p>
-        </div>
-    </text>
+
     <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
      <name value="BloodElectrolyteProcedure"/>
     <title value="Procedure - blood electrolyte (serum or plasma)"/>

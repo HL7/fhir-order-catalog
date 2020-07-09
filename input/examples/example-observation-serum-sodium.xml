@@ -9,12 +9,7 @@
         />
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Laboratory observation: sodium level in blood</p>
-        </div>
-    </text>
+
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>

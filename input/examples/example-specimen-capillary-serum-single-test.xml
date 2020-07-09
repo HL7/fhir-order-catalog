@@ -7,12 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>blood serum collected from capillary blood for single test in chemistry</p>
-        </div>
-    </text>
+
     <typeCollected>
         <coding>
             <system value="http://snomed.info/sct"/>

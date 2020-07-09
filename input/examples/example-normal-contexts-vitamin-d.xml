@@ -5,13 +5,7 @@
     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
   </meta>
   <language value="fr-FR"/>
-  <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
-      <p>Liste des contextes ouvrant droit à la facturation et au remboursement de l'examen
-        Dosage de la 25-(OH)-vitamine D (D2 + D3) - (NABM 1139)</p>
-    </div>
-  </text>
+
   <!--
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Availability Time Rule" />

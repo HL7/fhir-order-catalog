@@ -11,6 +11,12 @@
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
             <p>Analyse de biologie médicale : dosage vitamine D dans sérum sanguin</p>
+            <p>Catégorie : laboratoire</p>
+            <p>Identification : 14635-7 |25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique| (http://loinc.org)</p>
+            <p>Types de résultat autorisés : quantitatif, textuel</p>
+            <p>Résultat multiples : non</p>
+            <p>intitulé préféré sur compte rendu : Vitamine D</p>
+            <p>Unité de mesure : pmol/L (http://unitsofmeasure.org)</p>
         </div>
     </text>
     <category>

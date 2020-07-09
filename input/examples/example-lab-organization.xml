@@ -2,12 +2,7 @@
 <Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/organization.xsd"> 
     <id value="example-lab-organization"/>
     <language value="en-US"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>This is the fake laboratory called <i>The Good Testing Laboratory</i></p>
-        </div>
-    </text>
+
     <active value="true"/>
     <name value="The Good Testing Laboratory"></name>
     <telecom>

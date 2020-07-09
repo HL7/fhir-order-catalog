@@ -7,12 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Message definition for messages conveying an update to the receiver's local catalog</p>
-        </div>
-    </text>
+
     <name value="MessageDefinitionUpdate"/>
     <title value="Message definition updating the catalog of message receiver"/>
     <status value="active"/>

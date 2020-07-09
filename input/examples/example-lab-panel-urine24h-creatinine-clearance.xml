@@ -7,14 +7,7 @@
             value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>24H urine creatinine clearance panel</p>
-            <p>This example is a panel assembling a logical AND group of sub-actions, some of which
-                are in a logical XOR sub-group.</p>
-        </div>
-    </text>
+
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
         <valueReference>
             <reference value="Composition/example-lab-compendium-header"/>

@@ -1,15 +1,16 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+  <p>As explained in <a href="http://hl7.org/fhir/exchange-module.html#rest">its Exchange Module,
+  </a> the FHIR standard RESTful API is a general-purpose interface that can be used to push and
+    pull data between systems. Which is appropriate depends on architecture and deployment
+    considerations.</p>
   <p>This page guides the various possibilities of interactions between a <b>catalog custodian</b>
     and a <b>catalog consumer</b>, as well as between a <b>catalog owner</b> and a <b>catalog
       custodian</b> when these two roles happen to be played by two distinct systems. These three
-    roles are defined in <a href="index.html#scope">section <i>Scope and Roles</i> of the Home page of this
-      guide</a>. This guidance is applicable to any kind of catalog (drugs, devices, knowledge
-    artifacts, laboratory services ...)</p>
-  <p>As explained in <a href="http://build.fhir.org/exchange-module.html#rest">its Exchange Module,
-    </a> the FHIR standard RESTful API is a general-purpose interface that can be used to push and
-    pull data between systems. Which is appropriate depends on architecture and deployment
-    considerations.</p>
+    roles are defined in <a href="index.html#scope">section <i>Scope and Roles</i> of the Home page
+      of this guide</a>. This guidance is applicable to any kind of catalog (drugs, devices,
+    knowledge artifacts, laboratory services ...)</p>
+  <br/>
   <a name="SearchAndRetrieveContent"> </a>
   <h3>Search and retrieve content from a catalog (pull mode)</h3>
   <img src="interactionSearchRetievePull.png" alt="Pull interactions by consumer" width="500px"/>
@@ -18,10 +19,10 @@
     architectural choice is the one that minimizes the implementation cost on the consumer side,
     which is by far, the side with the biggest number of stakeholders. In this architecture,
     consumers search through the catalog and pull the content they are interested in using http GET
-    commands, conforming to the FHIR <a href="http://build.fhir.org/http.html#3.1.0">RESTful
-    API</a>. </p>
+    commands, conforming to the FHIR <a href="http://hl7.org/fhir/http.html#3.1.0">RESTful API</a>. </p>
   <p>This most common mode of interaction is further guided for each kind of catalog, in the pages
     of this guide, accessible through the Specification option of the top menu bar.</p>
+  <br/>
   <a name="ImportCatalog"> </a>
   <h3>Import a catalog or a subset of it (pull mode)</h3>
   <img src="interactionImportPull.png" alt="Import interaction by consumer" width="500px"/>
@@ -35,11 +36,10 @@
     catalog.</p>
   <p>Given the fact that catalogs are often cumbersome objects, the server is expected to use the
     paging mechanism to split its response into as many pages as needed, as specified in <a
-      href="http://build.fhir.org/http.html#paging">the FHIR RESTful API</a>.</p>
+      href="http://hl7.org/fhir/http.html#paging">the FHIR RESTful API</a>.</p>
   <p>The catalog consumer may indicate its own maximum limit by providing the <code>_count</code>
     parameter with the maximum number of resources to be returned in a single Bundle page, as
-    explained in <a href="http://build.fhir.org/search.html#count">FHIR Search
-    specification</a>.</p>
+    explained in <a href="http://hl7.org/fhir/search.html#count">FHIR Search specification</a>.</p>
   <p>Except in case of error, the response from the server is a Bundle resource, with:</p>
   <ul>
     <li><code>Bundle.type = searchset</code></li>
@@ -64,15 +64,16 @@
     understands them. The catalog consumer requests the next page using an http <code>GET [url
       associated with the current Bundle.link.relation = next]</code> until the last page is
     reached.</p>
+  <br/>
   <a name="PushInteractions"> </a>
   <h3>Push mode interactions: export and update</h3>
-  <img src="interactionExportPush.png" alt="Export interaction by custodian" width="600px"/>
+  <img src="interactionExportPush.png" alt="Export interaction by custodian" width="560px"/>
   <p>A catalog custodian may have agreed to work in push mode with some of its consumers, for
     instance to support use case <b>Customized catalog shared in push mode</b> depicted in the <a
       href="uclabservices.html">Laboratory services use cases</a> section of this guide. To
     implement such a use case, the messaging paradigm is chosen as it is the least intrusive on the
     catalog consumer side. Thus, in case they want to support push interactions, catalog custodians
-    and consumers rely on the <a href="http://build.fhir.org/messaging.html#3.4">FHIR messaging
+    and consumers rely on the <a href="http://hl7.org/fhir/messaging.html#3.4">FHIR messaging
       framework</a>. In particular, the consumer must be able to receive <code>request
       messages</code> from the catalog custodian and to send back <code>response messages</code> to
     it. The request message consists of a <code>Bundle</code> of <code>type "message"</code>, with
@@ -98,16 +99,52 @@
     transfer, MLLP (HL7 minimal lower layer protocol), MQ series messaging or anything else. The
     only requirement for the transfer layer is that requests are sent to a known location and
     responses are returned to the source of the request.</p>
+  <p>For this messaging paradigm, this implementation guide provides the <a
+      href="StructureDefinition-CatalogMessageDefinition.html"> CatalogMessageDefinition</a> profile
+    of the <code>MessageDefinition</code> resource, with two examples: </p>
+  <ul>
+    <li><a href="MessageDefinition-example-message-definition-initialize.html">
+        example-message-definition-initialize</a>,</li>
+    <li><a href="MessageDefinition-example-message-definition-update.html">
+        example-message-definition-update</a>.</li>
+  </ul>
+  <br/>
   <a name="AdminCatalog"> </a>
-  <h3>Administer a catalog using the FHIR API, when catalog owner and catalog custodian are
-    distinct</h3>
+  <h3>Administer a catalog through the FHIR API between catalog owner and catalog custodian</h3>
   <img src="interactionAdminPush.png" alt="Update interaction by owner" width="600px"/>
-  <p>The catalog owner may manage its catalog in a proprietary format, delegating to a third party
-    FHIR server the role of catalog custodian (i.e. sharing the catalog with the FHIR API to the
-    community of catalog consumers). In this configuration, the catalog owner is a FHIR client with
-    additional permissions (create, update delete) on catalog resources of the catalog custodian.
-    The other clients representing catalog consumers only have the read permission. </p>
-  <p>to be continued</p>
+  <p>The <b>catalog owner</b> may manage the content of its catalog in its own proprietary format,
+    delegating to a third party the role of <b>catalog custodian</b> (i.e. the organization and
+    system publishing the catalog as a set of sharable FHIR resources towards the <b>catalog
+      consumers</b>. In this configuration, the <b>catalog owner</b> is a FHIR client with
+    additional permissions (create, update, delete, patch) on catalog resources of the catalog
+    custodian. The other clients representing <b>catalog consumers</b> only have the read
+    permission. </p>
+  <p>Stewardship of the catalog content is handled through FHIR (create|read|update|patch|delete)
+    interactions initiated by the <b>catalog owner</b> towards the <b>catalog custodian</b>. </p>
+  <p>In most kinds of catalogs an item usually needs more than one resource for its full
+    representation. For instance in a laboratory compendium, a laboratory service is represented by
+    a <code>PlanDefinition</code> associated with a number of {<code>ActivityDefinition</code>} +
+      {<code>SpecimenDefinition</code>} + {<code>ObservationDefinition</code>}. Thus inserting a new
+    item in a catalog, or updating it, or removing it needs a simultaneous and consistent set of
+    interactions on multiple resources in the catalog. For this reason, the <b>catalog owner</b>
+    administers the content of the catalog in a transactional manner, interacting with the
+      <b>catalog custodian</b> by posting a <code>transaction Bundle</code> to it, and checking the
+      <code>transaction-response Bundle</code> from it to ensure good synchronization of the catalog
+    content across both parties. </p>
+  <p>This implementation guide provides for this purpose these two profiles of the Bundle
+    resource:</p>
+  <ul>
+    <li>The <a href="StructureDefinition-ItemTransactionRequest.html"> ItemTransactionRequest</a>
+      profile constraining <code>transaction Bundle</code> posted by the <b>catalog owner</b>; see
+      also the <a href="Bundle-example-lab-test-creation-transaction-request.html">
+        example-lab-test-creation-transaction-request</a>.</li>
+    <li>The <a href="StructureDefinition-ItemTransactionResponse.html"> ItemTransactionResponse</a>
+      profile constraining <code>transaction-response Bundle</code> returned back by the <b>catalog
+        custodian</b>; See also the <a
+        href="Bundle-example-lab-test-creation-transaction-response.html">
+        example-lab-test-creation-transaction-response</a>.</li>
+  </ul>
+  <br/>
   <a name="Subscriptions"> </a>
   <h3>Combining pull mode with subscriptions to notifications in push mode</h3>
   <p>The subscription mechanism is used to establish proactive event notifications from a FHIR

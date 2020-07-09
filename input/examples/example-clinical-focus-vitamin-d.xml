@@ -5,12 +5,7 @@
     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
   </meta>
   <language value="en-US"/>
-  <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-      <p>Value set of possible clinical contexts when testing vitamin D.</p>
-    </div>
-  </text>
+
   <!--
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Availability Time Rule" />

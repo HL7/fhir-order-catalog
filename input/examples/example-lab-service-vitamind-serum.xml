@@ -10,6 +10,9 @@
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
             <p>Examen de biologie médicale monoparamétrique :</p>
             <p>Dosage de la 25-(OH)-vitamine D (D2 + D3)</p>
+            <p>description : Vitamine D dosée sur échantillon de sérum</p>
+            <p>prescriptible : oui</p>
+            <p>délai de rendu : 120 minutes</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">

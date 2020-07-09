@@ -11,6 +11,8 @@
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
             <p>Elément clinique pertinent &quot;contexte clinique de la prescription du dosage de la vitamine D&quot;</p>
+            <p>Résultats multiples autorisés</p>
+            <p>Types de résultats autorisés : concept codable (<code>CodeableConcept</code>)</p>
         </div>
     </text>
     <category>
@@ -28,7 +30,6 @@
         </coding>
     </code>
     <permittedDataType value="CodeableConcept"/>
-    <permittedDataType value="string"/>
     <multipleResultsAllowed value="true"/>
     <validCodedValueSet>
         <reference value="ValueSet/example-clinical-focus-vitamin-d"/>

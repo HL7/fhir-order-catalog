@@ -5,12 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>Potassium measurement on blood serum</p>
-        </div>
-    </text>
+
     <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-potassium-serum"/>
     <identifier>
         <use value="official"/> 

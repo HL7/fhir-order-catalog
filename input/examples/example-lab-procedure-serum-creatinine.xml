@@ -5,12 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>serum creatinine procedure on serum specimen obtained from venous or capillary blood</p>
-        </div>
-    </text>
+
     <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-serum-creatinine"/> 
      <name value="UrineCreatinineProcedure"/>
     <title value="Procedure - serum creatinine - venous blood"/>

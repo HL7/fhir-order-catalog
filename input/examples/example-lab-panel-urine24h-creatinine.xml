@@ -5,14 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>24H urine creatinine panel</p>
-            <p>This example illustrates the use of observations both as input and output: 
-                The urine specimen volume collected and the duration of specimen collection.</p>
-        </div>
-    </text>
+
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
         <valueReference>
             <reference value="Composition/example-lab-compendium-header"/>

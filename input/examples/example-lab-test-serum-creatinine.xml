@@ -5,14 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
     <language value="en-US"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
-            <p>serum creatinine test</p>
-            <p>This example illustrates the use of two alternative laboratory procedures, 
-                depending on whether the phlebotomist collects venous blood or capillary blood.</p>
-        </div>
-    </text>
+
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
         <valueReference>
             <reference value="Composition/example-lab-compendium-header"/>
