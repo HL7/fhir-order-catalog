@@ -300,5 +300,22 @@
     provides the fullly detailed description of this laboratory service. </p>
   <a name="LabServicesAdmin"> </a>
   <h3>Administering laboratory services</h3>
-  <p>to do</p>
+  <p>When the roles <b>catalog owner</b> and <b>catalog custodian</b> are played by two different
+    systems the former is a FHIR client of the latter, granted with administration permissions
+    (create, update, delete, patch) on the catalog content. The interactions between the two systems
+    follow the transversal technical specifications exposed in section <a
+      href="interactions.html#AdminCatalog">
+      <i>Administer a catalog through the FHIR API</i> of the Interactions page of this
+    guide</a>.</p>
+  <p> The <b>catalog owner</b> updates the content of the catalog on the <b>catalog custodian</b> in
+    a transactional manner, by posting a <code>transaction Bundle</code> containing all the updates
+    to be performed synchronously: </p>
+  <pre>POST </pre>
+  <p>with the <code>transaction Bundle</code> in the body of the request, as shown in <a
+      href="Bundle-example-lab-test-creation-transaction-request.html">
+      example-lab-test-creation-transaction-request</a>. </p>
+  <p>The <b>catalog custodian</b> performs the requested transaction and returns back a
+      <code>transaction-response Bundle</code>, as shown in <a
+      href="Bundle-example-lab-test-creation-transaction-response.html">
+      example-lab-test-creation-transaction-response</a>. </p>
 </div>
