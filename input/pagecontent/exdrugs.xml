@@ -1,5 +1,12 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+	<br/>
+	<table class="grid">
+		<tbody>
+			<tr><th><b>This section is excluded from the current ballot. The scope of the current ballot is limited to the &quot;laboratory service content&quot; of this IG.</b></th></tr>
+		</tbody>
+	</table>
+	<br/>
 	<p>This section presents the examples of catalogs of medications.</p>
 	<p>TBD</p>
 </div>
