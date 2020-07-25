@@ -131,6 +131,30 @@
     </thead>
     <tbody>
       <tr>
+        <td>_lastUpdated</td>
+        <td>date</td>
+        <td>Last system point in time of PlanDefinition resource</td>
+        <td/>
+        <td>can be used with =gt...</td>
+      </tr>
+      <tr>
+        <td>action-code</td>
+        <td>token</td>
+        <td>service code</td>
+        <td>PlanDefinition.action.code</td>
+        <td>LOINC code or local code of the service</td>
+      </tr>
+      <tr>
+        <td>billing-code</td>
+        <td>token</td>
+        <td> A billing code associated with the service</td>
+        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
+          as Reference).reference(ChargeItemDefinition).resolve().code or
+          PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
+          as CodeableConcept) </td>
+        <td>The FHIRPath expression to be checked</td>
+      </tr>
+      <tr>
         <td>catalog</td>
         <td>reference</td>
         <td>The reference to a Composition resource (profiled by CatalogHeader) owning this
@@ -139,14 +163,60 @@
         <td>services of one catalog</td>
       </tr>
       <tr>
-        <td>billingCode</td>
+        <td>composed-of</td>
+        <td>reference</td>
+        <td>lab service containing another lab service</td>
+        <td>PlanDefinition.relatedArtifact.where(type='composed-of').resource(PlanDefinition)</td>
+        <td>super-panels encompassing this test or panel</td>
+      </tr>
+      <tr>
+        <td>context</td>
+        <td>reference</td>
+        <td>use context assigned to the laboratory service</td>
+        <td>(PlanDefinition.useContext.value as CodeableConcept)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>date</td>
+        <td>Publication date of service's business version</td>
+        <td>PlanDefinition.date</td>
+        <td>can be used with =gt...</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>string</td>
+        <td>The description of the laboratory service</td>
+        <td>PlanDefinition.description</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>gender</td>
         <td>token</td>
-        <td> A billing code associated with the service</td>
-        <td>PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
-          as Reference).reference(ChargeItemDefinition).resolve().code or
-          PlanDefinition.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode').(value
-          as CodeableConcept) </td>
-        <td>The FHIRPath expression to be checked</td>
+        <td>Services with a useContext representing a particular gender</td>
+        <td>(PlanDefinition.useContext.where(code='gender').value as CodeableConcept)</td>
+        <td>services restricted to a particular gender</td>
+      </tr>
+      <tr>
+        <td>jurisdiction</td>
+        <td>string</td>
+        <td>lab service jurisdiction </td>
+        <td>PlanDefinition.jurisdiction</td>
+        <td>e.g. country where service is usable</td>
+      </tr>
+      <tr>
+        <td>last-review-date</td>
+        <td>date</td>
+        <td>Last review date of the service</td>
+        <td>PlanDefinition.lastReviewDate</td>
+        <td>can be used with =gt...</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>string</td>
+        <td>The service computational name</td>
+        <td>PlanDefinition.name</td>
+        <td/>
       </tr>
       <tr>
         <td>orderable</td>
@@ -158,75 +228,11 @@
         <td>FHIRPath expression to be checked</td>
       </tr>
       <tr>
-        <td>task</td>
-        <td>token</td>
-        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable
-          service, LABRREV for service that can be added by the pathologist)</td>
-        <td>(PlanDefinition.useContext.where(code='task').value as CodeableConcept)</td>
-        <td>services associated with the particular task</td>
-      </tr>
-      <tr>
-        <td>gender</td>
-        <td>token</td>
-        <td>Services with a useContext representing a particular gender</td>
-        <td>(PlanDefinition.useContext.where(code='gender').value as CodeableConcept)</td>
-        <td>services restricted to a particular gender</td>
-      </tr>
-      <tr>
-        <td>_lastUpdated</td>
-        <td>date</td>
-        <td>Last system point in time of PlanDefinition resource</td>
-        <td/>
-        <td>can be used with =gt...</td>
-      </tr>
-      <tr>
-        <td>date</td>
-        <td>date</td>
-        <td>Publication date of service's business version</td>
-        <td>PlanDefinition.date</td>
-        <td>can be used with =gt...</td>
-      </tr>
-      <tr>
-        <td>last-review-date</td>
-        <td>date</td>
-        <td>Last review date of the service</td>
-        <td>PlanDefinition.lastReviewDate</td>
-        <td>can be used with =gt...</td>
-      </tr>
-      <tr>
-        <td>topic</td>
-        <td>token</td>
-        <td>topic associated with the service</td>
-        <td>PlanDefinition.topic</td>
-        <td>various categorizations of the service</td>
-      </tr>
-      <tr>
-        <td>title</td>
+        <td>publisher</td>
         <td>string</td>
-        <td>The service title</td>
-        <td>PlanDefinition.title</td>
+        <td>lab service publisher </td>
+        <td>PlanDefinition.publisher</td>
         <td/>
-      </tr>
-      <tr>
-        <td>name</td>
-        <td>string</td>
-        <td>The service computational name</td>
-        <td>PlanDefinition.name</td>
-        <td/>
-      </tr>
-      <tr>
-        <td>action-code</td>
-        <td>token</td>
-        <td>service code</td>
-        <td>PlanDefinition.action.code</td>
-        <td>LOINC code or local code of the service</td>
-      </tr>
-      <tr>
-        <td>type</td>
-        <td>token</td>
-        <td>lab service type </td>
-        <td>PlanDefinition.type</td>
-        <td>narrow to type panel or type test</td>
       </tr>
       <tr>
         <td>status</td>
@@ -236,25 +242,40 @@
         <td>narrow to active or retired services</td>
       </tr>
       <tr>
-        <td>publisher</td>
+        <td>task</td>
+        <td>token</td>
+        <td>Service with a useContext representing a particular task (e.g. LABOE for orderable
+          service, LABRREV for service that can be added by the pathologist)</td>
+        <td>(PlanDefinition.useContext.where(code='task').value as CodeableConcept)</td>
+        <td>services associated with the particular task</td>
+      </tr>
+      <tr>
+        <td>title</td>
         <td>string</td>
-        <td>lab service publisher </td>
-        <td>PlanDefinition.publisher</td>
+        <td>The service title</td>
+        <td>PlanDefinition.title</td>
         <td/>
       </tr>
       <tr>
-        <td>jurisdiction</td>
-        <td>string</td>
-        <td>lab service jurisdiction </td>
-        <td>PlanDefinition.publisher</td>
-        <td>e.g. country where service is usable</td>
+        <td>topic</td>
+        <td>token</td>
+        <td>topic associated with the service</td>
+        <td>PlanDefinition.topic</td>
+        <td>various categorizations of the service</td>
       </tr>
       <tr>
-        <td>composed-of</td>
-        <td>reference</td>
-        <td>lab service containing another lab service</td>
-        <td>PlanDefinition.relatedArtifact.where(type='composed-of').resource(PlanDefinition)</td>
-        <td>super-panels encompassing this test or panel</td>
+        <td>type</td>
+        <td>token</td>
+        <td>lab service type </td>
+        <td>PlanDefinition.type</td>
+        <td>narrow to type panel or type test</td>
+      </tr>
+      <tr>
+        <td>url</td>
+        <td>uri</td>
+        <td>The uri that identifies the laboratory service</td>
+        <td>PlanDefinition.url</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
