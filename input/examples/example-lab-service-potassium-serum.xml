@@ -131,11 +131,13 @@
             </extension>
         </extension>
         <code>
+            <!--  20200731: Proprietary codes excluded from the examples, to avoid additional QA slicing info messages
             <coding>
                 <system value="https://testdirectory.questdiagnostics.com/"/>
                 <code value="733"/>
                 <display value="Potassium, Serum"/>
             </coding>
+            -->
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="2823-3"/>
