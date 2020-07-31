@@ -8,3 +8,8 @@ Code System URI "https://testdirectory.questdiagnostics.com/" is unknown so the 
 
 # Messages due to an improper invariant in the base resource ChargeItemDefinition
 cid-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+
+# Slicing information pointing data out of the defined slices. This is perfectly legit when the slicing is open.
+INFORMATION: PlanDefinition/example-lab-service-potassium-serum: PlanDefinition.action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
+INFORMATION: Bundle/example-lab-test-creation-transaction-request: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
+INFORMATION: Bundle/example-lab-test-creation-transaction-response: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
