@@ -13,3 +13,6 @@ cid-0: Name should be usable as an identifier for the module by machine processi
 INFORMATION: PlanDefinition/example-lab-service-potassium-serum: PlanDefinition.action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
 INFORMATION: Bundle/example-lab-test-creation-transaction-request: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
 INFORMATION: Bundle/example-lab-test-creation-transaction-response: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
+
+# Undue warning about jira specification file appears to be out of date
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.
