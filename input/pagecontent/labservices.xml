@@ -8,14 +8,17 @@
     diagnostic services </p>
   <img src="LabCompendium.png" alt="Resources used by a laboratory service compendium" width="700px"/>
   <br/>
-  <p>Catalogs of laboratory services use the <a href="StructureDefinition-CatalogHeader.html">
-      CatalogHeader profile </a> for the resource Composition. Method 2 depicted in <a
-      href="index.html#technical"> Home Page - Technical overview</a> is the only one applicable for
-    binding a laboratory catalog to its items. Thus, the <a
-      href="http://hl7.org/fhir/composition.html">Composition</a> resource holds only the general
-    properties of the catalog and is referenced by the PlanDefinition resources constrained by the
-      <a href="StructureDefinition-LabServiceDefinition.html"> LabServiceDefinition</a> profile,
-    which represent the items of the catalog. </p>
+  <p>When method 1 is chosen by the custodian for the catalog of laboratory services, the catalog
+    references its items: the <a href="http://hl7.org/fhir/composition.html">Composition</a>
+    resource constrained by the <a href="http://hl7.org/fhir/composition-catalog.html"> Catalog</a>
+    profile to represent the whole catalog, references the items of this catalog from its
+    Composition.section.entry elements.</p>
+  <p>When method 2 is chosen instead, the catalog is referenced by its items: Each PlanDefinition
+    resource constrained by the <a href="StructureDefinition-LabServiceDefinition.html">
+      LabServiceDefinition</a> profile, and representing an item of the catalog, references the <a
+      href="http://hl7.org/fhir/composition.html">Composition</a> resource constrained by the <a
+      href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent the
+    catalog header. This catalog header holds only the general properties of the catalog.</p>
   <p>An item of the catalog is a laboratory service instantiated as a <a
       href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a>, which represents either a
     test (type=test) or a panel (type=panel). A panel is a set of tests and/or panels. </p>
@@ -28,8 +31,12 @@
     codings, orderability, applicability, jurisdictions, billing, status, possible replacement by
     another item, gender or species restrictions, goals, bibliographic references and
     justifications, expected input documents (such as patient consent for genetic testing).</p>
-  <p>The PlanDefinition contains a single occurrence of the element PlanDefinition.action (the top
-    level action). </p>
+  <p>If present, PlanDefinition.action.definitionCanonical references the instance of
+    ActivityDefinition representing the main operational procedure performed to carry this
+    laboratory service. PlanDefinition.action.definitionCanonical may be not present, in which case,
+    the top-level action has sub-actions referencing multiple instances of ActivityDefinition. This
+    is illustrated by action[.action[.action]].definitionCanonical in the diagram, which potentially
+    represents more than one action. </p>
   <p>PlanDefinition.action:SpecimenRequested (0..*) conveys the requirements for biological
     specimens needed as input by the laboratory service.</p>
   <p>PlanDefinition.action.definitionCanonical references one instance of <a
@@ -49,9 +56,11 @@
     (PlanDefinition.action.action), which references an ActivityDefinition representing the nested
     laboratory procedure with its own observations, which will be added to those of the embedding
     service.</p>
-  <p>When a PlanDefinition of a labboratory service has multiple sub-actions, some of these actions
-    may all apply (logical AND), while others may be alternative (choose exactly one from a choice
-    group). </p>
+  <p>When a PlanDefinition of a laboratory service has multiple sub-actions, these sub-actions are
+    assembled in a logical group (groupingBehavior = logical-group), with a selection behavior
+    specified by the selectionBehavior element. Each of these sub-actions either references an
+    ActivityDefinition or is redefined as a nested logical group introducing sub-sub-actions
+    referencing ActivityDefinition instances. </p>
   <p>Some of the sub-actions may also correspond to reflex procedures, triggered by a particular
     event or result in the parent procedure.</p>
   <p>The sub-actions (and possibly sub-sub-actions) are assembled in logical groups, with a
@@ -174,7 +183,7 @@
         <td>reference</td>
         <td>use context assigned to the laboratory service</td>
         <td>(PlanDefinition.useContext.value as CodeableConcept)</td>
-        <td></td>
+        <td/>
       </tr>
       <tr>
         <td>date</td>
@@ -188,7 +197,7 @@
         <td>string</td>
         <td>The description of the laboratory service</td>
         <td>PlanDefinition.description</td>
-        <td></td>
+        <td/>
       </tr>
       <tr>
         <td>gender</td>
@@ -275,7 +284,7 @@
         <td>uri</td>
         <td>The uri that identifies the laboratory service</td>
         <td>PlanDefinition.url</td>
-        <td></td>
+        <td/>
       </tr>
     </tbody>
   </table>
@@ -331,7 +340,7 @@
   <p> The <b>catalog owner</b> updates the content of the catalog on the <b>catalog custodian</b> in
     a transactional manner, by posting a <code>transaction Bundle</code> containing all the updates
     to be performed synchronously: </p>
-  <pre>POST </pre>
+  <pre>POST [base]</pre>
   <p>with the <code>transaction Bundle</code> in the body of the request, as shown in <a
       href="Bundle-example-lab-test-creation-transaction-request.html">
       example-lab-test-creation-transaction-request</a>. </p>

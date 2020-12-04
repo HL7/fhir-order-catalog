@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>
@@ -37,7 +37,7 @@
       <reference>
         <reference value="CodeSystem/laboratory-service-definition-type"/>
       </reference>
-      <name value="Laboratory service type CodeSystem"/>
+      <name value="Laboratory service types CodeSystem"/>
       <description value="Code system for types of laboratory service"/>
     </resource>
     <resource>
@@ -53,7 +53,7 @@
       <reference>
         <reference value="CodeSystem/catalog-message-events"/>
       </reference>
-      <name value="Catalog Message Event CodeSystem"/>
+      <name value="Catalog message events CodeSystem"/>
       <description
         value="Code system providing event codes for messaging the content of order catalogs"/>
     </resource>
@@ -61,7 +61,7 @@
       <reference>
         <reference value="ValueSet/laboratory-service-type"/>
       </reference>
-      <name value="Laboratory service type ValueSet"/>
+      <name value="Laboratory service types ValueSet"/>
       <description
         value="Value set for types of laboratory service in the LabServiceDefinition profile of PlanDefinition"
       />
@@ -88,7 +88,7 @@
       <reference>
         <reference value="ValueSet/catalog-message-events-vs"/>
       </reference>
-      <name value="Order catalog message event ValueSet"/>
+      <name value="Order catalog message events ValueSet"/>
       <description
         value="ValueSet providing event codes for MessageHeader.eventCoding in FHIR messages conveying catalog content"
       />
@@ -101,7 +101,7 @@
       <reference>
         <reference value="StructureDefinition/ValidityPeriod"/>
       </reference>
-      <name value="Validity Period Extension"/>
+      <name value="ValidityPeriod Extension"/>
       <description
         value="Extension adding catalog validity period to the CatalogHeader profile of Composition"
       />
@@ -110,7 +110,7 @@
       <reference>
         <reference value="StructureDefinition/CatalogReference"/>
       </reference>
-      <name value="Reference to catalog Extension"/>
+      <name value="CatalogReference Extension"/>
       <description
         value="Extension adding catalog reference to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -119,7 +119,7 @@
       <reference>
         <reference value="StructureDefinition/BillingSummary"/>
       </reference>
-      <name value="Billing summary Extension"/>
+      <name value="BillingSummary Extension"/>
       <description
         value="Extension adding a billing summary to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -128,7 +128,7 @@
       <reference>
         <reference value="StructureDefinition/ScheduleSummary"/>
       </reference>
-      <name value="Schedule summary Extension"/>
+      <name value="ScheduleSummary Extension"/>
       <description
         value="Extension adding a service schedule summary to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -137,7 +137,7 @@
       <reference>
         <reference value="StructureDefinition/LimitationSummary"/>
       </reference>
-      <name value="Limitation summary Extension"/>
+      <name value="LimitationSummary Extension"/>
       <description
         value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -146,7 +146,7 @@
       <reference>
         <reference value="StructureDefinition/RegulatorySummary"/>
       </reference>
-      <name value="Regulatory summary Extension"/>
+      <name value="RegulatorySummary Extension"/>
       <description
         value="Extension adding a textual summary of regulations applicable to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -155,7 +155,7 @@
       <reference>
         <reference value="StructureDefinition/ServiceBillingCode"/>
       </reference>
-      <name value="Service billing code Extension"/>
+      <name value="ServiceBillingCode Extension"/>
       <description
         value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"
       />
@@ -164,7 +164,7 @@
       <reference>
         <reference value="StructureDefinition/SpecimenRequested"/>
       </reference>
-      <name value="Specimen requested for a PlanDefiniton top-level action"/>
+      <name value="SpecimenRequested Extension"/>
       <description
         value="Extension attaching specimen requested to a PlanDefinition.action, as a set of (possibly choosable) references to SpecimenDefiniton"
       />
@@ -176,7 +176,7 @@
       <reference>
         <reference value="StructureDefinition/LabChargeItemDefinition"/>
       </reference>
-      <name value="Service billing code and rules Profile"/>
+      <name value="LabChargeItemDefinition Profile"/>
       <description
         value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"
       />
@@ -185,7 +185,7 @@
       <reference>
         <reference value="StructureDefinition/CatalogHeader"/>
       </reference>
-      <name value="Catalog Header Profile"/>
+      <name value="CatalogHeader Profile"/>
       <description
         value="Profile of Composition representing the global properties of a catalog of healthcare items (products, services, knowledge artifacts)"
       />
@@ -194,7 +194,7 @@
       <reference>
         <reference value="StructureDefinition/LabServiceDefinition"/>
       </reference>
-      <name value="Laboratory service Profile"/>
+      <name value="LabServiceDefinition Profile"/>
       <description
         value="Profile of PlanDefinition representing the definition of a laboratory diagnostic service viewable and usable by potential consumers (clinicians, nurses, patients ...)"
       />
@@ -203,7 +203,7 @@
       <reference>
         <reference value="StructureDefinition/LabProcedureDefinition"/>
       </reference>
-      <name value="Laboratory procedure Profile"/>
+      <name value="LabProcedureDefinition Profile"/>
       <description
         value="Profile of ActivityDefinition representing the definition of a laboratory operational procedure"
       />
@@ -212,7 +212,7 @@
       <reference>
         <reference value="StructureDefinition/LabSpecimenDefinition"/>
       </reference>
-      <name value="Laboratory specimen Profile"/>
+      <name value="LabSpecimenDefinition Profile"/>
       <description
         value="Profile of SpecimenDefinition representing the definition of an IVD specimen used by a laboratory operational procedure"
       />
@@ -221,7 +221,7 @@
       <reference>
         <reference value="StructureDefinition/InputObservationDefinition"/>
       </reference>
-      <name value="Input observation Profile"/>
+      <name value="InputObservationDefinition Profile"/>
       <description
         value="Profile of ObservationDefinition representing the definition of an observation expected from the orderer by the performing laboratory for use in one of its procedures"
       />
@@ -230,7 +230,7 @@
       <reference>
         <reference value="StructureDefinition/LabObservationDefinition"/>
       </reference>
-      <name value="Laboratory observation Profile"/>
+      <name value="LabObservationDefinition Profile"/>
       <description
         value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
       />
@@ -246,14 +246,14 @@
       <reference>
         <reference value="StructureDefinition/CatalogMessageDefinition"/>
       </reference>
-      <name value="MessageDefinition for catalog messages"/>
+      <name value="CatalogMessageDefinition Profile"/>
       <description value="Profile of MessageDefinition for sending content of a catalog"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ItemTransactionRequest"/>
       </reference>
-      <name value="Transaction Bundle request on catalog content"/>
+      <name value="ItemTransactionRequest Profile"/>
       <description
         value="Profile of Bundle for updating the content of a catalog in transaction mode"/>
     </resource>
@@ -261,7 +261,7 @@
       <reference>
         <reference value="StructureDefinition/ItemTransactionResponse"/>
       </reference>
-      <name value="Transaction Bundle response on catalog content"/>
+      <name value="ItemTransactionResponse Profile"/>
       <description
         value="Profile of Bundle conveying the response to a transaction request for administering catalog content"
       />

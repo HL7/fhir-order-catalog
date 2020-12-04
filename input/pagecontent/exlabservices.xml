@@ -92,6 +92,10 @@
 	<img src="LabExampleE2Business.png" alt="Example E2 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE2Technical.png" alt="Example E2 - FHIR implementation" width="600px"/>
+	<p>The electrolyte panel E2 includes K on serum also orderable as a single test in example E1.
+		The PlanDefinition references a single electrolyte ActivityDefinition, which references the
+		ObservationDefinition representing the single test from example E1. The PlanDefinition of E2
+		also includes the PlanDefinition from E1 as related artifact, for informative purpose.</p>
 	<p>In this example, the laboratory service is of type &quot;<i>panel</i>&quot;. A panel is a
 		collection of test of panels, which usually produces multiple results. </p>
 	<p>Artifacts implementing this example: </p>
@@ -119,6 +123,14 @@
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-panel-blood-electrolyte.html"
 						>example-lab-panel-blood-electrolyte</a></td>
+			</tr>
+			<tr>
+				<td>Serum potassium test - orderable service</td>
+				<td><a href="http://hl7.org/fhir/plandefinition.html">PlanDefinition</a></td>
+				<td><a href="StructureDefinition-LabServiceDefinition.html"
+					>LabServiceDefinition</a></td>
+				<td><a href="PlanDefinition-example-lab-service-potassium-serum.html"
+					>example-lab-service-potassium-serum</a></td>
 			</tr>
 			<tr>
 				<td>Blood electrolyte panel - operational procedure</td>
@@ -275,8 +287,7 @@
 	<a name="LabE4"> </a>
 	<h3>E4: creatinine on serum or plasma</h3>
 	<p> This example illustrates the representation of a laboratory service using two alternative
-		laboratory procedures depending on the kind of specimen collected from the patient. The
-		figure below displays the business content. </p>
+		kinds of specimens. The figure below displays the business content. </p>
 	<img src="LabExampleE4Business.png" alt="Example E4 - business content" width="400px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
 	<img src="LabExampleE4Technical.png" alt="Example E4 - FHIR implementation" width="600px"/>
@@ -603,14 +614,15 @@
 	<p> This example illustrates the representation of a super-panel embedding two single tests
 		orderable individually and two sub-panels also orderable individually, one of which embeds
 		two reflex tests (also orderable themselves).</p>
-	<p> The 2 figures below show the business content of the HSV sub-panel having the two reflex tests, and then its FHIR resource representation. </p>
+	<p> The 2 figures below show the business content of the HSV sub-panel having the two reflex
+		tests, and then its FHIR resource representation. </p>
 	<img src="LabExampleE7BusinessPart1.png" alt="Example E7 - business content (part 1)"
 		width="600px"/>
 	<img src="LabExampleE7TechnicalPart1.png" alt="Example E7 - FHIR implementation (part 1)"
 		width="600px"/>
 	<br/>
-	<p> The 2 figures below show the TORCH super-panel, which embeds the HSV
-		sub-panel above. Business content, and then FHIR resource representation:</p>
+	<p> The 2 figures below show the TORCH super-panel, which embeds the HSV sub-panel above.
+		Business content, and then FHIR resource representation:</p>
 	<img src="LabExampleE7BusinessPart2.png" alt="Example E7 - business content (part 2)"
 		width="600px"/>
 	<img src="LabExampleE7TechnicalPart2A.png" alt="Example E7 - FHIR implementation (part 2a)"
@@ -657,7 +669,7 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"
-					>example-lab-service-toxoplasma-serum</a></td>
+						>example-lab-service-toxoplasma-serum</a></td>
 			</tr>
 			<tr>
 				<td>Rubella IgM panel - orderable service</td>
@@ -665,7 +677,7 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-rubella-serum.html"
-					>example-lab-service-rubella-serum</a></td>
+						>example-lab-service-rubella-serum</a></td>
 			</tr>
 			<tr>
 				<td>Cytomegalovirus IgM panel - orderable service</td>
@@ -673,7 +685,7 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-cmv-serum.html"
-					>example-lab-service-cmv-serum</a></td>
+						>example-lab-service-cmv-serum</a></td>
 			</tr>
 			<tr>
 				<td>Herpes simplex virus 1 &amp; 2 IgM panel - orderable service</td>
@@ -681,7 +693,7 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-hsv-serum.html"
-					>example-lab-service-hsv-serum</a></td>
+						>example-lab-service-hsv-serum</a></td>
 			</tr>
 			<tr>
 				<td>Herpes simplex virus 1 IgM Titer - as orderable test</td>
@@ -689,7 +701,7 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-hsvt1-serum.html"
-					>example-lab-service-hsvt1-serum</a></td>
+						>example-lab-service-hsvt1-serum</a></td>
 			</tr>
 			<tr>
 				<td>Herpes simplex virus 2 IgM Titer - as orderable test</td>
@@ -697,25 +709,25 @@
 				<td><a href="StructureDefinition-LabServiceDefinition.html"
 					>LabServiceDefinition</a></td>
 				<td><a href="PlanDefinition-example-lab-service-hsvt2-serum.html"
-					>example-lab-service-hsvt2-serum</a></td>
+						>example-lab-service-hsvt2-serum</a></td>
 			</tr>
 			<tr>
 				<td>3 mL serum specimen</td>
 				<td><a href="http://hl7.org/fhir/specimendefinition.html"
 					>SpecimenDefinition</a></td>
 				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
-					>LabSpecimenDefinition</a></td>
+						>LabSpecimenDefinition</a></td>
 				<td><a href="SpecimenDefinition-example-specimen-3ml-serum.html"
-					>example-specimen-3ml-serum</a></td>
+						>example-specimen-3ml-serum</a></td>
 			</tr>
 			<tr>
 				<td>2 mL serum specimen</td>
 				<td><a href="http://hl7.org/fhir/specimendefinition.html"
 					>SpecimenDefinition</a></td>
 				<td><a href="StructureDefinition-LabSpecimenDefinition.html"
-					>LabSpecimenDefinition</a></td>
+						>LabSpecimenDefinition</a></td>
 				<td><a href="SpecimenDefinition-example-specimen-2ml-serum.html"
-					>example-specimen-2ml-serum</a></td>
+						>example-specimen-2ml-serum</a></td>
 			</tr>
 			<tr>
 				<td>Toxoplasma Ab - operational procedure</td>
@@ -724,52 +736,52 @@
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
 						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-toxoplasma.html"
-					>example-lab-procedure-toxoplasma</a></td>
+						>example-lab-procedure-toxoplasma</a></td>
 			</tr>
 			<tr>
 				<td>Rubella IgM - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html"
 					>ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
-					>LabProcedureDefinition</a></td>
+						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-rubella.html"
-					>example-lab-procedure-rubella</a></td>
+						>example-lab-procedure-rubella</a></td>
 			</tr>
 			<tr>
 				<td>CMV IgM - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html"
 					>ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
-					>LabProcedureDefinition</a></td>
+						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-cmv.html"
-					>example-lab-procedure-cmv</a></td>
+						>example-lab-procedure-cmv</a></td>
 			</tr>
 			<tr>
 				<td>HSV 1 &amp; 2 IgM - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html"
 					>ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
-					>LabProcedureDefinition</a></td>
+						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-hsv.html"
-					>example-lab-procedure-hsv</a></td>
+						>example-lab-procedure-hsv</a></td>
 			</tr>
 			<tr>
 				<td>HSV 1 IgM Titer - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html"
 					>ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
-					>LabProcedureDefinition</a></td>
+						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-hsvt1.html"
-					>example-lab-procedure-hsvt1</a></td>
+						>example-lab-procedure-hsvt1</a></td>
 			</tr>
 			<tr>
 				<td>HSV 2 IgM Titer - operational procedure</td>
 				<td><a href="http://hl7.org/fhir/activitydefinition.html"
 					>ActivityDefinition</a></td>
 				<td><a href="StructureDefinition-LabProcedureDefinition.html"
-					>LabProcedureDefinition</a></td>
+						>LabProcedureDefinition</a></td>
 				<td><a href="ActivityDefinition-example-lab-procedure-hsvt2.html"
-					>example-lab-procedure-hsvt2</a></td>
+						>example-lab-procedure-hsvt2</a></td>
 			</tr>
 			<tr>
 				<td>Toxoplasma IgG test result</td>
@@ -778,79 +790,79 @@
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
 						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-toxoigg.html"
-					>example-observation-toxoigg</a></td>
+						>example-observation-toxoigg</a></td>
 			</tr>
 			<tr>
 				<td>Toxoplasma IgM test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-toxoigm.html"
-					>example-observation-toxoigm</a></td>
+						>example-observation-toxoigm</a></td>
 			</tr>
 			<tr>
 				<td>Toxoplasma Antibody interpretation</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-toxoint.html"
-					>example-observation-toxoint</a></td>
+						>example-observation-toxoint</a></td>
 			</tr>
 			<tr>
 				<td>Rubella IgM test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-rubigm.html"
-					>example-observation-rubigm</a></td>
+						>example-observation-rubigm</a></td>
 			</tr>
 			<tr>
 				<td>CMV IgM test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-cmvigm.html"
-					>example-observation-cmvigm</a></td>
+						>example-observation-cmvigm</a></td>
 			</tr>
 			<tr>
 				<td>HSV 1 IgM presence test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-hsv1igmp.html"
-					>example-observation-hsv1igmp</a></td>
+						>example-observation-hsv1igmp</a></td>
 			</tr>
 			<tr>
 				<td>HSV 2 IgM presence test result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-hsv2igmp.html"
-					>example-observation-hsv2igmp</a></td>
+						>example-observation-hsv2igmp</a></td>
 			</tr>
 			<tr>
 				<td>HSV 1 IgM titer result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-hsv1igmt.html"
-					>example-observation-hsv1igmt</a></td>
+						>example-observation-hsv1igmt</a></td>
 			</tr>
 			<tr>
 				<td>HSV 2 IgM titer result</td>
 				<td><a href="http://hl7.org/fhir/observationdefinition.html"
-					>ObservationDefinition</a></td>
+						>ObservationDefinition</a></td>
 				<td><a href="StructureDefinition-LabObservationDefinition.html"
-					>LabObservationDefinition</a></td>
+						>LabObservationDefinition</a></td>
 				<td><a href="ObservationDefinition-example-observation-hsv2igmt.html"
-					>example-observation-hsv2igmt</a></td>
+						>example-observation-hsv2igmt</a></td>
 			</tr>
 		</tbody>
 	</table>

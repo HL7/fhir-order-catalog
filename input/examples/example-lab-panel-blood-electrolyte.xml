@@ -96,6 +96,10 @@
             <display value="BIOCHIMIE - SANG"/>
         </coding>
     </topic>
+    <relatedArtifact>
+        <type value="composed-of"/>
+        <resource value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-potassium-serum"/>
+    </relatedArtifact>
     <action>
         <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
             <extension url="ExclusiveGroup">

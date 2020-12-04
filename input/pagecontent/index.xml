@@ -3,7 +3,11 @@
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   <table class="note-to-balloters">
     <tbody>
-      <tr><th><b>The scope of the current ballot is limited to the &quot;laboratory service content&quot; of this IG. <br/>Pages which are excluded from this ballot are signaled as such by a note to balloters at the top of the page.</b></th></tr>
+      <tr>
+        <th><b>The scope of the current ballot is limited to the laboratory service 
+          content and to device content of this IG. <br/>Pages which are excluded from this ballot are signaled as
+            such by a note to balloters at the top of the page.</b></th>
+      </tr>
     </tbody>
   </table>
   <br/>
@@ -21,7 +25,7 @@
   <p> This universal realm implementation guide specifies the methods and artifacts based on the
     FHIR standard, to enable the sharing of catalogs of healthcare items across practitioners and
     organizations. The methods such as browsing, searching, retrieval, or maintaining the content,
-    are common regarless of the catagory of catalog at hand: product, service, clinical knowledge...
+    are common regardless of the category of catalog at hand: product, service, clinical knowledge...
     Some of the artifacts, like the one representing the catalog as a whole, are also common to all
     categories of catalogs. Other artifacts are specific to the category of items (medication,
     device, order set, diagnostic service ...) exposed by the catalog. </p>
@@ -41,11 +45,9 @@
     group contributes on its domain of expertise, to this cross-domain FHIR IG.</p>
   <a name="purpose"> </a>
   <h3>Purpose of order catalogs</h3>
-  <p> A catalog provides reference data, which aggregates requirements and guidance of usage for the
-    items of the catalog, from multiple sources: regulatory, clinical knowledge, organizational
-    (based on the organization of the provider of the items). These reference data are assembled
-    under the stewardship of the catalog custodian: an organization liable for building and sharing
-    the catalog, and maintaining it over time.</p>
+  <p> A catalog holds master data providing the definitions of healthcare items. It may include,
+    where applicable, the associated regulatory constraints, business requirements and clinical
+    guidelines for ordering and using these items.</p>
   <p>Catalogs are most often shared on servers which make them accessible to the practitioners
     through their IT systems or applications (e.g. EHR, EMR, CPOE, apps, LIS, Pharmacy system ...)
     Client applications may interact with a catalog server to: </p>
@@ -61,7 +63,7 @@
   <br/>
   <a name="scope"> </a>
   <h3>Scopes of order catalogs and roles involved</h3>
-  <p> Order catalogs have varied scopes, sizes, ownerships, stewardships and targetted consumers and
+  <p> Order catalogs have varied scopes, sizes, ownerships, stewardships and targeted consumers and
     jurisdictions. For instance an order catalog might expose the medical devices of a particular
     manufacturer to the potential users of these devices in a country. Another catalog might
     consolidate all the medical devices that are approved for use in healthcare throughout the
@@ -92,6 +94,14 @@
   <p>The interactions between those three roles are described in the <a href="interactions.html"
       >Interaction Framework</a> of this guide.</p>
   <br/>
+  <a name="outofscope"> </a>
+  <h3>Out of Current Scope</h3>
+  <p>Definitional resources describing an orderable item of the catalog guide the generation of
+    orders of this item, as well as reports fulfilling these orders. The exact methods for
+    generating the workflow resources from the definitional resources depend on the standard chosen
+    (HL7 v2, FHIR) to convey the workflow objects (orders, tasks, reports ...). The definition of
+    these methods is beyond the scope of the current IG</p>
+  <br/>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
   <p> The design choices presented here respect the flexibility requirements listed above. </p>
@@ -103,17 +113,19 @@
     items. </p>
   <ol>
     <li>The catalog references its items from its Composition.section.entry elements. This method
-      constrains the Composition resource with the Catalog profile.</li>
+      constrains the Composition resource with the <a
+        href="http://hl7.org/fhir/composition-catalog.html">Catalog profile</a>, which is part of
+      the base standard.</li>
     <li>Each definitional resource representing an item references the Composition resource. The
       Composition resource in this case acts as the header of the catalog. This method constrains
       the Composition resource with the CatalogHeader profile. </li>
   </ol>
   <img src="CatalogBindings.png" alt="Methods for binding catalogs and their items" width="600px"/>
-  <p> The catalog server must choose one of the two methods, and cannot mix the two methods for one
-    catalog. Usable for catalogs of any size, the second method is in particular more appropriate
-    for large catalogs because it makes the administration of the content easier. In particular,
-    adding a new item or retiring an item does not impose any update to the Composition resource
-    representing the catalog as a whole.</p>
+  <p> The catalog custodian may support both methods. It is recommended to choose one method for a
+    catalog instance. Usable for catalogs of any size, the second method is more appropriate for
+    large catalogs because it makes the administration of the content easier. In particular, adding
+    a new item or retiring an item does not impose any update to the Catalog or the CatalogHeader
+    resource representing the catalog as a whole.</p>
   <a name="walkthrough"> </a>
   <h3>Walkthrough</h3>
   <p> The main sections of this IG are: </p>

@@ -46,6 +46,7 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/RegulatorySummary">
         <valueString value="CLIA Law &amp; Regulations apply"/>
     </extension>
+    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-potassium-serum"/>
     <identifier>
         <use value="official"/> 
         <value value="K_serum_test"/> 
