@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/order-catalog/2020Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-order-catalog" defaultVersion="current" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/fhir-order-catalog" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/uv/order-catalog"><version code="current" url="http://build.fhir.org/ig/HL7/fhir-order-catalog"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/order-catalog/2020Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-order-catalog" defaultVersion="0.1.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/fhir-order-catalog" url="http://hl7.org/fhir/uv/order-catalog">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-order-catalog"/>
 <version code="0.1.0" url="http://hl7.org/fhir/uv/order-catalog/2020Sep"/>
-<version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>

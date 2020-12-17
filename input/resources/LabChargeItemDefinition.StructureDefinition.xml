@@ -80,13 +80,6 @@
       <comment value="When multiple clinical focus contexts are specified the billing code is applicable if at least one of these contexts is present in the instance" />
       <mustSupport value="true" />
     </element>
-    <element id="ChargeItemDefinition.useContext:ClinicalFocus.code">
-      <path value="ChargeItemDefinition.useContext.code" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
-        <code value="focus" />
-      </fixedCoding>
-    </element>
     <element id="ChargeItemDefinition.useContext:ClinicalFocus.code.system">
       <path value="ChargeItemDefinition.useContext.code.system" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
