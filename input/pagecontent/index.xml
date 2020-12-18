@@ -4,9 +4,9 @@
   <table class="note-to-balloters">
     <tbody>
       <tr>
-        <th><b>The scope of the current ballot is limited to the laboratory service 
-          content and to device content of this IG. <br/>Pages which are excluded from this ballot are signaled as
-            such by a note to balloters at the top of the page.</b></th>
+        <th><b>The scope of the current ballot is limited to the laboratory service content and to
+            device content of this IG. <br/>Pages which are excluded from this ballot are signaled
+            as such by a note to balloters at the top of the page.</b></th>
       </tr>
     </tbody>
   </table>
@@ -15,26 +15,28 @@
   <h3>Introduction to this guide</h3>
   <p>This implementation guide for sharing order catalogs is based on FHIR R4. Its scope is
     international (aka universal realm).</p>
-  <p> An order catalog exposes a homogeneous collection of healthcare items that can be ordered or
-    selected by practitioners to support the course of healthcare delivery. These homogeneous
-    healthcare items may represent services, products, devices or knowledge artifacts such as order
-    sets, for instance. Each item specifies its purpose, describes how it should be ordered and/or
-    used, and characterizes the outcomes that one can expect from its usage. </p>
-  <p> Examples of catalogs include order sets catalog, evidence based CDS content, laboratory test
-    compendium, medication formulary, catalog of medical devices. </p>
+  <p> An order catalog describes a collection of healthcare items of the same type that can be
+    ordered or selected by practitioners to support the course of healthcare delivery. These
+    homogeneous healthcare items may represent services, products, devices or knowledge artifacts
+    such as order sets, for instance. Each item specifies its purpose, describes how it should be
+    ordered and/or used, and characterizes the outcomes that one can expect from its usage. </p>
+  <p> Examples of catalogs include order sets catalog, evidence based knowledge artifacts for
+    clinical decision support (CDS), laboratory test compendium, medication formulary, catalog of
+    medical devices. </p>
   <p> This universal realm implementation guide specifies the methods and artifacts based on the
-    FHIR standard, to enable the sharing of catalogs of healthcare items across practitioners and
-    organizations. The methods such as browsing, searching, retrieval, or maintaining the content,
-    are common regardless of the category of catalog at hand: product, service, clinical knowledge...
-    Some of the artifacts, like the one representing the catalog as a whole, are also common to all
-    categories of catalogs. Other artifacts are specific to the category of items (medication,
-    device, order set, diagnostic service ...) exposed by the catalog. </p>
+    FHIR standard, to build catalogs of healthcare items and share the content of these catalogs
+    across practitioners and healthcare organizations.. The methods such as browsing, searching,
+    retrieval, or maintaining the content, are common regardless of the category of catalog at hand:
+    product, service, clinical knowledge... Some of the artifacts, like the one representing the
+    catalog as a whole, are also common to all categories of catalogs. Other artifacts are specific
+    to the category of items (medication, device, order set, diagnostic service ...) exposed by the
+    catalog. </p>
   <p>Considering these commonalities and specificities, building a common guidance for implementing
     any kind of catalog of healthcare items in FHIR has been deemed the most valuable proposition to
     implementers. Hence this unique Order Catalog Implementation Guide, which aims to cover all
     categories of catalogs of healthcare items. The use cases and artifacts (profiles, extensions,
     semantic resources) that are specific to a particular category of catalog will be placed under
-    the responsibility of the HL7 Working Group defining the base resources for this category. </p>
+    the responsibility of the HL7 Working Group maintaining the base resources for this category. </p>
   <a name="sponsoringwg"> </a>
   <h3>Project and sponsoring background</h3>
   <p>This IG is one of the product deliverables of project <a
@@ -48,13 +50,15 @@
   <p> A catalog holds master data providing the definitions of healthcare items. It may include,
     where applicable, the associated regulatory constraints, business requirements and clinical
     guidelines for ordering and using these items.</p>
-  <p>Catalogs are most often shared on servers which make them accessible to the practitioners
-    through their IT systems or applications (e.g. EHR, EMR, CPOE, apps, LIS, Pharmacy system ...)
-    Client applications may interact with a catalog server to: </p>
+  <p>Catalogs are most often stored on servers which make them accessible to the practitioners
+    through their IT systems or applications e.g., electronic health records, electronic medical
+    records, computerized physcian order entry, laboratory information systems, medication dispense
+    systems... Client applications may interact with a catalog server to: </p>
   <ul>
     <li>browse through entries of the catalog and retrieve items of interest together with the
       detailed instructions and guidance related to the usage of these items,</li>
-    <li>import the full catalog or a part of it (e.g. import the recent updates), </li>
+    <li>import the full catalog or a part of it (e.g., recently updated items, a subset of the
+      catalog dedicated to a specialty, ...), </li>
     <li>administer the content of the catalog: add/update/retire items and/or supporting resources.
     </li>
   </ul>

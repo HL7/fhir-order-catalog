@@ -116,7 +116,7 @@
         <i>PlanDefinition</i> with the desirable criteria listed in the table below ; and then the
       second search will add the <b><code>_include:iterate=*</code></b> parameter, to retrieve the
       PlanDefiniton resource(s) associated with all supporting resources (ActivityDefinition,
-      ChargeItemDefinition, Composition, SpecimenDEfinition, ObservationDefinition ...) in the
+      ChargeItemDefinition, Composition, SpecimenDefinition, ObservationDefinition ...) in the
         <i>searchset Bundle</i>.</li>
     <li><b>One-step search</b>: Conversely a client application may wish to retrieve the full
       details of a service (or a set of services) at first glance. In this case, it uses the
