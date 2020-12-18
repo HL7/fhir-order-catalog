@@ -82,10 +82,12 @@
     </element>
     <element id="Composition.type.text">
       <path value="Composition.type.text"/>
+      <min value="1"/>
       <fixedString value="Catalog"/>
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
+      <min value="1"/>
       <short value="Kind of catalog"/>
       <binding>
         <strength value="example"/>

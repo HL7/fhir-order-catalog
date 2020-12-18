@@ -126,7 +126,7 @@
     <element id="PlanDefinition.extension:RegulatorySummary">
       <path value="PlanDefinition.extension" />
       <sliceName value="RegulatorySummary" />
-      <short value="Textual summary  of limitations associated with the service" />
+      <short value="Textual summary of regulations applicable to this service" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/RegulatorySummary" />
