@@ -30,6 +30,9 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ScheduleSummary">
         <valueString value="Daily ; report on D0"/>
     </extension>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ResultInterpretationSummary">
+        <valueMarkdown value="Creatinine or creatine anhydride, is a breakdown product of creatine phosphate in muscle. The loss of water molecule from creatine results in the formation of creatinine. It is transferred to the kidneys by blood plasma, whereupon it is eliminated by glomular filtration and partial tubular excretion. Creatinine is usually produced at a fairly constant rate and measuring its serum level is a simple test. A rise in blood creatinine levels is observed only with marked damage to functioning nephrons; therefore this test is not suitable for detecting early kidney disease. Creatine and creatinine are metabolized in the kidneys, muscle, liver and pancreas."/>
+    </extension>
     <name value="UrineCreatininePanel"/>
     <title value="24-hour urine creatinine panel"/>
     <type>

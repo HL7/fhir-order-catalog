@@ -55,6 +55,7 @@
       <path value="ObservationDefinition.permittedDataType" />
       <mustSupport value="true" />
     </element>
+    <!-- FM 20201219 
     <element id="ObservationDefinition.validCodedValueSet">
       <path value="ObservationDefinition.validCodedValueSet" />
       <type>
@@ -63,5 +64,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    -->
   </differential>
 </StructureDefinition>

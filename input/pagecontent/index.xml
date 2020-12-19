@@ -4,9 +4,10 @@
   <table class="note-to-balloters">
     <tbody>
       <tr>
-        <th><b>The scope of the current ballot is limited to the laboratory service content and to
-            device content of this IG. <br/>Pages which are excluded from this ballot are signaled
-            as such by a note to balloters at the top of the page.</b></th>
+        <th>The scope of the current ballot is limited to laboratory service content and device
+          content of this IG. <br/>Pages which are excluded from this ballot are signaled as such by
+          a note to balloters at the top of the page. <br/>Feedback is welcome and may be submitted
+          through the <a href="http://hl7.org/fhir-issues"> FHIR Jira tracker</a></th>
       </tr>
     </tbody>
   </table>
@@ -59,7 +60,7 @@
       detailed instructions and guidance related to the usage of these items,</li>
     <li>import the full catalog or a part of it (e.g., recently updated items, a subset of the
       catalog dedicated to a specialty, ...), </li>
-    <li>administer the content of the catalog: add/update/retire items and/or supporting resources.
+    <li>administer the content of the catalog; add, update, retire items and supporting resources.
     </li>
   </ul>
   <p>Catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
@@ -108,7 +109,6 @@
   <br/>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
-  <p> The design choices presented here respect the flexibility requirements listed above. </p>
   <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
     Composition resource, which conveys the general properties of the catalog (e.g. custodian,
     title, period of validity, type of content), and each item of the catalog is represented by a

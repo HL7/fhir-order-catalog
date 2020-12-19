@@ -585,16 +585,22 @@
 			<tr>
 				<td>Normal Contexts for Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
+				<!--  
 				<td><a href="StructureDefinition-ObservationValueSet.html"
 					>ObservationValueSet</a></td>
+				-->
+				<td/>
 				<td><a href="ValueSet-example-normal-contexts-vitamin-d.html"
 						>example-normal-contexts-vitamin-d</a></td>
 			</tr>
 			<tr>
 				<td>All contexts possibly associated with Vitamin D Test</td>
 				<td><a href="http://hl7.org/fhir/valueset.html">ValueSet</a></td>
+				<!--  
 				<td><a href="StructureDefinition-ObservationValueSet.html"
 					>ObservationValueSet</a></td>
+				-->
+				<td/>
 				<td><a href="ValueSet-example-clinical-focus-vitamin-d.html"
 						>example-clinical-focus-vitamin-d</a></td>
 			</tr>

@@ -132,6 +132,15 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/RegulatorySummary" />
       </type>
     </element>
+    <element id="PlanDefinition.extension:ResultInterpretationSummary">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="ResultInterpretationSummary" />
+      <short value="markdown summary of result interpretation guidance for this service" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ResultInterpretationSummary" />
+      </type>
+    </element>
     <element id="PlanDefinition.title.extension">
       <path value="PlanDefinition.title.extension" />
       <slicing>

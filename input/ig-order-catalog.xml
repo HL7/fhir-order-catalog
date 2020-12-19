@@ -153,6 +153,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ResultInterpretationSummary"/>
+      </reference>
+      <name value="ResultInterpretationSummary Extension"/>
+      <description
+        value="Extension adding a markdown summary of result interpretation guidance applicable to the LabServiceDefinition profile of PlanDefinition"
+      />
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ServiceBillingCode"/>
       </reference>
       <name value="ServiceBillingCode Extension"/>
@@ -235,6 +244,7 @@
         value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
       />
     </resource>
+    <!-- FM 20201219
     <resource>
       <reference>
         <reference value="StructureDefinition/ObservationValueSet"/>
@@ -242,6 +252,7 @@
       <name value="ValueSet Profile used by ObservationDefinition"/>
       <description value="Profile of ValueSet for coded observations"/>
     </resource>
+    -->
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogMessageDefinition"/>
@@ -792,8 +803,10 @@
       </reference>
       <name value="Lab normal clinical focus for billing vitamin D"/>
       <description value="Lab E6 - value set of normal contexts enabling billing of Vitamin D test"/>
+      <!-- FM 20201219
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+      -->
     </resource>
     <resource>
       <reference>
@@ -801,8 +814,10 @@
       </reference>
       <name value="Lab contexts possibly associated with vitamin D testing"/>
       <description value="Lab E6 - value set of  contexts possibly associated with Vitamin D test"/>
+      <!-- FM 20201219
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+      -->
     </resource>
     <resource>
       <reference>
@@ -810,8 +825,10 @@
       </reference>
       <name value="Valid coded reasons for ordering a lab service"/>
       <description value="Lab E* - broadest value set of reasons for ordering a laboratory service"/>
+      <!-- FM 20201219
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
+      -->    
     </resource>
     <!-- 
       Example resources transversal to all kinds of catalogs

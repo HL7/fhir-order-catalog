@@ -2,10 +2,11 @@
   <id value="example-normal-contexts-vitamin-d"/>
   <meta>
     <lastUpdated value="2020-03-10T07:30:00Z" />
+    <!-- FM 20201219
     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
+     -->
   </meta>
   <language value="fr-FR"/>
-
   <!--
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Availability Time Rule" />

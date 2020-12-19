@@ -85,13 +85,14 @@
 <artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition for messaging a new catalog"/>
 <artifact id="ValueSet/catalog-message-events-vs" key="ValueSet-catalog-message-events-vs" name="Order catalog message events ValueSet"/>
 <artifact id="StructureDefinition/RegulatorySummary" key="StructureDefinition-RegulatorySummary" name="RegulatorySummary Extension"/>
+<artifact id="StructureDefinition/ResultInterpretationSummary" key="StructureDefinition-ResultInterpretationSummary" name="ResultInterpretationSummary Extension"/>
 <artifact id="StructureDefinition/ScheduleSummary" key="StructureDefinition-ScheduleSummary" name="ScheduleSummary Extension"/>
 <artifact id="StructureDefinition/ServiceBillingCode" key="StructureDefinition-ServiceBillingCode" name="ServiceBillingCode Extension"/>
 <artifact id="StructureDefinition/SpecimenRequested" key="StructureDefinition-SpecimenRequested" name="SpecimenRequested Extension"/>
 <artifact id="Bundle/example-lab-test-creation-transaction-response" key="Bundle-example-lab-test-creation-transaction-response" name="Test created in laboratory compendium"/>
 <artifact id="ValueSet/example-reasons-for-order" key="ValueSet-example-reasons-for-order" name="Valid coded reasons for ordering a lab service"/>
 <artifact id="StructureDefinition/ValidityPeriod" key="StructureDefinition-ValidityPeriod" name="ValidityPeriod Extension"/>
-<artifact id="StructureDefinition/ObservationValueSet" key="StructureDefinition-ObservationValueSet" name="ValueSet Profile used by ObservationDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/ObservationValueSet" key="StructureDefinition-ObservationValueSet" name="ValueSet Profile used by ObservationDefinition"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
