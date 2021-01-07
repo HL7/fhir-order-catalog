@@ -38,6 +38,63 @@
     categories of catalogs of healthcare items. The use cases and artifacts (profiles, extensions,
     semantic resources) that are specific to a particular category of catalog will be placed under
     the responsibility of the HL7 Working Group maintaining the base resources for this category. </p>
+  <a name="walkthrough"> </a>
+  <h3>How to read this Guide</h3>
+  <p> This Guide is organized in a number of pages accessible from the top menu bar.</p>
+  <ul>
+    <li title="Home"><a href="index.html"><strong>Home:</strong></a> This home page provides the <a
+        href="index.html#intro">introduction</a>, <a href="index.html#sponsoringwg"
+          >background</a> and <a href="index.html#authors">contributors</a> to this Guide, stresses its purpose and scope as well as the roles
+      interacting on catalogs. It also provides the <a href="index.html#technical">general technical
+        design</a> for implementing catalogs of healthcare items in the FHIR standard.</li>
+    <li title="Use cases"><strong>Use cases</strong>: The pages under this menu option present the
+      use cases covered by the Guide, organized per kind of catalog: <ul>
+        <li><a href="uclabservices.html">Laboratory services</a> - lists the use cases for
+          compendium of laboratory diagnostic services. </li>
+        <li><a href="ucordersets.html">Order sets</a> - lists the use cases for library of order
+          sets. </li>
+        <li><a href="ucdrugs.html">Medications</a> - lists the use cases for catalog of drugs. </li>
+        <li><a href="ucdevices.html">Devices</a> - lists the use cases for catalog of devices. </li>
+      </ul>
+    </li>
+    <li title="Specifications"><strong>Specifications</strong>: The pages under this menu option
+      provide the functional specifications, organized per kind of catalog: <ul>
+        <li><a href="labservices.html">Laboratory services</a> - specifies the FHIR resources
+          implemented by a compendium of laboratory diagnostic services. </li>
+        <li><a href="ordersets.html">Order sets</a> - specifies the FHIR resources implemented by a
+          library of order sets. </li>
+        <li><a href="drugs.html">Medications</a> - specifies the FHIR resources implemented by a
+          catalog of drugs, including medication formularies. </li>
+        <li><a href="devices.html">Devices</a> - specifies the FHIR resources implemented by a
+          catalog of devices. </li>
+      </ul>
+    </li>
+    <li title="Interactions"><a href="interactions.html"><strong>Interaction Framework</strong></a>:
+      The page under this menu option specifies the interaction framework applicable to all kinds of
+      catalogs. for all kinds of catalogs</li>
+    <li title="Examples"><strong>Examples</strong>: The pages under this menu option present
+      examples of catalog healthcare items. They are organized per kind of catalog: <ul>
+        <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia
+          of laboratory diagnostic services. </li>
+        <li><a href="exordersets.html">Order sets</a> - presents examples for libraries of order
+          sets. </li>
+        <li><a href="exdrugs.html">Medications</a> - presents examples for catalogs of drugs. </li>
+        <li><a href="exdevices.html">Devices</a> - presents examples for catalogs of medical devices. </li>
+      </ul>
+    </li>
+    <li title="Artifacts"><a href="artifacts.html"><strong>Artifact Index</strong></a>: The page
+      under this menu option presents the standardized artifacts built for this Guide: <ul>
+        <li><a href="artifacts.html#1">Profiles</a></li>
+        <li><a href="artifacts.html#2">Extension definitions</a></li>
+        <li><a href="artifacts.html#3">Value sets</a></li>
+        <li><a href="artifacts.html#4">Code systems</a></li>
+        <li><a href="artifacts.html#5">Example instances</a></li>
+      </ul>
+    </li>
+    <li title="Downloads"><a href="downloads.html"><strong>Downloads</strong></a>: The page under
+      this menu option allows to download a copy of the artifacts and other useful information of
+      this implementation guide. </li>
+  </ul>
   <a name="sponsoringwg"> </a>
   <h3>Project and sponsoring background</h3>
   <p>This IG is one of the product deliverables of project <a
@@ -65,7 +122,6 @@
   </ul>
   <p>Catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
     messaging framework</p>
-  <br/>
   <a name="scope"> </a>
   <h3>Scopes of order catalogs and roles involved</h3>
   <p> Order catalogs have varied scopes, sizes, ownerships, stewardships and targeted consumers and
@@ -98,15 +154,23 @@
     are needed between these two roles to administer the content of the shared catalog. </p>
   <p>The interactions between those three roles are described in the <a href="interactions.html"
       >Interaction Framework</a> of this guide.</p>
-  <br/>
   <a name="outofscope"> </a>
-  <h3>Out of Current Scope</h3>
-  <p>Definitional resources describing an orderable item of the catalog guide the generation of
-    orders of this item, as well as reports fulfilling these orders. The exact methods for
-    generating the workflow resources from the definitional resources depend on the standard chosen
-    (HL7 v2, FHIR) to convey the workflow objects (orders, tasks, reports ...). The definition of
-    these methods is beyond the scope of the current IG</p>
-  <br/>
+  <h3>Out of Scope</h3>
+  <ul>
+    <li>A catalog conformant to this IG does not contain any personal health data, and therefore
+      presents no risk of privacy breach. Thus, ensuring privacy by design is out of scope of this
+      IG.</li>
+    <li>A catalog conforming to this guide is a collection of definitional resources, originated by
+      a single actor: the catalog owner, and shared on the FHIR API by a single actor - the catalog
+      custodian. There is no need to trace and reconcile update activities of multiple actors on any
+      of the resources of the catalog. Data provenance is therefore known a priori. This is why
+      handling data provenance with the Provenance resource is out of scope of this IG.</li>
+    <li>Definitional resources describing an orderable item of the catalog guide the generation of
+      orders of this item, as well as reports fulfilling these orders. The exact methods for
+      generating the workflow resources from the definitional resources depend on the standard
+      chosen (HL7 v2, FHIR) to convey the workflow objects (orders, tasks, reports ...). The
+      definition of these methods is currently beyond the scope of this IG.</li>
+  </ul>
   <a name="technical"> </a>
   <h3>Technical Overview</h3>
   <p> In the FHIR standard, an order catalog as a whole is represented by an instance of the
@@ -130,54 +194,6 @@
     large catalogs because it makes the administration of the content easier. In particular, adding
     a new item or retiring an item does not impose any update to the Catalog or the CatalogHeader
     resource representing the catalog as a whole.</p>
-  <a name="walkthrough"> </a>
-  <h3>Walkthrough</h3>
-  <p> The main sections of this IG are: </p>
-  <ul>
-    <li title="Use cases"><strong>Use cases</strong>
-      <ul>
-        <li><a href="uclabservices.html">Laboratory services</a> - lists the use cases for
-          compendium of laboratory diagnostic services. </li>
-        <li><a href="ucordersets.html">Order sets</a> - lists the use cases for library of order
-          sets. </li>
-        <li><a href="ucdrugs.html">Medications</a> - lists the use cases for catalog of drugs. </li>
-        <li><a href="ucdevices.html">Devices</a> - lists the use cases for catalog of devices. </li>
-      </ul>
-    </li>
-    <li title="Specifications"><strong>Specifications</strong>
-      <ul>
-        <li><a href="labservices.html">Laboratory services</a> - specifies the FHIR resources
-          implemented by a compendium of laboratory diagnostic services. </li>
-        <li><a href="ordersets.html">Order sets</a> - specifies the FHIR resources implemented by a
-          library of order sets. </li>
-        <li><a href="drugs.html">Medications</a> - specifies the FHIR resources implemented by a
-          catalog of drugs, including medication formularies. </li>
-        <li><a href="devices.html">Devices</a> - specifies the FHIR resources implemented by a
-          catalog of devices. </li>
-      </ul>
-    </li>
-    <li title="Interactions"><a href="interactions.html"><strong>Interaction Framework</strong></a>
-      for all kinds of catalogs</li>
-    <li title="Examples"><strong>Examples</strong>
-      <ul>
-        <li><a href="exlabservices.html">Laboratory services</a> - presents examples for compendia
-          of laboratory diagnostic services. </li>
-        <li><a href="exordersets.html">Order sets</a> - presents examples for libraries of order
-          sets. </li>
-        <li><a href="exdrugs.html">Medications</a> - presents examples for catalogs of drugs. </li>
-        <li><a href="exdevices.html">Devices</a> - presents examples for catalogs of devices. </li>
-      </ul>
-    </li>
-    <li title="Assets"><strong>Building blocks &amp; assets</strong>
-      <ul>
-        <li><a href="artifacts.html">Artifact Index</a> - provides all the detailed artifacts built
-          for this implementation guide: semantic resources, profiles, extensions, examples. </li>
-        <li><a href="downloads.html">Downloads</a> - Allows downloading a copy of the artifacts of
-          this implementation guide and other useful information. </li>
-      </ul>
-    </li>
-  </ul>
-  <br/>
   <a name="authors"> </a>
   <h3>Authors and Contributors</h3>
   <table>
