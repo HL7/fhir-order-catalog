@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/valueset.xsd">
-  <id value="example-clinical-focus-vitamin-d"/>
+  <id value="example-clinical-focus"/>
   <meta>
     <lastUpdated value="2020-03-10T13:30:00Z" />
     <!-- FM 20201219
@@ -22,8 +22,9 @@
     <valueCode value="fhir" />
   </extension>    
   -->
-  <name value="ClinicalFocusVitaminD" />
-  <title value="All possible clinical contexts for vitamin D test"/>
+  <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-clinical-focus"/>
+  <name value="ClinicalFocus" />
+  <title value="All possible clinical contexts for any lab test"/>
   <status value="active" />
   <experimental value="false" />
   <date value="2019-12-20" />
@@ -58,7 +59,7 @@
     <include>
       <system value="http://snomed.info/sct" />
       <filter>
-        <!-- All finding situations -->
+        <!-- All finding with explicit context situations -->
         <property value="concept"/>
         <op value="is-a"/>
         <value value="413350009"/>

@@ -601,8 +601,8 @@
 					>ObservationValueSet</a></td>
 				-->
 				<td/>
-				<td><a href="ValueSet-example-clinical-focus-vitamin-d.html"
-						>example-clinical-focus-vitamin-d</a></td>
+				<td><a href="ValueSet-example-clinical-focus.html"
+						>example-clinical-focus</a></td>
 			</tr>
 			<tr>
 				<td>Vitamin D level - test result</td>

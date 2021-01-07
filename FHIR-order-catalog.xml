@@ -17,7 +17,7 @@
 <artifact id="StructureDefinition/ItemTransactionRequest" key="StructureDefinition-ItemTransactionRequest" name="ItemTransactionRequest Profile"/>
 <artifact id="StructureDefinition/ItemTransactionResponse" key="StructureDefinition-ItemTransactionResponse" name="ItemTransactionResponse Profile"/>
 <artifact id="ChargeItemDefinition/example-lab-billing-vitamind-focus" key="ChargeItemDefinition-example-lab-billing-vitamind-focus" name="Lab billing code and rule for vitamin D"/>
-<artifact id="ValueSet/example-clinical-focus-vitamin-d" key="ValueSet-example-clinical-focus-vitamin-d" name="Lab contexts possibly associated with vitamin D testing"/>
+<artifact deprecated="true" id="ValueSet/example-clinical-focus-vitamin-d" key="ValueSet-example-clinical-focus-vitamin-d" name="Lab contexts possibly associated with vitamin D testing"/>
 <artifact id="ObservationDefinition/example-input-observation-reason-for-ordering" key="ObservationDefinition-example-input-observation-reason-for-ordering" name="Lab input observation - reason"/>
 <artifact id="ObservationDefinition/example-input-observation-context-for-vitamin-d" key="ObservationDefinition-example-input-observation-context-for-vitamin-d" name="Lab input observation - vitamin d"/>
 <artifact id="ValueSet/example-normal-contexts-vitamin-d" key="ValueSet-example-normal-contexts-vitamin-d" name="Lab normal clinical focus for billing vitamin D"/>
@@ -84,6 +84,7 @@
 <artifact id="MessageDefinition/example-message-definition-update" key="MessageDefinition-example-message-definition-update" name="Message definition for messaging a catalog update"/>
 <artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition for messaging a new catalog"/>
 <artifact id="ValueSet/catalog-message-events-vs" key="ValueSet-catalog-message-events-vs" name="Order catalog message events ValueSet"/>
+<artifact id="ValueSet/example-clinical-focus" key="ValueSet-example-clinical-focus" name="Possible contexts for any lab test order"/>
 <artifact id="StructureDefinition/RegulatorySummary" key="StructureDefinition-RegulatorySummary" name="RegulatorySummary Extension"/>
 <artifact id="StructureDefinition/ResultInterpretationSummary" key="StructureDefinition-ResultInterpretationSummary" name="ResultInterpretationSummary Extension"/>
 <artifact id="StructureDefinition/ScheduleSummary" key="StructureDefinition-ScheduleSummary" name="ScheduleSummary Extension"/>

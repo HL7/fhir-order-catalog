@@ -810,10 +810,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/example-clinical-focus-vitamin-d"/>
+        <reference value="ValueSet/example-clinical-focus"/>
       </reference>
-      <name value="Lab contexts possibly associated with vitamin D testing"/>
-      <description value="Lab E6 - value set of  contexts possibly associated with Vitamin D test"/>
+      <name value="Possible contexts for any lab test order"/>
+      <description value="Contexts possibly associated with any laboratory test"/>
       <!-- FM 20201219
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>

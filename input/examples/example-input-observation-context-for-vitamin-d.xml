@@ -14,7 +14,7 @@
             <p>Elément clinique pertinent &quot;contexte clinique de la prescription du dosage de la vitamine D&quot;</p>
             <p>Résultats multiples autorisés</p>
             <p>Types de résultats autorisés : concept codable (<code>CodeableConcept</code>)</p>
-            <p>Valeurs autorisées : <a href="ValueSet-example-clinical-focus-vitamin-d.html"> ValueSet/example-clinical-focus-vitamin-d</a></p>
+            <p>Valeurs autorisées : <a href="ValueSet-example-clinical-focus.html"> ValueSet/example-clinical-focus</a></p>
             <p>Valeurs normales ouvrant droit à facturation : <a href="ValueSet-example-normal-contexts-vitamin-d.html"> ValueSet/example-normal-contexts-vitamin-d</a></p>
         </div>
     </text>
@@ -35,7 +35,7 @@
     <permittedDataType value="CodeableConcept"/>
     <multipleResultsAllowed value="true"/>
     <validCodedValueSet>
-        <reference value="ValueSet/example-clinical-focus-vitamin-d"/>
+        <reference value="ValueSet/example-clinical-focus"/>
     </validCodedValueSet>
     <normalCodedValueSet>
         <reference value="ValueSet/example-normal-contexts-vitamin-d"/>

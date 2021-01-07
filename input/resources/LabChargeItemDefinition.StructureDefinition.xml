@@ -94,6 +94,14 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="ChargeItemDefinition.useContext:ClinicalFocus.value[x].coding">
+      <path value="ChargeItemDefinition.useContext.value[x].coding" />
+      <binding>
+        <strength value="example" />
+        <description value="All contexts for any laboratory test" />
+        <valueSet value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-clinical-focus" />
+      </binding>
+    </element>
     <element id="ChargeItemDefinition.code">
       <path value="ChargeItemDefinition.code" />
       <min value="1" />
