@@ -2,29 +2,32 @@
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<table class="note-to-balloters">
 		<tbody>
-			<tr><th><b>This page is excluded from the current ballot. The scope of the current ballot is limited to the &quot;laboratory service content&quot; of this IG.</b></th></tr>
+			<tr>
+				<th><b>This page is excluded from the current ballot. The scope of the current
+						ballot is limited to the &quot;laboratory service content&quot; of this
+						IG.</b></th>
+			</tr>
 		</tbody>
 	</table>
 	<br/>
 	<p>This section lists the use cases for using catalogs of medications.</p>
 	<ul>
-		<li>A health care organization maintains its medication formulary and shares it to the
-			applications used by its physicians, nurses and pharmacists to support medication
-			prescription, dispense and administration.</li>
-		<li>A content vendor publishes the general catalog of medications authorized to a national
-			market. Health care organizations of the country import subsets of this general catalog
-			so as to synchronize their local medication formularies. </li>
-		<li>Variant 1: In addition to the general catalog of medications, the content vendor hosts
-			the medication formularies of each of its client organizations who interact with the
-			server to use their own medication formulary in their medication workflows, as well as
-			to maintain this medication formulary over time (inserting/updating/retiring items). </li>
-		<li> A health care organization provides medication formularies to its patients for
-			educational purposes. </li>
-		<li>An organization exposes the set of standardized vocabularies needed to support full
-			semantic interoperability for prescription, dispense and administration of medications
-			within a jurisdiction (e.g. a country). This reference set is represented as a generic
-			catalog of all the medications that are usable within the jurisdiction. This generic
-			catalog is imported in whole or in parts by the applications of the prescribers, carers
-			and dispensers of the jurisdiction. </li>
+		<li>A health care organization maintains its medication formulary to support prescribing,
+			dispensing and medication administration and shares it internally in applications used
+			by its physicians, nurses and pharmacists.</li>
+		<li>A health care organization or government organization maintains its medication formulary
+			and shares it externally with patients and care givers to allow them to know what
+			medications are covered and not covered for their plan.</li>
+		<li>A health care organization or government organization maintains its medication formulary
+			and allows a patient or their care giver to retrieve a catalog subset of the medications
+			that are covered for their plan.</li>
+		<li>A vendor maintains clinical drug knowledge in a catalog shared to organizations to
+			support the retrieval of drug information by health care practitioners. </li>
+		<li>A vendor maintains drug knowledge and shares it online to support the retrieval of drug
+			information by patients and consumers. </li>
+		<li>An organization maintains a standardized medication terminology for all medications
+			licensed for use within a jurisdiction to support prescribing, dispensing and
+			administration of medications by health care professionals and consumption of
+			medications by patients.</li>
 	</ul>
 </div>
