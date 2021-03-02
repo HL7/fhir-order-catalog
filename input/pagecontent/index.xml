@@ -4,8 +4,8 @@
   <table class="note-to-balloters">
     <tbody>
       <tr>
-        <th>The scope of the current ballot is limited to laboratory service content and device
-          content of this IG. <br/>Pages which are excluded from this ballot are signaled as such by
+        <th>The scope of next ballot will be limited to laboratory services, medications and devices
+          contents of catalogs. <br/>Pages which are excluded from this ballot will be signaled as such by
           a note to balloters at the top of the page. <br/>Feedback is welcome and may be submitted
           through the <a href="http://hl7.org/fhir-issues"> FHIR Jira tracker</a></th>
       </tr>
