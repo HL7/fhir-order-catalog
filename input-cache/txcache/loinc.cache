@@ -296,3 +296,14 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "14635-7",
+  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

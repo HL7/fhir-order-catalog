@@ -20,7 +20,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
-  </extension>    
+  </extension>
   -->
   <name value="ReasonsForOrder" />
   <title value="All Valid Reasons for Ordering a Lab Service"/>
@@ -36,6 +36,7 @@
   </contact>
   <description value="Broadest value set that may be referenced by ObservationDefinition.validCodedValueSet"/>
   <immutable value="false" />
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct" />

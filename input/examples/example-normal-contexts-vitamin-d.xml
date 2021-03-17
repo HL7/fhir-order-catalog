@@ -38,6 +38,7 @@
   </contact>
   <description value="Ce jeu de valeurs liste les réponses normales associées à la question &quot;contexte de prescription de l'examen dosage de la vitamine D&quot;, autorisant le remboursement de cet examen (NABM 1139)."/>
   <immutable value="false" />
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>
