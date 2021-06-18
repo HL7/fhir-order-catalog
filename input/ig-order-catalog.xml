@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="0.1.1"/>
+  <version value="current"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>
@@ -30,8 +30,8 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <!-- 
-      Below, the semantic resources 
+    <!--
+      Below, the semantic resources
     -->
     <resource>
       <reference>
@@ -94,8 +94,8 @@
       />
     </resource>
 
-    <!-- 
-      Below, the extensions 
+    <!--
+      Below, the extensions
     -->
     <resource>
       <reference>
@@ -178,8 +178,8 @@
         value="Extension attaching specimen requested to a PlanDefinition.action, as a set of (possibly choosable) references to SpecimenDefiniton"
       />
     </resource>
-    <!-- 
-      Below, the profiles 
+    <!--
+      Below, the profiles
     -->
     <resource>
       <reference>
@@ -277,7 +277,7 @@
         value="Profile of Bundle conveying the response to a transaction request for administering catalog content"
       />
     </resource>
-    <!-- 
+    <!--
       Catalog Examples - CatalogHeader
     -->
     <resource>
@@ -289,8 +289,8 @@
         value="Lab E* - Catalog header representing a clinical laboratory compendium, used by all lab examples in this implementation guide"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-    </resource>    
-    <!-- 
+    </resource>
+    <!--
       PlanDefinition Examples - LabServiceDefinition
     -->
     <resource>
@@ -415,7 +415,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </resource>
-    <!-- 
+    <!--
       ActivityDefinition Examples - LabProcedureDefinition
     -->
     <resource>
@@ -527,7 +527,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </resource>
-    <!-- 
+    <!--
       SpecimenDefinition Examples - LabSpecimenDefinition
     -->
     <resource>
@@ -586,7 +586,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </resource>
-    <!-- 
+    <!--
       ObservationDefinition examples - InputObservationDeEfinition
     -->
     <resource>
@@ -609,7 +609,7 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"
       />
     </resource>
-    <!-- 
+    <!--
       ObservationDefinition examples - LabObservationDeEfinition
     -->
     <resource>
@@ -776,7 +776,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </resource>
-    <!-- 
+    <!--
       Other miscellaneous resources for Lab Examples
     -->
     <resource>
@@ -828,9 +828,9 @@
       <!-- FM 20201219
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
-      -->    
+      -->
     </resource>
-    <!-- 
+    <!--
       Example resources transversal to all kinds of catalogs
     -->
     <resource>
@@ -852,7 +852,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
     </resource>
-    <!-- 
+    <!--
       Example E8 - Transaction inserting a new diagnostic test into a laboratory compendium
     -->
     <resource>
@@ -875,7 +875,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionResponse"/>
     </resource>
-    <!-- 
+    <!--
       html pages
     -->
     <page>

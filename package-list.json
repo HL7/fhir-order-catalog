@@ -6,8 +6,11 @@
     "list": [
         {
             "version" : "current",
+            "date": "2021-06-18",
             "desc" : "Continuous Integration Build (latest in version control)",
-            "path" : "http://build.fhir.org/ig/HL7/fhir-order-catalog",
+            "path" : "http://hl7.org/fhir/uv/order-catalog",
+            "sequence": "STU 2",
+            "fhirversion": "4.0.1",
             "status" : "ci-build",
             "current" : true
         },
@@ -20,5 +23,6 @@
             "fhirversion": "4.0.1",
             "status": "ballot"
         }
-    ]
+    ],
+    "category": "Administration"
 }
