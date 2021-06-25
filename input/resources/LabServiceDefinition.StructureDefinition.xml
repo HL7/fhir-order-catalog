@@ -399,7 +399,6 @@
       <type>
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="PlanDefinition.relatedArtifact:Includes">
