@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.codage.ext.cnamts.fr/codif/nabm",
+  "code" : "1609"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.codage.ext.cnamts.fr/codif/nabm",
+  "code" : "0407"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.codage.ext.cnamts.fr/codif/nabm",
+  "code" : "0627"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.codage.ext.cnamts.fr/codif/nabm",
+  "code" : "0592"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
