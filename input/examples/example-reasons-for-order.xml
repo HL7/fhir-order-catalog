@@ -22,6 +22,7 @@
     <valueCode value="fhir" />
   </extension>
   -->
+  <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-reasons-for-order"/>
   <name value="ReasonsForOrder" />
   <title value="All Valid Reasons for Ordering a Lab Service"/>
   <status value="active" />
