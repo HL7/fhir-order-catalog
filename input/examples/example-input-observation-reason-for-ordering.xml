@@ -35,7 +35,9 @@
     <permittedDataType value="CodeableConcept"/>
     <permittedDataType value="string"/>
     <multipleResultsAllowed value="true"/>
-    <validCodedValueSet>
-        <reference value="ValueSet/example-reasons-for-order"/>
-    </validCodedValueSet>
+	<qualifiedValue>
+		<validCodedValueSet>
+			<canonical value="ValueSet/example-reasons-for-order"/>
+		</validCodedValueSet>
+	</qualifiedValue>
 </ObservationDefinition>

@@ -34,10 +34,12 @@
     </code>
     <permittedDataType value="CodeableConcept"/>
     <multipleResultsAllowed value="true"/>
-    <validCodedValueSet>
-        <reference value="ValueSet/example-clinical-focus"/>
-    </validCodedValueSet>
-    <normalCodedValueSet>
-        <reference value="ValueSet/example-normal-contexts-vitamin-d"/>
-    </normalCodedValueSet>
+	<qualifiedValue>
+		<validCodedValueSet>
+			<canonical value="ValueSet/example-clinical-focus"/>
+		</validCodedValueSet>
+		<normalCodedValueSet>
+			<canonical value="ValueSet/example-normal-contexts-vitamin-d"/>
+		</normalCodedValueSet>
+	</qualifiedValue>
 </ObservationDefinition>
