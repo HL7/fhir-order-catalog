@@ -54,7 +54,7 @@
                 <display value="Normal Range"/>
             </coding>
         </context>	
-        <category value="reference"/>
+        <rangeCategory value="reference"/>
         <range>
             <low>
                 <value value="136"/>

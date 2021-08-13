@@ -93,7 +93,7 @@
                 <code value="a"/>
             </low>
         </age>		
-        <category value="reference"/>
+        <rangeCategory value="reference"/>
         <range>
             <low>
                 <value value="3.5"/>
