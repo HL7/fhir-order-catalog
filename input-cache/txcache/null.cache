@@ -24,8 +24,8 @@ e: {
   "experimental" : false,
   "date" : "2017-02-15T16:33:00.000-07:00",
   "expansion" : {
-    "identifier" : "urn:uuid:d4c1005e-7651-46f3-aae5-af5fab5b72cd",
-    "timestamp" : "2021-08-13T15:57:13.269Z",
+    "identifier" : "urn:uuid:3c2efcfd-8dbf-4ab6-ad1d-a774af69be1e",
+    "timestamp" : "2021-08-19T10:41:30.362Z",
     "parameter" : [{
       "name" : "expansion-source",
       "valueString" : "ValueSet/action-participant-role"
@@ -56,7 +56,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20210301"
     }]
   }
 },

@@ -6,10 +6,10 @@
     </meta>
     <type value="transaction-response" />
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDX_FMSpec3" />
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3" />
         <resource>
             <SpecimenDefinition>
-                <id value="QDX_Spec3" />
+                <id value="QDXSpec3" />
                 <meta>
                     <versionId value="1" />
                     <lastUpdated value="2020-07-09T09:28:00.392383+02:00" />
@@ -21,6 +21,7 @@
                         <p>Venous blood specimen collected in evacuated blood collection tube, thrombin/clot activator/gel separator tube (dark yellow cap), to be tested as serum - min. vol. 2 mL</p>
                     </div>
                 </text>
+				<status value="active"/>
                 <typeCollected>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -131,15 +132,15 @@
         </resource>
         <response>
             <status value="Created" />
-            <location value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDX_FMSpec3/_history/1" />
+            <location value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3/_history/1" />
             <etag value="W/&quot;1&quot;" />
         </response>
     </entry>
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDX_FM90000000" />
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDXFM90000000" />
         <resource>
             <ObservationDefinition>
-                <id value="QDX_FM90000000"/>
+                <id value="QDXFM90000000"/>
                 <meta>
                     <versionId value="1" />
                     <lastUpdated value="2020-07-09T09:28:01.640399+02:00" />
@@ -152,6 +153,7 @@
                         <p>Laboratory observation: potassium level in blood</p>
                     </div>
                 </text>
+				<status value="active"/>
                 <category>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
@@ -174,34 +176,21 @@
                 </method>
                 <preferredReportName value="Potassium" />
                 <quantitativeDetails>
+				    <unit>
+                        <coding>
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </coding>
+                    </unit>
                     <customaryUnit>
                         <coding>
                             <system value="http://unitsofmeasure.org" />
                             <code value="g/L" />
                         </coding>
                     </customaryUnit>
-                    <unit>
-                        <coding>
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </coding>
-                    </unit>
                     <decimalPrecision value="1" />
                 </quantitativeDetails>
-                <qualifiedInterval>
-                    <category value="reference" />
-                    <range>
-                        <low>
-                            <value value="3.8" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </low>
-                        <high>
-                            <value value="5.1" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </high>
-                    </range>
+                <qualifiedValue>
                     <context>
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
@@ -220,22 +209,23 @@
                             <system value="http://unitsofmeasure.org" />
                             <code value="a" />
                         </high>
-                    </age>
-                </qualifiedInterval>
-                <qualifiedInterval>
-                    <category value="reference" />
+                    </age>				
+                    <rangeCategory value="reference" />
                     <range>
                         <low>
-                            <value value="3.5" />
+                            <value value="3.8" />
                             <system value="http://unitsofmeasure.org" />
                             <code value="mmol/L" />
                         </low>
                         <high>
-                            <value value="5.3" />
+                            <value value="5.1" />
                             <system value="http://unitsofmeasure.org" />
                             <code value="mmol/L" />
                         </high>
                     </range>
+
+                </qualifiedValue>
+                <qualifiedValue>
                     <context>
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
@@ -249,21 +239,34 @@
                             <system value="http://unitsofmeasure.org" />
                             <code value="a" />
                         </low>
-                    </age>
-                </qualifiedInterval>
+                    </age>				
+                    <rangeCategory value="reference" />
+                    <range>
+                        <low>
+                            <value value="3.5" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </low>
+                        <high>
+                            <value value="5.3" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </high>
+                    </range>
+                </qualifiedValue>
             </ObservationDefinition>
         </resource>
         <response>
             <status value="Created" />
-            <location value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDX_FM90000000/_history/1" />
+            <location value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDXFM90000000/_history/1" />
             <etag value="W/&quot;1&quot;" />
         </response>
     </entry>
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/ActivityDefinition/QDX_FM456" />
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/ActivityDefinition/QDXFM456" />
         <resource>
             <ActivityDefinition>
-                <id value="QDX_FM456" />
+                <id value="QDXFM456" />
                 <meta>
                     <versionId value="1" />
                     <lastUpdated value="2020-07-09T09:28:02.217606+02:00" />
@@ -276,7 +279,7 @@
                         <p>Potassium measurement on blood serum</p>
                     </div>
                 </text>
-                <url value="http://questdiagnostics.com/ActivityDefinition/QDX_FM456" />
+                <url value="http://questdiagnostics.com/ActivityDefinition/QDXFM456" />
                 <identifier>
                     <use value="official" />
                     <value value="K_serum_test" />
@@ -323,21 +326,21 @@
                     <code value="mn" />
                 </timingDuration>
                 <observationResultRequirement>
-                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDX_FM90000000"/>
+                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/ObservationDefinition/QDXFM90000000"/>
                 </observationResultRequirement>
             </ActivityDefinition>
         </resource>
         <response>
             <status value="Created" />
-            <location value="https://jade.phast.fr/resources-server/api/FHIR/ActivityDefinition/QDX_FM456/_history/1" />
+            <location value="https://jade.phast.fr/resources-server/api/FHIR/ActivityDefinition/QDXFM456/_history/1" />
             <etag value="W/&quot;1&quot;" />
         </response>
     </entry>
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/PlanDefinition/QDXFM_456" />
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/PlanDefinition/QDXPD456" />
         <resource>
             <PlanDefinition>
-                <id value="QDX_FM456" />
+                <id value="QDXPD456" />
                 <meta>
                     <versionId value="1" />
                     <lastUpdated value="2020-07-09T09:28:02.6544126+02:00" />
@@ -446,7 +449,7 @@
                         <extension url="ExclusiveGroup">
                             <extension url="Material">
                                 <valueReference>
-                                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDX_FMSpec3"/>
+                                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3"/>
                                 </valueReference> 
                             </extension>
                         </extension>
@@ -471,13 +474,13 @@
                         <system value="http://unitsofmeasure.org" />
                         <code value="mn" />
                     </timingDuration>
-                    <definitionCanonical value="http://questdiagnostics.com/ActivityDefinition/QDX_FM456" />
+                    <definitionCanonical value="http://questdiagnostics.com/ActivityDefinition/QDXFM456" />
                 </action>
             </PlanDefinition>
         </resource>
         <response>
             <status value="Created" />
-            <location value="https://jade.phast.fr/resources-server/api/FHIR/PlanDefinition/QDX_FM456/_history/1" />
+            <location value="https://jade.phast.fr/resources-server/api/FHIR/PlanDefinition/QDXPD456/_history/1" />
             <etag value="W/&quot;1&quot;" />
         </response>
     </entry>

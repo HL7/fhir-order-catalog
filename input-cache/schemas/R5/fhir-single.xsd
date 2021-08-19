@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Aug 12, 2021 19:00+0000 for FHIR v4.6.0 
+  Generated on Wed, Aug 18, 2021 09:08+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -13345,11 +13345,6 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Whether this is a current issue or one that has been retired etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">General description of an effect (particularly for a general warning, rather than any of the more specific types such as indication) for when a distinct coded or textual description is not appropriate using  Indication.diseaseSymptomProcedure.text, Contraindication.diseaseSymptomProcedure.text etc. For example &quot;May affect ability to drive&quot;.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="contraindication" type="ClinicalUseDefinition.Contraindication" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Specifics for when this is a contraindication.</xs:documentation>
@@ -13373,6 +13368,11 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="undesirableEffect" type="ClinicalUseDefinition.UndesirableEffect" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Describe the undesirable effects of the medicinal product.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="warning" type="ClinicalUseDefinition.Warning" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical advice/attention if you feel unwell'.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -13556,6 +13556,27 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="frequencyOfOccurrence" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">How often the effect is seen.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalUseDefinition.Warning">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A single issue - either an indication, contraindication, interaction or an undesirable effect for a medicinal product, medication, device or procedure.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A textual definition of this warning, with formatting.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A coded or unformatted textual definition of this warning.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>

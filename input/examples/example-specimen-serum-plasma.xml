@@ -7,7 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </meta>
     <language value="en-US"/>
-
+	<status value="active"/>
     <typeCollected>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
