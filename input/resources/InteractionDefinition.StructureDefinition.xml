@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InteractionDefinition" />
+  <version value="0.1" />
+  <name value="InteractionDefinition" />
+  <title value="ClinicalUseDefinition as an interaction" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This profile constrains the base resource ClinicalUseDefinition to represent an interaction associated with a healthcare item (medication, device, test, service ...) described in a catalog" />
+  <mapping>
+    <identity value="idmp" />
+    <uri value="https://en.wikipedia.org/wiki/Identification_of_medicinal_products" />
+    <name value="IDMP Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ClinicalUseIssue" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalUseIssue" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ClinicalUseIssue.type">
+      <path value="ClinicalUseIssue.type" />
+      <fixedCode value="interaction" />
+    </element>
+    <element id="ClinicalUseIssue.contraindication">
+      <path value="ClinicalUseIssue.contraindication" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalUseIssue.indication">
+      <path value="ClinicalUseIssue.indication" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalUseIssue.interaction">
+      <path value="ClinicalUseIssue.interaction" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalUseIssue.undesirableEffect">
+      <path value="ClinicalUseIssue.undesirableEffect" />
+      <max value="0" />
+	</element>
+	<!-- FM 20210903 - waiting for 4.7.0    
+	<element id="ClinicalUseIssue.warning">
+      <path value="ClinicalUseIssue.warning" />
+      <max value="0" />
+    </element>
+	-->
+  </differential>
+</StructureDefinition>
