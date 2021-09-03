@@ -7,7 +7,7 @@
 	</table>
 	<br/>
 	<p>This section lists the use cases for using libraries of order sets.</p>
-	<ul>
+	<ol>
 		<li>A client of a content vendor’s system wishes to import the latest set of published order
 			sets into its own catalog for deployment into its EHR.</li>
 		<li>A content vendor wishes to import a collection of order sets from one of its client
@@ -34,5 +34,5 @@
 			into their system. They search the catalog for all active order sets that are ready for
 			publication and import that set into their local catalog. Once imported, an integrator
 			reviews the order sets, makes the necessary changes, and deploys them to the EHR.</li>
-	</ul>
+	</ol>
 </div>

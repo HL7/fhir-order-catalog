@@ -11,7 +11,7 @@
 	</table>
 	<br/>
 	<p>This section lists the use cases for using catalogs of medications.</p>
-	<ul>
+	<ol>
 		<li>A health care organization maintains its medication formulary to support prescribing,
 			dispensing and medication administration and shares it internally in applications used
 			by its physicians, nurses and pharmacists.</li>
@@ -29,5 +29,5 @@
 			licensed for use within a jurisdiction to support prescribing, dispensing and
 			administration of medications by health care professionals and consumption of
 			medications by patients.</li>
-	</ul>
+	</ol>
 </div>
