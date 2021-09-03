@@ -5,6 +5,8 @@
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "{Index_val}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -15,6 +17,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -25,6 +29,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "{titer}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -35,6 +41,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "g/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -45,6 +53,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mmol/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -55,6 +65,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "[arb'U]/mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -65,6 +77,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "g/(24.h)",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -75,6 +89,8 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -85,6 +101,8 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Cel",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -102,6 +120,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "g/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -119,6 +139,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "g/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -136,6 +158,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mmol/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -153,6 +177,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "mmol/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -163,6 +189,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "a",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -180,6 +208,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "{Index_val}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -197,6 +227,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "{Index_val}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -214,6 +246,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "h",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -232,6 +266,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "h",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -242,6 +278,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "h",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -259,6 +297,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -276,6 +316,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -293,6 +335,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL/min",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -311,6 +355,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "mL/min",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -321,6 +367,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL/min",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -338,6 +386,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "{titer}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -355,6 +405,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "{titer}",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -372,6 +424,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mg/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -390,6 +444,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "mg/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -400,6 +456,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mg/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -417,6 +475,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "[arb'U]/mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -434,6 +494,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "[arb'U]/mL",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -451,6 +513,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "g/(24.h)",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -468,6 +532,8 @@ v: {
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "g/(24.h)",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -485,6 +551,8 @@ v: {
 }, "lang":"fr-FR", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "pmol/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -502,6 +570,8 @@ v: {
 }, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "pmol/L",
+  "code" : "",
+  "system" : "",
   "severity" : null,
   "error" : ""
 }
@@ -512,6 +582,92 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "pmol/L",
+  "code" : "",
+  "system" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "[arb'U]/mL"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "[arb'U]/mL",
+  "code" : "[arb'U]/mL",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "{titer}"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "{titer}",
+  "code" : "{titer}",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "pmol/L"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "pmol/L",
+  "code" : "pmol/L",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "g/L"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "g/L",
+  "code" : "g/L",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mmol/L"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "mmol/L",
+  "code" : "mmol/L",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "g/(24.h)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "g/(24.h)",
+  "code" : "g/(24.h)",
+  "system" : "http://unitsofmeasure.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "{Index_val}"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "{Index_val}",
+  "code" : "{Index_val}",
+  "system" : "http://unitsofmeasure.org",
   "severity" : null,
   "error" : ""
 }

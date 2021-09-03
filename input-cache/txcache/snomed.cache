@@ -1,40 +1,12 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "404684003"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Clinical finding (finding)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "272379006"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Events",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "413350009"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Context-dependent finding",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
   "code" : "41345002"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Rickets",
+  "code" : "41345002",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -45,6 +17,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Osteomalacia",
+  "code" : "4598005",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -55,6 +29,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Transplanted kidney present",
+  "code" : "737295003",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -65,6 +41,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Assessment for bariatric surgery",
+  "code" : "707206008",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -75,6 +53,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Assessment using falls risk assessment score for the elderly (procedure)",
+  "code" : "443731004",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -85,6 +65,44 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Drug prescription",
+  "code" : "182817000",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "404684003"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Clinical finding (finding)",
+  "code" : "404684003",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "272379006"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Events",
+  "code" : "272379006",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "413350009"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Context-dependent finding",
+  "code" : "413350009",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -95,6 +113,21 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "SNOMED CT Concept",
+  "code" : "138875005",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "166312007",
+  "display" : "Blood chemistry"
+}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Blood chemistry",
+  "code" : "166312007",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -106,6 +139,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Blood chemistry",
+  "code" : "166312007",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -117,17 +152,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Sample serology",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
+  "code" : "165994006",
   "system" : "http://snomed.info/sct",
-  "code" : "166312007",
-  "display" : "Blood chemistry"
-}, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Blood chemistry",
   "severity" : null,
   "error" : ""
 }
@@ -139,6 +165,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Rickets",
+  "code" : "41345002",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -150,6 +178,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Osteomalacia",
+  "code" : "4598005",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -161,6 +191,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Transplanted kidney present",
+  "code" : "737295003",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -172,6 +204,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Assessment for bariatric surgery",
+  "code" : "707206008",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -183,6 +217,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Assessment using falls risk assessment score for the elderly (procedure)",
+  "code" : "443731004",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -194,6 +230,8 @@ v: {
 }, "valueSet" :null, "lang":"fr-FR", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Drug prescription",
+  "code" : "182817000",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -205,127 +243,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "24 hour urine measurement (procedure)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
+  "code" : "409091002",
   "system" : "http://snomed.info/sct",
-  "code" : "122555007",
-  "display" : "Venous blood specimen"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Venous blood specimen",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "263678003",
-  "display" : "At rest"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "At rest",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "119364003",
-  "display" : "Serum specimen"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Serum specimen",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "702281005",
-  "display" : "Evacuated blood collection tube, thrombin/clot activator/gel separator"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Evacuated blood collection tube, thrombin/clot activator/gel separator",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "122555007",
-  "display" : "Venous blood specimen (specimen)"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Venous blood specimen",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "122554006",
-  "display" : "Capillary blood specimen (specimen)"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Capillary blood specimen",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "1048003",
-  "display" : "Capillary specimen collection (procedure)"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Capillary specimen collection",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "61088005",
-  "display" : "Plastic"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Plastic",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "767384004",
-  "display" : "Evacuated blood collection tube with clot activator"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Evacuated blood collection tube with clot activator (physical object)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "767390000",
-  "display" : "Evacuated blood collection tube with heparin lithium and gel separator"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Evacuated blood collection tube with heparin lithium and gel separator (physical object)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "28520004",
-  "display" : "Venipuncture for blood test"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Venipuncture for blood test",
   "severity" : null,
   "error" : ""
 }
@@ -337,6 +256,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Urine specimen collection, 24 hours",
+  "code" : "2475000",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -348,6 +269,8 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Urine specimen",
+  "code" : "122575003",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
   "error" : ""
 }
@@ -359,7 +282,730 @@ v: {
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "24-hour urine specimen container",
+  "code" : "706055000",
+  "system" : "http://snomed.info/sct",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "28520004",
+  "display" : "Venipuncture for blood test"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Venipuncture for blood test",
+  "code" : "28520004",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "61088005",
+  "display" : "Plastic"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Plastic",
+  "code" : "61088005",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "767384004",
+  "display" : "Evacuated blood collection tube with clot activator"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Evacuated blood collection tube with clot activator (physical object)",
+  "code" : "767384004",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "767390000",
+  "display" : "Evacuated blood collection tube with heparin lithium and gel separator"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Evacuated blood collection tube with heparin lithium and gel separator (physical object)",
+  "code" : "767390000",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "122555007",
+  "display" : "Venous blood specimen"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Venous blood specimen",
+  "code" : "122555007",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "263678003",
+  "display" : "At rest"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "At rest",
+  "code" : "263678003",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "119364003",
+  "display" : "Serum specimen"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Serum specimen",
+  "code" : "119364003",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "702281005",
+  "display" : "Evacuated blood collection tube, thrombin/clot activator/gel separator"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Evacuated blood collection tube, thrombin/clot activator/gel separator",
+  "code" : "702281005",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "122555007",
+  "display" : "Venous blood specimen (specimen)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Venous blood specimen",
+  "code" : "122555007",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "122554006",
+  "display" : "Capillary blood specimen (specimen)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Capillary blood specimen",
+  "code" : "122554006",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1048003",
+  "display" : "Capillary specimen collection (procedure)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Capillary specimen collection",
+  "code" : "1048003",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "41345002"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:fccb0a72-8fe8-4b25-9dc1-9275ceb4aba0",
+    "timestamp" : "2021-09-03T16:19:08.861Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41345002",
+      "display" : "Rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "56233004",
+      "display" : "Calcipenic type rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "66266003",
+      "display" : "Phosphopenic type rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "67049004",
+      "display" : "Vitamin D-dependent rickets, type 1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "68295002",
+      "display" : "Vitamin D-dependent rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "70079009",
+      "display" : "Late effects of rickets (one year OR more)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "72831007",
+      "display" : "Vitamin D-dependent rickets, type 2"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82236004",
+      "display" : "Familial x-linked hypophosphatemic vitamin D refractory rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "90505000",
+      "display" : "Autosomal recessive hypophosphatemic vitamin D refractory rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190640006",
+      "display" : "Active rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190860000",
+      "display" : "Hypophosphatasia rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237888005",
+      "display" : "Hypophosphatemic rickets with nephrotic-glycosuric dwarfism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237889002",
+      "display" : "Autosomal dominant hypophosphatemic rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237894002",
+      "display" : "Vitamin D-dependent rickets type II with alopecia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237895001",
+      "display" : "VDDR IIb - Vitamin D-dependent rickets IIb"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275404008",
+      "display" : "Celiac rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276702002",
+      "display" : "Neonatal rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "278932006",
+      "display" : "Biochemical rickets"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "722947004",
+      "display" : "Hypocalcemic rickets (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "726080006",
+      "display" : "Autosomal recessive hypophosphatemic rickets (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "726081005",
+      "display" : "Hereditary hypophosphatemic rickets with hypercalciuria (disorder)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "4598005"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:0ec3a0e9-4ac6-478a-931e-20ff654aae5b",
+    "timestamp" : "2021-09-03T13:02:24.547Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "4598005",
+      "display" : "Osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "46885003",
+      "display" : "Osteomalacic pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47774001",
+      "display" : "Anticonvulsant drug-induced osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190643008",
+      "display" : "Puerperal osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190644002",
+      "display" : "Senile osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190645001",
+      "display" : "Adult osteomalacia due to malabsorption"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "190646000",
+      "display" : "Adult osteomalacia due to malnutrition"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236548002",
+      "display" : "Osteomalacia secondary to aluminum toxicity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "240165007",
+      "display" : "Drug-induced osteomalacia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "240167004",
+      "display" : "Osteomalacia secondary to pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "392559009",
+      "display" : "Tumor-induced osteomalacia (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "717934004",
+      "display" : "Osteomalacia due to vitamin D deficiency (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1153361007",
+      "display" : "Adult osteomalacia due to liver disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1153362000",
+      "display" : "Adult osteomalacia due to endocrine disease (disorder)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "737295003"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:1022ea6c-76b8-41e2-997c-d088a7dfd8b6",
+    "timestamp" : "2021-09-03T13:02:24.906Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "737295003",
+      "display" : "Transplanted kidney present"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "58797008",
+      "display" : "Complication of transplanted kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "213150003",
+      "display" : "Kidney transplant failure and rejection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236569000",
+      "display" : "Primary non-function of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236570004",
+      "display" : "Renal transplant rejection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236571000",
+      "display" : "Hyperacute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236572007",
+      "display" : "Accelerated rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236573002",
+      "display" : "Very mild acute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236574008",
+      "display" : "Acute rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236575009",
+      "display" : "Acute rejection of renal transplant - grade I"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236576005",
+      "display" : "Acute rejection of renal transplant - grade II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236577001",
+      "display" : "Acute rejection of renal transplant - grade III"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236578006",
+      "display" : "Chronic rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236579003",
+      "display" : "Mild chronic transplant nephropathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236580000",
+      "display" : "Chronic rejection of renal transplant - grade II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236581001",
+      "display" : "Severe chronic transplant nephropathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236582008",
+      "display" : "Acute-on-chronic rejection of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236583003",
+      "display" : "Failed renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236584009",
+      "display" : "Perfusion injury of renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236587002",
+      "display" : "Transplant glomerulopathy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236588007",
+      "display" : "Transplant glomerulopathy - early form"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236589004",
+      "display" : "Transplant glomerulopathy - late form"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236614007",
+      "display" : "Perirenal and periureteric post-transplant lymphocele"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "277010001",
+      "display" : "Unexplained episode of renal transplant dysfunction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "277011002",
+      "display" : "Pre-existing disease in renal transplant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426136000",
+      "display" : "Delayed renal graft function (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707148007",
+      "display" : "Recurrent post-transplant renal disease (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "713825007",
+      "display" : "Renal artery stenosis of transplanted kidney (disorder)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "707206008"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:7623a10b-1de6-4837-ac54-d4a61aad6980",
+    "timestamp" : "2021-09-03T13:02:25.328Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "707206008",
+      "display" : "Assessment for bariatric surgery"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "443731004"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:a825eb46-bebb-46a6-aeea-d2106374e6a7",
+    "timestamp" : "2021-09-03T13:02:25.719Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "443731004",
+      "display" : "Assessment using falls risk assessment score for the elderly (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "182817000"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:9a21e02d-4791-441d-9909-153937d9c95a",
+    "timestamp" : "2021-09-03T13:02:26.078Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "182817000",
+      "display" : "Drug prescription"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------
@@ -390,15 +1036,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:7d4e5b58-80dd-4427-9685-1eda953f6684",
-    "timestamp" : "2021-07-02T13:49:28.301Z",
+    "identifier" : "urn:uuid:ce6ee062-3298-4e0b-b38b-683ef95ec78c",
+    "timestamp" : "2021-09-03T16:19:10.752Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -534,11 +1180,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "199004",
       "display" : "Decreased lactation"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "208008",
-      "display" : "Neurocutaneous melanosis sequence"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -1027,18 +1668,8 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "666000",
-      "display" : "Poisoning by antivaricose drug AND/OR sclerosing agent"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "675003",
       "display" : "Torsion of intestine"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "682004",
-      "display" : "Thrombosis complicating pregnancy AND/OR puerperium"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -1848,7 +2479,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "1479009",
-      "display" : "20q partial trisomy syndrome"
+      "display" : "20q partial trisomy (disorder)"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -2232,11 +2863,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "1829003",
-      "display" : "Microcephalus"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "1833005",
       "display" : "Phacoanaphylactic endophthalmitis"
     },
@@ -2302,11 +2928,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "1881003",
-      "display" : "Increased nutritional requirement"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "1892002",
       "display" : "Star figure at the macula"
     },
@@ -2359,11 +2980,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "1953005",
       "display" : "Congenital deficiency of pigment of skin"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "1954004",
-      "display" : "Dilated cardiomyopathy secondary to toxic reaction"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -2429,11 +3045,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "2012002",
       "display" : "Fracture of lunate bone of wrist"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "2024009",
-      "display" : "Dilated cardiomyopathy secondary to metazoal myocarditis"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5399,6 +6010,41 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "4817008",
       "display" : "Primary degenerative dementia of the Alzheimer type, senile onset, with delirium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4819006",
+      "display" : "Effusion of joint of ankle AND/OR foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4821001",
+      "display" : "Contusion of cheek"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4834000",
+      "display" : "Typhoid fever"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4835004",
+      "display" : "Infection by Nosema bombycis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4836003",
+      "display" : "Poisoning by anti-parkinsonism drug"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4839005",
+      "display" : "Chronic enlargement of lacrimal gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4846001",
+      "display" : "Anicteric viral hepatitis"
     }]
   }
 },
@@ -5432,8 +6078,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:244a3c7c-264e-4d20-af2f-413184cc4ad3",
-    "timestamp" : "2021-07-02T13:49:28.582Z",
+    "identifier" : "urn:uuid:294bf671-b2fc-403c-ba3f-782312627e36",
+    "timestamp" : "2021-09-02T11:00:57.844Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -5444,7 +6090,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -5970,6 +6616,11 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "48071004",
       "display" : "Cyclone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "48981002",
+      "display" : "Parasuicide"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -10440,11 +11091,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "216297000",
       "display" : "Accident to cable car not running on rails"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "216298005",
-      "display" : "Accident caused by breakage of cable in cable car not running on rails"
     }]
   }
 },
@@ -10478,8 +11124,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:81782f75-1657-4c24-a5ef-fccc8bdf86ae",
-    "timestamp" : "2021-07-02T13:49:28.863Z",
+    "identifier" : "urn:uuid:44b86caa-1baf-4592-8f1b-d6c62a60b1d8",
+    "timestamp" : "2021-09-03T13:02:22.547Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -10490,7 +11136,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10591,6 +11237,11 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "135879003",
       "display" : "H/O: dislocated shoulder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "146799005",
+      "display" : "Possible pregnancy"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -10711,11 +11362,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "160290005",
       "display" : "Family history of neoplasm of male genital tract"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "160291009",
-      "display" : "Family history of urological neoplasm"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -11080,7 +11726,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "160417009",
-      "display" : "FH: Congenital anomaly"
+      "display" : "Family history of congenital anomaly"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -11115,7 +11761,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "160425006",
-      "display" : "FH: Chromosomal anomaly"
+      "display" : "Family history of chromosomal anomaly (situation)"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -11131,11 +11777,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "160430005",
       "display" : "FH: Mother dead"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "160431009",
-      "display" : "FH: Mother unwell"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -11645,7 +12286,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "161508001",
-      "display" : "H/O: Deep vein thrombosis"
+      "display" : "History of deep vein thrombosis (situation)"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -12644,11 +13285,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "266885006",
-      "display" : "Family history: neoplasm - trachea/bronchus/lung (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "266886007",
       "display" : "Family history of neoplasm of female genital tract"
     },
@@ -13364,11 +14000,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "275938006",
-      "display" : "Family history: Carcinoma - Neoplasm (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "275939003",
       "display" : "FH: Triglyceride high"
     },
@@ -13410,7 +14041,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "281022002",
-      "display" : "Down's child in family"
+      "display" : "Family history of complete trisomy 21 syndrome"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -13456,11 +14087,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "285341004",
       "display" : "KOD - Not knocked out"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "288249001",
-      "display" : "Maternal medical problem"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -14479,6 +15105,11 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
+      "code" : "392731005",
+      "display" : "No psychomotor retardation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
       "code" : "394698008",
       "display" : "Birth history"
     },
@@ -15491,579 +16122,21 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "429011007",
       "display" : "Family history of malignant neoplasm of lung (situation)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "41345002"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:fe8a1885-cdd7-4f98-a37e-2f2f8538b780",
-    "timestamp" : "2021-07-02T13:49:29.489Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "41345002",
-      "display" : "Rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "23569000",
-      "display" : "Glucoaminophosphaturia syndrome with rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "56233004",
-      "display" : "Calcipenic type rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "66266003",
-      "display" : "Phosphopenic type rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "67049004",
-      "display" : "Vitamin D-dependent rickets, type 1"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "68295002",
-      "display" : "Vitamin D-dependent rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "70079009",
-      "display" : "Late effects of rickets (one year OR more)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "72831007",
-      "display" : "Vitamin D-dependent rickets, type 2"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "82236004",
-      "display" : "Familial x-linked hypophosphatemic vitamin D refractory rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "90505000",
-      "display" : "Autosomal recessive hypophosphatemic vitamin D refractory rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190640006",
-      "display" : "Active rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190860000",
-      "display" : "Hypophosphatasia rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "237888005",
-      "display" : "Hypophosphatemic rickets with nephrotic-glycosuric dwarfism"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "237889002",
-      "display" : "Autosomal dominant hypophosphatemic rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "237894002",
-      "display" : "Vitamin D-dependent rickets type II with alopecia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "237895001",
-      "display" : "VDDR IIb - Vitamin D-dependent rickets IIb"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "275404008",
-      "display" : "Celiac rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "276702002",
-      "display" : "Neonatal rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "278932006",
-      "display" : "Biochemical rickets"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "722947004",
-      "display" : "Hypocalcemic rickets (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "726080006",
-      "display" : "Autosomal recessive hypophosphatemic rickets (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "726081005",
-      "display" : "Hereditary hypophosphatemic rickets with hypercalciuria (disorder)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "4598005"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:bd397b36-75e8-47f6-b34b-04479e07de12",
-    "timestamp" : "2021-07-02T13:49:29.629Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "4598005",
-      "display" : "Osteomalacia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "46885003",
-      "display" : "Osteomalacic pelvis"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "47774001",
-      "display" : "Anticonvulsant drug-induced osteomalacia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190643008",
-      "display" : "Puerperal osteomalacia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190644002",
-      "display" : "Senile osteomalacia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190645001",
-      "display" : "Adult osteomalacia due to malabsorption"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "190646000",
-      "display" : "Adult osteomalacia due to malnutrition"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236548002",
-      "display" : "Osteomalacia secondary to aluminum toxicity"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "240165007",
-      "display" : "Drug-induced osteomalacia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "240167004",
-      "display" : "Osteomalacia secondary to pregnancy"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "392559009",
-      "display" : "Tumor-induced osteomalacia (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "717934004",
-      "display" : "Osteomalacia due to vitamin D deficiency (disorder)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "737295003"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:a244bfc2-fbec-4273-b944-6d8f0ec0ad50",
-    "timestamp" : "2021-07-02T13:49:29.754Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "737295003",
-      "display" : "Transplanted kidney present"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "58797008",
-      "display" : "Complication of transplanted kidney"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "213150003",
-      "display" : "Kidney transplant failure and rejection"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236569000",
-      "display" : "Primary non-function of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236570004",
-      "display" : "Renal transplant rejection"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236571000",
-      "display" : "Hyperacute rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236572007",
-      "display" : "Accelerated rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236573002",
-      "display" : "Very mild acute rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236574008",
-      "display" : "Acute rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236575009",
-      "display" : "Acute rejection of renal transplant - grade I"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236576005",
-      "display" : "Acute rejection of renal transplant - grade II"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236577001",
-      "display" : "Acute rejection of renal transplant - grade III"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236578006",
-      "display" : "Chronic rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236579003",
-      "display" : "Mild chronic transplant nephropathy"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "236580000",
-      "display" : "Chronic rejection of renal transplant - grade II"
+      "code" : "429014004",
+      "display" : "History of malignant lymphoma (situation)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "236581001",
-      "display" : "Severe chronic transplant nephropathy"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236582008",
-      "display" : "Acute-on-chronic rejection of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236583003",
-      "display" : "Failed renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236584009",
-      "display" : "Perfusion injury of renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236587002",
-      "display" : "Transplant glomerulopathy"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236588007",
-      "display" : "Transplant glomerulopathy - early form"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236589004",
-      "display" : "Transplant glomerulopathy - late form"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "236614007",
-      "display" : "Perirenal and periureteric post-transplant lymphocele"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "277010001",
-      "display" : "Unexplained episode of renal transplant dysfunction"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "277011002",
-      "display" : "Pre-existing disease in renal transplant"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "426136000",
-      "display" : "Delayed renal graft function (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "707148007",
-      "display" : "Recurrent post-transplant renal disease (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "713825007",
-      "display" : "Renal artery stenosis of transplanted kidney (disorder)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "707206008"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:bd276e42-0070-4e82-92e9-51f85eab4c9a",
-    "timestamp" : "2021-07-02T13:49:29.895Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "707206008",
-      "display" : "Assessment for bariatric surgery"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "443731004"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:5a9ae060-4d1f-421d-b754-1f6712751bdc",
-    "timestamp" : "2021-07-02T13:49:30.207Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "443731004",
-      "display" : "Assessment using falls risk assessment score for the elderly (procedure)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "182817000"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueBoolean" : true
-    }],
-    "identifier" : "urn:uuid:104bb091-fd75-4d9f-ae26-49474399940f",
-    "timestamp" : "2021-07-02T13:49:30.488Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
+      "code" : "429016002",
+      "display" : "History of medullary carcinoma of thyroid (situation)"
     },
     {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-    }],
-    "contains" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "182817000",
-      "display" : "Drug prescription"
+      "code" : "429023001",
+      "display" : "History of Ewings sarcoma (situation)"
     }]
   }
 },
@@ -16097,15 +16170,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:f4746c9b-019d-4f62-8925-82007b5e46c0",
-    "timestamp" : "2021-07-02T13:49:30.895Z",
+    "identifier" : "urn:uuid:d1e537a6-15b9-4e71-b1ac-2eb0035a4efb",
+    "timestamp" : "2021-09-03T13:02:26.750Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -16589,11 +16662,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "208008",
-      "display" : "Neurocutaneous melanosis sequence"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "209000",
       "display" : "Plover"
     },
@@ -16971,11 +17039,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "299007",
       "display" : "Paraffinoma of skin"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "300004",
-      "display" : "Miniature schnauzer"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -17396,11 +17459,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "399005",
       "display" : "Blaberus craniifer"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "400003",
-      "display" : "Pinzgauer cattle breed (organism)"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -17844,11 +17902,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "507002",
-      "display" : "Standard poodle"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "508007",
       "display" : "Eranthis hyemalis"
     },
@@ -18139,11 +18192,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "583000",
-      "display" : "Wirehaired vizsla"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "584006",
       "display" : "Blood group antibody Wr^b^"
     },
@@ -18241,11 +18289,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "605004",
       "display" : "Severe inflammatory atypia"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "606003",
-      "display" : "Terrier"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -18499,11 +18542,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "666000",
-      "display" : "Poisoning by antivaricose drug AND/OR sclerosing agent"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "667009",
       "display" : "Embryonic structure"
     },
@@ -18569,18 +18607,8 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "682004",
-      "display" : "Thrombosis complicating pregnancy AND/OR puerperium"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "683009",
       "display" : "Mercuric acetate"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "684003",
-      "display" : "Pygmy goat"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -19006,11 +19034,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "796001",
       "display" : "Product containing digoxin (medicinal product)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "797005",
-      "display" : "New Zealand white rabbit"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -19609,11 +19632,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "944009",
-      "display" : "Brown Welsh cattle breed (organism)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "946006",
       "display" : "Nandayus nenday"
     },
@@ -19826,11 +19844,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "1005009",
       "display" : "Entire diaphragmatic lymph node"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "1006005",
-      "display" : "Percheron horse"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -20291,11 +20304,6 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "1116000",
       "display" : "Chronic aggressive type B viral hepatitis"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "1118004",
-      "display" : "Viking horse"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -20804,11 +20812,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "1247002",
-      "display" : "Clydesdale horse"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "1248007",
       "display" : "Leucostoma neutral proteinase"
     },
@@ -21079,11 +21082,6 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "1316005",
-      "display" : "Upper partial denture, cast metal base without resin saddles, including any conventional clasps, rests and teeth"
-    },
-    {
-      "system" : "http://snomed.info/sct",
       "code" : "1318006",
       "display" : "Post-translational genetic protein processing"
     },
@@ -21106,6 +21104,81 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "1324000",
       "display" : "Cerebrospinal fluid IgG ratio and IgG index"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1325004",
+      "display" : "Metocurine iodide"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1327007",
+      "display" : "Procedure on Meckel's diverticulum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1328002",
+      "display" : "Ilioiliac shunt"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1329005",
+      "display" : "Division of congenital web of larynx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1330000",
+      "display" : "Crax alector"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1331001",
+      "display" : "Methamidophos"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1332008",
+      "display" : "Conjugated visual deviation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1333003",
+      "display" : "Emesis basin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1334009",
+      "display" : "Estradiol receptor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1335005",
+      "display" : "Induratio penis plastica"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1336006",
+      "display" : "Deoxycortone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1337002",
+      "display" : "Colosigmoidostomy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1338007",
+      "display" : "Basal cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1339004",
+      "display" : "Removal of impacted feces"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1340002",
+      "display" : "Malays (ethnic group)"
     }]
   }
 },
