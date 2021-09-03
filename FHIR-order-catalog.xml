@@ -75,6 +75,11 @@
 <artifact id="StructureDefinition/LabProcedureDefinition" key="StructureDefinition-LabProcedureDefinition" name="LabProcedureDefinition Profile"/>
 <artifact id="StructureDefinition/LabServiceDefinition" key="StructureDefinition-LabServiceDefinition" name="LabServiceDefinition Profile"/>
 <artifact id="StructureDefinition/LabSpecimenDefinition" key="StructureDefinition-LabSpecimenDefinition" name="LabSpecimenDefinition Profile"/>
+<artifact id="StructureDefinition/WarningDefinition" key="StructureDefinition-WarningDefinition" name="WarningDefinition Profile"/>
+<artifact id="StructureDefinition/InteractionDefinition" key="StructureDefinition-InteractionDefinition" name="InteractionDefinition Profile"/>
+<artifact id="StructureDefinition/IndicationDefinition" key="StructureDefinition-IndicationDefinition" name="IndicationDefinition Profile"/>
+<artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
+<artifact id="StructureDefinition/UndesirableEffectDefinition" key="StructureDefinition-UndesirableEffectDefinition" name="UndesirableEffectDefinition Profile"/>
 <artifact id="Organization/example-lab-organization" key="Organization-example-lab-organization" name="Laboratory Organization"/>
 <artifact id="CodeSystem/laboratory-service-reimbursability" key="CodeSystem-laboratory-service-reimbursability" name="Laboratory service reimbursability categories CodeSystem"/>
 <artifact id="ValueSet/laboratory-service-reimbursability-vs" key="ValueSet-laboratory-service-reimbursability-vs" name="Laboratory service reimbursability categories ValueSet"/>
