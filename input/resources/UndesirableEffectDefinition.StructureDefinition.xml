@@ -25,6 +25,7 @@
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
+  <!-- FM 20210903 - waiting for 4.7.0  to rename ClinicalUseIssue into ClinicalUseDefinition -->
   <type value="ClinicalUseIssue" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalUseIssue" />
   <derivation value="constraint" />
