@@ -21185,3 +21185,29 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "66931009",
+  "display" : "Hypercalcemia"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hypercalcemia",
+  "code" : "66931009",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "5291005",
+  "display" : "Hypocalcemia"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hypocalcemia",
+  "code" : "5291005",
+  "system" : "http://snomed.info/sct",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

@@ -879,6 +879,27 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
       -->
     </resource>
+	<!--
+      Examples of ClinicalUseDefinition (to be updated to "ClinicalUseDefinition" once 4.7.0 is published)
+    -->
+	<resource>
+      <reference>
+        <reference value="ClinicalUseIssue/example-hypercalcemia-contraindication"/>
+      </reference>
+      <name value="Contraindication Hypercalcemia"/>
+      <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="ClinicalUseIssue/example-hypocalcemia-indication"/>
+      </reference>
+      <name value="Indication Hypocalcemia"/>
+      <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
+    </resource>
     <!--
       Example resources transversal to all kinds of catalogs
     -->
