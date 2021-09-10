@@ -15,6 +15,8 @@
 <artifact id="ClinicalUseIssue/example-hypercalcemia-contraindication" key="ClinicalUseIssue-example-hypercalcemia-contraindication" name="Contraindication Hypercalcemia"/>
 <artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
 <artifact id="Bundle/example-lab-test-creation-transaction-request" key="Bundle-example-lab-test-creation-transaction-request" name="Create test in laboratory compendium"/>
+<artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
+<artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
 <artifact id="ClinicalUseIssue/example-hypocalcemia-indication" key="ClinicalUseIssue-example-hypocalcemia-indication" name="Indication Hypocalcemia"/>
 <artifact id="StructureDefinition/IndicationDefinition" key="StructureDefinition-IndicationDefinition" name="IndicationDefinition Profile"/>
 <artifact id="StructureDefinition/InputObservationDefinition" key="StructureDefinition-InputObservationDefinition" name="InputObservationDefinition Profile"/>

@@ -293,6 +293,24 @@
         value="Profile of ClinicalUseDefinition representing the definition of an undesirable effect"
       />
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DrugKnowledge"/>
+      </reference>
+      <name value="DrugKnowledge Profile"/>
+      <description
+        value="Profile of MedicationKnowledge to represent an item in a catalog of medications"
+      />
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/DeviceModel"/>
+      </reference>
+      <name value="DeviceModel Profile"/>
+      <description
+        value="Profile of DeviceDefinition to represent an item in a catalog of models of medical devices"
+      />
+    </resource>
     <!-- FM 20201219
     <resource>
       <reference>
