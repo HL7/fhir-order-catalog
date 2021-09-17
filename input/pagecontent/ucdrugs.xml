@@ -3,8 +3,8 @@
 	<br/>
 	<p>This section lists the use cases for using catalogs of medications.</p>
 	<ol>
-		<li>A health care organization maintains its medication formulary to support prescribing,
-			dispensing and medication administration and shares it internally in applications used
+		<li>A health care organization maintains its medication formulary to support prescription,
+			dispense and administration of medications, and shares this formulary internally in applications used
 			by its physicians, nurses and pharmacists.</li>
 		<li>A health care organization or government organization maintains its medication formulary
 			and shares it externally with patients and care givers to allow them to know what
@@ -12,11 +12,11 @@
 		<li>A health care organization or government organization maintains its medication formulary
 			and allows a patient or their care giver to retrieve a catalog subset of the medications
 			that are covered for their plan.</li>
-		<li>A vendor maintains clinical drug knowledge in a catalog shared to organizations to
+		<li>A content vendor maintains clinical drug knowledge in a catalog shared to organizations to
 			support the retrieval of drug information by health care practitioners. </li>
-		<li>A vendor maintains drug knowledge and shares it online to support the retrieval of drug
+		<li>A content vendor maintains drug knowledge and shares it online to support the retrieval of drug
 			information by patients and consumers. </li>
-		<li>An organization maintains a standardized medication terminology for all medications
+		<li>An organization maintains a standardized medication dictionary for all medications
 			licensed for use within a jurisdiction to support prescribing, dispensing and
 			administration of medications by health care professionals and consumption of
 			medications by patients.</li>
