@@ -16,7 +16,7 @@
   <h3>Introduction to this guide</h3>
   <p>This implementation guide for sharing order catalogs is based on FHIR R5. Its scope is
     international (aka universal realm).</p>
-  <p> An order catalog describes a collection of definitional resources representing a type of healthcare items that can be
+  <p> An order catalog is a collection of definitional resources describing homogeneous healthcare items that can be
     ordered, selected or used by practitioners to support the course of healthcare delivery. These
     homogeneous healthcare items may represent services, products, devices or knowledge artifacts
     such as order sets, for instance. Each item specifies its purpose, describes how it should be
