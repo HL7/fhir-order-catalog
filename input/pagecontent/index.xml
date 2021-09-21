@@ -108,10 +108,10 @@
   <p> A catalog holds master data providing the definitions of healthcare items. It may include,
     where applicable, the associated regulatory constraints, business requirements and clinical
     guidelines for ordering and using these items.</p>
-  <p>Catalogs are most often stored on servers which make them accessible to the practitioners
+  <p>Catalogs are most often stored on servers which make them accessible to practitioners
     through their IT systems or applications e.g., electronic health records, electronic medical
     records, computerized physcian order entry, laboratory information systems, medication dispense
-    systems... Client applications may interact with a catalog server to: </p>
+    systems... Client applications interact with the FHIR API of a catalog server to: </p>
   <ul>
     <li>browse through entries of the catalog and retrieve items of interest together with the
       detailed instructions and guidance related to the usage of these items,</li>
@@ -120,7 +120,7 @@
     <li>administer the content of the catalog; add, update, retire items and supporting resources.
     </li>
   </ul>
-  <p>Catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
+  <p>In addition, catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
     messaging framework</p>
   <a name="scope"> </a>
   <h3>Scopes of order catalogs and roles involved</h3>
