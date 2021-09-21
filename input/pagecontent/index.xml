@@ -4,8 +4,8 @@
   <table class="note-to-balloters">
     <tbody>
       <tr>
-        <th>The scope of next ballot will be limited to laboratory services, medications and devices
-          contents of catalogs. <br/>Pages which are excluded from this ballot will be signaled as such by
+        <th>The scope of next ballot includes catalogs of laboratory services, medications and devices. <br/>
+		Pages which are excluded from this ballot will be signaled as such by
           a note to balloters at the top of the page. <br/>Feedback is welcome and may be submitted
           through the <a href="http://hl7.org/fhir-issues"> FHIR Jira tracker</a></th>
       </tr>
@@ -14,10 +14,10 @@
   <br/>
   <a name="intro"> </a>
   <h3>Introduction to this guide</h3>
-  <p>This implementation guide for sharing order catalogs is based on FHIR R4. Its scope is
+  <p>This implementation guide for sharing order catalogs is based on FHIR R5. Its scope is
     international (aka universal realm).</p>
-  <p> An order catalog describes a collection of healthcare items of the same type that can be
-    ordered or selected by practitioners to support the course of healthcare delivery. These
+  <p> An order catalog describes a collection of definitional resources representing a type of healthcare items that can be
+    ordered, selected or used by practitioners to support the course of healthcare delivery. These
     homogeneous healthcare items may represent services, products, devices or knowledge artifacts
     such as order sets, for instance. Each item specifies its purpose, describes how it should be
     ordered and/or used, and characterizes the outcomes that one can expect from its usage. </p>
@@ -26,11 +26,11 @@
     medical devices. </p>
   <p> This universal realm implementation guide specifies the methods and artifacts based on the
     FHIR standard, to build catalogs of healthcare items and share the content of these catalogs
-    across practitioners and healthcare organizations.. The methods such as browsing, searching,
-    retrieval, or maintaining the content, are common regardless of the category of catalog at hand:
-    product, service, clinical knowledge... Some of the artifacts, like the one representing the
+    across practitioners and healthcare organizations. The methods such as browse, search,
+    retrieve, or maintain the content, are common regardless of the category of catalog at hand:
+    product, service, clinical knowledge. Some of the artifacts, like the one representing the
     catalog as a whole, are also common to all categories of catalogs. Other artifacts are specific
-    to the category of items (medication, device, order set, diagnostic service ...) exposed by the
+    to a category of items (medication, device, order set, diagnostic service ...) exposed by the
     catalog. </p>
   <p>Considering these commonalities and specificities, building a common guidance for implementing
     any kind of catalog of healthcare items in FHIR has been deemed the most valuable proposition to
