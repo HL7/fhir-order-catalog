@@ -19,7 +19,7 @@
   <p> An order catalog is a collection of definitional resources describing homogeneous healthcare items that can be
     ordered, selected or used by practitioners to support the course of healthcare delivery. These
     homogeneous healthcare items may represent services, products, devices or knowledge artifacts
-    such as order sets, for instance. Each item specifies its purpose, describes how it should be
+    (e.g., order sets). Each item specifies its purpose, describes how it should be
     ordered and/or used, and characterizes the outcomes that one can expect from its usage. </p>
   <p> Examples of catalogs include order sets catalog, evidence based knowledge artifacts for
     clinical decision support (CDS), laboratory test compendium, medication formulary, catalog of
