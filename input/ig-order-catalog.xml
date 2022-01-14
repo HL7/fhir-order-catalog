@@ -26,7 +26,7 @@
   </jurisdiction>
   <packageId value="hl7.fhir.uv.order-catalog"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
-  <fhirVersion value="4.6.0"/>
+  <fhirVersion value="5.0.0-snapshot1"/>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
@@ -242,12 +242,7 @@
       <description
         value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
       />
-	  </resource>
-	<!--
-		FM 20210903
-		In 4.6.0 the resource is ClinicalUseIssue.
-		Starting with next version of R5 (4.7.0) it will be ClinicalUseDefinition
-	-->
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/WarningDefinition"/>
@@ -898,11 +893,11 @@
       -->
     </resource>
 	<!--
-      Examples of ClinicalUseDefinition (to be updated to "ClinicalUseDefinition" once 4.7.0 is published)
+      Examples of ClinicalUseDefinition 
     -->
 	<resource>
       <reference>
-        <reference value="ClinicalUseIssue/example-hypercalcemia-contraindication"/>
+        <reference value="ClinicalUseDefinition/example-hypercalcemia-contraindication"/>
       </reference>
       <name value="Contraindication Hypercalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
@@ -911,7 +906,7 @@
     </resource>
 	<resource>
       <reference>
-        <reference value="ClinicalUseIssue/example-hypocalcemia-indication"/>
+        <reference value="ClinicalUseDefinition/example-hypocalcemia-indication"/>
       </reference>
       <name value="Indication Hypocalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>

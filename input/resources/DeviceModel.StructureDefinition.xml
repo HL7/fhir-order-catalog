@@ -13,7 +13,6 @@
     </telecom>
   </contact>
   <description value="This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices" />
-  <fhirVersion value="4.6.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="DeviceDefinition" />
@@ -23,7 +22,7 @@
     <element id="DeviceDefinition.identifier">
       <path value="DeviceDefinition.identifier" />
       <definition value="This repeatable element is used in catalogs of devices to convey the identifiers assigned to the model of device, other than the primary UDI DI." />
-      <comment value="identifier may convey for instance, the secondary UDI-DI, the direct -marking UDI-DI, the unit-of-use UDI-DI, the basic UDI-DI (this one is specific to the European market). The primary UDI-DI is not conveyed by this element, it goes into the udiDeviceIdentifier element.&#xD;&#xA;other occurrences of identifier may also be used to convey additional non-UDI identifiers if needed." />
+      <comment value="identifier may convey for instance, the secondary UDI-DI, the direct -marking UDI-DI, the unit-of-use UDI-DI, The primary UDI-DI is not conveyed by this element, it goes into the udiDeviceIdentifier element.&#xD;&#xA;other occurrences of identifier may also be used to convey additional non-UDI identifiers if needed." />
     </element>
   </differential>
 </StructureDefinition>

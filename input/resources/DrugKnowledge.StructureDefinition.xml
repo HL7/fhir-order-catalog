@@ -13,7 +13,6 @@
     </telecom>
   </contact>
   <description value="This profile constrains the base resource MedicationKnowledge to represent an item in a catalog of medications." />
-  <fhirVersion value="4.6.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationKnowledge" />

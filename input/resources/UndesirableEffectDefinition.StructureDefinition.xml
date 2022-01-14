@@ -25,36 +25,29 @@
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
-  <!-- FM 20210903 - waiting for 4.7.0  to rename ClinicalUseIssue into ClinicalUseDefinition -->
-  <type value="ClinicalUseIssue" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalUseIssue" />
+  <type value="ClinicalUseDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition" />
   <derivation value="constraint" />
   <differential>
-    <element id="ClinicalUseIssue.type">
-      <path value="ClinicalUseIssue.type" />
+    <element id="ClinicalUseDefinition.type">
+      <path value="ClinicalUseDefinition.type" />
       <fixedCode value="undesirable-effect" />
     </element>
-    <element id="ClinicalUseIssue.contraindication">
-      <path value="ClinicalUseIssue.contraindication" />
+    <element id="ClinicalUseDefinition.contraindication">
+      <path value="ClinicalUseDefinition.contraindication" />
       <max value="0" />
     </element>
-    <element id="ClinicalUseIssue.indication">
-      <path value="ClinicalUseIssue.indication" />
+    <element id="ClinicalUseDefinition.indication">
+      <path value="ClinicalUseDefinition.indication" />
       <max value="0" />
     </element>
-    <element id="ClinicalUseIssue.interaction">
-      <path value="ClinicalUseIssue.interaction" />
+    <element id="ClinicalUseDefinition.interaction">
+      <path value="ClinicalUseDefinition.interaction" />
       <max value="0" />
     </element>
-    <element id="ClinicalUseIssue.undesirableEffect">
-      <path value="ClinicalUseIssue.undesirableEffect" />
+    <element id="ClinicalUseDefinition.undesirableEffect">
+      <path value="ClinicalUseDefinition.undesirableEffect" />
       <min value="1" />
 	</element>
-	<!-- FM 20210903 - waiting for 4.7.0  
-	<element id="ClinicalUseIssue.warning">
-      <path value="ClinicalUseIssue.warning" />
-      <max value="0" />
-    </element>
-	-->
   </differential>
 </StructureDefinition>
