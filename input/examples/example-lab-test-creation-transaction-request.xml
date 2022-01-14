@@ -431,7 +431,9 @@
                 <relatedArtifact>
                     <type value="documentation" />
                     <citation value="Potassium (symbol K from Latin:kalium) is a key chemical element involved in neuron function and influencing osmotic balance between cells and interstitial fluid. Depletion in potassium levels results in deficient fluid and electrolyte balance in the body as well as various nervous and cardiac dysfunctions. Studies suggest diets high in potassium can reduce the risk of hypertension and possibly stroke. Foods rich in potassium include parsley, dried apricots, potatoes, bananas, avocados, soybeans, and bran, as well as most fruits, vegetables, meat and fish. Overall, clear cases of potassium deficiency are rare in healthy individuals." />
-                    <url value="https://en.wikipedia.org/wiki/Potassium" />
+                    <document>
+						<url value="https://en.wikipedia.org/wiki/Potassium" />
+					<document/>
                 </relatedArtifact>
                 <action>
                     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
