@@ -147,11 +147,6 @@
       <path value="Composition.custodian" />
       <min value="1" />
     </element>
-    <element id="Composition.relatesTo.code">
-      <path value="Composition.relatesTo.code" />
-      <short value="addendum" />
-      <comment value="In general this feature is not needed with catalogs. Catalogs come into a single instance of Composition" />
-    </element>
     <element id="Composition.event">
       <path value="Composition.event" />
       <max value="0" />
