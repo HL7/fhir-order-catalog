@@ -117,7 +117,7 @@
       detailed instructions and guidance related to the usage of these items,</li>
     <li>import the full catalog or a part of it (e.g., recently updated items, a subset of the
       catalog dedicated to a specialty, ...), </li>
-    <li>administer the content of the catalog; add, update, retire items and supporting resources.
+    <li>administer the content of the catalog if authorized to do so; add, update, retire items and supporting resources.
     </li>
   </ul>
   <p>In addition, catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
