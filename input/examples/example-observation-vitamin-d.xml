@@ -20,6 +20,7 @@
             <p>Unité de mesure : pmol/L (http://unitsofmeasure.org)</p>
         </div>
     </text>
+	<status value="active"/>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>

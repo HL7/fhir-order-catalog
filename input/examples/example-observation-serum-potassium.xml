@@ -7,7 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
     <language value="en-US"/>
-
+	<status value="active"/>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -30,22 +30,41 @@
     </method>
     <preferredReportName value="Potassium"/>
     <quantitativeDetails>
-        <customaryUnit>
-            <coding>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="g/L"/>
-            </coding>
-        </customaryUnit>
         <unit>
             <coding>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="mmol/L"/>
             </coding>
         </unit>
+        <customaryUnit>
+            <coding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="g/L"/>
+            </coding>
+        </customaryUnit>
         <decimalPrecision value="1"/>
     </quantitativeDetails>
-    <qualifiedInterval>
-        <category value="reference"/>
+    <qualifiedValue>
+	    <context>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="normal"/>
+                <display value="Normal Range"/>
+            </coding>
+        </context>
+		<age>
+            <low>
+                <value value="2"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="a"/>
+            </low>
+            <high>
+                <value value="19"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="a"/>
+            </high>
+        </age>
+        <rangeCategory value="reference"/>
         <range>
             <low>
                 <value value="3.8"/>
@@ -58,28 +77,23 @@
                 <code value="mmol/L"/>
             </high>
         </range>
+    </qualifiedValue>
+    <qualifiedValue>
         <context>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
                 <code value="normal"/>
                 <display value="Normal Range"/>
             </coding>
-        </context>
+        </context>	
         <age>
             <low>
-                <value value="2"/>
+                <value value="20"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="a"/>
             </low>
-            <high>
-                <value value="19"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="a"/>
-            </high>
-        </age>
-    </qualifiedInterval>
-    <qualifiedInterval>
-        <category value="reference"/>
+        </age>		
+        <rangeCategory value="reference"/>
         <range>
             <low>
                 <value value="3.5"/>
@@ -92,19 +106,5 @@
                 <code value="mmol/L"/>
             </high>
         </range>
-        <context>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
-                <code value="normal"/>
-                <display value="Normal Range"/>
-            </coding>
-        </context>
-        <age>
-            <low>
-                <value value="20"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="a"/>
-            </low>
-        </age>
-    </qualifiedInterval>
+    </qualifiedValue>
 </ObservationDefinition>

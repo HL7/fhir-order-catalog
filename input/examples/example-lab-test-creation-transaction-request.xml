@@ -9,7 +9,7 @@
         <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e001" />
         <resource>
             <SpecimenDefinition>
-                <id value="QDX_FMSpec3" />
+                <id value="QDXFMSpec3" />
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
                 </meta>
@@ -19,6 +19,7 @@
                         <p>Venous blood specimen collected in evacuated blood collection tube, thrombin/clot activator/gel separator tube (dark yellow cap), to be tested as serum - min. vol. 2 mL</p>
                     </div>
                 </text>
+				<status value="active"/>
                 <typeCollected>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -129,14 +130,14 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="SpecimenDefinition/QDX_FMSpec3"/>
+            <url value="SpecimenDefinition/QDXFMSpec3"/>
         </request>
     </entry>
     <entry>
         <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e002"/>
         <resource>
             <ObservationDefinition>
-                <id value="QDX_FM90000000"/>
+                <id value="QDXFM90000000"/>
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition" />
                 </meta>
@@ -147,6 +148,7 @@
                         <p>Laboratory observation: potassium level in blood</p>
                     </div>
                 </text>
+				<status value="active"/>
                 <category>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
@@ -169,34 +171,21 @@
                 </method>
                 <preferredReportName value="Potassium" />
                 <quantitativeDetails>
+                    <unit>
+                        <coding>
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </coding>
+                    </unit>				
                     <customaryUnit>
                         <coding>
                             <system value="http://unitsofmeasure.org" />
                             <code value="g/L" />
                         </coding>
                     </customaryUnit>
-                    <unit>
-                        <coding>
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </coding>
-                    </unit>
                     <decimalPrecision value="1" />
                 </quantitativeDetails>
-                <qualifiedInterval>
-                    <category value="reference" />
-                    <range>
-                        <low>
-                            <value value="3.8" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </low>
-                        <high>
-                            <value value="5.1" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mmol/L" />
-                        </high>
-                    </range>
+                <qualifiedValue>
                     <context>
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
@@ -215,22 +204,23 @@
                             <system value="http://unitsofmeasure.org" />
                             <code value="a" />
                         </high>
-                    </age>
-                </qualifiedInterval>
-                <qualifiedInterval>
-                    <category value="reference" />
+                    </age>				
+                    <rangeCategory value="reference" />
                     <range>
                         <low>
-                            <value value="3.5" />
+                            <value value="3.8" />
                             <system value="http://unitsofmeasure.org" />
                             <code value="mmol/L" />
                         </low>
                         <high>
-                            <value value="5.3" />
+                            <value value="5.1" />
                             <system value="http://unitsofmeasure.org" />
                             <code value="mmol/L" />
                         </high>
                     </range>
+
+                </qualifiedValue>
+                <qualifiedValue>
                     <context>
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning" />
@@ -244,20 +234,33 @@
                             <system value="http://unitsofmeasure.org" />
                             <code value="a" />
                         </low>
-                    </age>
-                </qualifiedInterval>
+                    </age>				
+                    <rangeCategory value="reference" />
+                    <range>
+                        <low>
+                            <value value="3.5" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </low>
+                        <high>
+                            <value value="5.3" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mmol/L" />
+                        </high>
+                    </range>
+                </qualifiedValue>
             </ObservationDefinition>
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="ObservationDefinition/QDX_FM90000000"/>
+            <url value="ObservationDefinition/QDXFM90000000"/>
         </request>
     </entry>
     <entry>
         <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e005"/>
         <resource>
             <ActivityDefinition>
-                <id value="QDX_456"/>
+                <id value="QDX456"/>
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition" />
                 </meta>
@@ -268,7 +271,7 @@
                         <p>Potassium measurement on blood serum</p>
                     </div>
                 </text>
-                <url value="http://questdiagnostics.com/ActivityDefinition/QDX_456"/>
+                <url value="http://questdiagnostics.com/ActivityDefinition/QDX456"/>
                 <identifier>
                     <use value="official" />
                     <value value="K_serum_test" />
@@ -321,14 +324,14 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="ActivityDefinition/QDX_FM456"/>
+            <url value="ActivityDefinition/QDX456"/>
         </request>
     </entry>
     <entry>
         <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e011" />
         <resource>
             <PlanDefinition>
-                <id value="QDX_FM456" />
+                <id value="QDXPD456" />
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition" />
                 </meta>
@@ -428,7 +431,9 @@
                 <relatedArtifact>
                     <type value="documentation" />
                     <citation value="Potassium (symbol K from Latin:kalium) is a key chemical element involved in neuron function and influencing osmotic balance between cells and interstitial fluid. Depletion in potassium levels results in deficient fluid and electrolyte balance in the body as well as various nervous and cardiac dysfunctions. Studies suggest diets high in potassium can reduce the risk of hypertension and possibly stroke. Foods rich in potassium include parsley, dried apricots, potatoes, bananas, avocados, soybeans, and bran, as well as most fruits, vegetables, meat and fish. Overall, clear cases of potassium deficiency are rare in healthy individuals." />
-                    <url value="https://en.wikipedia.org/wiki/Potassium" />
+                    <document>
+						<url value="https://en.wikipedia.org/wiki/Potassium" />
+					<document/>
                 </relatedArtifact>
                 <action>
                     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/SpecimenRequested">
@@ -460,13 +465,13 @@
                         <system value="http://unitsofmeasure.org" />
                         <code value="mn" />
                     </timingDuration>
-                    <definitionCanonical value="http://questdiagnostics.com/ActivityDefinition/QDX_FM456"/>
+                    <definitionCanonical value="http://questdiagnostics.com/ActivityDefinition/QDX456"/>
                 </action>
             </PlanDefinition>
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="PlanDefinition/QDX_FM456"/>
+            <url value="PlanDefinition/QDXPD456"/>
         </request>
     </entry>
 </Bundle>

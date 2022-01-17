@@ -12,8 +12,15 @@
 <artifact id="StructureDefinition/CatalogHeader" key="StructureDefinition-CatalogHeader" name="CatalogHeader Profile"/>
 <artifact id="StructureDefinition/CatalogMessageDefinition" key="StructureDefinition-CatalogMessageDefinition" name="CatalogMessageDefinition Profile"/>
 <artifact id="StructureDefinition/CatalogReference" key="StructureDefinition-CatalogReference" name="CatalogReference Extension"/>
+<artifact id="ClinicalUseDefinition/example-hypercalcemia-contraindication" key="ClinicalUseDefinition-example-hypercalcemia-contraindication" name="Contraindication Hypercalcemia"/>
+<artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
 <artifact id="Bundle/example-lab-test-creation-transaction-request" key="Bundle-example-lab-test-creation-transaction-request" name="Create test in laboratory compendium"/>
+<artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
+<artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
+<artifact id="ClinicalUseDefinition/example-hypocalcemia-indication" key="ClinicalUseDefinition-example-hypocalcemia-indication" name="Indication Hypocalcemia"/>
+<artifact id="StructureDefinition/IndicationDefinition" key="StructureDefinition-IndicationDefinition" name="IndicationDefinition Profile"/>
 <artifact id="StructureDefinition/InputObservationDefinition" key="StructureDefinition-InputObservationDefinition" name="InputObservationDefinition Profile"/>
+<artifact id="StructureDefinition/InteractionDefinition" key="StructureDefinition-InteractionDefinition" name="InteractionDefinition Profile"/>
 <artifact id="StructureDefinition/ItemTransactionRequest" key="StructureDefinition-ItemTransactionRequest" name="ItemTransactionRequest Profile"/>
 <artifact id="StructureDefinition/ItemTransactionResponse" key="StructureDefinition-ItemTransactionResponse" name="ItemTransactionResponse Profile"/>
 <artifact id="ChargeItemDefinition/example-lab-billing-vitamind-focus" key="ChargeItemDefinition-example-lab-billing-vitamind-focus" name="Lab billing code and rule for vitamin D"/>
@@ -91,9 +98,11 @@
 <artifact id="StructureDefinition/ServiceBillingCode" key="StructureDefinition-ServiceBillingCode" name="ServiceBillingCode Extension"/>
 <artifact id="StructureDefinition/SpecimenRequested" key="StructureDefinition-SpecimenRequested" name="SpecimenRequested Extension"/>
 <artifact id="Bundle/example-lab-test-creation-transaction-response" key="Bundle-example-lab-test-creation-transaction-response" name="Test created in laboratory compendium"/>
+<artifact id="StructureDefinition/UndesirableEffectDefinition" key="StructureDefinition-UndesirableEffectDefinition" name="UndesirableEffectDefinition Profile"/>
 <artifact id="ValueSet/example-reasons-for-order" key="ValueSet-example-reasons-for-order" name="Valid coded reasons for ordering a lab service"/>
 <artifact id="StructureDefinition/ValidityPeriod" key="StructureDefinition-ValidityPeriod" name="ValidityPeriod Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ObservationValueSet" key="StructureDefinition-ObservationValueSet" name="ValueSet Profile used by ObservationDefinition"/>
+<artifact id="StructureDefinition/WarningDefinition" key="StructureDefinition-WarningDefinition" name="WarningDefinition Profile"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

@@ -55,15 +55,5 @@
       <path value="ObservationDefinition.permittedDataType" />
       <mustSupport value="true" />
     </element>
-    <!-- FM 20201219 
-    <element id="ObservationDefinition.validCodedValueSet">
-      <path value="ObservationDefinition.validCodedValueSet" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    -->
   </differential>
 </StructureDefinition>

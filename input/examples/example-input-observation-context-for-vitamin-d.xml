@@ -18,6 +18,7 @@
             <p>Valeurs normales ouvrant droit à facturation : <a href="ValueSet-example-normal-contexts-vitamin-d.html"> ValueSet/example-normal-contexts-vitamin-d</a></p>
         </div>
     </text>
+	<status value="active"/>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -34,10 +35,8 @@
     </code>
     <permittedDataType value="CodeableConcept"/>
     <multipleResultsAllowed value="true"/>
-    <validCodedValueSet>
-        <reference value="ValueSet/example-clinical-focus"/>
-    </validCodedValueSet>
-    <normalCodedValueSet>
-        <reference value="ValueSet/example-normal-contexts-vitamin-d"/>
-    </normalCodedValueSet>
+	<qualifiedValue>
+		<validCodedValueSet value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-clinical-focus"/>
+		<normalCodedValueSet value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-normal-contexts-vitamin-d"/>
+	</qualifiedValue>
 </ObservationDefinition>

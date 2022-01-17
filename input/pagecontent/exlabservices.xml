@@ -111,7 +111,7 @@
 		<tbody>
 			<tr>
 				<td>Laboratory compendium</td>
-				<td><a href="http://hl7.org/fhir/composition.html"/>Composition</td>
+				<td><a href="http://hl7.org/fhir/composition.ht25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasmaml"/>Composition</td>
 				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
 				<td><a href="Composition-example-lab-compendium-header.html"
 						>example-lab-compendium-header</a></td>

@@ -26,7 +26,7 @@
   </jurisdiction>
   <packageId value="hl7.fhir.uv.order-catalog"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="5.0.0-snapshot1"/>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
@@ -93,7 +93,6 @@
         value="ValueSet providing event codes for MessageHeader.eventCoding in FHIR messages conveying catalog content"
       />
     </resource>
-
     <!--
       Below, the extensions
     -->
@@ -242,6 +241,69 @@
       <name value="LabObservationDefinition Profile"/>
       <description
         value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WarningDefinition"/>
+      </reference>
+      <name value="WarningDefinition Profile"/>
+      <description
+        value="Profile of ClinicalUseDefinition representing the definition of a warning"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ContraindicationDefinition"/>
+      </reference>
+      <name value="ContraindicationDefinition Profile"/>
+      <description
+        value="Profile of ClinicalUseDefinition representing the definition of a contraindication"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/IndicationDefinition"/>
+      </reference>
+      <name value="IndicationDefinition Profile"/>
+      <description
+        value="Profile of ClinicalUseDefinition representing the definition of an indication"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/InteractionDefinition"/>
+      </reference>
+      <name value="InteractionDefinition Profile"/>
+      <description
+        value="Profile of ClinicalUseDefinition representing the definition of an interaction"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/UndesirableEffectDefinition"/>
+      </reference>
+      <name value="UndesirableEffectDefinition Profile"/>
+      <description
+        value="Profile of ClinicalUseDefinition representing the definition of an undesirable effect"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DrugKnowledge"/>
+      </reference>
+      <name value="DrugKnowledge Profile"/>
+      <description
+        value="Profile of MedicationKnowledge to represent an item in a catalog of medications"
+      />
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/DeviceModel"/>
+      </reference>
+      <name value="DeviceModel Profile"/>
+      <description
+        value="Profile of DeviceDefinition to represent an item in a catalog of models of medical devices"
       />
     </resource>
     <!-- FM 20201219
@@ -829,6 +891,27 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
       -->
+    </resource>
+	<!--
+      Examples of ClinicalUseDefinition 
+    -->
+	<resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-hypercalcemia-contraindication"/>
+      </reference>
+      <name value="Contraindication Hypercalcemia"/>
+      <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-hypocalcemia-indication"/>
+      </reference>
+      <name value="Indication Hypocalcemia"/>
+      <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
     </resource>
     <!--
       Example resources transversal to all kinds of catalogs

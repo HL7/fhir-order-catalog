@@ -9,7 +9,7 @@
         />
     </meta>
     <language value="en-US"/>
-
+	<status value="active"/>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -32,22 +32,29 @@
     </method>
     <preferredReportName value="sodium"/>
     <quantitativeDetails>
+        <unit>
+            <coding>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mmol/L"/>
+            </coding>
+        </unit>	
         <customaryUnit>
             <coding>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="g/L"/>
             </coding>
         </customaryUnit>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="mmol/L"/>
-            </coding>
-        </unit>
         <decimalPrecision value="0"/>
     </quantitativeDetails>
-    <qualifiedInterval>
-        <category value="reference"/>
+    <qualifiedValue>
+        <context>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="normal"/>
+                <display value="Normal Range"/>
+            </coding>
+        </context>	
+        <rangeCategory value="reference"/>
         <range>
             <low>
                 <value value="136"/>
@@ -60,12 +67,5 @@
                 <code value="mmol/L"/>
             </high>
         </range>
-        <context>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
-                <code value="normal"/>
-                <display value="Normal Range"/>
-            </coding>
-        </context>
-    </qualifiedInterval>
+    </qualifiedValue>
 </ObservationDefinition>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel" />
+  <version value="0.1" />
+  <name value="DeviceModel" />
+  <title value="Characteristics of a model of medical device" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
+    </telecom>
+  </contact>
+  <description value="This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DeviceDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DeviceDefinition.identifier">
+      <path value="DeviceDefinition.identifier" />
+      <definition value="This repeatable element is used in catalogs of devices to convey the identifiers assigned to the model of device, other than the primary UDI DI." />
+      <comment value="identifier may convey for instance, the secondary UDI-DI, the direct -marking UDI-DI, the unit-of-use UDI-DI, The primary UDI-DI is not conveyed by this element, it goes into the udiDeviceIdentifier element.&#xD;&#xA;other occurrences of identifier may also be used to convey additional non-UDI identifiers if needed." />
+    </element>
+  </differential>
+</StructureDefinition>

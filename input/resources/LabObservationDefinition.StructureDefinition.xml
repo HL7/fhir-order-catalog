@@ -55,6 +55,7 @@
     </element>
     <element id="ObservationDefinition.permittedDataType">
       <path value="ObservationDefinition.permittedDataType" />
+	  <mustSupport value="true" />
     </element>
     <element id="ObservationDefinition.multipleResultsAllowed">
       <path value="ObservationDefinition.multipleResultsAllowed" />
@@ -74,9 +75,6 @@
     <element id="ObservationDefinition.quantitativeDetails.unit.coding.system">
       <path value="ObservationDefinition.quantitativeDetails.unit.coding.system" />
       <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="ObservationDefinition.validCodedValueSet">
-      <path value="ObservationDefinition.validCodedValueSet" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <text>
-    <status value="additional"/>
+    <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Composition resource to
       represent the header of a catalog of healthcare products/services/knowledge artefacts. The
       resource provides the global metadata of the catalog, such as the custodian, category,
@@ -9,162 +9,151 @@
       mention the catalog items. Instead, it is referenced by the definitional resources
       representing the items belonging to this catalog.</div>
   </text>
-  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-  <version value="0.0.1"/>
-  <name value="CatalogHeader"/>
-  <title value="Catalog Header"/>
-  <status value="draft"/>
-  <publisher value="HL7 Orders &amp; Observations WG"/>
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader" />
+  <version value="0.0.1" />
+  <name value="CatalogHeader" />
+  <title value="Catalog Header" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>
-      <system value="url"/>
-      <value value="http://hl7.org/Special/committees/orders/index.cfm"/>
+      <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description
-    value="This profile of Compositions retains the elements and extensions needed to characterize a catalog of healthare products / services / knowledge artefacts, with a set of general properties (name, category, owner, ...)"/>
-  <purpose
-    value="An instance of Composition conforming to this profile represents the general properties of a specific catalog of healthcare items (services/products/knowledge artefacts).&#xD;&#xA;Such a resource is referenced by the resources representing the individual items of the catalog."/>
-
+  <description value="This profile of Compositions retains the elements and extensions needed to characterize a catalog of healthare products / services / knowledge artefacts, with a set of general properties (name, category, owner, ...)" />
+  <purpose value="An instance of Composition conforming to this profile represents the general properties of a specific catalog of healthcare items (services/products/knowledge artefacts).&#xD;&#xA;Such a resource is referenced by the resources representing the individual items of the catalog." />
   <mapping>
-    <identity value="workflow"/>
-    <uri value="http://hl7.org/fhir/workflow"/>
-    <name value="Workflow Pattern"/>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
   </mapping>
   <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
   </mapping>
   <mapping>
-    <identity value="cda"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
   </mapping>
   <mapping>
-    <identity value="fhirdocumentreference"/>
-    <uri value="http://hl7.org/fhir/documentreference"/>
-    <name value="FHIR DocumentReference"/>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
   </mapping>
   <mapping>
-    <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/fivews"/>
-    <name value="FiveWs Pattern Mapping"/>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
   </mapping>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Composition"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
-  <derivation value="constraint"/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
   <differential>
     <element id="Composition.extension">
-      <path value="Composition.extension"/>
+      <path value="Composition.extension" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="url"/>
+          <type value="value" />
+          <path value="url" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Composition.extension:ValidityPeriod">
-      <path value="Composition.extension"/>
-      <sliceName value="ValidityPeriod"/>
+      <path value="Composition.extension" />
+      <sliceName value="ValidityPeriod" />
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod"/>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod" />
       </type>
-      <mustSupport value="true"/>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.type">
-      <path value="Composition.type"/>
-      <short value="Kind of composition: a catalog"/>
+      <path value="Composition.type" />
+      <short value="Kind of composition: a catalog" />
     </element>
     <element id="Composition.type.text">
-      <path value="Composition.type.text"/>
-      <min value="1"/>
-      <fixedString value="Catalog"/>
+      <path value="Composition.type.text" />
+      <min value="1" />
+      <fixedString value="Catalog" />
     </element>
     <element id="Composition.category">
-      <path value="Composition.category"/>
-      <min value="1"/>
-      <short value="Kind of catalog"/>
+      <path value="Composition.category" />
+      <short value="Kind of catalog" />
+      <min value="1" />
       <binding>
-        <strength value="example"/>
-        <description value="Category of catalog content"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/catalogType"/>
+        <strength value="example" />
+        <description value="Category of catalog content" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/catalogType" />
       </binding>
     </element>
     <element id="Composition.subject">
-      <path value="Composition.subject"/>
-      <max value="0"/>
+      <path value="Composition.subject" />
+      <short value="Plan or set of dispositions subject of the catalog" />
+      <definition value="The catalog may be set up to be used in the context of a particular plan or set of financial, organizational or legal dispositions" />
+      <comment value="For example the catalog may provide the details of reimbursement of its items within the context of an insurance plan handled by a payer" />
     </element>
     <element id="Composition.encounter">
-      <path value="Composition.encounter"/>
-      <max value="0"/>
+      <path value="Composition.encounter" />
+      <max value="0" />
     </element>
     <element id="Composition.date">
-      <path value="Composition.date"/>
-      <short value="Catalog content last editing time"/>
+      <path value="Composition.date" />
+      <short value="Catalog content last editing time" />
     </element>
     <element id="Composition.author">
-      <path value="Composition.author"/>
-      <short value="The organization authoring the catalog content"/>
-      <definition value="An organization authoring and owning the content of the catalog"/>
-      <comment
-        value="In general there is a single author for a catalog. However there may be use cases where multiple authors contribute to various parts of a catalog, each author owning one part and being responsible for its content."/>
-      <alias value="catalog owner"/>
+      <path value="Composition.author" />
+      <short value="The organization authoring the catalog content" />
+      <definition value="An organization authoring and owning the content of the catalog" />
+      <comment value="In general there is a single author for a catalog. However there may be use cases where multiple authors contribute to various parts of a catalog, each author owning one part and being responsible for its content." />
+      <alias value="catalog owner" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
     </element>
     <element id="Composition.title.extension">
-      <path value="Composition.title.extension"/>
+      <path value="Composition.title.extension" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="url"/>
+          <type value="value" />
+          <path value="url" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Composition.title.extension:OtherTitle">
-      <path value="Composition.title.extension"/>
-      <sliceName value="OtherTitle"/>
-      <min value="0"/>
-      <max value="*"/>
+      <path value="Composition.title.extension" />
+      <sliceName value="OtherTitle" />
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/translation"/>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
       </type>
     </element>
     <element id="Composition.attester">
-      <path value="Composition.attester"/>
-      <max value="1"/>
+      <path value="Composition.attester" />
+      <max value="1" />
     </element>
     <element id="Composition.attester.time">
-      <path value="Composition.attester.time"/>
-      <min value="1"/>
+      <path value="Composition.attester.time" />
+      <min value="1" />
     </element>
     <element id="Composition.custodian">
-      <path value="Composition.custodian"/>
-      <min value="1"/>
-    </element>
-    <element id="Composition.relatesTo.code">
-      <path value="Composition.relatesTo.code"/>
-      <short value="addendum"/>
-      <comment
-        value="In general this feature is not needed with catalogs. Catalogs come into a single instance of Composition"
-      />
+      <path value="Composition.custodian" />
+      <min value="1" />
     </element>
     <element id="Composition.event">
-      <path value="Composition.event"/>
-      <max value="0"/>
+      <path value="Composition.event" />
+      <max value="0" />
     </element>
     <element id="Composition.section">
-      <path value="Composition.section"/>
-      <max value="0"/>
+      <path value="Composition.section" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

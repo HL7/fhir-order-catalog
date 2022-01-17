@@ -2,13 +2,19 @@
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<br/>
 	<p>This section lists the use cases for using catalogs of medical devices.</p>
-	<ul>
+	<ol>
+		<li>A manufacturer publishes its catalog of medical devices. 
+		    Healthcare providers and organizations access this catalog to retrieve all the
+			details of the devices they are using or intend to purchase. </li>
 		<li><a href="http://hl7.org/fhir/uv/livd/2019Sep/">LIVD IG </a> A manufacturer of in vitro
 			diagnostic devices shares with its customers its catalog of analyzers providing
 			for each analyzer the suggested mappings of its proprietary test result codes to LOINC.</li>
 		<li>A content vendor publishes the general catalog of medical devices authorized to a
 			national market. Health care organizations of the country access this catalog in real
 			time during their health care processes using medical devices, so as to retrieve all the
-			details of the devices, and to trace their association to patients. </li>
-	</ul>
+			details of the devices, and to include those in tracing their association to patients. </li>
+		<li>An authoritative catalog of all medical devices authorized for use in a jurisdiction 
+		    is accessible to healthcare professional so they can check the characteristics of a device model,
+            its market distribution status, and any safety issues stated for this model.	</li>		
+	</ol>
 </div>

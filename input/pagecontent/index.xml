@@ -4,8 +4,8 @@
   <table class="note-to-balloters">
     <tbody>
       <tr>
-        <th>The scope of next ballot will be limited to laboratory services, medications and devices
-          contents of catalogs. <br/>Pages which are excluded from this ballot will be signaled as such by
+        <th>The scope of next ballot includes catalogs of laboratory services, medications and devices. <br/>
+		Pages which are excluded from this ballot will be signaled as such by
           a note to balloters at the top of the page. <br/>Feedback is welcome and may be submitted
           through the <a href="http://hl7.org/fhir-issues"> FHIR Jira tracker</a></th>
       </tr>
@@ -14,23 +14,23 @@
   <br/>
   <a name="intro"> </a>
   <h3>Introduction to this guide</h3>
-  <p>This implementation guide for sharing order catalogs is based on FHIR R4. Its scope is
+  <p>This implementation guide for sharing order catalogs is based on FHIR R5. Its scope is
     international (aka universal realm).</p>
-  <p> An order catalog describes a collection of healthcare items of the same type that can be
-    ordered or selected by practitioners to support the course of healthcare delivery. These
+  <p> An order catalog is a collection of definitional resources describing homogeneous healthcare items that can be
+    ordered, selected or used by practitioners to support the course of healthcare delivery. These
     homogeneous healthcare items may represent services, products, devices or knowledge artifacts
-    such as order sets, for instance. Each item specifies its purpose, describes how it should be
-    ordered and/or used, and characterizes the outcomes that one can expect from its usage. </p>
+    (e.g., order sets). Each item specifies its purpose, describes how it should be
+    ordered and/or used, and characterizes the outcomes expected from its usage. </p>
   <p> Examples of catalogs include order sets catalog, evidence based knowledge artifacts for
     clinical decision support (CDS), laboratory test compendium, medication formulary, catalog of
     medical devices. </p>
   <p> This universal realm implementation guide specifies the methods and artifacts based on the
     FHIR standard, to build catalogs of healthcare items and share the content of these catalogs
-    across practitioners and healthcare organizations.. The methods such as browsing, searching,
-    retrieval, or maintaining the content, are common regardless of the category of catalog at hand:
-    product, service, clinical knowledge... Some of the artifacts, like the one representing the
+    across practitioners and healthcare organizations. The methods such as browse, search,
+    retrieve, or maintain the content, are common regardless of the category of catalog at hand:
+    product, service, clinical knowledge. Some of the artifacts, like the one representing the
     catalog as a whole, are also common to all categories of catalogs. Other artifacts are specific
-    to the category of items (medication, device, order set, diagnostic service ...) exposed by the
+    to a category of items (medication, device, order set, diagnostic service ...) exposed by the
     catalog. </p>
   <p>Considering these commonalities and specificities, building a common guidance for implementing
     any kind of catalog of healthcare items in FHIR has been deemed the most valuable proposition to
@@ -108,19 +108,19 @@
   <p> A catalog holds master data providing the definitions of healthcare items. It may include,
     where applicable, the associated regulatory constraints, business requirements and clinical
     guidelines for ordering and using these items.</p>
-  <p>Catalogs are most often stored on servers which make them accessible to the practitioners
+  <p>Catalogs are most often stored on servers which make them accessible to practitioners
     through their IT systems or applications e.g., electronic health records, electronic medical
     records, computerized physcian order entry, laboratory information systems, medication dispense
-    systems... Client applications may interact with a catalog server to: </p>
+    systems... Client applications interact with the FHIR API of a catalog server to: </p>
   <ul>
     <li>browse through entries of the catalog and retrieve items of interest together with the
       detailed instructions and guidance related to the usage of these items,</li>
     <li>import the full catalog or a part of it (e.g., recently updated items, a subset of the
       catalog dedicated to a specialty, ...), </li>
-    <li>administer the content of the catalog; add, update, retire items and supporting resources.
+    <li>administer the content of the catalog if authorized to do so; add, update, retire items and supporting resources.
     </li>
   </ul>
-  <p>Catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
+  <p>In addition, catalogs may also be exported in part or in whole to the consumer's system, using the FHIR
     messaging framework</p>
   <a name="scope"> </a>
   <h3>Scopes of order catalogs and roles involved</h3>
