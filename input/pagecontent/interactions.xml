@@ -166,10 +166,10 @@
     notifications are subscribed by the catalog consumers, within a predefined topic supported by
     the catalog custodian. The consumers can further refine the notifications they expect, by
     selecting filters, among those predefined for the topic by the catalog custodian.</p>
-  <p>This subscription mechanism is more properly defined in R5 and will be specified in detail here
-    when the IG migrates to R5. The mechanism uses the two resources Subscription (posted by the
+  <p>This subscription mechanism is more properly defined in R5 and is to be specified in detail here
+    as the IG is migrated to R5. The mechanism uses the two resources Subscription (posted by the
     catalog consumer) and Topic (published by the catalog custodian). An instance of Subscription
     represents a request for notifications of events, which are described in the Topic resource
     referenced by this instance.</p>
-  <p>To be continued when migrating the IG to R5</p>
+  <p>To be continued now that the IG is migrated to R5</p>
 </div>
