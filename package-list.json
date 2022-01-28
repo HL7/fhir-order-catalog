@@ -6,7 +6,7 @@
     "list": [
         {
             "version" : "current",
-            "date": "2021-06-18",
+            "date": "2022-01-28",
             "desc" : "Continuous Integration Build (latest in version control)",
             "path" : "http://hl7.org/fhir/uv/order-catalog",
             "sequence": "STU 2",

@@ -248,45 +248,35 @@
         <reference value="StructureDefinition/WarningDefinition"/>
       </reference>
       <name value="WarningDefinition Profile"/>
-      <description
-        value="Profile of ClinicalUseDefinition representing the definition of a warning"
-      />
+      <description value="Profile of ClinicalUseDefinition representing the definition of a warning"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ContraindicationDefinition"/>
       </reference>
       <name value="ContraindicationDefinition Profile"/>
-      <description
-        value="Profile of ClinicalUseDefinition representing the definition of a contraindication"
-      />
+      <description value="Profile of ClinicalUseDefinition representing the definition of a contraindication"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/IndicationDefinition"/>
       </reference>
       <name value="IndicationDefinition Profile"/>
-      <description
-        value="Profile of ClinicalUseDefinition representing the definition of an indication"
-      />
+      <description value="Profile of ClinicalUseDefinition representing the definition of an indication"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/InteractionDefinition"/>
       </reference>
       <name value="InteractionDefinition Profile"/>
-      <description
-        value="Profile of ClinicalUseDefinition representing the definition of an interaction"
-      />
+      <description value="Profile of ClinicalUseDefinition representing the definition of an interaction"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/UndesirableEffectDefinition"/>
       </reference>
       <name value="UndesirableEffectDefinition Profile"/>
-      <description
-        value="Profile of ClinicalUseDefinition representing the definition of an undesirable effect"
-      />
+      <description value="Profile of ClinicalUseDefinition representing the definition of an undesirable effect"/>
     </resource>
     <resource>
       <reference>
@@ -901,8 +891,7 @@
       </reference>
       <name value="Contraindication Hypercalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
-      <exampleCanonical
-        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
     </resource>
 	<resource>
       <reference>
@@ -910,8 +899,7 @@
       </reference>
       <name value="Indication Hypocalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>
-      <exampleCanonical
-        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
     </resource>
     <!--
       Example resources transversal to all kinds of catalogs
@@ -922,8 +910,7 @@
       </reference>
       <name value="Message definition for messaging a new catalog"/>
       <description value="MessageDefinition for messages conveying a new catalog to the receiver"/>
-      <exampleCanonical
-        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
     </resource>
     <resource>
       <reference>
