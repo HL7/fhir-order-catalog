@@ -49,5 +49,9 @@
       <path value="ClinicalUseDefinition.undesirableEffect" />
       <max value="0" />
 	</element>
+	<element id="ClinicalUseDefinition.warning">
+      <path value="ClinicalUseDefinition.warning"/>
+      <max value="0" />
+    </element>	
   </differential>
 </StructureDefinition>
