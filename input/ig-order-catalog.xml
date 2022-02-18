@@ -452,7 +452,7 @@
       <reference>
         <reference value="PlanDefinition/example-lab-service-toxoplasma-serum"/>
       </reference>
-      <name value="Lab service Toxoplasma gondii Antibody"/>
+      <name value="Lab service Toxoplasma gondii Ab"/>
       <description
         value="Lab E7 - panel laboratory service - serum Toxoplasma gondii Antibody panel"/>
       <exampleCanonical
@@ -510,7 +510,7 @@
       <reference>
         <reference value="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
       </reference>
-      <name value="Lab procedure creat renal clearance"/>
+      <name value="Lab procedure creatinine clearance"/>
       <description
         value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
       <exampleCanonical
@@ -586,7 +586,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
       </reference>
-      <name value="Lab specimen - venous serum 1 test"/>
+      <name value="Lab specimen venous serum"/>
       <description
         value="Lab E1, E4, E5, E6 - venous serum specimen requirement for a single chemistry test"/>
       <exampleCanonical
@@ -596,7 +596,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
       </reference>
-      <name value="Lab specimen - capillary serum 1 test"/>
+      <name value="Lab specimen capillary serum"/>
       <description
         value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
       <exampleCanonical
@@ -606,7 +606,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
       </reference>
-      <name value="Lab specimen - serum/plasma"/>
+      <name value="Lab specimen serum/plasma"/>
       <description value="Lab E2: serum/plasma specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
@@ -615,7 +615,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
       </reference>
-      <name value="Lab specimen - 24H urine"/>
+      <name value="Lab specimen 24H urine"/>
       <description value="Lab E3: 24H urine specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
@@ -624,7 +624,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-3ml-serum"/>
       </reference>
-      <name value="Lab specimen - venous serum 3 mL"/>
+      <name value="Lab specimen venous serum 3 mL"/>
       <description value="Lab E7 - 3 mL serum specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
@@ -633,7 +633,7 @@
       <reference>
         <reference value="SpecimenDefinition/example-specimen-2ml-serum"/>
       </reference>
-      <name value="Lab specimen - venous serum 2 mL"/>
+      <name value="Lab specimen venous serum 2 mL"/>
       <description value="Lab E7 - 2 mL serum specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
@@ -908,7 +908,7 @@
       <reference>
         <reference value="MessageDefinition/example-message-definition-initialize"/>
       </reference>
-      <name value="Message definition for messaging a new catalog"/>
+      <name value="Message definition new catalog"/>
       <description value="MessageDefinition for messages conveying a new catalog to the receiver"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
     </resource>
@@ -916,7 +916,7 @@
       <reference>
         <reference value="MessageDefinition/example-message-definition-update"/>
       </reference>
-      <name value="Message definition for messaging a catalog update"/>
+      <name value="Message definition catalog update"/>
       <description
         value="MessageDefinition for messages conveying an update to the receiver's catalog"/>
       <exampleCanonical
@@ -929,7 +929,7 @@
       <reference>
         <reference value="Bundle/example-lab-test-creation-transaction-request"/>
       </reference>
-      <name value="Create test in laboratory compendium"/>
+      <name value="Lab compendium Create test"/>
       <description
         value="Lab E8 - transaction Bundle posted for creation of a test and its supporting resources into a laboratory compendium"/>
       <exampleCanonical
@@ -939,7 +939,7 @@
       <reference>
         <reference value="Bundle/example-lab-test-creation-transaction-response"/>
       </reference>
-      <name value="Test created in laboratory compendium"/>
+      <name value="Lab compendium test created"/>
       <description
         value="Lab E8 - transaction-response Bundle returned after creation of a test and its supporting resources into a laboratory compendium"/>
       <exampleCanonical
