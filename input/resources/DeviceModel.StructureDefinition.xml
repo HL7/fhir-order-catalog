@@ -19,10 +19,64 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="DeviceDefinition.description">
+      <path value="DeviceDefinition.description" />
+      <mustSupport value="true"/>
+    </element>
     <element id="DeviceDefinition.identifier">
       <path value="DeviceDefinition.identifier" />
-      <definition value="This repeatable element is used in catalogs of devices to convey the identifiers assigned to the model of device, other than the primary UDI DI." />
-      <comment value="identifier may convey for instance, the secondary UDI-DI, the direct -marking UDI-DI, the unit-of-use UDI-DI, The primary UDI-DI is not conveyed by this element, it goes into the udiDeviceIdentifier element.&#xD;&#xA;other occurrences of identifier may also be used to convey additional non-UDI identifiers if needed." />
+      <definition value="This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI."/>
+      <comment value="identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier."/>
+	  <mustSupport value="true"/>
     </element>
+	<element id="DeviceDefinition.udiDeviceIdentifier">
+      <path value="DeviceDefinition.udiDeviceIdentifier"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="DeviceDefinition.udiDeviceIdentifier.marketDistribution">
+      <path value="DeviceDefinition.udiDeviceIdentifier.marketDistribution"/>
+      <mustSupport value="true"/>
+    </element>	
+	<element id="DeviceDefinition.partNumber">
+      <path value="DeviceDefinition.partNumber"/>
+      <mustSupport value="true"/>
+    </element>	
+	<element id="DeviceDefinition.manufacturer">
+      <path value="DeviceDefinition.manufacturer"/>
+      <mustSupport value="true"/>
+    </element>	
+	<element id="DeviceDefinition.deviceName">
+      <path value="DeviceDefinition.deviceName"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="DeviceDefinition.modelNumber">
+      <path value="DeviceDefinition.modelNumber"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="DeviceDefinition.classification">
+      <path value="DeviceDefinition.classification"/>	
+      <slicing>
+        <discriminator>
+		  <type value="value" />
+          <path value="DeviceDefinition.classification.type.coding[0].system"/>
+        </discriminator>
+		<description value="Discriminated type.coding.system"/>
+        <rules value="open" />
+      </slicing>
+    </element>	
+	<element id="DeviceDefinition.classification:gmdn">
+		<path value="DeviceDefinition.classification"/>
+		<sliceName value="gmdn"/>
+		<short value="GMDN classification"/>
+		<definition value="Global Medical Device Nomenclature classification"/>
+		<pattern>
+			<type>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/GMDN"/>
+				</coding>
+			</type>	
+		</pattern>
+	</element>
+	
   </differential>
 </StructureDefinition>

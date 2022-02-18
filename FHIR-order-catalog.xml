@@ -14,7 +14,6 @@
 <artifact id="StructureDefinition/CatalogReference" key="StructureDefinition-CatalogReference" name="CatalogReference Extension"/>
 <artifact id="ClinicalUseDefinition/example-hypercalcemia-contraindication" key="ClinicalUseDefinition-example-hypercalcemia-contraindication" name="Contraindication Hypercalcemia"/>
 <artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
-<artifact id="Bundle/example-lab-test-creation-transaction-request" key="Bundle-example-lab-test-creation-transaction-request" name="Create test in laboratory compendium"/>
 <artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
 <artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
 <artifact id="ClinicalUseDefinition/example-hypocalcemia-indication" key="ClinicalUseDefinition-example-hypocalcemia-indication" name="Indication Hypocalcemia"/>
@@ -24,6 +23,8 @@
 <artifact id="StructureDefinition/ItemTransactionRequest" key="StructureDefinition-ItemTransactionRequest" name="ItemTransactionRequest Profile"/>
 <artifact id="StructureDefinition/ItemTransactionResponse" key="StructureDefinition-ItemTransactionResponse" name="ItemTransactionResponse Profile"/>
 <artifact id="ChargeItemDefinition/example-lab-billing-vitamind-focus" key="ChargeItemDefinition-example-lab-billing-vitamind-focus" name="Lab billing code and rule for vitamin D"/>
+<artifact id="Bundle/example-lab-test-creation-transaction-request" key="Bundle-example-lab-test-creation-transaction-request" name="Lab compendium Create test"/>
+<artifact id="Bundle/example-lab-test-creation-transaction-response" key="Bundle-example-lab-test-creation-transaction-response" name="Lab compendium test created"/>
 <artifact deprecated="true" id="ValueSet/example-clinical-focus-vitamin-d" key="ValueSet-example-clinical-focus-vitamin-d" name="Lab contexts possibly associated with vitamin D testing"/>
 <artifact id="ObservationDefinition/example-input-observation-reason-for-ordering" key="ObservationDefinition-example-input-observation-reason-for-ordering" name="Lab input observation - reason"/>
 <artifact id="ObservationDefinition/example-input-observation-context-for-vitamin-d" key="ObservationDefinition-example-input-observation-context-for-vitamin-d" name="Lab input observation - vitamin d"/>
@@ -54,7 +55,7 @@
 <artifact id="ActivityDefinition/example-lab-procedure-rubella" key="ActivityDefinition-example-lab-procedure-rubella" name="Lab procedure Rubella IgM"/>
 <artifact id="ActivityDefinition/example-lab-procedure-toxoplasma" key="ActivityDefinition-example-lab-procedure-toxoplasma" name="Lab procedure Toxoplasma gondii"/>
 <artifact id="ActivityDefinition/example-lab-blood-electrolyte" key="ActivityDefinition-example-lab-blood-electrolyte" name="Lab procedure blood electrolyte"/>
-<artifact id="ActivityDefinition/example-lab-urine24h-creatinine-clearance" key="ActivityDefinition-example-lab-urine24h-creatinine-clearance" name="Lab procedure creat renal clearance"/>
+<artifact id="ActivityDefinition/example-lab-urine24h-creatinine-clearance" key="ActivityDefinition-example-lab-urine24h-creatinine-clearance" name="Lab procedure creatinine clearance"/>
 <artifact id="ActivityDefinition/example-lab-procedure-potassium-serum" key="ActivityDefinition-example-lab-procedure-potassium-serum" name="Lab procedure serum K"/>
 <artifact id="ActivityDefinition/example-lab-procedure-serum-creatinine" key="ActivityDefinition-example-lab-procedure-serum-creatinine" name="Lab procedure serum creatinine"/>
 <artifact id="ActivityDefinition/example-lab-procedure-vitamind-serum" key="ActivityDefinition-example-lab-procedure-vitamind-serum" name="Lab procedure vitamin D"/>
@@ -65,18 +66,18 @@
 <artifact id="PlanDefinition/example-lab-service-hsv-serum" key="PlanDefinition-example-lab-service-hsv-serum" name="Lab service HSV IgM"/>
 <artifact id="PlanDefinition/example-lab-service-rubella-serum" key="PlanDefinition-example-lab-service-rubella-serum" name="Lab service Rubella IgM"/>
 <artifact id="PlanDefinition/example-lab-service-torch" key="PlanDefinition-example-lab-service-torch" name="Lab service TORCH panel"/>
-<artifact id="PlanDefinition/example-lab-service-toxoplasma-serum" key="PlanDefinition-example-lab-service-toxoplasma-serum" name="Lab service Toxoplasma gondii Antibody"/>
+<artifact id="PlanDefinition/example-lab-service-toxoplasma-serum" key="PlanDefinition-example-lab-service-toxoplasma-serum" name="Lab service Toxoplasma gondii Ab"/>
 <artifact id="PlanDefinition/example-lab-panel-blood-electrolyte" key="PlanDefinition-example-lab-panel-blood-electrolyte" name="Lab service blood electrolyte"/>
 <artifact id="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance" key="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance" name="Lab service creat renal clearance"/>
 <artifact id="PlanDefinition/example-lab-service-potassium-serum" key="PlanDefinition-example-lab-service-potassium-serum" name="Lab service serum K"/>
 <artifact id="PlanDefinition/example-lab-test-serum-creatinine" key="PlanDefinition-example-lab-test-serum-creatinine" name="Lab service serum creat"/>
 <artifact id="PlanDefinition/example-lab-service-vitamind-serum" key="PlanDefinition-example-lab-service-vitamind-serum" name="Lab service vitamin D"/>
-<artifact id="SpecimenDefinition/example-specimen-urine-24h" key="SpecimenDefinition-example-specimen-urine-24h" name="Lab specimen - 24H urine"/>
-<artifact id="SpecimenDefinition/example-specimen-capillary-serum-single-test" key="SpecimenDefinition-example-specimen-capillary-serum-single-test" name="Lab specimen - capillary serum 1 test"/>
-<artifact id="SpecimenDefinition/example-specimen-serum-plasma" key="SpecimenDefinition-example-specimen-serum-plasma" name="Lab specimen - serum/plasma"/>
-<artifact id="SpecimenDefinition/example-specimen-venous-serum-single-test" key="SpecimenDefinition-example-specimen-venous-serum-single-test" name="Lab specimen - venous serum 1 test"/>
-<artifact id="SpecimenDefinition/example-specimen-2ml-serum" key="SpecimenDefinition-example-specimen-2ml-serum" name="Lab specimen - venous serum 2 mL"/>
-<artifact id="SpecimenDefinition/example-specimen-3ml-serum" key="SpecimenDefinition-example-specimen-3ml-serum" name="Lab specimen - venous serum 3 mL"/>
+<artifact id="SpecimenDefinition/example-specimen-urine-24h" key="SpecimenDefinition-example-specimen-urine-24h" name="Lab specimen 24H urine"/>
+<artifact id="SpecimenDefinition/example-specimen-capillary-serum-single-test" key="SpecimenDefinition-example-specimen-capillary-serum-single-test" name="Lab specimen capillary serum"/>
+<artifact id="SpecimenDefinition/example-specimen-serum-plasma" key="SpecimenDefinition-example-specimen-serum-plasma" name="Lab specimen serum/plasma"/>
+<artifact id="SpecimenDefinition/example-specimen-venous-serum-single-test" key="SpecimenDefinition-example-specimen-venous-serum-single-test" name="Lab specimen venous serum"/>
+<artifact id="SpecimenDefinition/example-specimen-2ml-serum" key="SpecimenDefinition-example-specimen-2ml-serum" name="Lab specimen venous serum 2 mL"/>
+<artifact id="SpecimenDefinition/example-specimen-3ml-serum" key="SpecimenDefinition-example-specimen-3ml-serum" name="Lab specimen venous serum 3 mL"/>
 <artifact id="StructureDefinition/LabChargeItemDefinition" key="StructureDefinition-LabChargeItemDefinition" name="LabChargeItemDefinition Profile"/>
 <artifact id="StructureDefinition/LabObservationDefinition" key="StructureDefinition-LabObservationDefinition" name="LabObservationDefinition Profile"/>
 <artifact id="StructureDefinition/LabProcedureDefinition" key="StructureDefinition-LabProcedureDefinition" name="LabProcedureDefinition Profile"/>
@@ -88,8 +89,8 @@
 <artifact id="CodeSystem/laboratory-service-definition-type" key="CodeSystem-laboratory-service-definition-type" name="Laboratory service types CodeSystem"/>
 <artifact id="ValueSet/laboratory-service-type" key="ValueSet-laboratory-service-type" name="Laboratory service types ValueSet"/>
 <artifact id="StructureDefinition/LimitationSummary" key="StructureDefinition-LimitationSummary" name="LimitationSummary Extension"/>
-<artifact id="MessageDefinition/example-message-definition-update" key="MessageDefinition-example-message-definition-update" name="Message definition for messaging a catalog update"/>
-<artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition for messaging a new catalog"/>
+<artifact id="MessageDefinition/example-message-definition-update" key="MessageDefinition-example-message-definition-update" name="Message definition catalog update"/>
+<artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition new catalog"/>
 <artifact id="ValueSet/catalog-message-events-vs" key="ValueSet-catalog-message-events-vs" name="Order catalog message events ValueSet"/>
 <artifact id="ValueSet/example-clinical-focus" key="ValueSet-example-clinical-focus" name="Possible contexts for any lab test order"/>
 <artifact id="StructureDefinition/RegulatorySummary" key="StructureDefinition-RegulatorySummary" name="RegulatorySummary Extension"/>
@@ -97,7 +98,6 @@
 <artifact id="StructureDefinition/ScheduleSummary" key="StructureDefinition-ScheduleSummary" name="ScheduleSummary Extension"/>
 <artifact id="StructureDefinition/ServiceBillingCode" key="StructureDefinition-ServiceBillingCode" name="ServiceBillingCode Extension"/>
 <artifact id="StructureDefinition/SpecimenRequested" key="StructureDefinition-SpecimenRequested" name="SpecimenRequested Extension"/>
-<artifact id="Bundle/example-lab-test-creation-transaction-response" key="Bundle-example-lab-test-creation-transaction-response" name="Test created in laboratory compendium"/>
 <artifact id="StructureDefinition/UndesirableEffectDefinition" key="StructureDefinition-UndesirableEffectDefinition" name="UndesirableEffectDefinition Profile"/>
 <artifact id="ValueSet/example-reasons-for-order" key="ValueSet-example-reasons-for-order" name="Valid coded reasons for ordering a lab service"/>
 <artifact id="StructureDefinition/ValidityPeriod" key="StructureDefinition-ValidityPeriod" name="ValidityPeriod Extension"/>
