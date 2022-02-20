@@ -58,7 +58,7 @@
       <slicing>
         <discriminator>
 		  <type value="value" />
-          <path value="DeviceDefinition.classification.type.coding[0].system"/>
+          <path value="DeviceDefinition.classification.type.coding.system"/>
         </discriminator>
 		<description value="Discriminated type.coding.system"/>
         <rules value="open" />
@@ -69,14 +69,10 @@
 		<sliceName value="gmdn"/>
 		<short value="GMDN classification"/>
 		<definition value="Global Medical Device Nomenclature classification"/>
-		<pattern>
-			<type>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/GMDN"/>
-				</coding>
-			</type>	
-		</pattern>
 	</element>
-	
+	<element id="DeviceDefinition.classification.type.coding.system">
+		<path value="DeviceDefinition.classification.type.coding.system"/>
+		<fixedUri value="http://terminology.hl7.org/CodeSystem/GMDN"/>
+	</element>
   </differential>
 </StructureDefinition>
