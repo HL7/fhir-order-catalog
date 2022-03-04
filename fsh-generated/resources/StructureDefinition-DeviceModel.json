@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DeviceModel",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel",
+  "version": "current",
+  "name": "DeviceModel",
+  "title": "Characteristics of a model of medical device",
+  "status": "draft",
+  "date": "2022-02-20T18:06:45+01:00",
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0-snapshot1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "name": "FiveWs Pattern Mapping",
+      "uri": "http://hl7.org/fhir/fivews"
+    },
+    {
+      "identity": "rim",
+      "name": "RIM Mapping",
+      "uri": "http://hl7.org/v3"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceDefinition.description",
+        "path": "DeviceDefinition.description",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.identifier",
+        "path": "DeviceDefinition.identifier",
+        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.",
+        "comment": "identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier",
+        "path": "DeviceDefinition.udiDeviceIdentifier",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.partNumber",
+        "path": "DeviceDefinition.partNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.manufacturer[x]",
+        "path": "DeviceDefinition.manufacturer[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.deviceName",
+        "path": "DeviceDefinition.deviceName",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.modelNumber",
+        "path": "DeviceDefinition.modelNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.classification",
+        "path": "DeviceDefinition.classification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "DeviceDefinition.classification.type.coding.system"
+            }
+          ],
+          "description": "Discriminated type.coding.system",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn",
+        "path": "DeviceDefinition.classification",
+        "sliceName": "gmdn",
+        "short": "GMDN classification",
+        "definition": "Global Medical Device Nomenclature classification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.system",
+        "path": "DeviceDefinition.classification.type.coding.system",
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/GMDN"
+      },
+      {
+        "id": "DeviceDefinition.hasPart.count",
+        "path": "DeviceDefinition.hasPart.count",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.packaging.count",
+        "path": "DeviceDefinition.packaging.count",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.safety",
+        "path": "DeviceDefinition.safety",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.property",
+        "path": "DeviceDefinition.property",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.property.value[x]",
+        "path": "DeviceDefinition.property.value[x]",
+        "min": 1
+      },
+      {
+        "id": "DeviceDefinition.guideline",
+        "path": "DeviceDefinition.guideline",
+        "mustSupport": true
+      }
+    ]
+  }
+}
