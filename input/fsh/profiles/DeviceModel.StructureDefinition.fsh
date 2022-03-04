@@ -1,7 +1,7 @@
 Profile: DeviceModel
 Parent: DeviceDefinition
 Id: DeviceModel
-Title: "Characteristics of a model of medical device"
+Title: "Device Model"
 Description: "This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices"
 * ^version = "current"
 * ^status = #draft

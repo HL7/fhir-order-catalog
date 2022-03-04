@@ -14,6 +14,7 @@
 <artifact id="StructureDefinition/CatalogReference" key="StructureDefinition-CatalogReference" name="CatalogReference Extension"/>
 <artifact id="ClinicalUseDefinition/example-hypercalcemia-contraindication" key="ClinicalUseDefinition-example-hypercalcemia-contraindication" name="Contraindication Hypercalcemia"/>
 <artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
+<artifact id="DeviceDefinition/example-devicemodel-breast-pump" key="DeviceDefinition-example-devicemodel-breast-pump" name="Device model of breast pump"/>
 <artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
 <artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
 <artifact id="ClinicalUseDefinition/example-hypocalcemia-indication" key="ClinicalUseDefinition-example-hypocalcemia-indication" name="Indication Hypocalcemia"/>

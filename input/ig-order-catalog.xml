@@ -945,6 +945,18 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionResponse"/>
     </resource>
+	<!-- 
+	  examples for catalogs of devices
+	-->
+	<resource>
+      <reference>
+        <reference value="DeviceDefinition/example-devicemodel-breast-pump"/>
+      </reference>
+      <name value="Device model of breast pump"/>
+      <description value="Device model of Philips Avent Breast Pump Single"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
+    </resource>
     <!--
       html pages
     -->
