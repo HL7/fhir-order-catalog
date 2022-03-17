@@ -70,6 +70,35 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationKnowledge.extension",
+        "path": "MedicationKnowledge.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationKnowledge.extension:CatalogReference",
+        "path": "MedicationKnowledge.extension",
+        "sliceName": "CatalogReference",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
+            ]
+          }
+        ]
+      },
+      {
         "id": "MedicationKnowledge.code",
         "path": "MedicationKnowledge.code",
         "min": 1

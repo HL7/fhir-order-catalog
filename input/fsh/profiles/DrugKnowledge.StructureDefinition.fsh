@@ -10,6 +10,7 @@ Description: "This profile constrains the base resource MedicationKnowledge to r
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.org/Special/committees/orders"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* extension contains CatalogReference named CatalogReference 0..*
 * code 1..
 * intendedJurisdiction MS
 * indicationGuideline and indicationGuideline.indication MS

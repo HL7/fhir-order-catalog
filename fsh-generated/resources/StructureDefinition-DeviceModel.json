@@ -14,7 +14,7 @@
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel",
   "version": "current",
   "name": "DeviceModel",
-  "title": "Characteristics of a model of medical device",
+  "title": "Device Model",
   "status": "draft",
   "date": "2022-02-20T18:06:45+01:00",
   "publisher": "HL7 International - Orders and Observations Work Group",
@@ -59,6 +59,35 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "DeviceDefinition.extension",
+        "path": "DeviceDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DeviceDefinition.extension:CatalogReference",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "CatalogReference",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
+            ]
+          }
+        ]
+      },
       {
         "id": "DeviceDefinition.description",
         "path": "DeviceDefinition.description",

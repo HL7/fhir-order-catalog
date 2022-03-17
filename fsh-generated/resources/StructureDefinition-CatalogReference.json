@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CatalogReference",
+  "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
+  "version": "current",
+  "name": "CatalogReference",
+  "title": "Reference to a catalog",
+  "status": "draft",
+  "date": "2022-03-17T12:16:22+01:00",
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "This extension to PlanDefinition, MedicationKnowledge and DeviceDefinition conveys the reference to a catalog containing the extended resource",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0-snapshot1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "name": "RIM Mapping",
+      "uri": "http://hl7.org/v3"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    },
+    {
+      "type": "element",
+      "expression": "DeviceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reference to a catalog",
+        "definition": "This extension to PlanDefinition, MedicationKnowledge and DeviceDefinition conveys the reference to a catalog containing the extended resource"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Reference to a catalog containing this item",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueReference",
+        "path": "Extension.valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

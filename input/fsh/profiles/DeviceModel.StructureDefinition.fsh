@@ -10,6 +10,7 @@ Description: "This profile constrains the base resource DeviceDefinition to repr
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.org/Special/committees/orders"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* extension contains CatalogReference named CatalogReference 0..*
 * description MS
 * identifier MS
 * identifier ^definition = "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI."
