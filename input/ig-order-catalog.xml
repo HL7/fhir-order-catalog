@@ -30,31 +30,31 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-	<grouping id="_commonP">
+	<grouping id="commonP">
 	  <name value="Common profiles"/>
 	</grouping>  
-	<grouping id="_commonE">
+	<grouping id="commonE">
 	  <name value="Common examples"/>
 	</grouping>  	
-	<grouping id="_labP">
+	<grouping id="labP">
 	    <name value="Lab profiles"/>
 	</grouping> 
-	<grouping id="_labE">
+	<grouping id="labE">
 	    <name value="Lab examples"/>
 	</grouping> 
-	<grouping id="_labE7">
+	<grouping id="labE7">
 	    <name value="lab ToRCH example"/>
 	</grouping>	
-	<grouping id="_devP">
+	<grouping id="devP">
 	    <name value="Device profiles"/>
 	</grouping> 
-	<grouping id="_devE">
+	<grouping id="devE">
 	    <name value="Device examples"/>
 	</grouping> 
-		<grouping id="_drugP">
+		<grouping id="drugP">
 	    <name value="Drug profiles"/>
 	</grouping> 
-	<grouping id="_drugE">
+	<grouping id="drugE">
 	    <name value="Drug examples"/>
 	</grouping> 
     <!--
@@ -126,7 +126,7 @@
       </reference>
       <name value="ValidityPeriod Extension"/>
       <description value="Extension adding catalog validity period to the CatalogHeader profile of Composition"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -136,7 +136,7 @@
       <description
         value="Extension adding catalog reference to resources representing catalog items"
       />
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -146,7 +146,7 @@
       <description
         value="Extension adding a billing summary to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -156,7 +156,7 @@
       <description
         value="Extension adding a service schedule summary to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -166,7 +166,7 @@
       <description
         value="Extension adding a service limitation summary to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -176,7 +176,7 @@
       <description
         value="Extension adding a textual summary of regulations applicable to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -186,7 +186,7 @@
       <description
         value="Extension adding a markdown summary of result interpretation guidance applicable to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -196,7 +196,7 @@
       <description
         value="Extension adding a service billing code (and possibly associated billing rules) to the LabServiceDefinition profile of PlanDefinition"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -206,7 +206,7 @@
       <description
         value="Extension attaching specimen requested to a PlanDefinition.action, as a set of (possibly choosable) references to SpecimenDefiniton"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <!--
       Below, the profiles
@@ -219,7 +219,7 @@
       <description
         value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -229,7 +229,7 @@
       <description
         value="Profile of Composition for the header of a catalog of healthcare items (products, services, knowledge artifacts)"
       />
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -239,7 +239,7 @@
       <description
         value="Profile of PlanDefinition representing the definition of a laboratory diagnostic service viewable and usable by potential consumers (clinicians, nurses, patients ...)"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -249,7 +249,7 @@
       <description
         value="Profile of ActivityDefinition representing the definition of a laboratory operational procedure"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -259,7 +259,7 @@
       <description
         value="Profile of SpecimenDefinition representing the definition of an IVD specimen used by a laboratory operational procedure"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -269,7 +269,7 @@
       <description
         value="Profile of ObservationDefinition representing the definition of an observation expected from the orderer by the performing laboratory for use in one of its procedures"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -279,7 +279,7 @@
       <description
         value="Profile of ObservationDefinition representing the definition of an observation outcome of a laboratory procedure, to be returned to the orderer of the service"
       />
-	  <groupingId value="_labP"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -287,7 +287,7 @@
       </reference>
       <name value="WarningDefinition Profile"/>
       <description value="Profile of ClinicalUseDefinition representing the definition of a warning"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -295,7 +295,7 @@
       </reference>
       <name value="ContraindicationDefinition Profile"/>
       <description value="Profile of ClinicalUseDefinition representing the definition of a contraindication"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -303,7 +303,7 @@
       </reference>
       <name value="IndicationDefinition Profile"/>
       <description value="Profile of ClinicalUseDefinition representing the definition of an indication"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -311,7 +311,7 @@
       </reference>
       <name value="InteractionDefinition Profile"/>
       <description value="Profile of ClinicalUseDefinition representing the definition of an interaction"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -319,7 +319,7 @@
       </reference>
       <name value="UndesirableEffectDefinition Profile"/>
       <description value="Profile of ClinicalUseDefinition representing the definition of an undesirable effect"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -329,7 +329,7 @@
       <description
         value="Profile of MedicationKnowledge to represent an item in a catalog of medications"
       />
-	  <groupingId value="_drugP"/>
+	  <groupingId value="drugP"/>
     </resource>
 	<resource>
       <reference>
@@ -339,7 +339,7 @@
       <description
         value="Profile of DeviceDefinition to represent an item in a catalog of models of medical devices"
       />
-	  <groupingId value="_devP"/>
+	  <groupingId value="devP"/>
     </resource>
     <!-- FM 20201219
     <resource>
@@ -356,7 +356,7 @@
       </reference>
       <name value="CatalogMessageDefinition Profile"/>
       <description value="Profile of MessageDefinition for sending content of a catalog"/>
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <resource>
       <reference>
@@ -365,7 +365,7 @@
       <name value="ItemTransactionRequest Profile"/>
       <description
         value="Profile of Bundle for updating the content of a catalog in transaction mode"/>
-	  <groupingId value="_commonP"/>	
+	  <groupingId value="commonP"/>	
     </resource>
     <resource>
       <reference>
@@ -375,7 +375,7 @@
       <description
         value="Profile of Bundle conveying the response to a transaction request for administering catalog content"
       />
-	  <groupingId value="_commonP"/>
+	  <groupingId value="commonP"/>
     </resource>
     <!--
       Catalog Examples - CatalogHeader
@@ -389,7 +389,7 @@
         value="Lab E* - Catalog header representing a clinical laboratory compendium, used by all lab examples in this implementation guide"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-		<groupingId value="_labE"/>
+		<groupingId value="labE"/>
     </resource>
     <!--
       PlanDefinition Examples - LabServiceDefinition
@@ -402,7 +402,7 @@
       <description value="Lab E1 - simple test laboratory service - serum K"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -412,7 +412,7 @@
       <description value="Lab E2 - panel laboratory service - electrolyte on blood or plasma"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -423,7 +423,7 @@
         value="Lab E3, E5 - panel laboratory service - creatinine on 24-hour urine specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -434,7 +434,7 @@
         value="Lab E4, E5 - panel laboratory service - creatinine on serum or plasma specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -445,7 +445,7 @@
         value="Lab E5 - panel laboratory service - creatinine renal clearance using 24-hour urine specimen and serum or plasma specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -455,7 +455,7 @@
       <description value="Lab E6 - simple test laboratory service - vitamin D (in French)"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -465,7 +465,7 @@
       <description value="Lab E7 - simple test laboratory service - serum HSV 2 IgM titer"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -475,7 +475,7 @@
       <description value="Lab E7 - simple test laboratory service - serum HSV 1 IgM titer"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -486,7 +486,7 @@
         value="Lab E7 - panel laboratory service - serum HSV 1 &amp; 2 IgM screen panel + reflex titer"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -496,7 +496,7 @@
       <description value="Lab E7 - test laboratory service - serum CMV IgM test"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>		
+	  <groupingId value="labE7"/>		
     </resource>
     <resource>
       <reference>
@@ -506,7 +506,7 @@
       <description value="Lab E7 - test laboratory service - serum Rubella IgM test"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -517,7 +517,7 @@
         value="Lab E7 - panel laboratory service - serum Toxoplasma gondii Antibody panel"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -527,7 +527,7 @@
       <description value="Lab E7 - panel laboratory service - serum TORCH panel"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <!--
       ActivityDefinition Examples - LabProcedureDefinition
@@ -540,7 +540,7 @@
       <description value="Lab E3, E5 - panel laboratory procedure - 24-hour urine creatinine"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -550,7 +550,7 @@
       <description value="Lab E4, E5 - laboratory procedure - creatinine - on serum or plasma"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>	
+	  <groupingId value="labE"/>	
     </resource>
     <resource>
       <reference>
@@ -560,7 +560,7 @@
       <description value="Lab E1 - simple test laboratory procedure - serum K"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -570,7 +570,7 @@
       <description value="Lab E2 - panel laboratory procedure - electrolyte on serum or plasma"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -581,7 +581,7 @@
         value="Lab E5 - laboratory procedure carrying a single observation - creatinine renal clearance"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -591,7 +591,7 @@
       <description value="Lab E6 - simple test laboratory procedure - vitamin D (in French)"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -601,7 +601,7 @@
       <description value="Lab E7 - laboratory procedure - Toxoplasma gondii serology"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -611,7 +611,7 @@
       <description value="Lab E7 - laboratory procedure - Rubella serology"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -621,7 +621,7 @@
       <description value="Lab E7 - laboratory procedure - CMV IgM"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -631,7 +631,7 @@
       <description value="Lab E7 - laboratory procedure - HSV 1 &amp; 2 IgM"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -641,7 +641,7 @@
       <description value="Lab E7 - laboratory procedure - HSV 1 IgM titer"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -651,7 +651,7 @@
       <description value="Lab E7 - laboratory procedure - HSV 2 IgM titer"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <!--
       SpecimenDefinition Examples - LabSpecimenDefinition
@@ -665,7 +665,7 @@
         value="Lab E1, E4, E5, E6 - venous serum specimen requirement for a single chemistry test"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -676,7 +676,7 @@
         value="Lab E4, E5 - capillary serum specimen requirement for a single chemistry test"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -686,7 +686,7 @@
       <description value="Lab E2: serum/plasma specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE"/>		
+	  <groupingId value="labE"/>		
     </resource>
     <resource>
       <reference>
@@ -696,7 +696,7 @@
       <description value="Lab E3: 24H urine specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -706,7 +706,7 @@
       <description value="Lab E7 - 3 mL serum specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -716,7 +716,7 @@
       <description value="Lab E7 - 2 mL serum specimen"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <!--
       ObservationDefinition examples - InputObservationDeEfinition
@@ -730,7 +730,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"
       />
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -741,7 +741,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"
       />
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <!--
       ObservationDefinition examples - LabObservationDeEfinition
@@ -754,7 +754,7 @@
       <description value="Lab E2: observation Na/serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -764,7 +764,7 @@
       <description value="Lab E1, E2: observation K/serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -774,7 +774,7 @@
       <description value="Lab E2 - definition of output observation Cl on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -784,7 +784,7 @@
       <description value="Lab E3 - definition of input/output observation urine collection duration"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -795,7 +795,7 @@
         value="Lab E3 - definition of input/output observation 24-hour urine collection volume"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -805,7 +805,7 @@
       <description value="Lab E3 - definition of lab observation 24-hour urine creatinine"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -815,7 +815,7 @@
       <description value="Lab E4 - definition of lab observation serum/plasma creatinine"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -826,7 +826,7 @@
         value="Lab E5 - definition of lab observation - creatinine renal clearance in 24 hour urine and serum or plasma"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -836,7 +836,7 @@
       <description value="Lab E6: observation vitamin D on blood serum (in French)"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -846,7 +846,7 @@
       <description value="Lab E7: observation HSV 2 IgM titer on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -856,7 +856,7 @@
       <description value="Lab E7: observation HSV 1 IgM titer on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -866,7 +866,7 @@
       <description value="Lab E7: observation HSV 2 IgM presence detection on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -876,7 +876,7 @@
       <description value="Lab E7: observation HSV 1 IgM presence detection on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -886,7 +886,7 @@
       <description value="Lab E7: observation Rubella IgM on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -896,7 +896,7 @@
       <description value="Lab E7: observation CMV IgM on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -906,7 +906,7 @@
       <description value="Lab E7: observation Toxoplasma IgM on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -916,7 +916,7 @@
       <description value="Lab E7: observation Toxoplasma IgG on serum"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <resource>
       <reference>
@@ -926,7 +926,7 @@
       <description value="Lab E7: observation Toxoplasma Ab interpretation"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
-	  <groupingId value="_labE7"/>
+	  <groupingId value="labE7"/>
     </resource>
     <!--
       Other miscellaneous resources for Lab Examples
@@ -939,7 +939,7 @@
       <description
         value="Lab E* - a fake laboratory Organization resource used by all laboratory examples of this implementation guide"
       />
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -949,7 +949,7 @@
       <description value="Lab E6 - definition of charge item for laboratory service Vitamin D"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -961,7 +961,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
       -->
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -973,7 +973,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
       -->
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -985,7 +985,7 @@
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
       -->
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
 	<!--
       Examples of ClinicalUseDefinition 
@@ -997,7 +997,7 @@
       <name value="Contraindication Hypercalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
-	  <groupingId value="_commonE"/>
+	  <groupingId value="commonE"/>
     </resource>
 	<resource>
       <reference>
@@ -1006,7 +1006,7 @@
       <name value="Indication Hypocalcemia"/>
       <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
-	  <groupingId value="_commonE"/>
+	  <groupingId value="commonE"/>
     </resource>
     <!--
       Example resources transversal to all kinds of catalogs
@@ -1018,7 +1018,7 @@
       <name value="Message definition new catalog"/>
       <description value="MessageDefinition for messages conveying a new catalog to the receiver"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
-	  <groupingId value="_commonE"/>
+	  <groupingId value="commonE"/>
     </resource>
     <resource>
       <reference>
@@ -1029,7 +1029,7 @@
         value="MessageDefinition for messages conveying an update to the receiver's catalog"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
-	  <groupingId value="_commonE"/>
+	  <groupingId value="commonE"/>
     </resource>
     <!--
       Example E8 - Transaction inserting a new diagnostic test into a laboratory compendium
@@ -1043,7 +1043,7 @@
         value="Lab E8 - transaction Bundle posted for creation of a test and its supporting resources into a laboratory compendium"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionRequest"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -1054,7 +1054,7 @@
         value="Lab E8 - transaction-response Bundle returned after creation of a test and its supporting resources into a laboratory compendium"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ItemTransactionResponse"/>
-	  <groupingId value="_labE"/>
+	  <groupingId value="labE"/>
     </resource>
 	<!-- 
 	  examples for catalogs of devices
@@ -1067,7 +1067,17 @@
       <description value="Device model of Philips Avent Breast Pump Single"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
-	  <groupingId value="_devE"/>
+	  <groupingId value="devE"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="DeviceDefinition/example-devicemodel-presthetics-accessories"/>
+      </reference>
+      <name value="Device model of presthetics-accessories"/>
+      <description value="Titanium Healing Cap"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
+	  <groupingId value="devE"/>
     </resource>
     <!--
       html pages
