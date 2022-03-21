@@ -13,9 +13,15 @@ Description: "This profile constrains the base resource DeviceDefinition to repr
 * extension contains CatalogReference named CatalogReference 0..*
 * description MS
 * identifier MS
-* identifier ^definition = "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI."
-* identifier ^comment = "identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier."
+* identifier ^definition = "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.
+identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier."
 * udiDeviceIdentifier MS
+* udiDeviceIdentifier.issuer ^definition = "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:
+1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,
+2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,
+3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,
+4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,
+5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
 * udiDeviceIdentifier.marketDistribution MS
 * partNumber MS
 * manufacturer[x] MS
@@ -32,6 +38,12 @@ Description: "This profile constrains the base resource DeviceDefinition to repr
 * hasPart.count MS
 * packaging.count MS
 * packaging.udiDeviceIdentifier MS
+* packaging.udiDeviceIdentifier.issuer ^definition = "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:
+1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,
+2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,
+3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,
+4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,
+5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
 * safety MS
 * property MS
 * property.value[x] 1..

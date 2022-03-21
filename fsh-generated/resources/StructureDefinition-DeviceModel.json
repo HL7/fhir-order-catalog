@@ -96,14 +96,18 @@
       {
         "id": "DeviceDefinition.identifier",
         "path": "DeviceDefinition.identifier",
-        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.",
-        "comment": "identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
+        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.\nidentifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
         "mustSupport": true
       },
       {
         "id": "DeviceDefinition.udiDeviceIdentifier",
         "path": "DeviceDefinition.udiDeviceIdentifier",
         "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.issuer",
+        "path": "DeviceDefinition.udiDeviceIdentifier.issuer",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
       },
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
@@ -172,6 +176,11 @@
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier",
         "path": "DeviceDefinition.packaging.udiDeviceIdentifier",
         "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
       },
       {
         "id": "DeviceDefinition.safety",

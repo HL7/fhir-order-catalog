@@ -6,6 +6,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Composition/example-lab-compendium-header" key="Composition-example-lab-compendium-header" name="A clinical laboratory catalog"/>
+<artifact id="Composition/example-device-catalog-header" key="Composition-example-device-catalog-header" name="A medical device catalog"/>
 <artifact id="ValueSet/bibliography-artifact-type" key="ValueSet-bibliography-artifact-type" name="Bibliographic artifact ValueSet"/>
 <artifact id="StructureDefinition/BillingSummary" key="StructureDefinition-BillingSummary" name="BillingSummary Extension"/>
 <artifact id="CodeSystem/catalog-message-events" key="CodeSystem-catalog-message-events" name="Catalog message events CodeSystem"/>

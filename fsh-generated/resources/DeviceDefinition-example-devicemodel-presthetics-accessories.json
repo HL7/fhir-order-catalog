@@ -6,6 +6,15 @@
       "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"
     ]
   },
+  "language": "en-US",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
+      "valueReference": {
+        "reference": "Composition/example-device-catalog-header"
+      }
+    }
+  ],
   "description": "Titanium Healing Cap, 3.75 mm Diameter, 5 mm lengh",
   "udiDeviceIdentifier": [
     {
@@ -47,6 +56,17 @@
           "citation": "A collection of prefabricated dental devices and components used to create a suprastructure on a dental implant to mimic preparations of natural teeth. It is used during dental implant restorative and laboratory procedures and will typically consist of a direct dental abutment (the device that is screwed into the surgically implanted fixture that creates the anchorage for the prosthetic tooth in the mandible or maxilla), a carrier, an impression pick-up, a replica, a healing cap and a burnout cylinder. This is a single-use device."
         }
       ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "1141761008",
+            "system": "http://snomed.info/sct",
+            "display": "Dental implant suprastructure"
+          }
+        ]
+      }
     }
   ],
   "packaging": [
@@ -137,6 +157,35 @@
         "text": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
       },
       "valueBoolean": false
+    },
+    {
+      "type": {
+        "text": "Device Packaged as Sterile"
+      },
+      "valueBoolean": false
+    },
+    {
+      "type": {
+        "text": "Requires Sterilization Prior to Use"
+      },
+      "valueBoolean": true
     }
-  ]
+  ],
+  "contact": [
+    {
+      "system": "email",
+      "value": "Info@ab-dent.com"
+    }
+  ],
+  "guideline": {
+    "relatedArtifact": [
+      {
+        "type": "documentation",
+        "label": "Device described in GUDID: ",
+        "document": {
+          "url": "https://accessgudid.nlm.nih.gov/devices/07290107271400"
+        }
+      }
+    ]
+  }
 }

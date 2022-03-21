@@ -6,6 +6,15 @@
       "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"
     ]
   },
+  "language": "en-US",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
+      "valueReference": {
+        "reference": "Composition/example-device-catalog-header"
+      }
+    }
+  ],
   "udiDeviceIdentifier": [
     {
       "deviceIdentifier": "00075020063816",
@@ -45,6 +54,54 @@
           "citation": "A mains electricity (AC-powered) device used to extract milk from the breast, typically for collecting and feeding to an infant. The device produces a continuous low-grade suction through a funnel-like component that is applied to the breast; the milk collects in an attached vessel (e.g., a sterilized bottle). The device may have a safety mechanism to prevent a potentially harmful increase in negative pressure."
         }
       ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "272201008",
+            "system": "http://snomed.info/sct",
+            "display": "Electric breast pump"
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "property": [
+    {
+      "type": {
+        "text": "For single use"
+      },
+      "valueBoolean": false
+    },
+    {
+      "type": {
+        "text": "Prescription use"
+      },
+      "valueBoolean": false
+    },
+    {
+      "type": {
+        "text": "Over the counter"
+      },
+      "valueBoolean": true
+    },
+    {
+      "type": {
+        "text": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
+      },
+      "valueBoolean": false
+    }
+  ],
+  "guideline": {
+    "relatedArtifact": [
+      {
+        "type": "documentation",
+        "label": "Device described in GUDID: ",
+        "document": {
+          "url": "https://accessgudid.nlm.nih.gov/devices/00075020063816"
+        }
+      }
+    ]
+  }
 }

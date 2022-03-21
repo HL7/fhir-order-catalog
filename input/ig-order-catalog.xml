@@ -39,12 +39,12 @@
 	<grouping id="labP">
 	    <name value="Lab profiles"/>
 	</grouping> 
-	<grouping id="labE">
-	    <name value="Lab examples"/>
-	</grouping> 
 	<grouping id="labE7">
-	    <name value="lab ToRCH example"/>
-	</grouping>	
+	    <name value="Lab ToRCH example"/>
+	</grouping>		
+	<grouping id="labE">
+	    <name value="Lab other examples"/>
+	</grouping> 
 	<grouping id="devP">
 	    <name value="Device profiles"/>
 	</grouping> 
@@ -391,6 +391,17 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
 		<groupingId value="labE"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/example-device-catalog-header"/>
+      </reference>
+      <name value="A medical device catalog"/>
+      <description
+        value="Catalog header of a catalog of medical devices, used by all device examples in this implementation guide"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+		<groupingId value="devE"/>
+    </resource>	
     <!--
       PlanDefinition Examples - LabServiceDefinition
     -->
