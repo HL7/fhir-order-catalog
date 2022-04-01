@@ -45,6 +45,7 @@
       "type": {
         "coding": [
           {
+            "code": "44881",
             "system": "http://terminology.hl7.org/CodeSystem/GMDN",
             "display": "Dental implant suprastructure kit"
           }
@@ -64,6 +65,17 @@
             "code": "1141761008",
             "system": "http://snomed.info/sct",
             "display": "Dental implant suprastructure"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "P01020180",
+            "system": "urn:oid:1.2.250.1.213.2.68",
+            "display": "Dental implants - accessories"
           }
         ]
       }
@@ -181,7 +193,7 @@
     "relatedArtifact": [
       {
         "type": "documentation",
-        "label": "Device described in GUDID: ",
+        "label": "Device described in GUDID:",
         "document": {
           "url": "https://accessgudid.nlm.nih.gov/devices/07290107271400"
         }

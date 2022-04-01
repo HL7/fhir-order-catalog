@@ -1,6 +1,6 @@
 {
   "resourceType": "DeviceDefinition",
-  "id": "example-devicemodel-breast-pump",
+  "id": "example-devicemodel-interbody-fusion-system",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"
@@ -15,56 +15,89 @@
       }
     }
   ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "code": "UDI",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Universal Device Identifier"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/NamingSystem/gs1-di",
+      "value": "00843210101415"
+    }
+  ],
   "udiDeviceIdentifier": [
     {
-      "deviceIdentifier": "00075020063816",
-      "issuer": "http://hl7.org/fhir/NamingSystem/gs1-di",
+      "deviceIdentifier": "B417F12260121",
+      "issuer": "http://hl7.org/fhir/NamingSystem/hibcc-diI",
       "jurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi",
       "marketDistribution": [
         {
           "marketPeriod": {
-            "start": "2016-09-17"
+            "start": "2017-08-22"
           },
           "subJurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
         }
       ]
     }
   ],
-  "manufacturerString": "Philips Consumer Lifestyle B.V.",
+  "manufacturerString": "Altus Spine, LLC",
   "deviceName": [
     {
-      "name": "Philips Avent Breast Pump Single",
+      "name": "Imola Interbody Fusion System",
       "type": "registered-name"
     }
   ],
-  "modelNumber": "SCF332",
+  "modelNumber": "F12260-12",
   "classification": [
     {
       "type": {
         "coding": [
           {
+            "code": "60762",
             "system": "http://terminology.hl7.org/CodeSystem/GMDN",
-            "display": "Breast pump, electric"
+            "display": "Polymeric spinal interbody fusion cage"
           }
         ]
-      },
-      "justification": [
-        {
-          "type": "citation",
-          "citation": "A mains electricity (AC-powered) device used to extract milk from the breast, typically for collecting and feeding to an infant. The device produces a continuous low-grade suction through a funnel-like component that is applied to the breast; the milk collects in an attached vessel (e.g., a sterilized bottle). The device may have a safety mechanism to prevent a potentially harmful increase in negative pressure."
-        }
-      ]
+      }
     },
     {
       "type": {
         "coding": [
           {
-            "code": "272201008",
+            "code": "257275005",
             "system": "http://snomed.info/sct",
-            "display": "Electric breast pump"
+            "display": "Spinal cage"
           }
         ]
       }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "P090701",
+            "system": "urn:oid:1.2.250.1.213.2.68",
+            "display": "Spinal fusion systems"
+          }
+        ]
+      }
+    }
+  ],
+  "safety": [
+    {
+      "coding": [
+        {
+          "code": "C113844",
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "display": "Labeling does not Contain MRI Safety Information"
+        }
+      ]
     }
   ],
   "languageCode": [
@@ -83,19 +116,19 @@
       "type": {
         "text": "For single use"
       },
-      "valueBoolean": false
+      "valueBoolean": true
     },
     {
       "type": {
         "text": "Prescription use"
       },
-      "valueBoolean": false
+      "valueBoolean": true
     },
     {
       "type": {
         "text": "Over the counter"
       },
-      "valueBoolean": true
+      "valueBoolean": false
     },
     {
       "type": {
@@ -104,13 +137,19 @@
       "valueBoolean": false
     }
   ],
+  "contact": [
+    {
+      "system": "email",
+      "value": "Info@altus-spine.com"
+    }
+  ],
   "guideline": {
     "relatedArtifact": [
       {
         "type": "documentation",
         "label": "Device described in GUDID:",
         "document": {
-          "url": "https://accessgudid.nlm.nih.gov/devices/00075020063816"
+          "url": "https://accessgudid.nlm.nih.gov/devices/B417F12260121"
         }
       }
     ]

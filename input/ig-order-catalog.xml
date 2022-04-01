@@ -1090,6 +1090,16 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
 	  <groupingId value="devE"/>
     </resource>
+	<resource>
+      <reference>
+        <reference value="DeviceDefinition/example-devicemodel-interbody-fusion-system"/>
+      </reference>
+      <name value="Device model of interbody fusion system"/>
+      <description value="Imola Interbody Fusion System"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
+	  <groupingId value="devE"/>
+    </resource>	
     <!--
       html pages
     -->

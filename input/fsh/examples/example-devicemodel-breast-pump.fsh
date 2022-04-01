@@ -32,5 +32,5 @@ Usage: #example
 * property[3].type.text = "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
 * property[3].valueBoolean = false  
 * guideline.relatedArtifact[0].type = #documentation
-* guideline.relatedArtifact[0].label = "Device described in GUDID: "
+* guideline.relatedArtifact[0].label = "Device described in GUDID:"
 * guideline.relatedArtifact[0].document.url = "https://accessgudid.nlm.nih.gov/devices/00075020063816"
