@@ -1,0 +1,40 @@
+//========================================================
+//       Mapping DeviceDefinition to GUDID Field Labels
+//========================================================
+
+Mapping: DeviceModelToGudid
+Source: DeviceModel
+Target: "https://accessgudid.nlm.nih.gov/"
+Id: devicedefinition-to-gudid
+Title: "US GUDID"
+Description: "maps DeviceDefinition elements to GUDID field labels"
+* description -> "Device Description"
+* identifier -> "Secondary DI Number [use = secondary]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
+* udiDeviceIdentifier.deviceIdentifier -> "Primary DI Number"
+* udiDeviceIdentifier.issuer -> "Primary DI Number - Issuing Agency"
+* udiDeviceIdentifier.jurisdiction -> "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* udiDeviceIdentifier.marketDistribution.marketPeriod.start  -> "DEVICE RECORD STATUS - DI Record Publish Date"
+* udiDeviceIdentifier.marketDistribution.marketPeriod.end  -> "Commercial Distribution End Date"
+* udiDeviceIdentifier.marketDistribution.subJurisdiction -> "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* partNumber -> "Catalog Number"
+* manufacturerString -> "Company Name"
+* deviceName.name -> "Brand Name"
+* deviceName.type -> "[registered-name]"
+* modelNumber -> "Version or Model"
+* classification[gmdn].type.coding.system -> "http://terminology.hl7.org/CodeSystem/GMDN"
+* classification[gmdn].type.coding.code -> "[GMDN code]"
+* classification[gmdn].type.coding.display -> "GMDN Preferred Term Name"
+* packaging.type -> "Package Type"
+* packaging.count -> "Quantity per Package"
+* packaging.udiDeviceIdentifier.deviceIdentifier -> "Package DI Number"
+* packaging.udiDeviceIdentifier.jurisdiction -> "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* packaging.udiDeviceIdentifier.marketDistribution.marketPeriod.end  -> "Package Discontinue Date"
+* packaging.udiDeviceIdentifier.marketDistribution.subJurisdiction -> "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* safety -> "MRI safety information on the label"
+* safety -> "Device labeled as Not made with natural rubber latex"
+* property -> "For Single-Use"
+* property -> "Prescription Use"
+* property -> "Over the Counter"
+* property -> "Human Cell, Tissue or Cellular or Tissue-Based Product"
+* productionIdentifierInUDI -> "PRODUCTION IDENTIFIER(S) IN UDI"
+* contact -> "CUSTOMER CONTACT"

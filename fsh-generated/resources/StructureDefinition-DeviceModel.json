@@ -50,6 +50,12 @@
       "identity": "rim",
       "name": "RIM Mapping",
       "uri": "http://hl7.org/v3"
+    },
+    {
+      "identity": "devicedefinition-to-gudid",
+      "name": "US GUDID",
+      "uri": "https://accessgudid.nlm.nih.gov/",
+      "comment": "maps DeviceDefinition elements to GUDID field labels"
     }
   ],
   "kind": "resource",
@@ -91,13 +97,25 @@
       {
         "id": "DeviceDefinition.description",
         "path": "DeviceDefinition.description",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device Description"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.identifier",
         "path": "DeviceDefinition.identifier",
         "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.\nidentifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Secondary DI Number (identifier.use = secondary); DM DI Number (type = DIRECT-MARKING); Unit of Use DI Number (type = SINGLE-ITEM)"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.udiDeviceIdentifier",
@@ -105,9 +123,35 @@
         "mustSupport": true
       },
       {
+        "id": "DeviceDefinition.udiDeviceIdentifier.deviceIdentifier",
+        "path": "DeviceDefinition.udiDeviceIdentifier.deviceIdentifier",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Primary DI Number"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.udiDeviceIdentifier.issuer",
-        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Primary DI Number - Issuing Agency"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
+        "path": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
@@ -115,14 +159,77 @@
         "mustSupport": true
       },
       {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.start",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.start",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "DEVICE RECORD STATUS - DI Record Publish Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Commercial Distribution End Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.partNumber",
         "path": "DeviceDefinition.partNumber",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Catalog Number"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.manufacturer[x]",
         "path": "DeviceDefinition.manufacturer[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.manufacturerString",
+        "path": "DeviceDefinition.manufacturerString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Company Name"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.deviceName",
@@ -130,9 +237,35 @@
         "mustSupport": true
       },
       {
+        "id": "DeviceDefinition.deviceName.name",
+        "path": "DeviceDefinition.deviceName.name",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Brand Name"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.deviceName.type",
+        "path": "DeviceDefinition.deviceName.type",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "[registered-name]"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.modelNumber",
         "path": "DeviceDefinition.modelNumber",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Version or Model"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.classification",
@@ -160,7 +293,23 @@
       {
         "id": "DeviceDefinition.classification:gmdn.type.coding.system",
         "path": "DeviceDefinition.classification.type.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/GMDN"
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/GMDN",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://terminology.hl7.org/CodeSystem/GMDN"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.display",
+        "path": "DeviceDefinition.classification.type.coding.display",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "GMDN Preferred Term Name"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.hasPart.count",
@@ -168,9 +317,25 @@
         "mustSupport": true
       },
       {
+        "id": "DeviceDefinition.packaging.type",
+        "path": "DeviceDefinition.packaging.type",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package Type"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.packaging.count",
         "path": "DeviceDefinition.packaging.count",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Quantity per Package"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier",
@@ -178,24 +343,112 @@
         "mustSupport": true
       },
       {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.deviceIdentifier",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.deviceIdentifier",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package DI Number"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
         "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
       },
       {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package Discontinue Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.safety",
         "path": "DeviceDefinition.safety",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "MRI safety information on the label"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device labeled as Not made with natural rubber latex"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.property",
         "path": "DeviceDefinition.property",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "For Single-Use"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Prescription Use"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Over the Counter"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Human Cell, Tissue or Cellular or Tissue-Based Product"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.property.value[x]",
         "path": "DeviceDefinition.property.value[x]",
         "min": 1
+      },
+      {
+        "id": "DeviceDefinition.contact",
+        "path": "DeviceDefinition.contact",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "CUSTOMER CONTACT"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.productionIdentifierInUDI",
+        "path": "DeviceDefinition.productionIdentifierInUDI",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "PRODUCTION IDENTIFIER(S) IN UDI"
+          }
+        ]
       },
       {
         "id": "DeviceDefinition.guideline",
