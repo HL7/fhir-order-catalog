@@ -55,7 +55,7 @@
       "identity": "devicedefinition-to-gudid",
       "name": "US GUDID",
       "uri": "https://accessgudid.nlm.nih.gov/",
-      "comment": "maps DeviceDefinition elements to GUDID field labels"
+      "comment": "maps DeviceDefinition elements to AccessGUDID section titles and field labels"
     }
   ],
   "kind": "resource",
@@ -113,7 +113,7 @@
         "mapping": [
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Secondary DI Number (identifier.use = secondary); DM DI Number (type = DIRECT-MARKING); Unit of Use DI Number (type = SINGLE-ITEM)"
+            "map": "Secondary DI Number [use = secondary, type = UDI]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
           }
         ]
       },
@@ -302,6 +302,16 @@
         ]
       },
       {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.code",
+        "path": "DeviceDefinition.classification.type.coding.code",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "[GMDN code]"
+          }
+        ]
+      },
+      {
         "id": "DeviceDefinition.classification:gmdn.type.coding.display",
         "path": "DeviceDefinition.classification.type.coding.display",
         "mapping": [
@@ -394,11 +404,15 @@
         "mapping": [
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "MRI safety information on the label"
+            "map": "What MRI safety information does the labeling contain?"
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Device labeled as Not made with natural rubber latex"
+            "map": "Device required to be labeled as containing natural rubber latex or dry natural rubber (21 CFR 801.437)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device labeled as \"Not made with natural rubber latex\""
           }
         ]
       },
@@ -413,15 +427,35 @@
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Prescription Use"
+            "map": "Prescription Use (Rx)"
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Over the Counter"
+            "map": "Over the Counter (OTC)"
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Human Cell, Tissue or Cellular or Tissue-Based Product"
+            "map": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device Packaged as Sterile"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Requires Sterilization Prior to Use"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Storage Environment Temperature"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Handling Environment Temperature"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size"
           }
         ]
       },
