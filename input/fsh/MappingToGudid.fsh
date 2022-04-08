@@ -9,7 +9,7 @@ Id: devicedefinition-to-gudid
 Title: "US GUDID"
 Description: "maps DeviceDefinition elements to GUDID field labels"
 * description -> "Device Description"
-* identifier -> "Secondary DI Number [use = secondary]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
+* identifier -> "Secondary DI Number [use = secondary, type = UDI]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
 * udiDeviceIdentifier.deviceIdentifier -> "Primary DI Number"
 * udiDeviceIdentifier.issuer -> "Primary DI Number - Issuing Agency"
 * udiDeviceIdentifier.jurisdiction -> "http://hl7.org/fhir/NamingSystem/us-fda-udi"
