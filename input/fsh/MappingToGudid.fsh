@@ -8,6 +8,7 @@ Target: "https://accessgudid.nlm.nih.gov/"
 Id: devicedefinition-to-gudid
 Title: "US GUDID"
 Description: "maps DeviceDefinition elements to AccessGUDID section titles and field labels"
+* -> "AccessGUDID section titles and field labels"
 * description -> "Device Description"
 * identifier -> "Secondary DI Number [use = secondary, type = UDI]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
 * udiDeviceIdentifier.deviceIdentifier -> "Primary DI Number"
