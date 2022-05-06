@@ -445,6 +445,14 @@
           },
           {
             "identity": "devicedefinition-to-gudid",
+            "map": "Kit"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Combination Product"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
             "map": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
           },
           {
@@ -465,7 +473,19 @@
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "Size"
+            "map": "Size - Length"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Width"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Heigth"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Angle"
           }
         ]
       },

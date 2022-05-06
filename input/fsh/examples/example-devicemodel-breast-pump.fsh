@@ -7,6 +7,7 @@ Usage: #example
 * language = #en-US
 * extension[0].url = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
 * extension[0].valueReference = Reference(Composition/example-device-catalog-header)
+// no description available, unfortunately
 * udiDeviceIdentifier.deviceIdentifier = "00075020063816"
 * udiDeviceIdentifier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
 * udiDeviceIdentifier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"

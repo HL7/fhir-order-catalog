@@ -15,6 +15,7 @@
       }
     }
   ],
+  "description": "12mm, 10degree Lateral Interbody Fusion, 22x60mm, PEEK Implant Assembly",
   "identifier": [
     {
       "use": "secondary",
@@ -135,6 +136,50 @@
         "text": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
       },
       "valueBoolean": false
+    },
+    {
+      "type": {
+        "text": "Length"
+      },
+      "valueQuantity": {
+        "value": 60,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter"
+      }
+    },
+    {
+      "type": {
+        "text": "Width"
+      },
+      "valueQuantity": {
+        "value": 22,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter"
+      }
+    },
+    {
+      "type": {
+        "text": "Heigth"
+      },
+      "valueQuantity": {
+        "value": 12,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter"
+      }
+    },
+    {
+      "type": {
+        "text": "Angle"
+      },
+      "valueQuantity": {
+        "value": 10,
+        "code": "deg",
+        "system": "http://unitsofmeasure.org",
+        "unit": "degree"
+      }
     }
   ],
   "contact": [

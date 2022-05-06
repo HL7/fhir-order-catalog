@@ -7,6 +7,7 @@ Usage: #example
 * language = #en-US
 * extension[0].url = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
 * extension[0].valueReference = Reference(Composition/example-device-catalog-header)
+* description = "12mm, 10degree Lateral Interbody Fusion, 22x60mm, PEEK Implant Assembly"
 * identifier[0].use = #secondary
 * identifier[0].type = $IDTYPE#UDI "Universal Device Identifier"
 * identifier[0].system = "http://hl7.org/fhir/NamingSystem/gs1-di"
@@ -34,6 +35,18 @@ Usage: #example
 * property[2].valueBoolean = false  
 * property[3].type.text = "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
 * property[3].valueBoolean = false  
+* property[4].type.text = "Length"
+* property[4].valueQuantity = 60 'mm'
+* property[4].valueQuantity.unit = "millimeter"
+* property[5].type.text = "Width"
+* property[5].valueQuantity = 22 'mm'
+* property[5].valueQuantity.unit = "millimeter"
+* property[6].type.text = "Heigth"
+* property[6].valueQuantity = 12 'mm'
+* property[6].valueQuantity.unit = "millimeter"
+* property[7].type.text = "Angle"
+* property[7].valueQuantity = 10 'deg'
+* property[7].valueQuantity.unit = "degree"
 * contact[0].system = #email
 * contact[0].value = "Info@altus-spine.com"
 * guideline.relatedArtifact[0].type = #documentation
