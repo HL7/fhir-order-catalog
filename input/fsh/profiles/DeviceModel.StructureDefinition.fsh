@@ -31,10 +31,15 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * classification ^slicing.discriminator.path = "DeviceDefinition.classification.type.coding.system"
 * classification ^slicing.description = "Discriminated type.coding.system"
 * classification ^slicing.rules = #open
+* classification.type.coding 1..1
 * classification contains gmdn 0..*
 * classification[gmdn] ^short = "GMDN classification"
 * classification[gmdn] ^definition = "Global Medical Device Nomenclature classification"
 * classification[gmdn].type.coding.system = "http://terminology.hl7.org/CodeSystem/GMDN" (exactly)
+* classification contains snomed 0..1
+* classification[snomed] ^short = "SNOMED CT"
+* classification[snomed] ^definition = "Systematized nomenclature of medicine - clinical terms"
+* classification[snomed].type.coding.system = "http://snomed.info/sct" (exactly)
 * hasPart.count MS
 * packaging.count MS
 * packaging.udiDeviceIdentifier MS

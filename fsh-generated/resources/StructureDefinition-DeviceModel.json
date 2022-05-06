@@ -292,6 +292,12 @@
         }
       },
       {
+        "id": "DeviceDefinition.classification.type.coding",
+        "path": "DeviceDefinition.classification.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "DeviceDefinition.classification:gmdn",
         "path": "DeviceDefinition.classification",
         "sliceName": "gmdn",
@@ -330,6 +336,20 @@
             "map": "GMDN Preferred Term Name"
           }
         ]
+      },
+      {
+        "id": "DeviceDefinition.classification:snomed",
+        "path": "DeviceDefinition.classification",
+        "sliceName": "snomed",
+        "short": "SNOMED CT",
+        "definition": "Systematized nomenclature of medicine - clinical terms",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "DeviceDefinition.classification:snomed.type.coding.system",
+        "path": "DeviceDefinition.classification.type.coding.system",
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "DeviceDefinition.hasPart.count",
