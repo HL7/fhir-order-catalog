@@ -40,6 +40,10 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * classification[snomed] ^short = "SNOMED CT"
 * classification[snomed] ^definition = "Systematized nomenclature of medicine - clinical terms"
 * classification[snomed].type.coding.system = "http://snomed.info/sct" (exactly)
+* classification contains emdn 0..1
+* classification[emdn] ^short = "EMDN"
+* classification[emdn] ^definition = "European Medical Device Nomenclature"
+* classification[emdn].type.coding.system = "urn:oid:1.2.250.1.213.2.68" (exactly)
 * hasPart.count MS
 * packaging.count MS
 * packaging.udiDeviceIdentifier MS
