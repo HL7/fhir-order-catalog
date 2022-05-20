@@ -389,7 +389,7 @@
         value="Lab E* - Catalog header representing a clinical laboratory compendium, used by all lab examples in this implementation guide"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-		<groupingId value="labE"/>
+	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -400,7 +400,18 @@
         value="Catalog header of a catalog of medical devices, used by all device examples in this implementation guide"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
-		<groupingId value="devE"/>
+	  <groupingId value="devE"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="Composition/example-medication-catalog-header"/>
+      </reference>
+      <name value="Medications authorized for prescription in Healthyland"/>
+      <description
+        value="Catalog header of a catalog of medications, used by all medication examples in this implementation guide"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"/>
+	  <groupingId value="drugE"/>
     </resource>	
     <!--
       PlanDefinition Examples - LabServiceDefinition
@@ -1100,6 +1111,19 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"/>
 	  <groupingId value="devE"/>
     </resource>	
+	<!--
+	  examples for catalogs of medications			example-drug-clarithromycin-25mg-granule-suspension
+	-->
+	<resource>
+      <reference>
+        <reference value="MedicationKnowledge/example-drug-clarithromycin-25mg-granule-suspension"/>
+      </reference>
+      <name value="Clarithromycin oral antibacterial"/>
+      <description value="Clarithromycin 25 mg/ml granule for oral suspension"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge"/>
+	  <groupingId value="drugE"/>
+    </resource>
     <!--
       html pages
     -->

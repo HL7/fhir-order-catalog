@@ -1,0 +1,52 @@
+{
+  "resourceType": "Composition",
+  "id": "example-medication-catalog-header",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader"
+    ]
+  },
+  "language": "en-US",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Additional Narrative:</b></p><p><b>Medication catalog title</b>: Drugs authorized for prescription in Healthyland</p><p><b>id:</b> example-medication-catalog-header</p><p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogHeader</p><p><b>status:</b> preliminary</p><p><b>type:</b> catalog</p><p><b>category:</b> medication</p><p><b>date published:</b> May 20, 2022</p><p><b>valid from:</b> 2022-09-30 <b>to:</b> 2022-12-31</p><p><b>author:</b> Healthyland medicinal product agency</p><p><b>custodian:</b> Healthyland medicinal product agency</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod",
+      "valuePeriod": {
+        "start": "2022-09-30",
+        "end": "2022-12-31"
+      }
+    }
+  ],
+  "identifier": {
+    "use": "official",
+    "system": "http://fhir.org",
+    "value": "HealthylandDrugsCatalog"
+  },
+  "status": "preliminary",
+  "type": {
+    "text": "Catalog"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "medication",
+          "system": "http://terminology.hl7.org/CodeSystem/catalogType"
+        }
+      ]
+    }
+  ],
+  "date": "2022-05-20T12:00:00+02:00",
+  "author": [
+    {
+      "display": "Healthyland medicinal product agency"
+    }
+  ],
+  "title": "Drugs authorized for prescription in Healthyland",
+  "custodian": {
+    "display": "Healthyland medicinal product agency"
+  }
+}

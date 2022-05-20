@@ -1,0 +1,38 @@
+{
+  "resourceType": "MedicationKnowledge",
+  "id": "example-drug-clarithromycin-25mg-granule-suspension",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge"
+    ]
+  },
+  "language": "en-US",
+  "code": {
+    "coding": [
+      {
+        "code": "769316002",
+        "system": "http://snomed.info/sct",
+        "display": "Clarithromycin 25 mg/mL oral suspension"
+      }
+    ]
+  },
+  "intendedJurisdiction": [
+    {
+      "text": "Healthyland"
+    }
+  ],
+  "name": [
+    "CLARITHROMYCINE ARROW 25 mg/ml, granules for oral suspension"
+  ],
+  "productType": [
+    {
+      "coding": [
+        {
+          "code": "346325008",
+          "system": "http://snomed.info/sct",
+          "display": " Antibacterial agent"
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@
 <artifact id="StructureDefinition/CatalogHeader" key="StructureDefinition-CatalogHeader" name="CatalogHeader Profile"/>
 <artifact id="StructureDefinition/CatalogMessageDefinition" key="StructureDefinition-CatalogMessageDefinition" name="CatalogMessageDefinition Profile"/>
 <artifact id="StructureDefinition/CatalogReference" key="StructureDefinition-CatalogReference" name="CatalogReference Extension"/>
+<artifact id="MedicationKnowledge/example-drug-clarithromycin-25mg-granule-suspension" key="MedicationKnowledge-example-drug-clarithromycin-25mg-granule-suspension" name="Clarithromycin oral antibacterial"/>
 <artifact id="ClinicalUseDefinition/example-hypercalcemia-contraindication" key="ClinicalUseDefinition-example-hypercalcemia-contraindication" name="Contraindication Hypercalcemia"/>
 <artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
 <artifact id="DeviceDefinition/example-devicemodel-breast-pump" key="DeviceDefinition-example-devicemodel-breast-pump" name="Device model of breast pump"/>
@@ -93,6 +94,7 @@
 <artifact id="CodeSystem/laboratory-service-definition-type" key="CodeSystem-laboratory-service-definition-type" name="Laboratory service types CodeSystem"/>
 <artifact id="ValueSet/laboratory-service-type" key="ValueSet-laboratory-service-type" name="Laboratory service types ValueSet"/>
 <artifact id="StructureDefinition/LimitationSummary" key="StructureDefinition-LimitationSummary" name="LimitationSummary Extension"/>
+<artifact id="Composition/example-medication-catalog-header" key="Composition-example-medication-catalog-header" name="Medications authorized for prescription in Healthyland"/>
 <artifact id="MessageDefinition/example-message-definition-update" key="MessageDefinition-example-message-definition-update" name="Message definition catalog update"/>
 <artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition new catalog"/>
 <artifact id="ValueSet/catalog-message-events-vs" key="ValueSet-catalog-message-events-vs" name="Order catalog message events ValueSet"/>
