@@ -22,9 +22,9 @@ Usage: #example
 * deviceName.name = "Imola Interbody Fusion System"
 * deviceName.type = #registered-name
 * modelNumber = "F12260-12"
-* classification[0].type.coding[0] = $GMDN#60762 "Polymeric spinal interbody fusion cage"
-* classification[1].type.coding[0] = $SCT#257275005 "Spinal cage"
-* classification[2].type.coding[0] = $EMDN#P090701 "Spinal fusion systems"
+* classification[0].type = $GMDN#60762 "Polymeric spinal interbody fusion cage"
+* classification[1].type = $SCT#257275005 "Spinal cage"
+* classification[2].type = $EMDN#P090701 "Spinal fusion systems"
 * safety[0].coding[0] = $NCIthesaurus#C113844 "Labeling does not Contain MRI Safety Information"
 * languageCode = $LanguageIso#en-US "American English"  
 * property[0].type.text = "For single use"
@@ -50,5 +50,6 @@ Usage: #example
 * contact[0].system = #email
 * contact[0].value = "Info@altus-spine.com"
 * guideline.relatedArtifact[0].type = #documentation
+
 * guideline.relatedArtifact[0].label = "Device described in GUDID:"
 * guideline.relatedArtifact[0].document.url = "https://accessgudid.nlm.nih.gov/devices/B417F12260121"

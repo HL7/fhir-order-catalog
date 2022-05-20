@@ -22,7 +22,7 @@ Usage: #example
 * classification[0].type.coding[0].display = "Breast pump, electric"
 * classification[0].justification[0].type = #citation
 * classification[0].justification[0].citation = "A mains electricity (AC-powered) device used to extract milk from the breast, typically for collecting and feeding to an infant. The device produces a continuous low-grade suction through a funnel-like component that is applied to the breast; the milk collects in an attached vessel (e.g., a sterilized bottle). The device may have a safety mechanism to prevent a potentially harmful increase in negative pressure."
-* classification[1].type.coding[0] = $SCT#272201008 "Electric breast pump"
+* classification[1].type = $SCT#272201008 "Electric breast pump"
 * languageCode = $LanguageIso#en-US "American English"  
 * property[0].type.text = "For single use"
 * property[0].valueBoolean = false

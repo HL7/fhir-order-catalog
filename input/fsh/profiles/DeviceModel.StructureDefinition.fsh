@@ -28,7 +28,7 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * deviceName MS
 * modelNumber MS
 * classification ^slicing.discriminator.type = #value
-* classification ^slicing.discriminator.path = "DeviceDefinition.classification.type.coding.system"
+* classification ^slicing.discriminator.path = "DeviceDefinition.classification.type.coding[0].system"
 * classification ^slicing.description = "Discriminated type.coding.system"
 * classification ^slicing.rules = #open
 * classification.type.coding 1..1

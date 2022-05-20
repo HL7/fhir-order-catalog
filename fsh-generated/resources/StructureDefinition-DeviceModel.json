@@ -346,7 +346,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "DeviceDefinition.classification.type.coding.system"
+              "path": "DeviceDefinition.classification.type.coding[0].system"
             }
           ],
           "description": "Discriminated type.coding.system",

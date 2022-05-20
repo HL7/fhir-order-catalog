@@ -18,11 +18,11 @@ Usage: #example
 * deviceName.name = "Presthetic Accessories"
 * deviceName.type = #registered-name
 * modelNumber = "P0-3.75,5"
-* classification[0].type.coding[0] = $GMDN#44881 "Dental implant suprastructure kit"  
+* classification[0].type = $GMDN#44881 "Dental implant suprastructure kit"  
 * classification[0].justification[0].type = #citation
 * classification[0].justification[0].citation = "A collection of prefabricated dental devices and components used to create a suprastructure on a dental implant to mimic preparations of natural teeth. It is used during dental implant restorative and laboratory procedures and will typically consist of a direct dental abutment (the device that is screwed into the surgically implanted fixture that creates the anchorage for the prosthetic tooth in the mandible or maxilla), a carrier, an impression pick-up, a replica, a healing cap and a burnout cylinder. This is a single-use device."
-* classification[1].type.coding[0] = $SCT#1141761008 "Dental implant suprastructure"
-* classification[2].type.coding[0] = $EMDN#P01020180 "Dental implants - accessories"
+* classification[1].type = $SCT#1141761008 "Dental implant suprastructure"
+* classification[2].type = $EMDN#P01020180 "Dental implants - accessories"
 * packaging[0].type.coding[0] = $SCT#37284003 "Bag, device"
 * packaging[0].count = 10
 * packaging[0].udiDeviceIdentifier[0].deviceIdentifier = "17290107271407"
