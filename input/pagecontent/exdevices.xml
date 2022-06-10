@@ -2,6 +2,7 @@
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<p>This section presents the examples of catalogs of medical devices.</p>
 	<p>The full details for each resource built can be viewed in the "Device examples" section of the <a href="artifacts.html">Artifact Index </a></p>
+	<a name="DevE1"> </a>
 	<h3>A standardized catalog of medical devices</h3>
 	<p>Artifacts implementing this example: </p>
 	<table border="1">
