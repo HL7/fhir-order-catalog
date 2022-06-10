@@ -108,6 +108,11 @@
         },
         {
           "reference": {
+            "reference": "ClinicalUseDefinition/example-acute-otitis-media-indication"
+          }
+        },
+        {
+          "reference": {
             "reference": "ClinicalUseDefinition/example-bacterial-sinusitis-indication"
           }
         }
@@ -127,10 +132,10 @@
               },
               "valueRange": {
                 "low": {
-                  "value": 6,
-                  "code": "mo",
+                  "value": 0.5,
+                  "code": "a",
                   "system": "http://unitsofmeasure.org",
-                  "unit": "months"
+                  "unit": "years"
                 },
                 "high": {
                   "value": 12,

@@ -3,8 +3,8 @@
 	<p>This section presents the examples of catalogs of laboratory diagnostic services. Rather than
 		showing full details of the resources built, each example focuses on the key elements
 		illustrating the FHIR design of laboratory catalogs. The full details for each resource
-		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the example
-		section.</p>
+		built can be viewed in the <a href="artifacts.html">Artifact Index </a> in the Lab examples
+		sections.</p>
 	<p>The examples are indexed E1, E2, E3, ...</p>
 	<a name="LabE1"> </a>
 	<h3>E1: Blood potassium test</h3>

@@ -1,5 +1,43 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<p>This section presents the examples of catalogs of medical devices.</p>
-	<p><b>TBD</b></p>
+	<p>The full details for each resource built can be viewed in the "Device examples" section of the <a href="artifacts.html">Artifact Index </a></p>
+	<h3>A standardized catalog of medical devices</h3>
+	<p>Artifacts implementing this example: </p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>A standardized catalog of medical devices (catalog header)</td>
+				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-device-catalog-header.html">example-device-catalog-header</a></td>
+			</tr>
+			<tr>
+				<td>Device: Breast pump</td>
+				<td><a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition</a></td>
+				<td><a href="StructureDefinition-DeviceModel.html">DeviceModel</a></td>
+				<td><a href="DeviceDefinition-example-devicemodel-breast-pump.html">example-devicemodel-breast-pump</a></td>
+			</tr>
+			<tr>
+				<td>Device: Presthetics accessories</td>
+				<td><a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition</a></td>
+				<td><a href="StructureDefinition-DeviceModel.html">DeviceModel</a></td>
+				<td><a href="DeviceDefinition-example-devicemodel-presthetics-accessories.html">example-devicemodel-presthetics-accessories</a></td>
+			</tr>
+			<tr>
+				<td>Device: Interbody fusion system</td>
+				<td><a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition</a></td>
+				<td><a href="StructureDefinition-DeviceModel.html">DeviceModel</a></td>
+				<td><a href="DeviceDefinition-example-devicemodel-interbody-fusion-system.html">example-devicemodel-interbody-fusion-system</a></td>
+			</tr>			
+		</tbody>
+	</table>
 </div>

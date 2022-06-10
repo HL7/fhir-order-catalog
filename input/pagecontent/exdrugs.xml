@@ -1,5 +1,61 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<p>This section presents the examples of catalogs of medications.</p>
-	<p>TBD</p>
+	<p>The full details for each resource built can be viewed in the "Drug examples" section of the <a href="artifacts.html">Artifact Index </a></p>
+	<h3>A drug dictionary for medications useable within Healthyland</h3>
+	<p>Artifacts implementing this example: </p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Business content</th>
+				<th>Base resource</th>
+				<th>Profile</th>
+				<th>Example artifact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Medications authorized in Healthyland (catalog header)</td>
+				<td><a href="http://hl7.org/fhir/composition.html">Composition</a></td>
+				<td><a href="StructureDefinition-CatalogHeader.html">CatalogHeader</a></td>
+				<td><a href="Composition-example-medication-catalog-header.html">example-medication-catalog-header</a></td>
+			</tr>
+			<tr>
+				<td>Drug: Clarithromycin 25 mg/mL granules for oral suspension</td>
+				<td><a href="http://hl7.org/fhir/medicationknowledge.html">MedicationKnowledge</a></td>
+				<td><a href="StructureDefinition-DrugKnowledge.html">DrugKnowledge</a></td>
+				<td><a href="MedicationKnowledge-example-drug-clarithromycin-25mg-granule-suspension.html">example-drug-clarithromycin-25mg-granule-suspension</a></td>
+			</tr>
+			<tr>
+				<td>Package: 100 ml vial with syringes for oral administration</td>
+				<td><a href="http://hl7.org/fhir/packagedProductDefinition.html">PackagedProductDefinition</a></td>
+				<td><a href="StructureDefinition-DrugPackage.html">DrugPackage</a></td>
+				<td><a href="PackagedProductDefinition-example-drug-package-clarithromycin.html">example-drug-package-clarithromycin</a></td>
+			</tr>
+			<tr>
+				<td>Indication: Acute otitis media</td>
+				<td><a href="http://hl7.org/fhir/clinicalusedefinition.html">ClinicalUseDefinition</a></td>
+				<td><a href="StructureDefinition-IndicationDefinition.html">IndicationDefinition</a></td>
+				<td><a href="ClinicalUseDefinition-example-acute-otitis-media-indication.html">example-acute-otitis-media-indication</a></td>
+			</tr>
+			<tr>
+				<td>Indication: Acute bacterial sinusitis</td>
+				<td><a href="http://hl7.org/fhir/clinicalusedefinition.html">ClinicalUseDefinition</a></td>
+				<td><a href="StructureDefinition-IndicationDefinition.html">IndicationDefinition</a></td>
+				<td><a href="ClinicalUseDefinition-example-bacterial-sinusitis-indication.html">example-bacterial-sinusitis-indication</a></td>
+			</tr>
+			<tr>
+				<td>Indication: Acute bacterial pharyngitis</td>
+				<td><a href="http://hl7.org/fhir/clinicalusedefinition.html">ClinicalUseDefinition</a></td>
+				<td><a href="StructureDefinition-IndicationDefinition.html">IndicationDefinition</a></td>
+				<td><a href="ClinicalUseDefinition-example-bacterial-pharyngitis-indication.html">example-bacterial-pharyngitis-indication</a></td>
+			</tr>
+			<tr>
+				<td>Contraindication: Allergy to clarithromycin</td>
+				<td><a href="http://hl7.org/fhir/clinicalusedefinition.html">ClinicalUseDefinition</a></td>
+				<td><a href="StructureDefinition-ContraindicationDefinition.html">ContraindicationDefinition</a></td>
+				<td><a href="ClinicalUseDefinition-example-allergy-contraindication.html">example-allergy-contraindication</a></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
