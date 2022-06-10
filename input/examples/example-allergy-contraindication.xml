@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/clinicalusedefinition.xsd">
+  <id value="example-allergy-contraindication"/>
+  <meta>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
+  </meta>
+  <language value="en-US"/>
+  <type value="contraindication"/>
+  <contraindication>
+    <diseaseSymptomProcedure>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="294471003"/>
+          <display value="Allergy to clarithromycin"/>
+        </coding>
+      </concept>
+    </diseaseSymptomProcedure>
+  </contraindication>
+</ClinicalUseDefinition> 

@@ -345,19 +345,13 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "DeviceDefinition.classification.type.coding[0].system"
+              "type": "pattern",
+              "path": "DeviceDefinition.classification.type"
             }
           ],
-          "description": "Discriminated type.coding.system",
+          "description": "Slice based on classification.type pattern",
           "rules": "open"
         }
-      },
-      {
-        "id": "DeviceDefinition.classification.type.coding",
-        "path": "DeviceDefinition.classification.type.coding",
-        "min": 1,
-        "max": "1"
       },
       {
         "id": "DeviceDefinition.classification:gmdn",
@@ -371,7 +365,6 @@
       {
         "id": "DeviceDefinition.classification:gmdn.type.coding.system",
         "path": "DeviceDefinition.classification.type.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/GMDN",
         "mapping": [
           {
             "identity": "devicedefinition-to-gudid",

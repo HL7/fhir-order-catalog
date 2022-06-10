@@ -331,6 +331,16 @@
       />
 	  <groupingId value="drugP"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DrugPackage"/>
+      </reference>
+      <name value="DrugPackage Profile"/>
+      <description
+        value="Profile of PackagedProductDefinition to represent a packaging in an instance of MedicationKnowledge"
+      />
+	  <groupingId value="drugP"/>
+    </resource>	
 	<resource>
       <reference>
         <reference value="StructureDefinition/DeviceModel"/>
@@ -1014,19 +1024,37 @@
     -->
 	<resource>
       <reference>
-        <reference value="ClinicalUseDefinition/example-hypercalcemia-contraindication"/>
+        <reference value="ClinicalUseDefinition/example-allergy-contraindication"/>
       </reference>
-      <name value="Contraindication Hypercalcemia"/>
-      <description value="instance of ClinicalUseDefinition conveying a contraindication for hypercalcemia"/>
+      <name value="Contraindication Allergy to Clarithromycin"/>
+      <description value="instance of ClinicalUseDefinition conveying an allergy-type contraindication"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ContraindicationDefinition"/>
 	  <groupingId value="commonE"/>
     </resource>
 	<resource>
       <reference>
-        <reference value="ClinicalUseDefinition/example-hypocalcemia-indication"/>
+        <reference value="ClinicalUseDefinition/example-bacterial-pharyngitis-indication"/>
       </reference>
-      <name value="Indication Hypocalcemia"/>
-      <description value="instance of ClinicalUseDefinition conveying an indication for hypocalcemia"/>
+      <name value="Indication Acute Bacterial Pharyngitis"/>
+      <description value="instance of ClinicalUseDefinition as an indication for acute bacterial pharyngitis"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
+	  <groupingId value="commonE"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-bacterial-sinusitis-indication"/>
+      </reference>
+      <name value="Indication Acute Bacterial Sinusitis"/>
+      <description value="instance of ClinicalUseDefinition as an indication for acute bacterial sinusitis"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
+	  <groupingId value="commonE"/>
+    </resource>
+		<resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-acute-otitis-media-indication"/>
+      </reference>
+      <name value="Indication Acute Otitis Media"/>
+      <description value="instance of ClinicalUseDefinition as an indication for acute otitis media"/>
       <exampleCanonical value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
 	  <groupingId value="commonE"/>
     </resource>
@@ -1122,6 +1150,16 @@
       <description value="Clarithromycin 25 mg/ml granule for oral suspension"/>
       <exampleCanonical
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge"/>
+	  <groupingId value="drugE"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="PackagedProductDefinition/example-drug-package-clarithromycin"/>
+      </reference>
+      <name value="Clarithromycin package"/>
+      <description value="Clarithromycin package of granules for oral suspension"/>
+      <exampleCanonical
+        value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage"/>
 	  <groupingId value="drugE"/>
     </resource>
     <!--

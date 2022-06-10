@@ -1,0 +1,41 @@
+{
+  "resourceType": "PackagedProductDefinition",
+  "id": "example-drug-package-clarithromycin",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage"
+    ]
+  },
+  "language": "en-US",
+  "name": "100 ml vial with syringes for oral administration",
+  "type": {
+    "coding": [
+      {
+        "code": "MedicinalProductPack",
+        "system": "http://hl7.org/fhir/package-type",
+        "display": "Medicinal product pack"
+      }
+    ]
+  },
+  "status": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://hl7.org/fhir/publication-status",
+        "display": "Active"
+      }
+    ]
+  },
+  "statusDate": "2010-03-01",
+  "containedItemQuantity": [
+    {
+      "value": 1,
+      "unit": "vial"
+    },
+    {
+      "value": 3,
+      "unit": "syringe"
+    }
+  ],
+  "description": "1 high density polyethylene vial of 100 ml with 3 syringes for oral administration"
+}

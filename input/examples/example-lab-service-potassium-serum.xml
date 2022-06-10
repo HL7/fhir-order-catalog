@@ -5,7 +5,23 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
     <language value="en-US"/>
-
+	<text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  xml:lang="en-US">
+			<p><b>Laboratory service title</b>: laboratory service - serum potassium level</p>
+            <p><b>id:</b> example-lab-service-potassium-serum</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition</p>
+            <p><b>CatalogReference:</b> <a href="Composition-example-lab-compendium-header.html"> Composition/example-lab-compendium-header</a></p>
+            <p><b>name:</b> PotassiumSerumMeasurement</p>
+            <p><b>description:</b> Potassium measurement on serum specimen</p>
+            <p><b>type:</b> test</p>
+            <p><b>status:</b> draft, experimental</p>
+            <p><b>publisher:</b> HL7 International </p>
+            <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
+            <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
+            <p><b>topic:</b> SNOMED CT: 166312007 |Blood chemistry|</p>
+		</div>
+	</text>	
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
         <valueReference>
             <reference value="Composition/example-lab-compendium-header"/>
@@ -52,7 +68,7 @@
         <value value="K_serum_test"/> 
     </identifier>
     <name value="PotassiumSerumMeasurement"/>
-    <title value="Potassium measurement on in vitro blood serum">
+    <title value="laboratory service - serum potassium level">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
                 <valueCode value="fr-FR"/>
