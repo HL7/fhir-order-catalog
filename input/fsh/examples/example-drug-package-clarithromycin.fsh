@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage"
 * language = #en-US
-* name = "100 ml vial with syringes for oral administration"
+* name = "100 ml vial with syringes for oral administration"									// Take the syringes off
 * type = $PACKAGETYPE#MedicinalProductPack "Medicinal product pack"
 * status = $PUBSTATUS#active "Active"
 * statusDate = "2010-03-01"
