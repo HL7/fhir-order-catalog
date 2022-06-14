@@ -72,16 +72,7 @@
       {
         "id": "PackagedProductDefinition.type",
         "path": "PackagedProductDefinition.type",
-        "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "MedicinalProductPack",
-              "system": "http://hl7.org/fhir/package-type",
-              "display": "Medicinal product pack"
-            }
-          ]
-        }
+        "min": 1
       }
     ]
   }

@@ -12,5 +12,5 @@ Description: "This profile constrains the base resource PackagedProductDefinitio
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * name MS
 * type 1..
-* type = $PACKAGETYPE#MedicinalProductPack "Medicinal product pack"
+// Wait for snapshot #2 for this value set: * type = $PACKAGETYPE#MedicinalProductPack "Medicinal product pack"
 
