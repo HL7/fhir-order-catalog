@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage"
 * language = #en-US
-* name = "CLARITHROMYCINE GENERIC-LAB 25 mg/ml, granules for oral suspension"									
+* name = "CLARITHROMYCINE GENERIC-LAB 25 mg/ml, granules for oral suspension in 100 ml HDPE bottle"									
 * type = $PACKAGETYPE#MedicinalProductPack "Medicinal product pack"
 * status = $PUBSTATUS#active "Active"
 * statusDate = "2010-03-01"
