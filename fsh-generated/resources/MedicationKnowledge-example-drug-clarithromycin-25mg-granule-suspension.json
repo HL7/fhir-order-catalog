@@ -100,7 +100,7 @@
           }
         ]
       },
-      "sourceString": "ATC"
+      "sourceUri": "https://www.whocc.no/atc/structure_and_principles/"
     },
     {
       "type": {
@@ -112,7 +112,7 @@
           }
         ]
       },
-      "sourceString": "SNOMED CT"
+      "sourceUri": "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product"
     }
   ],
   "packaging": [

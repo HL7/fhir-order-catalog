@@ -7,7 +7,7 @@
     ]
   },
   "language": "en-US",
-  "name": "100 ml vial with syringes for oral administration",
+  "name": "CLARITHROMYCINE GENERIC-LAB 25 mg/ml, granules for oral suspension",
   "type": {
     "coding": [
       {
@@ -34,8 +34,8 @@
     },
     {
       "value": 3,
-      "unit": "syringe"
+      "unit": "syringe for oral administration"
     }
   ],
-  "description": "1 high density polyethylene vial of 100 ml with 3 syringes for oral administration"
+  "description": "1 high density polyethylene (HDPE) bottle of 100 ml with 3 syringes for oral administration"
 }

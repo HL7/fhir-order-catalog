@@ -3,8 +3,22 @@
   <p>Detailed specifications for catalogs of medical devices</p>
   <a name="DevicesResourcesProfiles"> </a>
   <h3>Resources and Profiles for all devices</h3>
-  <p>The figure below shows the resources and profiles used to represent catalogs of medical devices</p>
+  <p>The figure below shows the resources and profiles used to represent catalogs of medical devices.
+  </p>
   <img src="DeviceCatalog.png" alt="Resources used by a catalog medical devices" width="1000px"/>
+  <p>When method 1 is chosen by the custodian of the catalog of devices, the catalog
+    references its items: the <a href="http://hl7.org/fhir/composition.html">Composition</a>
+    resource constrained by the <a href="http://hl7.org/fhir/composition-catalog.html"> Catalog</a>
+    profile to represent the whole catalog, references the items of this catalog from its
+    Composition.section.entry elements.
+  </p>
+  <p>When method 2 is chosen instead, the catalog is referenced by its items: Each DeviceDefinition
+    resource constrained by the <a href="StructureDefinition-DeviceModel.html"> DeviceModel</a> profile
+	and representing an item of the catalog, references the <a href="http://hl7.org/fhir/composition.html">Composition</a> resource 
+	constrained by the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent the header of the catalog header, which holds the general properties of the catalog.
+  </p>
+  <p>An item of the catalog is a model or type of device instantiated as a <a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition resource</a>.
+  </p>
   <p><strong>To be continued</strong></p>
   <a name="LIVDResourcesProfiles"> </a>
   <h3>Resources and Profiles for IVD testing devices</h3>

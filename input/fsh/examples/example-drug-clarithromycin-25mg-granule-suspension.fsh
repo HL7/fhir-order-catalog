@@ -16,9 +16,9 @@ Usage: #example
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueRange.low = 0.5 'a' "years"
 * indicationGuideline[0].dosingGuideline[0].patientCharacteristic[0].valueRange.high = 12 'a' "years"
 * medicineClassification[0].type = $ATC#J01FA09 "Clarithromycin"
-* medicineClassification[0].sourceString = "ATC"
+* medicineClassification[0].sourceUri = "https://www.whocc.no/atc/structure_and_principles/"
 * medicineClassification[1].type = $SCT#346325008 "Medicinal product acting as antibacterial agent"
-* medicineClassification[1].sourceString = "SNOMED CT"
+* medicineClassification[1].sourceUri = "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product"
 * packaging[0].cost[0].effectiveDate.start = "2021-02-01"
 * packaging[0].cost[0].type.text = "public price"
 * packaging[0].cost[0].source = "Healthyland Drug Administration"
@@ -37,7 +37,7 @@ Usage: #example
 * packaging[0].cost[2].costMoney.currency = #EUR
 * packaging[0].packagedProduct = Reference(PackagedProductDefinition/example-drug-package-clarithromycin)
 * clinicalUseIssue[0] = Reference(ClinicalUseDefinition/example-allergy-contraindication)
-// Does not exist in snapshot 1: * storageGuideline[0].stabilityDuration = 2 'a' "years"
+                                                                                      // Does not exist in snapshot 1: * storageGuideline[0].stabilityDuration = 2 'a' "years"
 * definitional.doseForm.coding[0] = $SCT#385029002 "Granules for oral suspension"
 * definitional.doseForm.coding[1] = $EDQM#10113000 "Granules for oral suspension"
 * definitional.intendedRoute = $SCT#26643006 "Oral route"
