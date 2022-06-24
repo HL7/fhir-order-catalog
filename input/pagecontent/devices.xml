@@ -18,8 +18,8 @@
 	constrained by the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent the header of the catalog header, which holds the general properties of the catalog.
   </p>
   <p>An item of the catalog describes a model or type of device, with its various identifiers, classifications, safety characteristics and properties, 
-     instantiated as a <a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition resource</a>
-	 linked to a number of supporting resources providing further details.
+     instantiated as a <a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition</a>
+	 resource linked to a number of supporting resources providing further details.
   </p>
   <p><strong>To be continued</strong></p>
   <a name="LIVDResourcesProfiles"> </a>

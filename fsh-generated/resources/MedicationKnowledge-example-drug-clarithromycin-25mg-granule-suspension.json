@@ -100,19 +100,35 @@
           }
         ]
       },
-      "sourceUri": "https://www.whocc.no/atc/structure_and_principles/"
+      "sourceUri": "https://www.whocc.no/atc/structure_and_principles/",
+      "classification": [
+        {
+          "coding": [
+            {
+              "code": "J01FA09",
+              "system": "http://www.whocc.no/atc",
+              "display": "Clarithromycin"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": {
-        "coding": [
-          {
-            "code": "346325008",
-            "system": "http://snomed.info/sct",
-            "display": "Medicinal product acting as antibacterial agent"
-          }
-        ]
+        "text": "Anatomical Therapeutic Chemical (ATC)"
       },
-      "sourceUri": "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product"
+      "sourceUri": "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product",
+      "classification": [
+        {
+          "coding": [
+            {
+              "code": "346325008",
+              "system": "http://snomed.info/sct",
+              "display": "Medicinal product acting as antibacterial agent"
+            }
+          ]
+        }
+      ]
     }
   ],
   "packaging": [

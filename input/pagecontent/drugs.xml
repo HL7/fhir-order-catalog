@@ -18,7 +18,132 @@
 	and representing an item of the catalog, references the <a href="http://hl7.org/fhir/composition.html">Composition</a> resource 
 	constrained by the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent only the header of the catalog, which holds the general properties of the catalog.
   </p>
-  <p>An item of the catalog describes an orderable medication, with its various pharmacological and therapeutic properties, its costs and pricing and packaging, instantiated as a <a href="http://hl7.org/fhir/medicationknowledge.html">
-     MedicationKnowledge resource linked to a number of supporting resources providing the details of the drug.</a>.
+  <p>An item of the catalog describes an orderable medication, with its various pharmacological and therapeutic properties, its costs and pricing and packaging, 
+     instantiated as a <a href="http://hl7.org/fhir/medicationknowledge.html"> MedicationKnowledge</a> resource linked to a number of supporting resources providing the details of the drug.
   </p>
+  <a name="DrugSearchRetrieve"> </a>
+  <h3>Searching and retrieving drugs from the catalog</h3>
+  <a name="DrugSearchApproach"> </a>
+  <h4>Searching Approaches</h4>
+  <p> The key searcheable assets in a drug compendium/catalog/formulary are the medications exposed to
+    the consumers of the compendium as instances of <a href="http://hl7.org/fhir/medicationknowledge.html"> MedicationKnowledge</a>. 
+  </p>
+  <ul>
+    <li><b>Two-step search</b>: A client application browsing the content of the compendium may wish
+      to first get the overview of a collection of drugs at first glance, and then retrieve the
+      full details (such as therapeutic indications, contraindications, warnings, interactions, packaging) associated with the ones of interest. 
+      In this case, the first query will perform a simple search on
+        <i>MedicationKnowledge</i> with the desirable criteria listed in the table below ; and then a
+      second narrower search will add the <b><code>_include:iterate=*</code></b> parameter, to retrieve the
+      selected <i>MedicationKnowledge</i> resource(s) with all their supporting resources (<i>ClinicalUseDefinition</i>, <i>PackagedProductDefinition</i>)
+      in the <i>searchset Bundle</i>.
+	</li>
+    <li><b>One-step search</b>: Conversely a client application may wish to retrieve the full
+      details of a drug (or a set of drugs) at first glance. In this case, it uses the
+      appropriate search criteria for <i>MedicationKnowledge</i>, in combination with the <b><code>_include:iterate=*</code></b> parameter 
+	  so as to obtain all the supporting resources of each medication retrieved, in the <i>searchset Bundle</i>.
+	</li>
+  </ul>
+  <p>Catalog servers may limit the iteration depth to an appropriate level for performance sake.</p>
+  <a name="DrugSearchParameters"> </a>
+  <h4>Search Parameters for drugs (MedicationKnowledge)</h4>
+    <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Expression</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>_lastUpdated</td>
+        <td>date</td>
+        <td>Last system point in time of MedicationKnowledge resource</td>
+        <td/>
+        <td>can be used with =gt...</td>
+      </tr>
+      <tr>
+        <td>classification</td>
+        <td>token</td>
+        <td>specific category assigned to the medication</td>
+        <td>MedicationKnowledge.medicineClassification.classification</td>
+        <td>For instance WHO-ATC code, or SNOMED CT drug disposition (behavior) code</td>
+      </tr>
+      <tr>
+        <td>classification-type</td>
+        <td>token</td>
+        <td>Code that identifies this medication</td>
+        <td>MedicationKnowledge.code</td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td>code</td>
+        <td>token</td>
+        <td>specific category assigned to the medication</td>
+        <td>MedicationKnowledge.medicineClassification.classification</td>
+        <td>For instance WHO-ATC code, or SNOMED CT drug disposition (behavior) code</td>
+      </tr>
+      <tr>
+        <td>catalog</td>
+        <td>reference</td>
+        <td>The reference to a Composition resource (profiled by CatalogHeader) owning this
+          item</td>
+        <td>MedicationKnowledge.extension.where(url='http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference').valueReference.reference(Composition)</td>
+        <td>catalog to search from</td>
+      </tr>
+      <tr>
+        <td>doseForm</td>
+        <td>token</td>
+        <td>pharmaceutical dose form (e.g.; powder | tablets | capsule ...)</td>
+        <td>MedicationKnowledge.definitional.doseForm</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>ingredient-code</td>
+        <td>token</td>
+        <td>A code representing a substance in the medication</td>
+        <td>MedicationKnowledge.definitional.ingredient.item.concept</td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>ingredient</td>
+        <td>token</td>
+        <td>Reference to a resource representing a substance in the medication</td>
+        <td>MedicationKnowledge.definitional.ingredient.item.reference</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>string</td>
+        <td>The drug name</td>
+        <td>MedicationKnowledge.name</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>packaging-cost</td>
+        <td>quantity</td>
+        <td>The cost in money of the packaged medication</td>
+        <td>MedicationKnowledge.packaging.cost.costMoney</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>product-type</td>
+        <td>token</td>
+        <td>lab service jurisdiction </td>
+        <td>MedicationKnowledge.productType</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td>token</td>
+        <td>active | inactive | entered-in-error</td>
+        <td>MedicationKnowledge.status</td>
+        <td>narrow to active or retired medications</td>
+      </tr>
+    </tbody>
+  </table>
+  
 </div>
