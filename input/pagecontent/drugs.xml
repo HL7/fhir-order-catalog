@@ -18,7 +18,7 @@
 	and representing an item of the catalog, references the <a href="http://hl7.org/fhir/composition.html">Composition</a> resource 
 	constrained by the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent only the header of the catalog, which holds the general properties of the catalog.
   </p>
-  <p>An item of the catalog describes an orderable medication, with its various pharmacological and therapeutic properties, instantiated as a <a href="http://hl7.org/fhir/medicationknowledge.html">
+  <p>An item of the catalog describes an orderable medication, with its various pharmacological and therapeutic properties, its costs and pricing and packaging, instantiated as a <a href="http://hl7.org/fhir/medicationknowledge.html">
      MedicationKnowledge resource linked to a number of supporting resources providing the details of the drug.</a>.
   </p>
 </div>

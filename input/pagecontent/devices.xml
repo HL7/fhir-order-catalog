@@ -17,10 +17,13 @@
 	and representing an item of the catalog, references the <a href="http://hl7.org/fhir/composition.html">Composition</a> resource 
 	constrained by the <a href="StructureDefinition-CatalogHeader.html"> CatalogHeader</a> profile to represent the header of the catalog header, which holds the general properties of the catalog.
   </p>
-  <p>An item of the catalog is a model or type of device instantiated as a <a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition resource</a>.
+  <p>An item of the catalog describes a model or type of device, with its various identifiers, classifications, safety characteristics and properties, 
+     instantiated as a <a href="http://hl7.org/fhir/devicedefinition.html">DeviceDefinition resource</a>
+	 linked to a number of supporting resources providing further details.
   </p>
   <p><strong>To be continued</strong></p>
   <a name="LIVDResourcesProfiles"> </a>
   <h3>Resources and Profiles for IVD testing devices</h3>
-  <p>See the <a href="https://build.fhir.org/ig/HL7/livd/"> LIVD Implementation Guide </a> </p>
+  <p>See the <a href="https://build.fhir.org/ig/HL7/livd/"> LIVD Implementation Guide </a> 
+  </p>
 </div>
