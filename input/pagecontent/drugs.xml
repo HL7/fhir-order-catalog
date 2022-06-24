@@ -132,7 +132,7 @@
       <tr>
         <td>product-type</td>
         <td>token</td>
-        <td>lab service jurisdiction </td>
+        <td>e.g. branded product, therapeutic moiety, generic product, innovator product</td>
         <td>MedicationKnowledge.productType</td>
         <td> </td>
       </tr>
@@ -145,5 +145,25 @@
       </tr>
     </tbody>
   </table>
-  
+   <a name="DrugSearchExamples"> </a>
+  <h4>Examples of searching and retrieving medications from catalogs</h4>
+  <p>In all examples below, [base] represents the endpoint of the catalog server. The answer of the server comes as a Bundle of type 'searchset' encapsulating the resources selected by the search.</p>
+  <p>One particular drug compendium, is assumed to have Composition.id "a1" on the server.</p>
+  <a name="AllCatalogs"> </a>
+  <h5>List all catalogs of the server</h5>
+  <pre>GET [base]/Composition?type:text=Catalog&amp;_summary=true</pre>
+  <p> Obtains the summary of every catalog available on the server.The anwser Bundle contains one entry with a Composition resource for each catalog found.</p>
+  <a name="AllDrugCatalogs"> </a>
+  <h5>List all drug catalogs</h5>
+  <pre>GET [base]/Composition?type:text=Catalog&amp;category=medication&amp;_summary=true</pre>
+  <p> Obtains the summary of each drug catalog available on the server. The anwser Bundle contains one entry with a Composition resource for each drug catalog found.</p>
+  <a name="OneMedicationWithinOneCatalog"> </a>
+  <h5>Retrieve all details for a medication</h5>
+  <pre>GET [base]/MedicationKnowledge?code=783043004&amp;_include:iterate=*</pre>
+  <p> Obtains the full content of instances of Medication 
+    with SNOMED CT code 783043004 |Product containing precisely afatinib (as afatinib dimaleate) 20 milligram/1 each conventional release oral tablet (clinical drug)|, 
+	accompanied by their supporting resources referenced by this MedicationKnowledge: {Composition, ClinicalUseDefinition, PackagedProductDefinition, ...}. 
+	The anwser Bundle contains the full details for each drug retrieved:
+	An entry for each matching MedicationKnowledge and, below it, as many entries as resources referenced by this one (recursively). 
+  </p> 
 </div>
