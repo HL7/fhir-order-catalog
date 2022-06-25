@@ -28,23 +28,27 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * deviceName MS
 * modelNumber MS
 * classification ^slicing.discriminator.type = #pattern
-* classification ^slicing.discriminator.path = "DeviceDefinition.classification.type"
+* classification ^slicing.discriminator.path = "type.coding.system"
 * classification ^slicing.description = "Slice based on classification.type pattern"
 * classification ^slicing.rules = #open
 // * classification.type.coding 1..1
-* classification contains gmdn 0..*
+* classification contains 
+  gmdn 0..* and 
+  snomed 0..1 and
+  emdn 0..1
+
 * classification[gmdn] ^short = "GMDN classification"
 * classification[gmdn] ^definition = "Global Medical Device Nomenclature classification"
-// * classification[gmdn].type.coding.system = "http://terminology.hl7.org/CodeSystem/GMDN" (exactly)
-* classification[gmdn].type
-* classification contains snomed 0..1
+* classification[gmdn].type.coding.system = "http://terminology.hl7.org/CodeSystem/GMDN"
+
 * classification[snomed] ^short = "SNOMED CT"
 * classification[snomed] ^definition = "Systematized nomenclature of medicine - clinical terms"
-* classification[snomed].type.coding.system = "http://snomed.info/sct" (exactly)
-* classification contains emdn 0..1
+* classification[snomed].type.coding.system = "http://snomed.info/sct"
+
 * classification[emdn] ^short = "EMDN"
 * classification[emdn] ^definition = "European Medical Device Nomenclature"
-* classification[emdn].type.coding.system = "urn:oid:1.2.250.1.213.2.68" (exactly)
+* classification[emdn].type.coding.system = "urn:oid:1.2.250.1.213.2.68"
+
 * hasPart.count MS
 * packaging.count MS
 * packaging.udiDeviceIdentifier MS
