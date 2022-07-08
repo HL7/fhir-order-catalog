@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DrugPackage",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Medication Definition"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage",
+  "version": "current",
+  "name": "DrugPackage",
+  "title": "definition of a packaging of a medication",
+  "status": "draft",
+  "date": "2022-06-10T11:57:00+01:00",
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "This profile constrains the base resource PackagedProductDefinition to represent a definition of a packaging in a catalog of medications.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0-snapshot1",
+  "mapping": [
+    {
+      "identity": "idmp",
+      "name": "IDMP Mapping",
+      "uri": "https://en.wikipedia.org/wiki/Identification_of_medicinal_products"
+    },
+    {
+      "identity": "w5",
+      "name": "FiveWs Pattern Mapping",
+      "uri": "http://hl7.org/fhir/fivews"
+    },
+    {
+      "identity": "rim",
+      "name": "RIM Mapping",
+      "uri": "http://hl7.org/v3"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PackagedProductDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PackagedProductDefinition.name",
+        "path": "PackagedProductDefinition.name",
+        "mustSupport": true
+      },
+      {
+        "id": "PackagedProductDefinition.type",
+        "path": "PackagedProductDefinition.type",
+        "min": 1
+      }
+    ]
+  }
+}
