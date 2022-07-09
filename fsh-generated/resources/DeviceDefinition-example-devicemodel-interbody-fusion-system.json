@@ -28,21 +28,21 @@
           }
         ]
       },
-      "system": "http://hl7.org/fhir/NamingSystem/gs1-di",
+      "system": "urn:oid:1.3.160",
       "value": "00843210101415"
     }
   ],
   "udiDeviceIdentifier": [
     {
       "deviceIdentifier": "B417F12260121",
-      "issuer": "http://hl7.org/fhir/NamingSystem/hibcc-diI",
-      "jurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi",
+      "issuer": "urn:oid:2.16.840.1.113883.6.40",
+      "jurisdiction": "urn:oid:2.16.840.1.113883.3.150",
       "marketDistribution": [
         {
           "marketPeriod": {
             "start": "2017-08-22"
           },
-          "subJurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+          "subJurisdiction": "urn:oid:2.16.840.1.113883.3.150"
         }
       ]
     }

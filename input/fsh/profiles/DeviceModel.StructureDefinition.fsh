@@ -17,11 +17,14 @@ Description: "This profile constrains the base resource DeviceDefinition to repr
 identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier."
 * udiDeviceIdentifier MS
 * udiDeviceIdentifier.issuer ^definition = "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:
-1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,
-2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,
-3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,
-4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,
-5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
+1. GS1 GTIN: urn:oid:1.3.160,
+2. HIBCC: urn:oid:2.16.840.1.113883.6.40,
+3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,
+4. ICCBBA for other devices: to be found,
+5. IFA (Europe Union only): to be found"
+* udiDeviceIdentifier.jurisdiction ^definition = "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:
+1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,
+2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en"
 * udiDeviceIdentifier.marketDistribution MS
 * partNumber MS
 * manufacturer[x] MS
@@ -31,7 +34,6 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * classification ^slicing.discriminator.path = "type.coding.system"
 * classification ^slicing.description = "Slice based on classification.type pattern"
 * classification ^slicing.rules = #open
-// * classification.type.coding 1..1
 * classification contains 
   gmdn 0..* and 
   snomed 0..1 and
@@ -53,11 +55,11 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 * packaging.count MS
 * packaging.udiDeviceIdentifier MS
 * packaging.udiDeviceIdentifier.issuer ^definition = "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:
-1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,
-2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,
-3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,
-4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,
-5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
+1. GS1 GTIN: urn:oid:1.3.160,
+2. HIBCC: urn:oid:2.16.840.1.113883.6.40,
+3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,
+4. ICCBBA for other devices: to be found,
+5. IFA (Europe Union only): to be found"
 * safety MS
 * property MS
 * property.value[x] 1..

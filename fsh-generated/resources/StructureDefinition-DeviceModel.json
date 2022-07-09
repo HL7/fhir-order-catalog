@@ -167,7 +167,7 @@
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.udiDeviceIdentifier.issuer",
-        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\r\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\r\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\r\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\r\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found",
         "mapping": [
           {
             "identity": "devicedefinition-to-eudamed",
@@ -182,6 +182,7 @@
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
         "path": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
+        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\r\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\r\n2. Europe Union EUDAMED: to be found",
         "mapping": [
           {
             "identity": "devicedefinition-to-eudamed",
@@ -189,7 +190,7 @@
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+            "map": "urn:oid:2.16.840.1.113883.3.150"
           }
         ]
       },
@@ -236,7 +237,7 @@
           },
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+            "map": "urn:oid:2.16.840.1.113883.3.150"
           }
         ]
       },
@@ -502,7 +503,7 @@
       {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
-        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1: http://hl7.org/fhir/NamingSystem/gs1-di,\r\n2. HIBCC: http://hl7.org/fhir/NamingSystem/hibcc-diI,\r\n3. ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,\r\n4. ICCBBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di,\r\n5. IFA (Europe Union only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di"
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found"
       },
       {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
@@ -510,7 +511,7 @@
         "mapping": [
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+            "map": "urn:oid:2.16.840.1.113883.3.150"
           }
         ]
       },
@@ -530,7 +531,7 @@
         "mapping": [
           {
             "identity": "devicedefinition-to-gudid",
-            "map": "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+            "map": "urn:oid:2.16.840.1.113883.3.150"
           }
         ]
       },

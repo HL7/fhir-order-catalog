@@ -10,13 +10,13 @@ Usage: #example
 * description = "12mm, 10degree Lateral Interbody Fusion, 22x60mm, PEEK Implant Assembly"
 * identifier[0].use = #secondary
 * identifier[0].type = $IDTYPE#UDI "Universal Device Identifier"
-* identifier[0].system = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* identifier[0].system = "urn:oid:1.3.160"
 * identifier[0].value = "00843210101415"
 * udiDeviceIdentifier.deviceIdentifier = "B417F12260121"
-* udiDeviceIdentifier.issuer = "http://hl7.org/fhir/NamingSystem/hibcc-diI"
-* udiDeviceIdentifier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* udiDeviceIdentifier.issuer = "urn:oid:2.16.840.1.113883.6.40"
+* udiDeviceIdentifier.jurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2017-08-22"
-* udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 // no catalog number in the GUDID for this device
 * manufacturerString = "Altus Spine, LLC"
 * deviceName.name = "Imola Interbody Fusion System"

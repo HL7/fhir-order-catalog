@@ -9,10 +9,10 @@ Usage: #example
 * extension[0].valueReference = Reference(Composition/example-device-catalog-header)
 // no description available, unfortunately
 * udiDeviceIdentifier.deviceIdentifier = "00075020063816"
-* udiDeviceIdentifier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
-* udiDeviceIdentifier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* udiDeviceIdentifier.issuer = "urn:oid:1.3.160"
+* udiDeviceIdentifier.jurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2016-09-17"
-* udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
+* udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 // no catalog number in the GUDID for this device
 * manufacturerString = "Philips Consumer Lifestyle B.V."
 * deviceName.name = "Philips Avent Breast Pump Single"
