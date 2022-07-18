@@ -182,7 +182,7 @@
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
         "path": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
-        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\r\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\r\n2. Europe Union EUDAMED: to be found",
+        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\r\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\r\n2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en",
         "mapping": [
           {
             "identity": "devicedefinition-to-eudamed",

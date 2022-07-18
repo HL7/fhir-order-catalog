@@ -9,7 +9,8 @@ Usage: #example
 * extension[0].valueReference = Reference(Composition/example-device-catalog-header)
 // no description available, unfortunately
 * udiDeviceIdentifier.deviceIdentifier = "00075020063816"
-* udiDeviceIdentifier.issuer = "urn:oid:1.3.160"
+//* udiDeviceIdentifier.issuer = "urn:oid:1.3.160"
+* udiDeviceIdentifier.issuer = "urn:oid:2.51.1.1"
 * udiDeviceIdentifier.jurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2016-09-17"
 * udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"

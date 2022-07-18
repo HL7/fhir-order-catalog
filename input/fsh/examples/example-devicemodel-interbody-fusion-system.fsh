@@ -10,7 +10,8 @@ Usage: #example
 * description = "12mm, 10degree Lateral Interbody Fusion, 22x60mm, PEEK Implant Assembly"
 * identifier[0].use = #secondary
 * identifier[0].type = $IDTYPE#UDI "Universal Device Identifier"
-* identifier[0].system = "urn:oid:1.3.160"
+//* identifier[0].system = "urn:oid:1.3.160"
+* identifier[0].system = "urn:oid:2.51.1.1"
 * identifier[0].value = "00843210101415"
 * udiDeviceIdentifier.deviceIdentifier = "B417F12260121"
 * udiDeviceIdentifier.issuer = "urn:oid:2.16.840.1.113883.6.40"
