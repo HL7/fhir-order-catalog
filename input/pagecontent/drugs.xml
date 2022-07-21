@@ -160,7 +160,7 @@
   <a name="OneMedicationWithinOneCatalog"> </a>
   <h5>Retrieve all details for a medication</h5>
   <pre>GET [base]/MedicationKnowledge?code=783043004&amp;_include:iterate=*</pre>
-  <p> Obtains the full content of instances of Medication 
+  <p> Obtains the full content of instances of MedicationKnowledge 
     with SNOMED CT code 783043004 |Product containing precisely afatinib (as afatinib dimaleate) 20 milligram/1 each conventional release oral tablet (clinical drug)|, 
 	accompanied by their supporting resources referenced by this MedicationKnowledge: {Composition, ClinicalUseDefinition, PackagedProductDefinition, ...}. 
 	The anwser Bundle contains the full details for each drug retrieved:
