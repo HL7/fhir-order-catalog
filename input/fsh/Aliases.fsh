@@ -14,4 +14,5 @@ Alias: $NCIthesaurus = urn:oid:2.16.840.1.113883.3.26.1.1						// NCI Thesaurus
 Alias: $PACKAGETYPE = http://hl7.org/fhir/package-type							// FHIR Package Type (HL7)
 Alias: $PUBSTATUS = http://hl7.org/fhir/publication-status						// FHIR Publication Status (HL7)
 Alias: $SCT = http://snomed.info/sct											// SNOMED CT
-Alias:  $V3ROLECLASS = http://terminology.hl7.org/CodeSystem/v3-RoleClass		// V2 RoleClass (HL7)
+Alias: $V3ROLECLASS = http://terminology.hl7.org/CodeSystem/v3-RoleClass		// V2 RoleClass (HL7)
+Alias: $UCUM = http://unitsofmeasure.org                                        // UCUM
