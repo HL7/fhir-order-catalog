@@ -15,7 +15,8 @@ Usage: #example
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2016-09-17"
 * udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 // no catalog number in the GUDID for this device
-* manufacturerString = "Philips Consumer Lifestyle B.V."
+//* manufacturerString = "Philips Consumer Lifestyle B.V."			// for 5.0 snapshot-1
+* manufacturer.display = "Philips Consumer Lifestyle B.V."			// for 5.0 snapshot-2 and ballot
 * deviceName.name = "Philips Avent Breast Pump Single"
 * deviceName.type = #registered-name
 * modelNumber = "SCF332"

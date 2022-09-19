@@ -18,7 +18,8 @@ Description: "maps DeviceDefinition elements to EUDAMED UDI data dictionary fiel
 * udiDeviceIdentifier.marketDistribution.marketPeriod.end  -> "FLD-UDID-251|End date"
 * udiDeviceIdentifier.marketDistribution.subJurisdiction -> "FLD-UDID-141|Countries were the devices is made available"
 * partNumber -> "FLD-UDID-163|Reference / Catalogue Number"
-* manufacturerString -> "FLD-UDID-10|Legal Manufacturer SRN"
+//* manufacturer[x] -> "FLD-UDID-10|Legal Manufacturer SRN"			// for 5.0 snapshot-1
+* manufacturer -> "FLD-UDID-10|Legal Manufacturer SRN"				// for 5.0 snapshot-2 and ballot
 * deviceName.name -> "FLD-UDID-22|Device Name"
 * deviceName.type -> "[registered-name]"
 * modelNumber -> "FLD-UDID-20|Device Model"
