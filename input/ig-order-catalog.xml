@@ -71,7 +71,7 @@
     -->	
 	<resource>
       <reference>
-        <reference value="CapabilityStatement/CS4drugcustodian"/>
+        <reference value="CapabilityStatement/cs-drug-custodian"/>
       </reference>
       <name value="Custodian of medication catalog"/>
       <description value="CapabilityStatement for custodian of catalog of medications"/>

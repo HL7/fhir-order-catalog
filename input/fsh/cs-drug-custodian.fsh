@@ -1,9 +1,9 @@
-Instance: CS4medcustodian
+Instance: cs-drug-custodian
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://hl7.org/fhir/uv/order-catalog/CapabilityStatement/CS4medcustodian"
+* url = "http://hl7.org/fhir/uv/order-catalog/CapabilityStatement/cs-drug-custodian"
 * version = "1.0.0"
-* name = "CapabilityStatement4medcustodian"
+* name = "CapabilityStatement4DrugCustodian"
 * title = "CapabilityStatement for custodian of catalog of medications"
 * status = #active
 * experimental = false
