@@ -138,13 +138,13 @@
         </coding>
     </code>
     <applicability>
-        <description value="Cet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré 
+		<condition>
+			<description value="Cet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré 
             par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
-        <!--  To be further discussed. 
-              The expression should apply to the laboratory request conveying the order for Vitamin D
-        <language value="text/fhirpath"/>
-        <expression value="exists()"/>
-        -->
+		</condition>	
+		<effectivePeriod>
+			<start value="2019-02-02"/>
+		</effectivePeriod>
     </applicability>
     <propertyGroup>
         <priceComponent>

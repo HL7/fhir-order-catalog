@@ -9,7 +9,6 @@
 <artifact id="Composition/example-device-catalog-header" key="Composition-example-device-catalog-header" name="A medical device catalog"/>
 <artifact id="ValueSet/bibliography-artifact-type" key="ValueSet-bibliography-artifact-type" name="Bibliographic artifact ValueSet"/>
 <artifact id="StructureDefinition/BillingSummary" key="StructureDefinition-BillingSummary" name="BillingSummary Extension"/>
-<artifact id="CapabilityStatement/CS4medcustodian" key="CapabilityStatement-CS4medcustodian" name="CapabilityStatement medication catalog custodian"/>
 <artifact id="CodeSystem/catalog-message-events" key="CodeSystem-catalog-message-events" name="Catalog message events CodeSystem"/>
 <artifact id="StructureDefinition/CatalogHeader" key="StructureDefinition-CatalogHeader" name="CatalogHeader Profile"/>
 <artifact id="StructureDefinition/CatalogMessageDefinition" key="StructureDefinition-CatalogMessageDefinition" name="CatalogMessageDefinition Profile"/>
@@ -18,6 +17,7 @@
 <artifact id="PackagedProductDefinition/example-drug-package-clarithromycin" key="PackagedProductDefinition-example-drug-package-clarithromycin" name="Clarithromycin package"/>
 <artifact id="ClinicalUseDefinition/example-allergy-contraindication" key="ClinicalUseDefinition-example-allergy-contraindication" name="Contraindication Allergy to Clarithromycin"/>
 <artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
+<artifact id="CapabilityStatement/cs-drug-custodian" key="CapabilityStatement-cs-drug-custodian" name="Custodian of medication catalog"/>
 <artifact id="DeviceDefinition/example-devicemodel-breast-pump" key="DeviceDefinition-example-devicemodel-breast-pump" name="Device model of breast pump"/>
 <artifact id="DeviceDefinition/example-devicemodel-interbody-fusion-system" key="DeviceDefinition-example-devicemodel-interbody-fusion-system" name="Device model of interbody fusion system"/>
 <artifact id="DeviceDefinition/example-devicemodel-presthetics-accessories" key="DeviceDefinition-example-devicemodel-presthetics-accessories" name="Device model of presthetics-accessories"/>

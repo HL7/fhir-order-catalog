@@ -151,7 +151,7 @@
       <short value="What specimens are required to perform this laboratory procedure" />
       <definition value="Defines specimen requirements for the laboratory procedure (test or panel) to be performed." />
       <type>
-        <code value="Reference" />
+        <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition" />
       </type>
       <mustSupport value="true" />
@@ -161,7 +161,7 @@
       <short value="What observations are required to perform this laboratory procedure" />
       <definition value="Defines observation requirements for the laboratory procedure (test or panel) to be performed, such as body weight or surface area." />
       <type>
-        <code value="Reference" />
+        <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition" />
       </type>
       <mustSupport value="true" />
@@ -171,7 +171,7 @@
       <short value="What observations are produced by this laboratory procedure" />
       <definition value="Defines the observations that are expected to be produced by the laboratory procedure." />
       <type>
-        <code value="Reference" />
+        <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition" />
       </type>
       <mustSupport value="true" />

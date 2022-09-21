@@ -15,11 +15,11 @@
     </telecom>
   </contact>
   <description
-    value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or order sets, which support the ordering process, or more generally healthcare processes."/>
+    value="An Order Catalog is an administered homogeneous collection of items such as medication products, laboratory tests, procedures, medical devices or order sets, which supports ordering of these items and other healthcare processes using these items."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
-      <!-- This is the code for universal -->
+      <!-- This is the code for universal, international -->
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
     </coding>
@@ -39,9 +39,9 @@
 	  <description value="Examples applicable to any kind of catalog"/>
 	</grouping>  	
 	<grouping id="labP">
-	    <name value="Lab profiles"/>
-		<description value="Profiles applicable to catalogs of orderable services of pathology & laboratory medicine"/>
-	</grouping> 
+	    <name value="lab profiles"/>
+		<description value="Profiles applicable to catalogs of orderable services of pathology and laboratory medicine"/>
+	</grouping> <!-- -->
 	<grouping id="labE7">
 	    <name value="Lab ToRCH example"/>
 		<description value="The richest example of a laboratory medicine orderable service in this implementation guide"/>
@@ -217,19 +217,19 @@
     -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/LabChargeItemDefinition"/>
-      </reference>
-      <name value="LabChargeItemDefinition Profile"/>
-      <description value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"/>
-	  <groupingId value="labP"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/CatalogHeader"/>
       </reference>
       <name value="CatalogHeader Profile"/>
       <description value="Profile of Composition for the header of a catalog of healthcare items (products, services, knowledge artifacts)"/>
 	  <groupingId value="commonP"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/LabChargeItemDefinition"/>
+      </reference>
+      <name value="LabChargeItemDefinition Profile"/>
+      <description value="Profile of ChargeItemDefinition representing the definition of a billing code and its detailed properties and rules of applicability for a lab service"/>
+	  <groupingId value="labP"/>
     </resource>
     <resource>
       <reference>
@@ -335,15 +335,6 @@
       <description value="Profile of DeviceDefinition to represent an item in a catalog of models of medical devices"/>
 	  <groupingId value="devP"/>
     </resource>
-    <!-- FM 20201219
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ObservationValueSet"/>
-      </reference>
-      <name value="ValueSet Profile used by ObservationDefinition"/>
-      <description value="Profile of ValueSet for coded observations"/>
-    </resource>
-    -->
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogMessageDefinition"/>
@@ -1129,10 +1120,11 @@
       html pages
     -->
     <page>
-      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <!-- The root will always be toc.html - the template will force it if you don't do it 
       <name value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
+	  -->
       <page>
         <name value="index.html"/>
         <title value="Order Catalog Home Page"/>
@@ -1214,34 +1206,24 @@
         <generation value="html"/>
       </page>
     </page>
+<!--FM 20220920 when shifting to 5.0.0-ballot: These parameters do not exist in the value set, but let's keep them. -->
     <parameter>
-      <code value="copyrightyear"/>
+	  <code>
+		<code value="copyrightyear"/>
+	  </code>	
       <value value="2021+"/>
     </parameter>
     <parameter>
-      <code value="releaselabel"/>
+	  <code>
+		<code value="releaselabel"/>
+	  </code>	  
       <value value="CI Build"/>
     </parameter>
     <parameter>
-      <code value="find-other-resources"/>
+	  <code>
+		<code value="find-other-resources"/>
+	  </code>	
       <value value="true"/>
     </parameter>
-    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
-    <parameter>
-      <code value="excludexml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludejson"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludettl"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludemap"/>
-      <value value="true"/>
-    </parameter>-->
   </definition>
 </ImplementationGuide>

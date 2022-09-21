@@ -1,0 +1,739 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DeviceModel",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel",
+  "version": "current",
+  "name": "DeviceModel",
+  "title": "Device Model",
+  "status": "draft",
+  "date": "2022-02-20T18:06:45+01:00",
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0-ballot",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "devicedefinition-to-eudamed",
+      "name": "Europe Union EUDAMED",
+      "uri": "https://ec.europa.eu/tools/eudamed",
+      "comment": "maps DeviceDefinition elements to EUDAMED UDI data dictionary field IDs|labels"
+    },
+    {
+      "identity": "devicedefinition-to-gudid",
+      "name": "US GUDID",
+      "uri": "https://accessgudid.nlm.nih.gov/",
+      "comment": "maps DeviceDefinition elements to AccessGUDID section titles and field labels"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceDefinition",
+        "path": "DeviceDefinition",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "EUDAMED data dictionary field IDs/labels"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "AccessGUDID section titles and field labels"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.extension",
+        "path": "DeviceDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DeviceDefinition.extension:CatalogReference",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "CatalogReference",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.description",
+        "path": "DeviceDefinition.description",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-175|Additional product description"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device Description"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.identifier",
+        "path": "DeviceDefinition.identifier",
+        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.\r\nidentifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-136|Secondary UDI - DI code [use = secondary, type = DISTID]; FLD-UDID-138|Direct Marking UDI-DI code [type = DIRECT-MARKING]; FLD-UDID-135|Unit of Use DI code [type = SINGLE-ITEM]"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Secondary DI Number [use = secondary, type = DISTID]; DM DI Number [type = DIRECT-MARKING]; Unit of Use DI Number [type = SINGLE-ITEM]"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier",
+        "path": "DeviceDefinition.udiDeviceIdentifier",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.deviceIdentifier",
+        "path": "DeviceDefinition.udiDeviceIdentifier.deviceIdentifier",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-178|UDI-DI code"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Primary DI Number"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.issuer",
+        "path": "DeviceDefinition.udiDeviceIdentifier.issuer",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-291|Issuing Entity UDI-DI"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Primary DI Number - Issuing Agency"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
+        "path": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
+        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\r\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\r\n2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "https://ec.europa.eu/health/medical-devices-sector_en"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "urn:oid:2.16.840.1.113883.3.150"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.start",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.start",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-250|Start date"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "DEVICE RECORD STATUS - DI Record Publish Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-251|End date"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Commercial Distribution End Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "path": "DeviceDefinition.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-141|Countries were the devices is made available"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "urn:oid:2.16.840.1.113883.3.150"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.partNumber",
+        "path": "DeviceDefinition.partNumber",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-163|Reference / Catalogue Number"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Catalog Number"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.manufacturer",
+        "path": "DeviceDefinition.manufacturer",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-10|Legal Manufacturer SRN"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Company Name"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.deviceName",
+        "path": "DeviceDefinition.deviceName",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.deviceName.name",
+        "path": "DeviceDefinition.deviceName.name",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-22|Device Name"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Brand Name"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.deviceName.type",
+        "path": "DeviceDefinition.deviceName.type",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "[registered-name]"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "[registered-name]"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.modelNumber",
+        "path": "DeviceDefinition.modelNumber",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-20|Device Model"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Version or Model"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification",
+        "path": "DeviceDefinition.classification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type.coding.system"
+            }
+          ],
+          "description": "Slice based on classification.type pattern",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn",
+        "path": "DeviceDefinition.classification",
+        "sliceName": "gmdn",
+        "short": "GMDN classification",
+        "definition": "Global Medical Device Nomenclature classification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.system",
+        "path": "DeviceDefinition.classification.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/GMDN",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "http://terminology.hl7.org/CodeSystem/GMDN"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.code",
+        "path": "DeviceDefinition.classification.type.coding.code",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "[GMDN code]"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:gmdn.type.coding.display",
+        "path": "DeviceDefinition.classification.type.coding.display",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "GMDN Preferred Term Name"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:snomed",
+        "path": "DeviceDefinition.classification",
+        "sliceName": "snomed",
+        "short": "SNOMED CT",
+        "definition": "Systematized nomenclature of medicine - clinical terms",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "DeviceDefinition.classification:snomed.type.coding.system",
+        "path": "DeviceDefinition.classification.type.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "DeviceDefinition.classification:emdn",
+        "path": "DeviceDefinition.classification",
+        "sliceName": "emdn",
+        "short": "EMDN",
+        "definition": "European Medical Device Nomenclature",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "DeviceDefinition.classification:emdn.type.coding.system",
+        "path": "DeviceDefinition.classification.type.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.250.1.213.2.68",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "urn:oid:1.2.250.1.213.2.68"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:emdn.type.coding.code",
+        "path": "DeviceDefinition.classification.type.coding.code",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "[EMDN code]"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.classification:emdn.type.coding.display",
+        "path": "DeviceDefinition.classification.type.coding.display",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "EMDN name"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.hasPart.count",
+        "path": "DeviceDefinition.hasPart.count",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.packaging.type",
+        "path": "DeviceDefinition.packaging.type",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package Type"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.count",
+        "path": "DeviceDefinition.packaging.count",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-121|Quantity of item(s)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Quantity per Package"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.deviceIdentifier",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.deviceIdentifier",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-120|Package UDI-DI"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package DI Number"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found"
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "urn:oid:2.16.840.1.113883.3.150"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.marketPeriod.end",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Package Discontinue Date"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "path": "DeviceDefinition.packaging.udiDeviceIdentifier.marketDistribution.subJurisdiction",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "urn:oid:2.16.840.1.113883.3.150"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.safety",
+        "path": "DeviceDefinition.safety",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-212|Critical Warnings type: {CW025:MR SAFE, CW026:MR CONDITIONAL, CW027:MR UNSAFE, CW023:Consider hazards from magnetic fields, CW024:Do not store near magnets or magnetic devices}"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-156|Containing latex (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "What MRI safety information does the labeling contain?"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device required to be labeled as containing natural rubber latex or dry natural rubber (21 CFR 801.437)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device labeled as \"Not made with natural rubber latex\""
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.property",
+        "path": "DeviceDefinition.property",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-16|Risk Class: {Medical Devices: CLASS_I, CLASS_IIa, CLASS_IIb, CLASS_III} {In Vitro Diagnostic Devices: CLASS_A, CLASS_B, CLASS_C, CLASS_D}"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-18|Tissues and cells - Presence of animal tissues or Cells, or their derivates (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-34|Tissues and cells - Presence of cells or substances of microbial origin (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-23|Tissues and cells - presence of human tissues or cells, or their derivates (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-28|Active Device (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-29|Device Intended to administer and/or Remove medicinal product (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-30|Implantable (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-31|Measuring Function (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-32|Reusable Surgical Instruments (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-33|Companion Diagnostic (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-35|Near Patient Testing (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-36|Patient Self Testing (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-155|Presence of a substance which, if used separately, may be considered to be a medicinal product derived from human blood or plasma (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-158|Presence of substance which, if used separately, may be considered to be a medicinal product (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-262|Reagent (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-263|Professional Testing (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-264|Instrument (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-356|Kit (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-12|Device, Procedure pack or System {SYSTEM, PROCEDURE_PACK, DEVICE}"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-167|Labelled as single use (Boolean)"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-169|Device labelled Sterile"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-170|Need for sterilisation before use"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-146|Clinical Sizes {Angle, Diameter, Gauge, Inflation volume, Length, Pressure, Size, Volume, Width, Weight, Heigth, Wavelength, Frequency,...}"
+          },
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "Handling Environment Temperature"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "For Single-Use"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Prescription Use (Rx)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Over the Counter (OTC)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Kit"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Combination Product"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P)"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Device Packaged as Sterile"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Requires Sterilization Prior to Use"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Storage Environment Temperature"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Handling Environment Temperature"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Length"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Width"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Heigth"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "Size - Angle"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.contact",
+        "path": "DeviceDefinition.contact",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-eudamed",
+            "map": "FLD-UDID-354|Contact Details"
+          },
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "CUSTOMER CONTACT"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.productionIdentifierInUDI",
+        "path": "DeviceDefinition.productionIdentifierInUDI",
+        "mapping": [
+          {
+            "identity": "devicedefinition-to-gudid",
+            "map": "PRODUCTION IDENTIFIER(S) IN UDI"
+          }
+        ]
+      },
+      {
+        "id": "DeviceDefinition.guideline",
+        "path": "DeviceDefinition.guideline",
+        "mustSupport": true
+      }
+    ]
+  }
+}

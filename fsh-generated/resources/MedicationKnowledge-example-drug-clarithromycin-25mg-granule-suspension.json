@@ -1,0 +1,275 @@
+{
+  "resourceType": "MedicationKnowledge",
+  "id": "example-drug-clarithromycin-25mg-granule-suspension",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge"
+    ]
+  },
+  "language": "en-US",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
+      "valueReference": {
+        "reference": "Composition/example-medication-catalog-header"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "769316002",
+        "system": "http://snomed.info/sct",
+        "display": "Clarithromycin 25 mg/mL oral suspension"
+      }
+    ]
+  },
+  "intendedJurisdiction": [
+    {
+      "text": "Healthyland"
+    }
+  ],
+  "name": [
+    "CLARITHROMYCINE GENERIC-LAB 25 mg/ml, granules for oral suspension"
+  ],
+  "productType": [
+    {
+      "text": "Generic product"
+    }
+  ],
+  "indicationGuideline": [
+    {
+      "indication": [
+        {
+          "reference": {
+            "reference": "ClinicalUseDefinition/example-bacterial-pharyngitis-indication"
+          }
+        },
+        {
+          "reference": {
+            "reference": "ClinicalUseDefinition/example-acute-otitis-media-indication"
+          }
+        },
+        {
+          "reference": {
+            "reference": "ClinicalUseDefinition/example-bacterial-sinusitis-indication"
+          }
+        }
+      ],
+      "dosingGuideline": [
+        {
+          "patientCharacteristic": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "code": "30525-0",
+                    "system": "http://loinc.org",
+                    "display": "Age"
+                  }
+                ]
+              },
+              "valueRange": {
+                "low": {
+                  "value": 0.5,
+                  "code": "a",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "years"
+                },
+                "high": {
+                  "value": 12,
+                  "code": "a",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "years"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "medicineClassification": [
+    {
+      "type": {
+        "text": "Anatomical Therapeutic Chemical (ATC)"
+      },
+      "sourceUri": "https://www.whocc.no/atc/structure_and_principles/",
+      "classification": [
+        {
+          "coding": [
+            {
+              "code": "J01FA09",
+              "system": "http://www.whocc.no/atc",
+              "display": "Clarithromycin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": {
+        "text": "SNOMED CT drug dispositions"
+      },
+      "sourceUri": "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product",
+      "classification": [
+        {
+          "coding": [
+            {
+              "code": "346325008",
+              "system": "http://snomed.info/sct",
+              "display": "Medicinal product acting as antibacterial agent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "packaging": [
+    {
+      "cost": [
+        {
+          "effectiveDate": [
+            {
+              "start": "2021-02-01"
+            }
+          ],
+          "type": {
+            "text": "public price"
+          },
+          "source": "Healthyland Drug Administration",
+          "costMoney": {
+            "value": 5.18,
+            "currency": "EUR"
+          }
+        },
+        {
+          "effectiveDate": [
+            {
+              "start": "2020-09-30",
+              "end": "2021-01-31"
+            }
+          ],
+          "type": {
+            "text": "public price"
+          },
+          "source": "Healthyland Drug Administration",
+          "costMoney": {
+            "value": 5.2,
+            "currency": "EUR"
+          }
+        },
+        {
+          "effectiveDate": [
+            {
+              "start": "2010-03-01"
+            }
+          ],
+          "type": {
+            "text": "manufacturers' cost"
+          },
+          "source": "Healthyland Drug Administration",
+          "costMoney": {
+            "value": 4.4,
+            "currency": "EUR"
+          }
+        }
+      ],
+      "packagedProduct": {
+        "reference": "PackagedProductDefinition/example-drug-package-clarithromycin"
+      }
+    }
+  ],
+  "clinicalUseIssue": [
+    {
+      "reference": "ClinicalUseDefinition/example-allergy-contraindication"
+    }
+  ],
+  "definitional": {
+    "doseForm": {
+      "coding": [
+        {
+          "code": "385029002",
+          "system": "http://snomed.info/sct",
+          "display": "Granules for oral suspension"
+        },
+        {
+          "code": "10113000",
+          "system": "http://standardterms.edqm.eu",
+          "display": "Granules for oral suspension"
+        }
+      ]
+    },
+    "intendedRoute": [
+      {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route"
+          }
+        ]
+      }
+    ],
+    "ingredient": [
+      {
+        "item": {
+          "concept": {
+            "coding": [
+              {
+                "code": "387487009",
+                "system": "http://snomed.info/sct",
+                "display": "Clarithromycin"
+              }
+            ]
+          }
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "ACTIB",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+              "display": "active ingredient - basis of strength"
+            }
+          ]
+        },
+        "strengthRatio": {
+          "numerator": {
+            "value": 25,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "milligram"
+          },
+          "denominator": {
+            "value": 1,
+            "code": "mL",
+            "system": "http://unitsofmeasure.org",
+            "unit": "milliliter"
+          }
+        }
+      },
+      {
+        "item": {
+          "concept": {
+            "coding": [
+              {
+                "code": "11320009",
+                "system": "http://snomed.info/sct",
+                "display": "Sucrose"
+              }
+            ]
+          }
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "IACT",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+              "display": "inactive ingredient"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

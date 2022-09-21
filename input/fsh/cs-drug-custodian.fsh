@@ -21,8 +21,8 @@ Usage: #definition
 * rest.mode = #server
 * rest.documentation = "The Custodian of a catalog of medications **SHALL**:\n\n1. Support profiles CatalogHeader, DrugKnowledge, DrugPackage defined in this Implementation Guide..\n2.  Implement the RESTful behavior according to the FHIR specification.\n3. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n4. Support json source formats for all order-catalog interactions.\n5. Identify the order-catalog  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n6. Support the searchParameters on each profile  individually and in combination.\n\nThe Custodian of a catalog of medications **SHOULD**:\n\n1. Support xml source formats for all order-catalog interactions.\n2. support the Catalog profile of the Composition Resource in the core standard\n"
 * rest.security.description = "1. A custodian **SHALL** reject any unauthorized requests by returning an HTTP 401 \"Unauthorized\", HTTP 403 \"Forbidden\", or HTTP 404 \"Not Found\" ."
-rest.resource[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-rest.resource[=].extension.valueCode = #SHALL
+* rest.resource[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #MedicationKnowledge        // soft indexing to set back when previous lines uncommented
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -39,15 +39,15 @@ rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[=].name = "_id"
-//* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
+//* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"								// wrong url, goes nowhere
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "http://hl7.org/fhir/R4/search.html#id"                                       // url to be updated to R5 once it's published
+* rest.resource[=].searchParam[=].documentation = "http://hl7.org/fhir/2022Sep/search.html#id"                                  // url to be updated to R5 once it's published
 * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[=].name = "_lastUpdated"
 //* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
 * rest.resource[=].searchParam[=].type = #date
-* rest.resource[=].searchParam[=].documentation = "http://hl7.org/fhir/R4/search.html#lastUpdated"                              // url to be updated to R5 once it's published
-//* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].type = #Composition
+* rest.resource[=].searchParam[=].documentation = "http://hl7.org/fhir/2022Sep/search.html#lastUpdated"                         // url to be updated to R5 once it's published
+// * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"					
+// * rest.resource[=].extension.valueCode = #SHALL
+// * rest.resource[=].type = #Composition
