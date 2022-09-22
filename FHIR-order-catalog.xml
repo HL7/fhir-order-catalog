@@ -128,7 +128,7 @@
 <page key="labservices" name="Spec - Laboratory services"/>
 <page key="drugs" name="Spec - Medications"/>
 <page key="ordersets" name="Spec - Order sets"/>
-<page key="toc" name="Table of Contents"/>
+<page key="toc" name="Table Content"/>
 <page key="ucdevices" name="Use cases - Devices"/>
 <page key="uclabservices" name="Use cases - Laboratory services"/>
 <page key="ucdrugs" name="Use cases - Medications"/>

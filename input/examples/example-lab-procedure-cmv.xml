@@ -58,7 +58,5 @@
             <display value="Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
         </coding>
     </code>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-cmvigm"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-cmvigm"/>
 </ActivityDefinition>

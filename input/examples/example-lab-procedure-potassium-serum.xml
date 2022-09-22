@@ -59,10 +59,6 @@
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
     -->
-    <observationRequirement>
-        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
-    </observationRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-serum-potassium"/>
-    </observationResultRequirement>
+    <observationRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-serum-potassium"/>
 </ActivityDefinition>

@@ -8,6 +8,7 @@
             value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabSpecimenDefinition"/>
     </meta>
     <language value="en-US"/>
+	<url value="http://hl7.org/fhir/uv/order-catalog/SpecimenDefinition/example-specimen-3ml-serum"/>
 	<status value="active"/>
     <typeTested>
         <type>

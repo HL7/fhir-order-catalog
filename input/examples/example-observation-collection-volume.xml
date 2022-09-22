@@ -8,6 +8,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
     <language value="en-US"/>
+	<url value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-collection-volume"/>
 	<status value="active"/>
     <category>
         <coding>

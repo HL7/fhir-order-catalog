@@ -61,10 +61,6 @@
             <display value="Herpes simplex virus 1 and 2 Ab.IgG and IgM panel - Serum or Plasma"/>
         </coding>
     </code>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-hsv1igmp"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-hsv2igmp"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-hsv1igmp"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-hsv2igmp"/>
 </ActivityDefinition>

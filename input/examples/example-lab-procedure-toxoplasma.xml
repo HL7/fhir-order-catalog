@@ -63,13 +63,7 @@
             <display value="Toxoplasma gondii IgG and IgM panel - Serum"/>
         </coding>
     </code>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-toxoigg"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-toxoigm"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-toxoint"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-toxoigg"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-toxoigm"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-toxoint"/>
 </ActivityDefinition>

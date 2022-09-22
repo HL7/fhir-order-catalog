@@ -36,7 +36,5 @@
         <reference value="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
     </specimenRequirement>
     -->
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-serum-creatinine"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-serum-creatinine"/>
 </ActivityDefinition>

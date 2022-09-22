@@ -944,9 +944,6 @@
       </reference>
       <name value="Lab normal clinical focus for billing vitamin D"/>
       <description value="Lab E6 - value set of normal contexts enabling billing of Vitamin D test"/>
-      <!-- FM 20201219
-      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
-      -->
 	  <groupingId value="labE"/>
     </resource>
     <resource>
@@ -955,10 +952,7 @@
       </reference>
       <name value="Possible contexts for any lab test order"/>
       <description value="Contexts possibly associated with any laboratory test"/>
-      <!-- FM 20201219
-      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
-      -->
-	  <groupingId value="labE"/>
+ 	  <groupingId value="labE"/>
     </resource>
     <resource>
       <reference>
@@ -966,9 +960,6 @@
       </reference>
       <name value="Valid coded reasons for ordering a lab service"/>
       <description value="Lab E* - broadest value set of reasons for ordering a laboratory service"/>
-      <!-- FM 20201219
-      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet"/>
-      -->
 	  <groupingId value="labE"/>
     </resource>
 	<!--
@@ -1120,11 +1111,11 @@
       html pages
     -->
     <page>
-      <!-- The root will always be toc.html - the template will force it if you don't do it 
-      <name value="toc.html"/>
-      <title value="Table of Contents"/>
-      <generation value="html"/>
-	  -->
+      <!-- The root will always be toc.html - the template will force it if you don't  	  -->
+      <!-- <name value="toc.html"/> -->
+	  <sourceUrl value="toc.html"/> 
+      <title value="Table Content"/>
+      <generation value="html"/> 
       <page>
         <name value="index.html"/>
         <title value="Order Catalog Home Page"/>
@@ -1206,7 +1197,7 @@
         <generation value="html"/>
       </page>
     </page>
-<!--FM 20220920 when shifting to 5.0.0-ballot: These parameters do not exist in the value set, but let's keep them. -->
+<!--FM 20220920 when shifting to 5.0.0-ballot: These parameters do not exist in the value set, but they are still checked by the publisher. -->
     <parameter>
 	  <code>
 		<code value="copyrightyear"/>

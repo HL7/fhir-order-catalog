@@ -20,8 +20,10 @@ Usage: #example
 * deviceName.name = "Philips Avent Breast Pump Single"
 * deviceName.type = #registered-name
 * modelNumber = "SCF332"
-//* classification[gmdn].type.coding.system = $GMDN
-* classification[gmdn].type.coding[0].display = "Breast pump, electric"
+//* classification[gmdn].type.coding[0].system = $GMDN don't have GMDN code so just use text.	
+//* classification[gmdn].type.coding[0].code = ???
+//* classification[gmdn].type.coding[0].display = "Breast pump, electric"
+* classification[gmdn].type.text = "Breast pump, electric"
 * classification[gmdn].justification[0].type = #citation
 * classification[gmdn].justification[0].citation = "A mains electricity (AC-powered) device used to extract milk from the breast, typically for collecting and feeding to an infant. The device produces a continuous low-grade suction through a funnel-like component that is applied to the breast; the milk collects in an attached vessel (e.g., a sterilized bottle). The device may have a safety mechanism to prevent a potentially harmful increase in negative pressure."
 * classification[snomed].type = $SCT#272201008 "Electric breast pump"

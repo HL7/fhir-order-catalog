@@ -7,19 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition"/>
     </meta>
     <language value="en-US"/>
-<!--
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-            <p>Reason for ordering a laboratory service, asked at order entry</p>
-            <p><b>category:</b> Exam</p>
-            <p><b>code:</b> 67098-4 |Reason for test or procedure| (http://loinc.org)</p>
-            <p><b>permittedDataType:</b> CodeableConcept, string</p>
-            <p><b>multipleResultAllowed:</b> true</p>
-            <p><b>validCodedValueSet:</b> ValueSet/example-reasons-for-order</p>
-        </div>
-    </text>
--->	
+	<url value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-input-observation-reason-for-ordering"/>
 	<status value="active"/>	
     <category>
         <coding>

@@ -43,16 +43,8 @@
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
     </specimenRequirement>
     -->
-    <observationRequirement>
-        <reference value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
-    </observationRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-serum-sodium"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-serum-potassium"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-serum-chloride"/>
-    </observationResultRequirement>
+    <observationRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-serum-sodium"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-serum-potassium"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-serum-chloride"/>
 </ActivityDefinition>

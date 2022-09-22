@@ -58,7 +58,5 @@
             <display value="Herpes simplex virus 2 IgM Ab [Titer] in Serum by Immunofluorescence"/>
         </coding>
     </code>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-hsv2igmt"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-hsv2igmt"/>
 </ActivityDefinition>

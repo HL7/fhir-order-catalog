@@ -18,6 +18,7 @@
             <p>Valeurs normales ouvrant droit à facturation : <a href="ValueSet-example-normal-contexts-vitamin-d.html"> ValueSet/example-normal-contexts-vitamin-d</a></p>
         </div>
     </text>
+	<url value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-input-observation-context-for-vitamin-d"/>
 	<status value="active"/>
     <category>
         <coding>

@@ -38,7 +38,7 @@
         </telecom>
     </contact>
     <description
-        value="Propriétés détaillées du code NABM *1139* - *Dosage de la 25-(OH)-vitamine D (D2 + D3)*"/>
+        value="Propriétés détaillées du code NABM *1139* - *Dosage de la 25-(OH)-vitamine D (D2 + D3)*.\nCet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -137,15 +137,6 @@
             <display value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
         </coding>
     </code>
-    <applicability>
-		<condition>
-			<description value="Cet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré 
-            par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
-		</condition>	
-		<effectivePeriod>
-			<start value="2019-02-02"/>
-		</effectivePeriod>
-    </applicability>
     <propertyGroup>
         <priceComponent>
             <type value="base"/>

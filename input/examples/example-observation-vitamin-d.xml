@@ -7,6 +7,7 @@
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
     <language value="fr-FR"/>
+	<url value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-vitamin-d"/>
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
