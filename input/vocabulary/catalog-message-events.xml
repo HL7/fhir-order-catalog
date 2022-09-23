@@ -27,6 +27,7 @@
     </telecom>
   </contact>
   <description value="This CodeSystem resource provides the concepts representing message event codes to be used when exchanging the content of catalogs in push mode, leveraging the FHIR messaging framework."/>
+  <caseSensitive value="true"/>
   <content value="complete" />
   <count value="2" />
   <concept>

@@ -16,7 +16,6 @@
   </contact>
   <description
     value="References the specimens requested for a PlanDefinition.action representing a laboratory service, assembling them with a combination of  choices (pick one among several) and conjunctions (pick all listed). Each specimen appears as a reference to an instance of SpecimenDefinition"/> 
-  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

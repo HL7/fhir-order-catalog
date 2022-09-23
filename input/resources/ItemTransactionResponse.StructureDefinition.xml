@@ -13,7 +13,6 @@
     </telecom>
   </contact>
   <description value="This profile constrains the Bundle resource to convey a response to a transaction request about creating/updating/deleting/patching items and/or supporting resources in a catalog." />
-  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />

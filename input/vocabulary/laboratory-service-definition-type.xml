@@ -50,6 +50,7 @@
     </telecom>
   </contact>
   <description value="This CodeSystem resource provides the concepts that enable to characterize laboratory diagnostic services described as instances of PlanDefinition, in the PlanDefinition.type element" />
+  <caseSensitive value="true"/>
   <content value="complete" />
   <count value="2" />
   <concept>

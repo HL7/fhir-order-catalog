@@ -62,6 +62,7 @@
     </telecom>
   </contact>
   <description value="This CodeSystem resource provides the concepts representing coarse categories of reimbursement dispositions for laboratory services"/>
+  <caseSensitive value="true"/>
   <content value="complete" />
   <count value="5" />
   <concept>
