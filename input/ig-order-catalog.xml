@@ -25,7 +25,9 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.order-catalog"/>
-  <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') 
+    <fhirVersion value="5.0.0-cibuild"/>
+  -->
   <fhirVersion value="5.0.0-ballot"/>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
@@ -1159,7 +1161,7 @@
       <page>
         <name value="devices.html"/>
         <title value="Spec - Devices"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <name value="interactions.html"/>
