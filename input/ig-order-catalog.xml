@@ -78,7 +78,20 @@
       <name value="Custodian of medication catalog"/>
       <description value="CapabilityStatement for custodian of catalog of medications"/>
     </resource>
-
+	<resource>
+      <reference>
+        <reference value="CapabilityStatement/cs-device-custodian"/>
+      </reference>
+      <name value="Custodian of medical device catalog"/>
+      <description value="CapabilityStatement for custodian of catalog of medical devices"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="CapabilityStatement/cs-lab-service-custodian"/>
+      </reference>
+      <name value="Custodian of laboratory service catalog"/>
+      <description value="CapabilityStatement for custodian of catalog of laboratory services"/>
+    </resource>
     <!--
       Below, the semantic resources
     -->
