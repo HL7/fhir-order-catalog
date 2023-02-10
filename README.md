@@ -12,3 +12,4 @@ Therefore two profiles of the Composition resource are defined:
 Catalog, which includes the content, referencing each item of the catalog.
 CatalogHeader, which holds only the set of global metadata and is intended to be referenced by the items of the catalog.
 An item of a catalog is represented by a definitional resource, and is often further described by a set of supporting definitional resources.
+ 
