@@ -85,7 +85,7 @@
     <element id="Composition.category">
       <path value="Composition.category" />
       <short value="Kind of catalog" />
-      <min value="1" />
+      <min value="0" />
       <binding>
         <strength value="example" />
         <description value="Category of catalog content" />
