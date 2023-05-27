@@ -153,10 +153,10 @@
   <p>Delete operations requested atomically by the <b>catalog owner</b> are to be accepted and
     performed by the <b>catalog custodian</b> after having checked that the resource to be deleted
     is not referenced by any other resource. If this is not the case the operation is rejected with
-    an OperationOutcome. In the case of a transaction request containing a delete operation, this
+    an <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>. In the case of a transaction request containing a delete operation, this
     operation will be performed only if the resource to be deleted is not referenced from elsewhere
     given all other operations of the transaction. If it is not the case the whole transaction is
-    rejected with an OperationOutcome.</p>
+    rejected with an <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>.</p>
   <br/>
   <a name="Subscriptions"> </a>
   <h3>Combining pull mode with subscriptions to notifications in push mode</h3>

@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "DrugPackage",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Specialized.Medication Definition"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "anonymous"
-    }
-  ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage",
   "version": "current",
   "name": "DrugPackage",
@@ -39,17 +29,17 @@
       ]
     }
   ],
-  "fhirVersion": "5.0.0-ballot",
+  "fhirVersion": "5.0.0",
   "mapping": [
-    {
-      "identity": "idmp",
-      "uri": "https://en.wikipedia.org/wiki/Identification_of_medicinal_products",
-      "name": "IDMP Mapping"
-    },
     {
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "idmp",
+      "uri": "https://www.iso.org/obp/ui/#iso:std:iso:11615",
+      "name": "IDMP Mapping"
     },
     {
       "identity": "rim",

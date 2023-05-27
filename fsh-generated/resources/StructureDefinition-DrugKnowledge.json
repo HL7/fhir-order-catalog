@@ -3,16 +3,8 @@
   "id": "DrugKnowledge",
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
       "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
     }
   ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge",
@@ -43,7 +35,7 @@
       ]
     }
   ],
-  "fhirVersion": "5.0.0-ballot",
+  "fhirVersion": "5.0.0",
   "mapping": [
     {
       "identity": "w5",
@@ -58,7 +50,7 @@
     {
       "identity": "v2",
       "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
+      "name": "HL7 V2 Mapping"
     },
     {
       "identity": "rim",

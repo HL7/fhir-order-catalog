@@ -1,6 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "CatalogReference",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
   "version": "current",
   "name": "CatalogReference",
@@ -29,7 +35,7 @@
       ]
     }
   ],
-  "fhirVersion": "5.0.0-ballot",
+  "fhirVersion": "5.0.0",
   "mapping": [
     {
       "identity": "rim",

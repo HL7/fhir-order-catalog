@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "DeviceModel",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Specialized.Definitional Artifacts"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "anonymous"
-    }
-  ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel",
   "version": "current",
   "name": "DeviceModel",
@@ -39,7 +29,7 @@
       ]
     }
   ],
-  "fhirVersion": "5.0.0-ballot",
+  "fhirVersion": "5.0.0",
   "mapping": [
     {
       "identity": "w5",
@@ -132,7 +122,7 @@
       {
         "id": "DeviceDefinition.identifier",
         "path": "DeviceDefinition.identifier",
-        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.\r\nidentifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
+        "definition": "This repeatable element is used in catalogs of devices to convey any kind of identifier assigned to the model of device, other than the primary UDI DI.\nidentifier may convey for instance, the secondary UDI-DI, the direct-marking UDI-DI, the unit-of-use UDI-DI or any additional non-UDI identifier.",
         "mustSupport": true,
         "mapping": [
           {
@@ -167,7 +157,7 @@
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.udiDeviceIdentifier.issuer",
-        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found",
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1 GTIN: urn:oid:1.3.160,\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\n4. ICCBBA for other devices: to be found,\n5. IFA (Europe Union only): to be found",
         "mapping": [
           {
             "identity": "devicedefinition-to-eudamed",
@@ -182,7 +172,7 @@
       {
         "id": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
         "path": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
-        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\r\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\r\n2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en",
+        "definition": "The jurisdiction to which the deviceIdentifier applies. Known jurisdictions are:\n1. US Food & Drug Administration (FDA): urn:oid:2.16.840.1.113883.3.150,\n2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en",
         "mapping": [
           {
             "identity": "devicedefinition-to-eudamed",
@@ -487,7 +477,7 @@
       {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
         "path": "DeviceDefinition.packaging.udiDeviceIdentifier.issuer",
-        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\r\n1. GS1 GTIN: urn:oid:1.3.160,\r\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\r\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\r\n4. ICCBBA for other devices: to be found,\r\n5. IFA (Europe Union only): to be found"
+        "definition": "Organization accredited by the jurisdictional authority to operate a system for the issuance of UDIs. Main issuers referenced in the US and/or in EU include:\n1. GS1 GTIN: urn:oid:1.3.160,\n2. HIBCC: urn:oid:2.16.840.1.113883.6.40,\n3. ICCBBA Information Standard for Blood and Transplant (ISBT) 128: urn:oid:2.16.840.1.113883.6.18,\n4. ICCBBA for other devices: to be found,\n5. IFA (Europe Union only): to be found"
       },
       {
         "id": "DeviceDefinition.packaging.udiDeviceIdentifier.jurisdiction",
