@@ -83,28 +83,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "short": "Reference to a catalog containing this item",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Reference",

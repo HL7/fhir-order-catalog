@@ -28,12 +28,9 @@
     <permittedDataType value="Quantity"/>
     <multipleResultsAllowed value="false"/>
     <preferredReportName value="urine creatinine (mass/24H)"/>
-    <quantitativeDetails>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="g/(24.h)"/>
-            </coding>
-        </unit>
-    </quantitativeDetails>
+     <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g/(24.h)"/>
+        <display value="g/(24.h)"/>
+    </permittedUnit>
 </ObservationDefinition>

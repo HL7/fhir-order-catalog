@@ -26,13 +26,9 @@
     <permittedDataType value="Quantity"/>
     <multipleResultsAllowed value="false"/>
     <preferredReportName value="Creatinine renal clearance (volume/time)"/>
-    <quantitativeDetails>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="mL/min"/>
-                <display value="ml/min"/>
-            </coding>
-        </unit>
-    </quantitativeDetails>
+    <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL/min"/>
+        <display value="ml/min"/>
+    </permittedUnit>
 </ObservationDefinition>

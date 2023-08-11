@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="current"/>
+  <version value="1.0.0"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>

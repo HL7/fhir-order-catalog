@@ -51,7 +51,7 @@
       <definition value="A group of specimens requested that must all be provided in case this group is chosen at specimen collection time."/>
       <comment
         value="In case multiple groups are defined, these groups are mutually exclusive: one and only one group must be chosen at specimen collection time."/>
-      <min value="1"/>
+      <min value="0"/>
     </element>
     <element id="Extension.extension:ExclusiveGroup.extension">
       <path value="Extension.extension.extension"/>
@@ -71,7 +71,7 @@
         value="A reference to a SpecimenDefinition resource representing the material"/>
       <comment
         value="When multiple materials are present under an exclusive group, all are requested."/>
-      <min value="1"/>
+      <min value="0"/>
     </element>
     <element id="Extension.extension:ExclusiveGroup.extension:Material.url">
       <path value="Extension.extension.extension.url"/>

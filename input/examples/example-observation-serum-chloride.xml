@@ -32,21 +32,16 @@
         <text value="Ion Selective Electrode (ISE)"/>
     </method>
     <preferredReportName value="chloride"/>
-    <quantitativeDetails>
-	    <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="mmol/L"/>
-            </coding>
-        </unit>
-        <customaryUnit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="g/L"/>
-            </coding>
-        </customaryUnit>
-        <decimalPrecision value="0"/>
-    </quantitativeDetails>
+    <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+        <display value="mmol/L"/>
+    </permittedUnit>
+    <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g/L"/>
+        <display value="g/L"/>
+    </permittedUnit>
     <qualifiedValue>
 	    <context>
             <coding>

@@ -25,12 +25,9 @@
     </code>
     <permittedDataType value="Quantity"/>
     <multipleResultsAllowed value="false"/>
-     <quantitativeDetails>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="{titer}"/>
-            </coding>
-        </unit>
-     </quantitativeDetails>
+     <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{titer}"/>
+        <display value="{titer}"/>
+    </permittedUnit>
 </ObservationDefinition>

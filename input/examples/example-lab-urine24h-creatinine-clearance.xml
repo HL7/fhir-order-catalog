@@ -30,7 +30,5 @@
             <display value="Creatinine renal clearance in 24 hour Urine and Serum or Plasma"/>
         </coding>
     </code>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
-    </observationResultRequirement>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-creatinine-renal-clearance"/>
 </ActivityDefinition>
