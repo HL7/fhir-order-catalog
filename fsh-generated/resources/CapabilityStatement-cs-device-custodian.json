@@ -8,26 +8,38 @@
   "status": "active",
   "experimental": false,
   "date": "2022-10-21",
-  "publisher": "HL7 International - Orders and Observations Work Group",
+  "publisher": "HL7 International / Orders and Observations",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/orders"
+          "value": "http://www.hl7.org/Special/committees/orders"
         }
       ]
     }
   ],
   "description": "This Section describes the expected capabilities of the Custodian of a catalog of medical devices. This role is responsible for providing responses to the queries submitted by the catalog consumers. \n\nThe DeviceDefinition Resource is the focal Resource describing a model of device in the catalog.",
-  "jurisdiction": [
+  "extension": [
     {
-      "coding": [
-        {
-          "code": "001",
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
-        }
-      ]
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "code": "jurisdiction",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "001",
+            "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+          }
+        ]
+      }
     }
   ],
   "kind": "requirements",

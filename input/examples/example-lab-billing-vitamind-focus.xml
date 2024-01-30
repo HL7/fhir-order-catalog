@@ -104,7 +104,7 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="443731004"/>
-                <display value="Assessment using falls risk assessment score for the elderly (procedure)"/>
+                <display value="Assessment using Falls Risk Assessment Scale for the Elderly (procedure)"/>
             </coding>
             <text value="évaluation et prise en charge des personnes âgées sujettes aux chutes répétées"/>
         </valueCodeableConcept>

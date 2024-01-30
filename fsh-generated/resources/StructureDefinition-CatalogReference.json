@@ -3,8 +3,8 @@
   "id": "CatalogReference",
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-      "valueCode": "can-bind"
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
     }
   ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference",
@@ -13,26 +13,32 @@
   "title": "Reference to a catalog",
   "status": "draft",
   "date": "2022-03-17T12:16:22+01:00",
-  "publisher": "HL7 International - Orders and Observations Work Group",
+  "publisher": "HL7 International / Orders and Observations",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/orders"
+          "value": "http://www.hl7.org/Special/committees/orders"
         }
       ]
     }
   ],
   "description": "This extension to PlanDefinition, MedicationKnowledge and DeviceDefinition conveys the reference to a catalog containing the extended resource",
-  "jurisdiction": [
+  "useContext": [
     {
-      "coding": [
-        {
-          "code": "001",
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
-        }
-      ]
+      "code": {
+        "code": "jurisdiction",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "001",
+            "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+          }
+        ]
+      }
     }
   ],
   "fhirVersion": "5.0.0",

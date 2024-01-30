@@ -26,6 +26,9 @@
 <artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
 <artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
 <artifact id="StructureDefinition/DrugPackage" key="StructureDefinition-DrugPackage" name="DrugPackage Profile"/>
+<artifact id="ClinicalUseDefinition/example-interaction-azoles" key="ClinicalUseDefinition-example-interaction-azoles" name="Example ClinicalUseDefinition - example-interaction-azoles"/>
+<artifact id="ClinicalUseDefinition/example-undesirable-effect-anemia" key="ClinicalUseDefinition-example-undesirable-effect-anemia" name="Example ClinicalUseDefinition - example-undesirable-effect-anemia"/>
+<artifact id="ClinicalUseDefinition/example-warning-drowsiness" key="ClinicalUseDefinition-example-warning-drowsiness" name="Example ClinicalUseDefinition - example-warning-drowsiness"/>
 <artifact id="ClinicalUseDefinition/example-bacterial-pharyngitis-indication" key="ClinicalUseDefinition-example-bacterial-pharyngitis-indication" name="Indication Acute Bacterial Pharyngitis"/>
 <artifact id="ClinicalUseDefinition/example-bacterial-sinusitis-indication" key="ClinicalUseDefinition-example-bacterial-sinusitis-indication" name="Indication Acute Bacterial Sinusitis"/>
 <artifact id="ClinicalUseDefinition/example-acute-otitis-media-indication" key="ClinicalUseDefinition-example-acute-otitis-media-indication" name="Indication Acute Otitis Media"/>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/clinicalusedefinition.xsd">
+  <id value="example-undesirable-effect-anemia"/>
+  <meta>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/UndesirableEffectDefinition"/>
+  </meta>
+  <language value="en-US"/>
+  <type value="undesirable-effect"/>
+  <!-- <description value="Example showing the use of an undesirable effect"/> -->
+  <undesirableEffect> 
+    <symptomConditionEffect> 
+      <concept> 
+        <coding> 
+          <system value="http://ema.europa.eu/example/undesirableeffectassymptom-condition-effect"/> 
+          <code value="Anaemia"/> 
+        </coding> 
+      </concept> 
+    </symptomConditionEffect> 
+    <classification> 
+      <coding> 
+        <system value="http://ema.europa.eu/example/symptom-condition-effectclassification"/> 
+        <code value="Blood-and-lymphatic-system-disorders"/> 
+      </coding> 
+    </classification> 
+    <frequencyOfOccurrence> 
+      <coding> 
+        <system value="http://ema.europa.eu/example/frequencyofoccurrence"/> 
+        <code value="Common"/> 
+      </coding> 
+    </frequencyOfOccurrence> 
+  </undesirableEffect>
+</ClinicalUseDefinition> 

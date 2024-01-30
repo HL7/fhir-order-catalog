@@ -6,7 +6,9 @@ Description: "This profile constrains the base resource MedicationKnowledge to r
 * ^version = "current"
 * ^status = #draft
 * ^date = "2022-03-04T15:57:00+01:00"
-* ^publisher = "HL7 International - Orders and Observations Work Group"
+* ^publisher = "HL7 International / Orders and Observations"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension.valueCode = #oo
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.org/Special/committees/orders"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001

@@ -1,32 +1,44 @@
 {
   "resourceType": "StructureDefinition",
   "id": "DrugPackage",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage",
   "version": "current",
   "name": "DrugPackage",
   "title": "definition of a packaging of a medication",
   "status": "draft",
   "date": "2022-06-10T11:57:00+01:00",
-  "publisher": "HL7 International - Orders and Observations Work Group",
+  "publisher": "HL7 International / Orders and Observations",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/orders"
+          "value": "http://www.hl7.org/Special/committees/orders"
         }
       ]
     }
   ],
   "description": "This profile constrains the base resource PackagedProductDefinition to represent a definition of a packaging in a catalog of medications.",
-  "jurisdiction": [
+  "useContext": [
     {
-      "coding": [
-        {
-          "code": "001",
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
-        }
-      ]
+      "code": {
+        "code": "jurisdiction",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "001",
+            "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+          }
+        ]
+      }
     }
   ],
   "fhirVersion": "5.0.0",

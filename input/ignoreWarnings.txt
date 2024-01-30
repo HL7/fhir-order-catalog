@@ -1,18 +1,4 @@
 == Suppressed Messages ==
 
-# The following code systems are external and not supported by terminology server
-Code System URI "http://www.codage.ext.cnamts.fr/codif/nabm" is unknown so the code cannot be validated
-Code System URI "http://tools.cofrac.fr/documentation/SH-REF-08" is unknown so the code cannot be validated
-Code System URI "http://www.ama-assn.org/go/cpt" is unknown so the code cannot be validated
-Code System URI "https://testdirectory.questdiagnostics.com/" is unknown so the code cannot be validated
-
-# Messages due to an improper invariant in the base resource ChargeItemDefinition
-cid-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-
-# Slicing information pointing data out of the defined slices. This is perfectly legit when the slicing is open.
-INFORMATION: PlanDefinition/example-lab-service-potassium-serum: PlanDefinition.action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
-INFORMATION: Bundle/example-lab-test-creation-transaction-request: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
-INFORMATION: Bundle/example-lab-test-creation-transaction-response: Bundle.entry[3].resource.ofType(PlanDefinition).action[0].code[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition
-
-# Undue warning about jira specification file appears to be out of date
-WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.
+# Deprecated items 
+Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

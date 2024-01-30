@@ -3,8 +3,9 @@
   "id": "DrugKnowledge",
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
-      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource",
+      "valueCode": "oo"
     }
   ],
   "url": "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugKnowledge",
@@ -13,7 +14,7 @@
   "title": "item in a catalog of drugs",
   "status": "draft",
   "date": "2022-03-04T15:57:00+01:00",
-  "publisher": "HL7 International - Orders and Observations Work Group",
+  "publisher": "HL7 International / Orders and Observations",
   "contact": [
     {
       "telecom": [

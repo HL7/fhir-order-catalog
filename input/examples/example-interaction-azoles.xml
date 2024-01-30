@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/clinicalusedefinition.xsd">
+  <id value="example-interaction-azoles"/>
+  <meta>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InteractionDefinition"/>
+  </meta>
+  <language value="en-US"/>
+  <type value="interaction"/>
+  <interaction> 
+    <interactant> 
+      <itemCodeableConcept> 
+        <coding> 
+          <system value="http://ema.europa.eu/example/interactant"/> 
+          <code value="alphaconazole"/> 
+        </coding> 
+      </itemCodeableConcept> 
+    </interactant> 
+    <interactant> 
+      <itemCodeableConcept> 
+        <coding> 
+          <system value="http://ema.europa.eu/example/interactant"/> 
+          <code value="betaconazole"/> 
+        </coding> 
+      </itemCodeableConcept> 
+    </interactant> 
+    <type> 
+      <coding> 
+        <system value="http://ema.europa.eu/example/interactionsType"/> 
+        <code value="Inhibitor"/> 
+      </coding> 
+    </type> 
+    <effect> 
+      <concept> 
+        <text value="Increased plasma concentration"/> 
+      </concept> 
+    </effect> 
+    <management> 
+      <text value="Careful monitoring of dose"/> 
+    </management> 
+  </interaction>
+</ClinicalUseDefinition> 

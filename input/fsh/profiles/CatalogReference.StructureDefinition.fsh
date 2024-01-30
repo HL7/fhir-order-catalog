@@ -7,10 +7,13 @@ Description: "This extension to PlanDefinition, MedicationKnowledge and DeviceDe
 * ^version = "current"
 * ^status = #draft
 * ^date = "2022-03-17T12:16:22+01:00"
-* ^publisher = "HL7 International - Orders and Observations Work Group"
+* ^publisher = "HL7 International / Orders and Observations"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension.valueCode = #oo
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/orders"
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* ^contact.telecom.value = "http://www.hl7.org/Special/committees/orders"
+* ^useContext.code = http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction
+* ^useContext.valueCodeableConcept = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * ^context[0].type = #element
 * ^context[=].expression = "PlanDefinition"
 * ^context[+].type = #element

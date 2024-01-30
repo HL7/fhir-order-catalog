@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/clinicalusedefinition.xsd">
+  <id value="example-warning-drowsiness"/>
+  <meta>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/WarningDefinition"/>
+  </meta>
+  <language value="en-US"/>
+  <type value="warning"/>
+  <!-- <description value="Example showing the use of a warning"/> -->
+  <warning> 
+    <description value="May cause drowsiness. Avoid driving or operating heavy machinery."/> 
+  </warning>
+</ClinicalUseDefinition> 

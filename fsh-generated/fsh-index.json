@@ -1,0 +1,114 @@
+[
+  {
+    "outputFile": "CapabilityStatement-cs-device-custodian.json",
+    "fshName": "cs-device-custodian",
+    "fshType": "Instance",
+    "fshFile": "cs-device-custodian.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
+    "outputFile": "CapabilityStatement-cs-drug-custodian.json",
+    "fshName": "cs-drug-custodian",
+    "fshType": "Instance",
+    "fshFile": "cs-drug-custodian.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "CapabilityStatement-cs-lab-service-custodian.json",
+    "fshName": "cs-lab-service-custodian",
+    "fshType": "Instance",
+    "fshFile": "cs-lab-service-custodian.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Composition-example-device-catalog-header.json",
+    "fshName": "example-device-catalog-header",
+    "fshType": "Instance",
+    "fshFile": "examples/example-device-catalog-header.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Composition-example-medication-catalog-header.json",
+    "fshName": "example-medication-catalog-header",
+    "fshType": "Instance",
+    "fshFile": "examples/example-medication-catalog-header.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "DeviceDefinition-example-devicemodel-breast-pump.json",
+    "fshName": "example-devicemodel-breast-pump",
+    "fshType": "Instance",
+    "fshFile": "examples/example-devicemodel-breast-pump.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "DeviceDefinition-example-devicemodel-interbody-fusion-system.json",
+    "fshName": "example-devicemodel-interbody-fusion-system",
+    "fshType": "Instance",
+    "fshFile": "examples/example-devicemodel-interbody-fusion-system.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
+    "outputFile": "DeviceDefinition-example-devicemodel-presthetics-accessories.json",
+    "fshName": "example-devicemodel-presthetics-accessories",
+    "fshType": "Instance",
+    "fshFile": "examples/example-devicemodel-presthetic-accessories.fsh",
+    "startLine": 1,
+    "endLine": 58
+  },
+  {
+    "outputFile": "MedicationKnowledge-example-drug-clarithromycin-25mg-granule-suspension.json",
+    "fshName": "example-drug-clarithromycin-25mg-granule-suspension",
+    "fshType": "Instance",
+    "fshFile": "examples/example-drug-clarithromycin-25mg-granule-suspension.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
+    "outputFile": "PackagedProductDefinition-example-drug-package-clarithromycin.json",
+    "fshName": "example-drug-package-clarithromycin",
+    "fshType": "Instance",
+    "fshFile": "examples/example-drug-package-clarithromycin.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-CatalogReference.json",
+    "fshName": "CatalogReference",
+    "fshType": "Extension",
+    "fshFile": "profiles/CatalogReference.StructureDefinition.fsh",
+    "startLine": 3,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-DeviceModel.json",
+    "fshName": "DeviceModel",
+    "fshType": "Profile",
+    "fshFile": "profiles/DeviceModel.StructureDefinition.fsh",
+    "startLine": 1,
+    "endLine": 70
+  },
+  {
+    "outputFile": "StructureDefinition-DrugKnowledge.json",
+    "fshName": "DrugKnowledge",
+    "fshType": "Profile",
+    "fshFile": "profiles/DrugKnowledge.StructureDefinition.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-DrugPackage.json",
+    "fshName": "DrugPackage",
+    "fshType": "Profile",
+    "fshFile": "profiles/DrugPackage.StructureDefinition.fsh",
+    "startLine": 1,
+    "endLine": 17
+  }
+]

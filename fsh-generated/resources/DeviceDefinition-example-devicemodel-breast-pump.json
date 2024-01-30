@@ -6,6 +6,30 @@
       "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DeviceModel"
     ]
   },
+  "classification": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/GMDN",
+            "code": "0400007",
+            "display": "Breast pump, electric"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "272201008",
+            "display": "Electric breast pump"
+          }
+        ]
+      }
+    }
+  ],
   "language": "en-US",
   "extension": [
     {
@@ -40,30 +64,6 @@
     }
   ],
   "modelNumber": "SCF332",
-  "classification": [
-    {
-      "type": {
-        "text": "Breast pump, electric"
-      },
-      "justification": [
-        {
-          "type": "citation",
-          "citation": "A mains electricity (AC-powered) device used to extract milk from the breast, typically for collecting and feeding to an infant. The device produces a continuous low-grade suction through a funnel-like component that is applied to the breast; the milk collects in an attached vessel (e.g., a sterilized bottle). The device may have a safety mechanism to prevent a potentially harmful increase in negative pressure."
-        }
-      ]
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "code": "272201008",
-            "system": "http://snomed.info/sct",
-            "display": "Electric breast pump"
-          }
-        ]
-      }
-    }
-  ],
   "languageCode": [
     {
       "coding": [
