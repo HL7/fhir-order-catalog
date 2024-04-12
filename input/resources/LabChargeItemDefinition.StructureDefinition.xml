@@ -82,11 +82,11 @@
     </element>
     <element id="ChargeItemDefinition.useContext:ClinicalFocus.code.system">
       <path value="ChargeItemDefinition.useContext.code.system" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
     </element>
     <element id="ChargeItemDefinition.useContext:ClinicalFocus.code.code">
       <path value="ChargeItemDefinition.useContext.code.code" />
-      <fixedCode value="focus" />
+      <patternCode value="focus" />
     </element>
     <element id="ChargeItemDefinition.useContext:ClinicalFocus.value[x]">
       <path value="ChargeItemDefinition.useContext.value[x]" />

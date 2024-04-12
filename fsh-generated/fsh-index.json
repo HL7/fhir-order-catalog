@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/DeviceModel.StructureDefinition.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-DrugKnowledge.json",
@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/DrugKnowledge.StructureDefinition.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-DrugPackage.json",

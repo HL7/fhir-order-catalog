@@ -11,8 +11,6 @@ Description: "This profile constrains the base resource DeviceDefinition to repr
 * ^extension.valueCode = #oo
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/orders"
-* ^useContext.code = http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction
-* ^useContext.valueCodeableConcept = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * extension contains CatalogReference named CatalogReference 0..*
 * description MS
 * identifier MS

@@ -5,7 +5,7 @@
     <valueCode value="oo"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="1.0.0"/>
+  <version value="2.0.0"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>

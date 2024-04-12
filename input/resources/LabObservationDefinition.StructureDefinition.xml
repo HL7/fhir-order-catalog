@@ -51,7 +51,7 @@
     </element>
     <element id="ObservationDefinition.code.coding:LOINC.system">
       <path value="ObservationDefinition.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
+      <patternUri value="http://loinc.org" />
     </element>
     <element id="ObservationDefinition.permittedDataType">
       <path value="ObservationDefinition.permittedDataType" />

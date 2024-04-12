@@ -25,34 +25,8 @@
     }
   ],
   "description": "This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices",
-  "useContext": [
-    {
-      "code": {
-        "code": "jurisdiction",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "001",
-            "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
-          }
-        ]
-      }
-    }
-  ],
   "fhirVersion": "5.0.0",
   "mapping": [
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
     {
       "identity": "devicedefinition-to-eudamed",
       "name": "Europe Union EUDAMED",

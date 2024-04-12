@@ -43,7 +43,7 @@
       <path value="Bundle.type" />
       <definition value="This transaction Bundle is to convey the response to a transaction request to create/update/delete/patch content of  a catalog, from the Catalog Owner to the Catalog Custodian" />
       <comment value="This transaction Bundle is usable with any kind of catalog (laboratory compendium, drug formulary, order sets, devices ...)" />
-      <fixedCode value="transaction-response" />
+      <patternCode value="transaction-response" />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />

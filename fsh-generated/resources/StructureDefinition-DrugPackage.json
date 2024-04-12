@@ -42,23 +42,6 @@
     }
   ],
   "fhirVersion": "5.0.0",
-  "mapping": [
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "idmp",
-      "uri": "https://www.iso.org/obp/ui/#iso:std:iso:11615",
-      "name": "IDMP Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "PackagedProductDefinition",

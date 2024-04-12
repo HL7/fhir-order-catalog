@@ -7,7 +7,7 @@
     <type value="transaction"/>
     <entry>
         <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e001" />
-        <resource>
+        <resource> 
             <SpecimenDefinition>
                 <id value="QDXFMSpec3" />
                 <meta>
@@ -344,8 +344,8 @@
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://www.ama-assn.org/go/cpt" />
-                            <code value="CPTfakecode" />
-                            <display value="Potassium, serum" />
+                            <code value="84132"/>
+                            <display value="Potassium, Serum"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>

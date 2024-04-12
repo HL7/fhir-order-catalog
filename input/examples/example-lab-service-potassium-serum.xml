@@ -31,8 +31,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://www.ama-assn.org/go/cpt"/>
-                <code value="CPTfakecode"/>
-                <display value="Potassium, serum"/>
+                <code value="84132"/>
+                <display value="Potassium"/>
             </coding>
         </valueCodeableConcept>
     </extension>

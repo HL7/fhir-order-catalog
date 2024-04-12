@@ -349,7 +349,7 @@
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.type">
       <path value="PlanDefinition.relatedArtifact.type" />
-      <fixedCode value="depends-on" />
+      <patternCode value="depends-on" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.label">
       <path value="PlanDefinition.relatedArtifact.label" />
@@ -389,7 +389,7 @@
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.type">
       <path value="PlanDefinition.relatedArtifact.type" />
       <definition value="The type of relationship to the related artifact is successor, meaning that the related artifact is in this case another instance of PlanDefinition representing the laboratory service, which is substituted to the current instance." />
-      <fixedCode value="successor" />
+      <patternCode value="successor" />
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.resource">
       <path value="PlanDefinition.relatedArtifact.resource" />
@@ -409,7 +409,7 @@
     <element id="PlanDefinition.relatedArtifact:Includes.type">
       <path value="PlanDefinition.relatedArtifact.type" />
       <definition value="The type of relationship to the related artifact is composed-of, meaning that the related artifact is another standalone laboratory service, which is also included as a sub-service of the current one." />
-      <fixedCode value="composed-of" />
+      <patternCode value="composed-of" />
     </element>
     <element id="PlanDefinition.relatedArtifact:Includes.resource">
       <path value="PlanDefinition.relatedArtifact.resource" />
@@ -502,7 +502,7 @@
       <path value="PlanDefinition.action.code.coding.system" />
       <label value="LOINC" />
       <short value="LOINC code system" />
-      <fixedUri value="http://loinc.org" />
+      <patternUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.action.trigger">
@@ -525,7 +525,7 @@
     </element>
     <element id="PlanDefinition.action.trigger:Reflex.type">
       <path value="PlanDefinition.action.trigger.type" />
-      <fixedCode value="named-event" />
+      <patternCode value="named-event" />
     </element>
     <element id="PlanDefinition.action.trigger:Reflex.name">
       <path value="PlanDefinition.action.trigger.name" />
@@ -534,7 +534,7 @@
     </element>
     <element id="PlanDefinition.action.groupingBehavior">
       <path value="PlanDefinition.action.groupingBehavior" />
-      <fixedCode value="logical-group" />
+      <patternCode value="logical-group" />
     </element>
     <element id="PlanDefinition.action.definition[x]">
       <path value="PlanDefinition.action.definition[x]" />

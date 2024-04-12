@@ -6,8 +6,8 @@
     </meta>
     <type value="transaction-response" />
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3" />
-        <resource>
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXSpec3" />
+        <resource> 
             <SpecimenDefinition>
                 <id value="QDXSpec3" />
                 <meta>
@@ -132,7 +132,7 @@
         </resource>
         <response>
             <status value="Created" />
-            <location value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3/_history/1" />
+            <location value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXSpec3/_history/1" />
             <etag value="W/&quot;1&quot;" />
         </response>
     </entry>
@@ -355,8 +355,8 @@
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://www.ama-assn.org/go/cpt" />
-                            <code value="CPTfakecode" />
-                            <display value="Potassium, serum" />
+                            <code value="84132"/>
+                            <display value="Potassium, Serum"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -444,7 +444,7 @@
                         <extension url="ExclusiveGroup">
                             <extension url="Material">
                                 <valueReference>
-                                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3"/>
+                                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXSpec3"/>
                                 </valueReference> 
                             </extension>
                         </extension>

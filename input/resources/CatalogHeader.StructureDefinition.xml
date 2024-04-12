@@ -80,7 +80,7 @@
     <element id="Composition.type.text">
       <path value="Composition.type.text" />
       <min value="1" />
-      <fixedString value="Catalog" />
+      <patternString value="Catalog" />
     </element>
     <element id="Composition.category">
       <path value="Composition.category" />
