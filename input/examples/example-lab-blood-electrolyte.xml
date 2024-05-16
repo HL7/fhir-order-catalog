@@ -2,10 +2,11 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/activitydefinition.xsd"> 
     <id value="example-lab-blood-electrolyte"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog/StructureDefinition/LabProcedureDefinition|2.0.0"/>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition|2.0.0"/>
     </meta>
     <language value="en-US"/>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
+    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-blood-electrolyte"/>
+        
      <name value="BloodElectrolyteProcedure"/>
     <title value="Procedure - blood electrolyte (serum or plasma)"/>
     <status value="draft"/>
@@ -42,7 +43,7 @@
         <reference value="SpecimenDefinition/example-specimen-serum-plasma"/>
     </specimenRequirement>
     -->
-    <observationRequirement value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog/ObservationDefinition/example-input-observation-reason-for-ordering"/>
+    <observationRequirement value="ObservationDefinition/example-input-observation-reason-for-ordering"/>
     <observationResultRequirement value="ObservationDefinition/example-observation-serum-sodium"/>
     <observationResultRequirement value="ObservationDefinition/example-observation-serum-potassium"/>
     <observationResultRequirement value="ObservationDefinition/example-observation-serum-chloride"/>
