@@ -30,7 +30,7 @@
   -->
   <fhirVersion value="5.0.0"/>
   <definition>
-    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+    <!-- You don't need to define any groupings.  The IG Publisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
 	<grouping id="commonP">
 	  <name value="Common profiles"/>
@@ -160,7 +160,7 @@
         <reference value="StructureDefinition/ValidityPeriod"/>
       </reference>
       <name value="ValidityPeriod Extension"/>
-      <description value="Extension adding catalog validity period to the CatalogHeader profile of Composition"/>
+      <description value="Extension adding validity period to the Composition (for use in the Catalog and CatalogHeader profiles)"/>
 	  <groupingId value="commonP"/>
     </resource>
     <resource>
@@ -230,6 +230,14 @@
     <!--
       Below, the profiles
     -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Catalog"/>
+      </reference>
+      <name value="Catalog Profile"/>
+      <description value="Profile of Composition for a catalog of healthcare items (products, services, knowledge artifacts)"/>
+	  <groupingId value="commonP"/>
+    </resource>	
     <resource>
       <reference>
         <reference value="StructureDefinition/CatalogHeader"/>

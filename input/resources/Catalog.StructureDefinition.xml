@@ -1,70 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="catalog"/>
   <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">to do</div>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Composition resource to
+      represent a catalog of healthcare products/services/knowledge artefacts. The
+      resource provides the global metadata of the catalog, such as the custodian, category,
+      validity period and title, plus the references to the definitional resources
+      representing the items belonging to this catalog.</div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="oo"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
-  </extension>
-  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/catalog"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1175"/>
-  </identifier>
-  <version value="6.0.0"/>
-  <name value="ProfileForCatalog"/>
-  <title value="Profile for Catalog"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2014-01-31"/>
-  <publisher value="HL7 Orders &amp; Observations WG"/>
+  <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/Catalog" />
+  <version value="0.0.1" />
+  <name value="Catalog" />
+  <title value="Catalog" />
+  <status value="draft" />
+  <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>
-      <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+      <system value="url" />
+      <value value="http://hl7.org/Special/committees/orders/index.cfm" />
     </telecom>
   </contact>
-  <description value="A set of resources composed into a single coherent clinical statement with clinical attestation"/>
-  <fhirVersion value="6.0.0"/>
+  <description value="This profile of Composition retains the elements and extensions needed to characterize a catalog of healthare products / services / knowledge artefacts, with a set of general properties (name, category, owner, ...)" />
+  <purpose value="An instance of Composition conforming to this profile represents the general properties of a specific catalog of healthcare items (services/products/knowledge artefacts).&#xD;&#xA;Such a resource is referenced by the resources representing the individual items of the catalog." />
   <mapping>
-    <identity value="workflow"/>
-    <uri value="http://hl7.org/fhir/workflow"/>
-    <name value="Workflow Pattern"/>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
   </mapping>
   <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
   </mapping>
   <mapping>
-    <identity value="cda"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
   </mapping>
   <mapping>
-    <identity value="fhirdocumentreference"/>
-    <uri value="http://hl7.org/fhir/documentreference"/>
-    <name value="FHIR DocumentReference"/>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
   </mapping>
   <mapping>
-    <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/fivews"/>
-    <name value="FiveWs Pattern Mapping"/>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
   </mapping>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Composition"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
-  <derivation value="constraint"/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
   <differential>
     <element id="Composition">
       <path value="Composition"/>

@@ -182,11 +182,11 @@
   <ol>
     <li>The catalog references its items from its Composition.section.entry elements. This method
       constrains the Composition resource with the <a
-        href="StructureDefinition-Catalog.html">Catalog profile</a>, which is part of
-      the base standard.</li>
+        href="StructureDefinition-Catalog.html">Catalog profile</a>.</li>
     <li>Each definitional resource representing an item references the Composition resource. The
       Composition resource in this case acts as the header of the catalog. This method constrains
-      the Composition resource with the CatalogHeader profile. </li>
+      the Composition resource with the <a
+      href="StructureDefinition-CatalogHeader.html">CatalogHeader profile</a>. </li>
   </ol>
   <img src="CatalogBindings.png" alt="Methods for binding catalogs and their items" width="600px"/>
   <p> The catalog custodian may support both methods. It is recommended to choose one method for a
