@@ -54,16 +54,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Composition.extension">
-      <path value="Composition.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Composition.extension:ValidityPeriod">
       <path value="Composition.extension" />
       <sliceName value="ValidityPeriod" />
