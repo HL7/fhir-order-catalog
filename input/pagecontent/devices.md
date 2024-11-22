@@ -6,7 +6,7 @@ The figure below shows the resources and profiles used to represent catalogs of 
 
 {% include img.html img="DeviceCatalog.png" caption="Figure 9.1: Artifacts used in catalogs of devices" width="70%" %}
 
-When method 1 is chosen by the custodian of the catalog of devices, the catalog references its items: the [Composition](http://hl7.org/fhir/composition.html) resource constrained by the [Catalog](http://hl7.org/fhir/composition-catalog.html) profile to represent the whole catalog, references the items of this catalog from its `Composition.section.entry` elements.
+When method 1 is chosen by the custodian of the catalog of devices, the catalog references its items: the [Composition](http://hl7.org/fhir/composition.html) resource constrained by the [Catalog](StructureDefinition-Catalog.html) profile to represent the whole catalog, references the items of this catalog from its `Composition.section.entry` elements.
 
 When method 2 is chosen instead, the catalog is referenced by its items: Each [DeviceDefinition](http://hl7.org/fhir/devicedefinition.html) resource constrained by the [DeviceModel](StructureDefinition-DeviceModel.html) profile 	and representing an item of the catalog, references the [Composition](http://hl7.org/fhir/composition.html) resource constrained by the [CatalogHeader](StructureDefinition-CatalogHeader.html) profile to represent the catalog header, which holds the catalog general properties.
 

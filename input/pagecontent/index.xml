@@ -182,7 +182,7 @@
   <ol>
     <li>The catalog references its items from its Composition.section.entry elements. This method
       constrains the Composition resource with the <a
-        href="http://hl7.org/fhir/composition-catalog.html">Catalog profile</a>, which is part of
+        href="StructureDefinition-Catalog.html">Catalog profile</a>, which is part of
       the base standard.</li>
     <li>Each definitional resource representing an item references the Composition resource. The
       Composition resource in this case acts as the header of the catalog. This method constrains

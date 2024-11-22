@@ -10,7 +10,7 @@
   <img src="MedicationCatalog.png" alt="Resources used by a catalog or formulary of medications" width="1000px"/>
     <p>When method 1 is chosen by the custodian of the catalog of medications, the catalog
     references its items: the <a href="http://hl7.org/fhir/composition.html">Composition</a>
-    resource constrained by the <a href="http://hl7.org/fhir/composition-catalog.html"> Catalog</a>
+    resource constrained by the <a href="StructureDefinition-Catalog.html"> Catalog</a>
     profile to represent the whole catalog, references the items of this catalog from its Composition.section.entry elements.
   </p>
   <p>When method 2 is chosen instead, the catalog is referenced by its items: Each MedicationKnowledge
