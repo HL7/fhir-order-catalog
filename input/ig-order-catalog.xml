@@ -1220,7 +1220,6 @@
         <generation value="html"/>
       </page>
     </page>
-<!--FM 20220920 when shifting to 5.0.0-ballot: These parameters do not exist in the value set, but they are still checked by the publisher. -->
     <parameter>
 	  <code>
 		<code value="copyrightyear"/>

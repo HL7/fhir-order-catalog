@@ -27,8 +27,8 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 2. Europe Union EUDAMED: https://ec.europa.eu/health/medical-devices-sector_en"
 * udiDeviceIdentifier.marketDistribution MS
 * partNumber MS
-* manufacturer MS				// for 5.0 snapshot-2 and ballot 
-//* manufacturer[x] MS			// for 5.0 snapshot-1
+* manufacturer MS				// for 5.0.0 
+//* manufacturer[x] MS			// for 5.0.0
 * deviceName MS
 * modelNumber MS
 * classification ^slicing.discriminator.type = #pattern

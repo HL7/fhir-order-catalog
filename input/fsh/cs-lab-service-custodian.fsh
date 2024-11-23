@@ -14,7 +14,7 @@ Usage: #definition
 * description = "This Section describes the expected capabilities of the Custodian of a catalog of laboratory in vitro diagnostic services. This role is responsible for providing responses to the queries submitted by the catalog consumers. \n\nThe PlanDefinition Resource is the focal Resource for describing a laboratory in vitro diagnostic service in the catalog."
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * kind = #requirements
-* fhirVersion = #5.0.0-ballot
+* fhirVersion = #5.0.0
 * format[0] = #xml
 * format[+] = #json
 * implementationGuide = "http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"

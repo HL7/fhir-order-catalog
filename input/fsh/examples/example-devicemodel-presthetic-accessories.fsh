@@ -15,8 +15,8 @@ Usage: #example
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2019-05-05"
 * udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 * partNumber = "P0-3.75,5"
-* manufacturer.display = "A.B. DENTAL DEVICES LTD"				// for 5.0 snapshot-2 and ballot
-//* manufacturerString = "A.B. DENTAL DEVICES LTD"				// for 5.0 snapshot-1
+* manufacturer.display = "A.B. DENTAL DEVICES LTD"				// for 5.0.0
+//* manufacturerString = "A.B. DENTAL DEVICES LTD"				// for 5.0.0
 * deviceName.name = "Presthetic Accessories"
 * deviceName.type = #registered-name
 * modelNumber = "P0-3.75,5"

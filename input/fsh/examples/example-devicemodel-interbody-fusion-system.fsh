@@ -19,8 +19,8 @@ Usage: #example
 * udiDeviceIdentifier.marketDistribution[0].marketPeriod.start = "2017-08-22"
 * udiDeviceIdentifier.marketDistribution[0].subJurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 // no catalog number in the GUDID for this device
-* manufacturer.display = "Altus Spine, LLC"				// for 5.0 snapshot-2 and ballot
-//* manufacturerString = "Altus Spine, LLC"				// for 5.0 snapshot-1
+* manufacturer.display = "Altus Spine, LLC"				// for 5.0.0
+//* manufacturerString = "Altus Spine, LLC"				// for 5.0.0
 * deviceName.name = "Imola Interbody Fusion System"
 * deviceName.type = #registered-name
 * modelNumber = "F12260-12"

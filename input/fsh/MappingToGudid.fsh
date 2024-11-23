@@ -18,8 +18,8 @@ Description: "maps DeviceDefinition elements to AccessGUDID section titles and f
 * udiDeviceIdentifier.marketDistribution.marketPeriod.end  -> "Commercial Distribution End Date"
 * udiDeviceIdentifier.marketDistribution.subJurisdiction -> "urn:oid:2.16.840.1.113883.3.150"
 * partNumber -> "Catalog Number"
-//* manufacturer[x] -> "Company Name"			// for 5.0 snapshot-1
-* manufacturer -> "Company Name"				// for 5.0 snapshot-2 and ballot
+//* manufacturer[x] -> "Company Name"			// for 5.0.0
+* manufacturer -> "Company Name"				// for 5.0.0
 * deviceName.name -> "Brand Name"
 * deviceName.type -> "[registered-name]"
 * modelNumber -> "Version or Model"
