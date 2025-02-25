@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig-uv-order-catalog"/>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="current"/>
+  <version value="1.0.0-ballot"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>
@@ -25,9 +25,6 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.order-catalog"/>
-  <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') 
-    <fhirVersion value="5.0.0-cibuild"/>
-  -->
   <fhirVersion value="5.0.0"/>
   <definition>
     <!-- You don't need to define any groupings.  The IG Publisher will define them for you.  You only need to do so if your IG is 'special' and it's
