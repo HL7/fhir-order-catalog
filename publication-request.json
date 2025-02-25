@@ -1,0 +1,9 @@
+{
+  "package-id" : "hl7.fhir.uv.order-catalog",
+  "version" : "1.0.0-ballot",
+  "path" : "http://hl7.org/fhir/uv/order-catalog/2025Jan",
+  "mode" : "milestone",
+  "status" : "draft",
+  "sequence" : "STU 2",
+  "desc" : "This publication is a 1.0.0 STU release."
+}
