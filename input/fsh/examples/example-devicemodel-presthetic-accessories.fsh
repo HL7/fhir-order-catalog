@@ -38,7 +38,7 @@ Usage: #example
 * packaging[0].packaging[0].udiDeviceIdentifier[0].issuer = "urn:oid:2.51.1.1"
 * packaging[0].packaging[0].udiDeviceIdentifier[0].jurisdiction = "urn:oid:2.16.840.1.113883.3.150"
 * safety[0].coding[0] = $NCIthesaurus#C113844 "Labeling does not Contain MRI Safety Information"	
-* languageCode = $LanguageIso#en-US "American English"  
+* languageCode = $LanguageIso#en-US "English (United States)"  
 * property[0].type.text = "For single use"
 * property[0].valueBoolean = true
 * property[1].type.text = "Prescription use"

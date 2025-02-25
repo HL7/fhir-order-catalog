@@ -28,7 +28,7 @@ Usage: #example
 * classification[1].type = $SCT#257275005 "Spinal cage"
 * classification[2].type = $EMDN#P090701 "Spinal fusion systems"
 * safety[0].coding[0] = $NCIthesaurus#C113844 "Labeling does not Contain MRI Safety Information"
-* languageCode = $LanguageIso#en-US "American English"  
+* languageCode = $LanguageIso#en-US "English (United States)"  
 * property[0].type.text = "For single use"
 * property[0].valueBoolean = true
 * property[1].type.text = "Prescription use"
