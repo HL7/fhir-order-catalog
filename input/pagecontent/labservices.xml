@@ -319,7 +319,7 @@
   <p> Lists the laboratory services from catalog of id a1, which embed laboratory service of id
     s123. The anwser Bundle contains one entry with a PlanDefinition resource for each service found
     with a relatedArtifact.where(type='composed-of').PlanDefinition/s123.</p>
-  <a name="LabServicesOfOneTopicWithinOneCatalog"> </a>
+  <a name="LabServicesRetrieveAllDetails"> </a>
   <h5>Retrieve all details for a laboratory service</h5>
   <pre>GET [base]/PlanDefinition?_id=s123&amp;_include:iterate=*</pre>
   <p> Obtains the full content of PlanDefinition of id s123, accompanied with all resources
