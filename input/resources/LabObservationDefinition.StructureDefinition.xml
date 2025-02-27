@@ -61,19 +61,12 @@
       <path value="ObservationDefinition.multipleResultsAllowed" />
       <mustSupport value="true" />
     </element>
-    <element id="ObservationDefinition.quantitativeDetails">
-      <path value="ObservationDefinition.quantitativeDetails" />
+    <element id="ObservationDefinition.permittedUnit">
+      <path value="ObservationDefinition.permittedUnit" />
       <mustSupport value="true" />
     </element>
-    <element id="ObservationDefinition.quantitativeDetails.unit">
-      <path value="ObservationDefinition.quantitativeDetails.unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ObservationDefinition.quantitativeDetails.unit.coding">
-      <path value="ObservationDefinition.quantitativeDetails.unit.coding" />
-    </element>
-    <element id="ObservationDefinition.quantitativeDetails.unit.coding.system">
-      <path value="ObservationDefinition.quantitativeDetails.unit.coding.system" />
+    <element id="ObservationDefinition.permittedUnit.system">
+      <path value="ObservationDefinition.permittedUnit.system" />
       <fixedUri value="http://unitsofmeasure.org" />
     </element>
   </differential>

@@ -40,13 +40,8 @@
     <permittedDataType value="string"/>
     <multipleResultsAllowed value="false"/>
     <preferredReportName value="Vitamine D"/>
-    <quantitativeDetails>
-        <unit>
-            <coding>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="pmol/L"/>
-            </coding>
-        </unit>
-        <decimalPrecision value="0"/>
-    </quantitativeDetails>
+    <permittedUnit>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="pmol/L"/>
+    </permittedUnit>
 </ObservationDefinition>
