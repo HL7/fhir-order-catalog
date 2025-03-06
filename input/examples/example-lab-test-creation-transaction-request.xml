@@ -170,17 +170,13 @@
                     <text value="Ion Selective Electrode (ISE)" />
                 </method>
                 <preferredReportName value="Potassium" />
-               <permittedUnit>
-                    <coding>
-                        <system value="http://unitsofmeasure.org" />
-                        <code value="mmol/L" />
-                    </coding>
+                <permittedUnit>
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="mmol/L" />
                 </permittedUnit>
-               <permittedUnit>
-                    <coding>
-                        <system value="http://unitsofmeasure.org" />
-                        <code value="g/L" />
-                    </coding>
+                <permittedUnit>
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="g/L" />
                 </permittedUnit>
                 <qualifiedValue>
                     <context>
