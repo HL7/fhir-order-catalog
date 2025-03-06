@@ -36,19 +36,9 @@
         <reference value="SpecimenDefinition/example-specimen-urine-24h"/>
     </specimenRequirement>
     -->
-    <observationRequirement>
-        <reference value="ObservationDefinition/example-observation-collection-duration"/>
-    </observationRequirement>
-    <observationRequirement>
-        <reference value="ObservationDefinition/example-observation-collection-volume"/>
-    </observationRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-collection-duration"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-collection-volume"/>
-    </observationResultRequirement>
-    <observationResultRequirement>
-        <reference value="ObservationDefinition/example-observation-urine24h-creatinine"/>
-    </observationResultRequirement>
+    <observationRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-collection-duration"/>
+    <observationRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-collection-volume"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-collection-duration"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-collection-volume"/>
+    <observationResultRequirement value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-urine24h-creatinine"/>
 </ActivityDefinition>
