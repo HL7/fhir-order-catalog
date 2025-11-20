@@ -43,6 +43,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
+      <min value="1"/>
     </element>
     <element id="Extension.extension:ExclusiveGroup">
       <path value="Extension.extension"/>
@@ -62,6 +63,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
+      <min value="1"/>
     </element>
     <element id="Extension.extension:ExclusiveGroup.extension:Material">
       <path value="Extension.extension.extension"/>

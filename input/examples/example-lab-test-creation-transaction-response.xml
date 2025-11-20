@@ -6,7 +6,7 @@
     </meta>
     <type value="transaction-response" />
     <entry>
-        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3" />
+        <fullUrl value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXSpec3" />
         <resource>
             <SpecimenDefinition>
                 <id value="QDXSpec3" />
@@ -352,7 +352,7 @@
                 <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="http://www.ama-assn.org/go/cpt" />
+                            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt"/>
                             <code value="CPTfakecode" />
                             <display value="Potassium, serum" />
                         </coding>
@@ -442,7 +442,7 @@
                         <extension url="ExclusiveGroup">
                             <extension url="Material">
                                 <valueReference>
-                                    <reference value="https://jade.phast.fr/resources-server/api/FHIR/SpecimenDefinition/QDXFMSpec3"/>
+                                    <reference value="SpecimenDefinition/QDXSpec3"/>
                                 </valueReference> 
                             </extension>
                         </extension>

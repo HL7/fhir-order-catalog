@@ -1,0 +1,21 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "example-cpt",
+    "url": "http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt",
+    "version": "1.0.0",
+    "name": "ExampleCPT",
+    "title": "Example CPT Codes",
+    "status": "active",
+    "experimental": true,
+    "date": "2025-11-20",
+    "publisher": "HL7 International",
+    "description": "Example CodeSystem for fake CPT codes used in examples",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "CPTfakecode",
+            "display": "Potassium, serum"
+        }
+    ]
+}
