@@ -20,7 +20,6 @@
             <p>Unité de mesure : pmol/L (http://unitsofmeasure.org)</p>
         </div>
     </text>
-	<url value="http://hl7.org/fhir/uv/order-catalog/ObservationDefinition/example-observation-vitamin-d"/>
 	<status value="active"/>
     <category>
         <coding>

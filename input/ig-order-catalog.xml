@@ -1336,12 +1336,6 @@
     </parameter>
     <parameter>
       <code>
-        <code value="find-other-resources"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
         <code value="show-inherited-invariants"/>
       </code>
       <value value="false"/>

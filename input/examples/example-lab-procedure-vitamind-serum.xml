@@ -14,7 +14,6 @@
             <p>Résultat en sortie : ObservationDefinition/example-observation-vitamin-d</p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-vitamind-serum"/>
     <name value="VitaminDProcedure"/>
     <title value="Procédure - dosage vitamine D - sang"/>
     <status value="draft"/>

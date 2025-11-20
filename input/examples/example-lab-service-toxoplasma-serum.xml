@@ -36,7 +36,6 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-toxoplasma-serum"/>
     <name value="Toxoplasmagondii"/>
     <title value="laboratory service - Toxoplasma gondii Ab panel on serum"/> 
     <type>

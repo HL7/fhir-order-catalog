@@ -24,7 +24,6 @@
             <p><b>output observation:</b> <a href="ObservationDefinition-example-observation-hsv1igmt.html"> ObservationDefinition/example-observation-hsv1igmt</a></p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsvt1"/>
     <name value="HSVT1Procedure"/>
     <title value="HSV 1 IgM titer procedure"/>
     <status value="draft"/>

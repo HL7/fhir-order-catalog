@@ -27,7 +27,6 @@
             </ul>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-hsv"/>
     <name value="HSVProcedure"/>
     <title value="HSV 1 &amp; 2 IgM procedure"/>
     <status value="draft"/>

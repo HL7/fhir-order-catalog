@@ -29,7 +29,6 @@
             </ul>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-toxoplasma"/>
     <name value="ToxoplasmaProcedure"/>
     <title value="Toxoplasma gondii serology procedure"/>
     <status value="draft"/>

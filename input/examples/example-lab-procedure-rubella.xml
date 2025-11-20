@@ -24,7 +24,6 @@
             <p><b>output observation:</b> <a href="ObservationDefinition-example-observation-rubigm.html"> ObservationDefinition/example-observation-rubigm</a></p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-rubella"/>
     <name value="RubellaProcedure"/>
     <title value="Rubella serology procedure"/>
     <status value="draft"/>

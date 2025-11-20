@@ -24,7 +24,6 @@
             <p><b>output observation:</b> <a href="ObservationDefinition-example-observation-cmvigm.html"> ObservationDefinition/example-observation-cmvigm</a></p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-cmv"/>
     <name value="CMVProcedure"/>
     <title value="CMV IgM testing procedure"/>
     <status value="draft"/>

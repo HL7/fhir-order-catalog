@@ -58,7 +58,6 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-torch"/>
     <name value="TORCH"/>
     <title value="TORCH (Toxoplasma, Rubella, Cytomegalovirus, Herpes simplex) serology super-panel, acute, on serum"/>
     <type>
