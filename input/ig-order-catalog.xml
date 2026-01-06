@@ -1123,6 +1123,26 @@
       <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/IndicationDefinition"/>
       <groupingId value="commonE"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-undesirable-effect"/>
+      </reference>
+      <name value="Undesirable Effect Example"/>
+      <description value="instance of ClinicalUseDefinition as an undesirable effect"/>
+      <isExample value="true"/>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/UndesirableEffectDefinition"/>
+      <groupingId value="commonE"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-warning"/>
+      </reference>
+      <name value="Warning Example"/>
+      <description value="instance of ClinicalUseDefinition as a warning"/>
+      <isExample value="true"/>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/WarningDefinition"/>
+      <groupingId value="commonE"/>
+    </resource>
     <!--
       Example resources transversal to all kinds of catalogs
     -->

@@ -5,6 +5,7 @@
   <name value="LabSpecimenDefinition" />
   <title value="Laboratory IVD Specimen Definition" />
   <status value="draft" />
+  <experimental value="true" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

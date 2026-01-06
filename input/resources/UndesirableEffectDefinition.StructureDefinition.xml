@@ -31,7 +31,7 @@
   <differential>
     <element id="ClinicalUseDefinition.type">
       <path value="ClinicalUseDefinition.type" />
-      <fixedCode value="undesirable-effect" />
+      <patternCode value="undesirable-effect" />
     </element>
     <element id="ClinicalUseDefinition.contraindication">
       <path value="ClinicalUseDefinition.contraindication" />

@@ -5,6 +5,7 @@
   <name value="LabServiceDefinition" />
   <title value="Laboratory Service Definition" />
   <status value="draft" />
+  <experimental value="true" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>
@@ -175,7 +176,7 @@
       <path value="PlanDefinition.useContext" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
+          <type value="value" />
           <path value="code" />
         </discriminator>
         <discriminator>
@@ -183,7 +184,7 @@
           <path value="value" />
         </discriminator>
         <discriminator>
-          <type value="pattern" />
+          <type value="value" />
           <path value="value" />
         </discriminator>
         <rules value="open" />
@@ -226,6 +227,7 @@
       <short value="Service may be added by pathologist" />
       <definition value="The presence of this slice indicates that the service may be added to an existing order by the pathologist after review of the preliminary results of this order" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.useContext:PathologistInitiative.code">
       <path value="PlanDefinition.useContext.code" />
@@ -252,6 +254,7 @@
       <short value="service restricted to one gender" />
       <definition value="The presence of this slice indicates that the service is restricted to one gender of subject (female or male)" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.useContext:OneGender.code">
       <path value="PlanDefinition.useContext.code" />
@@ -276,6 +279,7 @@
       <short value="Specimens to be kept" />
       <definition value="The presence of this slice indicates that the specimens used to perform this service will be kept in long-time storage and available for re-testing in the future" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.useContext:StoreSpecimen.code">
       <path value="PlanDefinition.useContext.code" />
@@ -300,6 +304,7 @@
       <path value="PlanDefinition.useContext" />
       <sliceName value="AgeRange" />
       <short value="A patient age range applicable for this service" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.useContext:AgeRange.code">
       <path value="PlanDefinition.useContext.code" />
@@ -346,10 +351,11 @@
       <short value="Input document expected by the laboratory service" />
       <definition value="Document that needs to be provided alongside the order for the laboratory service" />
       <comment value="Examples of documents that should accompany an order for this service include patient consent for genetic testing, patient agreement for payment of a non-reimbursable service, insurance formal acceptation of a specific test (e.g. prenatal karyotyping) ..." />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.type">
       <path value="PlanDefinition.relatedArtifact.type" />
-      <fixedCode value="depends-on" />
+      <patternCode value="depends-on" />
     </element>
     <element id="PlanDefinition.relatedArtifact:InputDocumentExpected.label">
       <path value="PlanDefinition.relatedArtifact.label" />
@@ -385,11 +391,12 @@
       <sliceName value="IsReplacedBy" />
       <short value="Reference to a service replacing the current non-usable one" />
       <definition value="The related artifact is another instance of PlanDefinition, which is a replacement for the current no longer usable laboratory service" />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.type">
       <path value="PlanDefinition.relatedArtifact.type" />
       <definition value="The type of relationship to the related artifact is successor, meaning that the related artifact is in this case another instance of PlanDefinition representing the laboratory service, which is substituted to the current instance." />
-      <fixedCode value="successor" />
+      <patternCode value="successor" />
     </element>
     <element id="PlanDefinition.relatedArtifact:IsReplacedBy.resource">
       <path value="PlanDefinition.relatedArtifact.resource" />
@@ -405,11 +412,12 @@
       <sliceName value="Includes" />
       <short value="Reference to a panel or test included by the current one" />
       <definition value="The related artifact is another instance of PlanDefinition, representing a laboratory service orderable on its own, and which is also part of the current one, either systematically or reflexed by a trigger." />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:Includes.type">
       <path value="PlanDefinition.relatedArtifact.type" />
       <definition value="The type of relationship to the related artifact is composed-of, meaning that the related artifact is another standalone laboratory service, which is also included as a sub-service of the current one." />
-      <fixedCode value="composed-of" />
+      <patternCode value="composed-of" />
     </element>
     <element id="PlanDefinition.relatedArtifact:Includes.resource">
       <path value="PlanDefinition.relatedArtifact.resource" />
@@ -425,6 +433,7 @@
       <sliceName value="Bibliography" />
       <short value="Additional documentation, citation or justification" />
       <definition value="Related bibliographic references such as documentation, justification, or citation." />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.relatedArtifact:Bibliography.type">
       <path value="PlanDefinition.relatedArtifact.type" />
@@ -522,10 +531,11 @@
       <sliceName value="Reflex" />
       <short value="Reflex laboratory procedure" />
       <definition value="This trigger introduces a reflex laboratory procedure (test or panel) represended by the ActivityDefinition referenced by the action.definition. The trigger is expressed as a named event, and may also be refined with a data requirement and a condition." />
+      <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.action.trigger:Reflex.type">
       <path value="PlanDefinition.action.trigger.type" />
-      <fixedCode value="named-event" />
+      <patternCode value="named-event" />
     </element>
     <element id="PlanDefinition.action.trigger:Reflex.name">
       <path value="PlanDefinition.action.trigger.name" />
@@ -534,7 +544,7 @@
     </element>
     <element id="PlanDefinition.action.groupingBehavior">
       <path value="PlanDefinition.action.groupingBehavior" />
-      <fixedCode value="logical-group" />
+      <patternCode value="logical-group" />
     </element>
     <element id="PlanDefinition.action.definition[x]">
       <path value="PlanDefinition.action.definition[x]" />

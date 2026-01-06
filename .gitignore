@@ -30,3 +30,6 @@ FHIR-order-catalog.xml
 # python scripts #   
 remove_extension.py
 fix_qa.py
+
+# Claude configs #
+CLAUDE.md
