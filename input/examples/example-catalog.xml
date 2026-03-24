@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/composition.xsd">
+    <id value="example-catalog"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/Catalog"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p><b>Additional Narrative: </b></p>
+            <p><b>Catalog title:</b> Example Laboratory Service Catalog</p>
+            <p><b>id:</b> example-catalog</p>
+            <p><b>meta - profile:</b> hl7.org/fhir/uv/order-catalog/StructureDefinition/Catalog</p>
+            <p><b>status:</b> final</p>
+            <p><b>type:</b> Catalog</p>
+            <p><b>category:</b> protocol</p>
+            <p><b>date published:</b> June 1, 2024</p>
+            <p><b>valid from:</b> 2024-06-01 <b>to:</b> 2025-12-31</p>
+            <p><b>author:</b> <a href="Organization-example-lab-organization.html">The good testing laboratory</a></p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ValidityPeriod">
+        <valuePeriod>
+            <start value="2024-06-01"/>
+            <end value="2025-12-31"/>
+        </valuePeriod>
+    </extension>
+    <status value="final"/>
+    <type>
+        <text value="Catalog"/>
+    </type>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/catalogType"/>
+            <code value="protocol"/>
+        </coding>
+    </category>
+    <date value="2024-06-01T10:00:00+02:00"/>
+    <author>
+        <reference value="Organization/example-lab-organization"/>
+    </author>
+    <title value="Example Laboratory Service Catalog"/>
+    <section>
+        <title value="Potassium measurement"/>
+        <entry>
+            <reference value="PlanDefinition/example-lab-service-potassium-serum"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Serum creatinine measurement"/>
+        <entry>
+            <reference value="PlanDefinition/example-lab-test-serum-creatinine"/>
+        </entry>
+    </section>
+</Composition>

@@ -1169,6 +1169,16 @@
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogMessageDefinition"/>
       <groupingId value="commonE"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/example-catalog"/>
+      </reference>
+      <name value="Example Catalog"/>
+      <description value="Example of a catalog (Composition) containing references to catalog items"/>
+      <isExample value="true"/>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/Catalog"/>
+      <groupingId value="commonE"/>
+    </resource>
     <!--
       Example E8 - Transaction inserting a new diagnostic test into a laboratory compendium
     -->
@@ -1250,6 +1260,16 @@
       <description value="Clarithromycin package of granules for oral suspension"/>
       <isExample value="true"/>
       <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/DrugPackage"/>
+      <groupingId value="drugE"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ClinicalUseDefinition/example-interaction"/>
+      </reference>
+      <name value="Example Interaction"/>
+      <description value="Example of an interaction definition between clarithromycin and warfarin"/>
+      <isExample value="true"/>
+      <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InteractionDefinition"/>
       <groupingId value="drugE"/>
     </resource>
     <!--

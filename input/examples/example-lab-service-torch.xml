@@ -20,7 +20,7 @@
             <p><b>publisher:</b> HL7 International </p>
             <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
             <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
-            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>topic:</b> SNOMED CT: 68793005 |Serologic test|</p>
             <p><b>related artifacts:</b></p> 
             <ul>
                 <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-toxoplasma-serum.html"> PlanDefinition Toxoplasma gondii quantitative IgG and IgM</a> </li>
@@ -95,8 +95,8 @@
     <topic>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="165994006"/>
-            <display value="Sample serology"/>
+            <code value="68793005"/>
+            <display value="Serologic test"/>
         </coding>
     </topic>
     <relatedArtifact>

@@ -9,7 +9,7 @@
     <language value="en-US"/>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
             <p>Example of input observation definition for reason for ordering</p>
         </div>
     </text>

@@ -15,7 +15,8 @@
     "concept": [
         {
             "code": "CPTfakecode",
-            "display": "Potassium, serum"
+            "display": "Potassium, serum",
+            "definition": "Example fake CPT code representing a potassium serum test, used for illustration purposes in this implementation guide"
         }
     ]
 }

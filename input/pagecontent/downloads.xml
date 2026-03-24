@@ -12,4 +12,16 @@
   <h3>Full Implementation Guide</h3>
   <p> The full Implementation Guide is available for download below: </p>
   <p><a href="full-ig.zip"> Full IG</a></p>
+  <a name="CrossVersionAnalysis"> </a>
+  <h3>Cross Version Analysis</h3>
+  {% include cross-version-analysis.xhtml %}
+  <a name="GlobalProfiles"> </a>
+  <h3>Global Profiles</h3>
+  {% include globals-table.xhtml %}
+  <a name="DependencyTable"> </a>
+  <h3>Dependencies</h3>
+  {% include dependency-table.xhtml %}
+  <a name="IPStatements"> </a>
+  <h3>IP Statements</h3>
+  {% include ip-statements.xhtml %}
 </div>

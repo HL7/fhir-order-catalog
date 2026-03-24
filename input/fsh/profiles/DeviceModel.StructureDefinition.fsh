@@ -31,9 +31,9 @@ identifier may convey for instance, the secondary UDI-DI, the direct-marking UDI
 //* manufacturer[x] MS			// for 5.0.0
 * deviceName MS
 * modelNumber MS
-* classification ^slicing.discriminator.type = #pattern
+* classification ^slicing.discriminator.type = #value
 * classification ^slicing.discriminator.path = "type.coding.system"
-* classification ^slicing.description = "Slice based on classification.type pattern"
+* classification ^slicing.description = "Slice based on classification coding system"
 * classification ^slicing.rules = #open
 * classification contains 
   gmdn 0..* and 

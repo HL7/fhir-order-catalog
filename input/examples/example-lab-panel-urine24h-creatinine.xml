@@ -123,8 +123,8 @@
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="65634-8"/>
-                <display value="Creatinine 24 hour urine panel - 24 hour Urine"/>
+                <code value="2162-6"/>
+                <display value="Creatinine [Mass/time] in 24 hour Urine"/>
             </coding>
         </code>
         <timingDuration>

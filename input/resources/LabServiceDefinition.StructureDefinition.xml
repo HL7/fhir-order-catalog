@@ -511,7 +511,7 @@
       <path value="PlanDefinition.action.code.coding.system" />
       <label value="LOINC" />
       <short value="LOINC code system" />
-      <fixedUri value="http://loinc.org" />
+      <patternUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="PlanDefinition.action.trigger">
