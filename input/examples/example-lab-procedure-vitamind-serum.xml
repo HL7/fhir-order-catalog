@@ -14,7 +14,6 @@
             <p>Résultat en sortie : ObservationDefinition/example-observation-vitamin-d</p>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/uv/order-catalog/ActivityDefinition/example-lab-procedure-vitamind-serum"/>
     <name value="VitaminDProcedure"/>
     <title value="Procédure - dosage vitamine D - sang"/>
     <status value="draft"/>
@@ -45,7 +44,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="14635-7"/>
-            <display value="25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma"/>
+            <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
         </coding>
     </code>
     <priority value="routine"/>

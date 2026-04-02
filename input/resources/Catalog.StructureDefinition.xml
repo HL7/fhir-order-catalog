@@ -72,9 +72,9 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <text value="Catalog"/>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>

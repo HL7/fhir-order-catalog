@@ -68,7 +68,7 @@
     </element>
     <element id="MessageDefinition.category">
       <path value="MessageDefinition.category" />
-      <fixedCode value="consequence" />
+      <patternCode value="consequence" />
     </element>
     <element id="MessageDefinition.responseRequired">
       <path value="MessageDefinition.responseRequired" />

@@ -104,7 +104,7 @@
     <element id="ActivityDefinition.kind">
       <path value="ActivityDefinition.kind" />
       <min value="1" />
-      <fixedCode value="ServiceRequest" />
+      <patternCode value="ServiceRequest" />
     </element>
     <element id="ActivityDefinition.code">
       <path value="ActivityDefinition.code" />
@@ -133,7 +133,7 @@
       <path value="ActivityDefinition.code.coding.system" />
       <label value="LOINC" />
       <short value="LOINC test code for this activity" />
-      <fixedUri value="http://loinc.org" />
+      <patternUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="ActivityDefinition.doNotPerform">

@@ -6,6 +6,7 @@ Usage: #example
 * extension[0].url = "http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference"
 * extension[0].valueReference = Reference(Composition/example-medication-catalog-header)
 * code = $SCT#769316002 "Clarithromycin 25 mg/mL oral suspension"
+* medicineClassification[0].classification = $SCT#346325008 "Medicinal product acting as antibacterial agent (product)"
 * intendedJurisdiction[0].text = "Healthyland"
 * name = "CLARITHROMYCINE GENERIC-LAB 25 mg/ml, granules for oral suspension"
 * productType.text = "Generic product"
@@ -20,7 +21,7 @@ Usage: #example
 * medicineClassification[0].classification = $ATC#J01FA09 "Clarithromycin"
 * medicineClassification[1].type.text = "SNOMED CT drug dispositions"
 * medicineClassification[1].sourceUri = "https://confluence.ihtsdotools.org/display/DOCEG/SNOMED+CT+Editorial+Guide+-+Pharmaceutical+and+Biologic+Product"
-* medicineClassification[1].classification = $SCT#346325008 "Medicinal product acting as antibacterial agent"
+* medicineClassification[1].classification = $SCT#346325008 "Medicinal product acting as antibacterial agent (product)"
 * packaging[0].cost[0].effectiveDate.start = "2021-02-01"
 * packaging[0].cost[0].type.text = "public price"
 * packaging[0].cost[0].source = "Healthyland Drug Administration"

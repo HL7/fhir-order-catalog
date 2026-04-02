@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/clinicalusedefinition.xsd">
+    <id value="example-interaction"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InteractionDefinition"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+            <p>Drug interaction: Clarithromycin and Warfarin - increased anticoagulant effect</p>
+        </div>
+    </text>
+    <type value="interaction"/>
+    <interaction>
+        <interactant>
+            <itemCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="387487009"/>
+                    <display value="Clarithromycin"/>
+                </coding>
+            </itemCodeableConcept>
+        </interactant>
+        <interactant>
+            <itemCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="372756006"/>
+                    <display value="Warfarin"/>
+                </coding>
+            </itemCodeableConcept>
+        </interactant>
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/interaction-type"/>
+                <code value="drug-drug"/>
+                <display value="drug to drug interaction"/>
+            </coding>
+        </type>
+        <effect>
+            <concept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="419511003"/>
+                    <display value="Propensity to adverse reactions to drug"/>
+                </coding>
+                <text value="Increased anticoagulant effect and risk of bleeding"/>
+            </concept>
+        </effect>
+    </interaction>
+</ClinicalUseDefinition>

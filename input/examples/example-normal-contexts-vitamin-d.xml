@@ -89,6 +89,7 @@
         <value value="443731004"/>
       </filter>
     </include>
+    <!-- Commented out: SNOMED code 182817000 is inactive
     <include>
       <system value="http://snomed.info/sct"/>
       <filter>
@@ -97,5 +98,6 @@
         <value value="182817000"/>
       </filter>
     </include>
+    -->
   </compose>
 </ValueSet>

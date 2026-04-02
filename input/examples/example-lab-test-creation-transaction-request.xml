@@ -341,7 +341,7 @@
                 <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="http://www.ama-assn.org/go/cpt" />
+                            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt" />
                             <code value="CPTfakecode" />
                             <display value="Potassium, serum" />
                         </coding>

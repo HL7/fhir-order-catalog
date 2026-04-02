@@ -20,7 +20,7 @@
             <p><b>publisher:</b> HL7 International </p>
             <p><b>contact:</b> HL7 Orders and Observations Work Group (<a href="http://www.hl7.org/Special/committees/orders/index.cfm"> http://www.hl7.org/Special/committees/orders/index.cfm</a>)</p>
             <p><b>useContext (task):</b> LABOE (laboratory test order entry task)</p>
-            <p><b>topic:</b> SNOMED CT: 165994006 |Sample serology|</p>
+            <p><b>topic:</b> SNOMED CT: 68793005 |Serologic test|</p>
             <p><b>related artifacts:</b></p> 
             <ul>
                 <li><b>composed-of:</b> <a href="PlanDefinition-example-lab-service-hsvt1-serum.html"> PlanDefinition HSV 1 IgM titer on serum</a> </li>
@@ -51,7 +51,6 @@
             <reference value="Composition/example-lab-compendium-header"/>
         </valueReference>
     </extension>
-    <url value="http://hl7.org/fhir/uv/order-catalog/PlanDefinition/example-lab-service-hsv-serum"/>
     <name value="HSVIgMserum"/>
     <title value="laboratory service - HSV 1 &amp; 2 IgM on serum">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
@@ -98,8 +97,8 @@
     <topic>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="165994006"/>
-            <display value="Sample serology"/>
+            <code value="68793005"/>
+            <display value="Serologic test"/>
         </coding>
     </topic>
     <relatedArtifact>
