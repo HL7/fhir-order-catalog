@@ -60,12 +60,12 @@ The definition for the element 'DeviceDefinition.productionIdentifierInUDI' bind
 The definition for the element 'DeviceDefinition.correctiveAction.scope' binds to the value set 'http://hl7.org/fhir/ValueSet/device-correctiveactionscope|5.0.0' which is experimental, but this structure is not labeled as experimental
 
 # French-language resource with English SNOMED displays - no French translations available in SNOMED International
-There are no valid display names found for the code http://snomed.info/sct#41345002 for language(s) 'fr-FR'. The display is 'Rickets' which is the default language display
-There are no valid display names found for the code http://snomed.info/sct#4598005 for language(s) 'fr-FR'. The display is 'Osteomalacia' which is the default language display
-There are no valid display names found for the code http://snomed.info/sct#737295003 for language(s) 'fr-FR'. The display is 'Transplanted kidney present' which is the default language display
-There are no valid display names found for the code http://snomed.info/sct#707206008 for language(s) 'fr-FR'. The display is 'Assessment for bariatric surgery' which is the default language display
-There are no valid display names found for the code http://snomed.info/sct#443731004 for language(s) 'fr-FR'. The display is 'Assessment using Falls Risk Assessment Scale for the Elderly' which is the default language display
-There are no valid display names found for the code http://snomed.info/sct#33633005 for language(s) 'fr-FR'. The display is 'Prescription of drug' which is the default language display
+There are no valid display names found for the code http://snomed.info/sct#41345002 for language(s) 'fr-FR'. The display is 'Rickets' which is the default language display (for 'http://snomed.info/sct#41345002')
+There are no valid display names found for the code http://snomed.info/sct#4598005 for language(s) 'fr-FR'. The display is 'Osteomalacia' which is the default language display (for 'http://snomed.info/sct#4598005')
+There are no valid display names found for the code http://snomed.info/sct#737295003 for language(s) 'fr-FR'. The display is 'Transplanted kidney present' which is the default language display (for 'http://snomed.info/sct#737295003')
+There are no valid display names found for the code http://snomed.info/sct#707206008 for language(s) 'fr-FR'. The display is 'Assessment for bariatric surgery' which is the default language display (for 'http://snomed.info/sct#707206008')
+There are no valid display names found for the code http://snomed.info/sct#443731004 for language(s) 'fr-FR'. The display is 'Assessment using Falls Risk Assessment Scale for the Elderly' which is the default language display (for 'http://snomed.info/sct#443731004')
+There are no valid display names found for the code http://snomed.info/sct#33633005 for language(s) 'fr-FR'. The display is 'Prescription of drug' which is the default language display (for 'http://snomed.info/sct#33633005')
 
 # Retired/inactive codes that need WG review for replacement
 The concept 'STORE' has a status of retired and its use should be reviewed
