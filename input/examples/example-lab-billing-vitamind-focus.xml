@@ -47,7 +47,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="41345002"/>
-                <display value="Rickets"/>
+                <display value="Rickets">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Rachitisme"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="suspicion de rachitisme"/>
         </valueCodeableConcept>
@@ -61,7 +70,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="4598005"/>
-                <display value="Osteomalacia"/>
+                <display value="Osteomalacia">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Ostéomalacie"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="suspicion d’ostéomalacie"/>
         </valueCodeableConcept>
@@ -75,7 +93,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="737295003"/>
-                <display value="Transplanted kidney present"/>
+                <display value="Transplanted kidney present">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Greffon rénal en place"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="suivi ambulatoire de l’adulte transplanté rénal au-delà de trois mois après transplantation"/>
         </valueCodeableConcept>
@@ -89,7 +116,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="707206008"/>
-                <display value="Assessment for bariatric surgery"/>
+                <display value="Assessment for bariatric surgery">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Évaluation pour chirurgie bariatrique"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="avant et après chirurgie bariatrique"/>
         </valueCodeableConcept>
@@ -103,7 +139,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="443731004"/>
-                <display value="Assessment using Falls Risk Assessment Scale for the Elderly"/>
+                <display value="Assessment using Falls Risk Assessment Scale for the Elderly">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Évaluation utilisant l'échelle d'évaluation du risque de chute chez les personnes âgées"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="évaluation et prise en charge des personnes âgées sujettes aux chutes répétées"/>
         </valueCodeableConcept>
@@ -117,7 +162,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="33633005"/>
-                <display value="Prescription of drug"/>
+                <display value="Prescription of drug">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                            <valueCode value="fr-FR"/>
+                        </extension>
+                        <extension url="content">
+                            <valueString value="Prescription de médicament"/>
+                        </extension>
+                    </extension>
+                </display>
             </coding>
             <text value="respect des résumés des caractéristiques du produit (RCP) des médicaments préconisant la réalisation de l’acte 1139"/>
         </valueCodeableConcept>
