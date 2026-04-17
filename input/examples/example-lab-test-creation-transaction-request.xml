@@ -350,9 +350,9 @@
                 <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="http://www.codage.ext.cnamts.fr/codif/nabm" />
+                            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt" />
                             <code value="1608" />
-                            <display value="SANG : POTASSIUM (K)" />
+                            <display value="BLOOD: POTASSIUM (K)" />
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -371,16 +371,7 @@
                     <valueString value="No specific limitation for this test" />
                 </extension>
                  <name value="PotassiumSerumMeasurement" />
-                <title value="Potassium measurement on in vitro blood serum">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR" />
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Dosage du potassium sérique" />
-                        </extension>
-                    </extension>
-                </title>
+                <title value="Potassium measurement on in vitro blood serum"/>
                 <type>
                     <coding>
                         <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type" />

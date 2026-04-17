@@ -6,18 +6,18 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>
     </meta>
-    <language value="fr-FR"/>
+    <language value="en"/>
     <text>
         <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
-            <p><b>Additional Narrative in French language | Vue narrative en français : </b></p>
-            <p>Analyse de biologie médicale : dosage vitamine D dans sérum sanguin</p>
-            <p>Catégorie : laboratoire</p>
-            <p>Identification : 14635-7 |25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique| (http://loinc.org)</p>
-            <p>Types de résultat autorisés : quantitatif, textuel</p>
-            <p>Résultat multiples : non</p>
-            <p>intitulé préféré sur compte rendu : Vitamine D</p>
-            <p>Unité de mesure : pmol/L (http://unitsofmeasure.org)</p>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+            <p><b>Observation Definition - Vitamin D serum test:</b></p>
+            <p>Medical biology test: Vitamin D assay in blood serum</p>
+            <p>Category: laboratory</p>
+            <p>Identification: 14635-7 |25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma| (http://loinc.org)</p>
+            <p>Permitted result types: quantitative, textual</p>
+            <p>Multiple results: no</p>
+            <p>Preferred report name: Vitamin D</p>
+            <p>Unit of measure: pmol/L (http://unitsofmeasure.org)</p>
         </div>
     </text>
 	<status value="active"/>
@@ -32,13 +32,13 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="14635-7"/>
-            <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
+            <display value="25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma"/>
         </coding>
     </code>
     <permittedDataType value="Quantity"/>
     <permittedDataType value="string"/>
     <multipleResultsAllowed value="false"/>
-    <preferredReportName value="Vitamine D"/>
+    <preferredReportName value="Vitamin D"/>
     <permittedUnit>
         <system value="http://unitsofmeasure.org"/>
         <code value="pmol/L"/>

@@ -4,16 +4,16 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
     </meta>
-    <language value="fr-FR"/>
+    <language value="en"/>
     <text>
         <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
-            <p><b>Additional Narrative in French language | Vue narrative en français : </b></p>
-            <p>Examen de biologie médicale monoparamétrique :</p>
-            <p>Dosage de la 25-(OH)-vitamine D (D2 + D3)</p>
-            <p>description : Vitamine D dosée sur échantillon de sérum</p>
-            <p>prescriptible : oui</p>
-            <p>délai de rendu : 120 minutes</p>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en"  xml:lang="en">
+            <p><b>Lab Service - Vitamin D serum test:</b></p>
+            <p>Single-parameter medical biology test:</p>
+            <p>25-(OH)-Vitamin D (D2 + D3) assay</p>
+            <p>Description: Vitamin D measured on serum specimen</p>
+            <p>Orderable: yes</p>
+            <p>Turnaround time: 120 minutes</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/CatalogReference">
@@ -41,16 +41,7 @@
         <valueString value="No specific limitation for this test"/>
     </extension>
     <name value="VitaminDMeasurement"/>
-    <title value="Dosage de la vitamine D dans le sang">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
-            </extension>
-        </extension>
-    </title>
+    <title value="Vitamin D blood test"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
@@ -62,7 +53,7 @@
     <experimental value="true"/>
     <date value="2020-02-19T20:00:00+02:00"/>
     <publisher value="HL7 International"/>
-    <description value="Vitamine D dosée sur échantillon de sérum"/>
+    <description value="Vitamin D measured on serum specimen"/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -80,7 +71,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="18719-5"/>
-            <display value="Biochimie [Autre] - ; Patient ; Statut"/>
+            <display value="Chemistry studies (set)"/>
         </coding>
     </topic>
     <topic>
@@ -88,20 +79,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="166312007"/>
             <display value="Blood chemistry"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
-            <code value="BIOCHBM"/>
-            <display value="Biochimie générale et spécialisée"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="12"/>
-            <display value="PROTEINES - MARQUEURS TUMORAUX - VITAMINES"/>
         </coding>
     </topic>
     <action>
@@ -119,7 +96,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="14635-7"/>
-                <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
+                <display value="25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma"/>
             </coding>
         </code>
         <timingDuration>

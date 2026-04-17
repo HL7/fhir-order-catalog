@@ -4,30 +4,30 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
     </meta>
-    <language value="fr-FR"/>
+    <language value="en"/>
     <text>
         <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"  xml:lang="fr-FR">
-            <p><b>Additional Narrative in French language | Vue narrative en français : </b></p>
-            <p>Procédure de dosage de la vitamine D dans le sang</p>
-            <p>Elément clinique pertinent requis en entrée : ObservationDefinition/example-input-observation-context-for-vitamin-d</p>
-            <p>Résultat en sortie : ObservationDefinition/example-observation-vitamin-d</p>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en"  xml:lang="en">
+            <p><b>Lab Procedure - Vitamin D blood test:</b></p>
+            <p>Procedure for Vitamin D assay in blood</p>
+            <p>Required clinical input: ObservationDefinition/example-input-observation-context-for-vitamin-d</p>
+            <p>Output result: ObservationDefinition/example-observation-vitamin-d</p>
         </div>
     </text>
     <name value="VitaminDProcedure"/>
-    <title value="Procédure - dosage vitamine D - sang"/>
+    <title value="Procedure - Vitamin D assay - blood"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-02-19T14:00:00+02:00"/>
     <publisher value="HL7 International"/>
     <contact>
-        <name value="HL7 Orders and Observations Work Group"></name>
+        <name value="HL7 Orders and Observations Work Group"/>
         <telecom>
             <system value="other"/>
             <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
-    <description value="Procédure de dosage de la vitamine D dans le sang"/>
+    <description value="Procedure for Vitamin D assay in blood"/>
     <effectivePeriod>
         <start value="2020-04-01"/>
         <end value="2022-12-25"/>
@@ -44,7 +44,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="14635-7"/>
-            <display value="25-hydroxycholécalciférol [Moles/Volume] Sérum/Plasma ; Numérique"/>
+            <display value="25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma"/>
         </coding>
     </code>
     <priority value="routine"/>

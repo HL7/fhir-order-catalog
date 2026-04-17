@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ObservationValueSet" />
      -->
   </meta>
-  <language value="fr-FR"/>
+  <language value="en"/>
   <!--
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Availability Time Rule" />
@@ -26,7 +26,7 @@
     -->
   <url value="http://hl7.org/fhir/uv/order-catalog/ValueSet/example-normal-contexts-vitamin-d"/>	
   <name value="NormalReasonsVitaminD" />
-  <title value="Contextes de remboursement du dosage de la vitamine D"/>
+  <title value="Reimbursement contexts for Vitamin D testing"/>
   <status value="active" />
   <experimental value="false" />
   <date value="2019-12-20" />
@@ -37,7 +37,7 @@
       <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
     </telecom>
   </contact>
-  <description value="Ce jeu de valeurs liste les réponses normales associées à la question &quot;contexte de prescription de l'examen dosage de la vitamine D&quot;, autorisant le remboursement de cet examen (NABM 1139)."/>
+  <description value="This value set lists the normal responses associated with the question &quot;clinical context for prescribing the Vitamin D test&quot;, authorizing reimbursement of this test."/>
   <immutable value="false" />
   <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
   <compose>

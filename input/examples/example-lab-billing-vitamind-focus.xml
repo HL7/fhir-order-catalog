@@ -8,36 +8,35 @@
             value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabChargeItemDefinition"
         />
     </meta>
-    <language value="fr-FR"/>
+    <language value="en"/>
     <text>
         <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR">
-            <p><b>Additional Narrative in French language | Vue narrative en français : </b></p>
-            <p>Codage affiné (1139) et conditions d'application du dosage de la vitamine D - Nomenclature des Actes de Biologie Médicale (NABM version 56)</p>
-            <p>La prise en charge de cet acte est limitée aux situations suivantes : </p>
+        <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+            <p><b>Billing details for Vitamin D testing:</b></p>
+            <p>Billing code and conditions for Vitamin D testing</p>
+            <p>Coverage for this test is limited to the following situations:</p>
             <ul>
-                <li>suspicion de rachitisme</li>
-                <li>suspicion d’ostéomalacie</li>
-                <li>suivi ambulatoire de l’adulte transplanté rénal au-delà de trois mois après transplantation</li>
-                <li>avant et après chirurgie bariatrique</li>
-                <li>évaluation et prise en charge des personnes âgées sujettes aux chutes répétées</li>
-                <li>respect des résumés des caractéristiques du produit (RCP) des médicaments préconisant la
-                    réalisation de l’acte 1139</li>
+                <li>Suspicion of rickets</li>
+                <li>Suspicion of osteomalacia</li>
+                <li>Outpatient follow-up of adult kidney transplant recipients beyond three months after transplantation</li>
+                <li>Before and after bariatric surgery</li>
+                <li>Assessment and management of elderly patients prone to repeated falls</li>
+                <li>Compliance with Summary of Product Characteristics (SPC) of medications requiring test 1139</li>
             </ul>
         </div>
     </text>
-    <title value="Dosage de la vitamine D"/>
+    <title value="Vitamin D Testing"/>
     <status value="active"/>
     <date value="2019-10-18"/>
-    <publisher value="CNAMTS"/>
+    <publisher value="HL7 International"/>
     <contact>
         <telecom>
             <system value="url"/>
-            <value value="http://ameli.fr"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
     <description
-        value="Propriétés détaillées du code NABM *1139* - *Dosage de la 25-(OH)-vitamine D (D2 + D3)*.\nCet acte est facturable si l'un au moins des contextes cliniques ciblés est déclaré par le prescripteur dans la demande d'examens en tant que valeur de l'élément clinique pertinent &quot;motif de l'examen&quot;."/>
+        value="Detailed billing properties for a 25-(OH)-Vitamin D (D2 + D3) assay.\nThis test is billable if at least one of the targeted clinical contexts is declared by the prescriber in the test request as the value of the relevant clinical element &quot;reason for the test&quot;."/>
     <useContext>
         <code>
             <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
@@ -47,18 +46,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="41345002"/>
-                <display value="Rickets">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Rachitisme"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Rickets"/>
             </coding>
-            <text value="suspicion de rachitisme"/>
+            <text value="Suspicion of rickets"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -70,18 +60,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="4598005"/>
-                <display value="Osteomalacia">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Ostéomalacie"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Osteomalacia"/>
             </coding>
-            <text value="suspicion d’ostéomalacie"/>
+            <text value="Suspicion of osteomalacia"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -93,18 +74,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="737295003"/>
-                <display value="Transplanted kidney present">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Greffon rénal en place"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Transplanted kidney present"/>
             </coding>
-            <text value="suivi ambulatoire de l’adulte transplanté rénal au-delà de trois mois après transplantation"/>
+            <text value="Outpatient follow-up of adult kidney transplant recipients beyond three months after transplantation"/>
         </valueCodeableConcept>
     </useContext>   
     <useContext>
@@ -116,18 +88,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="707206008"/>
-                <display value="Assessment for bariatric surgery">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Évaluation pour chirurgie bariatrique"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Assessment for bariatric surgery"/>
             </coding>
-            <text value="avant et après chirurgie bariatrique"/>
+            <text value="Before and after bariatric surgery"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -139,18 +102,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="443731004"/>
-                <display value="Assessment using Falls Risk Assessment Scale for the Elderly">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Évaluation utilisant l'échelle d'évaluation du risque de chute chez les personnes âgées"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Assessment using Falls Risk Assessment Scale for the Elderly"/>
             </coding>
-            <text value="évaluation et prise en charge des personnes âgées sujettes aux chutes répétées"/>
+            <text value="Assessment and management of elderly patients prone to repeated falls"/>
         </valueCodeableConcept>
     </useContext>
     <useContext>
@@ -162,32 +116,16 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="33633005"/>
-                <display value="Prescription of drug">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-                        <extension url="lang">
-                            <valueCode value="fr-FR"/>
-                        </extension>
-                        <extension url="content">
-                            <valueString value="Prescription de médicament"/>
-                        </extension>
-                    </extension>
-                </display>
+                <display value="Prescription of drug"/>
             </coding>
-            <text value="respect des résumés des caractéristiques du produit (RCP) des médicaments préconisant la réalisation de l’acte 1139"/>
+            <text value="Compliance with Summary of Product Characteristics (SPC) of medications requiring test 1139"/>
         </valueCodeableConcept>
     </useContext>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="FR"/>
-            <display value="France"/>
-        </coding>
-    </jurisdiction>
     <code>
         <coding>
-            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="1139"/>
-            <display value="Dosage de la 25-(OH)-vitamine D (D2 + D3)"/>
+            <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt"/>
+            <code value="CPTvitd"/>
+            <display value="25-(OH)-Vitamin D (D2 + D3) assay"/>
         </coding>
     </code>
     <propertyGroup>
@@ -195,7 +133,7 @@
             <type value="base"/>
             <code>
                 <coding>
-                    <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                    <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt"/>
                     <code value="B"/>
                 </coding>
             </code>

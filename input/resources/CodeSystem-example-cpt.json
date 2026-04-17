@@ -16,7 +16,42 @@
         {
             "code": "CPTfakecode",
             "display": "Potassium, serum",
-            "definition": "Example fake CPT code representing a potassium serum test, used for illustration purposes in this implementation guide"
+            "definition": "Example fake CPT code representing a potassium serum test"
+        },
+        {
+            "code": "CPTvitd",
+            "display": "25-(OH)-Vitamin D (D2 + D3) assay",
+            "definition": "Example code representing a Vitamin D assay"
+        },
+        {
+            "code": "B",
+            "display": "Base billing unit",
+            "definition": "Example code representing a base billing unit"
+        },
+        {
+            "code": "1608",
+            "display": "BLOOD: POTASSIUM (K)",
+            "definition": "Example code for blood potassium billing"
+        },
+        {
+            "code": "1609",
+            "display": "Blood electrolyte panel",
+            "definition": "Example code for blood electrolyte panel billing"
+        },
+        {
+            "code": "0627",
+            "display": "24h urine creatinine",
+            "definition": "Example code for 24-hour urine creatinine billing"
+        },
+        {
+            "code": "0407",
+            "display": "Creatinine clearance",
+            "definition": "Example code for creatinine clearance billing"
+        },
+        {
+            "code": "0592",
+            "display": "Serum creatinine",
+            "definition": "Example code for serum creatinine billing"
         }
     ]
 }
