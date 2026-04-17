@@ -39,7 +39,7 @@
   <version value="0.1.0" />
   <name value="LaboratoryServiceDefinitionType"/>
   <title value="Code system for types of laboratory service definitions" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="false" />
   <date value="2019-12-20" />
   <publisher value="HL7 Orders &amp; Observations WG" />

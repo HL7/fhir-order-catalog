@@ -4,12 +4,11 @@ Id: DeviceModel
 Title: "Device Model"
 Description: "This profile constrains the base resource DeviceDefinition to represent a model of device in a catalog of medical devices"
 * ^version = "current"
-* ^status = #draft
+* ^status = #active
 * ^date = "2022-02-20T18:06:45+01:00"
 * ^publisher = "HL7 International - Orders and Observations Work Group"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.org/Special/committees/orders"
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * extension contains CatalogReference named CatalogReference 0..*
 * description MS
 * identifier MS

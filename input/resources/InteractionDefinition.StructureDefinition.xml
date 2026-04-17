@@ -4,7 +4,7 @@
   <version value="0.1" />
   <name value="InteractionDefinition" />
   <title value="ClinicalUseDefinition as an interaction" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

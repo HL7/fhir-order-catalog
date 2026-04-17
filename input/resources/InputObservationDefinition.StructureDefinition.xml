@@ -3,7 +3,7 @@
   <url value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/InputObservationDefinition" />
   <name value="InputObservationDefinition" />
   <title value="Input Observation" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

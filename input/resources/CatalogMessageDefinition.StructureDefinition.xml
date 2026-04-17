@@ -4,7 +4,7 @@
   <version value="0.1" />
   <name value="CatalogMessageDefinition" />
   <title value="Message definition for messaging order-catalog content" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2020-04-02" />
   <publisher value="HL7 Orders &amp;amp; Observations WG" />
   <contact>

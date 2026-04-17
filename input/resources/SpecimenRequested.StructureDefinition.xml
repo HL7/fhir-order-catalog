@@ -5,7 +5,7 @@
   <version value="0.0.1"/>
   <name value="SpecimenRequested"/>
   <title value="Specimens requested by a laboratory service"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2020-06-08"/>
   <publisher value="HL7 Orders &amp; Observations WG"/>
   <contact>
