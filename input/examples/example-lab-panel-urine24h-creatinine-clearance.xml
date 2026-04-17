@@ -16,7 +16,7 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
         <valueCodeableConcept>
             <coding>
-                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt"/>
                 <code value="0407"/>
             </coding>
         </valueCodeableConcept>
@@ -81,20 +81,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="409091002"/>
             <display value="24 hour urine measurement (procedure)"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
-            <code value="BIOCHBM"/>
-            <display value="Biochimie générale et spécialisée"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="13-03"/>
-            <display value="BIOCHIMIE - URINE"/>
         </coding>
     </topic>
     <action>

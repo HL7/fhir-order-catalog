@@ -37,16 +37,7 @@
         </valueReference>
     </extension>
     <name value="HVS2IgMtiter"/>
-    <title value="laboratory service - serum HSV 2 IgM titer on serum">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="Titrage des IgM HSV 2 sur sérum"/>
-            </extension>
-        </extension>
-    </title>
+    <title value="laboratory service - serum HSV 2 IgM titer on serum"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>

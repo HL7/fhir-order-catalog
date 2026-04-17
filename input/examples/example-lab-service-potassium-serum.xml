@@ -39,9 +39,9 @@
     <extension url="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/ServiceBillingCode">
         <valueCodeableConcept>
             <coding>
-                <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
+                <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/example-cpt"/>
                 <code value="1608"/>
-                <display value="SANG : POTASSIUM (K)"/>
+                <display value="BLOOD: POTASSIUM (K)"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -67,16 +67,7 @@
         <value value="K_serum_test"/> 
     </identifier>
     <name value="PotassiumSerumMeasurement"/>
-    <title value="laboratory service - serum potassium level">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="Dosage du potassium sérique"/>
-            </extension>
-        </extension>
-    </title>
+    <title value="laboratory service - serum potassium level"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>
@@ -114,20 +105,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="166312007"/>
             <display value="Blood chemistry"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://tools.cofrac.fr/documentation/SH-REF-08"/>
-            <code value="BIOCHBM"/>
-            <display value="Biochimie générale et spécialisée"/>
-        </coding>
-    </topic>
-    <topic>
-        <coding>
-            <system value="http://www.codage.ext.cnamts.fr/codif/nabm"/>
-            <code value="13-01"/>
-            <display value="BIOCHIMIE - SANG"/>
         </coding>
     </topic>
     <relatedArtifact>

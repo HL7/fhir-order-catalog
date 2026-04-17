@@ -52,16 +52,7 @@
         </valueReference>
     </extension>
     <name value="HSVIgMserum"/>
-    <title value="laboratory service - HSV 1 &amp; 2 IgM on serum">
-        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-                <valueCode value="fr-FR"/>
-            </extension>
-            <extension url="content">
-                <valueString value="IgM HSV 1 &amp; 2 sur sérum"/>
-            </extension>
-        </extension>
-    </title>
+    <title value="laboratory service - HSV 1 &amp; 2 IgM on serum"/>
     <type>
         <coding>
             <system value="http://hl7.org/fhir/uv/order-catalog/CodeSystem/laboratory-service-definition-type"/>

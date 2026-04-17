@@ -517,7 +517,7 @@
         <reference value="PlanDefinition/example-lab-service-vitamind-serum"/>
       </reference>
       <name value="Lab service vitamin D"/>
-      <description value="Lab E6 - simple test laboratory service - vitamin D (in French)"/>
+      <description value="Lab E6 - simple test laboratory service - vitamin D"/>
       <isExample value="true"/>
       <profile value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabServiceDefinition"/>
       <groupingId value="labE"/>
@@ -658,7 +658,7 @@
         <reference value="ActivityDefinition/example-lab-procedure-vitamind-serum"/>
       </reference>
       <name value="Lab procedure vitamin D"/>
-      <description value="Lab E6 - simple test laboratory procedure - vitamin D (in French)"/>
+      <description value="Lab E6 - simple test laboratory procedure - vitamin D"/>
       <isExample value="true"/>
       <profile
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabProcedureDefinition"/>
@@ -924,7 +924,7 @@
         <reference value="ObservationDefinition/example-observation-vitamin-d"/>
       </reference>
       <name value="Lab observation vitamin D"/>
-      <description value="Lab E6: observation vitamin D on blood serum (in French)"/>
+      <description value="Lab E6: observation vitamin D on blood serum"/>
       <isExample value="true"/>
       <profile
         value="http://hl7.org/fhir/uv/order-catalog/StructureDefinition/LabObservationDefinition"/>

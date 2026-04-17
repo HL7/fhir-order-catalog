@@ -509,8 +509,7 @@
 	<a name="LabE6"> </a>
 	<h3>E6: Vitamin D</h3>
 	<p> This example illustrates the representation of a simple diagnostic test in the laboratory
-		compendium, associated with a billing code and billing rules. The example is in French as is
-		the billing coding system.</p>
+		compendium, associated with a billing code and billing rules.</p>
 	<p> The figure below displays the business content. </p>
 	<img src="LabExampleE6Business.png" alt="Example E6 - business content" width="500px"/>
 	<p>The figure below displays the FHIR technical implementation of the business content. </p>
