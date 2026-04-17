@@ -5,7 +5,7 @@
   <version value="0.1.0" />
   <name value="ServiceBillingCode" />
   <title value="Healthcare Service Billing Code" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

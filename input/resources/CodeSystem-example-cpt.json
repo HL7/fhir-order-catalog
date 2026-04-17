@@ -6,7 +6,7 @@
     "name": "ExampleCPT",
     "title": "Example CPT Codes",
     "status": "active",
-    "experimental": true,
+    "experimental": false,
     "date": "2025-11-20",
     "publisher": "HL7 International",
     "description": "Example CodeSystem for fake CPT codes used in examples",

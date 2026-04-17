@@ -5,7 +5,7 @@
   <version value="0.0.1" />
   <name value="BillingSummary" />
   <title value="Billing summary for the plan definition" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

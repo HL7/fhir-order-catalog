@@ -12,7 +12,6 @@ Usage: #definition
 * contact.telecom.system = #url
 * contact.telecom.value = "http://hl7.org/Special/committees/orders"
 * description = "This Section describes the expected capabilities of the Custodian of a catalog of medications. This role is responsible for providing responses to the queries submitted by the catalog consumers. \n\nThe MedicationKnowledge Resource is the focal Resource gathering all knowledge and information details about a medication in the catalog."
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * kind = #requirements
 * fhirVersion = #5.0.0
 * format[0] = #xml

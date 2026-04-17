@@ -4,7 +4,7 @@
   <version value="0.0.1" />
   <name value="ItemTransactionResponse" />
   <title value="Catalog Item Transaction Request" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>

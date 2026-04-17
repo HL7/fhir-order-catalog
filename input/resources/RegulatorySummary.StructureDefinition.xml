@@ -5,7 +5,7 @@
   <version value="0.0.1" />
   <name value="RegulatorySummary" />
   <title value="Summary of regulations applicable to the laboratory service" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 Orders &amp; Observations WG" />
   <contact>
     <telecom>
