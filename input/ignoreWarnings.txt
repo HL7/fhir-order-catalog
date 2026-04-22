@@ -187,3 +187,11 @@ INFORMATION: Bundle/example-lab-test-creation-transaction-response: Bundle.entry
 INFORMATION: ValueSet/bibliography-artifact-type: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/related-artifact-type|5.0.0
 INFORMATION: ValueSet/bibliography-artifact-type: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem http://hl7.org/fhir/related-artifact-type|5.0.0
 INFORMATION: ValueSet/bibliography-artifact-type: ValueSet.compose.include[0].concept[2]: Reference to draft CodeSystem http://hl7.org/fhir/related-artifact-type|5.0.0
+
+# 10. Will need to move these code system to THO or change to using an external standard code system by the time the IG moves to FMM 3
+INFORMATION: CodeSystem/catalog-message-events: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+INFORMATION: CodeSystem/laboratory-service-definition-type: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+INFORMATION: CodeSystem/laboratory-service-reimbursability: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# 11. This is an example code system for "fake CPT" codes used in the examples
+INFORMATION: CodeSystem/example-cpt: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
