@@ -11,7 +11,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/order-catalog/ImplementationGuide/ig-uv-order-catalog"/>
-  <version value="1.0.0-ballot"/>
+  <version value="1.0.0"/>
   <name value="OrderCatalogIG"/>
   <title value="Order Catalog Implementation Guide"/>
   <status value="active"/>
@@ -1372,7 +1372,7 @@
       <code>
         <code value="releaselabel"/>
       </code>
-      <value value="CI Build"/>
+      <value value="STU 1"/>
     </parameter>
     <parameter>
       <code>
