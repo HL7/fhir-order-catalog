@@ -20,7 +20,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="13362-9"/>
-            <display value="Collection duration of Urine"/>
+            <display value="Specimen collection [Time] of Urine"/>
         </coding>
     </code>
     <permittedDataType value="Quantity"/>
