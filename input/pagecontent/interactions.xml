@@ -29,7 +29,7 @@
   <p> A <b>catalog consumer</b> may want to import the content of a full catalog or of a subset of
     it onto its own system. To do so, the <b>catalog consumer</b> uses an http GET interaction,
     positioning appropriate search parameters to delineate the content it wants to import.</p>
-  <p>Among these parameters, the catalog consumer SHALL use the <code>_include:iterate=*</code>
+  <p>Among these parameters, the catalog consumer <span class="fhir-conformance">SHALL</span> use the <code>_include:iterate=*</code>
     parameter, in order to instruct the <b>catalog custodian</b> to return not only the resources
     representing the overview of the catalog items, but also all the supporting resources referenced
     by these, so as to obtain the fully detailed definition of each item in the imported
