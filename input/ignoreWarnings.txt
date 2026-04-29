@@ -195,3 +195,10 @@ INFORMATION: CodeSystem/laboratory-service-reimbursability: CodeSystem: Most cod
 
 # 11. This is an example code system for "fake CPT" codes used in the examples
 INFORMATION: CodeSystem/example-cpt: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# 12.  This is the correct canonical url for the GMDN code system as referenced in THO at https://terminology.hl7.org/6.5.0/CodeSystem-GMDN.html and https://terminology.hl7.org/en/ECS_MR-GMDN.html - the url does resolve in a browser.
+ERROR: StructureDefinition-DeviceModel-mappings.html#/html/body/div/div/div/div/div/table/tr/td/div/a at Line 868, column 8: The link 'http://terminology.hl7.org/CodeSystem/GMDN' for "http://terminology.hl7.org/CodeSystem/GMDN" cannot be resolved
+
+# 13. The regex extension is created by the snapshot generator and is not specifically referenced in the differential in the profile.
+INFORMATION: StructureDefinition/CatalogHeader: StructureDefinition.snapshot.element[30].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+
